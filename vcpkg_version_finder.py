@@ -17,7 +17,7 @@ else:
     VCPKG_PATH = Path(__file__).parent / 'vcpkg'
 
 if len(sys.argv) > 3:
-    print("the argumnets after the second one are ignored")
+    print("the arguments after the second one are ignored")
 
 
 if not VCPKG_PATH.exists():
