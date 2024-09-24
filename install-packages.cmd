@@ -1,6 +1,6 @@
 @echo off
 
-echo "Cleanup the environment....."
+echo "Cleanup the environment..."
 IF EXIST "Src\external_dependencies\vcpkg" (
 	echo Deleting "Src\external_dependencies\vcpkg" ...
 	rmdir /S /Q "Src\external_dependencies\vcpkg"
@@ -49,7 +49,7 @@ IF NOT EXIST .\vcpkg (
 	echo Patching ports...
 	xcopy /K /Y /H /C /I /E .\vcpkg-ports\* .\vcpkg\ports\*
 
-	echo Installing packages....
+	echo Installing packages...
 	cd .\vcpkg
 	.\vcpkg install alac:x86-windows-static-md
 	.\vcpkg install expat:x86-windows-static-md expat:x86-windows-static
