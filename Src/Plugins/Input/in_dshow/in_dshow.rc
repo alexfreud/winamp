@@ -1,0 +1,197 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 179, 89
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nullsoft DirectShow Decoder Configuration"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "File Association",IDC_STATIC,4,5,171,62
+    LTEXT           "Extension list (semicolon delimited):",IDC_STATIC,10,17,114,8
+    EDITTEXT        IDC_TYPES,10,29,159,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set to default",IDC_DEFAULTTYPES,10,48,54,13
+    LTEXT           "Default: ""MPG;MPEG;M2V;AVI""",IDC_STATIC,68,50,99,8
+    DEFPUSHBUTTON   "OK",IDOK,71,71,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,125,71,50,13
+END
+
+IDD_FILEINFO DIALOGEX 0, 0, 263, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DirectShow File Info"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_FILENAME,4,5,255,13,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Info",IDC_STATIC,4,22,255,50
+    LTEXT           "",IDC_INFO,11,32,242,36
+    GROUPBOX        "Currently Used Filters (double-click to set properties)",IDC_STATIC,4,75,255,81
+    LISTBOX         IDC_FILTERLIST,11,87,242,53,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_FPS,11,143,242,8
+    DEFPUSHBUTTON   "OK",IDOK,209,162,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 175
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_FILEINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 259
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_DSHOW_PLUGIN "Nullsoft DirectShow Decoder v%s"
+    65535                   "{20395FD0-AC67-446d-B8D0-D88BFD3174FC}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_DSHOW_PLUGIN_OLD "Nullsoft DirectShow Decoder"
+    IDS_VIDEO_FILES_OFD     "Video Files ("
+    IDS_VIDEO_SIZE          "Video size: %dx%d\n"
+    IDS_VIDEO               "Video: %dx%d "
+    IDS_VIDEO_KBPS          "Video: %dx%d (%dkbps) "
+    IDS_VIDEO_SIZE_KBPS     "Video size: %dx%d (%dkbps)\n"
+    IDS_AUDIO               "Audio: %dhz, %dbit, %dch\n"
+    IDS_AUDIO_KBPS          "Audio: %dhz, %dbit, %dch (%dkbps)\n"
+    IDS_AUDIO_S             "Audio: %dkhz %dbit %s "
+    IDS_STRING11            "Audio: %dkhz %dbit %s"
+    IDS_AUDIO_CH            "Audio: %dhz, %dbit, %dch\n"
+    IDS_STEREO              "Stereo"
+    IDS_MONO                "Mono"
+    IDS_LENGTH              "Length: %d:%02d:%02d\nBitrate: %dkbps"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DURATION            "(%d:%02d:%02d) %dkbps"
+    IDS_NO_AVAILABLE_INFO   "No available info"
+    IDS_AVERAGE_FPS         "Average FPS: %.02f"
+    IDS_BUFFERING           "Buffering (%d%%)"
+    IDS_FPS                 "fps"
+    IDS_FAMILY_STRING_MPEG  "MPEG Video Format"
+    IDS_FAMILY_STRING_MPEG2 "MPEG-2 Video Format"
+    IDS_FAMILY_STRING_AVI   "AVI Video Format"
+    IDS_ABOUT_TEXT          "%s\n© 2003-2023 Winamp SA\n\nBuild date: %hs"
+    IDS_TRACK_X             "Track %d"
+    IDS_TRACK_1             "Track 1"
+    IDS_FAMILY_STRING_MOV   "QuickTime Movie"
+    IDS_FAMILY_STRING_FLV   "Flash Video"
+    IDS_FAMILY_STRING_OGV   "Ogg Video File"
+    IDS_FAMILY_STRING_OGA   "Ogg Audio File"
+    IDS_FAMILY_STRING_OGM   "Ogg Media File"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FAMILY_STRING_RM    "Real Media Video File"
+    IDS_FAMILY_STRING_VOB   "DVD Video File"
+    IDS_FAMILY_STRING_AC3   "AC3 Audio File"
+    IDS_FAMILY_STRING_MKV   "Matroska Video"
+    IDS_FAMILY_STRING_MP4   "MPEG-4 File Format"
+    IDS_FAMILY_STRING_M4V   "MPEG-4 Video File Format"
+    IDS_FAMILY_STRING_3GPP  "3GPP File Format"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Shoutcast Source DSP Plug-in Configuration Examples</title>
+	<style type="text/css">body,table,textarea,pre{font-family:Arial,Helvetica,sans-serif;font-size:10pt;}
+	.header{background-color:rgb(66,164,189);color:white;padding:1px;}
+	a:link,a:visited{color:#2762AE;text-decoration:none;}
+	a:hover{text-decoration:underline;}
+	ul{list-style-type:none;text-align:left;}
+	pre{background-color:#F0F0F0;border:1px solid #CCCCCC;font-weight:bold;padding:5px 10px 5px 10px;display:inline-block;margin-top:0;margin-bottom:0;margin-left:25px;}
+	pre.src{border:0;font-family:monospace;background-color:white;}
+	span.c{font-style:italic;font-weight:normal;color:#808080;}
+	span.v{font-weight:normal;}
+	span.r{font-weight:normal;color:#000066;}
+	span.s{font-weight:normal;color:#FF0000;}
+	#toc{border:1px solid #CCCCCC;padding:0 5px 0 5px;text-align: center;}
+	p.ver{font-size:85%;margin-top:-1.5em;text-align:center;}
+	.thumb,.thumb_about,.thumb_config{float:right;margin-left:10px;margin-top:5px;margin-bottom:10px;}
+	.thumb{width:132px;}
+	.thumb_about{width:242px;}
+	.thumb_config{width:402px;}
+	img{border:0;height:203px;width:130px;}
+	img.about{height:185px;width:240px;}
+	img.config{height:312px;width:400px;}
+	hr{border:0;background-color:#CCCCCC;height:1px;)</style>
+	<script type="text/javascript">if(window.showTocToggle){var tocShowText="show";var tocHideText="hide";showTocToggle()}function showTocToggle(){if(document.createTextNode){var linkHolder=document.getElementById('toctitle');if(!linkHolder){return}var outerSpan=document.createElement('span');outerSpan.className='toctoggle';var toggleLink=document.createElement('a');toggleLink.id='togglelink';toggleLink.className='internal';toggleLink.href='javascript:toggleToc()';toggleLink.appendChild(document.createTextNode(tocHideText));outerSpan.appendChild(document.createTextNode('['));outerSpan.appendChild(toggleLink);outerSpan.appendChild(document.createTextNode(']'));linkHolder.appendChild(document.createTextNode(' '));linkHolder.appendChild(outerSpan);var cookiePos=document.cookie.indexOf("dsp_eg_hidetoc=");if(cookiePos>-1&&document.cookie.charAt(cookiePos+15)==1){toggleToc()}}}function changeText(el,newText){if(el.innerText){el.innerText=newText}else if(el.firstChild&&el.firstChild.nodeValue){el.firstChild.nodeValue=newText}}function toggleToc(){var toc=document.getElementById('toc').getElementsByTagName('ul')[0];var toggleLink=document.getElementById('togglelink');if(toc&&toggleLink&&toc.style.display=='none'){changeText(toggleLink,tocHideText);document.getElementById('toc').style.cssFloat='left';toc.style.display='block';document.cookie="dsp_eg_hidetoc=0"}else{changeText(toggleLink,tocShowText);document.getElementById('toc').style.cssFloat='';toc.style.display='none';document.cookie="dsp_eg_hidetoc=1"}}window.onload=function(){var cookiePos=document.cookie.indexOf("dsp_eg_hidetoc=");if(cookiePos>-1&&document.cookie.charAt(cookiePos+15)==1){toggleToc()}}</script>
+</head>
+<div class="header">
+<h1 align="center">Shoutcast Source DSP Plug-in Configuration Examples</h1>
+<p class="ver">(Last Updated 26 September 2014)</p>
+</div>
+<table id="toc" style="float:left;margin-right:40px;margin-bottom:5px;"><tbody><tr><td>
+<div id="toctitle"><b>Contents</b> <span class="toctoggle">[<a id="togglelink" class="internal" href="javascript:toggleToc()">hide</a>]</span></div>
+<ul style="padding-left:0px;">
+<li><a href="#Introduction">1 Introduction</a></li>
+<li><a href="#Configurations">2 Configurations</a>
+<ul>
+<li><a href="#Direct_Source_to_a_Shoutcast_v2_DNAS_Server">2.1 Direct Source to a Shoutcast 2.x DNAS Server</a></li>
+<li><a href="#Direct_Source_to_a_Shoutcast_v1_DNAS_Server_.28Legacy.29">2.2 Direct Source to a Shoutcast 1.x DNAS Server (Legacy)</a></li>
+</ul>
+</li>
+</ul>
+</td></tr></tbody></table>
+
+<a name="Introduction"></a><h2>1.&nbsp;Introduction</h2>
+<hr>
+<p>The aim of this document is to show you what needs to be entered in the different options in the plug-ins configuration window to allow it to work with the DNAS server (sc_serv) configuration examples. Although this does not cover cases of connecting to other Shoutcast compatible server software or Transcoder / AutoDJ instances, it should still allow you to get broadcasting as long as you have the basic information needed.</p>
+<p><br></p>
+
+<a name="Configurations"></a><h2>2.&nbsp;Configurations <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<p>In all of the example configurations, it is assumed that Winamp has been chosen as the input source for the stream(s) being created and that all of the passwords used are the same as those in the DNAS server example configuration files. Remember that you should change the example passwords when setting up your Shoutcast system.</p>
+<p>The choice of the encoder used is left as something for you to decide upon considering the DSP plug-in supports MP3 and AAC along with all of the different bitrates, etc. However this should not cause an issue with the example setups used but is something you need to decide upon as part of the general process in setting up a Shoutcast system.</p>
+<p>Finally the name of the options as shown in the english translation of the plug-in on its 'Output' tab (<a href="Source_DSP_Plug-in.html#Output_Tab">see Source DSP - section 3.2</a>) will be used in this file to identify the options which need to be entered. This is mentioned incase a localised version of the DSP plug-in is used (a nice feature implemented in version 2 of the plug-in).</p>
+<pre>Since v2.3.4, the Source DSP can automatically try to choose
+the correct mode to connect to the DNAS server. If this does
+not work as expected then you can select the expected mode.</pre>
+<p><br></p>
+
+<a name="Direct_Source_to_a_Shoutcast_v2_DNAS_Server"></a><h2>2.1.&nbsp;Direct Source to a Shoutcast 2.x DNAS Server <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<div class="thumb_config"><a href="res/Direct_Source_to_a_Shoutcast_v2_DNAS_Server.png" title="Direct Source to a Shoutcast 2.x DNAS Server"><img class="config" alt="Direct Source to a Shoutcast 2.x DNAS Server" src="res/Direct_Source_to_a_Shoutcast_v2_DNAS_Server.png"></a></div>
+<h3>Connection Tab</h3>
+<p><b>Server Address</b>&nbsp;: localhost (or the IP of the server if it is different from the local machine [<a href="Source_DSP_Plug-in.html#Login_Tab">see Source DSP - section 3.2.1</a>] ).</p>
+<p><b>Port</b>&nbsp;: 8000 (or the value set for 'portbase' [<a target="_blank" href="http://wiki.shoutcast.com/wiki/Shoutcast_DNAS_Server_2#Networking">see DNAS server - section 4.8</a>] ).</p>
+<p><b>Stream ID</b>&nbsp;: 1 (or the value set for 'streamid' for the relevant connection being made to the server [<a target="_blank" href="http://wiki.shoutcast.com/wiki/Shoutcast_DNAS_Server_2#Stream_Configuration">see DNAS server - section 4.12</a>] ).</p>
+<p><b>DJ / User ID</b>&nbsp;: this can be left blank and is not used with a source connection.</p>
+<p><b>Password</b>&nbsp;: testing (or the value set for 'password' [<a target="_blank" href="http://wiki.shoutcast.com/wiki/Shoutcast_DNAS_Server_2#Networking">see DNAS server - section 4.8</a>] ).</p>
+<p><b>Connect using:</b>&nbsp;: set to 'Automatic mode' (recommended) or 'v2.x mode'.</p>
+<p><br></p>
+<h3>Directory Tab</h3>
+<p>Here you can enter any details as required to identify or provide contact details for your stream to any clients connecting or when viewed on the Shoutcast Directory listing.</p>
+<p><b>Make this stream public (Recommended)</b>&nbsp;: The usage of this setting depends upon the value 'publicserver' in your server configuration. See <a target="_blank" href="http://wiki.shoutcast.com/wiki/Shoutcast_DNAS_Server_2#YP_Server_Behaviour">DNAS server - section 4.14</a> for details.</p>
+<p><br></p>
+
+<a name="Direct_Source_to_a_Shoutcast_v1_DNAS_Server_.28Legacy.29"></a><h2>2.2.&nbsp;Direct Source to a Shoutcast 1.x DNAS Server (Legacy) <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<div class="thumb_config"><a href="res/Direct_Source_to_a_Shoutcast_v1_DNAS_Server_(Legacy).png" title="Direct Source to a Shoutcast 1.x DNAS Server (Legacy)"><img class="config" alt="Direct Source to a Shoutcast 1.x DNAS Server (Legacy)" src="res/Direct_Source_to_a_Shoutcast_v1_DNAS_Server_(Legacy).png"></a></div>
+<h3>Connection Tab</h3>
+<p><b>Server Address</b>&nbsp;: localhost (or the IP of the server if it is different from the local machine [<a href="Source_DSP_Plug-in.html#Login_Tab">see Source DSP - section 3.2.1</a>] ).</p>
+<p><b>Port</b>&nbsp;: 8000 (or the value set for 'portbase' for the Shoutcast 1.x DNAS server used).</p>
+<p><b>Password</b>&nbsp;: testing (or the value set for 'password' for the Shoutcast 1.x server used).</p>
+<p><b>Connect using:</b>&nbsp;: set to 'Automatic mode' (recommended) or 'v1.x mode'.</p>
+<p><br></p>
+<h3>Directory Tab</h3>
+<p>Here you can enter any details as required to identify or provide contact details for your stream to any clients connecting or when viewed on the Shoutcast Directory listing.</p>
+</body></html>

@@ -1,0 +1,1097 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Winamp - Advanced Title Formatting (ATF) Documentation</title>
+<meta name="generator" content="Notepad++" />
+<meta name="date" content="2007-04-27" />
+<meta name="keywords" content="Advanced Title Formatting, Winamp, ATF" />
+<style type="text/css">
+<!--
+DIV.clearer {CLEAR: both; LINE-HEIGHT: 0; HEIGHT: 0px}
+DIV.no {PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px}
+EM.u {FONT-STYLE: normal; TEXT-DECORATION: underline}
+p.atf {TEXT-ALIGN: left; padding: 0em; FONT-SIZE: 100%; FONT-WEIGHT: normal; FONT-STYLE: normal; WHITE-SPACE: nowrap }
+DIV.atf .header {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; MARGIN-TOP: 10px; MARGIN-BOTTOM: 0px;}
+DIV.atf .pagename {FONT-WEIGHT: bolder; FONT-SIZE: 200%; FLOAT: left; VERTICAL-ALIGN: middle; COLOR: #dee7ec; TEXT-ALIGN: left; border: solid 2px #dee7ec; PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 4px; PADDING-TOP: 1px; MARGIN-LEFT: 10px; MARGIN-TOP: 0px; MARGIN-RIGHT: 0px; MARGIN-BOTTOM: 0px;}
+DIV.atf .pagename A {COLOR: #436976! important; TEXT-DECORATION: none! important}
+DIV.atf .logo {FONT-WEIGHT: normal; FONT-SIZE: 50%; FLOAT: right; VERTICAL-ALIGN: middle; TEXT-ALIGN: right; MARGIN-RIGHT: 15px;}
+DIV.atf .logo A {COLOR: #dee7ec; LETTER-SPACING: 0pt; TEXT-DECORATION: none}
+DIV.atf .bar {CLEAR: both; PADDING-RIGHT: 10px; BORDER-TOP: #8cacbb 1px solid; PADDING-LEFT: 1px; BACKGROUND: #dee7ec; PADDING-BOTTOM: 2px; PADDING-TOP: 1px; BORDER-BOTTOM: #8cacbb 1px solid; HEIGHT: 25px; MARGIN-TOP: 6px; MARGIN-BOTTOM: 5px;}
+DIV.atf .bar-left {FLOAT: left;	HEIGHT: 25px;}
+DIV.atf .bar-right {FLOAT: right; TEXT-ALIGN: right; HEIGHT: 25px;}
+DIV.atf #bar__bottom {MARGIN-BOTTOM: 2px}
+DIV.atf DIV.meta {CLEAR: both; MARGIN-TOP: 1em; FONT-SIZE: 70%; COLOR: #638c9c}
+DIV.atf DIV.meta DIV.user {FLOAT: left}
+DIV.atf DIV.meta DIV.doc {TEXT-ALIGN: right}
+* {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px}
+BODY {FONT: 80% "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif; COLOR: #000; BACKGROUND-COLOR: #fff}
+.indent {MARGIN-LEFT: 62px;	WHITE-SPACE: nowrap}
+.indent2 {MARGIN-LEFT: 67px; WHITE-SPACE: nowrap}
+.smaller {FONT-SIZE: 6px}
+.smallest {FONT-SIZE: 2px}
+DIV.atf DIV.page {MARGIN: 4px 2em 0px 1em; TEXT-ALIGN: left}
+DIV.atf IMG {BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px}
+DIV.atf P {MARGIN: 0px 0px 1em}
+DIV.atf HR {BORDER-TOP: #8cacbb 1px solid; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 0px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px}
+DIV.atf FORM {BORDER-STYLE: none; PADDING: 0px;}
+DIV.atf DIV.toolbar {MARGIN: 2px 0px; TEXT-ALIGN: left}
+DIV.atf .nowrap {WHITE-SPACE: nowrap}
+.nowrap {WHITE-SPACE: nowrap}
+DIV.atf INPUT.button {HEIGHT: 23px; VERTICAL-ALIGN: middle; TEXT-ALIGN: center; BORDER: #8cacbb 1px solid; PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-SIZE: 100%; BACKGROUND-COLOR: #fff; PADDING-BOTTOM: 2px; MARGIN-LEFT: 1px; MARGIN-TOP: 1px; MARGIN-BOTTOM: 0px; MARGIN-RIGHT: 25px; CURSOR: pointer; COLOR: #000; PADDING-TOP: 1px; TEXT-DECORATION: none;}
+DIV.atf A:link {COLOR: #436976; TEXT-DECORATION: none}
+DIV.atf A:visited {COLOR: #436976; TEXT-DECORATION: none}
+DIV.atf A:hover {COLOR: #000; TEXT-DECORATION: underline}
+DIV.atf A:active {COLOR: #000; TEXT-DECORATION: underline}
+DIV.atf H1 A {COLOR: #000! important; TEXT-DECORATION: none! important}
+DIV.atf H2 A {COLOR: #000! important; TEXT-DECORATION: none! important}
+DIV.atf H3 A {COLOR: #000! important; TEXT-DECORATION: none! important}
+DIV.atf H4 A {COLOR: #000! important; TEXT-DECORATION: none! important}
+DIV.atf H5 A {COLOR: #000! important; TEXT-DECORATION: none! important}
+DIV.atf A.nolink {COLOR: #000; TEXT-DECORATION: none}
+DIV.atf A.urlextern:link {COLOR: #436976! important}
+DIV.atf A.urlextern:visited {COLOR: #436976! important}
+DIV.atf A.link1 {COLOR: #090! important}
+DIV.atf A.link2 {COLOR: #f30! important}
+DIV.atf SPAN.user {FONT-SIZE: 90%; COLOR: #ccc}
+DIV.atf LI.minor {COLOR: #666; FONT-STYLE: italic}
+DIV.atf ACRONYM {CURSOR: help; BORDER-BOTTOM: #000 1px dotted}
+DIV.atf H1 {CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 1em; COLOR: #000; PADDING-TOP: 10px; BORDER-BOTTOM: #8cacbb 1px solid}
+DIV.atf H2 {CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 1em; COLOR: #000; PADDING-TOP: 5px; BORDER-BOTTOM: #8cacbb 1px solid}
+DIV.atf H3 {CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 1em; COLOR: #000; PADDING-TOP: 5px; BORDER-BOTTOM: #8cacbb 1px solid}
+DIV.atf H4 {CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 1em; COLOR: #000; PADDING-TOP: 5px; BORDER-BOTTOM: #8cacbb 1px solid}
+DIV.atf H5 {CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 1em; COLOR: #000; PADDING-TOP: 5px; BORDER-BOTTOM: #8cacbb 1px solid}
+DIV.atf H6 {FONT-WEIGHT: bold; FONT-SIZE: 120%; MARGIN-LEFT: 40px; BORDER-BOTTOM-STYLE: none; CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 120%; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 1em; COLOR: #000; PADDING-TOP: 0.5em}
+DIV.atf H1 {FONT-WEIGHT: bold; FONT-SIZE: 160%; MARGIN-LEFT: 0px}
+DIV.atf H2 {FONT-SIZE: 150%; MARGIN-LEFT: 20px}
+DIV.atf H3 {FONT-WEIGHT: bold; FONT-SIZE: 140%; MARGIN-LEFT: 40px; BORDER-BOTTOM-STYLE: none}
+DIV.atf H4 {FONT-WEIGHT: bold; FONT-SIZE: 120%; MARGIN-LEFT: 60px; BORDER-BOTTOM-STYLE: none}
+DIV.atf H5 {FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN-LEFT: 80px; BORDER-BOTTOM-STYLE: none}
+DIV.atf DIV.level1 {MARGIN-LEFT: 3px}
+DIV.atf DIV.level2 {MARGIN-LEFT: 23px}
+DIV.atf DIV.level3 {MARGIN-LEFT: 43px}
+DIV.atf DIV.level4 {MARGIN-LEFT: 63px}
+DIV.atf DIV.level5 {MARGIN-LEFT: 83px}
+DIV.atf UL {LIST-STYLE-IMAGE: none; MARGIN: 0px 0px 0.5em 1.5em; COLOR: #638c9c; LINE-HEIGHT: 1.5em; LIST-STYLE-TYPE: square}
+DIV.atf OL {FONT-WEIGHT: bold; LIST-STYLE-IMAGE: none; MARGIN: 0px 0px 0.5em 1.5em; COLOR: #638c9c; LINE-HEIGHT: 1.5em}
+DIV.atf .li {FONT-WEIGHT: normal; COLOR: #000}
+DIV.atf OL {LIST-STYLE-TYPE: decimal}
+DIV.atf OL OL {LIST-STYLE-TYPE: upper-roman}
+DIV.atf OL OL OL {LIST-STYLE-TYPE: lower-alpha}
+DIV.atf DIV.toc {CLEAR: both; FONT-SIZE: 80%; FLOAT: right; MARGIN: 1.2em 0px 0px 1.7em; WIDTH: 205px}
+DIV.atf DIV.tocheader {BORDER: #8cacbb 1px solid; PADDING: 3px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 2px; BACKGROUND-COLOR: #dee7ec; TEXT-ALIGN: left}
+DIV.atf DIV.tocheader IMG {FLOAT: right; MARGIN: 0.3em 3px 0px 0px; WIDTH: 0.8em; CURSOR: pointer; HEIGHT: 0.8em}
+DIV.atf #toc__inside {BORDER: #8cacbb 1px solid; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.7em; PADDING-TOP: 0.5em; BACKGROUND-COLOR: #fff; TEXT-ALIGN: left}
+DIV.atf UL.toc {PADDING-LEFT: 0.3em; LIST-STYLE-IMAGE: none; MARGIN: 0px; LINE-HEIGHT: 1.2em; LIST-STYLE-TYPE: none}
+DIV.atf UL.toc LI {PADDING-LEFT: 0.3em; BACKGROUND: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAFElEQVQI12OwCYpxSSph0HHzAbIAGeoDrdYV6fMAAAAASUVORK5CYII=) no-repeat 0px 0.6em}
+DIV.atf UL.toc LI.clear {PADDING-LEFT: 0.4em; BACKGROUND-IMAGE: none}
+DIV.atf A.toc:link {COLOR: #436976}
+DIV.atf A.toc:visited {COLOR: #436976}
+DIV.atf A.toc:hover {COLOR: #000}
+DIV.atf A.toc:active {COLOR: #000}
+-->
+</style>
+<!-- originally saved from http://www.myplugins.info/winamp-wiki/doku.php/advanced_title_formatting -->
+<!-- original credits to Shane Hird and Ben Allison -  this document modified and edited for Winamp by DJ Egg -->
+</head>
+
+<body>
+
+<div class="atf">
+<a href="top" name="top"></a>
+<div class="stylehead">
+
+<div class="header">
+<div class="pagename"><a href="javascript: window.location.reload()">Advanced&nbsp;Title&nbsp;Formatting</a></div>
+<div class="clearer"></div>
+</div>
+
+<div class="bar" id="bar__top">
+<div class="bar-left" id="bar__topleft"></div>
+<!--<div class="langform" id="langselect">
+<form name="lang" action="" method="post">
+<select name="xfer" size="1" onmouseup= "location = '' + this.options[this.selectedIndex ].value;">
+<option value="atf.htm" selected="selected">English</option>
+<option value="atf-nl.htm">Dutch</option>
+<option value="atf-fr.htm">French</option>
+<option value="atf-de.htm">German</option>
+<option value="atf-it.htm">Italian</option>
+<option value="atf-jp.htm">Japanese</option>
+<option value="atf-pl.htm">Polish</option>
+<option value="atf-pt.htm">Portuguese</option>
+<option value="atf-ro.htm">Romanian</option>
+<option value="atf-ru.htm">Russian</option>
+<option value="atf-es.htm">Spanish</option>
+<option value="atf-se.htm">Swedish</option>
+<option value="atf-tr.htm">Turkish</option>
+</select>
+</form>
+</div>-->
+<div class="bar-right" id="bar__topright"></div>
+</div>
+
+</div>
+
+<div class="page">
+<div class="toc">
+<div class="tocheader" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#winamp_atf_reference" class="toc">Winamp ATF Reference</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#atf_usage" class="toc">ATF Usage</a></span></div></li>
+
+<li class="level3"><div class="li"><span class="li"><a href="#fields" class="toc">Fields</a></span></div>
+<ul class="toc">
+
+<li class="level4"><div class="li"><span class="li"><a href="#provided_by_winamp" class="toc">Provided by Winamp</a></span></div>
+<ul class="toc">
+<li class="level5"><div class="li"><span class="li"><a href="#filename" class="toc">%filename%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#folder" class="toc">%folder%</a></span></div></li>
+</ul>
+</li>
+
+<li class="level4"><div class="li"><span class="li"><a href="#provided_by_ml" class="toc">Provided by ML</a></span></div>
+<ul class="toc">
+<li class="level5"><div class="li"><span class="li"><a href="#rating" class="toc">%rating%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#playcount" class="toc">%playcount%</a></span></div></li>
+</ul>
+</li>
+
+<li class="level4"><div class="li"><span class="li"><a href="#provided_by_ml_or_input_plugin" class="toc">Provided by ML or input plugin</a></span></div>
+<ul class="toc">
+<li class="level5"><div class="li"><span class="li"><a href="#artist" class="toc">%artist%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#title" class="toc">%title%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#album" class="toc">%album%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#year" class="toc">%year%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#genre" class="toc">%genre%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#comment" class="toc">%comment%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#tracknumber" class="toc">%tracknumber%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#bitrate" class="toc">%bitrate%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#type" class="toc">%type%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#vbr" class="toc">%vbr%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#category" class="toc">%category%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#producer" class="toc">%producer%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#director" class="toc">%director%</a></span></div></li>
+</ul>
+</li>
+
+<li class="level4"><div class="li"><span class="li"><a href="#provided_by_input_plugin" class="toc">Provided by input plugin</a></span></div>
+<ul class="toc">
+<li class="level5"><div class="li"><span class="li"><a href="#length" class="toc">%length%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#disc" class="toc">%disc%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#track" class="toc">%track%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#composer" class="toc">%composer%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#streamtitle" class="toc">%streamtitle%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#albumartist" class="toc">%albumartist%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#mood" class="toc">%mood%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#bpm" class="toc">%bpm%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#key" class="toc">%key%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#publisher" class="toc">%publisher%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#lyricist" class="toc">%lyricist%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#conductor" class="toc">%conductor%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#tool" class="toc">%tool%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#family" class="toc">%family%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#encoder" class="toc">%encoder%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#isrc" class="toc">%ISRC%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#replaygain_track_gain" class="toc">%replaygain_track_gain%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#replaygain_album_gain" class="toc">%replaygain_album_gain%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#replaygain_track_peak" class="toc">%replaygain_track_peak%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#replaygain_album_peak" class="toc">%replaygain_album_peak%</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#gain" class="toc">%gain%</a></span></div></li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="level3"><div class="li"><span class="li"><a href="#functions" class="toc">Functions</a></span></div>
+<ul class="toc">
+<li class="level4"><div class="li"><span class="li"><a href="#control_flow" class="toc">Control Flow</a></span></div>
+<ul class="toc">
+<li class="level5"><div class="li"><span class="li"><a href="#conditional_section" class="toc">[...] Conditional section</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#if" class="toc">$if</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#if2" class="toc">$if2</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#if3" class="toc">$if3</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#decode" class="toc">$decode</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#ifgreater" class="toc">$ifgreater</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#iflonger" class="toc">$iflonger</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#ifstrequal2" class="toc">$IfStrEqual2</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#ifstrequal" class="toc">$IfStrEqual</a></span></div></li>
+</ul>
+</li>
+
+<li class="level4"><div class="li"><span class="li"><a href="#logic_operations" class="toc">Logic Operations</a></span></div>
+<ul class="toc">
+<li class="level5"><div class="li"><span class="li"><a href="#and" class="toc">$and</a></span></div></li>
+</ul>
+</li>
+
+<li class="level4"><div class="li"><span class="li"><a href="#arithmetic_operations" class="toc">Arithmetic Operations</a></span></div>
+<ul class="toc">
+<li class="level5"><div class="li"><span class="li"><a href="#mod" class="toc">$mod</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#div" class="toc">$div</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#mul" class="toc">$mul</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#muldiv" class="toc">$muldiv</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#sub" class="toc">$sub</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#add" class="toc">$add</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#greater" class="toc">$greater</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#max" class="toc">$max</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#min" class="toc">$min</a></span></div></li>
+</ul>
+</li>
+
+<li class="level4"><div class="li"><span class="li"><a href="#string_operations" class="toc">String Operations</a></span></div>
+<ul class="toc">
+<li class="level5"><div class="li"><span class="li"><a href="#lower" class="toc">$lower</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#upper" class="toc">$upper</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#replace" class="toc">$replace</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#left" class="toc">$left</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#right" class="toc">$right</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#len" class="toc">$len</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#substr" class="toc">$substr</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#strstr" class="toc">$strstr</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#strrchr" class="toc">$strrchr</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#strlchr" class="toc">$strlchr</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#strchr" class="toc">$strchr</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#shortest" class="toc">$shortest</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#longest" class="toc">$longest</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#abbr" class="toc">$abbr</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#padcut" class="toc">$padcut</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#cut" class="toc">$cut</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#pad" class="toc">$pad</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#lpad" class="toc">$lpad</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#trim" class="toc">$trim</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#repeat" class="toc">$repeat</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#caps" class="toc">$caps</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#caps2" class="toc">$caps2</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#fileext" class="toc">$fileext</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#filepart" class="toc">$filepart</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#filename1" class="toc">$filename</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#directory" class="toc">$directory</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#split" class="toc">$split</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#ext" class="toc">$ext</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#hex" class="toc">$hex</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#dec" class="toc">$dec</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#num" class="toc">$num</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#null" class="toc">$null</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#pathlpart" class="toc">$PathLPart</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#pathrpart" class="toc">$PathRPart</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#pathltrim" class="toc">$PathLTrim</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#pathrtrim" class="toc">$PathRTrim</a></span></div></li>
+</ul>
+</li>
+
+<li class="level4"><div class="li"><span class="li"><a href="#variables" class="toc">Variables</a></span></div>
+<ul class="toc">
+
+<li class="level5"><div class="li"><span class="li"><a href="#puts" class="toc">$puts</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#put" class="toc">$put</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#get" class="toc">$get</a></span></div></li>
+</ul>
+</li>
+<li class="level4"><div class="li"><span class="li"><a href="#system_info" class="toc">System Info</a></span></div>
+<ul class="toc">
+<li class="level5"><div class="li"><span class="li"><a href="#systime_second" class="toc">$systime_second</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#systime_minute" class="toc">$systime_minute</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#systime_hour" class="toc">$systime_hour</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#systime_day" class="toc">$systime_day</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#systime_month" class="toc">$systime_month</a></span></div></li>
+<li class="level5"><div class="li"><span class="li"><a href="#systime_year" class="toc">$systime_year</a></span></div></li>
+</ul>
+</li>
+<li class="level4"><div class="li"><span class="li"><a href="#others._todo" class="toc">Others. (TODO)</a></span></div></li></ul>
+</li>
+<li class="level3"><div class="li"><span class="li"><a href="#examples" class="toc">Examples</a></span></div>
+<ul class="toc">
+<li class="level4"><div class="li"><span class="li"><a href="#standard_atf" class="toc">Standard ATF syntax</a></span></div></li>
+<li class="level4"><div class="li"><span class="li"><a href="#advanced_atf" class="toc">Advanced ATF syntax</a></span></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li></ul>
+</div>
+</div>
+
+<h1><a id="winamp_atf_reference" name="winamp_atf_reference">Winamp ATF Reference</a></h1>
+<div class="level1">
+<p>Below is an extract of the Winamp supported ATF functionality.<br/>
+ATF determines how Winamp should display metadata in the Playlist window and Main window songticker.
+The global ATF string can be manually edited via the 'Titles' page in the Winamp Preferences.
+<span class="smallest"><br/><br/><br/></span>
+The default ATF string in Winamp is:<br/><i>[%artist% - ]$if2(%title%,$filepart(%filename%)</i>
+<span class="smallest"><br/><br/><br/></span>
+This will be displayed as: '<i>Artist&nbsp;-&nbsp;Title</i>'
+if the Artist and Title metadata fields are populated in the file tags,
+otherwise it will just display the <i>filename</i> instead.</p>
+</div>
+
+<h2><a id="atf_usage" name="atf_usage">ATF Usage</a></h2>
+<div class="level2">
+<p>%blah% denotes a metadata field.<br/><br/>
+$blah() denotes a function call.<br/><br/>
+[] means &quot;don't display unless metadata was found&quot;.</p>
+<p>&#8216;&nbsp;&#8217; (single quotation marks) outputs raw text without parsing. eg.
+&#8216;blah$blah%blah[]&#8217; which will output all the string and ignore the special
+characters ($,%,[,]). </p></div>
+
+<h2><a id="fields" name="fields">Fields</a></h2>
+<div class="level2">
+<p>Note: Fields are defined by various components within Winamp. Some are
+specific to the Media Library (%rating%, %playcount%), some are provided by
+Winamp (%filename%, %folder%). In most cases, however, the input plugin provides
+the fields. Some input plugins provide a greater variety of fields than others.
+For example, the Windows Media plugin (in_wm, Winamp 5.12+), will provide values
+for ANY field in the form %WM/*% (see the extended attributes section of
+<i>View File Info</i> on any wma/wmv/asf file for examples).<br/></p></div>
+
+<h3><a id="provided_by_winamp" name="provided_by_winamp">Provided by Winamp</a></h3>
+<div class="level3"></div>
+
+<h4><a id="filename" name="filename">%filename%</a></h4>
+<div class="level4">
+<p>Returns the full path of the file. To display the filename only, use the
+<a class="link1" title="$filepart" href="#filepart">$filepart</a> function.</p></div>
+
+<h4><a id="folder" name="folder">%folder%</a></h4>
+<div class="level4">
+<p>Returns the containing folder.<br/>Winamp 5.2+ Only.</p></div>
+
+<h3><a id="provided_by_ml" name="provided_by_ml">Provided by ML</a></h3>
+<div class="level3"></div>
+
+<h4><a id="rating" name="rating">%rating%</a></h4>
+<div class="level4">
+<p>Returns the track rating as an integer from 1 to 5, if set. To display as stars or another character,
+use the <a class="link1" title="$repeat" href="#repeat">$repeat</a> function.</p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="playcount" name="playcount">%playcount%</a></h4>
+<div class="level4">
+<p>Returns the playcount (number of times track has been played), if the file is stored in the Media Library database.</p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h3><a id="provided_by_ml_or_input_plugin"
+name="provided_by_ml_or_input_plugin">Provided by ML or input plugin</a></h3>
+<div class="level3">
+<p>For the fields listed below, info is taken from ML only if the file is
+present in the ML database and if the following option is checkmarked:<br/>
+Prefs
+(Ctrl+P) &gt; Media Library &gt; Local Media &gt; &#8216;Use Library title information
+for Playlist Item Formatting&#8217;</p>
+<p>In all other cases, the info is provided by the input plugin (if the
+respective input plugin supports the field). </p>
+<p>Most of these are straightforward and are taken from the standard file tags,
+and therefore don't require any additional explanatory notes.</p></div>
+
+<h4><a id="artist" name="artist">%artist%</a></h4>
+<div class="level4"><p>Returns the Artist field.</p></div>
+
+<h4><a id="title" name="title">%title%</a></h4>
+<div class="level4"><p>Returns the Title field.</p></div>
+
+<h4><a id="album" name="album">%album%</a></h4>
+<div class="level4"><p>Returns the Album field.</p></div>
+
+<h4><a id="year" name="year">%year%</a></h4>
+<div class="level4"><p>Returns the Year field.</p></div>
+
+<h4><a id="genre" name="genre">%genre%</a></h4>
+<div class="level4"><p>Returns the Genre field.</p></div>
+
+<h4><a id="comment" name="comment">%comment%</a></h4>
+<div class="level4"><p>Returns the Comment field.</p></div>
+
+<h4><a id="tracknumber" name="tracknumber">%tracknumber%</a></h4>
+<div class="level4"><p>Returns the TrackNumber with no padding, eg. Track 1 will be displayed as 1.<br/>
+To pad with zeros, eg. 01, 02...10, 11, use the <a class="link1" title="$num" href="#num">$num</a> or <a class="link1" title="$lpad" href="#lpad">$lpad</a> function.</p></div>
+
+<h4><a id="track" name="track">%track%</a></h4>
+<div class="level4"><p>Same as %tracknumber%</p></div>
+
+<h4><a id="albumartist" name="albumartist">%albumartist%</a></h4>
+<div class="level4">
+<p>Returns the Album Artist field.<br/>
+Winamp 5.3+ Only.</p></div>
+
+<h4><a id="disc" name="disc">%disc%</a></h4>
+<div class="level4">
+<p>Returns the Disc No. tag, if available, eg. 1/2 (Disc #1 of a 2CD set).</p></div>
+
+<h4><a id="composer" name="composer">%composer%</a></h4>
+<div class="level4"><p>Returns the Composer field.</p></div>
+
+<h4><a id="publisher" name="publisher">%publisher%</a></h4>
+<div class="level4"><p>Returns the Publisher (Record Label) field.<br/>Winamp 5.3+ Only.</p></div>
+
+<h4><a id="streamtitle" name="streamtitle">%streamtitle%</a></h4>
+<div class="level4"><p>Returns the Streaming Title for streams, if one exists.</p></div>
+
+<h4><a id="bitrate" name="bitrate">%bitrate%</a></h4>
+<div class="level4"><p>Returns the Bitrate (will use average bitrate for vbr).</p></div>
+
+<h4><a id="length" name="length">%length%</a></h4>
+<div class="level4">
+<p>Returns length of the track in miliseconds. For a formatted track length,
+use<br/><i>$div(%length%,60000):$num($div($mod(%length%,60000),1000),2)</i>
+</p></div>
+
+<h4><a id="type" name="type">%type%</a></h4>
+<div class="level4">
+<p>Returns 1 for video, 0 for audio.<br/>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="vbr" name="vbr">%vbr%</a></h4>
+<div class="level4">
+<p>Returns 1 for VBR(Variable Bitrate) audio, 0 for CBR(Constant Bitrate)
+audio.</p></div>
+
+<h4><a id="category" name="category">%category%</a></h4>
+<div class="level4"><p>Returns the Category field.<br/>Winamp 5.55+ Only.<br/></p></div>
+
+<h4><a id="producer" name="producer">%producer%</a></h4>
+<div class="level4"><p>Returns the (record or film) Producer field.<br/>Winamp 5.57+ Only.<br/></p></div>
+
+<h4><a id="director" name="director">%director%</a></h4>
+<div class="level4"><p>Returns the (film) Director field, mainly used for videos.<br/>Winamp 5.57+ Only.<br/></p></div>
+
+<h3><a id="provided_by_input_plugin" name="provided_by_input_plugin">Provided by
+input plugin</a></h3>
+<div class="level3">
+<p>The fields listed below may not work for all file formats.</p></div>
+
+<h4><a id="trackartist" name="trackartist">%trackartist%</a></h4>
+<div class="level4"><p>Returns the Track Artist field (equivalent to Artist), if different to Album Artist.<br/>
+Winamp 5.3+ Only.</p></div>
+
+<h4><a id="mood" name="mood">%mood%</a></h4>
+<div class="level4"><p>Returns the Mood field.<br/>Winamp 5.3+ Only.</p></div>
+
+<h4><a id="bpm" name="bpm">%bpm%</a></h4>
+<div class="level4"><p>Returns the BPM (Beats Per Minute), if data&#47;field exists.<br/>Winamp 5.3+ Only.</p></div>
+
+<h4><a id="key" name="key">%key%</a></h4>
+<div class="level4"><p>Returns the Key field (eg. E Minor), if it exists.<br/>Winamp 5.3+ Only.</p></div>
+
+<h4><a id="lyricist" name="lyricist">%lyricist%</a></h4>
+<div class="level4"><p>Returns the Lyricist field.<br/>Winamp 5.3+ Only.</p></div>
+
+<h4><a id="conductor" name="conductor">%conductor%</a></h4>
+<div class="level4"><p>Returns the Conductor field.<br/>Winamp 5.3+ Only.</p></div>
+
+<h4><a id="tool" name="tool">%tool%</a></h4>
+<div class="level4"><p>Returns the Encoded&#47;Tool (software used to rip&#47;encode track) field, eg. Winamp 5.34.<br/>
+Winamp 5.3+ Only.</p></div>
+
+<h4><a id="family" name="family">%family%</a></h4>
+<div class="level4"><p>Returns the filetype's Family, eg. M4A returns: MPEG-4 Audio File Format<br/>Winamp 5.5+ Only.</p></div>
+
+<h4><a id="encoder" name="encoder">%encoder%</a></h4>
+<div class="level4"><p>Returns the Encoder, eg. LAME 3.97<br/>Winamp 5.3+ Only.</p></div>
+
+<h4><a id="isrc" name="isrc">%ISRC%</a></h4>
+<div class="level4">
+<p>International Standard Recording Code, or ISO 3901 (<a class="urlextern" title="http://www.id3.org/isrc.html"
+href="http://www.id3.org/isrc.html" rel="nofollow" target="_blank">Info</a>)<br/>Winamp 5.3+ Only.
+</p></div>
+
+<h4><a id="replaygain_track_gain" name="replaygain_track_gain">%replaygain_track_gain%</a></h4>
+<div class="level4"><p>Returns the ReplayGain Track Gain value (eg. -3.16 dB), if it exists.<br/>
+Winamp 5.3+ Only.</p></div>
+
+<h4><a id="replaygain_album_gain" name="replaygain_album_gain">%replaygain_album_gain%</a></h4>
+<div class="level4"><p>Returns the ReplayGain Album Gain value, if it exists.<br/>
+Winamp 5.3+ Only.</p></div>
+
+<h4><a id="replaygain_track_peak" name="replaygain_track_peak">%replaygain_track_peak%</a></h4>
+<div class="level4"><p>Returns the ReplayGain Track Peak value, if it exists.<br/>
+Winamp 5.3+ Only.</p></div>
+
+<h4><a id="replaygain_album_peak" name="replaygain_album_peak">%replaygain_album_peak%</a></h4>
+<div class="level4"><p>Returns the ReplayGain Album Peak value, if it exists.<br/>
+Winamp 5.3+ Only.</p></div>
+
+<h4><a id="gain" name="gain">%gain%</a></h4>
+<div class="level4"><p>Returns the Gain value, if it exists.<br/>Winamp 5.3+ Only.</p></div>
+
+<h2><a id="functions" name="functions">Functions</a></h2>
+<div class="level2">
+<p>Notes: Be careful about spaces after commas. <i>$if(%title%, Has A Title,
+Has No Title)</i> will display<br/>&#8220;&nbsp;Has A Title&#8221; (note leading
+space)<br/><b>not</b> &#8220;Has A Title&#8221;.<br/>The proper form should be
+<i>$if(%title%,Has A Title,Has No Title)</i>.<br/></p></div>
+
+<h3><a id="control_flow" name="control_flow">Control Flow</a></h3>
+<div class="level3"></div>
+
+<h4><a id="conditional_section" name="conditional_section">[...] Conditional
+section</a></h4>
+<div class="level4"></div>
+
+<h4><a id="if" name="if">$if</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a, then,
+else)</i><br/><b>Returns:</b> If <i>a</i> contains at least one
+valid, non-empty field, <i>then</i> is evaluated and returned, otherwise the
+<i>else</i> parameter is. Note that $if(A,A,B) is equivalent to
+$if2(A,B)<br/><b>Example:</b> <i>$if(%artist%,Has an artist tag,Has no
+artist tag)</i></p></div>
+
+<h4><a id="if2" name="if2">$if2</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a, else)</i><br/><b>Returns:</b>
+If <i>a</i> contains a valid, non-empty field, <i>a</i> is evaluated and
+returned, otherwise the <i>else</i> parameter is.<br/><b>Example:</b>
+<i>$if2(%album%,no-album)</i> </p></div>
+
+<h4><a id="if3" name="if3">$if3</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, ..., aN,
+else)</i><br/><b>Returns:</b> If one of <i>a1</i>... <i>aN</i>
+contains a valid, non-empty field, the value is evaluated and returned,
+otherwise the <i>else</i> parameter is used.<br/><b>Example:</b>
+<i>$if3(%artist%,%filename%,%album%,no field)</i></p></div>
+
+<h4><a id="decode" name="decode">$decode</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a, b1, c1, ..., bN, cN,
+else)</i><br/><b>Returns:</b> <i>cN</i> or <i>else</i>. A
+switch/case function, which determines which <i>bN</i> parameter is equal to
+<i>a</i> and returns the corresponding <i>cN</i> parameter. If none are
+matched, it returns the final parameter
+<i>else</i>.<br/><b>Example:</b>
+<i>$decode($fileext(%filename%),MP3,MPEG-1 Layer 3,MP4,MPEG-4 Container,Other)</i></p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="ifgreater" name="ifgreater">$ifgreater</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1, x2, then,
+else)</i><br/><b>Returns:</b> Compares the integer numbers x1 and x2,
+if x1 is greater than x2, <i>then</i> is evaluated and its value returned.
+Otherwise the <i>else</i> part is evaluated and its value
+returned.<br/><b>Example:</b> <i>$ifgreater(%rating%,2,Highly rated
+song,Not highly rated song)</i></p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="iflonger" name="iflonger">$iflonger</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, x1, then,
+else)</i><br/><b>Returns:</b> Compares whether the length of string a1
+is longer than x1 characters, if a1 is longer, the <i>then</i> part is evaluated and its value returned. Otherwise the <i>else</i> part is evaluated and its value
+returned.<br/><b>Example:</b> <i>$iflonger(%title%,15,A long title,A
+short title)</i></p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="ifstrequal2" name="ifstrequal2">$IfStrEqual2</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(A, B, then,
+else)</i><br/><b>Returns:</b> If <i>A = B</i> do <i>then</i> else
+do <i>else</i><br/>
+<b>Example:</b> <i>$IfStrEqual2(%year%,2007,New!:,Old:)</i><br/>
+<b>Example:</b> <i>$IfStrEqual2(%type%,1,'(Video)','(Audio)')</i></p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="ifstrequal" name="ifstrequal">$IfStrEqual</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(A, B,
+then)</i><br/><b>Returns:</b> If <i>A = B</i> do <i>then</i> else
+nothing<br/><b>Example:</b> <i>$IfStrEqual(%year%,2007,New!:)</i>
+will print &#8220;New!&#8221; if the media was published in 2007.</p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h3><a id="logic_operations" name="logic_operations">Logic Operations</a></h3>
+<div class="level3"></div>
+
+<h4><a id="and" name="and">$and</a></h4>
+<div class="level4">
+<p>&#8211; Removed &#8211;<br/><b>Parameters:</b> <i>(%a%, %b%)</i> &#8211; The fields
+to check if populated.<br/><b>Returns:</b> 1 if the fields %a% and %b%
+are populated. An empty string if not. (?????)<br/><b>Example:</b>
+<i>$if($and(%artist%,%title%),Has both artist and title,One field is
+missing)</i></p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h3><a id="arithmetic_operations" name="arithmetic_operations">Arithmetic
+Operations</a></h3>
+<div class="level3"></div>
+
+<h4><a id="mod" name="mod">$mod</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1, x2)</i><br/><b>Returns:</b>
+remainder of a division of <i>x1</i> by
+<i>x2</i><br/><b>Example:</b> <i>$mod(21,8)</i> returns &#8220;5&#8221;. </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="div" name="div">$div</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1, x2)</i><br/><b>Returns:</b>
+x1 / x2. Result of a division of <i>x1</i> by
+<i>x2</i><br/><b>Example:</b> <i>$div(60,10)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="mul" name="mul">$mul</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1,x2,...,xn)</i> - List of numbers to
+multiply<br/><b>Returns:</b> x1 * x2 * ... * xn. The supplied numbers
+multiplied<br/><b>Example:</b> <i>$mul(7,8,3,4)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="muldiv" name="muldiv">$muldiv</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1, x2,
+x3)</i><br/><b>Returns:</b> x1 * x2 / 3. <i>x1</i> multiplied by
+<i>x2</i>, divided by <i>x3</i>. Result is rounded to nearest
+integer.<br/><b>Example:</b> <i>$muldiv(10,6,3)</i> returns &#8220;20&#8221;.
+</p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="sub" name="sub">$sub</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1,x2,...,xn)</i> - List of numbers to
+subtract<br/><b>Returns:</b> x1 - x2 - ... - xn. The result of x2...xn
+subtracted from x1.<br/><b>Example:</b> <i>$sub(25,1,3,2,3)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="add" name="add">$add</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1,x2,...,xn)</i> - List of numbers to
+add<br/><b>Returns:</b> x1 + x2 +...+ xn. The addition of all the
+numbers supplied<br/><b>Example:</b>
+<i>$add(2,3,%playcount%,%rating%)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="greater" name="greater">$greater</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1, x2)</i> - Two numbers to
+compare<br/><b>Returns:</b> 1 if <i>x1</i> is greater than
+<i>x2</i>, otherwise nothing. Similar in use to
+$ifgreater()<br/><b>Example:</b> <i>$greater(3,2)</i> &#8211; note does not
+appear to work within a $if() function. </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="max" name="max">$max</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1,...,xn)</i> - List of numbers to
+compare<br/><b>Returns:</b> The largest number in the arguments
+supplied<br/><b>Example:</b> <i>$max(7,8,3,4)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="min" name="min">$min</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1,...,xn)</i> - List of numbers to
+compare<br/><b>Returns:</b> The smallest number in the arguments
+supplied<br/><b>Example:</b> <i>$min(7,8,3,4)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h3><a id="string_operations" name="string_operations">String Operations</a></h3>
+<div class="level3"></div>
+
+<h4><a id="lower" name="lower">$lower</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1)</i><br/><b>Returns:</b> lower
+case of <i>a1</i><br/><b>Example:</b> <i>$lower(%title%)</i>
+</p></div>
+
+<h4><a id="upper" name="upper">$upper</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1)</i><br/><b>Returns:</b> upper
+case of <i>a1</i><br/><b>Example:</b> <i>$upper(%title%)</i>
+</p></div>
+
+<h4><a id="replace" name="replace">$replace</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, a2,
+a3)</i><br/><b>Returns:</b> <i>a1</i> with all occurences of
+<i>a2</i> replaced by <i>a3</i><br/><b>Example:</b>
+<i>$replace(dum,u,o)</i> writes &#8220;dom&#8221;. </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="left" name="left">$left</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, x1)</i><br/><b>Returns:</b>
+the first <i>x1</i> characters of <i>a1</i><br/><b>Example:</b>
+<i>$left(%title%)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="right" name="right">$right</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, x1)</i><br/><b>Returns:</b>
+the last <i>x1</i> characters of <i>a1</i><br/><b>Example:</b>
+<i>$right(%title%)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="len" name="len">$len</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1)</i><br/><b>Returns:</b> the
+number of characters of <i>a1</i><br/><b>Example:</b>
+<i>$len(%artist%)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="substr" name="substr">$substr</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> TODO: <i>(a1,
+a2)</i><br/><b>Returns:</b> TODO:
+<i>a1</i><br/><b>Example:</b> TODO: <i>$substr()</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="strstr" name="strstr">$strstr</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, a2)</i><br/><b>Returns:</b>
+index of first occurence of string <i>a2</i> in
+<i>a1</i><br/><b>Example:</b> <i>$strstr(aacbbabb,ab)</i> returns
+&#8220;6&#8221;. </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="strrchr" name="strrchr">$strrchr</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, a2)</i><br/><b>Returns:</b>
+index of last occurence of character <i>a2</i> in
+<i>a1</i><br/><b>Example:</b> <i>$strrchr(aacbbabb,a)</i> returns
+&#8220;6&#8221;. </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="strlchr" name="strlchr">$strlchr</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, a2)</i><br/><b>Returns:</b>
+index of first occurence of character <i>a2</i> in
+<i>a1</i><br/><b>Example:</b> <i>$strlchr(aacbbabb,a)</i> returns
+&#8220;1&#8221;. </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="strchr" name="strchr">$strchr</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, a2)</i><br/><b>Returns:</b>
+index of first occurence of character <i>a2</i> in
+<i>a1</i><br/><b>Example:</b> <i>$strchr(aacbbabb,a)</i> returns
+&#8220;1&#8221; (same as <i>$strlchr()</i> ??). </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="shortest" name="shortest">$shortest</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, a2)</i><br/><b>Returns:</b>
+<i>a1</i> or <i>a2</i> based on which has the shorter
+length.<br/><b>Example:</b> <i>$shortest(%album%,%folder%)</i>
+</p></div>
+
+<h4><a id="longest" name="longest">$longest</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, a2)</i><br/><b>Returns:</b>
+<i>a1</i> or <i>a2</i> based on which has the greater
+length.<br/><b>Example:</b> <i>$longest(%album%,%folder%)</i>
+</p></div>
+
+<h4><a id="abbr" name="abbr">$abbr</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, x1)</i><br/>
+<b>Returns:</b> <i>a1</i> abbreviated.<br/>
+<b>Examples:</b> <i>$abbr(%album%)</i> converts Album name of eg. &#8220;Final Fantasy VI&#8221; to &#8220;FFVI&#8221;.<br/>
+<i>$abbr(Advanced Title Formatting,10)</i> writes &#8220;ATF&#8221;.<br/>
+<i>$abbr(%album%,10)</i> writes abbreviated Album name, only if longer than 10 char's.<br/>
+<i>x1</i> is optional. If defined,
+<i>a1</i> will only be abbreviated when its length exceeds <i>x1</i> char's.</p></div>
+
+<h4><a id="padcut" name="padcut">$padcut</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, x2)</i><br/><b>Returns:</b>
+<i>a1</i> padded with spaces or cut off, resulting in a string of <i>x2</i>
+characters<br/><b>Example:</b> <i>$padcut(%artist%,15)</i> </p></div>
+
+<h4><a id="cut" name="cut">$cut</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, x2)</i><br/><b>Returns:</b>
+<i>a1</i>, cut off after the <i>x2</i>th
+character<br/><b>Example:</b> <i>$cut(%comment%,15)</i> writes the first 15 characters of the Comment field.</p></div>
+
+<h4><a id="pad" name="pad">$pad</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(string, num,
+padstr)</i><br/><b>Returns:</b> <i>string</i> padded to at least
+<i>num</i> chars, with spaces by default, or specify a character (or repeating
+string) as <i>padstr</i>.<br/><b>Example:</b>
+<i>$pad(%artist%,40)</i>, or <i>$pad(%artist%,40,.)</i> to pad with periods.
+</p></div>
+
+<h4><a id="lpad" name="lpad">$lpad</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(string, num,
+padstr)</i><br/><b>Returns:</b> <i>string</i> padded to at least
+<i>num</i> chars on the left, with spaces by default, or specify a character
+(or repeating string) as <i>padstr</i>.<br/><b>Example:</b>
+<i>$lpad(%tracknumber%,3)</i>, or <i>$lpad(%tracknumber%,3,0)</i> to pad
+zeros in front. </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="trim" name="trim">$trim</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1)</i><br/><b>Returns:</b>
+<i>a1</i> without any leading or trailing spaces<br/><b>Example:</b>
+<i>$trim(%artist%)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="repeat" name="repeat">$repeat</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, x1)</i><br/><b>Returns:</b>
+<i>a1</i> repeated <i>x1</i> times.<br/><b>Example:</b>
+<i>$repeat(*,%rating%)</i> </p>
+<p>($fill() performed this function in Winamp 5.2 and was removed after 5.21.)
+</p></div>
+
+<h4><a id="caps" name="caps">$caps</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1)</i><br/><b>Returns:</b> lower
+case of <i>a1</i>, with first letter of each word in upper
+case<br/><b>Example:</b> <i>$caps(%artist%)</i> </p></div>
+
+<h4><a id="caps2" name="caps2">$caps2</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1)</i><br/><b>Returns:</b>
+<i>a1</i>, with first letter of each word in upper
+case<br/><b>Example:</b> <i>$caps2(%artist%)</i> </p></div>
+
+<h4><a id="fileext" name="fileext">$fileext</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1)</i><br/><b>Returns:</b> file
+extension of <i>a1</i><br/><b>Example:</b>
+<i>$fileext(%filename%)</i> </p></div>
+
+<h4><a id="filepart" name="filepart">$filepart</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1)</i><br/><b>Returns:</b>
+filename of <i>a1</i> (i.e. without the leading
+path)<br/><b>Example:</b> <i>$filepart(%filename%)</i> </p></div>
+
+<h4><a id="filename1" name="filename1">$filename</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1)</i><br/><b>Returns:</b>
+filename of <i>a1</i> (i.e. without the leading
+path)<br/><b>Example:</b> <i>$filename(%filename%)</i> </p></div>
+
+<h4><a id="directory" name="directory">$directory</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, x1)</i><br/><b>Returns:</b>
+directory name of <i>a1</i>, after going up by <i>x1</i>
+levels<br/><b>Example:</b> <i>$directory(%filename%,2)</i><br/>The
+above example will output &#8220;Music&#8221; if the full path of the file is
+&#8220;C:\Music\Artist - Album\Song.mp3&#8221;. <i>x1</i> is optional, default is 1. </p>
+<p>Winamp 5.2+ Only. </p></div>
+
+<h4><a id="split" name="split">$split</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a, token, which)</i><br/><b>Returns:</b> Splitting of disc and&#47;or track strings, eg. to show &quot;1&quot; instead of &quot;1&#47;11&quot;
+<br/><b>Example:</b> <i>[$num(%track%,2)$IfStrNotEqual($split(%track%,/,1),,/$num($split(%track%,/,1),2))]</i>
+</p>
+<p>Winamp 5.5+ Only.</p></div>
+
+<h4><a id="ext" name="ext">$ext</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1)</i><br/><b>Returns:</b> file
+extension of <i>a1</i><br/><b>Example:</b> <i>$ext(%filename%)</i>
+</p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="hex" name="hex">$hex</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1, x2)</i><br/><b>Returns:</b>
+<i>x1</i> formatted as hexidecimal to <i>x2</i> number of digits, padded to
+the left with zeros.<br/><b>Example:</b> <i>$hex(%tracknumber%,4)</i>
+</p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="dec" name="dec">$dec</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1, x2)</i><br/><b>Returns:</b>
+<i>x1</i> zero padded to the left to form a <i>x2</i> digit
+number.<br/><b>Example:</b> <i>$dec(%tracknumber%,5)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="num" name="num">$num</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(x1, x2)</i><br/><b>Returns:</b>
+<i>x1</i> zero padded to the left to form a <i>x2</i> digit
+number.<br/><b>Example:</b> <i>$num(%tracknumber%,5)</i><br/></p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="null" name="null">$null</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> Any number of
+parameters<br/><b>Returns:</b> Nothing<br/><b>Example:</b>
+<i>$null()</i><br/>Does absolutely nothing. It is useful mainly in places where
+a parameter is required, but you want an empty string. </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="pathlpart" name="pathlpart">$PathLPart</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, x1)</i><br/><b>Returns:</b>
+The first <i>x1</i> levels of <i>a1</i><br/><b>Example:</b>
+<i>$PathLPart(%filename%,2)</i><br/>The above example will output &#8220;C:\Music&#8221; if
+the full path of the file is &#8220;C:\Music\Sonic Youth - Daydream Nation\01 - Teen
+Age Riot.mp3&#8221;.<br/></p>
+<p>Winamp 5.3+ Only.</p></div>
+
+<h4><a id="pathrpart" name="pathrpart">$PathRPart</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, x1)</i><br/><b>Returns:</b>
+The last <i>x1</i> levels of <i>a1</i><br/><b>Example:</b>
+<i>$PathRPart(%filename%,2)</i><br/>The above example will output &#8220;Sonic Youth
+- Daydream Nation\01 - Teen Age Riot.mp3&#8221; if the full path of the file is
+&#8220;C:\Music\Sonic Youth - Daydream Nation\01 - Teen Age Riot.mp3&#8221;.<br/></p>
+<p>Winamp 5.3+ Only.</p></div>
+
+<h4><a id="pathltrim" name="pathltrim">$PathLTrim</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, x1)</i><br/><b>Returns:</b>
+<i>a1</i> minus the first <i>x1</i> levels of
+<i>a1</i><br/><b>Example:</b>
+<i>$PathLTrim(%filename%,1)</i><br/>The above example will output &#8220;Music\Sonic
+Youth - Daydream Nation\01 - Teen Age Riot.mp3&#8221; if the full path of the file is
+&#8220;C:\Music\Sonic Youth - Daydream Nation\01 - Teen Age Riot.mp3&#8221;.<br/></p>
+<p>Winamp 5.3+ Only.</p></div>
+
+<h4><a id="pathrtrim" name="pathrtrim">$PathRTrim</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(a1, x1)</i><br/><b>Returns:</b>
+<i>a1</i> minus the last <i>x1</i> levels of
+<i>a1</i><br/><b>Example:</b>
+<i>$PathRTrim(%filename%,1)</i><br/>The above example will output
+&#8220;C:\Music\Sonic Youth - Daydream Nation&#8221; if the full path of the file is
+&#8220;C:\Music\Sonic Youth - Daydream Nation\01 - Teen Age Riot.mp3&#8221;.<br/></p>
+<p>Winamp 5.3+ Only.</p></div>
+
+<h3><a id="variables" name="variables">Variables</a></h3>
+<div class="level3"></div>
+
+<h4><a id="puts" name="puts">$puts</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(name,
+value)</i><br/><b>Returns:</b> Stores <i>value</i> to the named
+variable <i>name</i>. It may be later retrieved using $get(<i>name</i>). Use
+$put() to store a value and also return the value with the one
+function.<br/><b>Example:</b> <i>$puts(artist_title,%artist% -
+%title%)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="put" name="put">$put</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(name,
+value)</i><br/><b>Returns:</b> <i>value</i>. Stores <i>value</i>
+to the named variable <i>name</i>. It may be later retrieved using
+$get(<i>name</i>). Use $puts() to store a value without returning
+it.<br/><b>Example:</b> <i>$put(artist_title,%artist% - %title%)</i>
+</p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="get" name="get">$get</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> <i>(name)</i><br/><b>Returns:</b>
+<i>value</i> of <i>name</i> variable previously set by a $put() or $puts()
+function<br/><b>Example:</b> <i>$get(artist_title)</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h3><a id="system_info" name="system_info">System Info</a></h3>
+<div class="level3"></div>
+
+<h4><a id="systime_second" name="systime_second">$systime_second</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> TODO: <i>(a1,
+a2)</i><br/><b>Returns:</b> TODO:
+<i>a1</i><br/><b>Example:</b> TODO: <i>$systime_second()</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="systime_minute" name="systime_minute">$systime_minute</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> TODO: <i>(a1,
+a2)</i><br/><b>Returns:</b> TODO:
+<i>a1</i><br/><b>Example:</b> TODO: <i>$systime_minute()</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="systime_hour" name="systime_hour">$systime_hour</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> TODO: <i>(a1,
+a2)</i><br/><b>Returns:</b> TODO:
+<i>a1</i><br/><b>Example:</b> TODO: <i>$systime_hour()</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="systime_day" name="systime_day">$systime_day</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> TODO: <i>(a1,
+a2)</i><br/><b>Returns:</b> TODO:
+<i>a1</i><br/><b>Example:</b> TODO: <i>$systime_day()</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="systime_month" name="systime_month">$systime_month</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> TODO: <i>(a1,
+a2)</i><br/><b>Returns:</b> TODO:
+<i>a1</i><br/><b>Example:</b> TODO: <i>$systime_month()</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h4><a id="systime_year" name="systime_year">$systime_year</a></h4>
+<div class="level4">
+<p><b>Parameters:</b> TODO: <i>(a1,
+a2)</i><br/><b>Returns:</b> TODO:
+<i>a1</i><br/><b>Example:</b> TODO: <i>$systime_year()</i> </p>
+<p>Winamp 5.2+ Only.</p></div>
+
+<h3><a id="others._todo" name="others._todo">Others. (TODO)</a></h3>
+<div class="level4">
+<h6><b>$select</b><br/><br/><b>$tab</b><br/><br/><b>$crlf</b><br/><br/><b>$char</b></h6></div>
+
+<h2><a id="examples" name="examples">Examples</a></h2>
+<div class="level2">
+<p>[ .... ] - displays contents of brackets only if at least one of the fields referenced inside has been found, eg.
+<i>[%artist% - ]</i> will show:&nbsp; &quot;Artist - &quot; &nbsp;only if the %artist% tag is populated,
+otherwise it will not show anything at all (including the hyphen and spaces).</p></div>
+
+<h3><a id="standard_atf" name="standard_atf">Standard ATF syntax</a></h3>
+<div class="level3"><p><b>Syntax:</b>&nbsp;[%artist%&nbsp;-&nbsp;][%album%&nbsp;-&nbsp;][$num(%track%,2)&nbsp;-&nbsp;]$if2(%title%,$filepart(%filename%))<br/>
+<b>Example:</b> Pink Floyd - Animals - 02 - Dogs</p></div>
+<div class="level3"><p></p></div>
+
+<div class="level4">
+<p></p></div>
+
+<h3><a id="advanced_atf" name="advanced_atf">Advanced ATF syntax</a></h3>
+<div class="level3"><p class="atf"><b>Syntax:</b>&nbsp;[$if2(%albumartist%,%artist%)&nbsp;-&nbsp;][%album%&nbsp;-&nbsp;][$num(%track%,2)&nbsp;-&nbsp;]<br/>
+<span class="indent">$IfStrNotEqual(%artist%,$if2(%albumartist%,%artist%),[%artist%&nbsp;-&nbsp;])</span><br/>
+<span class="indent">[$if2(%title%,$filepart(%filename%))][$if($fileext(%filename%),'&nbsp;&nbsp;&nbsp;[&nbsp;&nbsp;',)]</span><br/>
+<span class="indent">[%year%&nbsp;&nbsp;|&nbsp;&nbsp;][$fileext(%filename%)&nbsp;][$if(%bitrate%,&nbsp;'|'&nbsp;&nbsp;,)][%bitrate%&nbsp;'kbps'&nbsp;]</span><br/>
+<span class="indent">[$if($fileext(%filename%),']',)][&nbsp;&nbsp;&nbsp;$repeat(*,%rating%)&nbsp;]</span><br/>
+<b>Returns:</b>&nbsp;AlbumArtist&nbsp;-&nbsp;Album&nbsp;-&nbsp;##&nbsp;-&nbsp;Artist&nbsp;-&nbsp;Title&nbsp;&nbsp;[&nbsp;Year&nbsp;|&nbsp;Ext&nbsp;|&nbsp;Bitrate&nbsp;]&nbsp;&nbsp;StarRating<br/>
+<span class="indent2">if AlbumArtist is different to TrackArtist, otherwise shows Standard format.</span><br/>
+<b>Example:</b>&nbsp;Various&nbsp;-&nbsp;Arcana&nbsp;-&nbsp;01&nbsp;-&nbsp;Tripswitch&nbsp;-&nbsp;Calabi&nbsp;Yau&nbsp;&nbsp;&nbsp;[&nbsp;2006&nbsp;&nbsp;|&nbsp;&nbsp;mp3&nbsp;&nbsp;|&nbsp;&nbsp;205&nbsp;kbps&nbsp;]&nbsp;&nbsp;*****</p></div>
+<div class="level3"><p></p></div>
+
+<div class="level4">
+<p></p></div>
+
+</div>
+
+<div class="clearer"></div>
+
+<div class="stylefoot"><br/>
+<div class="meta">
+<div class="user"></div>
+<div class="doc"><!--advanced_title_formatting.htm - Last modified: 2007/04/27  by DJ Egg --></div>
+</div>
+
+<div class="bar" id="bar__bottom">
+<div class="bar-left" id="bar__bottomleft"></div>
+<div class="bar-right" id="bar__bottomright">
+<form action="" method="get">
+<a class="nolink" href="#top"><input class="button" title="Back to top" onclick="window.scrollTo(0, 0)" type="button" value="Back to top" /></a>
+</form>
+</div>
+<div class="clearer"></div>
+</div>
+
+</div>
+</div>
+
+<div class="no"><br/></div>
+</body>
+</html>

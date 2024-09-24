@@ -1,0 +1,77 @@
+You can enable more powerful views using the custom query language.
+
+The basic format is:
+
+<field> <comparison> [value] [<logic operator> <field> <comparison> [value] [...]]
+
+Field names:
+	TYPE: 0 for audio files, 1 for video files
+	FILENAME: Full filename (including path)
+	LENGTH: Length, in seconds (or hh:mm:ss)
+	ARTIST: Artist
+	ALBUM: Album
+	ALBUMARTIST: Album Artist
+	TITLE: Title
+	TRACKNO: Track number of file
+	GENRE: Genre
+	YEAR: Year
+	COMMENT: Comment
+	COMPOSER: Composer
+	DISC: Disc number of a CD set
+	FILESIZE: File size, in kilobytes
+	FILETIME: Last known file date/time on disk
+	LASTUPD: Date/time of file imported to library or modified in library
+	LASTPLAY: Date/time of last play
+	RATING: Rating value (1-5, or 0 or empty for unrated)
+	PLAYCOUNT: Number of plays
+	PUBLISHER: Publisher or record label
+	DIRECTOR: Film director (for videos)
+	PRODUCER: Film or Record producer
+	CATEGORY: Category
+	REPLAYGAIN_ALBUM_GAIN: ReplayGain Album Gain
+	REPLAYGAIN_TRACK_GAIN: ReplayGain Track Gain
+	BITRATE: Bitrate (in KBPS)
+	TRACKS: Total number of tracks on the disc
+	DISCS: Total number of discs in the set
+	ISPODCAST: 1 for a podcast episode, 0 otherwise
+	PODCASTCHANNEL: The name of the channel for a podcast
+	PODCASTPUBDATE: Date/time when the podcast was published
+	LOSSLESS: Shows lossless audio formats, e.g. lossless=1
+
+Comparison operators:
+	'=': String or integer equals value
+	'!=': String or integer does not equal value
+	'<': String or integer is less than value
+	'>': String or integer is greater than value
+	'<=': String or integer is less than or equal to value
+	'>=': String or integer is greater than or equal to value
+	HAS: String contains value
+	NOTHAS: String does not contain value
+	LIKE: String is similar to value ("the" and whitespace are ignored)
+	BEGINS: String begins with value
+	BEGINSLIKE: String begins like value
+	ENDS: String ends with value
+	ISEMPTY: (no comparison value required) TRUE if <field> is empty
+	ISNOTEMPTY: (no comparison value required) TRUE if <field> is not empty
+
+Values:
+	"strings with spaces" or strings_without_spaces
+	integers can be "32" or just 32
+	integers for LENGTH can be a plain integer (seconds), or mm:ss or hh:mm:ss
+	date/timestamps should be [datetime data], which can be either an absolute
+	  or relative time. i.e.: [3 weeks ago], [18:15],  [05/30/2003],
+	  [yesterday noon], [3 days ago 5 pm], [now], [5 mn before may 30th], etc.
+
+Logic operators:
+	&&, &, or AND: boolean AND two comparisons
+	||, |, or OR: boolean OR two comparisons
+	!, or NOT: prefix this to an expression for the boolean NOT of that expression
+
+Examples:
+  all video files: type = 1
+  audio by Air longer than 4 minutes: type = 0 & artist = "air" & length > 4:00
+  all files on drive C: filename BEGINS C:
+  high rated items that haven't been played lately: rating > 3 & lastplay < [1 week ago]
+  newly added items that haven't been played yet: lastupd >= [yesterday] & playcount <= 0
+
+Note that you can also use this syntax in the search field of views. Simply prefix a '?' or 'query:' to your search string

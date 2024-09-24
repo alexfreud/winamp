@@ -1,0 +1,12 @@
+
+
+
+
+major components:
+
+Cloud
+-----
+
+The cloud is the object which is responsible for doing period updates on RSS feeds.
+It automatically scans the feeds.  You can manually refresh via the Refresh(string url) method
+

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="generic">
+      <UniqueIdentifier>{12c2bb0c-53fa-442f-812f-1e57762a8b14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{16f6450f-7013-49fe-a82b-a2a13821ec8c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="generic\dxl_attr.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\dxl_main.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\dxl_reg.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\dxlvinfd.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\dxv_init.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\icmdxv.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\vscreen.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\ximage.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\dxAccurateTime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

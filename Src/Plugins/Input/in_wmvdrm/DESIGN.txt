@@ -1,0 +1,34 @@
+Windows Media works in an asynchronous manner.  
+The WM Decompressor (IWMReader) requires that you provide a class
+deriving from IWMReader (and, optionally, IWMReaderAdvanced) to receive information
+Each delivery of uncompressed media arrives in an OnSample method
+Status messages arrive in an OnStatus method.
+
+The main difficulty that arrives from this approach is that ALL messages funnel through
+a single function.   Audio data and Video data arrive in the same function.  
+Even worse, status messages for file opened, clock error, http buffering, and DRM requirements all arrive in the same function!
+
+In order to handle this properly, a "chain of event handlers" class was developed (WMHandler)
+Any object wishing to receive data or status messages can derive from the WMHandler.  All unhandled
+messages are automatically passed to the next handler in the chain.  Messages that are handled can be
+passed or not passed based on programming requirements.
+
+The main object sets up the chain.  The >> operator has been convienently defined to faciliate the chaining. 
+The left side of the >> line must be the source (WMCallback)
+(e.g.  	callback >>  clock >> drm >> video >> audio >> wait >> this;)
+Handlers may create their own mini-chains (which will get added in-whole) using the WMHandler::Inject() method.
+
+Threading
+------
+7 basic threads
+
+1. Main (Windows) thread
+2. Callback/OnStatus thread
+3. Audio Decoder thread
+4. Video Decoder thread
+5. Audio buffering thread (ours)
+6. Video buffering thread (ours)
+7. Buffering-percent status thread (ours)
+
+There might be additional threads (created in another module) calling in, for functions like getextendedfileinfo
+

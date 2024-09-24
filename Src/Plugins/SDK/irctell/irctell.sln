@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "irctell", "irctell.vcxproj", "{8F034E55-D388-416D-8575-5D765255CFF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F034E55-D388-416D-8575-5D765255CFF6}.Debug|x86.ActiveCfg = Debug|Win32
+		{8F034E55-D388-416D-8575-5D765255CFF6}.Debug|x86.Build.0 = Debug|Win32
+		{8F034E55-D388-416D-8575-5D765255CFF6}.Release|x86.ActiveCfg = Release|Win32
+		{8F034E55-D388-416D-8575-5D765255CFF6}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23036EDD-9085-419F-AF16-2AC1EE49B96D}
+	EndGlobalSection
+EndGlobal

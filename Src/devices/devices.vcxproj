@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{06F6E796-653F-48A9-BA2F-46B679D35F9E}</ProjectGuid>
+    <RootNamespace>devices</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;../wasabi;../agave;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(ProjectDir)x86_Debug\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Xdcmake>
+      <OutputFile>$(ProjectDir)x86_Debug\$(ProjectName).xml</OutputFile>
+    </Xdcmake>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\ 
+xcopy /Y /D $(IntDir)$(TargetName).pdb ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;../wasabi;../agave;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(ProjectDir)x64_Debug\$(ProjectName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Xdcmake>
+      <OutputFile>$(ProjectDir)x64_Debug\$(ProjectName).xml</OutputFile>
+    </Xdcmake>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\ 
+xcopy /Y /D $(IntDir)$(TargetName).pdb ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.;..;../wasabi;../agave;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(ProjectDir)x86_Release\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Xdcmake>
+      <OutputFile>$(ProjectDir)x86_Release\$(ProjectName).xml</OutputFile>
+    </Xdcmake>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.;..;../wasabi;../agave;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(ProjectDir)x64_Release\$(ProjectName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Xdcmake>
+      <OutputFile>$(ProjectDir)x64_Release\$(ProjectName).xml</OutputFile>
+    </Xdcmake>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\nu\trace.cpp" />
+    <ClCompile Include="component.cpp" />
+    <ClCompile Include="deviceCommand.cpp" />
+    <ClCompile Include="deviceConnection.cpp" />
+    <ClCompile Include="deviceEventManager.cpp" />
+    <ClCompile Include="deviceIconStore.cpp" />
+    <ClCompile Include="deviceManager.cpp" />
+    <ClCompile Include="deviceManagerFactory.cpp" />
+    <ClCompile Include="deviceObjectEnum.cpp" />
+    <ClCompile Include="deviceObjectStore.cpp" />
+    <ClCompile Include="deviceSupportedCommand.cpp" />
+    <ClCompile Include="deviceSupportedCommandEnum.cpp" />
+    <ClCompile Include="deviceSupportedCommandStore.cpp" />
+    <ClCompile Include="deviceType.cpp" />
+    <ClCompile Include="discoveryMonitor.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="plugin.cpp" />
+    <ClCompile Include="strings.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\nu\trace.h" />
+    <ClInclude Include="api_devicemanager.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="component.h" />
+    <ClInclude Include="deviceCommand.h" />
+    <ClInclude Include="deviceConnection.h" />
+    <ClInclude Include="deviceEventManager.h" />
+    <ClInclude Include="deviceIconStore.h" />
+    <ClInclude Include="deviceManager.h" />
+    <ClInclude Include="deviceManagerFactory.h" />
+    <ClInclude Include="deviceObjectEnum.h" />
+    <ClInclude Include="deviceObjectStore.h" />
+    <ClInclude Include="deviceSupportedCommand.h" />
+    <ClInclude Include="deviceSupportedCommandEnum.h" />
+    <ClInclude Include="deviceSupportedCommandStore.h" />
+    <ClInclude Include="deviceType.h" />
+    <ClInclude Include="discoveryMonitor.h" />
+    <ClInclude Include="ifc_device.h" />
+    <ClInclude Include="ifc_deviceactivity.h" />
+    <ClInclude Include="ifc_devicecommand.h" />
+    <ClInclude Include="ifc_devicecommandeditor.h" />
+    <ClInclude Include="ifc_deviceconnection.h" />
+    <ClInclude Include="ifc_deviceconnectioneditor.h" />
+    <ClInclude Include="ifc_deviceevent.h" />
+    <ClInclude Include="ifc_deviceeventmanager.h" />
+    <ClInclude Include="ifc_deviceiconstore.h" />
+    <ClInclude Include="ifc_devicemanagerevent.h" />
+    <ClInclude Include="ifc_deviceobject.h" />
+    <ClInclude Include="ifc_deviceobjectenum.h" />
+    <ClInclude Include="ifc_deviceprovider.h" />
+    <ClInclude Include="ifc_devicesupportedcommand.h" />
+    <ClInclude Include="ifc_devicesupportedcommandenum.h" />
+    <ClInclude Include="ifc_devicesupportedcommandstore.h" />
+    <ClInclude Include="ifc_devicetype.h" />
+    <ClInclude Include="ifc_devicetypeeditor.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="plugin.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="strings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="devices.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wasabi\Wasabi.vcxproj">
+      <Project>{3e0bfa8a-b86a-42e9-a33f-ec294f823f7f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

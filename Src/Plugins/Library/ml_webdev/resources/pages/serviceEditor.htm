@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Online Services Editor</title>
+	<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema"/>
+	<meta content="True" name="vs_snapToGrid"/>
+	<meta content="False" name="vs_showGrid"/>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<script src="webdev.js" type="text/javascript"></script>
+	<style type="text/css">#Checkbox1 {width: 321px; top: 160px; left: 64px;}</style>
+</head>
+<body style="overflow-y: auto; overflow-x: auto; overflow: visible; FONT-FAMILY: MS Shell Dlg 2;" onload="WebDevEditor_Init();">
+	<h2 align="center">Online Services Editor</h2>
+	<div align="left" nowrap>
+		<div id="DIV1" style="border: 1px solid gray; clear: both; DISPLAY: block; left: 50%; float: none; visibility: visible; margin-left: -204px; overflow: visible; width: 408px; color: black; position: absolute; height: 217px; background-color: dimgray; top: 126px;" align="center" nowrap ms_positioning="GridLayout">
+		<div style="z-index: 110; left: 16px; position: absolute; top: 14px">Id:</div>
+		<input id="scvedt_edt_id" style="z-index: 101; left: 64px; position: absolute; top: 14px" readonly maxlength="16" size="9" tabindex="1"/>
+		<div style="z-index: 102; left: 16px; position: absolute; top: 46px">Name:</div>
+		<input id="scvedt_edt_name" style="z-index: 103; left: 64px; position: absolute; top: 46px; width: 322px;" maxlength="512" size="48" tabindex="2"/>
+		<div style="z-index: 104; left: 16px; position: absolute; top: 78px">Url:</div>
+		<input id="scvedt_edt_url" style="z-index: 105; left: 64px; position: absolute; top: 78px; width: 321px;" maxlength="2048" size="48" name="Text1" tabindex="3"/>
+		<div style="z-index: 106; left: 16px; position: absolute; top: 110px">Icon:</div>
+		<input id="scvedt_edt_icon" style="z-index: 107; left: 64px; position: absolute; top: 110px; width: 321px;" maxlength="512" size="48" name="Text2" tabindex="4"/> 
+		<div align = "left" style="z-index: 108; position: absolute; width: 320px; top: 143px; left: 60px;" >
+			<input id="svcedt_chk_bypass" name="Checkbox1" tabindex="5" title="Preauthorized service" type="checkbox" value="bypass"/>Preauthorized service</div>
+			<input id="svcedt_btn_save" style="z-index: 109; left: 200px; width: 88px; position: absolute; top: 180px; height: 24px; right: 118px;" onclick="WebDevEditor_Save();" type="submit" value="Save" name="buttonOk" tabindex="6"/> 
+			<input id="svcedt_btn_close" style="z-index: 110; left: 297px; width: 88px; position: absolute; top: 180px; height: 24px" onclick="WebDevEditor_Close();" type="button" value="Cancel" name="buttonCancel" tabindex="7"/>
+		</div>
+	</div>
+</body>
+</html>

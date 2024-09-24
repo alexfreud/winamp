@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "enc_flac", "enc_flac2.vcxproj", "{922008CC-4A0E-4EA1-92F2-AA822965BDF6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4FC28B55-2A14-43D5-86F7-201054F338A9} = {4FC28B55-2A14-43D5-86F7-201054F338A9}
+		{4CEFBC83-C215-11DB-8314-0800200C9A66} = {4CEFBC83-C215-11DB-8314-0800200C9A66}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libFLAC_dynamic", "..\libFLAC\libFLAC_dynamic.vcxproj", "{4CEFBC83-C215-11DB-8314-0800200C9A66}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4FC28B55-2A14-43D5-86F7-201054F338A9} = {4FC28B55-2A14-43D5-86F7-201054F338A9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libogg", "..\libogg\libogg.vcxproj", "{4FC28B55-2A14-43D5-86F7-201054F338A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{922008CC-4A0E-4EA1-92F2-AA822965BDF6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{922008CC-4A0E-4EA1-92F2-AA822965BDF6}.Debug|Win32.Build.0 = Debug|Win32
+		{922008CC-4A0E-4EA1-92F2-AA822965BDF6}.Debug|x64.ActiveCfg = Debug|x64
+		{922008CC-4A0E-4EA1-92F2-AA822965BDF6}.Release|Win32.ActiveCfg = Release|Win32
+		{922008CC-4A0E-4EA1-92F2-AA822965BDF6}.Release|Win32.Build.0 = Release|Win32
+		{922008CC-4A0E-4EA1-92F2-AA822965BDF6}.Release|x64.ActiveCfg = Release|x64
+		{4CEFBC83-C215-11DB-8314-0800200C9A66}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4CEFBC83-C215-11DB-8314-0800200C9A66}.Debug|Win32.Build.0 = Debug|Win32
+		{4CEFBC83-C215-11DB-8314-0800200C9A66}.Debug|x64.ActiveCfg = Debug|x64
+		{4CEFBC83-C215-11DB-8314-0800200C9A66}.Debug|x64.Build.0 = Debug|x64
+		{4CEFBC83-C215-11DB-8314-0800200C9A66}.Release|Win32.ActiveCfg = Release|Win32
+		{4CEFBC83-C215-11DB-8314-0800200C9A66}.Release|Win32.Build.0 = Release|Win32
+		{4CEFBC83-C215-11DB-8314-0800200C9A66}.Release|x64.ActiveCfg = Release|x64
+		{4CEFBC83-C215-11DB-8314-0800200C9A66}.Release|x64.Build.0 = Release|x64
+		{4FC28B55-2A14-43D5-86F7-201054F338A9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4FC28B55-2A14-43D5-86F7-201054F338A9}.Debug|Win32.Build.0 = Debug|Win32
+		{4FC28B55-2A14-43D5-86F7-201054F338A9}.Debug|x64.ActiveCfg = Debug|x64
+		{4FC28B55-2A14-43D5-86F7-201054F338A9}.Debug|x64.Build.0 = Debug|x64
+		{4FC28B55-2A14-43D5-86F7-201054F338A9}.Release|Win32.ActiveCfg = Release|Win32
+		{4FC28B55-2A14-43D5-86F7-201054F338A9}.Release|Win32.Build.0 = Release|Win32
+		{4FC28B55-2A14-43D5-86F7-201054F338A9}.Release|x64.ActiveCfg = Release|x64
+		{4FC28B55-2A14-43D5-86F7-201054F338A9}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0F24E75-21BB-4DDF-A287-A481B554B4EB}
+	EndGlobalSection
+EndGlobal

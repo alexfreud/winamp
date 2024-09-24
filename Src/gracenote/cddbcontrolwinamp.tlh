@@ -1,0 +1,3027 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.30729.01 (e63a5d34).
+//
+// f:\sandbox\20131028_225933\winamp\release\cddbcontrolwinamp.tlh
+//
+// C++ source equivalent of Win32 type library ../gracenote/CDDBControlWinamp.dll
+// compiler-generated file created 10/28/13 at 23:18:29 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("65eba1d4-45e2-4ec5-a7ff-cb7e14659c77"))
+/* LIBID */ __CDDBCONTROLLibNSWinamp;
+enum CDDBErrors;
+enum CDDBCommands;
+enum CDDBLogFlags;
+enum CDDBUIFlags;
+enum CDDBTagFlags;
+enum CDDBEventCodes;
+enum CDDBProperty;
+enum CDDBMatchCode;
+enum CDDBProgressCodes;
+enum CDDBCacheFlags;
+enum CDDBFlushFlags;
+enum CDDBServerMessageCodes;
+enum CDDBServerMessageActions;
+enum CDDBExtDataFlags;
+enum CDDBDataListID;
+enum CDDBDataListOptions;
+enum CDDBDataListFlags;
+enum CddbDataOptions;
+struct __declspec(uuid("fc288125-6636-405c-be68-e9d37700deb0"))
+/* dispinterface */ DCDDBEvents;
+struct __declspec(uuid("723695c2-3b01-42c3-a661-64d2ec30b4e5"))
+/* dual interface */ ICDDBControl;
+struct /* coclass */ CddbUserInfo;
+struct __declspec(uuid("4570cddc-94f8-4b43-b1ac-796d68fac7df"))
+/* dual interface */ ICddbUserInfo;
+struct /* coclass */ CddbOptions;
+struct __declspec(uuid("30755708-ae75-49f8-b99a-ac8d095d0448"))
+/* dual interface */ ICddbOptions;
+struct /* coclass */ CddbDisc;
+struct __declspec(uuid("5220e8fa-b11f-46cf-9786-51b11e05f657"))
+/* dual interface */ ICddbDisc;
+struct /* coclass */ CddbTrack;
+struct __declspec(uuid("7da05059-cfb4-46ce-a788-709a3ad3454d"))
+/* dual interface */ ICddbTrack;
+struct /* coclass */ CddbFullName;
+struct __declspec(uuid("2b6107ad-d1f2-41c3-b9b9-3349324f7e7b"))
+/* dual interface */ ICddbFullName;
+struct /* coclass */ CddbCredit;
+struct __declspec(uuid("2aae501a-6d20-4af3-8c79-473106bd5391"))
+/* dual interface */ ICddbCredit;
+struct /* coclass */ CddbCredits;
+struct __declspec(uuid("c30fbc5c-f56c-40dd-841d-5e4428f3baea"))
+/* dual interface */ ICddbCredits;
+struct /* coclass */ CddbTracks;
+struct __declspec(uuid("a1fa4e71-b4e0-4378-a102-04e850e0aa18"))
+/* dual interface */ ICddbTracks;
+struct /* coclass */ CddbSegments;
+struct __declspec(uuid("31480e0f-de17-4cae-8d85-1db90f9fcd2f"))
+/* dual interface */ ICddbSegments;
+struct /* coclass */ CddbSegment;
+struct __declspec(uuid("375b697c-06a1-4d99-9f5d-3589001b15fd"))
+/* dual interface */ ICddbSegment;
+struct /* coclass */ CddbURLTree;
+struct __declspec(uuid("20d2984f-0d6d-49f9-aa80-36030cef0a42"))
+/* dual interface */ ICddbURLTree;
+struct /* coclass */ CddbURLList;
+struct __declspec(uuid("680f25c4-044b-4de0-998f-dfa463626e13"))
+/* dual interface */ ICddbURLList;
+struct /* coclass */ CddbURL;
+struct __declspec(uuid("751e8ace-610b-4336-b425-5038154f68a2"))
+/* dual interface */ ICddbURL;
+struct /* coclass */ CddbLanguages;
+struct __declspec(uuid("686f7bce-1edb-4540-8c25-bba9ce7b2323"))
+/* dual interface */ ICddbLanguages;
+struct /* coclass */ CddbDiscs;
+struct __declspec(uuid("0d5072cc-86a0-4600-bb7f-da7723ddd298"))
+/* dual interface */ ICddbDiscs;
+struct /* coclass */ CddbGenreList;
+struct __declspec(uuid("9151953e-0621-4167-bcb6-36f8e65ec6c9"))
+/* dual interface */ ICddbGenreList;
+struct /* coclass */ CddbGenre;
+struct __declspec(uuid("4b3be7ee-9a6e-4276-8701-3a85f5d9e3c5"))
+/* dual interface */ ICddbGenre;
+struct /* coclass */ CddbGenreTree;
+struct __declspec(uuid("37668f25-b3ff-42ea-a3f9-25ea0740902e"))
+/* dual interface */ ICddbGenreTree;
+struct /* coclass */ CddbRegionList;
+struct __declspec(uuid("c841589b-ce3d-4fef-9422-2832a64d321e"))
+/* dual interface */ ICddbRegionList;
+struct /* coclass */ CddbRegion;
+struct __declspec(uuid("57b9551a-a3ea-484d-8fc6-1b4ec7d2420d"))
+/* dual interface */ ICddbRegion;
+struct /* coclass */ CddbRoleList;
+struct __declspec(uuid("614d9d0a-c012-4863-afbf-9c9dd01e04d1"))
+/* dual interface */ ICddbRoleList;
+struct /* coclass */ CddbRole;
+struct __declspec(uuid("84f40113-d6ca-4289-acfa-b8b1691e596b"))
+/* dual interface */ ICddbRole;
+struct /* coclass */ CddbRoleTree;
+struct __declspec(uuid("0ba44da2-a91d-4c60-8e48-61b5e69495ea"))
+/* dual interface */ ICddbRoleTree;
+struct /* coclass */ CddbLanguageList;
+struct __declspec(uuid("719c744f-cdef-49c2-9ada-df5ba8770f4b"))
+/* dual interface */ ICddbLanguageList;
+struct /* coclass */ CddbLanguage;
+struct __declspec(uuid("06c77e4d-fe13-4fa4-b52a-1cf2e047f55f"))
+/* dual interface */ ICddbLanguage;
+struct /* coclass */ CddbFieldList;
+struct __declspec(uuid("cf6268fd-7ba3-4cc5-9de1-fead923d216c"))
+/* dual interface */ ICddbFieldList;
+struct /* coclass */ CddbField;
+struct __declspec(uuid("aa3218d8-a65c-4a29-8690-1e5b75dbf3b8"))
+/* dual interface */ ICddbField;
+struct /* coclass */ CddbURLManager;
+struct __declspec(uuid("623ce0d4-7b45-4b69-a28d-2401e7aa16d4"))
+/* dual interface */ ICddbURLManager;
+struct /* coclass */ CddbID3TagManager;
+struct __declspec(uuid("e7bbbe3a-dc3c-4d00-98f9-bc620ca952f8"))
+/* dual interface */ ICddbID3TagManager;
+struct /* coclass */ CddbID3Tag;
+struct __declspec(uuid("7b2d9eb8-70aa-43d3-aa8e-e71ce53a83d8"))
+/* dual interface */ ICddbID3Tag;
+struct __declspec(uuid("ca4e0490-7ed8-44a5-9ecd-d00b90dbe808"))
+/* dual interface */ ICddbFileTag;
+struct __declspec(uuid("44959787-915b-4fcf-9763-1038483c000e"))
+/* dual interface */ ICddbID3Tag2;
+struct __declspec(uuid("3254573e-1053-4430-9ca6-7b9b89638515"))
+/* dual interface */ ICddbFileTag2_5;
+struct __declspec(uuid("2a050616-00e0-49c3-bc60-23c5192b25d3"))
+/* dual interface */ ICddbExtData;
+struct __declspec(uuid("45d1d297-dd01-4890-928c-34e1ba494a14"))
+/* dual interface */ ICddbDisc2;
+struct /* coclass */ CddbDisc2;
+struct __declspec(uuid("f19a9d2d-2287-4c64-96c7-4bb63edec9c5"))
+/* dual interface */ ICddbDataListElement;
+struct __declspec(uuid("c412e44b-a911-4e2e-ab26-f12bdb23ee55"))
+/* dual interface */ ICddbDataList;
+struct __declspec(uuid("d0f041d4-1570-4143-bb6a-4ce041b109d4"))
+/* dual interface */ ICddbInfoWindow;
+struct __declspec(uuid("06c18ba6-86a0-464c-b838-13a74e1ad049"))
+/* dual interface */ ICddbUIOptions;
+struct __declspec(uuid("d6f791c8-a7f7-4702-9d24-4b8f8ca4c807"))
+/* dual interface */ ICddbTrackManager;
+struct __declspec(uuid("1b0700ee-c9c7-4fca-9584-1096268cf6c4"))
+/* dual interface */ ICDDBControl2;
+struct __declspec(uuid("63c7d158-bca0-4c29-96c4-06bdd744ecc2"))
+/* dual interface */ ICddbOptions2;
+struct __declspec(uuid("db780e88-d446-4157-af74-04e8e48e46a3"))
+/* dual interface */ ICddbDisc2_5;
+struct __declspec(uuid("a354a00f-1f1d-44bb-853f-cb77153c302c"))
+/* dual interface */ ICddbDisc2_6;
+struct __declspec(uuid("d27c6efc-76ed-4724-9741-9531fc52242c"))
+/* dual interface */ ICddbWork;
+struct __declspec(uuid("e5c5f8ea-6f8d-4bd0-8856-95ddd5668cde"))
+/* dual interface */ ICddbTrack2;
+struct __declspec(uuid("24959692-aac0-411d-9e6b-c7611fccacba"))
+/* dual interface */ ICddbTrack2_5;
+struct __declspec(uuid("e7d07c78-6084-4628-89f6-6f89dd5f1a9f"))
+/* dual interface */ ICddbTrack2_6;
+struct __declspec(uuid("7af4e5e5-2deb-462f-bbaf-684146856c6b"))
+/* dual interface */ ICddbCacheManager;
+struct __declspec(uuid("49d2a10d-a5f3-4bd0-9c15-6b2b94f16593"))
+/* dual interface */ ICddbWMATag;
+struct __declspec(uuid("1bba432e-84b5-4559-bcf7-cbc199ed6085"))
+/* dual interface */ ICddbOptions2_5;
+struct __declspec(uuid("e6051029-5694-4e7d-a524-7e38f3c9443d"))
+/* dual interface */ ICddbListManager;
+struct __declspec(uuid("fe5e5b63-8154-4cb0-8ffc-a0aab7dbe9d5"))
+/* dual interface */ ICddbDataListTree;
+struct /* coclass */ CDDBNSWinampControl;
+struct /* coclass */ CDDBProps;
+struct /* coclass */ CddbInfoWindow;
+struct /* coclass */ CddbUIOptions;
+struct /* coclass */ CddbTrackManager;
+struct /* coclass */ CDDBControl2;
+struct /* coclass */ CddbOptions2;
+struct /* coclass */ CddbTrack2;
+struct /* coclass */ CddbCacheManager;
+struct /* coclass */ CddbWMATag;
+struct /* coclass */ CddbListManager;
+struct /* coclass */ CddbDataListTree;
+struct /* coclass */ CddbDataList;
+struct /* coclass */ CddbDataListElement;
+struct /* coclass */ CddbExtData;
+struct /* coclass */ CddbWork;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(DCDDBEvents, __uuidof(DCDDBEvents));
+_COM_SMARTPTR_TYPEDEF(ICddbUserInfo, __uuidof(ICddbUserInfo));
+_COM_SMARTPTR_TYPEDEF(ICddbOptions, __uuidof(ICddbOptions));
+_COM_SMARTPTR_TYPEDEF(ICddbFullName, __uuidof(ICddbFullName));
+_COM_SMARTPTR_TYPEDEF(ICddbCredit, __uuidof(ICddbCredit));
+_COM_SMARTPTR_TYPEDEF(ICddbTrack, __uuidof(ICddbTrack));
+_COM_SMARTPTR_TYPEDEF(ICddbCredits, __uuidof(ICddbCredits));
+_COM_SMARTPTR_TYPEDEF(ICddbTracks, __uuidof(ICddbTracks));
+_COM_SMARTPTR_TYPEDEF(ICddbSegments, __uuidof(ICddbSegments));
+_COM_SMARTPTR_TYPEDEF(ICddbSegment, __uuidof(ICddbSegment));
+_COM_SMARTPTR_TYPEDEF(ICddbURLTree, __uuidof(ICddbURLTree));
+_COM_SMARTPTR_TYPEDEF(ICddbURLList, __uuidof(ICddbURLList));
+_COM_SMARTPTR_TYPEDEF(ICddbURL, __uuidof(ICddbURL));
+_COM_SMARTPTR_TYPEDEF(ICddbDisc, __uuidof(ICddbDisc));
+_COM_SMARTPTR_TYPEDEF(ICddbLanguages, __uuidof(ICddbLanguages));
+_COM_SMARTPTR_TYPEDEF(ICddbDiscs, __uuidof(ICddbDiscs));
+_COM_SMARTPTR_TYPEDEF(ICddbGenreList, __uuidof(ICddbGenreList));
+_COM_SMARTPTR_TYPEDEF(ICddbGenre, __uuidof(ICddbGenre));
+_COM_SMARTPTR_TYPEDEF(ICddbGenreTree, __uuidof(ICddbGenreTree));
+_COM_SMARTPTR_TYPEDEF(ICddbRegionList, __uuidof(ICddbRegionList));
+_COM_SMARTPTR_TYPEDEF(ICddbRegion, __uuidof(ICddbRegion));
+_COM_SMARTPTR_TYPEDEF(ICddbRoleList, __uuidof(ICddbRoleList));
+_COM_SMARTPTR_TYPEDEF(ICddbRole, __uuidof(ICddbRole));
+_COM_SMARTPTR_TYPEDEF(ICddbRoleTree, __uuidof(ICddbRoleTree));
+_COM_SMARTPTR_TYPEDEF(ICddbLanguageList, __uuidof(ICddbLanguageList));
+_COM_SMARTPTR_TYPEDEF(ICddbLanguage, __uuidof(ICddbLanguage));
+_COM_SMARTPTR_TYPEDEF(ICddbFieldList, __uuidof(ICddbFieldList));
+_COM_SMARTPTR_TYPEDEF(ICddbField, __uuidof(ICddbField));
+_COM_SMARTPTR_TYPEDEF(ICddbURLManager, __uuidof(ICddbURLManager));
+_COM_SMARTPTR_TYPEDEF(ICDDBControl, __uuidof(ICDDBControl));
+_COM_SMARTPTR_TYPEDEF(ICddbID3TagManager, __uuidof(ICddbID3TagManager));
+_COM_SMARTPTR_TYPEDEF(ICddbFileTag, __uuidof(ICddbFileTag));
+_COM_SMARTPTR_TYPEDEF(ICddbID3Tag, __uuidof(ICddbID3Tag));
+_COM_SMARTPTR_TYPEDEF(ICddbID3Tag2, __uuidof(ICddbID3Tag2));
+_COM_SMARTPTR_TYPEDEF(ICddbDisc2, __uuidof(ICddbDisc2));
+_COM_SMARTPTR_TYPEDEF(ICddbInfoWindow, __uuidof(ICddbInfoWindow));
+_COM_SMARTPTR_TYPEDEF(ICddbUIOptions, __uuidof(ICddbUIOptions));
+_COM_SMARTPTR_TYPEDEF(ICddbTrackManager, __uuidof(ICddbTrackManager));
+_COM_SMARTPTR_TYPEDEF(ICDDBControl2, __uuidof(ICDDBControl2));
+_COM_SMARTPTR_TYPEDEF(ICddbOptions2, __uuidof(ICddbOptions2));
+_COM_SMARTPTR_TYPEDEF(ICddbWork, __uuidof(ICddbWork));
+_COM_SMARTPTR_TYPEDEF(ICddbTrack2, __uuidof(ICddbTrack2));
+_COM_SMARTPTR_TYPEDEF(ICddbCacheManager, __uuidof(ICddbCacheManager));
+_COM_SMARTPTR_TYPEDEF(ICddbWMATag, __uuidof(ICddbWMATag));
+_COM_SMARTPTR_TYPEDEF(ICddbOptions2_5, __uuidof(ICddbOptions2_5));
+_COM_SMARTPTR_TYPEDEF(ICddbFileTag2_5, __uuidof(ICddbFileTag2_5));
+_COM_SMARTPTR_TYPEDEF(ICddbExtData, __uuidof(ICddbExtData));
+_COM_SMARTPTR_TYPEDEF(ICddbDataListElement, __uuidof(ICddbDataListElement));
+_COM_SMARTPTR_TYPEDEF(ICddbDataList, __uuidof(ICddbDataList));
+_COM_SMARTPTR_TYPEDEF(ICddbDisc2_5, __uuidof(ICddbDisc2_5));
+_COM_SMARTPTR_TYPEDEF(ICddbDisc2_6, __uuidof(ICddbDisc2_6));
+_COM_SMARTPTR_TYPEDEF(ICddbTrack2_5, __uuidof(ICddbTrack2_5));
+_COM_SMARTPTR_TYPEDEF(ICddbTrack2_6, __uuidof(ICddbTrack2_6));
+_COM_SMARTPTR_TYPEDEF(ICddbDataListTree, __uuidof(ICddbDataListTree));
+_COM_SMARTPTR_TYPEDEF(ICddbListManager, __uuidof(ICddbListManager));
+
+//
+// Type library items
+//
+
+enum CDDBErrors
+{
+    ERR_DomainMask = 134152192,
+    ERR_DomainTransport = 49938432,
+    ERR_DomainService = 50003968,
+    ERR_DomainControl = 50069504,
+    ERR_DomainCache = 50135040,
+    ERR_DomainLists = 50200576,
+    ERR_CodeMask = 65535,
+    ERR_Busy = 1,
+    ERR_NotRegistered = 2,
+    ERR_HandleUsed = 3,
+    ERR_InvalidParameter = 4,
+    ERR_MissingField = 5,
+    ERR_MissingProperty = 6,
+    ERR_NoCommand = 7,
+    ERR_NoClientInfo = 8,
+    ERR_NotInitialized = 9,
+    ERR_InvalidTagId = 10,
+    ERR_Disabled = 11,
+    CDDBTRNOutOfMemory = -2097545215,
+    CDDBTRNBadPointer = -2097545214,
+    CDDBTRNOutOfRange = -2097545213,
+    CDDBTRNCorruptedData = -2097545212,
+    CDDBTRNFieldNotFound = -2097545211,
+    CDDBTRNUnknownEncoding = -2097545210,
+    CDDBTRNSockInitErr = -2097545209,
+    CDDBTRNHostNotFound = -2097545208,
+    CDDBTRNSockCreateErr = -2097545207,
+    CDDBTRNSockOpenErr = -2097545206,
+    CDDBTRNSendFailed = -2097545205,
+    CDDBTRNRecvFailed = -2097545204,
+    CDDBTRNNoEvent = -2097545203,
+    CDDBTRNNoUserInfo = -2097545202,
+    CDDBTRNBatchNest = -2097545201,
+    CDDBTRNBatchNotOpen = -2097545200,
+    CDDBTRNBadResponseSyntax = -2097545199,
+    CDDBTRNUnknownCompression = -2097545198,
+    CDDBTRNTooManyRetries = -2097545197,
+    CDDBTRNRecordNotFound = -2097545196,
+    CDDBTRNKeyTooLong = -2097545195,
+    CDDBTRNURLNotFound = -2097545194,
+    CDDBTRNBadArgument = -2097545193,
+    CDDBTRNUnflattenFailed = -2097545192,
+    CDDBTRNTokenTooLong = -2097545191,
+    CDDBTRNTokenInvalid = -2097545190,
+    CDDBTRNCannotCreateFile = -2097545189,
+    CDDBTRNBadClientCommand = -2097545188,
+    CDDBTRNSendStatsFailed = -2097545187,
+    CDDBTRNUnknownEncryption = -2097545186,
+    CDDBTRNProtocolVersion = -2097545185,
+    CDDBTRNDataStoreVersion = -2097545184,
+    CDDBTRNDataStoreInitFail = -2097545183,
+    CDDBTRNDataStoreNotCached = -2097545182,
+    CDDBTRNCancelled = -2097545181,
+    CDDBTRNServerTimeout = -2097545180,
+    CDDBTRNInvalidURL = -2097545179,
+    CDDBTRNHTTPError = -2097545178,
+    CDDBTRNFileWriteError = -2097545177,
+    CDDBTRNFileDeleteError = -2097545176,
+    CDDBTRNIDInvalidated = -2097545175,
+    CDDBTRNHTTPProxyError = -2097545174,
+    CDDBTRNServiceLoadFailure = -2097545173,
+    CDDBSVCServiceError = -2097479680,
+    CDDBSVCHandleUsed = -2097479679,
+    CDDBSVCNoEmail = -2097479678,
+    CDDBSVCNoHint = -2097479677,
+    CDDBSVCUnknownHandle = -2097479676,
+    CDDBSVCInvalidField = -2097479580,
+    CDDBSVCMissingField = -2097479579,
+    CDDBSVCLimitReached = -2097479578,
+    CDDBCTLBusy = -2097414143,
+    CDDBCTLNotRegistered = -2097414142,
+    CDDBCTLHandleUsed = -2097414141,
+    CDDBCTLInvalidParameter = -2097414140,
+    CDDBCTLMissingField = -2097414139,
+    CDDBCTLMissingProperty = -2097414138,
+    CDDBCTLNoCommand = -2097414137,
+    CDDBCTLNoClientInfo = -2097414136,
+    CDDBCTLNotInitialized = -2097414135,
+    CDDBCTLInvalidTagId = -2097414134,
+    CDDBCTLDisabled = -2097414133,
+    CDDBCTL_ID3TagNoMemory = -2097410048,
+    CDDBCTL_ID3TagNoData = -2097410047,
+    CDDBCTL_ID3TagBadData = -2097410046,
+    CDDBCTL_ID3TagNoBuffer = -2097410045,
+    CDDBCTL_ID3TagSmallBuffer = -2097410044,
+    CDDBCTL_ID3TagInvalidFrameID = -2097410043,
+    CDDBCTL_ID3TagFieldNotFound = -2097410042,
+    CDDBCTL_ID3TagUnknownFieldType = -2097410041,
+    CDDBCTL_ID3TagAlreadyAttached = -2097410040,
+    CDDBCTL_ID3TagInvalidVersion = -2097410039,
+    CDDBCTL_ID3TagNoFile = -2097410038,
+    CDDBCTL_ID3TagReadonly = -2097410037,
+    CDDBCTL_ID3TagzlibError = -2097410036,
+    CDDBSVCTokensUsed = -2097479424,
+    CDDBSVCRegKeyUsed = -2097479423,
+    CDDBSVCInvalidRegKey = -2097479422,
+    CDDBSVCTokensExpired = -2097479421,
+    CDDBSVCInvalidToken = -2097479420,
+    CDDBCACHEBusy = -2097348607,
+    CDDBCACHENoIterator = -2097348606,
+    CDDBCACHENoMoreEntries = -2097348605,
+    CDDBCACHECorrupt = -2097348604,
+    CDDBLISTSBusy = -2097283071,
+    CDDBLISTSNoFile = -2097348606,
+    CDDBLISTSNotSupported = -2097348605
+};
+
+enum CDDBCommands
+{
+    CMD_None = 0,
+    CMD_Invalid = -1,
+    PROP_Version = 1,
+    PROP_ServiceStatusURL = 2,
+    CMD_IsRegistered = 3,
+    CMD_SetClientInfo = 4,
+    CMD_GetUserInfo = 5,
+    CMD_SetUserInfo = 6,
+    CMD_GetOptions = 7,
+    CMD_SetOptions = 8,
+    CMD_GetMediaToc = 9,
+    CMD_LookupMediaByToc = 10,
+    CMD_GetMatchedDiscInfo = 11,
+    CMD_InvokeFuzzyMatchDialog = 12,
+    CMD_GetFullDiscInfo = 13,
+    CMD_GetDiscInfo = 14,
+    CMD_InvokeDiscInfo = 15,
+    CMD_DisplayDiscInfo = 16,
+    CMD_GetSubmitDisc = 17,
+    CMD_SubmitDisc = 18,
+    CMD_InvokeSubmitDisc = 19,
+    CMD_GetMediaTagId = 100,
+    CMD_LookupMediaByTagId = 101,
+    CMD_LookupMediaByFile = 102,
+    CMD_LookupMediaFile = 103,
+    CMD_LookupMediaByWaveform = 104,
+    CMD_GetGenreList = 20,
+    CMD_GetGenreTree = 21,
+    CMD_GetGenreInfo = 22,
+    CMD_GetRegionList = 23,
+    CMD_GetRegionInfo = 24,
+    CMD_GetRoleList = 25,
+    CMD_GetRoleTree = 26,
+    CMD_GetRoleInfo = 27,
+    CMD_GetLanguageList = 28,
+    CMD_GetLanguageInfo = 29,
+    CMD_GetFieldList = 30,
+    CMD_GetFieldInfo = 31,
+    CMD_GetURLList = 32,
+    CMD_GetCoverURL = 33,
+    CMD_GetURLManager = 34,
+    CMD_Cancel = 35,
+    CMD_Status = 36,
+    CMD_GetServiceStatus = 37,
+    CMD_ServerNoop = 38,
+    CMD_FlushLocalCache = 39,
+    CMD_UpdateControl = 40,
+    CMD_GetPlaylistList = 41
+};
+
+enum CDDBLogFlags
+{
+    LOG_DEFAULT = 0,
+    LOG_OFF = 1,
+    LOG_WINDOW = 2,
+    LOG_FILE = 4,
+    LOG_APP = 8,
+    LOG_DEST_MASK = 255,
+    LOG_EVENT_MASK = -256,
+    LOG_EVENT_UI = 256,
+    LOG_EVENT_DEVICE = 512,
+    LOG_EVENT_SERVER = 1024,
+    LOG_EVENT_EVENTS = 2048,
+    LOG_EVENT_COMPLETION = 4096,
+    LOG_EVENT_ERROR = 268435456
+};
+
+enum CDDBUIFlags
+{
+    UI_NONE = 0,
+    UI_READONLY = 1,
+    UI_EDITMODE = 2,
+    UI_SUBMITNEW = 8,
+    UI_OK = 256,
+    UI_CANCEL = 512,
+    UI_DATA_CHANGED = 1024,
+    UI_FULL = 4096,
+    UI_SHORT = 8192,
+    UI_DISP_PROGRESS = 65536,
+    UI_DISP_STATIC = 131072,
+    UI_DISP_BONUS = 262144,
+    UI_ENCODING = 1048576
+};
+
+enum CDDBTagFlags
+{
+    TAG_MERGE_DEFAULT = 0,
+    TAG_MERGE_ALL = 1,
+    TAG_MERGE_ID_ONLY = 2,
+    TAG_MERGE_GN_DATA = 2
+};
+
+enum CDDBEventCodes
+{
+    EVENT_COMMAND_COMPLETED = 1,
+    EVENT_LOG_MESSAGE = 2,
+    EVENT_SERVER_MESSAGE = 3,
+    EVENT_COMMAND_PROGRESS = 4
+};
+
+enum CDDBProperty
+{
+    PROP_Default = 0,
+    PROP_DomainMask = -16777216,
+    PROP_Title = 1,
+    PROP_Artist = 2,
+    PROP_Label = 4,
+    PROP_Year = 8,
+    PROP_Notes = 16,
+    PROP_GenreId = 32,
+    PROP_SecondaryGenreId = 64,
+    PROP_RegionId = 128,
+    PROP_TotalInSet = 256,
+    PROP_NumberInSet = 512,
+    PROP_Certifier = 1024,
+    PROP_TitleSort = 2048,
+    PROP_TitleThe = 4096,
+    PROP_ArtistFirstName = 8192,
+    PROP_ArtistLastName = 16384,
+    PROP_ArtistThe = 32768,
+    PROP_Lyrics = 65536,
+    PROP_BeatsPerMinute = 131072,
+    PROP_ISRC = 262144,
+    PROP_Name = 524288,
+    PROP_StartTrack = 1048576,
+    PROP_StartFrame = 2097152,
+    PROP_EndTrack = 4194304,
+    PROP_EndFrame = 8388608,
+    PROP_Href = 16777217,
+    PROP_DisplayLink = 16777218,
+    PROP_Description = 16777220,
+    PROP_Category = 16777224,
+    PROP_Size = 16777232,
+    PROP_DisplayText = 16777248,
+    PROP_Id = 16777280,
+    PROP_Compilation = 16777344,
+    PROP_RecordingDate = 16777472,
+    PROP_ReleaseDate = 16777728,
+    PROP_ContentLanguageId = 16778240,
+    PROP_LanguageId = 16779264,
+    PROP_ProductCode = 16781312,
+    PROP_YearComposed = 16785408
+};
+
+enum CDDBMatchCode
+{
+    MATCH_NONE = 1,
+    MATCH_MULTIPLE = 2,
+    MATCH_EXACT = 3,
+    MATCH_MULTI_EXACT = 5,
+    MATCH_CODE_SIZER = -1
+};
+
+enum CDDBProgressCodes
+{
+    CMD_CONNECTING = 1,
+    CMD_SENDING = 2,
+    CMD_RECEIVING = 3,
+    CMD_CANCELLED = 4,
+    CMD_WAITING = 5,
+    CMD_COMPLETED = 6
+};
+
+enum CDDBCacheFlags
+{
+    CACHE_DEFAULT = 0,
+    CACHE_DONT_CONNECT = 1,
+    CACHE_DONT_CREATE = 2,
+    CACHE_DONT_WRITE_MEDIA = 16,
+    CACHE_DONT_WRITE_LIST = 32,
+    CACHE_DONT_WRITE_URL = 64,
+    CACHE_DONT_WRITE_ANY = 240,
+    CACHE_NO_LOOKUP_MEDIA = 256,
+    CACHE_NO_LOOKUP_LIST = 512,
+    CACHE_NO_LOOKUP_URL = 1024,
+    CACHE_NO_LOOKUP_ANY = 3840,
+    CACHE_SUBMIT_UPDATE = 4096,
+    CACHE_SUBMIT_NEW = 8192,
+    CACHE_SUBMIT_OFFLINE = 16384,
+    CACHE_SUBMIT_ALL = 61440,
+    CACHE_UPDATE_FUZZY = 65536,
+    CACHE_UPDATE_CHECK = 131072
+};
+
+enum CDDBFlushFlags
+{
+    FLUSH_DEFAULT = 0,
+    FLUSH_USERINFO = 1,
+    FLUSH_CLIENTINFO = 2,
+    FLUSH_REGISTRY = 4,
+    FLUSH_CACHE_MEDIA = 16,
+    FLUSH_CACHE_LISTS = 32,
+    FLUSH_CACHE_URLS = 64,
+    FLUSH_MEMORY_MEDIA = 256,
+    FLUSH_MEMORY_LISTS = 512,
+    FLUSH_MEMORY_URLS = 1024
+};
+
+enum CDDBServerMessageCodes
+{
+    MSG_UPDATE = 1,
+    MSG_ENABLE = 2,
+    MSG_DISABLE = 3,
+    MSG_MESSAGE = 4
+};
+
+enum CDDBServerMessageActions
+{
+    ACTION_NONE = 1,
+    ACTION_RECOMMENDED = 2,
+    ACTION_REQUIRED = 3
+};
+
+enum CDDBExtDataFlags
+{
+    EXT_DATA_DEFAULT = 1,
+    EXT_DATA_GENRE_PRIMARY = 2,
+    EXT_DATA_GENRE_SECONDARY = 4,
+    EXT_DATA_ERA = 8,
+    EXT_DATA_ORIGIN = 16,
+    EXT_DATA_ARTIST_TYPE = 32,
+    EXT_DATA_POPULARITY = 64,
+    EXT_DATA_GNUID = 128,
+    EXT_DATA_CANONICAL = 256,
+    EXT_DATA_MOOD = 512,
+    EXT_DATA_TEMPO = 1024,
+    EXT_DATA_GENRE_V1_FALLBACK = 65536,
+    EXT_DATA_NO_DISC_FALLBACK = 131072,
+    EXT_DATA_UPDATE = 262144,
+    EXT_DATA_ALL = 524288
+};
+
+enum CDDBDataListID
+{
+    DATA_LIST_NONE = 0,
+    DATA_LIST_GENRES = 1,
+    DATA_LIST_ORIGINS = 2,
+    DATA_LIST_ERAS = 3,
+    DATA_LIST_ARTIST_TYPES = 4,
+    DATA_LIST_MOODS = 5,
+    DATA_LIST_TEMPO = 6,
+    DATA_LIST_ALL = 65535
+};
+
+enum CDDBDataListOptions
+{
+    DATA_LIST_OPT_AUTO_RESET = 1,
+    DATA_LIST_OPT_NO_REV_CHECK = 2,
+    DATA_LIST_OPT_NO_INHERIT = 4,
+    DATA_LIST_OPT_MULTI_FILES = 8,
+    DATA_LIST_OPT_DEFAULT = 1
+};
+
+enum CDDBDataListFlags
+{
+    DATA_LIST_FLAG_AUTO_RESET = 1,
+    DATA_LIST_FLAG_NO_REV_CHECK = 2,
+    DATA_LIST_FLAG_CHK_ONLINE = 4,
+    DATA_LIST_FLAG_CHK_LOCAL = 8,
+    DATA_LIST_FLAG_DEFAULT = 1
+};
+
+enum CddbDataOptions
+{
+    CDDB_DATA_NONE = 0,
+    CDDB_DATA_CLASSICAL = 1,
+    CDDB_DATA_DSP = 2
+};
+
+struct __declspec(uuid("fc288125-6636-405c-be68-e9d37700deb0"))
+DCDDBEvents : IDispatch
+{};
+
+struct __declspec(uuid("796d4314-0c0e-4b10-8bc2-3f3e6956bc26"))
+CddbUserInfo;
+    // [ default ] interface ICddbUserInfo
+
+struct __declspec(uuid("4570cddc-94f8-4b43-b1ac-796d68fac7df"))
+ICddbUserInfo : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_EmailAddress (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_EmailAddress (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_UserHandle (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_UserHandle (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Password (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Password (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PasswordHint (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_PasswordHint (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_RegionId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_RegionId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PostalCode (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_PostalCode (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Age (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Age (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Sex (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Sex (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowEmail (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowEmail (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_AllowStats (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_AllowStats (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("544bb1f5-d771-4fed-8fa7-d83e62fefb82"))
+CddbOptions;
+    // [ default ] interface ICddbOptions
+
+struct __declspec(uuid("30755708-ae75-49f8-b99a-ac8d095d0448"))
+ICddbOptions : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Language (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Language (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_LocalCachePath (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LocalCachePath (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_LocalCacheSize (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LocalCacheSize (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LogFile (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LogFile (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_LogFlags (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LogFlags (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LogWindow (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LogWindow (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ProxyServer (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ProxyServer (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ProxyServerPort (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ProxyServerPort (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ResourceModule (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ResourceModule (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ServerTimeout (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ServerTimeout (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_AsyncCompletion (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_AsyncCompletion (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_AutoDownloadURLs (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoDownloadURLs (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_AutoDownloadTargetedURLs (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoDownloadTargetedURLs (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ProxyUserName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ProxyUserName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ProxyPassword (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ProxyPassword (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ProgressEvents (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ProgressEvents (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LocalCacheTimeout (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LocalCacheTimeout (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LocalCacheFlags (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LocalCacheFlags (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_TestSubmitMode (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_TestSubmitMode (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("3d055b64-824e-4613-b845-6afcdb888aa0"))
+CddbDisc;
+    // [ default ] interface ICddbDisc
+
+struct __declspec(uuid("02d9f45f-2155-4445-83b9-75dfa5154538"))
+CddbTrack;
+    // [ default ] interface ICddbTrack
+
+struct __declspec(uuid("d5673322-c7a0-493a-98d5-f16da00724aa"))
+CddbFullName;
+    // [ default ] interface ICddbFullName
+
+struct __declspec(uuid("2b6107ad-d1f2-41c3-b9b9-3349324f7e7b"))
+ICddbFullName : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_FirstName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_FirstName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_LastName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LastName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_The (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_The (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("61bd27fe-604c-49f8-a979-7a260a51ea5f"))
+CddbCredit;
+    // [ default ] interface ICddbCredit
+
+struct __declspec(uuid("2aae501a-6d20-4af3-8c79-473106bd5391"))
+ICddbCredit : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Id (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Notes (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Notes (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_FullName (
+        /*[out,retval]*/ struct ICddbFullName * * pVal ) = 0;
+      virtual HRESULT __stdcall put_FullName (
+        /*[in]*/ struct ICddbFullName * pVal ) = 0;
+      virtual HRESULT __stdcall IsPropertyCertified (
+        /*[in]*/ enum CDDBProperty Property,
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("9a27fc19-f3ac-4755-a05a-9c7922437271"))
+CddbCredits;
+    // [ default ] interface ICddbCredits
+
+struct __declspec(uuid("7da05059-cfb4-46ce-a788-709a3ad3454d"))
+ICddbTrack : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Title (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Title (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Artist (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Artist (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Year (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Year (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Label (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Label (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Notes (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Notes (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_GenreId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_GenreId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SecondaryGenreId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SecondaryGenreId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Lyrics (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Lyrics (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_BeatsPerMinute (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_BeatsPerMinute (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ISRC (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ISRC (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_TitleSort (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_TitleSort (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_TitleThe (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_TitleThe (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ArtistFullName (
+        /*[out,retval]*/ struct ICddbFullName * * pVal ) = 0;
+      virtual HRESULT __stdcall put_ArtistFullName (
+        /*[in]*/ struct ICddbFullName * pVal ) = 0;
+      virtual HRESULT __stdcall AddCredit (
+        /*[in]*/ BSTR RoleId,
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct ICddbCredit * * pVal ) = 0;
+      virtual HRESULT __stdcall RemoveCredit (
+        /*[in]*/ struct ICddbCredit * Credit ) = 0;
+      virtual HRESULT __stdcall get_Credits (
+        /*[out,retval]*/ struct ICddbCredits * * pVal ) = 0;
+      virtual HRESULT __stdcall GetCredit (
+        /*[in]*/ long CreditIndex,
+        /*[out,retval]*/ struct ICddbCredit * * pVal ) = 0;
+      virtual HRESULT __stdcall get_NumCredits (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall IsPropertyCertified (
+        /*[in]*/ enum CDDBProperty Property,
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("c30fbc5c-f56c-40dd-841d-5e4428f3baea"))
+ICddbCredits : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetCredit (
+        /*[in]*/ long CreditIndex,
+        /*[out,retval]*/ struct ICddbCredit * * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("b2ebb2e2-48e5-4004-bc9e-9cdefdd9269e"))
+CddbTracks;
+    // [ default ] interface ICddbTracks
+
+struct __declspec(uuid("a1fa4e71-b4e0-4378-a102-04e850e0aa18"))
+ICddbTracks : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetTrack (
+        /*[in]*/ long TrackIndex,
+        /*[out,retval]*/ struct ICddbTrack * * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("f2f46124-41eb-4e26-b2e5-d7fc1736c8a2"))
+CddbSegments;
+    // [ default ] interface ICddbSegments
+
+struct __declspec(uuid("993bb5e2-4a0d-4ed0-bd37-8718c422997e"))
+CddbSegment;
+    // [ default ] interface ICddbSegment
+
+struct __declspec(uuid("31480e0f-de17-4cae-8d85-1db90f9fcd2f"))
+ICddbSegments : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetSegment (
+        /*[in]*/ long SegmentIndex,
+        /*[out,retval]*/ struct ICddbSegment * * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("375b697c-06a1-4d99-9f5d-3589001b15fd"))
+ICddbSegment : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Notes (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Notes (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_StartTrack (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_StartTrack (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_StartFrame (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_StartFrame (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_EndTrack (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_EndTrack (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_EndFrame (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_EndFrame (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Credits (
+        /*[out,retval]*/ struct ICddbCredits * * pVal ) = 0;
+      virtual HRESULT __stdcall AddCredit (
+        /*[in]*/ BSTR RoleId,
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct ICddbCredit * * pVal ) = 0;
+      virtual HRESULT __stdcall RemoveCredit (
+        /*[in]*/ struct ICddbCredit * Credit ) = 0;
+      virtual HRESULT __stdcall GetCredit (
+        /*[in]*/ long CreditIndex,
+        /*[out,retval]*/ struct ICddbCredit * * pVal ) = 0;
+      virtual HRESULT __stdcall get_NumCredits (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall IsPropertyCertified (
+        /*[in]*/ enum CDDBProperty Property,
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("15a6784e-b924-43da-a15f-92e0072ac14d"))
+CddbURLTree;
+    // [ default ] interface ICddbURLTree
+
+struct __declspec(uuid("f61de7e3-bd71-442c-a555-d11880a0b454"))
+CddbURLList;
+    // [ default ] interface ICddbURLList
+
+struct __declspec(uuid("20d2984f-0d6d-49f9-aa80-36030cef0a42"))
+ICddbURLTree : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall CategoryList (
+        /*[in]*/ BSTR Category,
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetURLList (
+        /*[in]*/ long ListIndex,
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+};
+
+struct __declspec(uuid("6f6f90b2-ff9f-4f62-8eee-6ba04a45de6c"))
+CddbURL;
+    // [ default ] interface ICddbURL
+
+struct __declspec(uuid("680f25c4-044b-4de0-998f-dfa463626e13"))
+ICddbURLList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Category (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall GetURL (
+        /*[in]*/ long URLIndex,
+        /*[out,retval]*/ struct ICddbURL * * pVal ) = 0;
+      virtual HRESULT __stdcall CreateURLTree (
+        /*[out,retval]*/ struct ICddbURLTree * * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("751e8ace-610b-4336-b425-5038154f68a2"))
+ICddbURL : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Href (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Href (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DisplayLink (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DisplayLink (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Type (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Category (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Category (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Weight (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Weight (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Size (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Size (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DisplayText (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DisplayText (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall IsPropertyCertified (
+        /*[in]*/ enum CDDBProperty Property,
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("8f3ae41f-1fe4-4293-b016-71e3bcca9841"))
+CddbLanguages;
+    // [ default ] interface ICddbLanguages
+
+struct __declspec(uuid("5220e8fa-b11f-46cf-9786-51b11e05f657"))
+ICddbDisc : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Toc (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Toc (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Title (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Title (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Artist (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Artist (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Label (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Label (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Year (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Year (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_NumTracks (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetTrackTitle (
+        /*[in]*/ long Number,
+        /*[out,retval]*/ BSTR * Title ) = 0;
+      virtual HRESULT __stdcall AddTrack (
+        /*[in]*/ long Number,
+        /*[in]*/ BSTR Title,
+        /*[out,retval]*/ struct ICddbTrack * * pVal ) = 0;
+      virtual HRESULT __stdcall get_MediaId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_MuiId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Notes (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Notes (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_GenreId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_GenreId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SecondaryGenreId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SecondaryGenreId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_RegionId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_RegionId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Revision (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Revision (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_TotalInSet (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_TotalInSet (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_NumberInSet (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_NumberInSet (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_TitleUId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Certifier (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_TitleSort (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_TitleSort (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_TitleThe (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_TitleThe (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Tracks (
+        /*[out,retval]*/ struct ICddbTracks * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Segments (
+        /*[out,retval]*/ struct ICddbSegments * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Credits (
+        /*[out,retval]*/ struct ICddbCredits * * pVal ) = 0;
+      virtual HRESULT __stdcall get_ArtistFullName (
+        /*[out,retval]*/ struct ICddbFullName * * pVal ) = 0;
+      virtual HRESULT __stdcall put_ArtistFullName (
+        /*[in]*/ struct ICddbFullName * pVal ) = 0;
+      virtual HRESULT __stdcall GetURLTree (
+        /*[out,retval]*/ struct ICddbURLTree * * pVal ) = 0;
+      virtual HRESULT __stdcall AddSegment (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct ICddbSegment * * pVal ) = 0;
+      virtual HRESULT __stdcall RemoveSegment (
+        /*[in]*/ BSTR Name ) = 0;
+      virtual HRESULT __stdcall AddCredit (
+        /*[in]*/ BSTR RoleId,
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct ICddbCredit * * pVal ) = 0;
+      virtual HRESULT __stdcall RemoveCredit (
+        /*[in]*/ struct ICddbCredit * Credit ) = 0;
+      virtual HRESULT __stdcall get_LanguageId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LanguageId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_RevisionTag (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_RevisionTag (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Compilation (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Compilation (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Languages (
+        /*[out,retval]*/ struct ICddbLanguages * * pVal ) = 0;
+      virtual HRESULT __stdcall GetTrack (
+        /*[in]*/ long Number,
+        /*[out,retval]*/ struct ICddbTrack * * pVal ) = 0;
+      virtual HRESULT __stdcall GetSegment (
+        /*[in]*/ long SegmentIndex,
+        /*[out,retval]*/ struct ICddbSegment * * pVal ) = 0;
+      virtual HRESULT __stdcall get_NumCredits (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_NumSegments (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetCredit (
+        /*[in]*/ long CreditIndex,
+        /*[out,retval]*/ struct ICddbCredit * * pVal ) = 0;
+      virtual HRESULT __stdcall IsSubmit (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall IsPropertyCertified (
+        /*[in]*/ enum CDDBProperty Property,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall RemoveSegmentObject (
+        /*[in]*/ struct ICddbSegment * Segment ) = 0;
+};
+
+struct __declspec(uuid("686f7bce-1edb-4540-8c25-bba9ce7b2323"))
+ICddbLanguages : IDispatch
+{};
+
+struct __declspec(uuid("e39c031c-a54e-40f7-b82d-1c47155e7411"))
+CddbDiscs;
+    // [ default ] interface ICddbDiscs
+
+struct __declspec(uuid("0d5072cc-86a0-4600-bb7f-da7723ddd298"))
+ICddbDiscs : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetDisc (
+        /*[in]*/ long DiscIndex,
+        /*[out,retval]*/ struct ICddbDisc * * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("82e54124-11a8-4b37-9820-3e63eabde079"))
+CddbGenreList;
+    // [ default ] interface ICddbGenreList
+
+struct __declspec(uuid("cd5f005a-596d-4b5a-8ab9-c9821315b950"))
+CddbGenre;
+    // [ default ] interface ICddbGenre
+
+struct __declspec(uuid("9151953e-0621-4167-bcb6-36f8e65ec6c9"))
+ICddbGenreList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetGenreName (
+        /*[in]*/ BSTR GenreId,
+        /*[out,retval]*/ BSTR * GenreName ) = 0;
+      virtual HRESULT __stdcall get_MetaGenre (
+        /*[out,retval]*/ struct ICddbGenre * * pVal ) = 0;
+      virtual HRESULT __stdcall GetGenre (
+        /*[in]*/ long GenreIndex,
+        /*[out,retval]*/ struct ICddbGenre * * pVal ) = 0;
+      virtual HRESULT __stdcall GetGenreInfo (
+        /*[in]*/ BSTR GenreId,
+        /*[out,retval]*/ struct ICddbGenre * * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("4b3be7ee-9a6e-4276-8701-3a85f5d9e3c5"))
+ICddbGenre : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Parent (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("a228e94b-2fc2-448c-b593-d293d981a335"))
+CddbGenreTree;
+    // [ default ] interface ICddbGenreTree
+
+struct __declspec(uuid("37668f25-b3ff-42ea-a3f9-25ea0740902e"))
+ICddbGenreTree : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetSubGenreList (
+        /*[in]*/ BSTR GenreId,
+        /*[out,retval]*/ struct ICddbGenreList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetMetaGenre (
+        /*[in]*/ long GenreIndex,
+        /*[out,retval]*/ struct ICddbGenre * * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("e454ac26-5551-47ee-951c-5ae1dd824d28"))
+CddbRegionList;
+    // [ default ] interface ICddbRegionList
+
+struct __declspec(uuid("203e2a74-acde-4588-ad98-a666dcb1636a"))
+CddbRegion;
+    // [ default ] interface ICddbRegion
+
+struct __declspec(uuid("c841589b-ce3d-4fef-9422-2832a64d321e"))
+ICddbRegionList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetRegionName (
+        /*[in]*/ BSTR RegionId,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall GetRegion (
+        /*[in]*/ long RegionIndex,
+        /*[out,retval]*/ struct ICddbRegion * * pVal ) = 0;
+      virtual HRESULT __stdcall GetRegionInfo (
+        /*[in]*/ BSTR RegionId,
+        /*[out,retval]*/ struct ICddbRegion * * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("57b9551a-a3ea-484d-8fc6-1b4ec7d2420d"))
+ICddbRegion : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("24575390-26a3-405d-b47b-fc72cdcb80aa"))
+CddbRoleList;
+    // [ default ] interface ICddbRoleList
+
+struct __declspec(uuid("546523f6-07ee-488c-b472-dd4a338ba7a2"))
+CddbRole;
+    // [ default ] interface ICddbRole
+
+struct __declspec(uuid("614d9d0a-c012-4863-afbf-9c9dd01e04d1"))
+ICddbRoleList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetRoleName (
+        /*[in]*/ BSTR RoleId,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall GetRole (
+        /*[in]*/ long RoleIndex,
+        /*[out,retval]*/ struct ICddbRole * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Category (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_CategoryRole (
+        /*[out,retval]*/ struct ICddbRole * * pVal ) = 0;
+      virtual HRESULT __stdcall GetRoleInfo (
+        /*[in]*/ BSTR RoleId,
+        /*[out,retval]*/ struct ICddbRole * * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("84f40113-d6ca-4289-acfa-b8b1691e596b"))
+ICddbRole : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Parent (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("a25a1b97-a3f8-4fd5-a71e-a6ab86de1946"))
+CddbRoleTree;
+    // [ default ] interface ICddbRoleTree
+
+struct __declspec(uuid("0ba44da2-a91d-4c60-8e48-61b5e69495ea"))
+ICddbRoleTree : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetCategoryRoleList (
+        /*[in]*/ BSTR RoleId,
+        /*[out,retval]*/ struct ICddbRoleList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetRoleList (
+        /*[in]*/ long ListIndex,
+        /*[out,retval]*/ struct ICddbRoleList * * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("bd8c8761-451f-4aec-9dad-f42bdbeaf9e6"))
+CddbLanguageList;
+    // [ default ] interface ICddbLanguageList
+
+struct __declspec(uuid("ee5da1c8-ea29-4ec6-a59c-23ddc304bab0"))
+CddbLanguage;
+    // [ default ] interface ICddbLanguage
+
+struct __declspec(uuid("719c744f-cdef-49c2-9ada-df5ba8770f4b"))
+ICddbLanguageList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetLanguageName (
+        /*[in]*/ BSTR LanguageId,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall GetLanguage (
+        /*[in]*/ long LanguageIndex,
+        /*[out,retval]*/ struct ICddbLanguage * * pVal ) = 0;
+      virtual HRESULT __stdcall GetLanguageInfo (
+        /*[in]*/ BSTR LanguageId,
+        /*[out,retval]*/ struct ICddbLanguage * * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("06c77e4d-fe13-4fa4-b52a-1cf2e047f55f"))
+ICddbLanguage : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("f34a22b2-a4df-4a19-bfd9-c593bd1cd6b2"))
+CddbFieldList;
+    // [ default ] interface ICddbFieldList
+
+struct __declspec(uuid("cf6268fd-7ba3-4cc5-9de1-fead923d216c"))
+ICddbFieldList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetFieldName (
+        /*[in]*/ BSTR Name,
+        /*[in]*/ BSTR Target,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("9390d4fe-56ca-42f6-b8dc-16e22d12c9c3"))
+CddbField;
+    // [ default ] interface ICddbField
+
+struct __declspec(uuid("aa3218d8-a65c-4a29-8690-1e5b75dbf3b8"))
+ICddbField : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DisplayName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Length (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_EnumCount (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Table (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Target (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("dccf8d5f-c1f6-44a1-b065-60d56557f821"))
+CddbURLManager;
+    // [ default ] interface ICddbURLManager
+
+struct __declspec(uuid("623ce0d4-7b45-4b69-a28d-2401e7aa16d4"))
+ICddbURLManager : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetCoverURLs (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetInfoURLs (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetAdURLs (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetMenuURLs (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetSkinURLs (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetPluginURLs (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetTypedURLs (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ BSTR Type,
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetAssociatedURLs (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ BSTR Type,
+        /*[in]*/ BSTR Property,
+        /*[in]*/ BSTR Value,
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetURLAssociations (
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetCurrentURL (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ BSTR URL,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall SubmitURL (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ struct ICddbURL * URL ) = 0;
+      virtual HRESULT __stdcall DeleteURL (
+        /*[in]*/ struct ICddbURL * URL ) = 0;
+      virtual HRESULT __stdcall GotoURL (
+        /*[in]*/ struct ICddbURL * URL,
+        /*[in]*/ BSTR RawURL ) = 0;
+};
+
+struct __declspec(uuid("a4d4fe68-1df3-42fe-8a8d-594d9bd60fd0"))
+CddbID3TagManager;
+    // [ default ] interface ICddbID3TagManager
+
+struct __declspec(uuid("723695c2-3b01-42c3-a661-64d2ec30b4e5"))
+ICDDBControl : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall IsRegistered (
+        /*[in]*/ long InvokeDialog,
+        /*[out,retval]*/ long * Registered ) = 0;
+      virtual HRESULT __stdcall SetClientInfo (
+        /*[in]*/ BSTR ClientId,
+        /*[in]*/ BSTR ClientTag,
+        /*[in]*/ BSTR ClientVersion,
+        /*[in]*/ BSTR ClientRegString ) = 0;
+      virtual HRESULT __stdcall GetUserInfo (
+        /*[out,retval]*/ struct ICddbUserInfo * * pVal ) = 0;
+      virtual HRESULT __stdcall SetUserInfo (
+        /*[in]*/ struct ICddbUserInfo * UserInfo ) = 0;
+      virtual HRESULT __stdcall GetOptions (
+        /*[out,retval]*/ struct ICddbOptions * * pVal ) = 0;
+      virtual HRESULT __stdcall SetOptions (
+        /*[in]*/ struct ICddbOptions * Options ) = 0;
+      virtual HRESULT __stdcall GetMediaToc (
+        /*[in]*/ long MciDeviceId,
+        /*[out,retval]*/ BSTR * MediaToc ) = 0;
+      virtual HRESULT __stdcall LookupMediaByToc (
+        /*[in]*/ BSTR MediaToc,
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ enum CDDBMatchCode * pMatchCode ) = 0;
+      virtual HRESULT __stdcall GetMatchedDiscInfo (
+        /*[out,retval]*/ IUnknown * * ppDisc ) = 0;
+      virtual HRESULT __stdcall GetMatchedDisc (
+        /*[out,retval]*/ struct ICddbDisc * * ppDisc ) = 0;
+      virtual HRESULT __stdcall GetMatchedDiscs (
+        /*[out,retval]*/ struct ICddbDiscs * * ppDiscs ) = 0;
+      virtual HRESULT __stdcall Initialize (
+        /*[in]*/ long ParentHWND,
+        /*[in]*/ enum CDDBCacheFlags Flags ) = 0;
+      virtual HRESULT __stdcall Shutdown ( ) = 0;
+      virtual HRESULT __stdcall SetClientInfoFromHost (
+        /*[in]*/ BSTR Target,
+        /*[in]*/ BSTR User,
+        /*[in]*/ BSTR Password ) = 0;
+      virtual HRESULT __stdcall InvokeFuzzyMatchDialog (
+        /*[in]*/ struct ICddbDiscs * Discs,
+        /*[out,retval]*/ struct ICddbDisc * * pVal ) = 0;
+      virtual HRESULT __stdcall GetFullDiscInfo (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ struct ICddbDisc * * pVal ) = 0;
+      virtual HRESULT __stdcall GetDiscInfo (
+        /*[in]*/ BSTR MediaId,
+        /*[in]*/ BSTR MuiId,
+        /*[in]*/ BSTR RevisionId,
+        /*[in]*/ BSTR RevisionTag,
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ struct ICddbDisc * * ppDisc ) = 0;
+      virtual HRESULT __stdcall InvokeDiscInfo (
+        /*[in]*/ BSTR MediaToc,
+        /*[in]*/ BSTR MediaId,
+        /*[in]*/ BSTR MuiId,
+        /*[in]*/ long MciDeviceId,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall DisplayDiscInfo (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ enum CDDBUIFlags Flags,
+        /*[out,retval]*/ enum CDDBUIFlags * pVal ) = 0;
+      virtual HRESULT __stdcall GetSubmitDisc (
+        /*[in]*/ BSTR MediaToc,
+        /*[in]*/ BSTR MediaId,
+        /*[in]*/ BSTR MuiId,
+        /*[out,retval]*/ struct ICddbDisc * * pVal ) = 0;
+      virtual HRESULT __stdcall SubmitDisc (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall InvokeSubmitDisc (
+        /*[in]*/ BSTR MediaToc,
+        /*[in]*/ long MciDeviceId,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetGenreList (
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ struct ICddbGenreList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetGenreTree (
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ struct ICddbGenreTree * * pVal ) = 0;
+      virtual HRESULT __stdcall GetGenreInfo (
+        /*[in]*/ BSTR GenreId,
+        /*[out,retval]*/ struct ICddbGenre * * pVal ) = 0;
+      virtual HRESULT __stdcall GetRegionList (
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ struct ICddbRegionList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetRegionInfo (
+        /*[in]*/ BSTR RegionId,
+        /*[out,retval]*/ struct ICddbRegion * * pVal ) = 0;
+      virtual HRESULT __stdcall GetRoleList (
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ struct ICddbRoleList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetRoleTree (
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ struct ICddbRoleTree * * pVal ) = 0;
+      virtual HRESULT __stdcall GetRoleInfo (
+        /*[in]*/ BSTR RoleId,
+        /*[out,retval]*/ struct ICddbRole * * pVal ) = 0;
+      virtual HRESULT __stdcall GetLanguageList (
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ struct ICddbLanguageList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetLanguageInfo (
+        /*[in]*/ BSTR LanguageId,
+        /*[out,retval]*/ struct ICddbLanguage * * pVal ) = 0;
+      virtual HRESULT __stdcall GetFieldList (
+        /*[in]*/ BSTR Target,
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ struct ICddbFieldList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetFieldInfo (
+        /*[in]*/ BSTR Target,
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct ICddbField * * pVal ) = 0;
+      virtual HRESULT __stdcall GetURLList (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetURLManager (
+        /*[out,retval]*/ struct ICddbURLManager * * pVal ) = 0;
+      virtual HRESULT __stdcall UpdateControl (
+        /*[in]*/ long UpdateNow,
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ServiceStatusURL (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall GetServiceStatus (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall GetCoverURL (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ struct ICddbURL * * pVal ) = 0;
+      virtual HRESULT __stdcall GetUpdateURL (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall InvokeAboutCddbDialog ( ) = 0;
+      virtual HRESULT __stdcall InvokePopupMenu (
+        /*[in]*/ enum CDDBUIFlags Flags ) = 0;
+      virtual HRESULT __stdcall InvokeUserRegDialog (
+        /*[in]*/ struct ICddbUserInfo * UserInfo,
+        /*[in]*/ enum CDDBUIFlags Flags,
+        /*[out,retval]*/ enum CDDBUIFlags * pVal ) = 0;
+      virtual HRESULT __stdcall InvokeOptionsDialog (
+        /*[in]*/ struct ICddbOptions * Options,
+        /*[out,retval]*/ enum CDDBUIFlags * pVal ) = 0;
+      virtual HRESULT __stdcall InvokeNoMatchDialog (
+        /*[out,retval]*/ enum CDDBUIFlags * pVal ) = 0;
+      virtual HRESULT __stdcall InvokeInfoBrowser (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ struct ICddbURL * URL,
+        /*[in]*/ enum CDDBUIFlags Flags ) = 0;
+      virtual HRESULT __stdcall GetDiscTagId (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ long TrackNum,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall LookupMediaByTagId (
+        /*[in]*/ BSTR TagId,
+        /*[in]*/ long EventOnCompletion,
+        /*[out]*/ long * TrackNum,
+        /*[out,retval]*/ struct ICddbDisc * * pVal ) = 0;
+      virtual HRESULT __stdcall GetTagManager (
+        /*[out,retval]*/ struct ICddbID3TagManager * * pVal ) = 0;
+      virtual HRESULT __stdcall HttpPost (
+        /*[in]*/ BSTR URL,
+        /*[in]*/ BSTR Header,
+        /*[in]*/ void * PostData,
+        /*[in]*/ long PostDataSize,
+        /*[out]*/ void * * Data,
+        /*[out]*/ long * DataSize ) = 0;
+      virtual HRESULT __stdcall HttpGet (
+        /*[in]*/ BSTR URL,
+        /*[in]*/ BSTR Header,
+        /*[in]*/ void * GetData,
+        /*[in]*/ long GetDataSize,
+        /*[out]*/ void * * Data,
+        /*[out]*/ long * DataSize ) = 0;
+      virtual HRESULT __stdcall HttpGetFile (
+        /*[in]*/ BSTR URL,
+        /*[in]*/ BSTR Header,
+        /*[in]*/ void * GetData,
+        /*[in]*/ long GetDataSize,
+        /*[in]*/ BSTR File ) = 0;
+      virtual HRESULT __stdcall Cancel (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall FlushLocalCache (
+        /*[in]*/ enum CDDBFlushFlags Flags ) = 0;
+      virtual HRESULT __stdcall Status ( ) = 0;
+      virtual HRESULT __stdcall ServerNoop (
+        /*[in]*/ long EventOnCompletion ) = 0;
+};
+
+struct __declspec(uuid("9e77a3fd-df03-4077-ba10-001d52acae44"))
+CddbID3Tag;
+    // [ default ] interface ICddbID3Tag
+    // interface ICddbID3Tag2
+    // interface ICddbFileTag
+    // interface ICddbFileTag2_5
+
+struct __declspec(uuid("e7bbbe3a-dc3c-4d00-98f9-bc620ca952f8"))
+ICddbID3TagManager : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall InitTagFromDisc (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ long TrackNum,
+        /*[out,retval]*/ struct ICddbID3Tag * * pVal ) = 0;
+      virtual HRESULT __stdcall MergeToFile (
+        /*[in]*/ struct ICddbID3Tag * Tag,
+        /*[in]*/ BSTR Filename,
+        /*[in]*/ long Flags ) = 0;
+      virtual HRESULT __stdcall GetID3TagFileId (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ long TrackNum,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_CddbOwnerId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_CddbCommentString (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall LookupMediaByFile (
+        /*[in]*/ BSTR Filename,
+        /*[in]*/ long EventOnCompletion,
+        /*[out]*/ long * TrackNum,
+        /*[out,retval]*/ struct ICddbDisc * * pVal ) = 0;
+};
+
+struct __declspec(uuid("ca4e0490-7ed8-44a5-9ecd-d00b90dbe808"))
+ICddbFileTag : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Album (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Album (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Movie (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Movie (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Title (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Title (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_CopyrightYear (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CopyrightYear (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_CopyrightHolder (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CopyrightHolder (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Comments (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Comments (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Label (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Label (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_BeatsPerMinute (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_BeatsPerMinute (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_LeadArtist (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LeadArtist (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PartOfSet (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_PartOfSet (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_TrackPosition (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_TrackPosition (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Year (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Year (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Genre (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Genre (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_FileId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_FileId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ISRC (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ISRC (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall LoadFromFile (
+        /*[in]*/ BSTR Filename,
+        /*[in]*/ long Readonly ) = 0;
+      virtual HRESULT __stdcall BindToFile (
+        /*[in]*/ BSTR Filename,
+        /*[in]*/ long Readonly ) = 0;
+      virtual HRESULT __stdcall SaveToFile (
+        /*[in]*/ BSTR Filename ) = 0;
+      virtual HRESULT __stdcall Commit ( ) = 0;
+      virtual HRESULT __stdcall Clear ( ) = 0;
+      virtual HRESULT __stdcall LoadFromBuffer (
+        /*[in]*/ VARIANT Buffer,
+        /*[in]*/ long BufferSize ) = 0;
+      virtual HRESULT __stdcall GetBufferSize (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall SaveToBuffer (
+        /*[in]*/ VARIANT Buffer,
+        /*[in]*/ long BufferSize ) = 0;
+      virtual HRESULT __stdcall GetTextFrame (
+        /*[in]*/ BSTR Frame,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall SetTextFrame (
+        /*[in]*/ BSTR Frame,
+        /*[in]*/ BSTR Text ) = 0;
+};
+
+struct __declspec(uuid("7b2d9eb8-70aa-43d3-aa8e-e71ce53a83d8"))
+ICddbID3Tag : ICddbFileTag
+{};
+
+struct __declspec(uuid("44959787-915b-4fcf-9763-1038483c000e"))
+ICddbID3Tag2 : ICddbID3Tag
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Comment (
+        /*[in]*/ BSTR desc,
+        /*[out,retval]*/ BSTR * pText ) = 0;
+      virtual HRESULT __stdcall put_Comment (
+        /*[in]*/ BSTR desc,
+        /*[in]*/ BSTR Text ) = 0;
+};
+
+struct __declspec(uuid("d0be7f39-60d3-43e2-aa96-513217443ab6"))
+CddbDisc2;
+    // [ default ] interface ICddbDisc2
+    // interface ICddbDisc
+
+struct __declspec(uuid("45d1d297-dd01-4890-928c-34e1ba494a14"))
+ICddbDisc2 : ICddbDisc
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ContentLanguageId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ContentLanguageId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ReleaseDate (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ReleaseDate (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_RecordingDate (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_RecordingDate (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ProductCode (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ProductCode (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_TrackNum (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_TrackNum (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall GetProperty (
+        /*[in]*/ enum CDDBProperty PropId,
+        /*[in]*/ BSTR PropName,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall SetProperty (
+        /*[in]*/ enum CDDBProperty PropId,
+        /*[in]*/ BSTR PropName,
+        /*[in]*/ BSTR PropValue ) = 0;
+      virtual HRESULT __stdcall Duplicate (
+        /*[out,retval]*/ struct ICddbDisc2 * * pVal ) = 0;
+      virtual HRESULT __stdcall get_YearComposed (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_YearComposed (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("d0f041d4-1570-4143-bb6a-4ce041b109d4"))
+ICddbInfoWindow : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ long hWnd,
+        /*[in]*/ long Left,
+        /*[in]*/ long Top,
+        /*[in]*/ long Right,
+        /*[in]*/ long Bottom ) = 0;
+      virtual HRESULT __stdcall SetRawURL (
+        /*[in]*/ BSTR RawURL ) = 0;
+      virtual HRESULT __stdcall GetHwnd (
+        /*[out]*/ long * phwnd ) = 0;
+      virtual HRESULT __stdcall SetDisc (
+        /*[in]*/ struct ICddbDisc * Disc ) = 0;
+      virtual HRESULT __stdcall SetURL (
+        /*[in]*/ struct ICddbURL * URL ) = 0;
+      virtual HRESULT __stdcall Refresh ( ) = 0;
+      virtual HRESULT __stdcall Shutdown ( ) = 0;
+      virtual HRESULT __stdcall SetAdPosition (
+        /*[in]*/ BSTR Position ) = 0;
+};
+
+struct __declspec(uuid("06c18ba6-86a0-464c-b838-13a74e1ad049"))
+ICddbUIOptions : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetCurrent (
+        enum CDDBUIFlags Flags ) = 0;
+      virtual HRESULT __stdcall SetCurrent (
+        enum CDDBUIFlags Flags ) = 0;
+      virtual HRESULT __stdcall get_ParentHWND (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ParentHWND (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Left (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Left (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Top (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Top (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Right (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Right (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Bottom (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Bottom (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ResourceHINSTANCE (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ResourceHINSTANCE (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ProgressResourceID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ProgressResourceID (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_StaticResourceID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_StaticResourceID (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Frames (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Frames (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_BonusResourceID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_BonusResourceID (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("d6f791c8-a7f7-4702-9d24-4b8f8ca4c807"))
+ICddbTrackManager : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall MarkStartTrack (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ long TrackNum,
+        /*[out,retval]*/ BSTR * pId ) = 0;
+      virtual HRESULT __stdcall MarkStartFile (
+        /*[in]*/ BSTR TagId,
+        /*[in]*/ BSTR Filename,
+        /*[out,retval]*/ BSTR * pId ) = 0;
+      virtual HRESULT __stdcall MarkStop (
+        /*[in]*/ BSTR Id ) = 0;
+      virtual HRESULT __stdcall GetURLContent (
+        /*[in]*/ BSTR Id,
+        /*[out,retval]*/ struct ICddbURLList * * pVal ) = 0;
+};
+
+struct __declspec(uuid("1b0700ee-c9c7-4fca-9584-1096268cf6c4"))
+ICDDBControl2 : ICDDBControl
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetHelper (
+        /*[in]*/ long Id,
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall ShutdownInterface (
+        /*[in]*/ BSTR Id,
+        /*[in]*/ IUnknown * IHelper ) = 0;
+      virtual HRESULT __stdcall HttpPost2 (
+        /*[in]*/ BSTR URL,
+        /*[in]*/ BSTR HeaderIn,
+        /*[out]*/ BSTR * HeaderOut,
+        /*[out]*/ BSTR * StatusOut,
+        /*[in]*/ long Redirect,
+        /*[in]*/ void * PostData,
+        /*[in]*/ long PostDataSize,
+        /*[out]*/ void * * Data,
+        /*[out]*/ long * DataSize ) = 0;
+      virtual HRESULT __stdcall HttpGet2 (
+        /*[in]*/ BSTR URL,
+        /*[in]*/ BSTR HeaderIn,
+        /*[out]*/ BSTR * HeaderOut,
+        /*[out]*/ BSTR * StatusOut,
+        /*[in]*/ long Redirect,
+        /*[in]*/ void * GetData,
+        /*[in]*/ long GetDataSize,
+        /*[out]*/ void * * Data,
+        /*[out]*/ long * DataSize ) = 0;
+      virtual HRESULT __stdcall HttpGetFile2 (
+        /*[in]*/ BSTR URL,
+        /*[in]*/ BSTR HeaderIn,
+        /*[out]*/ BSTR * HeaderOut,
+        /*[out]*/ BSTR * StatusOut,
+        /*[in]*/ long Redirect,
+        /*[in]*/ void * GetData,
+        /*[in]*/ long GetDataSize,
+        /*[in]*/ BSTR File ) = 0;
+      virtual HRESULT __stdcall InvokeFuzzyMatchDialog2 (
+        /*[in]*/ struct ICddbDiscs * Discs,
+        /*[in]*/ enum CDDBUIFlags Flags,
+        /*[out]*/ long * Selection,
+        /*[out,retval]*/ enum CDDBUIFlags * pVal ) = 0;
+      virtual HRESULT __stdcall LookupMediaFile (
+        /*[in]*/ BSTR Filename,
+        /*[in]*/ struct ICddbID3Tag * Tag,
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ enum CDDBMatchCode * pVal ) = 0;
+      virtual HRESULT __stdcall GetFullDiscInfo2 (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ long Preview,
+        /*[in]*/ long EventOnCompletion,
+        /*[out,retval]*/ struct ICddbDisc * * pVal ) = 0;
+      virtual HRESULT __stdcall IsRegisteredForEncoding (
+        /*[in]*/ long InvokeDialog,
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("63c7d158-bca0-4c29-96c4-06bdd744ecc2"))
+ICddbOptions2 : ICddbOptions
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_PluginPath (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_PluginPath (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("d27c6efc-76ed-4724-9741-9531fc52242c"))
+ICddbWork : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Title (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Composer (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("e5c5f8ea-6f8d-4bd0-8856-95ddd5668cde"))
+ICddbTrack2 : ICddbTrack
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_LanguageId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LanguageId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ContentLanguageId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ContentLanguageId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ReleaseDate (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ReleaseDate (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_RecordingDate (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_RecordingDate (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall GetProperty (
+        /*[in]*/ enum CDDBProperty PropId,
+        /*[in]*/ BSTR PropName,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall SetProperty (
+        /*[in]*/ enum CDDBProperty PropId,
+        /*[in]*/ BSTR PropName,
+        /*[in]*/ BSTR PropValue ) = 0;
+      virtual HRESULT __stdcall get_YearComposed (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_YearComposed (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("7af4e5e5-2deb-462f-bbaf-684146856c6b"))
+ICddbCacheManager : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall CheckCache (
+        /*[in]*/ BSTR Filename ) = 0;
+      virtual HRESULT __stdcall BackupCache (
+        /*[in]*/ BSTR Filename ) = 0;
+      virtual HRESULT __stdcall RestoreCache (
+        /*[in]*/ BSTR Filename ) = 0;
+      virtual HRESULT __stdcall CompactCache (
+        /*[in]*/ BSTR Filename ) = 0;
+      virtual HRESULT __stdcall DeleteCache (
+        /*[in]*/ BSTR Filename ) = 0;
+      virtual HRESULT __stdcall FetchDiscByToc (
+        /*[in]*/ BSTR Toc,
+        /*[out,retval]*/ struct ICddbDisc * * pVal ) = 0;
+      virtual HRESULT __stdcall FetchDiscById (
+        /*[in]*/ BSTR MediaId,
+        /*[in]*/ BSTR MuiId,
+        /*[out,retval]*/ struct ICddbDisc * * pVal ) = 0;
+      virtual HRESULT __stdcall FetchDiscByTagId (
+        /*[in]*/ BSTR TagId,
+        /*[out,retval]*/ struct ICddbDisc * * pVal ) = 0;
+      virtual HRESULT __stdcall FetchListOrTree (
+        /*[in]*/ BSTR Type,
+        /*[in]*/ long Tree,
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall StoreDiscByToc (
+        /*[in]*/ BSTR Toc,
+        /*[in]*/ struct ICddbDisc * Disc ) = 0;
+      virtual HRESULT __stdcall StoreDiscById (
+        /*[in]*/ BSTR MediaId,
+        /*[in]*/ BSTR MuiId,
+        /*[in]*/ struct ICddbDisc * Disc ) = 0;
+      virtual HRESULT __stdcall StoreDiscByTagId (
+        /*[in]*/ BSTR TagId,
+        /*[in]*/ struct ICddbDisc * Disc ) = 0;
+      virtual HRESULT __stdcall DeleteList (
+        /*[in]*/ BSTR Type ) = 0;
+      virtual HRESULT __stdcall DeleteDisc (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ BSTR TagId ) = 0;
+      virtual HRESULT __stdcall UpdateListsFromCache (
+        /*[in]*/ BSTR Type ) = 0;
+      virtual HRESULT __stdcall StartIterating ( ) = 0;
+      virtual HRESULT __stdcall NextEntry (
+        /*[out]*/ struct ICddbDisc * * Disc,
+        /*[out]*/ BSTR * Key ) = 0;
+      virtual HRESULT __stdcall FinishIterating ( ) = 0;
+};
+
+struct __declspec(uuid("49d2a10d-a5f3-4bd0-9c15-6b2b94f16593"))
+ICddbWMATag : ICddbFileTag
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall InitFromDisc (
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ long TrackNum ) = 0;
+};
+
+struct __declspec(uuid("1bba432e-84b5-4559-bcf7-cbc199ed6085"))
+ICddbOptions2_5 : ICddbOptions2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_UILanguageId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_UILanguageId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DataListRegionId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DataListRegionId (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DataListOptions (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_DataListOptions (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_UseLocaleSettings (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_UseLocaleSettings (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_DisplayGenreLevel (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_DisplayGenreLevel (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_DefaultUIGenreLevels (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefaultUIGenreLevels (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("2758dffc-f9fb-4c62-82c9-fdc9bceb5e9c"))
+CDDBNSWinampControl;
+    // [ default ] interface ICDDBControl
+    // [ default, source ] dispinterface DCDDBEvents
+
+struct __declspec(uuid("af647dae-a47c-4153-8852-3b2573d78152"))
+CDDBProps;
+    // [ default ] interface IUnknown
+
+struct __declspec(uuid("e7568058-32ea-4b10-af1b-8b666978891e"))
+CddbInfoWindow;
+    // [ default ] interface ICddbInfoWindow
+
+struct __declspec(uuid("7416f5ca-8922-4516-89e8-d826a8c091c5"))
+CddbUIOptions;
+    // [ default ] interface ICddbUIOptions
+
+struct __declspec(uuid("657eefb8-2071-4e75-8905-36c25e550aa2"))
+CddbTrackManager;
+    // [ default ] interface ICddbTrackManager
+
+struct __declspec(uuid("62d92898-9129-4a24-bc97-078ba176816b"))
+CDDBControl2;
+    // [ default ] interface ICDDBControl2
+    // interface ICDDBControl
+
+struct __declspec(uuid("f7c36ad9-691f-4640-a2e3-0200a642ad25"))
+CddbOptions2;
+    // [ default ] interface ICddbOptions2
+    // interface ICddbOptions
+
+struct __declspec(uuid("1f27a2d8-5745-4a50-b266-a90d6e43269f"))
+CddbTrack2;
+    // [ default ] interface ICddbTrack2
+    // interface ICddbTrack
+
+struct __declspec(uuid("4997bae9-4015-4030-80aa-1477ce28e66c"))
+CddbCacheManager;
+    // [ default ] interface ICddbCacheManager
+
+struct __declspec(uuid("fb51cc6e-a66e-4c28-bef5-142d4927e1cf"))
+CddbWMATag;
+    // [ default ] interface ICddbWMATag
+    // interface ICddbFileTag
+    // interface ICddbFileTag2_5
+
+struct __declspec(uuid("fbcd6aca-39bc-47af-be8e-52bef2b9d0f7"))
+CddbListManager;
+    // [ default ] interface ICddbListManager
+
+struct __declspec(uuid("a943875d-b7ed-4f49-b256-d1a39e5fec82"))
+CddbDataListTree;
+    // [ default ] interface ICddbDataListTree
+
+struct __declspec(uuid("a25bda8e-5281-4664-a325-a3a38e555c18"))
+CddbDataList;
+    // [ default ] interface ICddbDataList
+
+struct __declspec(uuid("1f767747-0f2e-4e6d-8105-56987c8c499e"))
+CddbDataListElement;
+    // [ default ] interface ICddbDataListElement
+
+struct __declspec(uuid("9bac7636-3c83-4a17-bc39-aeff43f8780b"))
+CddbExtData;
+    // [ default ] interface ICddbExtData
+
+struct __declspec(uuid("94c43420-12fe-4cb0-941d-babffc126834"))
+CddbWork;
+    // [ default ] interface ICddbWork
+
+struct __declspec(uuid("3254573e-1053-4430-9ca6-7b9b89638515"))
+ICddbFileTag2_5 : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DiscArtist (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DiscArtist (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Lyricist (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Lyricist (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Composer (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Composer (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_OriginalReleaseYear (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_OriginalReleaseYear (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_OriginalLyricist (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_OriginalLyricist (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Ensemble (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Ensemble (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Conductor (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Conductor (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ExtData (
+        /*[out,retval]*/ struct ICddbExtData * * ppExtData ) = 0;
+      virtual HRESULT __stdcall put_ExtData (
+        /*[in]*/ struct ICddbExtData * ppExtData ) = 0;
+      virtual HRESULT __stdcall get_ExtDataSerialized (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ExtDataSerialized (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_LengthMS (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LengthMS (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DataListElement (
+        /*[in]*/ long listID,
+        /*[in]*/ long Level,
+        /*[out,retval]*/ struct ICddbDataListElement * * ppDataListElement ) = 0;
+      virtual HRESULT __stdcall put_DataListElement (
+        /*[in]*/ struct ICddbDataListElement * pDataListElement ) = 0;
+};
+
+struct __declspec(uuid("2a050616-00e0-49c3-bc60-23c5192b25d3"))
+ICddbExtData : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall PopulateFromDisc (
+        /*[in]*/ struct ICddbDisc2 * pDisc,
+        /*[in]*/ long Flags,
+        /*[in]*/ long TrackNum ) = 0;
+      virtual HRESULT __stdcall PopulateFromTag (
+        /*[in]*/ struct ICddbFileTag2_5 * pTag,
+        /*[in]*/ long Flags ) = 0;
+      virtual HRESULT __stdcall PopulateFromDataElement (
+        /*[in]*/ struct ICddbDataListElement * pElement,
+        /*[in]*/ long Flags ) = 0;
+      virtual HRESULT __stdcall ApplyToDisc (
+        /*[in]*/ struct ICddbDisc2 * pDisc,
+        /*[in]*/ long Flags,
+        /*[in]*/ long TrackNum ) = 0;
+      virtual HRESULT __stdcall ApplyToTag (
+        /*[in]*/ struct ICddbFileTag2_5 * pTag,
+        /*[in]*/ long Flags ) = 0;
+      virtual HRESULT __stdcall Serialize (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall Deserialize (
+        /*[in]*/ BSTR newVal ) = 0;
+      virtual HRESULT __stdcall GetDataListElement (
+        /*[in]*/ long listID,
+        /*[in]*/ long Level,
+        /*[out,retval]*/ struct ICddbDataListElement * * ppDataListElement ) = 0;
+      virtual HRESULT __stdcall GetExtendedDataId (
+        /*[in]*/ long listID,
+        /*[in]*/ long Level,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall PutExtendedDataId (
+        /*[in]*/ long listID,
+        /*[in]*/ long newVal ) = 0;
+      virtual HRESULT __stdcall GetExtendedDataName (
+        /*[in]*/ long listID,
+        /*[in]*/ long Level,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall GetExtendedDataDescription (
+        /*[in]*/ long listID,
+        /*[in]*/ long Level,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall GetExtendedDataOrdinal (
+        /*[in]*/ long listID,
+        /*[in]*/ long Level,
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("f19a9d2d-2287-4c64-96c7-4bb63edec9c5"))
+ICddbDataListElement : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Level (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Ordinal (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetParent (
+        /*[out,retval]*/ struct ICddbDataListElement * * Element ) = 0;
+      virtual HRESULT __stdcall GetChildrenList (
+        /*[out,retval]*/ struct ICddbDataList * * List ) = 0;
+};
+
+struct __declspec(uuid("c412e44b-a911-4e2e-ab26-f12bdb23ee55"))
+ICddbDataList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Level (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetElement (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ICddbDataListElement * * Element ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("db780e88-d446-4157-af74-04e8e48e46a3"))
+ICddbDisc2_5 : ICddbDisc2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_V2GenreStringPrimary (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_V2GenreStringPrimary (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_V2GenreStringSecondary (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_V2GenreStringSecondary (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_V2GenreStringPrimaryByLevel (
+        /*[in]*/ long genreLevel,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_V2GenreStringPrimaryByLevel (
+        /*[in]*/ long genreLevel,
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_V2GenreStringSecondaryByLevel (
+        /*[in]*/ long genreLevel,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_V2GenreStringSecondaryByLevel (
+        /*[in]*/ long genreLevel,
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ExtDataSerialized (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ExtDataSerialized (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ExtData (
+        /*[in]*/ long Flags,
+        /*[out,retval]*/ struct ICddbExtData * * ppExtData ) = 0;
+      virtual HRESULT __stdcall put_ExtData (
+        /*[in]*/ long Flags,
+        /*[in]*/ struct ICddbExtData * ppExtData ) = 0;
+      virtual HRESULT __stdcall GetDataListElement (
+        /*[in]*/ long listID,
+        /*[in]*/ long Level,
+        /*[out,retval]*/ struct ICddbDataListElement * * ppDataListElement ) = 0;
+      virtual HRESULT __stdcall PutDataListElement (
+        /*[in]*/ struct ICddbDataListElement * pDataListElement ) = 0;
+};
+
+struct __declspec(uuid("a354a00f-1f1d-44bb-853f-cb77153c302c"))
+ICddbDisc2_6 : ICddbDisc2_5
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_WorkCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Work (
+        /*[in]*/ long WorkIndex,
+        /*[out,retval]*/ struct ICddbWork * * pVal ) = 0;
+      virtual HRESULT __stdcall RetrieveData (
+        /*[in]*/ long CddbDataOptions ) = 0;
+};
+
+struct __declspec(uuid("24959692-aac0-411d-9e6b-c7611fccacba"))
+ICddbTrack2_5 : ICddbTrack2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_V2GenreStringPrimary (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_V2GenreStringPrimary (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_V2GenreStringSecondary (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_V2GenreStringSecondary (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_V2GenreStringPrimaryByLevel (
+        /*[in]*/ long genreLevel,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_V2GenreStringPrimaryByLevel (
+        /*[in]*/ long genreLevel,
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_V2GenreStringSecondaryByLevel (
+        /*[in]*/ long genreLevel,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_V2GenreStringSecondaryByLevel (
+        /*[in]*/ long genreLevel,
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ExtDataSerialized (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ExtDataSerialized (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ExtData (
+        /*[in]*/ long Flags,
+        /*[out,retval]*/ struct ICddbExtData * * ppExtData ) = 0;
+      virtual HRESULT __stdcall put_ExtData (
+        /*[in]*/ long Flags,
+        /*[in]*/ struct ICddbExtData * ppExtData ) = 0;
+      virtual HRESULT __stdcall GetDataListElement (
+        /*[in]*/ long listID,
+        /*[in]*/ long Level,
+        /*[out,retval]*/ struct ICddbDataListElement * * ppDataListElement ) = 0;
+      virtual HRESULT __stdcall PutDataListElement (
+        /*[in]*/ struct ICddbDataListElement * pDataListElement ) = 0;
+};
+
+struct __declspec(uuid("e7d07c78-6084-4628-89f6-6f89dd5f1a9f"))
+ICddbTrack2_6 : ICddbTrack2_5
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_WorkCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Work (
+        /*[in]*/ long WorkIndex,
+        /*[out,retval]*/ struct ICddbWork * * pVal ) = 0;
+};
+
+struct __declspec(uuid("fe5e5b63-8154-4cb0-8ffc-a0aab7dbe9d5"))
+ICddbDataListTree : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_LanguageId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_RegionId (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Variant (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Variant (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Levels (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Revision (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetElementById (
+        /*[in]*/ long Level,
+        /*[in]*/ long Id,
+        /*[out,retval]*/ struct ICddbDataListElement * * Element ) = 0;
+      virtual HRESULT __stdcall GetElementByData (
+        /*[in]*/ long Level,
+        /*[in]*/ struct ICddbExtData * Data,
+        /*[in]*/ long Flags,
+        /*[out,retval]*/ struct ICddbDataListElement * * Element ) = 0;
+      virtual HRESULT __stdcall GetRootList (
+        /*[out,retval]*/ struct ICddbDataList * * List ) = 0;
+      virtual HRESULT __stdcall CreatePopupMenu (
+        /*[in]*/ long Levels,
+        /*[out,retval]*/ long * Menu ) = 0;
+};
+
+struct __declspec(uuid("e6051029-5694-4e7d-a524-7e38f3c9443d"))
+ICddbListManager : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Initialize (
+        /*[in]*/ struct ICDDBControl * Control ) = 0;
+      virtual HRESULT __stdcall Shutdown ( ) = 0;
+      virtual HRESULT __stdcall GetDataListTree (
+        /*[in]*/ enum CDDBDataListID listID,
+        /*[out,retval]*/ struct ICddbDataListTree * * Tree ) = 0;
+      virtual HRESULT __stdcall ReleaseDataListTree (
+        /*[in]*/ struct ICddbDataListTree * Tree ) = 0;
+      virtual HRESULT __stdcall VerifyOptions (
+        /*[in]*/ long Flags,
+        /*[in]*/ BSTR LanguageId,
+        /*[in]*/ BSTR RegionId,
+        /*[out,retval]*/ long * Status ) = 0;
+      virtual HRESULT __stdcall DownloadUpdateLists (
+        /*[in]*/ enum CDDBDataListID listID,
+        /*[in]*/ long Flags,
+        /*[out,retval]*/ long * Status ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CDDBCONTROLLibNSWinamp =
+    {0x65eba1d4,0x45e2,0x4ec5,{0xa7,0xff,0xcb,0x7e,0x14,0x65,0x9c,0x77}};
+extern "C" const GUID __declspec(selectany) DIID_DCDDBEvents =
+    {0xfc288125,0x6636,0x405c,{0xbe,0x68,0xe9,0xd3,0x77,0x00,0xde,0xb0}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbUserInfo =
+    {0x796d4314,0x0c0e,0x4b10,{0x8b,0xc2,0x3f,0x3e,0x69,0x56,0xbc,0x26}};
+extern "C" const GUID __declspec(selectany) IID_ICddbUserInfo =
+    {0x4570cddc,0x94f8,0x4b43,{0xb1,0xac,0x79,0x6d,0x68,0xfa,0xc7,0xdf}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbOptions =
+    {0x544bb1f5,0xd771,0x4fed,{0x8f,0xa7,0xd8,0x3e,0x62,0xfe,0xfb,0x82}};
+extern "C" const GUID __declspec(selectany) IID_ICddbOptions =
+    {0x30755708,0xae75,0x49f8,{0xb9,0x9a,0xac,0x8d,0x09,0x5d,0x04,0x48}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbDisc =
+    {0x3d055b64,0x824e,0x4613,{0xb8,0x45,0x6a,0xfc,0xdb,0x88,0x8a,0xa0}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbTrack =
+    {0x02d9f45f,0x2155,0x4445,{0x83,0xb9,0x75,0xdf,0xa5,0x15,0x45,0x38}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbFullName =
+    {0xd5673322,0xc7a0,0x493a,{0x98,0xd5,0xf1,0x6d,0xa0,0x07,0x24,0xaa}};
+extern "C" const GUID __declspec(selectany) IID_ICddbFullName =
+    {0x2b6107ad,0xd1f2,0x41c3,{0xb9,0xb9,0x33,0x49,0x32,0x4f,0x7e,0x7b}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbCredit =
+    {0x61bd27fe,0x604c,0x49f8,{0xa9,0x79,0x7a,0x26,0x0a,0x51,0xea,0x5f}};
+extern "C" const GUID __declspec(selectany) IID_ICddbCredit =
+    {0x2aae501a,0x6d20,0x4af3,{0x8c,0x79,0x47,0x31,0x06,0xbd,0x53,0x91}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbCredits =
+    {0x9a27fc19,0xf3ac,0x4755,{0xa0,0x5a,0x9c,0x79,0x22,0x43,0x72,0x71}};
+extern "C" const GUID __declspec(selectany) IID_ICddbTrack =
+    {0x7da05059,0xcfb4,0x46ce,{0xa7,0x88,0x70,0x9a,0x3a,0xd3,0x45,0x4d}};
+extern "C" const GUID __declspec(selectany) IID_ICddbCredits =
+    {0xc30fbc5c,0xf56c,0x40dd,{0x84,0x1d,0x5e,0x44,0x28,0xf3,0xba,0xea}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbTracks =
+    {0xb2ebb2e2,0x48e5,0x4004,{0xbc,0x9e,0x9c,0xde,0xfd,0xd9,0x26,0x9e}};
+extern "C" const GUID __declspec(selectany) IID_ICddbTracks =
+    {0xa1fa4e71,0xb4e0,0x4378,{0xa1,0x02,0x04,0xe8,0x50,0xe0,0xaa,0x18}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbSegments =
+    {0xf2f46124,0x41eb,0x4e26,{0xb2,0xe5,0xd7,0xfc,0x17,0x36,0xc8,0xa2}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbSegment =
+    {0x993bb5e2,0x4a0d,0x4ed0,{0xbd,0x37,0x87,0x18,0xc4,0x22,0x99,0x7e}};
+extern "C" const GUID __declspec(selectany) IID_ICddbSegments =
+    {0x31480e0f,0xde17,0x4cae,{0x8d,0x85,0x1d,0xb9,0x0f,0x9f,0xcd,0x2f}};
+extern "C" const GUID __declspec(selectany) IID_ICddbSegment =
+    {0x375b697c,0x06a1,0x4d99,{0x9f,0x5d,0x35,0x89,0x00,0x1b,0x15,0xfd}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbURLTree =
+    {0x15a6784e,0xb924,0x43da,{0xa1,0x5f,0x92,0xe0,0x07,0x2a,0xc1,0x4d}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbURLList =
+    {0xf61de7e3,0xbd71,0x442c,{0xa5,0x55,0xd1,0x18,0x80,0xa0,0xb4,0x54}};
+extern "C" const GUID __declspec(selectany) IID_ICddbURLTree =
+    {0x20d2984f,0x0d6d,0x49f9,{0xaa,0x80,0x36,0x03,0x0c,0xef,0x0a,0x42}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbURL =
+    {0x6f6f90b2,0xff9f,0x4f62,{0x8e,0xee,0x6b,0xa0,0x4a,0x45,0xde,0x6c}};
+extern "C" const GUID __declspec(selectany) IID_ICddbURLList =
+    {0x680f25c4,0x044b,0x4de0,{0x99,0x8f,0xdf,0xa4,0x63,0x62,0x6e,0x13}};
+extern "C" const GUID __declspec(selectany) IID_ICddbURL =
+    {0x751e8ace,0x610b,0x4336,{0xb4,0x25,0x50,0x38,0x15,0x4f,0x68,0xa2}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbLanguages =
+    {0x8f3ae41f,0x1fe4,0x4293,{0xb0,0x16,0x71,0xe3,0xbc,0xca,0x98,0x41}};
+extern "C" const GUID __declspec(selectany) IID_ICddbDisc =
+    {0x5220e8fa,0xb11f,0x46cf,{0x97,0x86,0x51,0xb1,0x1e,0x05,0xf6,0x57}};
+extern "C" const GUID __declspec(selectany) IID_ICddbLanguages =
+    {0x686f7bce,0x1edb,0x4540,{0x8c,0x25,0xbb,0xa9,0xce,0x7b,0x23,0x23}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbDiscs =
+    {0xe39c031c,0xa54e,0x40f7,{0xb8,0x2d,0x1c,0x47,0x15,0x5e,0x74,0x11}};
+extern "C" const GUID __declspec(selectany) IID_ICddbDiscs =
+    {0x0d5072cc,0x86a0,0x4600,{0xbb,0x7f,0xda,0x77,0x23,0xdd,0xd2,0x98}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbGenreList =
+    {0x82e54124,0x11a8,0x4b37,{0x98,0x20,0x3e,0x63,0xea,0xbd,0xe0,0x79}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbGenre =
+    {0xcd5f005a,0x596d,0x4b5a,{0x8a,0xb9,0xc9,0x82,0x13,0x15,0xb9,0x50}};
+extern "C" const GUID __declspec(selectany) IID_ICddbGenreList =
+    {0x9151953e,0x0621,0x4167,{0xbc,0xb6,0x36,0xf8,0xe6,0x5e,0xc6,0xc9}};
+extern "C" const GUID __declspec(selectany) IID_ICddbGenre =
+    {0x4b3be7ee,0x9a6e,0x4276,{0x87,0x01,0x3a,0x85,0xf5,0xd9,0xe3,0xc5}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbGenreTree =
+    {0xa228e94b,0x2fc2,0x448c,{0xb5,0x93,0xd2,0x93,0xd9,0x81,0xa3,0x35}};
+extern "C" const GUID __declspec(selectany) IID_ICddbGenreTree =
+    {0x37668f25,0xb3ff,0x42ea,{0xa3,0xf9,0x25,0xea,0x07,0x40,0x90,0x2e}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbRegionList =
+    {0xe454ac26,0x5551,0x47ee,{0x95,0x1c,0x5a,0xe1,0xdd,0x82,0x4d,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbRegion =
+    {0x203e2a74,0xacde,0x4588,{0xad,0x98,0xa6,0x66,0xdc,0xb1,0x63,0x6a}};
+extern "C" const GUID __declspec(selectany) IID_ICddbRegionList =
+    {0xc841589b,0xce3d,0x4fef,{0x94,0x22,0x28,0x32,0xa6,0x4d,0x32,0x1e}};
+extern "C" const GUID __declspec(selectany) IID_ICddbRegion =
+    {0x57b9551a,0xa3ea,0x484d,{0x8f,0xc6,0x1b,0x4e,0xc7,0xd2,0x42,0x0d}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbRoleList =
+    {0x24575390,0x26a3,0x405d,{0xb4,0x7b,0xfc,0x72,0xcd,0xcb,0x80,0xaa}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbRole =
+    {0x546523f6,0x07ee,0x488c,{0xb4,0x72,0xdd,0x4a,0x33,0x8b,0xa7,0xa2}};
+extern "C" const GUID __declspec(selectany) IID_ICddbRoleList =
+    {0x614d9d0a,0xc012,0x4863,{0xaf,0xbf,0x9c,0x9d,0xd0,0x1e,0x04,0xd1}};
+extern "C" const GUID __declspec(selectany) IID_ICddbRole =
+    {0x84f40113,0xd6ca,0x4289,{0xac,0xfa,0xb8,0xb1,0x69,0x1e,0x59,0x6b}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbRoleTree =
+    {0xa25a1b97,0xa3f8,0x4fd5,{0xa7,0x1e,0xa6,0xab,0x86,0xde,0x19,0x46}};
+extern "C" const GUID __declspec(selectany) IID_ICddbRoleTree =
+    {0x0ba44da2,0xa91d,0x4c60,{0x8e,0x48,0x61,0xb5,0xe6,0x94,0x95,0xea}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbLanguageList =
+    {0xbd8c8761,0x451f,0x4aec,{0x9d,0xad,0xf4,0x2b,0xdb,0xea,0xf9,0xe6}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbLanguage =
+    {0xee5da1c8,0xea29,0x4ec6,{0xa5,0x9c,0x23,0xdd,0xc3,0x04,0xba,0xb0}};
+extern "C" const GUID __declspec(selectany) IID_ICddbLanguageList =
+    {0x719c744f,0xcdef,0x49c2,{0x9a,0xda,0xdf,0x5b,0xa8,0x77,0x0f,0x4b}};
+extern "C" const GUID __declspec(selectany) IID_ICddbLanguage =
+    {0x06c77e4d,0xfe13,0x4fa4,{0xb5,0x2a,0x1c,0xf2,0xe0,0x47,0xf5,0x5f}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbFieldList =
+    {0xf34a22b2,0xa4df,0x4a19,{0xbf,0xd9,0xc5,0x93,0xbd,0x1c,0xd6,0xb2}};
+extern "C" const GUID __declspec(selectany) IID_ICddbFieldList =
+    {0xcf6268fd,0x7ba3,0x4cc5,{0x9d,0xe1,0xfe,0xad,0x92,0x3d,0x21,0x6c}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbField =
+    {0x9390d4fe,0x56ca,0x42f6,{0xb8,0xdc,0x16,0xe2,0x2d,0x12,0xc9,0xc3}};
+extern "C" const GUID __declspec(selectany) IID_ICddbField =
+    {0xaa3218d8,0xa65c,0x4a29,{0x86,0x90,0x1e,0x5b,0x75,0xdb,0xf3,0xb8}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbURLManager =
+    {0xdccf8d5f,0xc1f6,0x44a1,{0xb0,0x65,0x60,0xd5,0x65,0x57,0xf8,0x21}};
+extern "C" const GUID __declspec(selectany) IID_ICddbURLManager =
+    {0x623ce0d4,0x7b45,0x4b69,{0xa2,0x8d,0x24,0x01,0xe7,0xaa,0x16,0xd4}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbID3TagManager =
+    {0xa4d4fe68,0x1df3,0x42fe,{0x8a,0x8d,0x59,0x4d,0x9b,0xd6,0x0f,0xd0}};
+extern "C" const GUID __declspec(selectany) IID_ICDDBControl =
+    {0x723695c2,0x3b01,0x42c3,{0xa6,0x61,0x64,0xd2,0xec,0x30,0xb4,0xe5}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbID3Tag =
+    {0x9e77a3fd,0xdf03,0x4077,{0xba,0x10,0x00,0x1d,0x52,0xac,0xae,0x44}};
+extern "C" const GUID __declspec(selectany) IID_ICddbID3TagManager =
+    {0xe7bbbe3a,0xdc3c,0x4d00,{0x98,0xf9,0xbc,0x62,0x0c,0xa9,0x52,0xf8}};
+extern "C" const GUID __declspec(selectany) IID_ICddbFileTag =
+    {0xca4e0490,0x7ed8,0x44a5,{0x9e,0xcd,0xd0,0x0b,0x90,0xdb,0xe8,0x08}};
+extern "C" const GUID __declspec(selectany) IID_ICddbID3Tag =
+    {0x7b2d9eb8,0x70aa,0x43d3,{0xaa,0x8e,0xe7,0x1c,0xe5,0x3a,0x83,0xd8}};
+extern "C" const GUID __declspec(selectany) IID_ICddbID3Tag2 =
+    {0x44959787,0x915b,0x4fcf,{0x97,0x63,0x10,0x38,0x48,0x3c,0x00,0x0e}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbDisc2 =
+    {0xd0be7f39,0x60d3,0x43e2,{0xaa,0x96,0x51,0x32,0x17,0x44,0x3a,0xb6}};
+extern "C" const GUID __declspec(selectany) IID_ICddbDisc2 =
+    {0x45d1d297,0xdd01,0x4890,{0x92,0x8c,0x34,0xe1,0xba,0x49,0x4a,0x14}};
+extern "C" const GUID __declspec(selectany) IID_ICddbInfoWindow =
+    {0xd0f041d4,0x1570,0x4143,{0xbb,0x6a,0x4c,0xe0,0x41,0xb1,0x09,0xd4}};
+extern "C" const GUID __declspec(selectany) IID_ICddbUIOptions =
+    {0x06c18ba6,0x86a0,0x464c,{0xb8,0x38,0x13,0xa7,0x4e,0x1a,0xd0,0x49}};
+extern "C" const GUID __declspec(selectany) IID_ICddbTrackManager =
+    {0xd6f791c8,0xa7f7,0x4702,{0x9d,0x24,0x4b,0x8f,0x8c,0xa4,0xc8,0x07}};
+extern "C" const GUID __declspec(selectany) IID_ICDDBControl2 =
+    {0x1b0700ee,0xc9c7,0x4fca,{0x95,0x84,0x10,0x96,0x26,0x8c,0xf6,0xc4}};
+extern "C" const GUID __declspec(selectany) IID_ICddbOptions2 =
+    {0x63c7d158,0xbca0,0x4c29,{0x96,0xc4,0x06,0xbd,0xd7,0x44,0xec,0xc2}};
+extern "C" const GUID __declspec(selectany) IID_ICddbWork =
+    {0xd27c6efc,0x76ed,0x4724,{0x97,0x41,0x95,0x31,0xfc,0x52,0x24,0x2c}};
+extern "C" const GUID __declspec(selectany) IID_ICddbTrack2 =
+    {0xe5c5f8ea,0x6f8d,0x4bd0,{0x88,0x56,0x95,0xdd,0xd5,0x66,0x8c,0xde}};
+extern "C" const GUID __declspec(selectany) IID_ICddbCacheManager =
+    {0x7af4e5e5,0x2deb,0x462f,{0xbb,0xaf,0x68,0x41,0x46,0x85,0x6c,0x6b}};
+extern "C" const GUID __declspec(selectany) IID_ICddbWMATag =
+    {0x49d2a10d,0xa5f3,0x4bd0,{0x9c,0x15,0x6b,0x2b,0x94,0xf1,0x65,0x93}};
+extern "C" const GUID __declspec(selectany) IID_ICddbOptions2_5 =
+    {0x1bba432e,0x84b5,0x4559,{0xbc,0xf7,0xcb,0xc1,0x99,0xed,0x60,0x85}};
+extern "C" const GUID __declspec(selectany) CLSID_CDDBNSWinampControl =
+    {0x2758dffc,0xf9fb,0x4c62,{0x82,0xc9,0xfd,0xc9,0xbc,0xeb,0x5e,0x9c}};
+extern "C" const GUID __declspec(selectany) CLSID_CDDBProps =
+    {0xaf647dae,0xa47c,0x4153,{0x88,0x52,0x3b,0x25,0x73,0xd7,0x81,0x52}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbInfoWindow =
+    {0xe7568058,0x32ea,0x4b10,{0xaf,0x1b,0x8b,0x66,0x69,0x78,0x89,0x1e}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbUIOptions =
+    {0x7416f5ca,0x8922,0x4516,{0x89,0xe8,0xd8,0x26,0xa8,0xc0,0x91,0xc5}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbTrackManager =
+    {0x657eefb8,0x2071,0x4e75,{0x89,0x05,0x36,0xc2,0x5e,0x55,0x0a,0xa2}};
+extern "C" const GUID __declspec(selectany) CLSID_CDDBControl2 =
+    {0x62d92898,0x9129,0x4a24,{0xbc,0x97,0x07,0x8b,0xa1,0x76,0x81,0x6b}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbOptions2 =
+    {0xf7c36ad9,0x691f,0x4640,{0xa2,0xe3,0x02,0x00,0xa6,0x42,0xad,0x25}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbTrack2 =
+    {0x1f27a2d8,0x5745,0x4a50,{0xb2,0x66,0xa9,0x0d,0x6e,0x43,0x26,0x9f}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbCacheManager =
+    {0x4997bae9,0x4015,0x4030,{0x80,0xaa,0x14,0x77,0xce,0x28,0xe6,0x6c}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbWMATag =
+    {0xfb51cc6e,0xa66e,0x4c28,{0xbe,0xf5,0x14,0x2d,0x49,0x27,0xe1,0xcf}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbListManager =
+    {0xfbcd6aca,0x39bc,0x47af,{0xbe,0x8e,0x52,0xbe,0xf2,0xb9,0xd0,0xf7}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbDataListTree =
+    {0xa943875d,0xb7ed,0x4f49,{0xb2,0x56,0xd1,0xa3,0x9e,0x5f,0xec,0x82}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbDataList =
+    {0xa25bda8e,0x5281,0x4664,{0xa3,0x25,0xa3,0xa3,0x8e,0x55,0x5c,0x18}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbDataListElement =
+    {0x1f767747,0x0f2e,0x4e6d,{0x81,0x05,0x56,0x98,0x7c,0x8c,0x49,0x9e}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbExtData =
+    {0x9bac7636,0x3c83,0x4a17,{0xbc,0x39,0xae,0xff,0x43,0xf8,0x78,0x0b}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbWork =
+    {0x94c43420,0x12fe,0x4cb0,{0x94,0x1d,0xba,0xbf,0xfc,0x12,0x68,0x34}};
+extern "C" const GUID __declspec(selectany) IID_ICddbFileTag2_5 =
+    {0x3254573e,0x1053,0x4430,{0x9c,0xa6,0x7b,0x9b,0x89,0x63,0x85,0x15}};
+extern "C" const GUID __declspec(selectany) IID_ICddbExtData =
+    {0x2a050616,0x00e0,0x49c3,{0xbc,0x60,0x23,0xc5,0x19,0x2b,0x25,0xd3}};
+extern "C" const GUID __declspec(selectany) IID_ICddbDataListElement =
+    {0xf19a9d2d,0x2287,0x4c64,{0x96,0xc7,0x4b,0xb6,0x3e,0xde,0xc9,0xc5}};
+extern "C" const GUID __declspec(selectany) IID_ICddbDataList =
+    {0xc412e44b,0xa911,0x4e2e,{0xab,0x26,0xf1,0x2b,0xdb,0x23,0xee,0x55}};
+extern "C" const GUID __declspec(selectany) IID_ICddbDisc2_5 =
+    {0xdb780e88,0xd446,0x4157,{0xaf,0x74,0x04,0xe8,0xe4,0x8e,0x46,0xa3}};
+extern "C" const GUID __declspec(selectany) IID_ICddbDisc2_6 =
+    {0xa354a00f,0x1f1d,0x44bb,{0x85,0x3f,0xcb,0x77,0x15,0x3c,0x30,0x2c}};
+extern "C" const GUID __declspec(selectany) IID_ICddbTrack2_5 =
+    {0x24959692,0xaac0,0x411d,{0x9e,0x6b,0xc7,0x61,0x1f,0xcc,0xac,0xba}};
+extern "C" const GUID __declspec(selectany) IID_ICddbTrack2_6 =
+    {0xe7d07c78,0x6084,0x4628,{0x89,0xf6,0x6f,0x89,0xdd,0x5f,0x1a,0x9f}};
+extern "C" const GUID __declspec(selectany) IID_ICddbDataListTree =
+    {0xfe5e5b63,0x8154,0x4cb0,{0x8f,0xfc,0xa0,0xaa,0xb7,0xdb,0xe9,0xd5}};
+extern "C" const GUID __declspec(selectany) IID_ICddbListManager =
+    {0xe6051029,0x5694,0x4e7d,{0xa5,0x24,0x7e,0x38,0xf3,0xc9,0x44,0x3d}};
+
+#pragma pack(pop)

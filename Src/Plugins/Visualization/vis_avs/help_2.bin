@@ -1,0 +1,32 @@
+The following operators are available:
+=
+  assigns a value to a variable.
+  example:  var=5;
+
++
+  adds two values, returns the sum.
+  example:  var=5+var2;
+
+-
+  subtracts two values, returns the difference.
+  example:  var=5-var2;
+
+*
+  multiplies two values, returns the product.
+  example:  var=5*var2;
+
+/
+  divides two values, returns the quotient.
+  example:  var=5/var2;
+
+%
+  converts two values to integer, performs division, returns remainder
+  example:  var=var2%5;
+
+|
+  converts two values to integer, returns bitwise OR of both values
+  example:  var=var2|31;
+
+&
+  converts two values to integer, returns bitwise AND of both values
+  example:  var=var2&31;

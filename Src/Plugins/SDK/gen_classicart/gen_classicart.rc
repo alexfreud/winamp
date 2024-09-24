@@ -1,0 +1,156 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 187, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_WINDOWEDGE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 186
+        BOTTOMMARGIN, 94
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "ContextMenu"
+    BEGIN
+        MENUITEM "Get album art",               ID_CONTEXTMENU_GETALBUMART
+        MENUITEM "Refresh album art",           ID_CONTEXTMENU_REFRESH
+        MENUITEM "Open folder",                 ID_CONTEXTMENU_OPENFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "Lock aspect ratio",           ID_CONTEXTMENU_LOCKASPECTRATIO
+        MENUITEM "Auto-hide",                   ID_CONTEXTMENU_AUTOHIDE
+        MENUITEM "Auto-hide window with modern skins", ID_CONTEXTMENU_AUTO_HIDE_MODERN
+        MENUITEM SEPARATOR
+        MENUITEM "Show album art for selected playlist item", ID_CONTEXTMENU_CLICKTRACK
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_IMAGE_NOTFOUND      PNG                     "notfound.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUGIN_NAME         "Album Art v%s"
+    IDS_ALBUM_ART_MENU      "Album Art\tAlt+A"
+    IDS_ALBUM_ART           "Album Art"
+    IDS_DO_YOU_ALSO_WANT_TO_REMOVE_SETTINGS 
+                            "Do you also want to remove the saved settings for this plugin?"
+    IDS_ABOUT_STRING        "%s\nby Will Fisher, (C) 2008\n\nUpdates by DrO, (C) 2009-2010"
+    IDS_ABOUT               "About..."
+END
+
+STRINGTABLE 
+BEGIN
+    65535                   "{EAD1E933-6D75-4c2c-B9C4-B4D7F06B7D8D}"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

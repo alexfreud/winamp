@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="amg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="avi_mjpg_decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="loader_jpg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4_jpeg_decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="w5s.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="writer_jpg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="amg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api__jpeg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="avi_mjpg_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="loader_jpg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4_jpeg_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wasabi\api\service\svcs\svc_imgload.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wasabi\api\service\svcs\svc_imgwrite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="w5s.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="writer_jpg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{c34a3258-e5bd-4d12-9c43-db9aff734101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a0ca09db-4077-4800-9f71-92c88a75bc27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{fbabf673-97e4-4a24-b3b5-4c0848ca40b3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="jpeg.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,152 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RESULTS DIALOGEX 0, 0, 356, 170
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT | WS_EX_APPWINDOW
+CAPTION "Replay Gain Results"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RGLIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,7,348,141
+    DEFPUSHBUTTON   "Save as Album",IDOK,116,153,76,13
+    PUSHBUTTON      "Save Track data",IDC_SAVETRACK,196,153,76,13
+    PUSHBUTTON      "Cancel",IDCANCEL,276,153,76,13
+END
+
+IDD_PROGRESS DIALOGEX 0, 0, 186, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Calculating Replay Gain"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "File Progress:",IDC_STATIC,7,7,44,8
+    LTEXT           "Calculating...",IDC_FILE_PROGRESS,63,7,116,8
+    LTEXT           "Total Progress:",IDC_STATIC,7,23,50,8
+    LTEXT           "Calculating...",IDC_PROGRESS_FILES,63,23,116,8
+    PUSHBUTTON      "Abort",IDCANCEL,129,41,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_RESULTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_REPLAY_GAIN_ANALYZER "Nullsoft Replay Gain Analyzer v%s"
+    65535                   "{5F633543-148D-48cc-B683-DA82F592CF28}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CALCULATE_REPLAY_GAIN "Calculate Replay Gain"
+    IDS_1_OF_X_FILES        "1 of %u files"
+    IDS_FINISHED            "Finished."
+    IDS_X_OF_X_FILES        "%u of %u files"
+    IDS_PROCESSING          "Processing..."
+    IDS_TOO_MANY_CHANNELS   "Too many channels, can't deal with this yet"
+    IDS_REPLAYGAIN          "ReplayGain"
+    IDS_NOT_ABLE_TO_OPEN_RG_DLL "Not able to open ReplayGainAnalysis.dll"
+    IDS_COL_FILENAME        "Filename"
+    IDS_COL_TRACK_GAIN      "Track Gain"
+    IDS_COL_TRACK_PEAK      "Track Peak"
+    IDS_COL_ALBUM_GAIN      "Album Gain"
+    IDS_COL_ALBUM_PEAK      "Album Peak"
+    IDS_DO_YOU_ALSO_WANT_TO_REMOVE_SETTINGS 
+                            "Do you also want to remove the saved settings for this plug-in?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

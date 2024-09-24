@@ -1,0 +1,11 @@
+The color modifier allows you to modify the intensity of each color
+channel with respect to itself. For example, you could reverse the red
+channel, double the green channel, or half the blue channel.
+
+The code in the 'level' section should adjust the variables
+'red', 'green', and 'blue', whose value represent the channel
+intensity (0..1).
+Code in the 'frame' or 'level' sections can also use the variable
+'beat' to detect if it is currently a beat.
+
+Try loading an example via the 'Load Example' button for examples.

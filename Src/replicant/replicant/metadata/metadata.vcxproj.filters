@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ArtworkManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="metadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MetadataManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api__wasabi2_metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArtworkManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MetadataManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6b37411b-5610-4520-b9a1-12cb4e719928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{2a9c541a-5355-4275-b173-566838fa5925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2a62aedb-8db2-491a-821b-f266582f7d9a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

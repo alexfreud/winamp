@@ -1,0 +1,45 @@
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+IDB_NAVITEM_CDROM  RCDATA
+".\\resources\\cdrom.png"
+IDB_EJECT_NORMAL  RCDATA
+".\\resources\\eject3.png"
+IDB_EJECT_HILITED  RCDATA
+".\\resources\\eject1.png"
+IDB_EJECT_PRESSED  RCDATA
+".\\resources\\eject2.png"
+IDB_EJECT_DISABLED  RCDATA
+".\\resources\\eject4.png"
+IDB_PLAY_NORMAL  RCDATA
+".\\resources\\play_n.png"
+IDB_PLAY_HIGHLIGHTED  RCDATA
+".\\resources\\play_p.png"
+IDB_PLAY_DISABLED  RCDATA
+".\\resources\\play_d.png"
+IDB_PLAY_PRESSED  RCDATA
+".\\resources\\play_p.png"
+IDB_ENQUEUE_NORMAL  RCDATA
+".\\resources\\enqueue_n.png"
+IDB_ENQUEUE_HIGHLIGHTED  RCDATA
+".\\resources\\enqueue_p.png"
+IDB_ENQUEUE_DISABLED  RCDATA
+".\\resources\\enqueue_d.png"
+IDB_ENQUEUE_PRESSED  RCDATA
+".\\resources\\enqueue_p.png"
+IDB_EJECT2_NORMAL  RCDATA
+".\\resources\\eject_n.png"
+IDB_EJECT2_HIGHLIGHTED  RCDATA
+".\\resources\\eject_p.png"
+IDB_EJECT2_DISABLED  RCDATA
+".\\resources\\eject_d.png"
+IDB_EJECT2_PRESSED  RCDATA
+".\\resources\\eject_p.png"
+IDB_FILECOPY  RCDATA
+".\\resources\\filecopy.png"
+IDB_PLAY_MENU  RCDATA
+".\\resources\\play_menu_16x16.png"
+IDB_ENQUEUE_MENU  RCDATA
+".\\resources\\enqueue_menu_16x16.png"

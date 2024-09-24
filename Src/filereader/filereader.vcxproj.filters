@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="HTTPReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPReaderFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressiveHTTPReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceReaderFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api__filereader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPReaderFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressiveHTTPReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceReaderFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wasabi\api\service\svcs\svc_fileread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WA5_FileReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5683a5ef-1bac-41e8-950b-cc648c668de8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{51a86944-b123-42de-88b8-aaddf82d88b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2c44f228-9ae0-4166-af3f-dd3a13078d46}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="filereader.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

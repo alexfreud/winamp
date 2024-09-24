@@ -1,0 +1,1497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="About.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessibilityConfigGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AdData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlbumArtRetrieval.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Agave\Metadata\api_metadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api_videopreferences.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppRefCount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="benskiQ\Biquad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="benskiQ\benskiQ.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BookmarksCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BoolAttribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BrowserCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="burn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BurnManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\cam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="classic_vis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\clip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commandLink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nu\ConfigCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="conversions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="convert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentSongCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStoreCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="creditsrend.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DecodeFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeveloperConfigGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dispatchCallback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dpi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_embed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_eq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_mb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_pe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_sa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_vw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dwm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="embwnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Eq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eq10dsp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="benskiQ\EqBand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EQConfigGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Equi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExplorerFindFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtendedInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtendedReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FeedBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="feeds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Fft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Elevator\FileTypeRegistrar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FloatAttribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fullscreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GammaFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GammaManagerAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="html.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nu\HTMLContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Http.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\httpgrab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPRetrieveFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="In.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="install.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntAttribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InternetConfigGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ipc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IVideoD3DOSD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jnetcom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI_CallbackParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI_DispatchTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI_Info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_AsyncDownloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_Bookmarks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_CallbackManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_Creator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_DownloaderAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_ExternalObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_MediaCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_PlayerAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_Security.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_SecurityAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_SecurityPrompt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_SkinAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_TransportAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JUMP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lang.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\langutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LazyServiceFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\light.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="linklist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\loadimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="M3u.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main_buttons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main_close.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main_command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main_display.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main_mouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_video.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenFileDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_bookmarks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_classic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_dsp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_filetypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_gen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_general.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_in.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_lang.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_output.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_playback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_playlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_plugins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_skin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_title.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\obj.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MoreItems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="metrics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Metadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MergePlaylist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menuv5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaCoreCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\math.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\mat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main_wndproc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main_timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main_nonclient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Out.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputPluginAudioStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaletteManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="paths.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PathsINI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="peui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Play.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaybackConfigGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pledit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\plush.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\postsetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="precomp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\make.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options_vis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\pf_ptex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\pf_solid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\pf_tex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\pf_trans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="registry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\render.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resampler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResamplingReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SABuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SecurityCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nu\ServiceWatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Set.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\setup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\setupfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SHELL.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\sjob_register.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinBitmapElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinColorElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinCursorElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinElementAlias.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\skininfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\api\skin\skinitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Skins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\spage_assoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\spage_connect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\spage_feedback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\spage_lang.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup\spage_skin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SPLASH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\spline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="strutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SysCallbacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\api\syscb\callbacks\syscbx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SYSTRAY.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TagProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tagz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TempFileCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plush\text.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nu\threadpool\ThreadFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nu\threadpool\ThreadID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nu\threadpool\ThreadPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TIMING.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nu\trace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnsignedAttribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="updateService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="updateServicePopup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="urlmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vid_d3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vid_ddraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vid_none.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vid_overlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vid_subs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video_ipc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wpz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wintheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinampPlaylist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinampAttributes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="winampApi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wasabi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WADrawDC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="w5s.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="videoui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoPreferences.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoOutputChildDDraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoOutputChild.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoOSD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoConfigGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../Plugins/Library/ml_bookmarks\bookmark.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Plugins\General\gen_crasher\GetWinVer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Plugins\General\gen_ml\menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Plugins\General\gen_ml\ml_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AccessibilityConfigGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AppRefCount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="attributes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nu\AutoLock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="benskiQ\Biquad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BookmarksCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BurnManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="commandLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\config\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nu\ConfigCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentSongCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStoreCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DecodeFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeveloperConfigGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="directdraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dispatchCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dpi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eq10dsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="benskiQ\EqBand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EQConfigGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplorerFindFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtendedReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FeedBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="feeds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FFT.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GammaFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GammaManagerAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nu\HTMLContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\httpgrab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wasabi\api\application\ifc_messageprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Agave\Metadata\ifc_metadataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\ifc_setupjob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\ifc_setuppage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InternetConfigGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ipc_pe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IVideoD3DOSD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IWasabiDispatchable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jnetcom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI_CallbackParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI_DispatchTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI_Info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_api_security.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_AsyncDownloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_Bookmarks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_CallbackManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_Creator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_Downloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_ExternalObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_MediaCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_PlayerAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_Security.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_SecurityAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_SkinAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_svc_apicreator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_TransportAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Agave\Language\lang.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="language.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\langutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LazyServiceFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\loadimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaCoreCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MergePlaylist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MoreItems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputPluginAudioStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaletteManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaybackConfigGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Playlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\postsetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResamplingReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SecurityCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\setup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\setup_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\setupfactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\setupcommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\setup_resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\sjob_register.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinBitmapElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinColorElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinCursorElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinElementAlias.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\skininfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinWindowIPC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\spage_assoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\spage_skin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="strutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Agave\Metadata\svc_metatag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setup\svc_setup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SysCallbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TagProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tagz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TempFileCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nu\threadpool\ThreadFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nu\threadpool\ThreadID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nu\threadpool\ThreadPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nu\threadpool\threadpool_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TIMING.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="updateService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="urlmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vid_d3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vid_ddraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vid_none.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vid_overlay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vid_subs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wintheme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinampPlaylist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinampAttributes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="winampApi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wasabicfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wasabi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WADrawDC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa_ipc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoOutputChildDDraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoOutputChild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoOSD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoFeedFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoConfigGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoAspectAdjuster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Plugins\General\gen_crasher\GetWinVer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Plugins\General\gen_ml\menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsp.h">
+      <Filter>Header Files\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="gen.h">
+      <Filter>Header Files\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="in2.h">
+      <Filter>Header Files\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="out.h">
+      <Filter>Header Files\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="vis.h">
+      <Filter>Header Files\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="w5s.h">
+      <Filter>Header Files\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wasabi\api\application\api_application.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="api_audiostream.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wasabi\api\skin\api_colorthemes.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="api_decodefile.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Agave\ExplorerFindFile\api_explorerfindfile.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Agave\Language\api_language.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wasabi\api\application\api_messageprocessor.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Agave\Metadata\api_metadata.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="api_random.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wasabi\api\service\api_service.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="api_stats.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wasabi\api\skin\feeds\api_textfeed.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nu\threadpool\api_threadpool.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="api_urlmanager.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="api_videopreferences.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="api_winamp.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="setup\spage_connect.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="setup\spage_feedback.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="setup\spage_lang.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="setup\setup.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Winamp.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="manifest.xml">
+      <Filter>Ressource Files</Filter>
+    </Xml>
+    <Xml Include="manifest64.xml">
+      <Filter>Ressource Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\beta.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\balance.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\cbuttons.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="setup\checkbox.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\djegg.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\eqmain.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="RESOURCE\eq_ex.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\genex.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\gen.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\Eqmain_ISO.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\embwnd.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\ICON1.ICO">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\Icon2.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\ICON3.ICO">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\Icon5.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\ICON6.ICO">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\ICON7.ICO">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\ICON8.ICO">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\ICON9.ICO">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\ICON10.ICO">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\Icon11.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\ICON12.ICO">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\icon13.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="setup\headerstrip.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="setup\navitemstrip.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="setup\navstrip.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\numbers.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\main.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="RESOURCE\mb.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\MONOSTER.BMP">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\PLAYPAUS.BMP">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\pledit.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\OSD-Sprite-Controls.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\POSBAR.BMP">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="setup\preview_classic.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="setup\preview_no.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="setup\smokingllama.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\shufrep.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\splash2.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\uninstallwa.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\titlebar.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\text.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\team.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\TBICON5.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\TBICON4.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\TBICON3.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\TBICON2.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\TBICON1.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\WinampIcon.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\volume.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\volbar.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\video_logo.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resource\video.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\atf.htm" />
+    <None Include="resource\cur00001.cur">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="resource\danger.cur">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="resource\danger1.cur">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="resource\move.cur">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="resource\lrscroll.cur">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="resource\resize.cur">
+      <Filter>Image Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="resource\cmdline.txt" />
+    <Text Include="resource\tips.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{80c86a23-eaa3-463a-85d0-77aba14ed204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{44fea055-607a-4cf1-8556-ec4c1c18a3cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{47312752-614b-4bd3-b9b6-ba4af5a26115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{e0b33a8f-33dc-43e4-a974-d263d3bb5f85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Plugins">
+      <UniqueIdentifier>{b78c19c5-fa4c-43bb-9f50-37610df8749a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\api">
+      <UniqueIdentifier>{09e96e4b-4596-4e5c-9685-64c7e6c8d0b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

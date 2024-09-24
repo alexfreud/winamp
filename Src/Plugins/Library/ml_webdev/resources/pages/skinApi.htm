@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JSAPI2::Skin Api</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<script type="text/javascript" src="api2.js"></script>
+</head>
+<body style="FONT-FAMILY: MS Shell Dlg 2;">
+	<h2>Skin API</h2>
+	<h3>Methods:</h3>
+	<input type="button" value="Get Classic Color" onclick="SkinGetClassicColorClicked();">
+	<input type="text" size="20" id="skin_t_ClassicColor">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;color number:<input type="text" size="20" id="skin_t_ClassicColorNumber_in" value="1">
+	<br><br> 
+	<input type="button" value="Get Playlist Color" onclick="SkinGetPlaylistColorClicked();">
+	<input type="text" readonly size="20" id="skin_t_PlaylistColor">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;color number:<input type="text" size="20" id="skin_t_PlaylistColorNumber_in" value="1">
+	<br><br> 
+	<input type="button" value="Get Skin Color" onclick="SkinGetSkinColorClicked();">
+	<input type="text" readonly size="20" id="skin_t_SkinColor">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;color name:<input type="text" size="20" id="skin_t_SkinColorName_in" value="wasabi.text.color">
+	<br>
+	<h3>Properties:</h3>
+	<input type="button" value="Get name" onclick="SkinGetNameClicked();">
+	<input type="text" readonly size="20" id="skin_t_Name">
+	<br>
+	<input type="button" value="Set name" onclick="NotImplementedYet();">
+	<!-- <input type="button" value="Set name" onclick="SkinSetNameClicked();">  -->
+	<input type="text" size="20" id="skin_t_Name_in" value="Bento">
+	<br><br>
+	<input type="button" value="Get font" onclick="SkinGetFontClicked();">
+	<input type="text" readonly size="20" id="skin_t_Font">
+	<br><br>
+	<input type="button" value="Get fontsize" onclick="SkinGetFontSizeClicked();">
+	<input type="text" readonline size="20" id="skin_t_FontSize">
+</body>
+</html>

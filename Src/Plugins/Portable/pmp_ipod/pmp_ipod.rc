@@ -1,0 +1,194 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_CLASSIC_16          PNG                     "resources\\apple_ipod_classic_16.png"
+IDB_NANO1G_16           PNG                     "resources\\apple_ipod_nano_1g_16.png"
+IDB_NANO2G_16           PNG                     "resources\\apple_ipod_nano_2g_16.png"
+IDB_NANO3G_16           PNG                     "resources\\apple_ipod_nano_3g_16.png"
+IDB_NANO4G_16           PNG                     "resources\\apple_ipod_nano_4g_16.png"
+IDB_NANO5G_16           PNG                     "resources\\apple_ipod_nano_5g_16.png"
+IDB_SHUFFLE1G_16        PNG                     "resources\\apple_ipod_shuffle_1g_16.png"
+IDB_SHUFFLE2G_16        PNG                     "resources\\apple_ipod_shuffle_2g_16.png"
+IDB_SHUFFLE3G_16        PNG                     "resources\\apple_ipod_shuffle_3g_16.png"
+IDB_CLASSIC_160         PNG                     "resources\\apple_ipod_classic.png"
+IDB_NANO1G_160          PNG                     "resources\\apple_ipod_nano_1g.png"
+IDB_NANO2G_160          PNG                     "resources\\apple_ipod_nano_2g.png"
+IDB_NANO3G_160          PNG                     "resources\\apple_ipod_nano_3g.png"
+IDB_NANO4G_160          PNG                     "resources\\apple_ipod_nano_4g.png"
+IDB_NANO5G_160          PNG                     "resources\\apple_ipod_nano_5g.png"
+IDB_SHUFFLE1G_160       PNG                     "resources\\apple_ipod_shuffle_1g.png"
+IDB_SHUFFLE2G_160       PNG                     "resources\\apple_ipod_shuffle_2g.png"
+IDB_SHUFFLE3G_160       PNG                     "resources\\apple_ipod_shuffle_3g.png"
+IDB_SHUFFLE4G_160       PNG                     "resources\\apple_ipod_shuffle_4g.png"
+IDB_SHUFFLE4G_16        PNG                     "resources\\apple_ipod_shuffle_4g_16.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 264, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Gapless Playback",IDC_STATIC,4,3,255,44
+    LTEXT           "Some iPods support the gapless playback of files.\nTo enable this, Winamp needs to scan the files on your iPod. Click ""Scan"" to begin this process.",IDC_STATIC,12,14,179,24
+    PUSHBUTTON      "Scan",IDC_SCAN,201,19,50,14
+    GROUPBOX        "Album Art",IDC_STATIC_ARTGROUP,4,54,255,30,NOT WS_VISIBLE
+    CONTROL         "Add album art to tracks during transfer",IDC_CHECK_USEART,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,9,67,141,10
+END
+
+IDD_GAPSCAN DIALOGEX 0, 0, 186, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scanning for gapless playback information"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Scanning...",IDC_CAPTION,7,7,172,8
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,7,17,172,14
+    PUSHBUTTON      "Scan in Background",IDC_BG,21,34,69,14
+    PUSHBUTTON      "Stop Scan",IDCANCEL,95,34,50,14
+END
+
+IDD_SELECTIPODTYPE DIALOGEX 0, 0, 186, 140
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_APPWINDOW
+CAPTION "Select iPod Type"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "In order to support some new features, we need to know which iPod model you have.",IDC_STATIC,7,7,172,17
+    LTEXT           "My iPod model is:",IDC_IPODINFO,7,27,172,8
+    CONTROL         "iPod Touch",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,7,40,51,10
+    CONTROL         "iPod Classic",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,7,50,53,10
+    CONTROL         "iPod Nano (widescreen)",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,7,59,91,10
+    CONTROL         "iPod Shuffle",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,7,69,54,10
+    CONTROL         "iPod Photo",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,7,79,50,10
+    CONTROL         "iPod Video",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,7,89,49,10
+    CONTROL         "iPod Nano",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,7,99,48,10
+    CONTROL         "Other",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,7,109,35,10
+    DEFPUSHBUTTON   "OK",IDOK,67,119,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,127,119,52,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GAPSCAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SELECTIPODTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_IPOD_PLUGIN "Nullsoft iPod Device Plug-in v%s"
+    65535                   "{C2EE3DA5-B29B-42a0-AB5E-B202393435D6}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANNOT_OPEN_FILE    "Cannot open file"
+    IDS_CANNOT_CREATE_FILE  "Cannot create file"
+    IDS_TRANSFERRING_PERCENT "Transferring %d%%"
+    IDS_CANCELLED           "Cancelled"
+    IDS_DONE                "Done"
+    IDS_TRANSFER_FAILED     "Transfer failed"
+    IDS_IPOD_LOADING        "iPod Loading..."
+    IDS_FAILED_TO_EJECT_IPOD 
+                            "Failed to Eject iPod. Is something else using it?"
+    IDS_ERROR               "Error"
+    IDS_INVALID_TRACK       "Invalid Track"
+    IDS_SCANNING            "Scanning..."
+    IDS_ADVANCED            "Advanced"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenMPT 1.30 Release Notes</title>
+  <style type="text/css">
+    * { font-family: Calibri, Roboto, sans-serif; }
+    body
+    {
+        color: #222;
+        background: #eee;
+        font-size: 13pt;
+        margin: 0 0 1em 0;
+        padding: 0;
+        border: none;
+    }
+
+    a { color: #b30; text-decoration: none; }
+    a:visited { color: #910; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .screenshots
+    {
+        float:right;
+        text-align:right;
+    }
+
+    .screenshots img, h1
+    {
+        border: 1px solid #ccc;
+        padding: 3px;
+        background: #f0f0f0;
+        margin: 0 0 3px 3px;
+    }
+
+    p { margin: 0.5em 1em; padding: 0; }
+
+    h1
+    {
+        margin: 0 0 1em 0;
+        padding: 10px;
+        font-size: 24pt;
+        color: #444;
+        text-shadow: 1px 1px 1px #999;
+        background: #ddd;
+        background-image: linear-gradient(bottom, #ddd 20%, #eee 60%);
+        background-image: -o-linear-gradient(bottom, #ddd 20%, #eee 60%);
+        background-image: -moz-linear-gradient(bottom, #ddd 20%, #eee 60%);
+        background-image: -webkit-linear-gradient(bottom, #ddd 20%, #eee 60%);
+        background-image: -ms-linear-gradient(bottom, #ddd 20%, #eee 60%);
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.2, #ddd), color-stop(0.6, #eee));
+        border-width: 0 0 1px 0;
+    }
+
+    h1 img { vertical-align: middle; margin-right: 0.5em; }
+
+    h2, h3, h4
+    {
+        border: 1px solid #ccc;
+        border-width: 0 0 0 3em;
+        margin: 1em 0.5em;
+        padding: 0px 5px;
+        font-size: 18pt;
+        color: #333;
+        text-shadow: 1px 1px #fff;
+    }
+
+    h3 { border-left-width: 2em; }
+    h4 { border-left-width: 1em; }
+
+    li {list-style-type: none; padding: 0 0 0.5em 0; }
+    li:before { content: "» "; }
+
+    li li { padding: 0; }
+
+    /* use this for pattern data */
+    pre
+    {
+        font-family: monospace;
+        display: inline;
+        color: #006;
+    }
+
+    tt
+    {
+        font-family: monospace;
+    }
+
+  </style>
+  </head>
+  <body>
+
+    <h1>
+        <img src="ReleaseNotesImages/modplug.png" width="64" height="64" alt="OpenMPT Logo">
+        OpenMPT 1.30 - Release Notes
+    </h1>
+
+    <p>
+        It's been a while since the last major feature update, and we have been working on a bunch of great new features for this new version.
+        This document should give a rough overview about the biggest changes in OpenMPT 1.30.
+    </p>
+
+    <h2>What's new?</h2>
+
+    <h3>General</h3>
+    <ul>
+    <li>OpenMPT is now also available for <strong>Windows on ARM</strong>.</li>
+    <li>OpenMPT now uses a <strong>unified installer</strong> for all supported platforms. There is just one installer that automatically installs all versions that run on the current machine (e.g. x86 and x86-64 on a 64-Bit Intel processor). If you are upgrading from a pre-1.30 installation, do not forget to <strong>change any custom shortcuts</strong> or file associations to point to the new executable locations!</li>
+    <li>OpenMPT can now be <strong>updated automatically</strong>.</li> 
+    <li>Keyboard <strong>shortcuts</strong> can now also be bound to MIDI notes in addition to MIDI CCs.</li>
+    <li>DirectSound support was removed.</li>
+    <li>There are now experimental OpenMPT builds again for <strong>Windows XP</strong> (with reduced functionality); they can be obtained via our <a href="https://builds.openmpt.org/builds-archive/auto-release/openmpt/">nightly test builds</a>. The amd64 XP builds should also work on recent macOS versions in Wine. Our official OpenMPT builds for amd64 are currently not supported on <strong>macOS</strong> due to a bug in the Visual Studio runtime libraries.</li>
+    </ul>
+
+    <h3>Pattern Editor</h3>
+    <div class="screenshots">
+        <a href="ReleaseNotesImages/1.30/channel_colors.png"><img src="ReleaseNotesImages/1.30/channel_colors.png" width="421" height="138" alt="Channel Colors" title="Channel Colors"></a>
+    </div>
+    <ul>
+    <li>Channels can now be <strong>color-coded</strong> for easier navigation and visual grouping.</li>
+    <li>The <strong>Go To dialog</strong> can now also directly jump to a timestamp.</li>
+    <li>Selecting a non-existing pattern in the order list now no longer keeps displaying the previously edited pattern, to avoid giving the impression that the recently-selected pattern is actually being edited.</li>
+    </ul>
+    
+    <h3>Plugins</h3>
+    <ul>
+    <li>OpenMPT and the default plugin bridge now use Data Execution Prevention by default. For older plugins that are not compatible with DEP, high-entropy ASLR or Large Address Awareness, a legacy plugin bridge is provided, which will be used for all plugins previously added to OpenMPT. Newly added plugins will not use the legacy bridge, unless they are detected to require it or if the user chooses so.</li>
+    <li>Added a menu item in the plugin editor to <strong>rename</strong> the plugin instance.</li>
+    <li><strong>Bypass status</strong> is now shown in title bar of plugin editors.</li>
+    <li>If an instrument's MIDI program or bank was set to 1, it wasn't transmitted together with the first note playing on that channel, only when a different program or bank was previously chosen on that channel. Now it's always transmitted with the first note.</li>
+    </ul>
+
+    <h3>Sample / Instrument Editor</h3>
+    <div class="screenshots">
+        <a href="ReleaseNotesImages/1.30/sample_timeline.png"><img src="ReleaseNotesImages/1.30/sample_timeline.png" width="421" height="285" alt="Sample Timeline" title="Sample Timeline"></a>
+    </div>
+    <ul>
+    <li>Added a <strong>timeline</strong> to the sample editor which shows sample positions in seconds or samples, and visualizes loop points and cue points, allowing them to be dragged around with the mouse. Press Shift while dragging for finetuning.</li>
+    <li>Added option to <strong>convert ping-pong loops</strong> to unidirectional loops.</li>
+    <li>Resampling can now optionally <strong>adjust offset commands</strong> in patterns.</li>
+    <li>Loading or renaming a sample now <strong>automatically updates</strong> the associated instrument's name too if the instrument previously had the same name as the sample or no name, and if no other samples are assigned to it.
+    <li>Dropping an item from the tree view with Shift pressed now drops it into a new sample / instrument slot.</li>
+    <li>It is now possible to extract a complete drum instrument into a single instrument slot by dragging its folder rather than an individual note.</li>
+    <li>Envelope zoom level is now remembered when switching between tabs.</li>
+    </ul>
+
+    <h3>Playback</h3>
+    <p>
+        A couple of playback behaviours have been changed and improved and new commands were added:
+    </p>
+    <ul>
+    <li>Volume column <pre>o00</pre> + effect column <pre>Oxx</pre> now work together as percentage offset. If parameter extension <pre>#xx</pre> is used, it increases the granularity of the percentage. <pre>SAx</pre> does not affect this command combination.</li>
+    <li>Volume column <pre>oyy</pre> + effect column <pre>Oxx</pre> (<pre>yy</pre> > 0) now work together as well: The effect column offset is added to the sample cue.</li>
+    <li>Two new commands, <strong>Finetune</strong> (<pre>+xx</pre>) and <strong>Finetune</strong> (Smooth) (<pre>*xx</pre>), which double as micro-tuning commands and absolute pitch wheel messages for plugins. They are centered around value 80h, and fractional precision can be extended using an additional # command on the next row. The micro-tuning depth corresponds to the pitch wheel depth of the instrument; 1 semitone is used in sample mode.</li>
+    <li>Improved <strong>precision of ping-pong loop</strong> length particularly for very small samples.</li>
+    <li>Samples are now played at the correct volume (in relation to plugins / OPL instruments) when rendering or playing modules in mono.</li>
+    <li>For instrument using <strong>custom tuning</strong>, <pre>S2x</pre> (Set Finetune) now adjusts the finetune of the note by -8...+7 tuning steps.</li>
+    <li>Various playback improvements for IT, XM, S3M and other formats.</li>
+    </ul>
+
+    <h3>File Format Support</h3>
+    <div class="screenshots">
+        <a href="ReleaseNotesImages/1.30/raw_sample_import.png"><img src="ReleaseNotesImages/1.30/raw_sample_import.png" width="376" height="240" alt="Improved Raw Sample Import Dialog" title="Improved Raw Sample Import Dialog"></a><br>
+        <a href="ReleaseNotesImages/1.30/opl_export.png"><img src="ReleaseNotesImages/1.30/opl_export.png" width="376" height="233" alt="OPL Export Dialog" title="OPL Export Dialog"></a>
+    </div>
+    <ul>
+    <li><strong>OPL register dumps</strong> can now be exported as VGZ / VGM / DRO files.</li>
+    <li>OpenMPT 1.30 adds support for the following module formats: <strong>Symphonie / Symphonie Pro</strong> (SymMOD), <strong>Digital Symphony</strong> (DSym), <strong>FM Tracker</strong> (FMT), <strong>Scream Tracker Music Interface Kit</strong> (STX) and music from <strong>Psycho Pinball</strong> and <strong>Micro Machines 2</strong> (MUS).</li>
+    <li>OpenMPT can now detect whether an S3M file was made in Scream Tracker 3 with a SoundBlaster or Gravis Ultrasound and will apply playback compatibility settings accordingly.
+    <li>IFF <strong>MAUD</strong> samples can now be imported.</li>
+    <li>The <strong>raw sample import</strong> is now more flexible and supports more raw format options.</li>
+    <li><strong>TakeTracker MOD files</strong> with magic bytes <tt>TDZ1</tt>, <tt>TDZ2</tt> and <tt>TDZ3</tt> are now also recognized.</li>
+    <li>Modules packed with various <strong>legacy compression formats</strong> (in particular many more XPK variants) can now be read. All formats supported by the <a href="https://github.com/temisu/ancient">ancient</a> library are supported.</li>
+    <li>Added support for SF2 files with Vorbis and FLAC samples (typically referred to as SF3 or SF4).</li>
+    </ul>
+
+    <h3>There's more...</h3>
+    <p>
+        For a detailed description of what has changed, check <a href="History.txt">History.txt</a>. If you are new to OpenMPT, be sure to read the manual as well.
+    </p>
+
+    <h2>Known Issues</h2>
+    <p>
+        <i>This list is not very comprehensive. The <a href="https://bugs.openmpt.org/">Issue Tracker</a> keeps more fine-grained track of issues.</i>
+    </p>
+    <ul>
+        <li>The plugin bridge is still rather experimental. It is known that some plugins don't work in it at all. Custom plugin GUIs are known to not work in Wine. Please report any issues you may be having with the plugin bridge!</li>
+        <li>Far from perfect VST support (no buses for audio / MIDI routing, not all tracker effects are supported, etc...)</li>
+        <li>Previewing samples from the tree view's file browser stops the playing module.</li>
+        <li>There is no really <em>convenient</em> way to find out what features of the tracker are supported by the original trackers (Impulse Tracker, Fasttracker 2, etc...) when working with those file formats...</li>
+    </ul>
+    <p>
+        Known issues regarding specific VST plugins can be found in the <a href="https://wiki.openmpt.org/Manual:_Known_Issues">manual</a>.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+        Helpful bug reports, new ideas and brave volunteers to test early development builds or contribute to the code are more than welcome!<br>
+        Our issue tracker is located at <a href="https://bugs.openmpt.org/">https://bugs.openmpt.org/</a> and can be used to report bugs and feature requests.<br>
+        You can also meet us at the ModPlug Central forums: <a href="https://forum.openmpt.org/">https://forum.openmpt.org/</a>.
+    </p>
+
+  </body>
+</html>

@@ -1,0 +1,7 @@
+since everything (hopefully) is being done on the main thread, 
+there isn't any locking done around the playlists vector.  
+We probably want to change that in the future
+
+
+TODO:
+ability to take a path from elsewhere

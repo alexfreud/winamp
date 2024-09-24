@@ -1,0 +1,770 @@
+#TITLE=MAKI
+; MAKI files auto-completion. Currently supports the auto-completion of about 100 hookable events
+; Completed and adopted to the Skin Consortium Coding Convention (Aug 2006) by Martin Poehlmann
+
+#CASE=n
+
+#T=if
+if (^!)
+{
+	
+}
+
+#T=else
+else
+{
+	^!
+}
+
+#T=while
+while (^!)
+{
+	
+}
+
+#T=for
+for ( int i = 0; i <= ^!; i++ )
+{
+	
+}
+
+#T=onScriptLoaded
+onScriptLoaded ()
+{
+	^!
+}
+
+#T=onScriptUnloading
+onScriptUnloading ()
+{
+	^!
+}
+
+#T=onQuit
+onQuit ()
+{
+	^!
+}
+
+#T=onSetXuiParam
+onSetXuiParam (String param, String value)
+{
+	if ( strlower(stringParam) == "^!" ) 
+}
+
+#T=onKeyDown
+onKeyDown (String key)
+{
+	^!
+}
+
+#T=onKeyUp
+onKeyUp(String key)
+{
+	^!
+}
+
+#T=onAccelerator
+onAccelerator (String action, String section, String key)
+{
+/* NOTE:
+if you have called System.onAccelerator () take System.onAccelerator (String action, String section, String key)
+else if you called GuiObject.onAccelerator () take onAccelerator (String accel) */
+	^!
+}
+
+#T=onChar
+onChar (String c)
+{
+	^!
+}
+
+#T=onCreateLayout
+onCreateLayout (Layout _layout)
+{
+	^!
+}
+
+#T=onShowLayout
+onShowLayout (Layout _layout)
+{
+	^!
+}
+
+#T=onBeforeSwitchToLayout
+onBeforeSwitchToLayout (Layout _layout)
+{
+	^!
+}
+
+#T=onSwitchToLayout
+onSwitchToLayout (Layout _layout)
+{
+	^!
+}
+#T=onHideLayout
+onHideLayout (Layout _layout)
+{
+	^!
+}
+
+#T=onStop
+onStop ()
+{
+	^!
+}
+
+#T=onPlay
+onPlay ()
+{
+	^!
+}
+
+#T=onPause
+onPause ()
+{
+	^!
+}
+
+#T=onResume
+onResume ()
+{
+	^!
+}
+
+#T=onTitleChange
+onTitleChange (String newtitle)
+{
+	^!
+}
+
+#T=onTitle2Change
+onTitle2Change (String newtitle2)
+{
+	^!
+}
+
+#T=onInfoChange
+onInfoChange (String info)
+{
+	^!
+}
+
+#T=onStatusMsg
+onStatusMsg (String msg)
+{
+	^!
+}
+
+#T=onEqBandChanged
+onEqBandChanged (int band, int newvalue)
+{
+	^!
+}
+
+#T=onEqPreampChanged
+onEqPreampChanged (int newvalue)
+{
+	^!
+}
+
+#T=onEqChanged
+onEqChanged (int newstatus)
+{
+	^!
+}
+
+#T=onVolumeChanged
+onVolumeChanged (int newvol)
+{
+	^!
+}
+
+#T=onSeek
+onSeek (int newpos)
+{
+	^!
+}
+
+#T=onFrame
+onFrame (Int framenum)
+{
+/*NOTE:
+Use the framenum argument only if you use the method with a animated layer!
+for vis use it without argument */
+	^!
+}
+
+#T=onActivate
+onActivate (int activated)
+{
+	^!
+}
+
+#T=onLeftClick
+onActivate ()
+{
+	^!
+}
+
+#T=onRightClick
+onActivate ()
+{
+	^!
+}
+
+#T=onResize
+onResize (int x, int y, int w, int h)
+{
+	^!
+}
+
+#T=onBeginResize
+onBeginResize (int x, int y, int w, int h)
+{
+	^!
+}
+
+#T=onEndResize
+onEndResize (int x, int y, int w, int h)
+{
+	^!
+}
+
+#T=onDock
+onDock ()
+{
+	^!
+}
+
+#T=onUndock
+onUndock ()
+{
+	^!
+}
+
+#T=onScale
+onScale (Double newscalevalue)
+{
+	^!
+}
+
+#T=onShow
+onShow ()
+{
+	^!
+}
+
+#T=onHide 
+onHide ()
+{
+	^!
+}
+
+#T=onToggle
+onToggle (Boolean onoff)
+{
+	^!
+}
+
+#T=onTimer
+onTimer ()
+{
+	^!
+}
+
+#T=onSetPosition
+onSetPosition (int newpos)
+{
+	^!
+}
+
+#T=onPostedPosition
+onPostedPosition (int newpos)
+{
+	^!
+}
+
+#T=onSetFinalPosition
+onSetFinalPosition (int pos)
+{
+	^!
+}
+
+#T=onMouseMove
+onMouseMove (int x, int y)
+{
+	^!
+}
+
+#T=onLeftClick
+onLeftClick ()
+{
+	^!
+}
+
+#T=onRightClick
+onRightClick ()
+{
+	^!
+}
+
+#T=onLeftButtonDown
+onLeftButtonDown (int x, int y)
+{
+	^!
+}
+
+#T=onLeftButtonUp
+onLeftButtonUp (int x, int y)
+{
+	^!
+}
+
+#T=onRightButtonDown
+onRightButtonDown (int x, int y)
+{
+	^!
+}
+
+#T=onRightButtonUp
+onRightButtonUp (int x, int y)
+{
+	^!
+}
+
+#T=onEnterArea
+onEnterArea ()
+{
+	^!
+}
+
+#T=onLeaveArea
+onLeaveArea ()
+{
+	^!
+}
+
+#T=onBeforeNavigate
+onBeforeNavigate ()
+{
+	^!
+}
+
+#T=onNotify
+onNotify (String command, String param, int a, int b)
+{
+
+}
+
+#T=onLookForComponent
+onLookForComponent (String guid)
+{
+	^!
+
+	return __component__
+}
+
+#T=onGetCancelComponent
+onGetCancelComponent (String guid, boolean goingvisible)
+{
+        if ( guid == ^! )
+	{
+		
+		return FALSE
+	}
+
+	return FALSE;
+}
+
+#T=onShowNotification 
+onShowNotification ()
+{
+	^!
+	return TRUE
+}
+
+#T=onSetVisible
+onSetVisible (Boolean onoff)
+{
+	if (onoff)
+	{
+		^!
+	}
+}
+
+#T=onEnable
+onEnable (Boolean onoff)
+{
+	if (onoff)
+	{
+		^!
+	}
+}
+
+#T=onRightButtonDblClk
+onRightButtonDblClk (int x, int y)
+{
+	^!
+}
+
+#T=onLeftButtonDblClk
+onLeftButtonDblClk (int x, int y)
+{
+	^!
+}
+
+#T=onRightButtonUp
+onRightButtonUp (int x, int y)
+{
+	^!
+}
+
+#T=onTargetReached
+onTargetReached ()
+{
+	^!
+}
+
+#T=onStartup
+onStartup ()
+{
+	^!
+}
+
+#T=onGetFocus
+onGetFocus ()
+{
+	^!
+}
+
+#T=onKillFocus
+onKillFocus ()
+{
+	^!
+}
+
+#T=onMove
+onMove ()
+{
+	^!
+}
+
+#T=onEndMove
+onEndMove ()
+{
+	^!
+}
+
+#T=onAction
+onAction (String action, String param, Int x, int y, int p1, int p2, GuiObject source)
+{
+	^!
+}
+
+#T=onUserResize
+onUserResize (int x, int y, int w, int h)
+{
+	^!
+}
+
+#T=onMouseEnterLayout
+onMouseEnterLayout ()
+{
+	^!
+}
+
+#T=onMouseLeaveLayout
+onMouseLeaveLayout ()
+{
+	^!
+}
+
+#T=onSnapAdjustChanged
+onSnapAdjustChanged ()
+{
+	^!
+}
+
+#T=onFeedChange
+onFeedChange (String new_feeddata)
+{
+	^!
+}
+
+#T=onGetWac
+onGetWac (Wac wacobj)
+{
+	^!
+}
+
+#T=onGiveUpWac
+onGiveUpWac (Wac wacobj)
+{
+	^!
+}
+
+#T=onEnter
+onEnter ()
+{
+	^!
+}
+
+#T=onAbort
+onAbort ()
+{
+	^!
+}
+
+#T=onIdleEditUpdate
+onIdleEditUpdate ()
+{
+	^!
+}
+
+#T=onEditUpdate
+onEditUpdate ()
+{
+	^!
+}
+
+#T=onDocumentComplete
+onDocumentComplete (String url)
+{
+	^!
+}
+
+#T=onTextChanged
+onTextChanged (String newtxt)
+{
+	^!
+}
+
+#T=fx_onInit
+fx_onInit ()
+{
+	^!
+}
+
+#T=fx_onFrame
+fx_onFrame ()
+{
+	^!
+}
+
+#T=onResetQuery
+onResetQuery ()
+{
+	^!
+}
+
+#T=onSelect
+onSelect (Int id, Int hover)
+{
+	^!
+}
+
+
+#T=onSelectAll
+onSelectAll ()
+{
+	^!
+}
+
+#T=onDelete
+onDelete ()
+{
+	^!
+}
+
+#T=onDoubleClick
+onDoubleClick (Int itemnum)
+{
+	^!
+}
+
+#T=onLeftClick
+onLeftClick (Int itemnum)
+{
+	^!
+}
+
+#T=onSecondLeftClick
+onSecondLeftClick (Int itemnum)
+{
+	^!
+}
+
+#T=onRightClick
+onRightClick (Int itemnum)
+{
+	^!
+}
+
+#T=onColumnDblClick
+onColumnDblClick (Int col, Int x, Int y)
+{
+	^!
+}
+
+#T=onColumnLabelClick
+onColumnLabelClick (Int col, Int x, Int y)
+{
+	^!
+}
+
+#T=onItemSelection
+onItemSelection (Int itemnum, Int selected)
+{
+	^!
+}
+
+#T=onWantAutoContextMenu
+onWantAutoContextMenu ()
+{
+	^!
+}
+
+#T=onMouseWheelUp
+onMouseWheelUp (Int clicked, Int lines)
+{
+	^!
+}
+
+#T=onMouseWheelDown
+onMouseWheelDown (Int clicked, Int lines)
+{
+	^!
+}
+
+#T=onContextMenu
+onContextMenu (Int x, Int y)
+{
+	^!
+}
+
+#T=onItemRecvDrop
+onItemRecvDrop (TreeItem item)
+{
+	^!
+}
+
+#T=onLabelChange
+onLabelChange (TreeItem item)
+{
+	^!
+}
+
+#T=onItemSelected
+onItemSelected (TreeItem item)
+{
+	^!
+}
+
+#T=onItemDeselected
+onItemDeselected (TreeItem item)
+{
+	^!
+}
+
+#T=onTreeAdd
+onTreeAdd ()
+{
+	^!
+}
+
+#T=onTreeRemove
+onTreeRemove ()
+{
+	^!
+}
+
+#T=onSelect
+onSelect ()
+{
+	^!
+}
+
+#T=onDeselect
+onDeselect ()
+{
+	^!
+}
+
+#T=onLeftDoubleClick
+onLeftDoubleClick ()
+{
+	^!
+}
+
+#T=onRightDoubleClick
+onRightDoubleClick ()
+{
+	^!
+}
+
+#T=onChar
+onChar (Int key)
+{
+	^!
+}
+
+#T=onExpand
+onExpand ()
+{
+	^!
+}
+
+#T=onCollapse
+onCollapse ()
+{
+	^!
+}
+
+#T=onBeginLabelEdit
+onBeginLabelEdit ()
+{
+	^!
+}
+
+#T=onEndLabelEdit
+onEndLabelEdit (String newlabel)
+{
+	^!
+}
+
+#T=onContextMenu
+onContextMenu (Int x, Int y)
+{
+	^!
+}
+
+#T=onOpenMenu
+onOpenMenu ()
+{
+	^!
+}
+
+#T=onCloseMenu
+onCloseMenu ()
+{
+	^!
+}
+
+#T=onSelectItem
+onSelectItem (String item)
+{
+	^!
+}
+
+#T=onDataChanged
+onDataChanged ()
+{
+	^!
+}
+
+
+;-------------------
+
+#T=messageBox
+messageBox ("^!", "Title" , Flag, "");

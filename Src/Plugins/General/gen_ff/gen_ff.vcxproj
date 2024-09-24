@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0A75D6C7-6F14-4032-BBCC-7A234E626A56}</ProjectGuid>
+    <RootNamespace>gen_ff</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>false</VcpkgEnableManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgInstalledDir>..\..\..\external_dependencies\vcpkg</VcpkgInstalledDir>
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;..\..\..;..\..\..\Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;WIN32;_WINDOWS;_USRDLL;GEN_FF_EXPORTS;NOSVCMGR;_WIN32_IE=0x0A00;_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4100;4127;4238;4244;4267;4302;4311;4312;4651;4838;4090;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <DelayLoadDLLs>tataki.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ 
+xcopy /Y /D $(IntDir)$(TargetName).pdb ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;..\..\..;..\..\..\Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;WIN64;_DEBUG;_WINDOWS;_USRDLL;GEN_FF_EXPORTS;NOSVCMGR;_WIN32_IE=0x0A00;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4238;4244;4267;4302;4311;4312;4651;4838;4090;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <DelayLoadDLLs>tataki.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ 
+xcopy /Y /D $(IntDir)$(TargetName).pdb ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.;..;..\..\..;..\..\..\Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;WIN32;_WINDOWS;_USRDLL;GEN_FF_EXPORTS;NOSVCMGR;_WIN32_IE=0x0A00;_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4238;4244;4267;4302;4311;4312;4651;4838;4090;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <DelayLoadDLLs>tataki.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.;..;..\..\..;..\..\..\Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;WIN64;NDEBUG;_WINDOWS;_USRDLL;GEN_ff_EXPORTS;NOSVCMGR;_WIN32_IE=0x0A00;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4238;4244;4267;4302;4311;4312;4651;4838;4090;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <DelayLoadDLLs>tataki.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\external_dependencies\libmp4v2\libmp4v2.vcxproj">
+      <Project>{efb9b882-6a8b-463d-a8e3-a2807afc5d9f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\tataki\tataki.vcxproj">
+      <Project>{255b68b5-7ef8-45ef-a675-2d6b88147909}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wasabi\bfc\bfc.vcxproj">
+      <Project>{d0ec862e-dddd-4f4f-934f-b75dc9062dc1}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\gen_ml\menu.cpp" />
+    <ClCompile Include="..\..\..\nu\HTMLContainer2.cpp" />
+    <ClCompile Include="..\..\..\nu\listview.cpp" />
+    <ClCompile Include="..\..\..\nu\regexp.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\apiinit.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\application\ifc_messageprocessori.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\api_config.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\api_configi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\api_configx.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\cfglist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\cfgscriptobj.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\config.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\items\attribute.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\items\attrstr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\items\cfgitemi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\items\cfgitemx.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\items\intarray.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\options.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\config\uioptions.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\core\api_core.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\dependency\api_dependent.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\dependency\api_dependentviewer.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\filereader\api_filereader.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\filereader\filereaderapi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\filereader\local\fileread.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\font\bitmapfont.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\font\font.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\font\fontapi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\font\win32\truetypefont_win32.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\api_imgldr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\imggen\grad.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\imggen\osedge.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\imggen\poly.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\imggen\solid.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\imgldr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\imgldrapi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\locales\api_locales.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\locales\api_localesi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\locales\api_localesx.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\locales\localesmgr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\api_maki.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\api_makii.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\api_makix.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\api_makidebug.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\debugapi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\debuggerui.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\debugsymbols.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\disasm.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\jitd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\jitdbreak.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\sdebuggerui.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\sourcecodeline.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\vcpudebug.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\guru.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objcontroller.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objcontrollert.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\core\coreadminobj.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\core\coreobj.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\core\svc_scriptcore.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_browser.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_button.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_checkbox.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_container.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_dropdownlist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_edit.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_group.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_guilist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_guiobject.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_guitree.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_layout.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_menubutton.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_querylist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_rootobj.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_slider.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_text.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_togglebutton.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_treeitem.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_browser.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_button.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_checkbox.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_container.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_dropdownlist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_edit.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_group.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_guilist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_guiobject.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_guitree.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_layout.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_menubutton.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_querylist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_rootobj.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_slider.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_text.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_togglebutton.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_treeitem.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\scripthook.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\guiobj.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\guiobjectx.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\PlaylistScriptObject.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)$(TargetName)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)$(TargetName)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)$(TargetName)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)$(TargetName)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobj.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobjcb.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobjcbi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobjcbx.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobjcontroller.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobject.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobjecti.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobjectx.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sapplication.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sbitlist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\scolor.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\scolormgr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sfile.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sgammagroup.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sgammaset.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\slist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\smap.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\spopup.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sprivate.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sregion.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sxmldoc.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\systemobj.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\wacobj.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\objecttable.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\script.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\scriptmgr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\scriptobj.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\scriptobji.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\scriptobjx.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\script\vcpu.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\api_service.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\servicei.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svccache.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcenum.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcenumbyguid.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcenumt.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_action.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_fileread.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_font.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_imggen.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_imgload.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_minibrowser.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_scriptobj.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_skinfilter.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_textfeed.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_tooltips.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_wndcreate.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_xuiobject.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\svc_enum.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\waservicefactory.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\waservicefactorybase.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\waservicefactoryi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\waservicefactoryt.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\waservicefactorytsingle.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\service\waservicefactoryx.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\api_palette.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\api_skin.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\cursormgr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\feeds\api_textfeed.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\feeds\feedwatch.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\feeds\feedwatcherso.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\feeds\textfeed.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\gammamgr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\groupmgr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\groupwndcreate.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\guitree.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\nakedobject.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\objectactuator.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\regioncache.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skin.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skinapi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skinelem.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skinfilter.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skinfont.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skinitem.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skinparse.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\SkinVersion.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\animlayer.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\button.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\checkbox.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\combobox.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\compbuck2.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\customobject.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\dropdownlist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\edit.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\fx_dmove.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\group.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\groupclickwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\grouplist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\grouptgbutton.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\grouptips.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\guiradiogroup.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\historyeditbox.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\layer.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mb\iebrowser.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mb\mainminibrowser.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mb\mbsvc.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mb\minibrowser.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mb\minibrowserwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mb\xuibrowser.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mouseredir.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\objdirwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\pathpicker.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\pslider.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\sa.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\seqband.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\seqpreamp.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\seqvis.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\spanbar.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\sseeker.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\sstatus.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\stats\statswnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\stats\xuistats.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\svolbar.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\text.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\textbase.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\tgbutton.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\title.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\titlebox.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\wa2\xuiwa2slider.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuiaddparams.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuibookmarklist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuicheckbox.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuicombobox.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuicustomobject.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuidownloadslist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuidropdownlist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuieditbox.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuiframe.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuigradientwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuigrid.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuigroupxfade.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuihideobject.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuihistoryedit.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuilist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuimenu.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuimenuso.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuiobjdirwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuioswndhost.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuipathpicker.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuiprogressgrid.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuiradiogroup.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuirect.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuisendparams.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuistatus.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuitabsheet.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuithemeslist.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuititlebox.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuitree.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuiwndholder.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\api_syscb.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\browsercb.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\corecb.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\playlistcb.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\skincb.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\syscb.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\syscbi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\syscbx.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\timer\timerclient.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\util\selectfile.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\util\systray.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\util\varmgr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wac\compon.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\alphamgr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\animate.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\api_wndmgr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\appcmds.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\autopopup.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\container.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\gc.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\guistatuscb.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\layout.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\msgbox.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\resize.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\skinembed.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\skinwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\snappnt.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\wndmgrapi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\api_window.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\api_wnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\basewnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\contextmenu.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\cursor.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\deactivatemgr.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\di.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\dragitemi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\findobjectcb.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\keyboard.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\paintset.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\popexitcb.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\popexitchecker.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\popup.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\rootwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\virtualwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndapi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\abstractwndhold.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\appbarwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\blankwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\bufferpaintwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\buttbar.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\buttwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\clickwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\editwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\editwndstring.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\embeddedxui.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\foreignwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\framewnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\gradientwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\guiobjwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\labelwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\listwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\oswnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\oswndhost.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\qpaintwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\rootwndholder.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\scbkgwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\scrollbar.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\SelItemList.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\sepwnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\slider.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\status.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\svcwndhold.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\tabsheet.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\tabsheetbar.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\tooltip.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\treewnd.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\typesheet.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\wndholder.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndtrack.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\xml\LoadXML.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\xml\XMLAutoInclude.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\xml\xmlparams.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\xml\xmlparamsi.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\xml\xmlparamsx.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\xml\xmlreader.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\api\xml\xmlwrite.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\bfc\depend.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\bfc\depview.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\bfc\draw\drawpoly.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\bfc\draw\gradient.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\bfc\std_file.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\bfc\util\findopenrect.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\bfc\util\inifile.cpp" />
+    <ClCompile Include="..\..\..\Wasabi\bfc\util\timefmt.cpp" />
+    <ClCompile Include="AlbumArt.cpp" />
+    <ClCompile Include="embedwndguid.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="ff_ipc.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="fsmonitor.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;_NDEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WIN64;_NDEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="MediaDownloader.cpp" />
+    <ClCompile Include="menuactions.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="minibrowserCOM.cpp" />
+    <ClCompile Include="prefs.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="prefs_about.cpp" />
+    <ClCompile Include="prefs_alpha.cpp" />
+    <ClCompile Include="prefs_colorthemes.cpp" />
+    <ClCompile Include="prefs_font.cpp" />
+    <ClCompile Include="prefs_general.cpp" />
+    <ClCompile Include="servicelink.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="skininfo.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="wa2buckitems.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="wa2cfgitems.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="wa2core.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="wa2coreactions.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="wa2frontend.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="wa2groupdefs.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="wa2playlist.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="wa2pldirobj.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="wa2pledit.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="wa2songticker.cpp" />
+    <ClCompile Include="wa2wndembed.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_FF_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="WinampConfigScriptObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\gen_ml\menu.h" />
+    <CustomBuild Include="..\gen_ml\ml.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="..\..\..\Wasabi\api\apiinit.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\application\ifc_messageprocessori.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\config\api_config.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\config\api_configi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\config\api_configx.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\config\cfglist.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\config\config.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\config\items\attribute.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\config\items\attrstr.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\config\items\cfgitem.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\config\items\cfgitemi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\config\items\cfgitemx.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\config\items\intarray.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\config\uioptions.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\core\api_core.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\core\coreactions.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\dependency\api_dependent.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\dependency\api_dependentviewer.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\filereader\api_filereader.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\filereader\api_readercallback.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\filereader\filereaderapi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\filereader\local\fileread.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\filereader\svc_filereadI.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\font\api_font.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\font\bitmapfont.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\font\font.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\font\fontapi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\font\win32\truetypefont_win32.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\imgldr\api_imgldr.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\imgldr\imggen\grad.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\imgldr\imgldr.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\imgldr\imgldrapi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\imgldr\ImgLoaderEnum.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\locales\api_locales.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\locales\api_localesi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\locales\api_localesx.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\locales\localesmgr.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\api_maki.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\api_makii.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\api_makix.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\debugger\debugsymbols.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\debugger\sdebuggerui.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\core\coreadminobj.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\core\coreobj.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\c_script\h_rootobj.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\c_script\scripthook.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\guiobj.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\guiobject.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\guiobjectx.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\PlaylistScriptObject.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\rootobj.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\rootobject.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\rootobjecti.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\rootobjectx.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\sapplication.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\scolor.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\scolormgr.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\sfile.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\sgammagroup.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\sgammaset.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\sprivate.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\svcwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\sxmldoc.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\timer.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\script\vcpu.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_accessibility.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_accroleserver.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_action.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_droptarget.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_fileread.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_filesel.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_objectdir.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_scriptobj.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_textfeed.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_wndcreate.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\service\waservicefactoryt.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\api_colorthemes.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\api_palette.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\api_skin.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\cursormgr.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\feeds\api_textfeed.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\feeds\ezfeed.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\feeds\textfeed.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\gammamgr.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\group.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\groupmgr.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\groupwndcreate.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\guitree.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skin.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skinapi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skinelem.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skinfilter.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skinfont.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skinitem.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skinparse.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\SkinVersion.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\button.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\combobox.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\compbuck2.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\customobject.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\dropdownlist.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\group.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\grouptgbutton.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\grouptips.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\guiradiogroup.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\historyeditbox.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\layer.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\mb\iebrowser.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\mb\minibrowser.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\mb\minibrowserwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\mouseredir.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\objdirwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\pslider.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\seqband.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\seqpreamp.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\text.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\textbase.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\wa2\xuiwa2slider.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\xuicustomobject.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\xuiframe.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\xuilist.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\xuimenu.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\xuithemeslist.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\xuitree.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\browsercb.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\browsercbi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\metacb.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\playlistcb.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\svccbi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\syscb.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\wndcb.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\timer\api_timer.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\timer\timerclient.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\timer\timermul.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\timer\tmultiplex.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\util\selectfile.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\util\systray.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\util\varmgr.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wac\compon.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\alphamgr.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\animate.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\api_wndmgr.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\appcmds.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\autopopup.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\container.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\gc.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\layout.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\msgbox.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\resize.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\skinembed.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\skinwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\snappnt.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\wndmgrapi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\api_window.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\api_wnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\basewnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\contextmenu.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\cursor.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\deactivatemgr.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\drag.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\dragitem.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\dragitemi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\findobjectcb.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\keyboard.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\minibrowser.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\paintcb.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\platform\win32\bitmap.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\popexitchecker.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\popup.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\resizable.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\rootwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\virtualwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndapi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\abstractwndhold.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\appbarwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\blankwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\buttbar.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\buttwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\editwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\framewnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\gradientwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\guiobjwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\labelwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\listwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\rootwndholder.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\scbkgwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\sepwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\svcwndhold.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\tabsheet.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\tabsheetbar.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\treewnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\virtualhostwnd.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\wndholder.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndtrack.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\xml\LoadXML.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\xml\XMLAutoInclude.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\xml\xmlparams.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\xml\xmlparamsi.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\xml\xmlparamsx.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\xml\xmlreader.h" />
+    <ClInclude Include="..\..\..\Wasabi\api\xml\xmlwrite.h" />
+    <ClInclude Include="..\..\..\Wasabi\bfc\depend.h" />
+    <ClInclude Include="..\..\..\Wasabi\bfc\depview.h" />
+    <ClInclude Include="..\..\..\Wasabi\bfc\util\findopenrect.h" />
+    <CustomBuild Include="..\..\..\Winamp\FRONTEND.H">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Winamp\wa_ipc.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="AlbumArt.h" />
+    <ClInclude Include="api__gen_ff.h" />
+    <ClInclude Include="embedwndguid.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="menuactions.h" />
+    <ClInclude Include="minibrowserCOM.h" />
+    <ClInclude Include="precomp__gen_ff.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="skininfo.h" />
+    <ClInclude Include="wa2buckitems.h" />
+    <ClInclude Include="wa2cfgitems.h" />
+    <ClInclude Include="wa2core.h" />
+    <ClInclude Include="wa2coreactions.h" />
+    <ClInclude Include="wa2frontend.h" />
+    <ClInclude Include="wa2groupdefs.h" />
+    <ClInclude Include="wa2playlist.h" />
+    <ClInclude Include="wa2pldirobj.h" />
+    <ClInclude Include="wa2pledit.h" />
+    <ClInclude Include="wa2songticker.h" />
+    <ClInclude Include="wa2wndembed.h" />
+    <ClInclude Include="wasabicfg.h" />
+    <ClInclude Include="WinampConfigScriptObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gen_ff.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

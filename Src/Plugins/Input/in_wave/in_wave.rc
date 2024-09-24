@@ -1,0 +1,144 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 125, 244
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Waveform Decoder"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Built-in Extensions",IDC_STATIC,4,4,99,8
+    LISTBOX         IDC_EXTENSION_LIST,4,16,117,163,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Additional Extensions\nseparated with semi-colons\ne.g. aifc;snd",IDC_STATIC,4,183,117,24
+    EDITTEXT        IDC_ADDITIONAL_EXTENSIONS,4,211,117,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,4,227,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,71,227,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 121
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 240
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_WAVEFORM_DECODER "Nullsoft Waveform Decoder v%s"
+    65535                   "{96374982-0142-41a5-AEDE-244505C45D30}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_WAVEFORM_DECODER_OLD "Nullsoft Waveform Decoder"
+    IDS_SOUND_FILES         "Sound Files"
+    IDS_INFO_STR_FMT        "%s\n%u Channel(s)\n%u Hz"
+    IDS_FILE_INFORMATION    "Waveform File Information"
+    IDS_FAMILY_STRING_AAIF  "Apple Audio Interchange File"
+    IDS_FAMILY_STRING_AU    "AU Format Sound File"
+    IDS_FAMILY_STRING_AVR   "Audio Visual Research File"
+    IDS_FAMILY_STRING_ACA   "Apple Core Audio Format"
+    IDS_FAMILY_STRING_HMMTS "Hidden Markov Model Toolkit Speech Recognition File"
+    IDS_FAMILY_STRING_MATLAB "Matlab Audio Format"
+    IDS_FAMILY_STRING_PARIS "Paris Audio File"
+    IDS_FAMILY_STRING_PVF   "Portable Voice Format File"
+    IDS_FAMILY_STRING_HEADERLESS_RAW "Headerless RAW Waveform"
+    IDS_FAMILY_STRING_SDII  "Sound Designer II Audio File"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FAMILY_STRING_RAW_MIDI_SAMPLE_DUMP 
+                            "Raw Midi Sample Dump Standard File"
+    IDS_FAMILY_STRING_IRCAM "IRCAM Sound File"
+    IDS_FAMILY_STRING_CVOC  "Creative VOC Format"
+    IDS_FAMILY_STRING_SFWOW64 "Soundforge Wow 64 Format"
+    IDS_FAMILY_STRING_MSWAV "Microsoft Wave Sound Format"
+    IDS_FAMILY_STRING_FT2WAV "Fasttracker 2 Waveform"
+    IDS_ABOUT_TEXT          "%s\n© 2005-2023 Winamp SA\nWritten by: Ben Allison\nBuild date: %hs\n\nUses %hs\n© Erik de Castro Lopo"
+    IDS_FAMILY_STRING_RF64  "RIFF 64 Broadcast Wave Format"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

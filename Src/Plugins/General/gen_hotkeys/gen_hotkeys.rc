@@ -1,0 +1,217 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LVSTATE             BITMAP                  "x.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 273, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Global Hotkeys",IDC_STATIC,0,0,272,246
+    LTEXT           "Global Hotkeys are keyboard shortcuts that you can use from within any running\napplication.",IDC_STATIC,6,11,260,17
+    CONTROL         "Enable default &multimedia key support (you can customize them below)\n(Will process media related WM_APPCOMMAND messages - see MSDN)",IDC_ENABLED_WM_APPCOMMAND,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,6,32,259,17
+    CONTROL         "&Enabled",IDC_ENABLED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,54,42,10
+    PUSHBUTTON      "Restore &defaults",IDC_DEFAULT,189,53,76,13
+    CONTROL         "List1",IDC_HKLIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,6,70,259,137
+    LTEXT           "Ac&tion",IDC_STATIC,6,213,24,9,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO,34,211,231,154,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Hotkey",IDC_STATIC,6,229,24,9
+    EDITTEXT        IDC_HOTKEY,34,227,147,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Add",IDC_ADD,182,227,23,13
+    PUSHBUTTON      "&Set",IDC_SAVE,208,227,20,13
+    PUSHBUTTON      "&Remove",IDC_REMOVE,230,227,35,13
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_GLOBAL_HOTKEYS "Nullsoft Global Hotkeys v%s"
+    65535                   "{250FAA3C-20CD-49db-A932-67B1C0191B0E}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GHK_TITLE_STR       "Global Hotkeys"
+    IDS_GHK_HOTKEY_REG_FAILED 
+                            "Hotkey registration failed as another program has already registered the following hotkey(s):\t\t\n"
+    IDS_GHK_HOTKEY_REG_FAILED_MORE "\n\tMore..."
+    IDS_GHK_HOTKEY_COLUMN   "Hotkey"
+    IDS_GHK_ACTION_COLUMN   "Action"
+    IDS_GHK_ACTION_NOT_FOUND "(action not found)"
+    IDS_GHK_WINKEY_STR      "Winkey"
+    IDS_BROWSER_BACK        "Browser Back"
+    IDS_BROWSER_FORWARD     "Browser Forward"
+    IDS_BROWSER_REFRESH     "Browser Refresh"
+    IDS_BROWSER_STOP        "Browser Stop"
+    IDS_BROWSER_SEARCH      "Browser Search"
+    IDS_BROWSER_FAVOURITES  "Browser Favorites"
+    IDS_BROWSER_HOME        "Browser Home"
+    IDS_VOLUME_MUTE         "Volume Mute"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VOLUME_DOWN         "Volume Down"
+    IDS_VOLUME_UP           "Volume Up"
+    IDS_NEXT_TRACK          "Next Track"
+    IDS_PREVIOUS_TRACK      "Previous Track"
+    IDS_STOP                "Stop"
+    IDS_PLAY_PAUSE          "Play/Pause"
+    IDS_LAUNCH_MAIL         "Launch Mail"
+    IDS_LAUNCH_MEDIA_SELECT "Launch Media Select"
+    IDS_LAUCH_APP1          "Launch App1"
+    IDS_LAUCH_APP2          "Launch App2"
+    IDS_SLEEP               "Sleep"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYBACK__PLAY      "Playback: Play"
+    IDS_PLAYBACK__PAUSE     "Playback: Pause"
+    IDS_PLAYBACK__STOP      "Playback: Stop"
+    IDS_PLAYBACK__PREVIOUS_IN_PLAYLIST "Playback: Previous in playlist"
+    IDS_PLAYBACK__NEXT_IN_PLAYLIST "Playback: Next in playlist"
+    IDS_PLAYBACK__VOLUME_UP "Playback: Volume up"
+    IDS_PLAYBACK__VOLUME_DOWN "Playback: Volume down"
+    IDS_PLAYBACK__FORWARD   "Playback: Forward"
+    IDS_PLAYBACK__REWIND    "Playback: Rewind"
+    IDS_PLAYBACK__REPEAT_ON "Playback: Repeat on"
+    IDS_PLAYBACK__REPEAT_OFF "Playback: Repeat off"
+    IDS_UI__TOGGLE_EQ       "UI: Toggle EQ"
+    IDS_UI__TOGGLE_PLAYLIST "UI: Toggle playlist"
+    IDS_UI__TOGGLE_AOT      "UI: Toggle always on top"
+    IDS_UI__ABOUT           "UI: About"
+    IDS_PLAYBACK__JUMP_TO_BOX "Playback: Jump to box"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYBACK__OPEN_FILE_DIALOG "Playback: Open file dialog"
+    IDS_PLAYBACK__OPEN_LOC_DIALOG "Playback: Open location dialog"
+    IDS_PLAYBACK__OPEN_FOLDER_DIALOG "Playback: Open folder dialog"
+    IDS_GENERAL__QUIT       "General: Quit"
+    IDS_UI__PREFERENCES     "UI: Preferences"
+    IDS_GENERAL__COPY_TITLE "General: Copy title"
+    IDS_GENERAL__COPY_FILE_PATH "General: Copy file path"
+    IDS_PLAYBACK__PLAY_PAUSE "Playback: Play/Pause"
+    IDS_PLAYBACK__TOGGLE_REPEAT "Playback: Toggle repeat"
+    IDS_PLAYBACK__TOGGLE_SHUFFLE "Playback: Toggle shuffle"
+    IDS_UI__TOGGLE_WINSHADE "UI: Toggle windowshade"
+    IDS_UI__TOGGLE_PLAYLIST_WINSHADE "UI: Toggle playlist windowshade"
+    IDS_UI__TOGGLE_DOUBLESIZE "UI: Toggle doublesize"
+    IDS_UI__TOGGLE_MAIN_WINDOW "UI: Toggle main window"
+    IDS_UI__TOGGLE_MINIBROWSER "UI: Toggle main minibrowser"
+    IDS_VIS__PREFERENCES    "Visualization: Preferences"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VIS__PLUGIN_PREFERENCES "Visualization: Plug-in preferences"
+    IDS_VIS_TOGGLE_VIS_ON_OFF "Visualization: Toggle on/off"
+    IDS_UI__SELECT_SKIN     "UI: Select skin"
+    IDS_PLAYBACK__STOP_WITH_FADEOUT "Playback: Stop with fadeout"
+    IDS_PLAYBACK__STOP_AFTER_CURRENT "Playback: Stop after current"
+    IDS_PLAYBACK__START_OF_LIST "Playback: Start of list"
+    IDS_PLAYBACK__END_OF_LIST "Playback: End of list"
+    IDS_UI__BRING_TO_FRONT_OR_HIDE "UI: Bring to front/hide Winamp"
+    IDS_RATING__5_STARS     "Rate current item: *****"
+    IDS_RATING__4_STARS     "Rate current item: ****"
+    IDS_RATING__3_STARS     "Rate current item: ***"
+    IDS_RATING__2_STARS     "Rate current item: **"
+    IDS_RATING__1_STAR      "Rate current item: *"
+    IDS_RATING__NO_RATING   "Rate current item: No rating"
+    IDS_GENERAL__COPY_TITLEW "General: Copy title (Unicode)"
+    IDS_GENERAL__COPY_FILE_PATHW "General: Copy file path (Unicode)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RATING__INC         "Rating: Increase rating of current item"
+    IDS_RATING__DEC         "Rating: Decrease rating of current item"
+    IDS_PAUSE               "Pause"
+    IDS_VIS_NEXT_PRESET     "Visualization: Next preset"
+    IDS_VIS_PREV_PRESET     "Visualization: Previous preset"
+    IDS_VIS_RAND_PRESET     "Visualization: Random preset"
+    IDS_VIS_FULL_SCREEN     "Visualization: Toggle fullscreen"
+    IDS_PLAYBACK__MANUAL_ADVANCE "Playback: Toggle manual advance"
+    IDS_GENERAL_FFOD        "General: Explore current item folder"
+    IDS_PLAYBACK_EDIT_ID3   "Playback: View current file information"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

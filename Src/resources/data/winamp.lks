@@ -1,0 +1,8 @@
+Winamp Links File v1.0
+DefBrowseLoc http://info.winamp.com/winamp/WA.html?Alb=$b&Art=$a&Cid=winamp&Tid=$g&Track=$t Get information about $a
+BrowseLoc http://www.winamp.com/ Winamp.com
+BrowseLoc http://www.shoutcast.com/mbradio.phtml?artist=$a&track=$t&version=$v&genre=$g&album=$b&full=$f Listen to SHOUTcast Radio!
+BrowseLoc http://www.winamp.com/winamp/support/doc/ Winamp Online Documentation
+EndFile
+
+ 

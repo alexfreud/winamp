@@ -1,0 +1,3 @@
+<container id="AVS" name="Visualizations" dynamic="1" component="guid:{0000000A-000C-0010-FF7B-01014263450C}" default_visible="0" default_x="0" default_y="0" default_w="354">
+	<include file="vis-normal.xml"/>
+</container>

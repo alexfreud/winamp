@@ -1,0 +1,23 @@
+notes for encoders
+
+====
+two types of encoders:
+1) File encoders.  These write directly to a file.
+2) Stream encoders.  These return the encoded audio data in a user-provided buffer
+
+For example, an AAC encoder could implement a file encoder for MP4/M4A files, but these aren't streamable.  
+ADTS AAC however, would be streamable.
+
+====
+Two ways of feeding the data
+1) Push model.  The user of the class passes data in a user-owned data buffer.
+2) Pull model.  The implementor of the class pulls data from a user-provided callback (data is stored in an implementor-owned buffer)
+
+Push encoders should be used when the incoming audio data is not immediately available (live recording, CD ripping).
+Pull encoders should only be used when all the audio data is immediately available (e.g. WAV file).
+
+When in doubt, use a push encoder.  Pull encoders offer a potential advantage of better memory usage (fewer memcpy's in most implementations), but a push encoder should serve all needs.
+
+====
+Note that encoders should be as non-blocking as possible (except for, obviously, computation, file I/O and thread synchronization for multi-core-aware encoders).  
+It it not reommended to Sleep(), select() [network I/O], etc.  Stick to what the API was designed for :) 

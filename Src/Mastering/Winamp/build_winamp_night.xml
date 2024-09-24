@@ -1,0 +1,271 @@
+<Build-Doc>
+
+
+<!--Geteverythinginthethirdpartymodule-->
+<Source>openssl</Source>
+<Source>expat</Source>
+<Source>libogg</Source>
+<Source>libvorbis</Source>
+<Source>mp3</Source>
+<Source>ijg</Source>
+<Source>libpng</Source>
+<Source>giflib</Source>
+<Source>id3v2</Source>
+<Source>libmp4v2</Source>
+<Source>freetypewac</Source>
+<Source>auth</Source>
+<Source>gen_mud</Source>
+<Source>vis_avs</Source>
+<Source>ns-eel</Source>
+<Source>ml_webdev</Source>
+<Source>timer</Source>
+<Source>wbm</Source>
+<Source>nsvdec_vp3</Source>
+<Source>vlb</Source>
+<Source>gen_talkback</Source>
+<Source>enc_flac2</Source>
+<Source>primo</Source>
+<Source>burner</Source>
+<Source>f263</Source>
+<Source>in_swf</Source>
+<Source>Elevator</Source>
+<Source>zlib</Source>
+<Source>apev2</Source>
+<Source>in_flv</Source>
+<Source>dlmgr</Source>
+<Source>ml_autotag</Source>
+<Source>ml_orb</Source>
+<Source>ml_plg</Source>
+<Source>gracenote</Source>
+<Source>freetype</Source>
+<Source>gen_crasher</Source>
+<Source>flac</Source>
+<Source>in_flac</Source>
+<Source>enc_flac</Source>
+<Source>enc_wav</Source>
+<Source>ml_transcode</Source>
+<Source>pmp_activesync</Source>
+<Source>jpeg</Source>
+<Source>bmp</Source>
+<Source>gif</Source>
+<Source>ml_dash</Source>
+<Source>ReplayGainAnalysis</Source>
+<Source>ml_rg</Source>
+<Source>ml_local</Source>
+<Source>ml_nowplaying</Source>
+<Source>ml_playlists</Source>
+<Source>ml_history</Source>
+<Source>ml_disc</Source>
+<Source>watcher</Source>
+<Source>nde</Source>
+<Source>playlist</Source>
+<Source>png</Source>
+<Source>xml</Source>
+<Source>alac</Source>
+<Source>ml_online</Source>
+<Source>tagz</Source>
+<Source>ml_bookmarks</Source>
+<Source>libsndfile</Source>
+<Source>ml_pmp</Source>
+<Source>pmp_ipod</Source>
+<Source>pmp_njb</Source>
+<Source>pmp_p4s</Source>
+<Source>pmp_usb</Source>
+<Source>in_wave</Source>
+<Source>nu</Source>
+<Source>nsv</Source>
+<Source>in_mkv</Source>
+<Source>nsmkv</Source>
+<Source>SDKs\Rovi PrimoSDK Plus\4_28_06_0</Source>
+<Source>aacPlus</Source>
+<Source>jnetlib</Source>
+<Source>coloreditor</Source>
+<Source>gen_ml</Source>
+<Source>Winamp</Source>
+<Source>config</Source>
+<Source>winampa</Source>
+<Source>enc_aacplus</Source>
+<Source>enc_lame</Source>
+<Source>enc_wma</Source>
+<Source>Agave</Source>
+<Source>tataki</Source>
+<Source>Wasabi</Source>
+<Source>gen_ff</Source>
+<Source>filereader</Source>
+<Source>gen_hotkeys</Source>
+<Source>gen_tray</Source>
+<Source>in_cdda</Source>
+<Source>in_linein</Source>
+<Source>pfc</Source>
+<Source>in_midi</Source>
+<Source>in_mod</Source>
+<Source>in_mp3</Source>
+<Source>in_mp4</Source>
+<Source>in_nsv</Source>
+<Source>in_vorbis</Source>
+<Source>in_wmvdrm</Source>
+<Source>SDKs/WM_Format_SDK_95_Feb_2005/include</Source>
+<Source>ml_wire</Source>
+<Source>out_ds</Source>
+<Source>out_wave</Source>
+<Source>vis_nsfs</Source>
+<Source>in_dshow</Source>
+<Source>vp5\include</Source>
+<Source>vp5/lib/win32/release</Source>
+<Source>nsvdec_vp5</Source>
+<Source>vp6</Source>
+<Source>vis_milk2</Source>
+<Source>vp32\include</Source>
+<Source>vp32\lib\win32\Release</Source>
+<Source>resources</Source>
+<Source>installer</Source>
+<Source>out_disk</Source>
+<Source>burnlib</Source>
+<Source>gen_dropbox</Source>
+<Source>ml_impex</Source>
+<Source>plist</Source>
+<Source>omBrowser</Source>
+<Source>winampAll</Source>
+<Source>ns-eel2</Source>
+<Source>adpcm</Source>
+<Source>h264</Source>
+<Source>h264dec</Source>
+<Source>mpeg4dec</Source>
+<Source>mp4v</Source>
+<Source>a52</Source>
+<Source>a52dec</Source>
+<Source>in_avi</Source>
+<Source>nsavi</Source>
+<Source>nsutil</Source>
+<Source>pcm</Source>
+<Source>np_plugin</Source>
+<Source>ie_plugin</Source>
+<Source>ml_addons</Source>
+
+<Source>codesign</Source>
+
+<!-- version patch -->
+<Build>
+   Mastering/VerCtrl/verctrl.exe
+  <Parameters>="NIGHT $ENV{BRANDING}"</Parameters>
+  <Filter>dggenericOutputParser</Filter>
+</Build>
+<!-- Add Win32 Projects Here (begin) -->
+
+<Build>winampAll/ippAll.sln
+<Param>/useenv</Param>
+</Build>
+
+<Build>winampAll/winampAll.sln
+<Param>/useenv</Param>
+</Build>
+
+<!-- code signing certain executables -->
+<Build>
+   cmd.exe
+   <Parameters>=$versionString=~/([0-9]*).([0-9]*)\.([0-9]*)/;"/E:ON /V:ON /C .\\Mastering\\Winamp\\simple_sign.cmd \"Nullsoft Winamp ".$1.".".$2.$3."\" \"$options{Sandbox}\\output\\winamp\\winamp.exe\"";</Parameters> 
+   <Filter>dggenericOutputParser</Filter>
+   <ifNoErrors>1</ifNoErrors>
+   <ProjectName>Signing winamp.exe</ProjectName>
+<ScriptIsOutsideSandbox>1</ScriptIsOutsideSandbox>
+</Build>
+
+<Build>
+   cmd.exe
+   <Parameters>=$versionString=~/([0-9]*).([0-9]*)\.([0-9]*)/;"/E:ON /V:ON /C .\\Mastering\\Winamp\\simple_sign.cmd \"Nullsoft Winamp ".$1.".".$2.$3."\" \"$options{Sandbox}\\output\\winamp\\elevator.exe\"";</Parameters> 
+   <Filter>dggenericOutputParser</Filter>
+   <ifNoErrors>1</ifNoErrors>
+   <ProjectName>Signing elevator.exe</ProjectName>
+<ScriptIsOutsideSandbox>1</ScriptIsOutsideSandbox>
+</Build>
+
+<!--  WBM Generation -->
+<Build>
+   cmd.exe
+   <Parameters>/E:ON /V:ON /C ".\Mastering\Winamp\build_wbm.cmd"</Parameters> 
+   <ifNoErrors>1</ifNoErrors>
+   <ProjectName>Building Lazy-Load Wasabi Manifests (WBM)</ProjectName>
+   <ScriptIsOutsideSandbox>1</ScriptIsOutsideSandbox>
+   <Filter>dggenericOutputParser</Filter>
+</Build>
+
+<!--  Image Rebasing -->
+<Build>
+   cmd.exe
+   <Parameters>/E:ON /V:ON /C ".\Mastering\Winamp\rebase.cmd"</Parameters> 
+   <ifNoErrors>1</ifNoErrors>
+   <ProjectName>Rebasing Plugins and Libraries</ProjectName>
+   <ScriptIsOutsideSandbox>1</ScriptIsOutsideSandbox>
+   <Filter>dggenericOutputParser</Filter>
+</Build>
+
+
+<!--  Installer -->
+<Build>
+   cmd.exe
+   <Parameters>/E:ON /V:ON /C ".\Mastering\Winamp\build_installer.cmd"</Parameters> 
+   <ifNoErrors>1</ifNoErrors>
+   <ProjectName>Generating Installers</ProjectName>
+   <ScriptIsOutsideSandbox>1</ScriptIsOutsideSandbox>
+   <Filter>dggenericOutputParser</Filter>
+</Build>
+
+<Build>
+   cmd.exe
+   <Parameters>/E:ON /V:ON /C ".\Mastering\Winamp\build_wadetect.cmd"</Parameters> 
+   <ifNoErrors>1</ifNoErrors>
+   <ProjectName>Generating Installers</ProjectName>
+   <ScriptIsOutsideSandbox>1</ScriptIsOutsideSandbox>
+   <Filter>dggenericOutputParser</Filter>
+</Build>
+
+<Build>
+   cmd.exe
+   <Parameters>/E:ON /V:ON /C ".\Mastering\Winamp\build_webdev.cmd"</Parameters> 
+   <ifNoErrors>1</ifNoErrors>
+   <ProjectName>Generating Web Dev SDK</ProjectName>
+   <ScriptIsOutsideSandbox>1</ScriptIsOutsideSandbox>
+   <Filter>dggenericOutputParser</Filter>
+</Build>
+
+<Build>
+   cmd.exe
+   <Parameters>/E:ON /V:ON /C ".\Mastering\Winamp\build_mud.cmd"</Parameters> 
+   <ifNoErrors>1</ifNoErrors>
+   <ProjectName>Generating MUD installer</ProjectName>
+   <ScriptIsOutsideSandbox>1</ScriptIsOutsideSandbox>
+   <Filter>dggenericOutputParser</Filter>
+</Build>
+
+<Build>
+   cmd.exe
+   <Parameters>/E:ON /V:ON /C ".\Mastering\Winamp\build_orb.cmd"</Parameters> 
+   <ifNoErrors>1</ifNoErrors>
+   <ProjectName>Generating Orb installer</ProjectName>
+   <ScriptIsOutsideSandbox>1</ScriptIsOutsideSandbox>
+   <Filter>dggenericOutputParser</Filter>
+</Build>
+
+<!--  Package up the results -->
+
+<Link>
+   <Name>Download Winamp Distributive!!!</Name>
+   <Href> = $versionString=~/([0-9]*).([0-9]*)\.([0-9]*) (.*)/;"http://nulldev.stream.aol.com/binaries/".$options{WebSubdir}."/".$options{BuildModule}."_".$1."_".$2.$3."_".$buildNumber."_".$4; </Href>
+   <Configuration>Win32 Release|Win32</Configuration>
+</Link>
+
+<Link>
+   <Name>Versions History</Name>
+   <Href> = $versionString=~/([0-9]*).([0-9]*)\.([0-9]*) (.*)/;"http://nulldev.stream.aol.com/binaries/".$options{WebSubdir}."/".$options{BuildModule}."_".$1."_".$2.$3."_".$buildNumber."_".$4."/whatsnew.txt"; </Href>
+   <Configuration>Win32 Release|Win32</Configuration>
+</Link>
+
+<Package>Mastering/Winamp/package_vc.xml
+   <Configuration>Win32 Release|Win32</Configuration>
+   <Destination>=$versionString=~/([0-9]*).([0-9]*)\.([0-9]*) (.*)/;"d:/bin/".$options{WebSubdir}."/".$options{BuildModule}."_".$1."_".$2.$3."_".$buildNumber."_".$4;</Destination>
+   <Copy>1</Copy>
+   <LinkName>Winamp</LinkName>
+</Package>
+
+
+</Build-Doc>

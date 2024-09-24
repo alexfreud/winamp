@@ -1,0 +1,8 @@
+<!-- all valid versions of this in xml will work, however, filename, artist, and title must all be attributes of Song -->
+<Library>
+<Song Filename="C:\Music\artist - title.mp3" Artist="artist1" Title="title1"/>
+<Song Filename="C:\Music\artist2 - title2.wma" Artist="artist2" Title="title2"></Song>
+<Song Title="title3" Filename="C:\Music\artist3 - title3.mp3" Artist="artist3"/>
+<Song Filename="C:\Music\artist4 - title4.ogg" Title="title4" Artist="artist4"/>
+<Song Filename="C:\Music\artist5 - title5.aac" Artist="artist5" Title="title5"/>
+</Library>

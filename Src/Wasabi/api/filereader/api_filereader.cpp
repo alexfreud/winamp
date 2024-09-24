@@ -1,0 +1,20 @@
+#include <precomp.h>
+#include "api_filereader.h"
+
+#ifdef CBCLASS
+#undef CBCLASS
+#endif
+#define CBCLASS api_fileReaderI
+START_DISPATCH;
+  CB(API_FILEREADER_FILEOPEN, fileOpen);
+  VCB(API_FILEREADER_FILECLOSE, fileClose);
+  CB(API_FILEREADER_FILEREAD, fileRead);
+  CB(API_FILEREADER_FILEWRITE, fileWrite);
+  CB(API_FILEREADER_FILESEEK, fileSeek);
+  CB(API_FILEREADER_FILETELL, fileTell);
+  CB(API_FILEREADER_FILEGETFILESIZE, fileGetFileSize);
+//  CB(API_FILEREADER_FILEEXISTS, fileExists);
+  CB(API_FILEREADER_FILEREMOVE, fileRemove);
+  CB(API_FILEREADER_FILEREMOVEUNDOABLE, fileRemoveUndoable);
+  CB(API_FILEREADER_FILEMOVE, fileMove);
+END_DISPATCH;

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5493b195-56dc-432a-ae15-7e7d896e38bf}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{02e8ad96-519d-4f05-a8f7-7b6c37776a0e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0796236c-1cfe-4820-bfbf-fcc2167a1af2}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ns-eel2">
+      <UniqueIdentifier>{67403946-6e24-444a-a76d-d03f25c59a93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dsp_sps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sps_common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ns-eel2\nseel-cfunc.c">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ns-eel2\nseel-compiler.c">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ns-eel2\nseel-eval.c">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ns-eel2\nseel-ram.c">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ns-eel2\y.tab.c">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sps_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sps_configdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\denormal.h">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\glue_x86.h">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\glue_x86_64.h">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\ns-eel.h">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\ns-eel-addfuncs.h">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\ns-eel-func-ref.h">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\ns-eel-int.h">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\wdlcstring.h">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\wdltypes.h">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\y.tab.h">
+      <Filter>Source Files\ns-eel2</Filter>
+    </ClInclude>
+    <ClInclude Include="api__dsp_sps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,69 @@
+# Microsoft Developer Studio Generated Dependency File, included by AudioPlugIn.mak
+
+.\AudioPlugIn.cpp : \
+	".\AudioPlugIn.h"\
+	".\include\CakeMedParam.h"\
+	".\include\DeferZeroFill.h"\
+	".\include\DXi.h"\
+	".\MediaParams.h"\
+	".\ParamEnvelope.h"\
+	".\Parameters.h"\
+	".\StdAfx.h"\
+	
+
+.\AudioPlugIn.rc : \
+	".\res\AudioPlugIn.rc2"\
+	
+
+.\AudioPlugInPropPage.cpp : \
+	".\AudioPlugInPropPage.h"\
+	".\include\CakeMedParam.h"\
+	".\Parameters.h"\
+	".\StdAfx.h"\
+	
+
+.\Filter.cpp : \
+	".\AudioPlugIn.h"\
+	".\AudioPlugInPropPage.h"\
+	".\Filter.h"\
+	".\include\CakeMedParam.h"\
+	".\include\DeferZeroFill.h"\
+	".\include\DXi.h"\
+	".\MediaParams.h"\
+	".\ParamEnvelope.h"\
+	".\Parameters.h"\
+	".\PlugInGUIDs.h"\
+	".\StdAfx.h"\
+	
+
+.\MediaParams.cpp : \
+	".\AudioPlugIn.h"\
+	".\include\CakeMedParam.h"\
+	".\include\CakeMedParam_i.c"\
+	".\include\DeferZeroFill.h"\
+	".\include\DXi.h"\
+	".\MediaParams.h"\
+	".\ParamEnvelope.h"\
+	".\Parameters.h"\
+	".\StdAfx.h"\
+	
+
+.\ParamEnvelope.cpp : \
+	".\AudioPlugIn.h"\
+	".\include\CakeMedParam.h"\
+	".\include\DeferZeroFill.h"\
+	".\include\DXi.h"\
+	".\MediaParams.h"\
+	".\ParamEnvelope.h"\
+	".\Parameters.h"\
+	".\StdAfx.h"\
+	
+
+.\PlugInApp.cpp : \
+	".\PlugInApp.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	

@@ -1,0 +1,20 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+DNSERROR.HTM  HTML
+".\\resources\\pages\\dnsError.htm"
+ERRORPAGEFUNCTIONS.JS  HTML
+".\\resources\\pages\\errorPageFunctions.js"
+ERRORPAGESTRINGS.JS  HTML
+".\\resources\\pages\\errorPageStrings.js"
+HTTPERROR.HTM  HTML
+".\\resources\\pages\\httpError.htm"
+ERRORICON.PNG  2110
+".\\resources\\pages\\errorIcon.png"
+NAVCANCEL.HTM  HTML
+".\\resources\\pages\\navCancel.htm"
+WINAMPERROR.CSS  HTML
+".\\resources\\pages\\winampError.css"
+INETDISABLED.HTM  HTML
+".\\resources\\pages\\inetDisabled.htm"

@@ -1,0 +1,249 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DOWNLOADS DIALOGEX 0, 0, 266, 92
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_DOWNLOADLIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_TABSTOP,0,0,264,79
+    CONTROL         "Play",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,0,81,37,11
+    CONTROL         "Enqueue",IDC_ENQUEUE,"Button",BS_OWNERDRAW | WS_TABSTOP,39,81,37,11
+    CONTROL         "Remove",IDC_REMOVE,"Button",BS_OWNERDRAW | WS_TABSTOP,80,81,37,11
+    CONTROL         "Clean up",IDC_CLEANUP,"Button",BS_OWNERDRAW | WS_TABSTOP,120,81,37,11
+    CONTROL         "",IDC_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | SS_ENDELLIPSIS | WS_GROUP,163,81,102,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "Downloads"
+    BEGIN
+        MENUITEM "Play selection\tEnter",       IDC_PLAY
+        MENUITEM "Enqueue selection\tShift+Enter", IDC_ENQUEUE
+        POPUP "Send to:"
+        BEGIN
+            MENUITEM "",                            ID_Menu
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Select all\tCtrl+A",          IDC_SELECTALL
+        MENUITEM "View file info...\tAlt+3",    IDC_INFOBOX
+        MENUITEM "Explore item folder\tCtrl+F", ID_DOWNLOADS_EXPLORERITEMFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "Remove from list\tDel",       IDC_REMOVE
+        MENUITEM "Delete file\tShift+Del",      IDC_DELETE
+        MENUITEM "Cancel download",             ID_DOWNLOADS_CANCELDOWNLOAD
+    END
+    POPUP "Navigation"
+    BEGIN
+        MENUITEM "&Preferences",                ID_NAVIGATION_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "Help",                        ID_NAVIGATION_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TREEITEM_DOWNLOADS  BITMAP                  "resources\\downloadIcon.bmp"
+IDB_TREEITEM_DOWNLOADS1 BITMAP                  "resources\\downloadIcon1.bmp"
+IDB_TREEITEM_DOWNLOADS2 BITMAP                  "resources\\downloadIcon2.bmp"
+IDB_TREEITEM_DOWNLOADS3 BITMAP                  "resources\\downloadIcon3.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_VIEW_DOWNLOAD_ACCELERATORS ACCELERATORS 
+BEGIN
+    "F",            ID_DOWNLOADS_EXPLORERITEMFOLDER, VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      IDC_DELETE,             VIRTKEY, SHIFT, NOINVERT
+    VK_RETURN,      IDC_ENQUEUE,            VIRTKEY, SHIFT, NOINVERT
+    "3",            IDC_INFOBOX,            VIRTKEY, ALT, NOINVERT
+    VK_RETURN,      IDC_PLAY,               VIRTKEY, NOINVERT
+    VK_DELETE,      IDC_REMOVE,             VIRTKEY, NOINVERT
+    "A",            IDC_SELECTALL,          VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      IDC_CUSTOM,             VIRTKEY, SHIFT, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUGIN_NAME         "Nullsoft Downloads v%d.%02d"
+    65535                   "{706549D3-D813-45dd-9A0B-E3793A1B63A8}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DOWNLOADS           "Downloads"
+    IDS_DOWNLOADING         "Downloading..."
+    IDS_CHOOSE_FOLDER       "Choose folder to store downloaded media."
+    IDS_FILE_NOT_FOUND      "Cannot connect to %s\nFile not Found."
+    IDS_CONNECTION_TIMED_OUT "Cannot connect to %s\nConnection timed out."
+    IDS_NO_JNETLIB          "HTTP Downloader library is missing.\nPlease reinstall Winamp."
+    IDS_JNETLIB_MISSING     "JNetLib missing"
+    IDS_NO_EXPAT            "XML Parsing library is missing.\nPlease reinstall Winamp."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXPAT_MISSING       "Expat missing"
+    IDS_WDAY_SUN            "Sun"
+    IDS_WDAY_MON            "Mon"
+    IDS_WDAY_TUE            "Tue"
+    IDS_WDAY_WED            "Wed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WDAY_THU            "Thu"
+    IDS_WDAY_FRI            "Fri"
+    IDS_WDAY_SAT            "Sat"
+    IDS_MONTH_JAN           "Jan"
+    IDS_MONTH_FEB           "Feb"
+    IDS_MONTH_MAR           "Mar"
+    IDS_MONTH_APR           "Apr"
+    IDS_MONTH_MAY           "May"
+    IDS_MONTH_JUN           "Jun"
+    IDS_MONTH_JUL           "Jul"
+    IDS_MONTH_AUG           "Aug"
+    IDS_MONTH_SEP           "Sep"
+    IDS_MONTH_OCT           "Oct"
+    IDS_MONTH_NOV           "Nov"
+    IDS_MONTH_DEC           "Dec"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_INVALID_LINK        "Invalid link (404 or timeout)"
+    IDS_CONNECTION_RESET_BY_PEER "Connection reset by peer."
+    IDS_DOWNLOADING_PERCENT "Downloading %d%%"
+    IDS_SOURCE              "Source"
+    IDS_TITLE               "Title"
+    IDS_PROGRESS            "Status"
+    IDS_PATH                "Download Location"
+    IDS_PERM_DELETE_ARE_YOU_SURE 
+                            "This will permanently delete this file, are you sure?"
+    IDS_PERM_DELETE_THESE_ARE_YOU_SURE 
+                            "This will permanently delete these %d files, are you sure?"
+    IDS_DELETION            "Deletion"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CLEAR_ALL_FINISHED_DOWNLOADS 
+                            "This will clear all finished downloads, are you sure?\n\nTip: You can view all your downloaded podcasts in Local Media/Podcasts"
+    IDS_CLEAN_UP_LIST       "Clean Up List"
+    IDS_DONE                "Done"
+    IDS_SAVE                "Save"
+    IDS_REQUIRES_INTERNET_CONNECTION_ENSURE_CONNECTION 
+                            "The media library feature you are attempting to use requires an internet connection. Please make sure you are connected to the internet and try again."
+    IDS_ADD_TO_DOWNLOADS    "Added to downloads."
+    IDS_SURE_YOU_WANT_TO_REMOVE_THIS 
+                            "Are you sure you want to remove %s\n(%s)"
+    IDS_CONFIRM             "Confirm"
+    IDS_CANCEL_DOWNLOADS_AND_QUIT 
+                            "There are downloads currently in progress.\nAre you sure you want to cancel these downloads and quit?"
+    IDS_CONFIRM_QUIT        "Confirm Quit"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DELETEFAILED        "Delete Failed"
+    IDS_SORRY               "Sorry"
+    IDS_DATE                "Download Date"
+    IDS_N_A                 "n/a"
+    IDS_SIZE                "Size"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DOWNLOAD_SUCCESS    "Completed"
+    IDS_DOWNLOAD_FAILURE    "Failed"
+    IDS_DOWNLOAD_CANCELED   "Cancelled"
+    IDS_DOWNLOAD_PENDING    "Pending..."
+    IDS_DOWNLOADING_PROGRESS 
+                            "Downloading %u file(s), %s of %s complete (%d%%)"
+    IDS_DOWNLOADING_COMPLETE "Downloading %u files, %s complete"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

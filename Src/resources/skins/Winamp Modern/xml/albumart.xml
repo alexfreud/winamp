@@ -1,0 +1,21 @@
+<container id="winamp.albumart" name="Album Art" default_visible="1" nomenu="1" >
+
+<groupdef id="albumart.content.group">
+
+	<AlbumArt
+		id="waaa" fitparent="1" move="1"
+	/>
+
+	<script file="scripts/albumart.maki" param="waaa" />
+
+</groupdef>
+
+<layout id="normal" minimum_w="107" minimum_h="60" h="164" w="164">
+	<Wasabi:Standardframe:NoStatus
+		x="0" y="0" w="0" h="0" relatw="1" relath="1"
+		content="albumart.content.group"
+	/>
+
+</layout>
+
+</container>

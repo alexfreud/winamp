@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winampa", "winampa.vcxproj", "{EF082058-B95A-4627-950A-8A825251785D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF082058-B95A-4627-950A-8A825251785D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EF082058-B95A-4627-950A-8A825251785D}.Debug|Win32.Build.0 = Debug|Win32
+		{EF082058-B95A-4627-950A-8A825251785D}.Debug|x64.ActiveCfg = Debug|x64
+		{EF082058-B95A-4627-950A-8A825251785D}.Debug|x64.Build.0 = Debug|x64
+		{EF082058-B95A-4627-950A-8A825251785D}.Release|Win32.ActiveCfg = Release|Win32
+		{EF082058-B95A-4627-950A-8A825251785D}.Release|Win32.Build.0 = Release|Win32
+		{EF082058-B95A-4627-950A-8A825251785D}.Release|x64.ActiveCfg = Release|x64
+		{EF082058-B95A-4627-950A-8A825251785D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BE98B4B-45F1-42A7-ADA6-004FED1CD9B3}
+	EndGlobalSection
+EndGlobal

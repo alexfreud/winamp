@@ -1,0 +1,186 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "BMWnd"
+    BEGIN
+        MENUITEM "Play selection\tEnter",       ID_BMWND_PLAYSELECTEDFILES
+        MENUITEM "Enqueue selection\tShift+Enter", ID_BMWND_ENQUEUESELECTEDFILES
+        MENUITEM "Send to:",                    ID_BMWND_SENDTO
+        MENUITEM SEPARATOR
+        MENUITEM "Select all\tCtrl+A",          ID_BMWND_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "Remove selected bookmarks\tDel", ID_BMWND_REMOVESELECTEDBOOKMARKS
+        MENUITEM "Edit selected bookmarks\tCtrl+E", ID_BMWND_EDITSELECTEDBOOKMARKS
+    END
+    POPUP "BMWndIcon"
+    BEGIN
+        MENUITEM "Play all bookmarks\tEnter",   ID_BMWND_PLAYSELECTEDFILES
+        MENUITEM "Enqueue all bookmarks\tShift+Enter", ID_BMWND_ENQUEUESELECTEDFILES
+        MENUITEM SEPARATOR
+        MENUITEM "Help",                        ID_BMWND_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VIEW_BM DIALOGEX 0, 0, 186, 92
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_TABSTOP,0,0,184,79
+    CONTROL         "Play",IDC_BUTTON_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,0,81,35,11
+    CONTROL         "Enqueue",IDC_BUTTON_ENQUEUE,"Button",BS_OWNERDRAW | WS_TABSTOP,38,81,35,11
+    CONTROL         "Edit",IDC_EDITBOOK,"Button",BS_OWNERDRAW | WS_TABSTOP,76,81,36,11
+    CONTROL         "Delete",IDC_REMOVEBOOK,"Button",BS_OWNERDRAW | WS_TABSTOP,114,81,36,11
+END
+
+IDD_EDITBOOKMARK DIALOGEX 0, 0, 241, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Bookmark"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Title",IDC_STATIC,8,10,14,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_TITLE,28,7,206,14,ES_AUTOHSCROLL
+    LTEXT           "File",IDC_STATIC,8,29,12,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_FILE,28,26,187,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&...",IDC_EDIT_FN,218,25,16,15
+    DEFPUSHBUTTON   "&OK",IDOK,6,44,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,60,44,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_EDITBOOKMARK, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TREEITEM_BOOKMARKS  BITMAP                  "resources\\ti_bookmarks_16x16x16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_VIEW_BM_ACCELERATORS ACCELERATORS 
+BEGIN
+    "A",            ID_BMWND_SELECTALL,     VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_BMWND_EDITSELECTEDBOOKMARKS, VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_BMWND_REMOVESELECTEDBOOKMARKS, VIRTKEY, NOINVERT
+    VK_RETURN,      ID_BMWND_PLAYSELECTEDFILES, VIRTKEY, NOINVERT
+    VK_RETURN,      ID_BMWND_ENQUEUESELECTEDFILES, VIRTKEY, SHIFT, NOINVERT
+    VK_RETURN,      IDC_BUTTON_CUSTOM,      VIRTKEY, SHIFT, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_BOOKMARKS  "Nullsoft Bookmarks v%s"
+    65535                   "{A3A1E7C0-761B-4391-A08A-F0D7AF38931C}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BOOKMARKS           "Bookmarks"
+    IDS_ADD_TO_BOOKMARKS    "Add to bookmarks"
+    IDS_BOOKMARK_TITLE      "Bookmark Title"
+    IDS_BOOKMARK_FN_URL     "Bookmark Filename/URL"
+    IDS_BROWSE_FOR_BM_ENTRY "Browse for bookmark entry..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

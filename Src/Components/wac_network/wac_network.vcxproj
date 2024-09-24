@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2C4D81A7-D8C3-4D7B-8DA1-1522C73EF9F3}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)'=='Release|x64'">10.0.19041.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
+    <QtInstall>5.15.2_msvc2019</QtInstall>
+    <QtModules>core;network;widgets;concurrent</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="QtSettings">
+    <QtInstall>5.15.2_msvc2019</QtInstall>
+    <QtModules>core;network;widgets;concurrent;webview</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
+    <QtInstall>5.15.2_msvc2019</QtInstall>
+    <QtModules>core;network;widgets;concurrent</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="QtSettings">
+    <QtInstall>5.15.2_msvc2019</QtInstall>
+    <QtModules>core;network;widgets;concurrent;webview</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetExt>.w5s</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetExt>.w5s</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Wasabi;..\..\replicant;%(AdditionalIncludeDirectories);$(Qt_INCLUDEPATH_)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <DisableSpecificWarnings>4995;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>comctl32.lib;ws2_32.lib;Crypt32.lib;shlwapi.lib;%(AdditionalDependencies);$(Qt_LIBS_)</AdditionalDependencies>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\</Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Wasabi;..\..\replicant;%(AdditionalIncludeDirectories);$(Qt_INCLUDEPATH_)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <DisableSpecificWarnings>4995;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\</Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\Wasabi;..\..\replicant;%(AdditionalIncludeDirectories);$(Qt_INCLUDEPATH_)</AdditionalIncludeDirectories>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <DisableSpecificWarnings>4995;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>comctl32.lib;ws2_32.lib;Crypt32.lib;shlwapi.lib;%(AdditionalDependencies);$(Qt_LIBS_)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\
+xcopy /Y /D $(IntDir)$(TargetName).pdb ..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\</Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\Wasabi;..\..\replicant;%(AdditionalIncludeDirectories);$(Qt_INCLUDEPATH_)</AdditionalIncludeDirectories>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <DisableSpecificWarnings>4995;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\
+xcopy /Y /D $(IntDir)$(TargetName).pdb ..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\</Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Vcpkg">
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+    <VcpkgInstalledDir />
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Vcpkg">
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+    <VcpkgInstalledDir />
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnabled>true</VcpkgEnabled>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;WAC_NETWORK_LIB;USE_SSL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;WAC_NETWORK_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;USE_SSL;WAC_NETWORK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;WAC_NETWORK_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\nu\RingBuffer.cpp" />
+    <ClCompile Include="wac_network_connection_api.cpp" />
+    <ClCompile Include="wac_network_dns_api.cpp" />
+    <ClCompile Include="wac_network_http_receiver_api.cpp" />
+    <ClCompile Include="wac_network_http_server_api.cpp" />
+    <ClCompile Include="wac_network_onconncb_api.cpp" />
+    <ClCompile Include="wac_network_page_generator_api.cpp" />
+    <ClCompile Include="wac_network_web_server_api.cpp" />
+    <ClCompile Include="wac_network_dns.cpp" />
+    <ClCompile Include="wac_network_connection.cpp" />
+    <ClCompile Include="Headers.cpp" />
+    <ClCompile Include="wac_network_http_receiver.cpp" />
+    <ClCompile Include="wac_network_http_server.cpp" />
+    <ClCompile Include="wac_network_web_server_listen.cpp" />
+    <ClCompile Include="wac_network_ssl_connection.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="wac_network_dns_factory.cpp" />
+    <ClCompile Include="wac_network_http_receiver_factory.cpp" />
+    <ClCompile Include="wac_network_http_server_factory.cpp" />
+    <ClCompile Include="wac_network_ssl_connection_factory.cpp" />
+    <ClCompile Include="wac_network_web_server_factory.cpp" />
+    <ClCompile Include="wac_network_web_server.cpp" />
+    <ClInclude Include="wac_network_connection_api.h" />
+    <ClInclude Include="wac_network_dns_api.h" />
+    <ClInclude Include="wac_network_http_receiver_api.h" />
+    <ClInclude Include="wac_network_http_server_api.h" />
+    <ClInclude Include="wac_network_onconncb_api.h" />
+    <ClInclude Include="wac_network_page_generator_api.h" />
+    <ClInclude Include="wac_network_web_server_api.h" />
+    <ClInclude Include="api__wac_network.h" />
+    <ClInclude Include="wac_network_dns.h" />
+    <ClInclude Include="wac_network_connection.h" />
+    <ClInclude Include="Headers.h" />
+    <ClInclude Include="wac_network_http_receiver.h" />
+    <ClInclude Include="wac_network_http_server.h" />
+    <ClInclude Include="wac_network_web_server_listen.h" />
+    <ClInclude Include="netinc.h" />
+    <ClInclude Include="ServiceBuild.h" />
+    <ClInclude Include="wac_network_ssl_connection.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="wac_network.h" />
+    <ClInclude Include="wac_network_connection_factory.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="wac_network_global.h" />
+    <ClInclude Include="main.h" />
+    <ClCompile Include="wac_network_connection_factory.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClInclude Include="wac_network_dns_factory.h" />
+    <ClInclude Include="wac_network_http_receiver_factory.h" />
+    <ClInclude Include="wac_network_http_server_factory.h" />
+    <ClInclude Include="wac_network_ssl_connection_factory.h" />
+    <ClInclude Include="wac_network_web_server_factory.h" />
+    <ClInclude Include="wac_network_web_server.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Wasabi\Wasabi.vcxproj">
+      <Project>{3e0bfa8a-b86a-42e9-a33f-ec294f823f7f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wac_network.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="version.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

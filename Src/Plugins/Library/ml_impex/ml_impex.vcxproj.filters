@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="impex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="importer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImporterAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportPlaylists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="itunesxmlwrite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\ml_lib.cpp">
+      <Filter>Source Files\gen_ml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api__ml_impex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api_importer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="importer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImporterAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="itunesxmlwrite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{367262fe-81b8-41c9-a013-150093098f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{91f9aff7-f6fc-45c6-9c44-88bf5ec938ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a20e93fc-10cf-4f90-b11f-2e91d427b1b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gen_ml">
+      <UniqueIdentifier>{5957e24d-fc45-47d0-8c55-b6a758580b36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ml_impex.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

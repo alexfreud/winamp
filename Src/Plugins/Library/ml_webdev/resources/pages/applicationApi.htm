@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JSAPI2::Application Api</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<script type="text/javascript" src="api2.js"></script>
+</head>
+<body style="FONT-FAMILY: MS Shell Dlg 2;">
+	<h2>Application API</h2>
+	<h3>Methods:</h3>
+	<input type="button" value="Launch URL" onclick="ApplicationLaunchURLClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;URL:<input type="text" size="20" id="application_t_URL_in" value="http://dev.winamp.com">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Force External Browser:<input type="checkbox" checked="unchecked" id="application_t_ForceExternal_in">
+	<h3>Properties:</h3>
+	<input type="button" value="Get number version" onclick="ApplicationNumVersionClicked();">
+	<input type="text" readonly size="20" id="application_t_NumVersion">
+	<br>
+	<br>
+	<input type="button" value="Get string version" onclick="ApplicationStringVersionClicked();">
+	<input type="text" readonly size="20" id="application_t_StringVersion">
+	<br>
+	<br>
+	<input type="button" value="Get language" onclick="ApplicationLanguageClicked();">
+	<input type="text" readonly size="20" id="application_t_Language">
+	<br>
+	<br>
+	<input type="button" value="Get languagepack" onclick="ApplicationLanguagePackClicked();">
+	<input type="text" readonly size="20" id="application_t_LanguagePack">
+</body>
+</html>

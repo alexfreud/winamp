@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{303af6ae-839c-47f8-9a67-adb97270c1cc}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\deblocking filter">
+      <UniqueIdentifier>{6a99fb4f-1595-4387-a229-fb983e10ee1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3b640415-33d1-4075-9c43-c885e4ab8760}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ldecod\src\biaridecod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\block.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\cabac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\context_ini.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dec_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\erc_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\erc_do_i.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\erc_do_p.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\errorconcealment.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\fmo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\header.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\image.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\intra16x16_pred.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\intra4x4_pred.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\intra8x8_pred.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\intra_chroma_pred.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\ldecod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\macroblock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\mb_access.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\mb_prediction.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\mbuffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\mc_prediction.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lcommon\src\memalloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lcommon\src\memcache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\meminput.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lcommon\src\mv_prediction.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\nal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\nalu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\nalucommon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\parset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lcommon\src\parsetcommon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\quant.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\sei.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\storable_picture.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lcommon\src\transform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\transform8x8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\vlc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lcommon\src\win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\filter_chroma_horiz.c">
+      <Filter>Source Files\deblocking filter</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\filter_chroma_vert.c">
+      <Filter>Source Files\deblocking filter</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\filter_luma_horiz.c">
+      <Filter>Source Files\deblocking filter</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\filter_luma_vert.c">
+      <Filter>Source Files\deblocking filter</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\loopFilter.c">
+      <Filter>Source Files\deblocking filter</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\strength_horiz.c">
+      <Filter>Source Files\deblocking filter</Filter>
+    </ClCompile>
+    <ClCompile Include="ldecod\src\strength_vert.c">
+      <Filter>Source Files\deblocking filter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ldecod\inc\biaridecod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\cabac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\context_ini.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\contributors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcommon\inc\ctx_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dec_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\elements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\erc_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\erc_do.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\erc_globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\errorconcealment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\fmo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcommon\inc\frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcommon\inc\ifunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\intra16x16_pred.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\intra4x4_pred.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\intra8x8_pred.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\leaky_bucket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\loopfilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\macroblock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcommon\inc\mb_access.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\mbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\mc_prediction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcommon\inc\memalloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcommon\inc\memcache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\meminput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcommon\inc\mv_prediction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\nalu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcommon\inc\nalucommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\optim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\parset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\parsetcommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\quant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\sei.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcommon\inc\transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\transform8x8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcommon\inc\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ldecod\inc\vlc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcommon\inc\win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ldecod\src\biari.asm">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ldecod\src\macroblock.asm">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ldecod\src\prediction.asm">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

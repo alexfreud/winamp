@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JSAPI2::Transport Api</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<script type="text/javascript" src="api2.js"></script>
+</head>
+<body style="FONT-FAMILY: MS Shell Dlg 2;">
+	<h2>Transport API</h2>
+	<h3>Methods:</h3>
+	<input type="button" value="Prev" onclick="tPrevClicked();">
+	<input type="button" value="Play" onclick="tPlayClicked();">
+	<input type="button" value="Pause" onclick="tPauseClicked();">
+	<input type="button" value="Stop" onclick="tStopClicked();">
+	<input type="button" value="Next" onclick="tNextClicked();">
+	<br>
+	<br>
+	<input type="button" value="Get Metadata" onclick="tGetMetadataClicked();">
+	<input type="text" readonline size="40" id="t_t_mTag_Response">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Metadata Tag:&nbsp;<input type="text" value="artist" id="t_t_mTag_in">
+	<br>
+	<h3>Properties</h3>
+	<input type="button" value="Get shuffle" onclick="tGetShuffleClicked();">
+	<input type="text" readonline size="20" id="t_t_shuffle">
+	<br>
+	<input type="button" value="Set shuffle" onclick="tSetShuffleClicked();">
+	<input type="text" size="20" id="t_t_shuffle_in">
+	<br>
+	<br>
+	<input type="button" value="Get repeat" onclick="tGetRepeatClicked();">
+	<input type="text" readonly size="20" id="t_t_repeat">
+	<br>
+	<input type="button" value="Set repeat" onclick="tSetRepeatClicked();">
+	<input type="text" size="20" id="t_t_repeat_in">
+	<br>
+	<br>
+	<input type="button" value="Get position" onclick="tGetPositionClicked();">
+	<input type="text" readonly size="20" id="t_t_position">
+	<br>
+	<input type="button" value="Set position" onclick="tSetPositionClicked();">
+	<input type="text" size="20" id="t_t_position_in">
+	<br>
+	<br>
+	<input type="button" value="Get length" id="b_t_length" onclick="tLengthClicked();">
+	<input type="text" readonly size="20" id="t_t_Length">
+	<br>
+	<br>
+	<input type="button" value="Get url" id="b_t_url" onclick="tURLClicked();">
+	<input type="text" size="95" id="t_t_URL">
+	<br>
+	<br>
+	<input type="button" value="Get title" id="b_t_title" onclick="tTitleClicked();">
+	<input type="text" size="95" id="t_t_Title">
+	<br>
+	<br>
+	<input type="button" value="Get playing" id="b_t_playing" onclick="tPlayingClicked();">
+	<input type="text" readonly size="20" id="t_t_Playing">
+	<br>
+	<br>
+	<input type="button" value="Get paused" id="b_t_paused" onclick="tPausedClicked();">
+	<input type="text" readonly size="20" id="t_t_Paused">
+</body>
+</html>

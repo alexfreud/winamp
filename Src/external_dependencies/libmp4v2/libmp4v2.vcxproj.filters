@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="3gp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3gpmeta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_amr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_avc1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_avcC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_chpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_d263.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_damr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_dref.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_elst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_enca.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_encv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_free.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_ftyp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_gmin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_hdlr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_hinf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_hnti.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_href.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_mdat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_mdhd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_meta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_mp4a.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_mp4s.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_mp4v.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_mvhd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_ohdr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_root.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_rtp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_s263.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_sdp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_smi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_sound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_standard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_stbl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_stdp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_stsc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_stsd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_stsz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_stz2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_tfhd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_tkhd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_treftype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_trun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_udta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_url.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_urn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_video.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_vmhd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="descriptors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="isma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4atom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4container.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4descriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4file_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4meta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4property.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4track.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="need_for_win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ocidescriptors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="odcommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qosqualifiers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rtphint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="virtual_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="atoms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4atom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4descriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4property.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4track.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ocidescriptors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="odcommands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qosqualifiers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rtphint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="virtual_io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="descriptors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{67a0c719-1a06-41a1-aeb1-ad5ed39591b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{de2c7031-36a6-41f3-b001-5a9c6090a097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7569046e-c8b9-4fa1-938c-d579139c640b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="libmp4v2.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libmp4v2.def">
+      <Filter>Ressource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

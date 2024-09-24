@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{5A93B2EA-61E0-4079-A002-06B4EA498853}</ProjectGuid>
+    <RootNamespace>sc_serv</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.32505.173</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>false</VcpkgEnableManifest>
+    <VcpkgEnabled>true</VcpkgEnabled>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+    <VcpkgTriplet>x86-windows-static</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static</VcpkgTriplet>
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static</VcpkgTriplet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;nmrCommon;GeoIP\libGeoIP;..\..\..\external_dependencies\vcpkg\$(PlatformShortName)-windows-static\include;.\deps\win32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601;WINVER=0x0601;XML_STATIC;_DEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996;4512;4505;4244;4127;4100;4057;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>crypt32.lib;version.lib;ws2_32.lib;shlwapi.lib;wldap32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>nmrCommon;deps\win64\include;GeoIP\libGeoIP;libcurl\include;pthread-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0500;WINVER=0x0500;ZLIB_WINAPI;CURL_STATICLIB;XML_STATIC;PTW32_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>crypt32.lib;version.lib;ws2_32.lib;shlwapi.lib;wldap32.lib;expat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerboseLib</ShowProgress>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\external_dependencies\expat\$(PlatformShortName)_$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX64</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.;nmrCommon;GeoIP\libGeoIP;..\..\..\external_dependencies\vcpkg\$(PlatformShortName)-windows-static\include;.\deps\win32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601;WINVER=0x0601;XML_STATIC;NDEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996;4512;4505;4244;4127;4100;4057;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>crypt32.lib;version.lib;ws2_32.lib;shlwapi.lib;wldap32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <GenerateMapFile>true</GenerateMapFile>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>nmrCommon;GeoIP\libGeoIP;deps\win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0500;WINVER=0x0500;ZLIB_WINAPI;CURL_STATICLIB;XML_STATIC;PTW32_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>crypt32.lib;version.lib;ws2_32.lib;shlwapi.lib;wldap32.lib;expat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\external_dependencies\expat\$(PlatformShortName)_$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="adminList.cpp" />
+    <ClCompile Include="ADTSHeader.cpp" />
+    <ClCompile Include="agentList.cpp" />
+    <ClCompile Include="aolxml\aolxml.cpp" />
+    <ClCompile Include="aolxml\aolxmlutils.cpp" />
+    <ClCompile Include="auth.cpp" />
+    <ClCompile Include="bandwidth.cpp" />
+    <ClCompile Include="banList.cpp" />
+    <ClCompile Include="base64.cpp" />
+    <ClCompile Include="cache.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="cpucount.cpp" />
+    <ClCompile Include="filenameMetadata.cpp" />
+    <ClCompile Include="FLV.cpp" />
+    <ClCompile Include="GeoIP\libGeoIP\GeoIP.c" />
+    <ClCompile Include="GeoIP\libGeoIP\md5.c" />
+    <ClCompile Include="GeoIP\libGeoIP\regionName.c" />
+    <ClCompile Include="GeoIP\libGeoIP\timeZone.c" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="metadata.cpp" />
+    <ClCompile Include="metrics.cpp" />
+    <ClCompile Include="MP3Header.cpp" />
+    <ClCompile Include="nmrCommon\file\fileUtils.cpp" />
+    <ClCompile Include="nmrCommon\services\baseOptions.cpp" />
+    <ClCompile Include="nmrCommon\services\logger.cpp" />
+    <ClCompile Include="nmrCommon\services\serviceMain.cpp" />
+    <ClCompile Include="nmrCommon\services\stdServiceImpl.cpp" />
+    <ClCompile Include="nmrCommon\threading\thread.cpp" />
+    <ClCompile Include="nmrCommon\unicode\uniFile.cpp" />
+    <ClCompile Include="nmrCommon\unicode\uniString.cpp" />
+    <ClCompile Include="nmrCommon\win32\rezFuncs.cpp" />
+    <ClCompile Include="protocol_admincgi.cpp" />
+    <ClCompile Include="protocol_backup.cpp" />
+    <ClCompile Include="protocol_FlashPolicyServer.cpp" />
+    <ClCompile Include="protocol_flvClient.cpp" />
+    <ClCompile Include="protocol_HTTPClient.cpp" />
+    <ClCompile Include="protocol_HTTPSource.cpp" />
+    <ClCompile Include="protocol_HTTPStyle.cpp" />
+    <ClCompile Include="protocol_m4aClient.cpp" />
+    <ClCompile Include="protocol_relay.cpp" />
+    <ClCompile Include="protocol_relay_shoutcast.cpp" />
+    <ClCompile Include="protocol_relay_uvox.cpp" />
+    <ClCompile Include="protocol_shoutcast1Client.cpp" />
+    <ClCompile Include="protocol_shoutcast2Client.cpp" />
+    <ClCompile Include="protocol_shoutcastClient.cpp" />
+    <ClCompile Include="protocol_shoutcastSource.cpp" />
+    <ClCompile Include="protocol_uvox2Source.cpp" />
+    <ClCompile Include="ripList.cpp" />
+    <ClCompile Include="stats.cpp" />
+    <ClCompile Include="streamData.cpp" />
+    <ClCompile Include="threadedRunner.cpp" />
+    <ClCompile Include="updater.cpp" />
+    <ClCompile Include="uvox2Common.cpp" />
+    <ClCompile Include="w3cLog.cpp" />
+    <ClCompile Include="webClient.cpp" />
+    <ClCompile Include="webNet\socketOps.cpp" />
+    <ClCompile Include="webNet\urlUtils.cpp" />
+    <ClCompile Include="yp2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="adminList.h" />
+    <ClInclude Include="ADTSHeader.h" />
+    <ClInclude Include="agentList.h" />
+    <ClInclude Include="aolxml\aolxml.h" />
+    <ClInclude Include="auth.h" />
+    <ClInclude Include="bandwidth.h" />
+    <ClInclude Include="banList.h" />
+    <ClInclude Include="base64.h" />
+    <ClInclude Include="cache.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="cpucount.h" />
+    <ClInclude Include="FLV.h" />
+    <ClInclude Include="GeoIP\libGeoIP\GeoIP.h" />
+    <ClInclude Include="GeoIP\libGeoIP\GeoIP_internal.h" />
+    <ClInclude Include="GeoIP\libGeoIP\global.h" />
+    <ClInclude Include="GeoIP\libGeoIP\md5.h" />
+    <ClInclude Include="GeoIP\libGeoIP\types.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="metadata.h" />
+    <ClInclude Include="metrics.h" />
+    <ClInclude Include="MP3Header.h" />
+    <ClInclude Include="nmrCommon\file\fileUtils.h" />
+    <ClInclude Include="nmrCommon\services\baseOptions.h" />
+    <ClInclude Include="nmrCommon\services\logger.h" />
+    <ClInclude Include="nmrCommon\services\serviceMain.h" />
+    <ClInclude Include="nmrCommon\services\stdServiceImpl.h" />
+    <ClInclude Include="nmrCommon\stl\functors.h" />
+    <ClInclude Include="nmrCommon\stl\stlx.h" />
+    <ClInclude Include="nmrCommon\stl\stringUtils.h" />
+    <ClInclude Include="nmrCommon\threading\MT_stl.h" />
+    <ClInclude Include="nmrCommon\threading\thread.h" />
+    <ClInclude Include="nmrCommon\unicode\uniFile.h" />
+    <ClInclude Include="nmrCommon\unicode\uniString.h" />
+    <ClInclude Include="nmrCommon\win32\rezFuncs.h" />
+    <ClInclude Include="protocol_admincgi.h" />
+    <ClInclude Include="protocol_backup.h" />
+    <ClInclude Include="protocol_FlashPolicyServer.h" />
+    <ClInclude Include="protocol_flvClient.h" />
+    <ClInclude Include="protocol_HTTPClient.h" />
+    <ClInclude Include="protocol_HTTPSource.h" />
+    <ClInclude Include="protocol_HTTPStyle.h" />
+    <ClInclude Include="protocol_m4aClient.h" />
+    <ClInclude Include="protocol_relay.h" />
+    <ClInclude Include="protocol_relay_shoutcast.h" />
+    <ClInclude Include="protocol_relay_uvox.h" />
+    <ClInclude Include="protocol_shoutcast1Client.h" />
+    <ClInclude Include="protocol_shoutcast2Client.h" />
+    <ClInclude Include="protocol_shoutcastClient.h" />
+    <ClInclude Include="protocol_shoutcastSource.h" />
+    <ClInclude Include="protocol_uvox2Source.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ripList.h" />
+    <ClInclude Include="stats.h" />
+    <ClInclude Include="streamData.h" />
+    <ClInclude Include="threadedRunner.h" />
+    <CustomBuild Include="updater.h" />
+    <ClInclude Include="uvox2Common.h" />
+    <ClInclude Include="versions.h" />
+    <ClInclude Include="w3cLog.h" />
+    <ClInclude Include="webClient.h" />
+    <ClInclude Include="webNet\socketops.h" />
+    <ClInclude Include="webNet\urlUtils.h" />
+    <ClInclude Include="yp2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="messagefile.mc">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mc %(Filename)%(Extension)
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).rc;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mc %(Filename)%(Extension)
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).rc;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="messagefile.rc" />
+    <ResourceCompile Include="sc_serv.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="mp4_ulaw_decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="avi_ulaw_decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="avi_pcm_decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="avi_alaw_decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="avi_alaw_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="avi_pcm_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="avi_ulaw_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4_ulaw_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1b5ce836-a837-4b4b-9fe4-50f0fbabacdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{3498ccdf-ab98-4530-9041-b6485d738553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ff9dbc76-28ce-4fd2-a695-d166e6faecb5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="pcm.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

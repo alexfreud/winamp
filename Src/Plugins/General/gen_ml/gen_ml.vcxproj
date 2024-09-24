@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B212232-4908-49D2-8D6D-96555B1F701E}</ProjectGuid>
+    <RootNamespace>gen_ml</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>false</VcpkgEnableManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;..\..\..;..\..\..\WAT;..\..\..\Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;_WINDOWS;_USRDLL;GEN_ML_EXPORTS;_WIN32_IE=0x0A00;IGNORE_API_GRACENOTE;WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4302;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <StringPooling>false</StringPooling>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\..\external_dependencies\CEF;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;rpcrt4.lib;fmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <DelayLoadDLLs>tataki.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <SupportUnloadOfDelayLoadedDLL>
+      </SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>..\..\..\external_dependencies\vcpkg\buildtrees\fmt\$(PlatformShortName)-windows-dbg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <StackReserveSize>0x8000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ 
+xcopy /Y /D $(IntDir)$(TargetName).pdb ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;..\..\..;..\..\..\WAT;..\..\..\Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;_WINDOWS;_USRDLL;GEN_ML_EXPORTS;_WIN32_IE=0x0A00;IGNORE_API_GRACENOTE;WIN64;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4302;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;rpcrt4.lib;fmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <DelayLoadDLLs>tataki.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <SupportUnloadOfDelayLoadedDLL>
+      </SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>..\..\..\external_dependencies\vcpkg\buildtrees\fmt\$(PlatformShortName)-windows-dbg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ 
+xcopy /Y /D $(IntDir)$(TargetName).pdb ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.;..;..\..\..;..\..\..\WAT;..\..\..\Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;_WINDOWS;_USRDLL;GEN_ML_EXPORTS;_WIN32_IE=0x0A00;IGNORE_API_GRACENOTE;WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4302;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;_NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\..\external_dependencies\CEF;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;rpcrt4.lib;fmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <DelayLoadDLLs>tataki.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>..\..\..\external_dependencies\vcpkg\buildtrees\fmt\$(PlatformShortName)-windows-rel;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>0x8000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.;..;..\..\..;..\..\..\WAT;..\..\..\Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;_WINDOWS;_USRDLL;GEN_ML_EXPORTS;_WIN32_IE=0x0A00;IGNORE_API_GRACENOTE;WIN64;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4302;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;rpcrt4.lib;fmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <DelayLoadDLLs>tataki.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>..\..\..\external_dependencies\vcpkg\buildtrees\fmt\$(PlatformShortName)-windows-rel;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\tataki\tataki.vcxproj">
+      <Project>{255b68b5-7ef8-45ef-a675-2d6b88147909}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wasabi\Wasabi.vcxproj">
+      <Project>{3e0bfa8a-b86a-42e9-a33f-ec294f823f7f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\WAT\WAT.vcxproj">
+      <Project>{c5714908-a71f-4644-bd95-aad8ee7914da}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\nu\CCVersion.cpp" />
+    <ClCompile Include="..\..\..\nu\HTMLContainer2.cpp" />
+    <ClCompile Include="..\..\..\nu\menushortcuts.cpp" />
+    <ClCompile Include="..\..\..\nu\mtbrowser.cpp" />
+    <ClCompile Include="..\..\..\nu\ServiceWatcher.cpp" />
+    <ClCompile Include="..\..\..\nu\trace.cpp" />
+    <ClCompile Include="..\..\..\Winamp\strutil.cpp" />
+    <ClCompile Include="childwnd.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_ML_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="colors.cpp" />
+    <ClCompile Include="comboskin.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_ML_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_ML_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="fileview.cpp" />
+    <ClCompile Include="fileview_columns.cpp" />
+    <ClCompile Include="fileview_compare.cpp" />
+    <ClCompile Include="fileview_filesystem.cpp" />
+    <ClCompile Include="fileview_format.cpp" />
+    <ClCompile Include="fileview_menu.cpp" />
+    <ClCompile Include="fileview_metadata.cpp" />
+    <ClCompile Include="fileview_toolbar.cpp" />
+    <ClCompile Include="flickerfix.cpp" />
+    <ClCompile Include="folderborwser_listbox.cpp" />
+    <ClCompile Include="folderbrowser.cpp" />
+    <ClCompile Include="gaystring.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_ML_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="graphics.cpp" />
+    <ClCompile Include="HeaderIconList.cpp" />
+    <ClCompile Include="imagefilters.cpp" />
+    <ClCompile Include="IPC.cpp" />
+    <ClCompile Include="itemlist.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MediaLibraryCOM.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_ML_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="mldwm.cpp" />
+    <ClCompile Include="ml_cloud.cpp" />
+    <ClCompile Include="ml_cloudcolumn.cpp" />
+    <ClCompile Include="ml_imagefilter.cpp" />
+    <ClCompile Include="ml_imagelist.cpp" />
+    <ClCompile Include="ml_imageloader.cpp" />
+    <ClCompile Include="ml_lib.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_ML_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="ml_rating.cpp" />
+    <ClCompile Include="ml_ratingcolumn.cpp" />
+    <ClCompile Include="MusicID.cpp" />
+    <ClCompile Include="navigation.cpp" />
+    <ClCompile Include="OnlineMediaCOM.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_ML_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="plugin.cpp">
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="prefs.cpp" />
+    <ClCompile Include="RatingsCOM.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;GEN_ML_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="reflectmsg.cpp" />
+    <ClCompile Include="sendto.cpp" />
+    <ClCompile Include="service.cpp" />
+    <ClCompile Include="setup.cpp" />
+    <ClCompile Include="skinexport.cpp" />
+    <ClCompile Include="skinnedbutton.cpp" />
+    <ClCompile Include="skinnedcombo.cpp" />
+    <ClCompile Include="skinneddivider.cpp" />
+    <ClCompile Include="skinneddlg.cpp" />
+    <ClCompile Include="skinnededit.cpp" />
+    <ClCompile Include="skinnedfolder.cpp" />
+    <ClCompile Include="skinnedheader.cpp" />
+    <ClCompile Include="skinnedlistbox.cpp" />
+    <ClCompile Include="skinnedlistview.cpp" />
+    <ClCompile Include="skinnedmenu.cpp" />
+    <ClCompile Include="skinnedmenuthreadinfo.cpp" />
+    <ClCompile Include="skinnedmenuwnd.cpp" />
+    <ClCompile Include="skinnedprogressbar.cpp" />
+    <ClCompile Include="skinnedscrollwnd.cpp" />
+    <ClCompile Include="skinnedstatic.cpp" />
+    <ClCompile Include="skinnedtooltip.cpp" />
+    <ClCompile Include="skinnedwnd.cpp" />
+    <ClCompile Include="skinning.cpp" />
+    <ClCompile Include="SmoothScrollList.cpp" />
+    <ClCompile Include="stockobjects.cpp" />
+    <ClCompile Include="stringvector.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="view_ml.cpp" />
+    <ClCompile Include="wa_dlg.cpp" />
+    <ClCompile Include="webinfo_dlg.cpp" />
+    <ClCompile Include="webinfo_obj.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\nu\HTMLContainer2.h" />
+    <ClInclude Include="..\..\..\nu\mtbrowser.h" />
+    <ClInclude Include="..\..\..\Winamp\strutil.h" />
+    <ClInclude Include="..\..\..\Winamp\wa_dlg.h" />
+    <ClInclude Include="..\..\..\Winamp\wa_ipc.h" />
+    <ClInclude Include="api__gen_ml.h" />
+    <ClInclude Include="childwnd.h" />
+    <ClInclude Include="colors.h" />
+    <ClInclude Include="comboskin.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="fileview.h" />
+    <ClInclude Include="fileview_internal.h" />
+    <ClInclude Include="folderbrowser.h" />
+    <ClInclude Include="folderbrowser_internal.h" />
+    <ClInclude Include="gaystring.h" />
+    <ClInclude Include="graphics.h" />
+    <ClInclude Include="imagefilters.h" />
+    <ClInclude Include="itemlist.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="MediaLibraryCOM.h" />
+    <ClInclude Include="menufucker.h" />
+    <ClInclude Include="ml.h" />
+    <ClInclude Include="mldwm.h" />
+    <ClInclude Include="ml_cloud.h" />
+    <ClInclude Include="ml_cloudcolumn.h" />
+    <ClInclude Include="ml_imagefilter.h" />
+    <ClInclude Include="ml_imagelist.h" />
+    <ClInclude Include="ml_imageloader.h" />
+    <ClInclude Include="ml_ipc.h" />
+    <ClInclude Include="ml_ipc_0313.h" />
+    <ClInclude Include="ml_rating.h" />
+    <ClInclude Include="ml_ratingcolumn.h" />
+    <ClInclude Include="MusicID.h" />
+    <ClInclude Include="navigation.h" />
+    <ClInclude Include="OnlineMediaCOM.h" />
+    <ClInclude Include="RatingsCOM.h" />
+    <ClInclude Include="reflectmsg.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="sendto.h" />
+    <ClInclude Include="service.h" />
+    <ClInclude Include="skinexport.h" />
+    <ClInclude Include="skinnedbutton.h" />
+    <ClInclude Include="skinnedcombo.h" />
+    <ClInclude Include="skinneddivider.h" />
+    <ClInclude Include="skinneddlg.h" />
+    <ClInclude Include="skinnededit.h" />
+    <ClInclude Include="skinnedfolder.h" />
+    <ClInclude Include="skinnedheader.h" />
+    <ClInclude Include="skinnedlistbox.h" />
+    <ClInclude Include="skinnedlistview.h" />
+    <ClInclude Include="skinnedmenu.h" />
+    <ClInclude Include="skinnedmenuthreadinfo.h" />
+    <ClInclude Include="skinnedmenuwnd.h" />
+    <ClInclude Include="skinnedprogressbar.h" />
+    <ClInclude Include="skinnedscrollwnd.h" />
+    <ClInclude Include="skinnedstatic.h" />
+    <ClInclude Include="skinnedtooltip.h" />
+    <ClInclude Include="skinnedwnd.h" />
+    <ClInclude Include="skinning.h" />
+    <ClInclude Include="stockobjects.h" />
+    <ClInclude Include="stringvector.h" />
+    <ClInclude Include="webinfo_obj.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\cloud_16_incloud.png" />
+    <Image Include="resources\cloud_16_partial.png" />
+    <Image Include="resources\cloud_16_unavail.png" />
+    <Image Include="resources\filetype_audio_16.png" />
+    <Image Include="resources\filetype_audio_32.png" />
+    <Image Include="resources\filetype_playlist_16.png" />
+    <Image Include="resources\filetype_playlist_32.png" />
+    <Image Include="resources\filetype_unknown_16.png" />
+    <Image Include="resources\filetype_unknown_32.png" />
+    <Image Include="resources\filetype_video_16.png" />
+    <Image Include="resources\filetype_video_32.png" />
+    <Image Include="resources\menu_arrow.png" />
+    <Image Include="resources\menu_check.png" />
+    <Image Include="resources\menu_dot.png" />
+    <Image Include="resources\menu_scrollarrow.png" />
+    <Image Include="resources\menu_scrollarrow_disabled.png" />
+    <Image Include="resources\rating.png" />
+    <Image Include="resources\sortarrow.png" />
+    <Image Include="resources\splitarrow.png" />
+    <Image Include="resources\splitarrow_pressed.png" />
+    <Image Include="resources\ti_cdrom_16x16x16.bmp" />
+    <Image Include="resources\ti_default_16x16x16.bmp" />
+    <Image Include="resources\ti_labs_16x16x16.bmp" />
+    <Image Include="resources\ti_playlist_16x16x16.bmp" />
+    <Image Include="resources\tree_closed_16x16x16.bmp" />
+    <Image Include="resources\tree_closed_disabled_16x16x16.bmp" />
+    <Image Include="resources\tree_open_16x16x16.bmp" />
+    <Image Include="resources\view_mode_detail.png" />
+    <Image Include="resources\view_mode_icon.png" />
+    <Image Include="resources\view_mode_list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dragdrop.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gen_ml.rc" />
+    <ResourceCompile Include="png.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

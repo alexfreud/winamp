@@ -1,0 +1,51 @@
+to fix
+----
+crash on shutdown
+
+
+/////------------ 1.1 below --------------
+automatically switch to 'custom' if you click on dropdown in "add" or "edit" url dialog
+
+need icon for listened media
+maybe one for read text?
+
+strip whitespace from beginning of titles
+
+multiple-select
+
+Allow for customizing the download location in add/edit url
+
+deletable items (needs to move to a separate 'deleted items' list so we don't re-add them next rss refresh)
+
+drag-n-drop from webpages
+
+once we get an HTTP 200, we should put the downloaded on the 'downloads' list, and be able to update the download percentage status as necessary
+
+BACKGROUND DOWNLOADER
+<<<
+avoid multiple downloads of the same thing
+avoid downlaoding things that have already been downloaded.
+range / if-range to handle download resuming
+save the last modified dates from "Last-Modified" header
+save unfinished downloads to an XML file and read on load
+>>>
+
+UNIFIED DOWNLOAD MANAGER CONCEPT !!!!!
+
+who needs updates
+downloaded file list
+downloads page (to refresh view)
+item object
+podcast page (to refresh view)
+
+
+new way of listing items
+---
+create a common "items" data structure that select channels add their items to.
+When a channel is select, it adds its items.
+When a channel is deselected, it removes its items.
+When a channel is refreshed, it re-adds its items (assuming the item-adder function protects against dupes)
+only potential issue is if a channel somehow "loses" items (or an item's GUID is changes)
+could be fixed by either 1) keeps track of "parent channel" in the items list
+2) rebuilding the entire items list on every channel refresh
+or 3) preventing GUID changes and item deletions (or forcing an item list rebuild if it does occur)

@@ -1,0 +1,74 @@
+<!-- build.pl configuration file
+     See http://devguy.com/fp/cfgmgmt/tools/build-options-xml.txt
+
+     This compiles VC++ and vs.NET code (release and debug)
+-->
+
+<Build-Option-Doc>
+        <!--
+             File Paths
+        -->
+   <Sandbox>=$ENV{CURSANDBOX}</Sandbox>
+        <BuildModule>Winamp</BuildModule>
+        <ConfigMapFile>Mastering/Winamp/configmap.xml</ConfigMapFile>
+   <BuildFile>Mastering/Winamp/build_winamp_beta_x64.xml</BuildFile>
+   <!-- 
+          Type of build
+   -->
+   <MajorBuildDescription>Beta</MajorBuildDescription>
+   <BuildDescription>Beta build.</BuildDescription>
+   <WebSubdir>beta</WebSubdir>
+   <!-- 
+          Which configuration(s) to build 
+   -->
+   <Configuration>Win32 Release 64</Configuration>
+   <Param>/useenv</Param>
+   <!-- 
+          CVS tag/branch information
+   -->
+   <Branch/>
+   <BuildStamp/>
+   <TagOverride/>
+   <BuildStampPrefix>= $ENV{BRANDING} =~ m/NULLSOFT/ ? 'BETA_X64_' : 'BETA_X64_'.$ENV{BRANDING}.'_';</BuildStampPrefix>
+   <!-- 
+         Build statistics files
+   -->
+   <BuildNumberFile>Mastering/Winamp/buildnumber.h</BuildNumberFile>
+      <VersionFile>Mastering/Winamp/constants.h</VersionFile>
+   <ChangeLogInfoFile>Mastering/Winamp/build_stamp.txt</ChangeLogInfoFile>
+   <!--
+         How to output HTML and targets
+   -->
+   <WebPath>d:\wwwroot\builds</WebPath>
+   <WebAddress>http://nulldev.stream.aol.com/builds</WebAddress>
+   <PackageDestination/>
+   <PackageURL/>
+   <!--
+           Who to notify via net send (use computer names)
+        -->
+   <NetNotify></NetNotify>
+   <!--
+           Who to notify via smtp email (use comma to separate)
+        -->
+   <SMTPNotify>barabanger@gmail.com,benski@winamp.com,dj_egg@winamp.com</SMTPNotify>   
+        <!-- 
+          Run-Time Switches
+   -->
+   <ShouldCleanSandbox>0</ShouldCleanSandbox>
+   <ShouldGetSource>1</ShouldGetSource>
+   <ShouldBuild>1</ShouldBuild>
+   <ShouldTag>1</ShouldTag>
+   <ShouldForceTag>0</ShouldForceTag>
+   <ShouldPackage>1</ShouldPackage>
+   <ShouldForcePackage>0</ShouldForcePackage>
+   <ShouldIncrementBuildNumber>1</ShouldIncrementBuildNumber>
+   <ShouldPostToWeb>1</ShouldPostToWeb>
+   <ShouldOutputXML>1</ShouldOutputXML>
+   <ShouldUpdateVersionResources>1</ShouldUpdateVersionResources>
+   <ShouldCreateManifest>1</ShouldCreateManifest>
+   <ShouldEmailNotification>1</ShouldEmailNotification>
+   <ShouldCreateChangeLog>1</ShouldCreateChangeLog>
+   <ShouldUpdateChangeLogInfo>1</ShouldUpdateChangeLogInfo>
+   <ShouldForceUpdateChangeLogInfo>1</ShouldForceUpdateChangeLogInfo>
+</Build-Option-Doc>
+

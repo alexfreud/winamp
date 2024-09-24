@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="BitReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Header.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="idct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="idctref.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="indices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Picture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Reconstruction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vlc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vlc_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vlc_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="indices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="idctref.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="idct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BitReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1abe055e-8bcd-4762-8596-456bb1379502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{a1e69691-593e-4d99-8e28-7fc4fdbef57c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{61f45802-cce5-4d5f-ac0c-e30ed6c350d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="BitReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ByteReader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ByteWriter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lfitem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lfmpscq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LockFreeFIFO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win-x86\LockFreeLIFO.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LockFreeRingBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\MessageLoop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodelist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressTracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RingBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win-amd64\ThreadLoop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\ThreadLoop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="win-amd64\ThreadLoop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\ThreadLoop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="queue_node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressTracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nodelist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LockFreeRingBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LockFreeLIFO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win-x86\LockFreeLIFO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win-amd64\LockFreeLIFO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LockFreeItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LockFreeFIFO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lfmpscq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BitReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{600469f6-bb91-4a1c-9603-9036bf14452f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{c7911d31-e53d-45f9-b477-140f1e534e28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5c814c31-6040-46c7-9e53-e472177be0f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="win-x86\LockFreeLIFO.asm">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

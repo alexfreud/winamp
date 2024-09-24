@@ -1,0 +1,27 @@
+// Elevator.idl : IDL source for Elevator
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Elevator.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "IFileTypeRegistrar.idl";
+[
+	uuid(B3600382-8669-402B-81B2-3D18B0E2318B),
+	version(1.0),
+	helpstring("Elevator 1.0 Type Library")
+]
+library ElevatorLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(3B29AB5C-52CB-4a36-9314-E3FEE0BA7468),
+		appobject
+	]
+	coclass WFileTypeRegistrar
+	{
+		[default] interface IFileTypeRegistrar;
+	};
+};
+

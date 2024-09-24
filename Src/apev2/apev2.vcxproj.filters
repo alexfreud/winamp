@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="header.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="flags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6cf90466-6c89-4be4-83c3-e7872a927708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{eaaa2f1a-68ef-4456-8bfa-47b0c6183c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6cd9a1b4-b2a9-412e-a920-a163ab8e3cf5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

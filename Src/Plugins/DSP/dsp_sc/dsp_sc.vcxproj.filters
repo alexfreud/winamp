@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6b20b659-1ced-4ee8-bf03-14e1689ce5e9}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5544d45e-4f9f-4984-9d57-266bf79aebf3}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{9e7d499b-1f5b-4215-845b-b8b421a57b91}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Icons">
+      <UniqueIdentifier>{5be3772d-ed9f-42e1-9a1f-a903f36e4a59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crossfader">
+      <UniqueIdentifier>{309ad66f-437f-44ee-9e2d-7bed1fe02107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sc2srclib">
+      <UniqueIdentifier>{6f4b5174-fe26-4264-8a5d-a509ff994842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sc2srclib\Include">
+      <UniqueIdentifier>{706fd0cd-d690-4d4d-a3e8-5ab5d1a85686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sc2srclib\Encoders">
+      <UniqueIdentifier>{f2016de0-c2f5-4f04-a642-bf341dd800c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sc2srclib\Encoders\Header Files">
+      <UniqueIdentifier>{66c1cf32-bd88-471e-9d7d-d9a72d855483}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="sc2srclib\Encoders\Source Files">
+      <UniqueIdentifier>{91cc5093-54b5-4477-a50a-b6922b8e2ac0}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="sc2srclib\uvAuth21">
+      <UniqueIdentifier>{f922861e-01eb-4f1c-9092-c288fbf3c1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wasapi">
+      <UniqueIdentifier>{9a8d5ddf-f47d-4007-9ef3-20230df8ccb5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crossfader\c_crossfader.cpp">
+      <Filter>crossfader</Filter>
+    </ClCompile>
+    <ClCompile Include="sc2srclib\shoutcast_output.cpp">
+      <Filter>sc2srclib</Filter>
+    </ClCompile>
+    <ClCompile Include="sc2srclib\Encoders\c_encoder.cpp">
+      <Filter>sc2srclib\Encoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sc2srclib\Encoders\c_encoder_aacp.cpp">
+      <Filter>sc2srclib\Encoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sc2srclib\Encoders\c_encoder_fhgaac.cpp">
+      <Filter>sc2srclib\Encoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sc2srclib\Encoders\c_encoder_mp3dll.cpp">
+      <Filter>sc2srclib\Encoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sc2srclib\Encoders\c_encoder_nsv.cpp">
+      <Filter>sc2srclib\Encoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sc2srclib\Encoders\c_encoder_ogg.cpp">
+      <Filter>sc2srclib\Encoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sc2srclib\uvAuth21\uvAuth21.cpp">
+      <Filter>sc2srclib\uvAuth21</Filter>
+    </ClCompile>
+    <ClCompile Include="Wasapi\capture.cpp">
+      <Filter>Wasapi</Filter>
+    </ClCompile>
+    <ClCompile Include="Wasapi\player.cpp">
+      <Filter>Wasapi</Filter>
+    </ClCompile>
+    <ClCompile Include="Wasapi\WasapiCapture.cpp">
+      <Filter>Wasapi</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\c_datapump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\c_wavein.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crossfader\c_crossfader.h">
+      <Filter>crossfader</Filter>
+    </ClInclude>
+    <ClInclude Include="sc2srclib\Include\c_jobmanager.h">
+      <Filter>sc2srclib\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="sc2srclib\Include\c_serial_jobmanager.h">
+      <Filter>sc2srclib\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="sc2srclib\Include\shoutcast_output.h">
+      <Filter>sc2srclib\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="sc2srclib\Encoders\enc_if.h">
+      <Filter>sc2srclib\Encoders</Filter>
+    </ClInclude>
+    <ClInclude Include="sc2srclib\Encoders\c_encoder.h">
+      <Filter>sc2srclib\Encoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sc2srclib\Encoders\c_encoder_fhgaac.h">
+      <Filter>sc2srclib\Encoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sc2srclib\Encoders\c_encoder_mp3dll.h">
+      <Filter>sc2srclib\Encoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sc2srclib\Encoders\c_encoder_nsv.h">
+      <Filter>sc2srclib\Encoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sc2srclib\Encoders\c_encoder_ogg.h">
+      <Filter>sc2srclib\Encoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sc2srclib\uvAuth21\uvAuth21.h">
+      <Filter>sc2srclib\uvAuth21</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\ServiceBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Winamp\Dsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource\Script1.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\downarrow.ico">
+      <Filter>Resource Files\Icons</Filter>
+    </Image>
+    <Image Include="Resource\ICY.ICO">
+      <Filter>Resource Files\Icons</Filter>
+    </Image>
+    <Image Include="Resource\kill.ico">
+      <Filter>Resource Files\Icons</Filter>
+    </Image>
+    <Image Include="Resource\play.ico">
+      <Filter>Resource Files\Icons</Filter>
+    </Image>
+    <Image Include="playarrow.ico">
+      <Filter>Resource Files\Icons</Filter>
+    </Image>
+    <Image Include="Resource\playarrow.ico">
+      <Filter>Resource Files\Icons</Filter>
+    </Image>
+    <Image Include="Resource\refresh.ico">
+      <Filter>Resource Files\Icons</Filter>
+    </Image>
+    <Image Include="Resource\stop.ico">
+      <Filter>Resource Files\Icons</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="sc2srclib\Encoders\c_encoder_aacp.h">
+      <Filter>sc2srclib\Encoders\Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Wasapi\player.h">
+      <Filter>Wasapi</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Wasapi\WasapiCapture.h">
+      <Filter>Wasapi</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

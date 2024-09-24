@@ -1,0 +1,74 @@
+<!-- build.pl configuration file
+     See http://devguy.com/fp/cfgmgmt/tools/build-options-xml.txt
+
+     This compiles VC++ and vs.NET code (release and debug)
+-->
+
+<Build-Option-Doc>
+        <!--
+             File Paths
+        -->
+   <Sandbox>=$ENV{CURSANDBOX}</Sandbox>
+        <BuildModule>Winamp</BuildModule>
+        <ConfigMapFile>Mastering/Winamp/configmap.xml</ConfigMapFile>
+   <BuildFile>Mastering/Winamp/build_winamp_night.xml</BuildFile>
+   <!-- 
+          Type of build
+   -->
+   <MajorBuildDescription>Nightly</MajorBuildDescription>
+   <BuildDescription>Nightly build.</BuildDescription>
+   <WebSubdir>nightly</WebSubdir>
+   <!-- 
+          Which configuration(s) to build 
+   -->
+   <Configuration>Win32 Release|Win32</Configuration>
+   <!-- 
+          CVS tag/branch information
+   -->
+   <Branch/>
+   <BuildStamp/>
+   <TagOverride/>
+   <BuildStampPrefix>=NIGHT_</BuildStampPrefix>
+   <!-- 
+         Build statistics files
+   -->
+   <BuildNumberFile>Mastering/Winamp/buildnumber.h</BuildNumberFile>
+      <VersionFile>Mastering/Winamp/constants.h</VersionFile>
+   <ChangeLogInfoFile>Mastering/Winamp/build_stamp.txt</ChangeLogInfoFile>
+   <!--
+         How to output HTML and targets
+   -->
+   <WebPath>d:\wwwroot\builds</WebPath>
+   <WebAddress>http://nulldev.stream.aol.com/builds</WebAddress>
+   <PackageDestination/>
+   <PackageURL/>
+   <!--
+           Who to notify via net send (use computer names)
+        -->
+   <NetNotify></NetNotify>
+   <!--
+           Who to notify via smtp email (use comma to separate) audiodsp@aol.com
+        -->
+   <SMTPNotify>barabanger@gmail.com,benski@winamp.com,dj_egg@winamp.com,jonathan.chester@corp.aol.com</SMTPNotify>   
+        <!-- 
+          Run-Time Switches
+   -->
+   <ShouldCleanSandbox>0</ShouldCleanSandbox>
+   <ShouldGetSource>1</ShouldGetSource>
+   <ShouldBuild>1</ShouldBuild>
+   <ShouldTag>0</ShouldTag>
+   <ShouldForceTag>0</ShouldForceTag>
+   <ShouldPackage>1</ShouldPackage>
+   <ShouldForcePackage>0</ShouldForcePackage>
+   <ShouldIncrementBuildNumber>1</ShouldIncrementBuildNumber>
+   <ShouldPostToWeb>1</ShouldPostToWeb>
+   <ShouldOutputXML>1</ShouldOutputXML>
+   <ShouldUpdateVersionResources>1</ShouldUpdateVersionResources>
+   <ShouldCreateManifest>0</ShouldCreateManifest>
+   <ShouldEmailNotification>1</ShouldEmailNotification>
+   <ShouldSuppressBuildStartNotification>1</ShouldSuppressBuildStartNotification> 
+   <ShouldCreateChangeLog>0</ShouldCreateChangeLog>
+   <ShouldUpdateChangeLogInfo>0</ShouldUpdateChangeLogInfo>
+   <ShouldForceUpdateChangeLogInfo>0</ShouldForceUpdateChangeLogInfo>
+</Build-Option-Doc>
+

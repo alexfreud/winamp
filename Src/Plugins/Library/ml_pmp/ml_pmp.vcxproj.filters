@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AlbumArtListView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArtistAlbumLists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="autofill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceCommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Filters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ml_local\guess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IconStore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="indirectplaybackserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="local_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="metadata_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mt19937ar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pluginloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PmpDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="replaceVars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinnedListView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="syncCloudDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="syncDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transcoder_imp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transfer_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_pmp_devices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_pmp_media.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_pmp_queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\itemlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\listview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\MediaLibraryInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\menushortcuts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\ml_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\ServiceWatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\sort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlbumArtListView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api__ml_pmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArtistAlbumLists.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceCommands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Filters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IconStore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="local_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="metadata_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mt19937ar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pluginloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PmpDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transfer_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transcoder_imp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transcoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="syncDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="syncCloudDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinnedListView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Winamp\ipc_pe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\itemlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\listview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\MediaLibraryInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\menushortcuts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\ml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\ServiceWatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Winamp\wa_dlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_hotkeys\wa_hotkeys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Winamp\wa_ipc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\columns.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\albumArt.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\deviceIcon.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\notfound.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\playlistIcon.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\sync-command-large.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\sync-command-small.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="..\ml_cloud\resources\ti_add_cloud_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="..\ml_cloud\resources\ti_byos_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="..\ml_cloud\resources\ti_cloud_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="transfer_queue_16x16.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\transfer_queue_16x16.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\transfer_queue_16x16_1.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\transfer_queue_16x16_2.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\transfer_queue_16x16_3.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\usb.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\videoIcon.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\viewMode.png">
+      <Filter>Image Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2260cdd9-16ed-4c23-8fb3-a13ecce513d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{460ed29f-85d9-44b8-964a-8a55c6556b88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b08c2218-ed5e-46a8-9564-75c07f6f2a85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{0c486deb-c516-4f17-acd5-94651b7a19cc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ml_pmp.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

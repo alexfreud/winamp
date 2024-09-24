@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AddPlaylist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentPlaylist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ml_playlists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ml_subclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pe_subclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Playlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaylistDirectoryCallback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaylistInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playlists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaylistsCB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaylistsCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaylistView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa_subclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_playlists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_pl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SendTo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenamePlaylist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pluginproc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\config.cpp">
+      <Filter>Source Files\gen_ml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\DialogSkinner.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\listview.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\MediaLibraryInterface.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\menu.cpp">
+      <Filter>Source Files\gen_ml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\menushortcuts.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\ml_lib.cpp">
+      <Filter>Source Files\gen_ml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\playlist\pl_entry.cpp">
+      <Filter>Source Files\playlist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\playlist\plstring.cpp">
+      <Filter>Source Files\playlist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Winamp\strutil.cpp">
+      <Filter>Source Files\Winamp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api__ml_playlists.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentPlaylist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Playlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaylistDirectoryCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaylistInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playlists.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaylistsCB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaylistsCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaylistView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SendTo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\config.h">
+      <Filter>Header Files\gen_ml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\DialogSkinner.h">
+      <Filter>Header Files\nu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\menu.h">
+      <Filter>Header Files\gen_ml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\playlist\pl_entry.h">
+      <Filter>Header Files\playlist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\playlist\plstring.h">
+      <Filter>Header Files\playlist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Winamp\strutil.h">
+      <Filter>Header Files\Winamp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\ti_cloud_playlist_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_playlist_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Design.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{510f3e24-3519-4357-a412-31ca9ea4e679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{bd3dfff8-2c37-43e7-8cb2-1d701dcaadaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d90e2a08-7da5-425c-97e7-eb41aa99ab8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{b45d999a-7960-4fef-b55a-90b9530879f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gen_ml">
+      <UniqueIdentifier>{f4f89e40-7fa7-4faa-bdc9-bd6428e5132c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\nu">
+      <UniqueIdentifier>{0ee115a9-708c-4311-859e-2aee4ffb1971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\playlist">
+      <UniqueIdentifier>{2be30a31-bc6a-4220-9c58-832fd397d80a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Winamp">
+      <UniqueIdentifier>{dd4f54cd-8631-41f9-92a8-1b4c37afa4ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gen_ml">
+      <UniqueIdentifier>{21b175b4-e364-44c4-96f0-e67663b09ada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\nu">
+      <UniqueIdentifier>{973fb9f8-4c13-41dd-aa80-c87c5664b559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\playlist">
+      <UniqueIdentifier>{fd06d71f-c851-433d-a4bb-6458c5452422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Winamp">
+      <UniqueIdentifier>{0df480a4-437b-429d-860f-7110e7d6c78d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ml_playlists.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

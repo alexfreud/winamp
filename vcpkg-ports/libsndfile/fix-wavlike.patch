@@ -1,0 +1,13 @@
+diff --git a/src/wavlike.c b/src/wavlike.c
+index a3388d75..cf5a7d2b 100644
+--- a/src/wavlike.c
++++ b/src/wavlike.c
+@@ -971,7 +971,7 @@ wavlike_subchunk_parse (SF_PRIVATE *psf, int chunk, uint32_t chunk_length)
+ 	else
+ 		psf_log_printf (psf, "%M : %u\n", chunk, chunk_length) ;
+ 
+-	while (bytesread < chunk_length)
++	while (chunk_length - bytesread >= 4)
+ 	{	uint32_t thisread ;
+ 
+ 		if ((thisread = psf_binheader_readf (psf, "m", &chunk)) == 0)

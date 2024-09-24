@@ -1,0 +1,648 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 384, 281
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_VDELIM,"Static",SS_BLACKFRAME,86,1,6,278
+    PUSHBUTTON      "Library",IDC_BTN_LIB,0,268,83,11
+    CTEXT           "\n\n\n\nUnable to display an appropriate library view.\n\nPlease select a view from one to the left or re-install Winamp with library plug-ins as applicable.",IDC_NO_VIEW,157,64,150,47,NOT WS_VISIBLE
+END
+
+IDD_PREFS1 DIALOGEX 0, 0, 260, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Double Click or Enter Options",IDC_STATIC,4,3,256,57
+    LTEXT           "Double click or Enter in the views:",IDC_STATIC,10,17,112,9
+    COMBOBOX        IDC_COMBO1,122,15,132,68,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Play all items (start with selected) on double click in playlists",IDC_PLPLAYLIST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,32,202,10
+    CONTROL         "Play search results (start with selected) on double click in media views",IDC_VIEWPLAYMODE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,45,239,10
+    GROUPBOX        "Column Resizing Behavior",IDC_STATIC,4,63,256,45
+    LTEXT           "Select the behavior to follow when resizing list columns:",IDC_STATIC,10,75,180,10
+    COMBOBOX        IDC_COMBO2,19,88,235,37,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Advanced Library Preferences",IDC_STATIC,4,111,256,53
+    CONTROL         "Main Window lightning bolt opens Media Library instead of About Box",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,123,236,10
+    CONTROL         "Save ratings to file for compatible formats (default: off)",IDC_WRITE_RATINGS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,136,194,10
+    CONTROL         "Group the 'Play' and 'Enqueue' buttons into a single button",IDC_GROUP_BUTTONS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,149,203,10
+    GROUPBOX        "Send To Options",IDC_STATIC,4,167,256,40
+    CONTROL         "Show all playlists on the send to menu",IDC_PL_SEND_TO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,179,137,10
+    CONTROL         "Group portable devices in a sub-menu",IDC_PMP_SEND_TO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,192,137,10
+END
+
+IDD_VIEW_EMPTY DIALOGEX 0, 0, 194, 166
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+IDD_PREFSFR DIALOGEX 0, 0, 272, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",WS_TABSTOP,0,0,271,246
+END
+
+IDD_PREFS2 DIALOGEX 0, 0, 260, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Internet Media Rating Preferences",IDC_STATIC,4,3,256,144
+    LTEXT           "Winamp can be configured to hide listings of the specified ratings below when accessing Internet Media.",IDC_STATIC,9,15,244,16
+    LTEXT           "Specify which content ratings you wish to include in your listings:",IDC_STATIC,9,36,212,8
+    CONTROL         "Everyone - Suitable for general audiences",IDC_CHECK_RATING0,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,49,147,10
+    CONTROL         "Teens - Suitable for teenage audiences",IDC_CHECK_RATING1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,60,140,10
+    CONTROL         "Adult - Suitable for adult audiences.",IDC_CHECK_RATING2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,72,127,10
+    CONTROL         "X-Rated - Sexually explicit content.  Suitable for adults only.",IDC_CHECK_RATING3,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,84,208,10
+    CONTROL         "Not Rated - No rating specified, view at your own risk",IDC_CHECK_RATING4,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,96,183,10
+    GROUPBOX        "Security",IDC_STATIC,10,112,243,28
+    CONTROL         "Password required to change settings",IDC_CHECK_PASSPROMPT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,124,134,10
+    DEFPUSHBUTTON   "Change Password",IDC_ITV_CHANGEPASS,181,122,65,13,WS_DISABLED
+    LTEXT           "  An incorrect password was entered or a password was not entered.\n\nYou will need to enter a valid password in order to change these options.",IDC_STATIC_INFO,12,99,235,28,WS_DISABLED
+END
+
+IDD_MLPLUGINS DIALOGEX 0, 0, 272, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Media Library plug-ins",IDC_STATIC,0,0,272,246
+    LTEXT           "Installed Media Library plug-ins (loaded at startup):",IDC_STATIC,6,12,253,8
+    LISTBOX         IDC_GENLIB,5,26,259,198,LBS_SORT | LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Configure selected plug-in",IDC_GENCONF,5,228,96,13,WS_DISABLED
+    PUSHBUTTON      "Uninstall selected plug-in",IDC_UNINST,105,228,90,13,WS_DISABLED
+    CONTROL         "Get plug-ins",IDC_PLUGINVERS,"Button",BS_OWNERDRAW | WS_TABSTOP,224,230,41,9
+END
+
+IDD_PREFS_ITV_ASSIGNPASS DIALOGEX 0, 0, 219, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Internet Ratings Security"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Please enter password to be used to access Internet Ratings",IDC_STATIC,6,6,207,62,0,WS_EX_TRANSPARENT
+    LTEXT           "Password:",IDC_STATIC,12,30,54,8
+    EDITTEXT        IDC_EDIT_PASSWORD,74,28,126,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Verify Password:",IDC_STATIC,12,46,54,8
+    EDITTEXT        IDC_EDIT_PASSWORD_VERIFY,74,44,126,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Ok",IDOK,105,75,50,13
+    PUSHBUTTON      "&Cancel",IDCANCEL,163,75,50,13
+END
+
+IDD_PREFS_ITV_GETPASS DIALOGEX 0, 0, 161, 57
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Internet Ratings Security"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Please Enter Password",-1,4,5,153,31
+    LTEXT           "Password:",-1,11,19,34,8
+    EDITTEXT        IDC_GPASS,51,17,100,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Ok",IDOK,53,40,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,107,40,50,13
+END
+
+IDD_RATINGTWEAK DIALOGEX 0, 0, 204, 197
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Rating Column Appearance"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Track when:",IDC_STATIC,4,6,53,8
+    COMBOBOX        IDC_CMB_TRACKWHEN,72,4,128,64,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Track what:",IDC_STATIC,4,22,53,8
+    COMBOBOX        IDC_CMB_TRACKWHAT,72,20,128,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Alignment:",IDC_STATIC,4,38,53,8
+    COMBOBOX        IDC_CMB_ALIGNMENT,72,36,128,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Show Empty",IDC_STATIC,4,52,196,27
+    CONTROL         "Normal",IDC_CHK_SHOWEMPTY_NORMAL,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,65,38,8
+    CONTROL         "Hot",IDC_CHK_SHOWEMPTY_HOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,73,65,27,8
+    CONTROL         "Animation",IDC_CHK_SHOWEMPTY_ANIMATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,124,65,47,8
+    GROUPBOX        "Sizing",IDC_STATIC,4,83,196,27
+    CONTROL         "Allow Decrease",IDC_CHK_SIZEDECREASE,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,96,65,8
+    CONTROL         "Allow Increase",IDC_CHK_SIZEINCREASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,96,63,8
+    GROUPBOX        "Miscellaneous",IDC_STATIC,4,114,196,63
+    CONTROL         "Block clicking",IDC_CHK_BLOCKCLICK,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,126,59,10
+    CONTROL         "Block unrate click",IDC_CHK_BLOCKUNRATE,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,138,70,10
+    CONTROL         "Block dragging",IDC_CHK_BLOCKDRAG,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,150,60,10
+    CONTROL         "Show inactive ratings as 'hot'",IDC_CHK_SHOWINACTIVE_HOT,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,162,110,10
+    DEFPUSHBUTTON   "Apply",IDOK,96,180,50,13
+    PUSHBUTTON      "Close",IDCANCEL,150,180,50,13
+END
+
+#if defined(APSTUDIO_INVOKED) || !defined(EXPERIMENTAL)
+IDD_PREFS3 DIALOGEX 0, 0, 260, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Media Library Tree Options",IDC_ML_TREE_OPTS,4,3,256,156
+    LTEXT           "Here you can adjust the visual style of the Media Library tree.",-1,9,15,244,10
+    CONTROL         "Show icons next to the tree items",IDC_SHOW_ICONS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,27,123,10
+    CONTROL         "Highlight full tree item",IDC_HIGHLIGHT_FULL_TREE_ITEM,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,39,140,10
+    CONTROL         "Allow right-click to make tree item the active view",IDC_RCLICK_TO_SELECT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,51,243,10
+    EDITTEXT        IDC_ITEM_HEIGHT,10,64,22,12,ES_AUTOHSCROLL
+    LTEXT           "Tree item height (default is 18)",-1,36,65,102,10,SS_CENTERIMAGE
+    GROUPBOX        "CD/DVD items",IDC_CD_DVD_ITEMS,10,81,243,40
+    CONTROL         "Show eject icons next to the CD/DVD drives",IDC_SHOW_EJECT_ICONS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,156,10
+    CONTROL         "Group CD/DVD drives under the 'Rip && Burn' item",IDC_GROUP_DRIVES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,105,171,10
+    GROUPBOX        "'Downloads' item",IDC_DOWNLOADS_ITEMS,10,125,243,28
+    CONTROL         "Place 'Downloads' under the 'Podcast Directory' item",IDC_PARENT_PODCASTS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,137,182,10
+END
+#endif
+
+IDD_FILEVIEW DIALOGEX 0, 0, 233, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDT_PATH,32,0,200,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Folder Browser",IDC_FOLDER_BROWSER,"MLFolderBrowser",WS_HSCROLL | WS_TABSTOP,0,14,232,112,WS_EX_NOPARENTNOTIFY
+    CONTROL         "",IDC_HDELIM,"Static",SS_BLACKFRAME,0,126,231,2
+    RTEXT           "Address",IDC_LBL_ADDRESS,0,2,29,8,SS_CENTERIMAGE
+END
+
+IDD_FILEVIEW_TOOLBAR DIALOGEX 0, 0, 326, 14
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_NOPARENTNOTIFY
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_BTN_VIEW_ICON,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,0,0,31,14
+    CONTROL         "",IDC_BTN_VIEW_LIST,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,35,0,28,14
+    CONTROL         "",IDC_BTN_VIEW_DETAIL,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,68,0,28,14
+    PUSHBUTTON      "Options",IDC_BTN_OPTIONS,268,0,58,14,NOT WS_TABSTOP
+    PUSHBUTTON      "Arrange by:",IDC_BTN_ARRANGEBY,203,0,58,14,NOT WS_TABSTOP
+END
+
+IDD_PREFS4 DIALOGEX 0, 0, 260, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Media Library Appearance",IDC_ML_TREE_OPTS,4,3,256,125
+    LTEXT           "Here you can adjust the visual style of the Media Library views\n(Requires Media Library plug-ins to support relevant features)",IDC_STATIC,9,15,244,16
+    CONTROL         "Media Library uses same font as Playlist Editor",IDC_CHECK_USEPLFONT,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,9,35,160,10
+    CONTROL         "Use freeform scrollbars when available",IDC_FF_SCROLLBARS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,48,140,8
+    CONTROL         "Use alternating row colors in list views when available",IDC_ALTERNATEITEMS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,60,190,8
+    CONTROL         "Use skinned menus",IDC_SKINNED_MENUS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,72,80,8
+    CONTROL         "Match the OS style for file size units (e.g. GB) instead of displaying the technically correct value (e.g. GiB). [Note: this is applied after a restart]",IDC_GENO,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,9,84,245,16
+    LTEXT           "Note: this is a very advanced option:",IDC_STATIC,9,111,120,8,WS_DISABLED
+    PUSHBUTTON      "Rating Column Appearance...",IDC_RATING_COLUMN,133,108,120,14
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(EXPERIMENTAL)
+#if defined(APSTUDIO_INVOKED)
+IDD_PREFS3$(EXPERIMENTAL) DIALOGEX 0, 0, 260, 226
+#else
+IDD_PREFS3 DIALOGEX 0, 0, 260, 226
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Media Library Tree Options",IDC_ML_TREE_OPTS,4,3,256,196
+    LTEXT           "Here you can adjust the visual style of the Media Library tree.",-1,9,15,244,10
+    CONTROL         "Show icons next to the tree items",IDC_SHOW_ICONS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,27,123,10
+    CONTROL         "Highlight full tree item",IDC_HIGHLIGHT_FULL_TREE_ITEM,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,39,140,10
+    CONTROL         "Allow right-click to make tree item the active view",IDC_RCLICK_TO_SELECT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,51,243,10
+    EDITTEXT        IDC_ITEM_HEIGHT,10,64,22,12,ES_AUTOHSCROLL
+    LTEXT           "Tree item height (default is 18)",-1,36,65,102,10,SS_CENTERIMAGE
+    GROUPBOX        "CD/DVD items",IDC_CD_DVD_ITEMS,10,81,243,40
+    CONTROL         "Show eject icons next to the CD/DVD drives",IDC_SHOW_EJECT_ICONS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,156,10
+    CONTROL         "Group CD/DVD drives under the 'Rip && Burn' item",IDC_GROUP_DRIVES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,105,171,10
+    GROUPBOX        "'Downloads' item",IDC_DOWNLOADS_ITEMS,10,125,243,28
+    CONTROL         "Place 'Downloads' under the 'Podcast Directory' item",IDC_PARENT_PODCASTS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,137,182,10
+    GROUPBOX        "'Transfers' item",IDC_TRANSFERS_ITEMS,10,157,243,36
+    LTEXT           "Place the unified 'Transfers' item\n(Note: applied after a restart)",-1,16,169,104,16
+    COMBOBOX        IDC_TRANSFERS_COMBO,124,167,124,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 280
+    END
+
+    IDD_VIEW_EMPTY, DIALOG
+    BEGIN
+        RIGHTMARGIN, 192
+    END
+
+    IDD_PREFSFR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 191
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_MLPLUGINS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 271
+    END
+
+    IDD_PREFS_ITV_ASSIGNPASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 213
+        VERTGUIDE, 12
+        VERTGUIDE, 66
+        VERTGUIDE, 74
+        VERTGUIDE, 200
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PREFS_ITV_GETPASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 157
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_RATINGTWEAK, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 200
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_FILEVIEW_TOOLBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTEXTMENUS MENU 
+BEGIN
+    POPUP "DoShitMenu"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Media Library &Preferences...\tCtrl+Shift+P", IDM_LIBRARY_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "Help\tF1",                    IDM_LIBRARY_HELP
+    END
+END
+
+IDR_MENU_FILEVIEW MENU 
+BEGIN
+    POPUP "View"
+    BEGIN
+        MENUITEM "Icons",                       ID_FILEVIEW_SETMODE_ICON
+        MENUITEM "List",                        ID_FILEVIEW_SETMODE_LIST
+        MENUITEM "Details",                     ID_FILEVIEW_SETMODE_DETAIL
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Show audio files",            IDM_FILEVIEW_SHOWAUDIO
+        MENUITEM "Show video files",            IDM_FILEVIEW_SHOWVIDEO
+        MENUITEM "Show playlist files",         IDM_FILEVIEW_SHOWPLAYLIST
+        MENUITEM "Show unknown files",          IDM_FILEVIEW_SHOWUNKNOWN
+        MENUITEM SEPARATOR
+        MENUITEM "Ignore hidden files and folders", IDM_FILEVIEW_IGNOREHIDDEN
+        MENUITEM "Hide known extensions ",      IDM_FILEVIEW_HIDEEXTENSION
+    END
+    POPUP "Arrange by"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Sort Ascending",              IDM_FILEVIEW_SORTASCENDING
+    END
+    POPUP "Select Columns"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Customize...",                ID_SELECTCOLUMNS_CUSTOMIZE, INACTIVE
+    END
+    POPUP "FileList"
+    BEGIN
+        POPUP "Play"
+        BEGIN
+            MENUITEM "Play",                        ID_FILEVIEW_PLAYSELECTION
+            MENUITEM "Enqueue",                     ID_FILEVIEW_PLAYSELECTION_SHIFT
+        END
+        POPUP "ViewContext"
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+        POPUP "OpContext"
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+    END
+    POPUP "Common"
+    BEGIN
+        MENUITEM "Refresh",                     ID_FILEVIEW_REFRESH
+        MENUITEM "Select All",                  ID_FILEVIEW_SELECT_ALL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+ML_IDC_DRAGDROP         CURSOR                  ".\\resources\\dragdrop.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TREEITEM_COLLAPSED  BITMAP                  "resources\\tree_closed_16x16x16.bmp"
+IDB_TREEITEM_NOCHILD    BITMAP                  "resources\\tree_closed_disabled_16x16x16.bmp"
+IDB_TREEITEM_EXPANDED   BITMAP                  "resources\\tree_open_16x16x16.bmp"
+IDB_TREEITEM_DEFAULT    BITMAP                  "resources\\ti_default_16x16x16.bmp"
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_TREEITEM_LABS$(DISABLED) BITMAP                  "resources\\ti_labs_16x16x16.bmp"
+#else
+IDB_TREEITEM_LABS       BITMAP                  "resources\\ti_labs_16x16x16.bmp"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR_GLOBAL ACCELERATORS 
+BEGIN
+    "L",            ID_TOGGLE_LIBRARY,      VIRTKEY, ALT, NOINVERT
+END
+
+IDR_ACCELERATOR_MAIN ACCELERATORS 
+BEGIN
+    "P",            IDM_LIBRARY_CONFIG,     VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "R",            ID_SHOW_RATINGTWEAK,    VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_F1,          ID_SHOW_HELP,           VIRTKEY, NOINVERT
+    VK_F4,          ID_WINDOW_CLOSE,        VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_GO_TO_VIEW_SEARCHBAR, VIRTKEY, NOINVERT
+    VK_INSERT,      ID_NEW_PLAYLIST,        VIRTKEY, SHIFT, NOINVERT
+    VK_F8,          ID_REFRESH_SEARCH,      VIRTKEY, NOINVERT
+END
+
+IDR_ACCELERATOR_FILEVIEW ACCELERATORS 
+BEGIN
+    VK_F5,          ID_FILEVIEW_REFRESH,    VIRTKEY, NOINVERT
+    "3",            ID_FILEVIEW_SETMODE_DETAIL, VIRTKEY, CONTROL, NOINVERT
+    "1",            ID_FILEVIEW_SETMODE_ICON, VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_FILEVIEW_SETMODE_LIST, VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_FILEVIEW_PLAYSELECTION, VIRTKEY, NOINVERT
+    VK_RETURN,      ID_FILEVIEW_PLAYSELECTION_SHIFT, VIRTKEY, SHIFT, NOINVERT
+    "A",            ID_FILEVIEW_SELECT_ALL, VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ENQUEUE_IN_WINAMP   "Enqueue in Winamp"
+    IDS_LIBRARY_OPTIONS     "Options"
+    IDS_ONLINE_MEDIA        "Online Media"
+    IDS_RATINGS_PASSWORD_MISSING 
+                            "Ratings Password Enabled, but password is missing!"
+    IDS_SERCURITY_ALERT     "Security Alert!"
+    IDS_MUST_ENTER_PASSWORD "You must enter a password!"
+    IDS_INTERNET_ACCESS     "Internet Access"
+    IDS_PASSWORD_NO_MATCH   "Passwords do not match!"
+    IDS_INVALID_PASSWORD    "Invalid Password!"
+    IDS_PLAY_SELECTED       "Plays selected item(s)"
+    IDS_ENQUEUE_SELECTED    "Enqueues selected item(s)"
+    IDS_NO_CONFIG_PRESENT   "This plug-in has no configuration implemented"
+    IDS_ML_PLUGIN_INFO      "Media Library plug-in info"
+    IDS_BAD_ITEM            "Bad Item"
+    IDS_ML_GHK_STR          "ML: Show/Hide Media Library"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_ML_STR     "Nullsoft Media Library v%X.%02X"
+    65535                   "{3D968813-F245-40ad-8589-5599C754B924}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MEDIA_LIBRARY       "Media Library"
+    IDS_ML_ALT_L_SHORTCUT   "Media Library\tAlt+L"
+    IDS_WINAMP_LIBRARY      "Winamp Library"
+    IDS_ONLINE_SERVICES_NOT_PRESENT "Online Services module not found.  "
+    IDS_ERROR_SWITCHING_TO_VIEW "Error switching to view"
+    IDS_CDDB_CONNECTING     "Connecting"
+    IDS_CDDB_SENDING        "Sending"
+    IDS_CDDB_RECEIVING      "Receiving"
+    IDS_CDDB_COMPLETE       "Complete"
+    IDS_TOGGLE_LIBRARY      "Toggle Library"
+    IDS_UNINSTALL_PROMPT    "Permanently uninstall this plug-in?\n(This may require a restart of Winamp)"
+    IDS_UINSTALL_CONFIRMATION "Confirmation"
+    IDS_DOWNLOADING         "Downloading..."
+    IDS_WEBINFO_NAVIGATE_ERROR "Unable to get information."
+    IDS_WEBINFO_MESSAGEBOX_TITLE "Winamp Browser"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOADING_IN_PROGRESS "Loading..."
+    IDS_UNABLE_TO_APPLY_NEW_STYLE "Unable to apply new style."
+    IDS_TWEAK_ERROR         "Tweak Error"
+    IDS_ALWAYS              "Always"
+    IDS_PROCESS_ACTIVE      "Process Active"
+    IDS_ANCESTOR_ACTIVE     "Ancestor Active"
+    IDS_WINDOW_FOCUSED      "Window Focused"
+    IDS_NEVER               "Never"
+    IDS_ALL                 "All"
+    IDS_SELECTED            "Selected"
+    IDS_FOCUSED             "Focused"
+    IDS_LEFT                "Left"
+    IDS_CENTER              "Center"
+    IDS_RIGHT               "Right"
+    IDS_DO_YOU_WANT_TO_SAVE_CHANGES_FIRST "Do you want to save changes first?"
+    IDS_CONFIRM_CLOSE       "Confirm Close"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TREE_OPTIONS        "Tree Options"
+    IDS_FILE_ATTRIBUTES     "RHSACE"
+    IDS_FILETYPE_AUDIO      "Audio"
+    IDS_FILETYPE_VIDEO      "Video"
+    IDS_FILETYPE_PLAYLIST   "Playlist"
+    IDS_FILETYPE_UNKNOWN    "Unknown"
+    IDS_FILEVIEW_COL_NAME   "Name"
+    IDS_FILEVIEW_COL_TYPE   "Type"
+    IDS_FILEVIEW_COL_SIZE   "Size"
+    IDS_FILEVIEW_COL_MODIFIED "Date Modified"
+    IDS_FILEVIEW_COL_CREATED "Date Created"
+    IDS_FILEVIEW_COL_EXTENSION "Extension"
+    IDS_FILEVIEW_COL_ATTRIBUTES "Attributes"
+    IDS_FILEVIEW_COL_ARTIST "Artist"
+    IDS_FILEVIEW_COL_ALBUM  "Album"
+    IDS_FILEVIEW_COL_TITLE  "Title"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILEVIEW_COL_INMLDB "Media Library"
+    IDS_FILEVIEW_COL_GENRE  "Genre"
+    IDS_FILEVIEW_COL_YEAR   "Year"
+    IDS_FILEVIEW_COL_LENGTH "Length"
+    IDS_FILEVIEW_COL_BITRATE "Bitrate"
+    IDS_FILEVIEW_COL_TRACK  "Track#"
+    IDS_FILEVIEW_COL_DISC   "Disc"
+    IDS_FILEVIEW_COL_COMMENT "Comment"
+    IDS_FILEVIEW_COL_PUBLISHER "Publisher"
+    IDS_FILEVIEW_COL_COMPOSER "Composer"
+    IDS_FILEVIEW_COL_ALBUMARTIST "Album Artist"
+    IDS_FILEVIEW_COL_ENTRYCOUNT "Entries Count"
+    IDS_FILEVIEW_COL_TOTALLENGTH "Total Length"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_KBPS                "kbps"
+    IDS_APPEARANCE          "Appearance"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+    IDS_FILEVIEW_EMPTYFOLDER "Empty Folder"
+    IDS_FILEVIEWSTATUS_GROUPTEMPLATE "%d files, %s"
+    IDS_FILEVIEWSTATUS_SELECTEDGROUPTEMPLATE "%d files selected, %s"
+    IDS_RESTART             "Restart Winamp?"
+    IDS_RESTART_MESSAGE     "Would you like to restart Winamp now to apply this settings change?\nChoose 'No' to apply this setting the next time Winamp is restarted."
+    IDS_COL_NORMAL          "Resize only the selected column (default Windows behavior)"
+    IDS_COL_SELONLY         "Resize column and adjust adjacent column"
+    IDS_COL_PROP            "Resize column and adjust all columns proportionately"
+    IDS_PLAY                "Play"
+    IDS_ENQUEUE             "Enqueue"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOT_LOADED          "NOT LOADED"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

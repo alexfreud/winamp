@@ -1,0 +1,182 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTEXTMENU MENU 
+BEGIN
+    POPUP "ViewContext"
+    BEGIN
+        MENUITEM "&Open",                       ID_VIEW_OPEN
+        MENUITEM "Open in &New Window",         ID_VIEW_NEWWINDOW
+    END
+    POPUP "ServiceMngrContext"
+    BEGIN
+        POPUP "&Service"
+        BEGIN
+            MENUITEM "&New",                        ID_SERVICE_NEW
+            POPUP "&Import"
+            BEGIN
+                MENUITEM "&File...",                    ID_SERVICE_IMPORT_FILE
+                MENUITEM "&Url..",                      ID_SERVICE_IMPORT_URL
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "&Edit",                       ID_SERVICE_EDIT
+            MENUITEM "&Reload",                     ID_SERVICE_RELOAD
+            MENUITEM "Reset &Permissions",          ID_SERVICE_RESETPERMISSIONS
+            MENUITEM SEPARATOR
+            MENUITEM "&Delete",                     ID_SERVICE_DELETE
+            MENUITEM "Delete &All",                 ID_SERVICE_DELETEALL
+            MENUITEM SEPARATOR
+            MENUITEM "Open Containing &Folder",     ID_SERVICE_LOCATE
+            MENUITEM "Open in E&xternal Editor",    ID_SERVICE_EDITEXTERNAL
+        END
+    END
+    POPUP "NavigationContext"
+    BEGIN
+        MENUITEM "&Back",                       ID_NAVIGATION_BACK
+        MENUITEM "&Forward",                    ID_NAVIGATION_FORWARD
+        MENUITEM "&Home",                       ID_NAVIGATION_HOME
+        MENUITEM "&Refresh",                    ID_NAVIGATION_REFRESH
+        MENUITEM "Sto&p",                       ID_NAVIGATION_STOP
+    END
+    POPUP "PluginContext"
+    BEGIN
+        MENUITEM "omBrowser Options...",        ID_OMBROWSER_OPTIONS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_WELCOME        HTML                    ".\\resources\\pages\\welcome.htm"
+IDR_HTML_EDITOR         HTML                    ".\\resources\\pages\\serviceEditor.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPENURL DIALOGEX 0, 0, 220, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Open Url"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Enter service list address:",IDC_STATIC,5,4,210,10
+    COMBOBOX        IDC_ADDRESS,5,18,210,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,111,36,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,165,36,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OPENURL, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 215
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 49
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUGIN_NAME         "Nullsoft WebDev Test Platform v%d.%d"
+    65535                   "{BF4F80A7-7470-4b08-8A4C-34382C146202}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ROOTSERVICE_NAME    "WebDev Platform"
+    IDS_DOCSERVICE_NAME     "Online Documentation"
+    IDS_TESTSERVICE_NAME    "JSAPI2 Test"
+    IDS_USERSERVICE_NAME    "My Service"
+    IDS_FILEFILTER_ALL      "All Files"
+    IDS_FILEFILTER_ALLKNOWN "All Supported Files"
+    IDS_LOADSERVICE         "Load WebDev Service"
+    IDS_UNKNOWNNAME         "<Unknown>"
+    IDS_IMPORT_FILES        "Import Service..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

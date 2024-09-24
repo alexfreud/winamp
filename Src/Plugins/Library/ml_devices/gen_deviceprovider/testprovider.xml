@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testprovider>
+	<imageBase>c:\winamp\ml_devices\resources\food</imageBase>
+	<connect>iconTest;apple;banana;grape;pear;pepper;eggplant;cucumber;carrot</connect>
+	<connections>
+		<connection name="usb">
+			<displayName>USB</displayName>
+			<icon>..\connections\usb.png</icon>
+		</connection>
+		<connection name="wifi">
+			<displayName>Wi-Fi</displayName>
+			<icon>..\connections\wifi.png</icon>
+		</connection>
+		<connection name="bluetooth">
+			<displayName>Bluetooth</displayName>
+			<icon>..\connections\bluetooth.png</icon>
+		</connection>
+	</connections>
+	<types>
+		<type name="vegetables">
+			<displayName>Vegetables</displayName>
+			<icon>vegetables.png</icon>
+		</type>
+		<type name="fruits">
+			<displayName>Fruits</displayName>
+			<icon>fruits.png</icon>
+		</type>
+		<type name="grains">
+			<displayName>Grains</displayName>
+			<icon>grains.png</icon>
+		</type>
+	</types>
+	<commands>
+		<command name="sync">
+			<displayName>&amp;Sync</displayName>
+			<description>Sync things</description>
+			<icon>..\commands\sync.png</icon>
+		</command>
+		<command name="settings">
+			<displayName>Se&amp;ttings</displayName>
+			<description>Open settings page</description>
+			<icon>..\commands\settings.png</icon>
+		</command>
+		<command name="detach">
+			<displayName>&amp;Detach</displayName>
+			<description>Detach device</description>
+			<icon>..\commands\detach.png</icon>
+		</command>
+		<command name="eject">
+			<displayName>&amp;Eject</displayName>
+			<description>Eject device</description>
+			<icon>..\commands\eject.png</icon>
+		</command>
+	</commands>
+	<devices>
+		<device name="iconTest" type="test">
+			<connection></connection>
+			<displayName>Icon Test</displayName>
+			<icon width="24" height="32">..\zoom\24x32.png</icon>
+			<icon width="48" height="64">..\zoom\48x64.png</icon>
+			<icon width="96" height="128">..\zoom\96x128.png</icon>
+			<icon width="192" height="256">..\zoom\192x256.png</icon>
+			<command primary="1" disabled="0">sync</command>
+			<command primary="0" disabled="0" hidden="0" group="1">settings</command>
+			<command primary="0">detach</command>
+			<command disabled="1" hidden="0">eject</command>
+			<totalSpace>909242</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<model>Icon Test v1.0</model>
+			<status>Icon Test status string</status>
+		</device>
+		<device name="apple" type="fruits">
+			<connection>wifi</connection>
+			<displayName>Dilicious&#10;Apple</displayName>
+			<icon>apple.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<model>iApple 2</model>
+			<command primary="1">sync</command>
+			<command group="1">eject</command>
+		</device>
+		<device name="banana" type="fruits">
+			<connection>usb</connection>
+			<displayName>Banana</displayName>
+			<icon>banana.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<model>iBanana 2</model>
+			<command primary="1">sync</command>
+			<command group="1">eject</command>
+		</device>
+		<device name="peach" type="fruits">
+			<connection>bluetooth</connection>
+			<displayName>Peach</displayName>
+			<icon>peach.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<model>iPeach 2</model>
+			<command primary="1">sync</command>
+			<command group="1">eject</command>
+		</device>
+		<device name="orange" type="fruits">
+			<connection>usb</connection>
+			<displayName>Orange</displayName>
+			<icon>orange.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<model>iOrange 2</model>
+			<command primary="1">sync</command>
+			<command group="1">eject</command>
+		</device>
+		<device name="pear" type="fruits">
+			<connection>wifi</connection>
+			<displayName>Pear</displayName>
+			<icon>pear.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<model>iPear 2</model>
+			<command primary="1">sync</command>
+			<command group="1">eject</command>
+		</device>
+		<device name="grape" type="fruits">
+			<connection>bluetooth</connection>
+			<displayName>Grape</displayName>
+			<icon>grape.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<model>iGrape 2</model>
+			<command primary="1">sync</command>
+			<command group="1">eject</command>
+		</device>
+		<device name="lemon" type="fruits">
+			<connection>usb</connection>
+			<displayName>Lemon</displayName>
+			<icon>lemon.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<model>iLemon 2</model>
+			<command primary="1">sync</command>
+			<command group="1">eject</command>
+		</device>
+		<device name="carrot" type="vegetables">
+			<connection>wifi</connection>
+			<displayName>Carrot</displayName>
+			<icon>carrot.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<command primary="1">sync</command>
+		</device>
+		<device name="broccoli" type="vegetables">
+			<connection>bluetooth</connection>
+			<displayName>Broccoli</displayName>
+			<icon>broccoli.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<command primary="1">sync</command>
+		</device>
+		<device name="eggplant" type="vegetables">
+			<connection>usb</connection>
+			<displayName>Eggplant</displayName>
+			<icon>eggplant.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<command primary="1">sync</command>
+		</device>
+		<device name="cucumber" type="vegetables">
+			<connection>wifi</connection>
+			<displayName>Cucumber</displayName>
+			<icon>cucumber.png</icon>
+			<totalSpace>0</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<command primary="1">sync</command>
+		</device>
+		<device name="pepper" type="vegetables">
+			<connection>bluetooth</connection>
+			<displayName>Pepper</displayName>
+			<icon>pepper.png</icon>
+			<totalSpace>0</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+			<command primary="1">sync</command>
+		</device>
+		<device name="bread" type="grains">
+			<connection>usb</connection>
+			<displayName>Bread</displayName>
+			<icon>bread.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+		</device>
+		<device name="pasta" type="grains">
+			<connection>wifi</connection>
+			<displayName>Pasta</displayName>
+			<icon>pasta.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+		</device>
+		<device name="rice" type="grains">
+			<connection>bluetooth</connection>
+			<displayName>Rice</displayName>
+			<icon>rice.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+		</device>
+		<device name="cereal" type="grains">
+			<connection>usb</connection>
+			<displayName>Cereal</displayName>
+			<icon>cereal.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+		</device>
+		<device name="muffin" type="grains">
+			<connection>wifi</connection>
+			<displayName>Muffin</displayName>
+			<icon>muffin.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+		</device>
+		<device name="pretzel" type="grains">
+			<connection>bluetooth</connection>
+			<displayName>Pretzel</displayName>
+			<icon>pretzel.png</icon>
+			<totalSpace>100</totalSpace>
+			<usedSpace>0</usedSpace>
+			<hidden>0</hidden>
+		</device>
+	</devices>
+</testprovider>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="win\Binary32Field.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\BinaryField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\ColumnField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Database.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\FilenameField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Index.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\IndexField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\IndexRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Int64Field.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Int128Field.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\IntegerField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\nde_c.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\nde_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NDEString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\Query.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\Record.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nu\RingBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\Scanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\StringField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\Table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\Vfs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="win\Binary32Field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\BinaryField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\ColumnField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\FilenameField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\IndexField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\IndexRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Int64Field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Int128Field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\IntegerField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nde.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\nde_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nde_defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NDEString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\Query.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\Record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\Scanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\StringField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\Table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\Vfs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9547ac55-c20b-484a-875b-0e9f6787c1f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{4278bf6e-44fa-4a76-a1e7-f3d3c96d4df0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e61e1158-723a-449b-b09f-bd63c3c611a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nde.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

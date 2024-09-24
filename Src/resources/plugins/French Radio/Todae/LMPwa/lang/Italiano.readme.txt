@@ -1,0 +1,66 @@
+LIVE MEDIA PLUGIN : DOMANDE (D) & RISPOSTE (R)
+
+D : DIRECT 8 NON FUNZIONA!
+===================================
+R : Certamente, sono un po in disparte… per farlo funzionare,  bisogna cliccare una volta....vedere il messaggio di errore...e cliccare di nuovo una seconda volta...
+
+
+D : C'È UN MESSAGGIO DI ERRORE ALL'APERTURA DEL SITO WEB 
+===================================
+R : È un problema conosciuto ma purtroppo impossibile: il motore Web di Windows Media Player non è ottimizato come quello di Internet Explorer, (è capriccioso sul codice dei siti Internet). Ed i siti  sui quali il problema esiste… non ottimizzano il codice... Cliccate su "no" quando una scatola di dialogo vi propone di continuare ad eseguire gli script della pagina.
+
+
+D : IL SUONO DELLE RADIO È DI MEDIOCRE QUALITA!
+===================================
+R : La qualità del suono dipende soltanto della qualità di diffusione delle radio. Alcune radio (Oui FM, Fréquence 3) propongono un suono di qualità CD, mentre altre come Radio France, propongono un suono di qualità media. La ragione è semplice: il numero di ascoltatori simultanei è limitato dalla capacità della banda passante, divisa dalla qualità del flusso. Cioé, col diminuire della sua qualità di diffusione, una radio può aumentare il suo numero massimale di ascoltatori senza pagare di più.
+
+
+D : LA MIA RADIO SI SCONNETTE SEMPRE !
+
+===========================================
+R : Questo problema viene probabilmente della qualità della sua connessione Internet. Peraltro, se esagerate della propria banda passante, scaricando per esempio, è normale che la sua radio si sconnette ogni tanto.
+
+D : COME AGGIUNGERE O CANCELLARE UNA RADIO??
+===============================================
+R : Andate nelle opzioni e cliccate semplicemente su "Aggiungere" o "Cancellare." Notate pure che potete pubblicare ogni flusso del proprio elenco attuale. Potete anche importare o potete fondere degli elenchi, utilizzando i pulsanti adatti. Una spiegazione per trovare l'indirizzo del flusso è disponibile quì :
+http://www.01men.com/editorial/323251/dossiers-pratiques/ 
+e    
+
+http://forum.teletrasmettere.01net.com/microhebdo/logiciels/audio/tuto_winamp_comment_trouver_une_adresse_ip_dune_radio-333189/messages -1.html
+ces 2 liens ne fonctionnent pas??
+
+
+
+D : POTRETE AGGIUNGERE LA RADIO/TV XYZ?
+========================================
+R : No. le radio presente sono oggetto di partnership. Gli altri hanno rifiutato o non hanno risposto...Però, niente vi impedisce di aggiungere le vostre radio, dovete trovare voi gli indirizzi dei flussi ;) 
+Ma sottometteteci le vostre domande per e-mail! 
+Al mese di novembre non era possibile disporrere le televisioni classiche di France Télévision,  Canal+, M6, ecc …
+
+
+
+
+D : LE NOTIZIE SONO ERRATI
+======================================
+R : Dei titoli o degli slogan di radio sbagliati? Degli indirizzi che non funzionano? Alcune notizie dimenticate? Contattateci al seguente indirizzo: benoit.todae@gmail.com
+
+
+D : COME CAMBIARE LE ICONE ?
+==================================
+R : Basta cliccare sull’icona "cambiare" e dare l’indirizzo di un'immagine al formato BMP. Per una qualità ottimale, questa immagine deve misurare 48  X 48 pixel. Per avere lo sfondo trasparente, copiate il codice HTML del colore di sfondo nella zona adatta, sotto l’icona "cambiare").
+
+D : PERCHÉ AVERE MESSO UNA PUBBLICITÀ IN BASSO? 
+=======================================
+R : Prima di tutto, perché lo sviluppo di un plugin ha un costo, poi, perché nuove funzionalità sono previste, per la sua comodità, infine, perché le radio non ci pagono per questo tipo di partnership. Si tratta di una pubblicità discreta, non intrusiva e venendo di un rette professionale. Quindi NON ci sono virus né spyware.
+
+
+
+
+D : ED IL SEGUITO?
+===============
+R : Ancora più TV  :)
+
+
+
+AVVERTIMENTO: Per tutte domande techniche, andate sul forum ufficiale del plugin. Non risponderemo personalmente a queste domande. Grazie per la vostra comprenzione. 
+Live Media Plugin è il nuovo nome di Radio Media PLAYER. Il nome è cambiato perché è la seconda versione del plugin che tenderà sempre di più verso le televisioni. È stato sviluppato da ottobre a novembre 2007 da Alexandre GENOUD per TODAE.FR

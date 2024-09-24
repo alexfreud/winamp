@@ -1,0 +1,23 @@
+Nullsoft DSP Effects Plug-in 0.35 for Winamp
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+This plug-in lets you use the following effects on
+your sound in Winamp:
+
+Echo: adds a simple echo effect to the music
+Voice Removal: only for Stereo sounds, this attempts
+  to remove the center channel. Sounds pretty good on
+  about 1% of music out there, the other 99% sounds
+  like crap :)
+Pitch/Tempo control: ownage :)
+
+Once you install this nugget, fire up Winamp, open 
+up the preferences (CTRL+P), go to the Plugins/DSP&Effect
+section, and select 'Nullsoft DSP Effects' as 
+the new DPS Plug-in. You can then select from the three
+above effects.
+
+Limitations:
+  This plug-in only effects audio that is 16 bit.
+  Note that this plug-in won't work with passive plug-ins
+  such as CD audio.

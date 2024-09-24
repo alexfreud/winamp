@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JSAPI2::Transport Events Api</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<script type="text/javascript" src="api2.js"></script>
+</head>
+<body onload="teUnregisterClicked();" onunload="teUnregisterClicked();" style="FONT-FAMILY: MS Shell Dlg 2;">
+	<h2>Transport Events API</h2>
+	<h3>Methods:</h3>
+	<input type="button" value="Register For Events" id="teRegister" onclick="teRegisterClicked();">
+	<input type="button" value="Unregister From Events" id="teUnregister" onclick="teUnregisterClicked();">
+	<br><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Callback function:&nbsp;<input readonly type="text" id="te_t_Callback" value="OnEvents">
+	<br><br><br>
+	<b>Events Received</b>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="javascript:te_AreaCleared();"><small>clear</small></a>
+	<br><br>
+	<select size="10" id="te_s_Select" style="width: 100px" onchange="teEventSelected();">
+	<option>No Events</option>
+	</select>
+	<textarea rows="10" cols="40" id="te_ta_Area"></textarea>
+</body>
+</html>

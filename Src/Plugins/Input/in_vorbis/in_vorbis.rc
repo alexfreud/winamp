@@ -1,0 +1,415 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 173, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_CUSTOM1,"XIPH_CLASS",0x0,6,8,44,40
+    CTEXT           "",IDC_RPM,7,56,45,8
+    CTEXT           "",IDC_RPM2,4,64,51,8
+    LTEXT           "",IDC_ABOUT_TEXT,58,8,110,85
+    DEFPUSHBUTTON   "OK",IDCANCEL,117,93,50,14
+END
+
+IDD_HTTPAUTH DIALOGEX 0, 0, 154, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ogg Authentication"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Realm: ",IDC_STATIC,4,4,25,8
+    LTEXT           "",IDC_REALM,37,4,113,8
+    LTEXT           "Enter your login and password in the form of:\n\tlogin:password",IDC_STATIC,4,15,146,17
+    EDITTEXT        IDC_EDITAUTH,4,35,146,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOKAUTH,4,52,50,13
+    PUSHBUTTON      "Cancel",IDCANCELAUTH,100,53,50,13
+END
+
+IDD_INFO_DLG_NEW DIALOGEX 0, 0, 329, 238
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Ogg Vorbis Info"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "File/URL :",-1,6,6,34,8
+    EDITTEXT        IDC_URL,43,5,282,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "File / Stream Info",IDC_STATIC_MISC,224,20,101,120
+    EDITTEXT        IDC_MISC,231,30,88,107,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER
+    GROUPBOX        "Chained Streams",IDC_STATIC_CS,224,155,101,30
+    PUSHBUTTON      "<= previous",IDC_PREV_STREAM,229,167,44,13
+    PUSHBUTTON      "next =>",IDC_NEXT_STREAM,276,167,43,13
+    CONTROL         "Hide special fields",IDC_HIDE_SPEC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,229,190,73,10
+    PUSHBUTTON      "",IDC_MODE_TOGGLE,228,203,93,13
+    PUSHBUTTON      "Close",IDCANCEL,273,220,48,13
+END
+
+IDD_INFO_PANEL_SIMPLE DIALOGEX 0, 0, 227, 218
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Standard Tags",IDC_STATIC_STD,3,2,219,119
+    LTEXT           "Title",IDC_STATIC,29,16,14,8
+    EDITTEXT        IDC_TITLE,48,14,168,12,ES_AUTOHSCROLL
+    LTEXT           "Artist",IDC_STATIC,27,32,16,8
+    EDITTEXT        IDC_ARTIST,48,30,168,12,ES_AUTOHSCROLL
+    LTEXT           "Album",IDC_STATIC,24,48,19,8
+    EDITTEXT        IDC_ALBUM,48,46,124,12,ES_AUTOHSCROLL
+    LTEXT           "Track:",IDC_STATIC_TRACK,175,48,21,8
+    EDITTEXT        IDC_TRACK,198,46,18,12,ES_AUTOHSCROLL
+    LTEXT           "Year",IDC_STATIC,28,64,16,8
+    EDITTEXT        IDC_DATE,48,62,56,12,ES_AUTOHSCROLL
+    LTEXT           "Genre",IDC_STATIC,117,64,22,8
+    COMBOBOX        IDC_GENRE,140,62,77,68,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Comment",IDC_STATIC,13,80,29,8
+    EDITTEXT        IDC_COMMENT,48,78,169,37,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Other",IDC_STATIC_TAGS,3,123,219,91
+    LISTBOX         IDC_LIST,10,134,207,75,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_INFO_PANEL_ADVANCED DIALOGEX 0, 0, 227, 218
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LIST,3,3,219,212,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_INFO DIALOGEX 0, 0, 341, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Advanced",IDC_STATIC,0,0,341,164
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,13,164,143
+    LTEXT           "Name:",IDC_STATIC,175,13,22,8
+    EDITTEXT        IDC_NAME,175,23,159,14,ES_AUTOHSCROLL
+    LTEXT           "Value:",IDC_STATIC,175,39,21,8
+    EDITTEXT        IDC_VALUE,175,49,159,90,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Add New",IDC_BUTTON_ADD,176,142,50,13
+    PUSHBUTTON      "Delete",IDC_BUTTON_DEL,230,142,50,13
+    PUSHBUTTON      "Delete All",IDC_BUTTON_DELALL,284,142,50,13
+END
+
+IDD_CONFIG DIALOGEX 0, 0, 222, 261
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Decoding",IDC_STATIC,4,4,214,93
+    CONTROL         "Buffer full files from disk",IDC_FULLBUF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,17,89,10
+    CONTROL         "Show average bitrate while playing",IDC_AVG_BR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,31,128,10
+    GROUPBOX        "5.1-Channel Input Processing",IDC_STATIC,10,44,201,47
+    LTEXT           "Apply conversion:",IDC_STATIC,16,58,72,8,0,WS_EX_RIGHT
+    COMBOBOX        IDC_MC6_DM,95,56,110,96,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Source channel order:",IDC_STATIC,16,75,72,8,0,WS_EX_RIGHT
+    COMBOBOX        IDC_MC6_MAP,95,73,110,96,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Streaming",IDC_STATIC,4,101,214,139
+    LTEXT           "Buffer size",IDC_STATIC,10,115,34,8
+    EDITTEXT        IDC_HTTP_BSIZE,48,113,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "KB",IDC_STATIC,80,115,9,8
+    GROUPBOX        "Prebuffering:",IDC_STATIC,10,129,201,44
+    LTEXT           "At start:",IDC_STATIC,16,142,31,8
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,70,141,130,10
+    LTEXT           "After underrun:",IDC_STATIC,16,153,54,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,70,152,130,10
+    LTEXT           "0%",IDC_STATIC,71,161,13,8
+    LTEXT           "50%",IDC_STATIC,122,161,18,8
+    LTEXT           "100%",IDC_STATIC,185,161,20,8
+    LTEXT           "Use Winamp's proxy server settings:",IDC_STATIC,10,179,120,8
+    COMBOBOX        IDC_PROXY,134,177,77,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,10,191,201,43
+    CONTROL         "Save streamed files to:",IDC_FSAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,201,89,10
+    PUSHBUTTON      "default",IDC_SSAVE_FMT_DEF,165,200,40,11
+    PUSHBUTTON      "",IDC_STREAM_SAVE,15,215,105,13
+    EDITTEXT        IDC_SSAVE_FMT,120,215,85,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,124,244,45,13
+    PUSHBUTTON      "Cancel",IDCANCEL,173,244,45,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 168
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_HTTPAUTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 150
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 218
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 257
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_BITMAP9$(DISABLED)  BITMAP                  "oggdrop\\120.bmp"
+#else
+IDB_BITMAP9             BITMAP                  "oggdrop\\120.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_BITMAP8$(DISABLED)  BITMAP                  "oggdrop\\119.bmp"
+#else
+IDB_BITMAP8             BITMAP                  "oggdrop\\119.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_BITMAP7$(DISABLED)  BITMAP                  "oggdrop\\118.bmp"
+#else
+IDB_BITMAP7             BITMAP                  "oggdrop\\118.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_BITMAP6$(DISABLED)  BITMAP                  "oggdrop\\117.bmp"
+#else
+IDB_BITMAP6             BITMAP                  "oggdrop\\117.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_BITMAP5$(DISABLED)  BITMAP                  "oggdrop\\116.bmp"
+#else
+IDB_BITMAP5             BITMAP                  "oggdrop\\116.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_BITMAP4$(DISABLED)  BITMAP                  "oggdrop\\115.bmp"
+#else
+IDB_BITMAP4             BITMAP                  "oggdrop\\115.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_BITMAP3$(DISABLED)  BITMAP                  "oggdrop\\114.bmp"
+#else
+IDB_BITMAP3             BITMAP                  "oggdrop\\114.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_BITMAP2$(DISABLED)  BITMAP                  "oggdrop\\113.bmp"
+#else
+IDB_BITMAP2             BITMAP                  "oggdrop\\113.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_BITMAP12$(DISABLED) BITMAP                  "oggdrop\\123.bmp"
+#else
+IDB_BITMAP12            BITMAP                  "oggdrop\\123.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_BITMAP11$(DISABLED) BITMAP                  "oggdrop\\122.bmp"
+#else
+IDB_BITMAP11            BITMAP                  "oggdrop\\122.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_BITMAP10$(DISABLED) BITMAP                  "oggdrop\\121.bmp"
+#else
+IDB_BITMAP10            BITMAP                  "oggdrop\\121.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_BITMAP1$(DISABLED)  BITMAP                  "oggdrop\\112.bmp"
+#else
+IDB_BITMAP1             BITMAP                  "oggdrop\\112.bmp"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG1                PNG                     "oggdrop\\112.png"
+IDB_PNG2                PNG                     "oggdrop\\113.png"
+IDB_PNG3                PNG                     "oggdrop\\114.png"
+IDB_PNG4                PNG                     "oggdrop\\115.png"
+IDB_PNG5                PNG                     "oggdrop\\116.png"
+IDB_PNG6                PNG                     "oggdrop\\117.png"
+IDB_PNG7                PNG                     "oggdrop\\118.png"
+IDB_PNG8                PNG                     "oggdrop\\119.png"
+IDB_PNG9                PNG                     "oggdrop\\120.png"
+IDB_PNG10               PNG                     "oggdrop\\121.png"
+IDB_PNG11               PNG                     "oggdrop\\122.png"
+IDB_PNG12               PNG                     "oggdrop\\123.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_VORBIS_DECODER "Nullsoft Vorbis Decoder v%s"
+    65535                   "{5C5BCA4E-279E-4867-8E24-58C8B186959A}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_VORBIS_DECODER_OLD "Nullsoft Vorbis Decoder"
+    IDS_FILE_ERROR          "file error"
+    IDS_LENGTH              "Length: "
+    IDS_AVERAGE_BITRATE     "Average bitrate: "
+    IDS_FILE_SIZE           "File size: "
+    IDS_NOMINAL_BITRATE     "Nominal bitrate: "
+    IDS_MIN_BITRATE         "Min bitrate: "
+    IDS_MAX_BITRATE         "Max bitrate: "
+    IDS_CHANNELS            "Channels"
+    IDS_SAMPLING_RATE       "Sampling rate"
+    IDS_SERIAL_NUMBER       "Serial number"
+    IDS_VERSION             "Version"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VENDOR              "Vendor"
+    IDS_TO_SIMPLE_MODE      "<< to simple mode"
+    IDS_TO_ADVANCED_MODE    "to advanced mode >>"
+    IDS_OGG_VORBIS_INFO     "Ogg Vorbis info - %s"
+    IDS_BEST_RPM            "Best: %u RPM"
+    IDS_LEAVE_AS_IS         "leave as is"
+    IDS_REMAP_6_CHANNELS    "remap 6 channels"
+    IDS_DOWNMIX_TO_4_CHANNELS "downmix to 4 channels"
+    IDS_DOWNMIX_TO_2_CHANNELS_DS "downmix to 2 channels (DS)"
+    IDS_DOWNMIX_TO_2_CHANNELS_DS2 "downmix to 2 channels (DS2)"
+    IDS_DOWNMIX_TO_MONO     "downmix to mono"
+    IDS_CORRECT_FL_FC_FR_BL_BR_LFE "correct (FL FC FR BL BR LFE)"
+    IDS_BROKEN_FL_FR_FC_BL_BR_LFE "broken (FL FR FC BL BR LFE)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUT_TEXT          "%s\n© 2001-2023 Winamp SA\nWritten by: Peter Pawlowski\nBuild date: %hs\n\nThanks to:\n  Craig Freer\n  Tomi 'Nebularia' Jylhä-Ollila\n  Jack Moffitt\n  Szabolcs Péter"
+    IDS_TITLE_PREFERENCES   "%s Preferences"
+    IDS_NEVER               "never"
+    IDS_PORT_80_ONLY        "port 80 only"
+    IDS_ALWAYS              "always"
+    IDS_SELECT_OUTPUT_DIRECTORY "Select output directory:"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONNECTING          "Connecting..."
+    IDS_PREBUFFERING        "Prebuffering : %u%%"
+    IDS_AUTH_REQUIRED       "Authentication Required"
+    IDS_OGG_FILES           "Ogg Vorbis Files (*.OGG;*.OGA)"
+    IDS_NAME                "Name"
+    IDS_VALUE               "Value"
+    IDS_KBPS                "kbps"
+    IDS_HZ                  "Hz"
+    IDS_GAME_SPEED          "%u RPM"
+    IDS_BYTES               "bytes"
+    IDS_FAMILY_STRING       "Ogg Vorbis File"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

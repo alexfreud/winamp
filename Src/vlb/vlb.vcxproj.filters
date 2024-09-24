@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="w5s.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VLBIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VlbDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stereo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shortblock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pulsedata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="programcfg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prediction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plainfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="obj_vlbDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NSVFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nsv_vlb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="longblock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imdct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="factory_vlbDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="factory_nsvVlb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dolby_imdct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DolbyPayload.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="datastream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="channelinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="channel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bitsequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_io_dsp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audio_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="adif.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aacdecoderapi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aacdecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aacdecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aacdecoderapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adif.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api__vlb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audio_io_dsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bitsequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bitstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="channelinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="datastream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dolby_imdct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DolbyPayload.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="factory_nsvVlb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="factory_vlbDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nsv_vlb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NSVFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="obj_vlbDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="overlapadd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="plainfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prediction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="programcfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pulsedata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stereo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaminfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VlbDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="window_tab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2b3efc06-1046-47a4-956e-af652b688c1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{0398d98a-dea2-4fea-bf3b-abb9658ea82f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{21521068-58d4-46cd-91ed-25876514b0f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vlb.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

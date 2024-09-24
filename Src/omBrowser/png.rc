@@ -1,0 +1,17 @@
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+IDR_CURTAINPROGRESS_IMAGE  RCDATA
+".\\resources\\curtainProgress.png"
+IDR_TOOLBARLARGE_IMAGE  RCDATA
+".\\resources\\toolbarLarge.png"
+IDR_TOOLBARPROGRESS_IMAGE  RCDATA
+".\\resources\\toolbarProgress.png" 
+IDR_MENUARROW_IMAGE  RCDATA
+".\\resources\\menuArrow.png"
+IDR_SERVICEICON_IMAGE  RCDATA
+".\\resources\\serviceIcon.png"
+IDR_TOOLBARADDRESS_IMAGE  RCDATA
+".\\resources\\toolbarAddress.png"

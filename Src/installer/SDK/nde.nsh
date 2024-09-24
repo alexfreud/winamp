@@ -1,0 +1,62 @@
+; Nullsoft Database Engine
+
+SetOutPath $INSTDIR\nde
+; Project Files
+File ${PROJECTS}\nde\nde.sln
+File ${PROJECTS}\nde\nde.vcxproj
+File ${PROJECTS}\nde\nde.vcxproj.filters
+
+; Source Files
+File ${PROJECTS}\nde\win\Binary32Field.h
+File ${PROJECTS}\nde\win\Binary32Field.cpp
+File ${PROJECTS}\nde\win\BinaryField.cpp
+File ${PROJECTS}\nde\win\BinaryField.h
+File ${PROJECTS}\nde\win\ColumnField.cpp
+File ${PROJECTS}\nde\win\ColumnField.h
+File ${PROJECTS}\nde\Crc.cpp
+File ${PROJECTS}\nde\CRC.H
+File ${PROJECTS}\nde\Database.cpp
+File ${PROJECTS}\nde\Database.h
+File ${PROJECTS}\nde\DBUtils.cpp
+File ${PROJECTS}\nde\DBUtils.h
+;File ${PROJECTS}\nde\entrypoint.cpp
+File ${PROJECTS}\nde\Field.cpp
+File ${PROJECTS}\nde\Field.h
+File ${PROJECTS}\nde\win\FilenameField.cpp
+File ${PROJECTS}\nde\win\FilenameField.h
+File ${PROJECTS}\nde\Filter.cpp
+File ${PROJECTS}\nde\Filter.h
+File ${PROJECTS}\nde\Index.cpp
+File ${PROJECTS}\nde\Index.h
+File ${PROJECTS}\nde\win\IndexField.cpp
+File ${PROJECTS}\nde\win\IndexField.h
+File ${PROJECTS}\nde\Int128Field.cpp
+File ${PROJECTS}\nde\Int128Field.h
+File ${PROJECTS}\nde\Int64Field.cpp
+File ${PROJECTS}\nde\Int64Field.h
+File ${PROJECTS}\nde\win\IntegerField.cpp
+File ${PROJECTS}\nde\win\IntegerField.h
+File ${PROJECTS}\nde\LinkedList.cpp
+File ${PROJECTS}\nde\LinkedList.h
+File ${PROJECTS}\nde\nde.h
+File ${PROJECTS}\nde\win\nde_c.h
+File ${PROJECTS}\nde\win\nde_c.cpp
+File ${PROJECTS}\nde\win\nde_init.cpp
+File ${PROJECTS}\nde\NDEString.cpp
+File ${PROJECTS}\nde\NDEString.h
+File ${PROJECTS}\nde\win\Query.cpp
+File ${PROJECTS}\nde\win\Query.h
+File ${PROJECTS}\nde\win\Record.cpp
+File ${PROJECTS}\nde\win\Record.h
+File ${PROJECTS}\nde\resource.h
+File ${PROJECTS}\nde\win\Scanner.cpp
+File ${PROJECTS}\nde\win\Scanner.h
+File ${PROJECTS}\nde\win\StringField.cpp
+File ${PROJECTS}\nde\win\StringField.h
+;File ${PROJECTS}\nde\StringFieldW.cpp
+;File ${PROJECTS}\nde\StringFieldW.h
+File ${PROJECTS}\nde\win\Table.cpp
+File ${PROJECTS}\nde\win\Table.h
+File ${PROJECTS}\nde\version.rc2
+File ${PROJECTS}\nde\win\Vfs.cpp
+File ${PROJECTS}\nde\win\Vfs.h

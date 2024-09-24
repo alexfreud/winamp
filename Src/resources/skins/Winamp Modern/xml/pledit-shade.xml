@@ -1,0 +1,22 @@
+<!-- pledit-shade.xml creates the layout of the Playlist Shade Window. -->
+
+  <include file="pledit-shade-group.xml"/>
+
+  <layout
+    id="shade"
+    minimum_w="354"
+    minimum_h="25"
+    h="25"
+    w="436"
+    droptarget="pldr"
+    background="wasabi.frame.basetexture"
+    linkwidth="normal"
+appbar="top|bottom"
+  >
+
+  <group id="plshade" x="0" y="0" sysregion="1" w="0" relath="1"/>
+
+</layout>
+
+
+

@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="avs_eelif.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cfgwin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="laser\laser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="laser\laserline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="laser\ld32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="linedraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="laser\linelist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_avi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_blit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_blur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_bpm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_bright.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_bspin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_bump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_chanshift.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_clear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_colorfade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_colorreduction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_comment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_contrast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_dcolormod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_ddm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_dmove.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_dotfnt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_dotgrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_dotpln.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_fadeout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_fastbright.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_grain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_interf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_interleave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_invert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_linemode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_mirror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_mosaic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_multidelay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_multiplier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_nfclr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_onetone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_oscring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_oscstar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_parts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_picture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_rotblit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_rotstar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_scat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_shift.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_simple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_sscope.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_stack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_stars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_svp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_timescope.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_trans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_transition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_videodelay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_unkn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_water.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="r_waterbump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="laser\rl_beathold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="laser\rl_bren.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="laser\rl_cones.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="laser\rl_line.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="laser\rl_trans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TIMING.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="undo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ns-eel2\nseel-caltab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ns-eel2\nseel-cfunc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ns-eel2\nseel-compiler.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ns-eel2\nseel-eval.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ns-eel2\nseel-lextab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ns-eel2\nseel-ram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ns-eel2\y.tab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="avs_eelif.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cfgwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="laser\laserline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="laser\Ld32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="laser\linelist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="r_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="r_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="r_transition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="r_unkn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TIMING.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="undo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\glue_x86.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\ns-eel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\ns-eel-addfuncs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ns-eel2\ns-eel-int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="avs-hilited.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="avs-normal.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="avs-selected.png">
+      <Filter>Image Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bump_lig.bin">
+      <Filter>Bin Files</Filter>
+    </None>
+    <None Include="color_mo.bin">
+      <Filter>Bin Files</Filter>
+    </None>
+    <None Include="dyn_dist.bin">
+      <Filter>Bin Files</Filter>
+    </None>
+    <None Include="dyn_move.bin">
+      <Filter>Bin Files</Filter>
+    </None>
+    <None Include="dyn_shift.bin">
+      <Filter>Bin Files</Filter>
+    </None>
+    <None Include="effect_l.bin">
+      <Filter>Bin Files</Filter>
+    </None>
+    <None Include="help_1.bin">
+      <Filter>Bin Files</Filter>
+    </None>
+    <None Include="help_2.bin">
+      <Filter>Bin Files</Filter>
+    </None>
+    <None Include="help_3.bin">
+      <Filter>Bin Files</Filter>
+    </None>
+    <None Include="help_4.bin">
+      <Filter>Bin Files</Filter>
+    </None>
+    <None Include="movement.bin">
+      <Filter>Bin Files</Filter>
+    </None>
+    <None Include="supersco.bin">
+      <Filter>Bin Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="vis_avs.txt" />
+    <Text Include="whatsnew.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0c48c00b-88c3-4d28-8885-18c16c3cd71f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{0602e4a3-e8f4-495f-baaa-fa3612b2a340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ac7b0822-e89e-4c0c-b819-1bac21bf5c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{e7728cec-04d3-427a-bad9-aa1be3e625c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bin Files">
+      <UniqueIdentifier>{1a8c5984-38ed-45af-9ff5-e097cc54fd83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

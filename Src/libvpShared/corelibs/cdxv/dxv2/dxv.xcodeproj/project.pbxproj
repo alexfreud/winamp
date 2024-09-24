@@ -1,0 +1,205 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C442A480BB78AD600B3EE20 /* ximage.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C442A470BB78AD600B3EE20 /* ximage.c */; };
+		0C442A760BB78BC700B3EE20 /* vscreen.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C442A750BB78BC700B3EE20 /* vscreen.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C442A470BB78AD600B3EE20 /* ximage.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ximage.c; path = generic/ximage.c; sourceTree = "<group>"; };
+		0C442A750BB78BC700B3EE20 /* vscreen.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = vscreen.c; path = generic/vscreen.c; sourceTree = "<group>"; };
+		D2AAC046055464E500DB518D /* libdxv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdxv.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289987405E68DCB004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* dxv */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6A0FF2B0290797F04C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = dxv;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0C442A470BB78AD600B3EE20 /* ximage.c */,
+				0C442A750BB78BC700B3EE20 /* vscreen.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC046055464E500DB518D /* libdxv.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6A0FF2B0290797F04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC043055464E500DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC045055464E500DB518D /* dxv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91EB08733DB70010E9CD /* Build configuration list for PBXNativeTarget "dxv" */;
+			buildPhases = (
+				D2AAC043055464E500DB518D /* Headers */,
+				D2AAC044055464E500DB518D /* Sources */,
+				D289987405E68DCB004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dxv;
+			productName = dxv;
+			productReference = D2AAC046055464E500DB518D /* libdxv.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "dxv" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* dxv */;
+			projectDirPath = "";
+			targets = (
+				D2AAC045055464E500DB518D /* dxv */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC044055464E500DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C442A480BB78AD600B3EE20 /* ximage.c in Sources */,
+				0C442A760BB78BC700B3EE20 /* vscreen.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91EC08733DB70010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = dxv;
+				USER_HEADER_SEARCH_PATHS = "include ../include ../../include ../../.. ../../../include";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB91ED08733DB70010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = dxv;
+				USER_HEADER_SEARCH_PATHS = "include ../include ../../include ../../.. ../../../include";
+			};
+			name = Release;
+		};
+		1DEB91F008733DB70010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				OBJROOT = build;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SYMROOT = ../../../lib/osx;
+				USER_HEADER_SEARCH_PATHS = "../include ../../include ../../.. ../../../include ../../../../include";
+			};
+			name = Debug;
+		};
+		1DEB91F108733DB70010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				OBJROOT = build;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SYMROOT = ../../../lib/osx;
+				USER_HEADER_SEARCH_PATHS = "include ../include ../../include ../../.. ../../../include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91EB08733DB70010E9CD /* Build configuration list for PBXNativeTarget "dxv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91EC08733DB70010E9CD /* Debug */,
+				1DEB91ED08733DB70010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "dxv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91F008733DB70010E9CD /* Debug */,
+				1DEB91F108733DB70010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

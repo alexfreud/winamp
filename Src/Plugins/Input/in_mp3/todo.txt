@@ -1,0 +1,97 @@
+Changes:
+  * [a7] made seeking work (slightly) better on realshitbox encoded mp3s (with broken
+    VBR headers)
+  * [a7] made save http file location persistent when turned off
+  * [a7] fixed id3v2 bug (1 character strings not being displayed correctly)
+  * [a6] fixed stupid file association bug (oops)
+  * [a5] fixed crash when repeating a non-existing file bug (added a Sleep())
+  * [a5] fixed shoutcast disk writer issue
+  * [a5] fixed SendMessage() potential issues (using postmessage and SendMessageTimeout() now)
+  * [a5] added new format-for-non-id3 files, added 'use id3 tag' option, which lets you disable them
+         completely
+  * [a5] return of the file association list
+  * [a5] made temp file handling slightly better-- checks for read only, better error messages.
+  * [a4] fixed lots of potential (and a few serious) bugs in id3lib. 
+  * [a4] fixed pause right after playback starts bug
+  * fixed crash/hang/freeze when reading some mp3 files with a weird id3v2 tag (as found in some
+    real jukebox generated mp3s, etc...)
+  * this one will break a few things (i.e. windowshade vis), because justin is updating it to go 
+    with winamp 2.7
+  * all code is now win32 file io
+  * %a will now display id3v1.1/v2 track #
+  * fixed id3v1 reading bug that added year field in album field
+  * why does it ask me to stop the currently playing file when updating an id3v2 tag ?
+    answer:
+    whenever you strip or update an id3v2 tag, it creates a tmp file (FILENAME.new), 
+    writes it out, and if it wrote it out correctly, then it renames the original 
+    to FILENAME.bak, and renames the new one to FILENAME, and if that was successful, 
+    then deletes FILENAME.bak). this is required because of the implementation of the
+    id3v2 protocol.
+
+  * [2.666b] fixed crash when using crossfading output plugin
+  * [2.666b] fixed the issue that files with large id3v2 tags don't seek correctly
+  * [2.666b] added id3v1.1 track field editing
+  * [2.666b] simplified id3 edit box (removed all save/remove buttons, all is done via
+             update button now)
+  * [2.666b] fixed some more stuff in id3 edit box... should be more reliable
+  * [2.666b] contains devil easter egg
+
+  * winamp 2.666 release
+
+  * [a18] dll is smaller
+  * [a18] fixed vbr header reading on some musicmatch/crap generated files
+  * [a18] id3v1.1 track # reading support (who cares about id3v1.1 writing?)
+  * [a18] crc checking is now activable in prefs box
+  * [a18] "show average on VBR files" is now activable in prefs box
+  * [a17] "update tags" button only saves selected tags now
+  * [a17] vbr-division-by-0-bug-on-edit fixed
+  * [a17] long id3v1 tags reading corrected
+  * [a17] id3v2 url tag will now interact with the minibrowser
+  * [a17] added id3v2 variables to id3 title formatting
+  * [a16] corrected crash/bug in id3v2 genre reading
+  * [a16] corrected id3v2 comment editor to support multiple lines :)
+  * [a16] new "stop track" button in id3v2 editor so you don't have to retype everything
+          when id3v2 can't be updated because file is locked
+  * [a16] added track number id3v2 field
+  * [a16] id3v2 warnings no more appear under id3 tag editor
+  * [a10] streaming info improvements/fixes
+  * [a10] made more options for streaming title formatting (for you brennan)
+  * [a10] still needs better id3v2 reading writing. THIS IS ON THE WAY, CHILL.
+  * [a9] improved streaming error notification (i.e. on can't connect, can't resolve, timeout)
+  * [a9] made streaming detect id3v2 tag and skip it (todo: make it look at the id3v2 tag and use it)
+  * [a9] updated id3v2 support to detect invalid id3v2 tags, and autodetect their actual 
+         size
+  * [a9] info box now tells you where the first mpeg header was found (useful)
+  * [a8] fixed live365 streaming (they need a space between User-Agent: 
+         and the agent string. those assclowns.)
+  * [a8] rescheduled some of the polyphase for a few cycles
+  * [a7] bugfix: vbr headers read when id3v2 tag is present now
+  * [a7] downsampling modes have better vis support
+  * [a7] id3v2 writing support
+  * [a7] stream info box
+  * [a6] mmm.
+  * [a6] return of working id3 code
+  * [a5] optimized bitgetting. 
+  * [a5] keen streaming buffer indicators in mini-vis display
+  * [a5] made fast eq modes optional (can use slow pcm eq like wav files)
+  * [a5] fixed fastly-changing-tracks bug
+  * [a4] tuned decode loop more
+  * [a4] optimized huffman decoding
+  * [a3] improved network code. updates status in title area.
+  * [a3] layer 1/2 eq code
+  * [a3] optimized decoder some more. we can still make it a bit faster me thinks.
+  * [a3] moved more code into decode thread.. should act much more asynchronously
+  * [a2] Improved skip robustness
+  * [a2] Optimized decoder for ppro. changed 8 bit mode for speed.
+  * [a2] partial ID3V2 support
+  * Fully ISO compliant decoder (based on FHG's implementation)
+    * Also fully supports MPEG 2.5 low bitrates.
+  * Full MPEG Layer 1 and Layer 2 support
+  * Improved equalizer code
+  * Optimized visualization data generation code
+  * Improved network code (single threaded)
+  * Lots of other cleanups
+
+todo:
+  make more blip resistant (see pvd.mp3)
+  remove seek-blip

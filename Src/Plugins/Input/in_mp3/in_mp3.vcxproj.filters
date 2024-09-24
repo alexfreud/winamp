@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AACFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="adts_vlb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlbumArt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="apev2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVbriHeader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DecodeThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DXHEAD.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtendedInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtendedRead.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="giofile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="id3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="id3dlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ID3v1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ID3v2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LAMEinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lyrics3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Metadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MetadataFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MP3Info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpegutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OFL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pdtimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RawMediaReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stopper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="titlelist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uvox_3902.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uvox_3901.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WasabiMetadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\listview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\RingBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AACFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adts_vlb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apev2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlbumArt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api__in_mp3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVbriHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DecodeThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DXHEAD.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="giofile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="id3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ID3v1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ID3v2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ifc_mpeg_stream_reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LAMEinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lyrics3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MetadataFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MP3Info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpegutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OFL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pdtimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RawMediaReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stopper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uvox_3901.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uvox_3902.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WasabiMetadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\RingBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_metatag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{21897fc1-e5e6-4baf-8768-1f94870c3daf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{cf21f14f-48fa-49b3-bd4e-121aea3d1c61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d4950784-f6d6-4b2a-8b50-077f3edbee40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="in_mp3.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

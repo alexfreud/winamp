@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ml_online\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="local_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nu\MediaLibraryInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gen_ml\menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nu\menuHelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="navigation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nu\trace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wasabi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wasabiCallback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ml_online\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="local_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nu\MediaLibraryInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gen_ml\menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="navigation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wasabi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wasabiCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="png.rc">
+      <Filter>Header Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="ml_nowplaying.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{a1f12bb1-c2c0-49d3-b74a-5f8bbac3dee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{8fef1ee3-d193-47aa-872e-843f5178bcc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f17e7245-8101-4787-b60f-874085ddb8a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

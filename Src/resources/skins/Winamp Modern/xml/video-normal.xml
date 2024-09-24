@@ -1,0 +1,234 @@
+<groupdef id="video.buttons.group" relatw="1" w="0" h="21">
+  <layer
+    x="0" y="0"
+    image="player.button.video.bg.detached.left"
+  />
+  <layer
+    x="74" y="0"
+    relatw="1" w="-264"
+    image="player.button.video.bg.detached.center"
+  />
+  <layer
+    x="-190" y="0"
+    relatx="1"
+    image="player.button.video.bg.detached.right"
+  />
+
+  <button
+    id="button.vid.fs"
+    action="VID_FS"
+    x="3" y="3"
+    image="player.button.video.fs"
+    downImage="player.button.video.fs.pressed"
+    hoverImage="player.button.video.fs.hover"
+    tooltip="Fullscreen"
+    rectrgn="1"
+  />
+
+  <button
+    id="button.vid.1x"
+    action="VID_1X"
+    x="26" y="3"
+    image="player.button.video.s1x"
+    downImage="player.button.video.s1x.pressed"
+    hoverImage="player.button.video.s1x.hover"
+    tooltip="Normal Size"
+    rectrgn="1"
+  />
+
+  <button
+    id="button.vid.2x"
+    action="VID_2X"
+    x="49" y="3"
+    image="player.button.video.s2x"
+    downImage="player.button.video.s2x.pressed"
+    hoverImage="player.button.video.s2x.hover"
+    tooltip="Double Size"
+    rectrgn="1"
+  />
+
+
+  <!--<button
+    id="button.vid.tv"
+    action="VID_TV"
+    x="-183" y="3"
+    relatx="1"
+    image="player.button.video.tv"
+    downImage="player.button.video.tv.pressed"
+    hoverImage="player.button.video.tv.hover"
+    tooltip="Internet TV"
+    rectrgn="1"
+  />-->
+
+  <button
+    id="button.vid.misc"
+    action="VID_Misc"
+    x="-158" y="3"
+    relatx="1"
+    image="player.button.video.misc"
+    downImage="player.button.video.misc.pressed"
+    hoverImage="player.button.video.misc.hover"
+    tooltip="Options"
+    rectrgn="1"
+  />
+
+
+  <text
+    id="wasabi.statusbar.text"
+    x="75" y="3"
+    w="-265" h="12"
+    relatw="1"
+    font="arial"
+    color="drawer.color.text.dark" fontsize="14"
+    display="VID_Info" wrap="0"
+    ghost="1"
+  />
+
+
+  <layer
+    x="-128" y="0"
+    relatx="1"
+    image="player.button.video.reattach.bg"
+  />
+  <button
+    id="button.video.reattach"
+    x="-124" y="4"
+    relatx="1"
+    image="player.button.video.reattach"
+    downImage="player.button.video.reattach.pressed"
+    hoverImage="player.button.video.reattach.hover"
+    tooltip="Reattach Video"
+    rectrgn="1"
+  />
+
+  <layer
+    x="-24" y="4"
+    relatx="1"
+    image="player.pl.resizer"
+    resize="bottomright"
+  />
+
+</groupdef>
+
+
+<groupdef id="video.frame.layout" relatw="1" relath="1" w="0" h="-18" background="wasabi.frame.basetexture">
+  <layer
+    x="0" y="0"
+    image="player.pl.topleft"
+    resize="topleft"
+  />
+  <layer
+    x="6" y="0"
+    w="-12"
+    relatw="1"
+    image="player.pl.topcenter"
+    resize="top"
+  />
+  <layer
+    x="-6" y="0"
+    relatx="1"
+    image="player.pl.topright"
+    resize="topright"
+  />
+  <layer
+    x="0" y="5"
+    relath="1"
+    h="-50"
+    image="player.pl.left"
+    resize="left"
+  />
+  <layer
+    x="-6" y="5"
+    relatx="1"
+    relath="1"
+    h="-50"
+    image="player.pl.right"
+    resize="right"
+  />
+  <layer
+    x="0" y="-67"
+    relaty="1"
+    image="player.pl.bottomleft"
+    resize="bottomleft"
+  />
+  <layer
+    x="20" y="-25"
+    w="-40"
+    relatw="1"
+    relaty="1"
+    image="player.pl.bottomcenter"
+    resize="bottom"
+  />
+  <layer
+    x="-20" y="-67"
+    relatx="1"
+    relaty="1"
+    image="player.pl.bottomright"
+    resize="bottomright"
+  />
+  <layer
+    x="0" y="-6"
+    relaty="1"
+    image="player.main.left.region"
+    resize="left"
+    sysregion="-2"
+  />
+  <layer
+    x="-6" y="-6"
+    relaty="1"
+    relatx="1"
+    image="player.main.right.region"
+    sysregion="-2"
+  />
+  <group id="video.buttons.group" x="5" y="-22" relaty="1"/>
+</groupdef>
+
+<groupdef id="player.content.video.dummy.group" name="VideoDummyGroup" relatw="1" relath="1" w="0" h="0">
+  <group id="video.frame.layout" x="0" y="0"/>
+  <component
+    x="6"
+    y="5"
+    w="-12"
+    relatw="1"
+    h="-48"
+    relath="1"
+    noshowcmdbar="1"
+    autoopen="1"
+    autoclose="1"
+    param="{F0816D7B-FFFC-4343-80F2-E8199AA15CC3}"
+  />
+</groupdef>
+
+<groupdef id="video.content.group" name="PlaylistContent">
+  <group id="player.content.video.dummy.group" x="0" y="0" sysregion="1"/>
+  <script id="video.script" file="scripts/video.maki" />
+</groupdef>
+
+
+<layout id="normal" minimum_w="354" minimum_h="164" h="280" w="354">
+
+  <Wasabi:VISFrame:NoStatus
+    x="0" y="0" w="0" h="0" relatw="1" relath="1"
+    content="video.content.group"
+    padtitleleft="10"
+    padtitleright="0"
+  />
+
+  <sendparams target="window.titlebar.title" default="VIDEO"/>
+  <sendparams target="mousetrap" dblClickAction="SWITCH;shade"/>
+  <sendparams target="window.top.left;window.top;window.top.right;window.left;window.right;window.bottom.left.top;window.bottom.left;window.bottom.left.bottom;window.bottom.top;window.bottom;window.bottom.bottom;window.bottom.right.top;window.bottom.right;window.bottom.right.bottom;" resize="0"/>
+
+    <layer
+        x="0" y="0" w="0" h="3"
+        relatw="1"
+        resize="top"
+  />
+
+</layout>
+
+
+
+
+
+
+

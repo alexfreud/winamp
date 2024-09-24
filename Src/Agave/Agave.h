@@ -1,0 +1,22 @@
+#pragma once
+
+#include <api/service/waServiceFactory.h>
+#include <api/service/api_service.h>
+#include <api/application/api_application.h>
+#include <api/syscb/api_syscb.h>
+#include <api/memmgr/api_memmgr.h>
+#include "./Metadata/api_metadata.h"
+#include "./Language/api_language.h"
+#include "../Plugins/Library/ml_local/api_mldb.h"
+#include "../ombrowser/obj_ombrowser.h"
+#include "../Winamp/JSAPI2_api_security.h"
+#include "./Config/api_config.h"
+#include "./AlbumArt/api_albumart.h"
+#include "../playlist/api_playlistmanager.h"
+#include "../nu/threadpool/api_threadpool.h"
+#include "../devices/api_devicemanager.h"
+#include "../Winamp/api_stats.h"
+#include "../Plugins/Library/ml_wire/api_podcasts.h"
+#include "../Plugins/Library/ml_impex/api_importer.h"
+#include "../Plugins/Library/ml_plg/api_playlist_generator.h"
+#include "./ExplorerFindFile/api_explorerfindfile.h"

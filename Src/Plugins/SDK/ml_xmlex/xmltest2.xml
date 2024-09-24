@@ -1,0 +1,7 @@
+<Library>
+<Song Filename="C:\Music\artist1 - title1.mp3" Artist="artist" Title="title"/>
+<Song Filename="C:\Music\artist2 - title2.wma" Artist="artist2" Title="title2"/>
+<Song Filename="C:\Music\artist3 - title3.mp3" Artist="artist3" Title="title3"/>
+<Song Filename="C:\Music\artist4 - title4.ogg" Artist="artist4" Title="title4"/>
+<Song Filename="C:\Music\artist5 - title5.aac" Artist="artist5" Title="title5"/>
+</Library>

@@ -1,0 +1,331 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 344, 142
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Windows Media Decoder Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "General",IDC_STATIC,4,4,156,59
+    CONTROL         "Retrieve metadata for HTTP streams",IDC_HTTPMETA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,16,133,10
+    LTEXT           "Streaming prebuffer: ",IDC_STATIC,10,30,70,8
+    EDITTEXT        IDC_BUFFER_TIME,81,28,41,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,126,30,10,8
+    LTEXT           "Speaker Configuration:",IDC_STATIC,10,43,75,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_AUDIO_SPEAKER_COUNT,88,43,66,83,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Advanced Settings",IDC_STATIC,4,67,156,52
+    LTEXT           "Warning: For advanced users only!",IDC_STATIC,10,83,128,10
+    PUSHBUTTON      "Advanced ...",IDC_ADVANCED,52,98,50,13
+/*  GROUPBOX        "Protected Media",IDC_STATIC,4,80,156,42
+    CONTROL         "Try to acquire licenses silently",IDC_SILENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,93,111,10
+    CONTROL         "Always accept untrusted certificates",IDC_UNTRUSTED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,106,133,10
+*/
+    GROUPBOX        "Filetypes",IDC_STATIC,164,4,176,134
+    CONTROL         "",IDC_TYPELIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,172,17,161,85
+    PUSHBUTTON      "Add ...",IDC_ADDTYPE,172,107,51,13
+    PUSHBUTTON      "Edit ...",IDC_EDITTYPE,227,107,50,13
+    PUSHBUTTON      "Remove",IDC_REMOVETYPE,281,107,52,13
+    CONTROL         "Enable WAX/WMX/WVX playlist extensions",IDC_EXTRA_ASX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,172,124,151,10
+    PUSHBUTTON      "Save",IDOK,4,125,46,13
+    PUSHBUTTON      "Cancel",IDCANCEL,54,125,48,13
+    PUSHBUTTON      "Defaults",IDC_DEFAULTTYPE,110,125,50,13
+END
+
+IDD_ADDTYPE DIALOGEX 0, 0, 168, 124
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add File Type"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Type",IDC_STATIC_TYPE,4,9,36,8,NOT WS_GROUP
+    EDITTEXT        IDC_TYPE,44,7,120,12,ES_AUTOHSCROLL
+    LTEXT           "Description",IDC_STATIC,4,25,36,8,NOT WS_GROUP
+    EDITTEXT        IDC_DESCRIPTION,44,23,120,12,ES_AUTOHSCROLL
+    GROUPBOX        "Extension Type",IDC_STATIC,4,40,160,30
+    CONTROL         "File Extension",IDC_FILEEXTENSION,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,53,60,10
+    CONTROL         "Protocol",IDC_PROTOCOL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,84,53,42,10
+    GROUPBOX        "Media Type",IDC_STATIC,4,73,160,30
+    CONTROL         "Audio Only",IDC_TYPE_AUDIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,86,51,10
+    CONTROL         "Audio/Video",IDC_TYPE_VIDEO,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,84,86,54,10
+    DEFPUSHBUTTON   "OK",IDOK,60,107,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,114,107,50,13
+END
+
+IDD_ADVANCED DIALOGEX 0, 0, 190, 214
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Windows Media Decoder Advanced Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Audio",IDC_STATIC,4,4,182,60
+    CONTROL         "Dedicated Delivery Thread",IDC_AUDIO_THREAD,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,204,15,101,10
+    CONTROL         "Deliver samples early",IDC_AUDIO_EARLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,18,80,10
+    LTEXT           "and add",IDC_STATIC,96,18,30,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_AUDIO_EARLYPAD,126,17,40,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,168,18,11,10,SS_CENTERIMAGE
+    CONTROL         "Allow out-of-order frames",IDC_AUDIO_OUTOFORDER,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,204,25,99,10
+    LTEXT           "cache",IDC_STATIC,12,32,21,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_AUDIO_CACHE_FRAMES,37,32,40,12,ES_AUTOHSCROLL
+    LTEXT           "frames",IDC_STATIC,81,32,30,12,SS_CENTERIMAGE
+    CONTROL         "Drop audio frames instead of video frames",IDC_AUDIO_DROP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,48,152,10
+    GROUPBOX        "General",IDC_STATIC,4,164,182,28
+    CONTROL         "Low Memory",IDC_LOWMEMORY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,175,56,10
+    CONTROL         "Real Time",IDC_REALTIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,175,47,10
+    GROUPBOX        "Video",IDC_STATIC,4,68,182,93
+    CONTROL         "Dedicated Delivery Thread",IDC_VIDEO_THREAD,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,205,113,101,10
+    CONTROL         "Deliver samples early",IDC_VIDEO_EARLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,81,80,10
+    LTEXT           "by",IDC_STATIC,96,81,10,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_VIDEO_EARLYPAD,108,81,40,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,150,81,11,10,SS_CENTERIMAGE
+    CONTROL         "Allow out-of-order frames",IDC_VIDEO_OUTOFORDER,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,205,126,99,10
+    LTEXT           "Cache",IDC_STATIC,14,97,21,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_VIDEO_CACHE_FRAMES,42,97,40,12,ES_AUTOHSCROLL
+    LTEXT           "frames",IDC_STATIC,88,97,30,12,SS_CENTERIMAGE
+    LTEXT           "Jitter:",IDC_STATIC,14,113,20,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_VIDEO_JITTER,42,113,40,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,88,113,10,12,SS_CENTERIMAGE
+    LTEXT           "Frame drop threshold:",IDC_STATIC,12,131,72,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_VIDEO_DROP_THRESHOLD,88,129,40,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,132,131,10,10,SS_CENTERIMAGE
+    CONTROL         "Report dropped frames to decoder",IDC_VIDEO_NOTIFY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,145,127,10
+    DEFPUSHBUTTON   "OK",IDOK,82,197,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,136,197,50,13
+END
+
+IDD_INFO DIALOGEX 0, 0, 341, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Advanced",-1,0,0,341,164
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,13,327,143
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 340
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_ADDTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_ADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 186
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 210
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_WINDOWS_MEDIA_DECODER "Nullsoft Windows Media Decoder v%s"
+    65535                   "{C5B78F09-3222-4a64-AA98-F1ABC5A9E355}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_WINDOWS_MEDIA_DECODER_OLD "Nullsoft Windows Media Decoder"
+    IDS_REALTIME            "Realtime"
+    IDS_CONNECTING          "Connecting"
+    IDS_LOCATING            "Locating"
+    IDS_ACCESS_DENIED       "Access Denied"
+    IDS_STEREO              "Stereo"
+    IDS_QUADROPHONIC        "Quadrophonic"
+    IDS_SURROUND            "Surround"
+    IDS_5_1                 "5.1"
+    IDS_7_1                 "7.1"
+    IDS_EXT                 "Ext"
+    IDS_DESCRIPTION         "Description"
+    IDS_PROTOCOL            "Protocol"
+    IDS_EXTENSION           "Extension"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_FILE_TYPE      "Edit File Type"
+    IDS_WMA_AUDIO_FILE      "Windows Media Audio File (*.WMA)"
+    IDS_WMA_VIDEO_FILE      "Windows Media Video File (*.WMV)"
+    IDS_ASF_STREAM          "Advanced Streaming Format (*.ASF)"
+    IDS_WINDOWS_MEDIA_STREAM "Windows Media Stream"
+    IDS_UNKNOWN_ERROR       "unknown error: %x"
+    IDS_ATTRIBUTE           "Attribute"
+    IDS_VALUE               "Value"
+    IDS_CLOSE               "Close"
+    IDS_UNABLE_TO_WRITE_TO_FILE_DOES_FILE_EXIST 
+                            "Unable to write to file\nDoes the file still exist?"
+    IDS_UNABLE_TO_WRITE_TO_FILE "Unable to write to file"
+    IDS_UNABLE_TO_WRITE_TO_FILE_MAY_NOT_HAVE_ACCESS 
+                            "Unable to write to file\nYou may not have access to modify this file."
+    IDS_SAVE_FAILED         "Save failed"
+    IDS_TRUE                "True"
+    IDS_FALSE               "False"
+    IDS_UNKNOWN             "Unknown"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WINDOWS_MEDIA_XXX   "Windows Media: %dx%d %c%c%c%c"
+    IDS_WINDOWS_MEDIA_PROTECTED_CONTENT_NEED_LICENSE 
+                            "Windows Media Protected Content\n\nIn order to play this file, you must acquire a license.\nA website will launch to perform this process.\n\nProceed?"
+    IDS_LICENSE_REQUIRED    "License required"
+    IDS_BEGINNING_UPDATE    "Beginning Update"
+    IDS_UPDATE_FAILED       "Update Failed"
+    IDS_UPDATE_CANCELLED    "Update Cancelled"
+    IDS_IDLE                "Idle"
+    IDS_REQUESTING          "Requesting"
+    IDS_RECEIVING_DATA      "Receiving Data"
+    IDS_COMPLETED           "Completed"
+    IDS_INSTALLING          "Installing"
+    IDS_FILE_PROTECTED_CANNOT_PLAY_IN_WINAMP 
+                            "This file is protected, but cannot be played in Winamp."
+    IDS_LICENSE_ACQUIRED    "License Acquired"
+    IDS_WINDOWS_MEDIA_PROTECTED_CONTENT_UNTRUSTED_SOURCE 
+                            "Windows Media Protected Content\n\nThe license for this license is from an untrusted source.\n\nProceed?"
+    IDS_UNTRUSTED_LICENSE   "Untrusted License"
+    IDS_WINDOWS_MEDIA_PROTECTED_CONTENT_TAMPERED_LICENSE 
+                            "Windows Media Protected Content\n\nThe license for this license appeared to have been tampered.\nIt is recommended that you answer ""No"".\n\nProceed?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TAMPERED_LICENSE    "Tampered License"
+    IDS_WINDOWS_MEDIA_PROTECTED_CONTENT_SECURITY_UPDATE 
+                            "Windows Media Protected Content\n\nIn order to play this file, a security update is required.\n\nProceed?"
+    IDS_SECURITY_UPDATE_REQUIRED "Security Update Required"
+    IDS_UPDATING            "Updating"
+    IDS_ENCRYPTED_IN_OP_LEVEL_HIGHER_THAN_SUPPORTED 
+                            "This file is encrypted with an Output Protection Level higher than supported in Winamp."
+    IDS_WINDOWS_MEDIA_PLAYBACK_FAILURE "Windows Media Playback Failure"
+    IDS_UPDATE_REQUIRED     "Update required"
+    IDS_ACQUIRING_LICENSE   "Acquiring License"
+    IDS_DRM_LICENSE_EXPIRED_VISIT_WINAMP_COM 
+                            "DRM License has expired! Please visit Winamp.com"
+    IDS_ERROR               "Error"
+    IDS_BUFFERING           "Buffering"
+    IDS_UNKNOWN_ERROR_WAV   "Unknown Error."
+    IDS_CODEC               "Codec"
+    IDS_DURATION            "Duration"
+    IDS_BITRATE             "Bitrate"
+    IDS_FILESIZE            "File Size"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+    IDS_WMVER               "WM Version"
+    IDS_SEEKABLE            "Seekable"
+    IDS_STRIDABLE           "Stridable"
+    IDS_BROADCAST           "Broadcast"
+    IDS_PROTECTED           "Protected"
+    IDS_TRUSTED             "Trusted"
+    IDS_CONTAINS            "Contains"
+    IDS_NAME                "Name"
+    IDS_KBPS                "kbps"
+    IDS_ABOUT_TEXT          "%s\n© 2005-2023 Winamp SA\nWritten by: Ben Allison\nBuild date: %s\n\nWindows Media is a trademark\nof Microsoft Corporation."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AUDIO               "Audio"
+    IDS_VIDEO               "Video"
+    IDS_IMAGE               "Image"
+    IDS_SCRIPT              "Script"
+    IDS_NONE                "None"
+    IDS_WINDOWS_MEDIA_PLAYLIST "Windows Media Playlist"
+    IDS_ASX_PLAYLIST        "Advanced Streaming Redirector (ASX)"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

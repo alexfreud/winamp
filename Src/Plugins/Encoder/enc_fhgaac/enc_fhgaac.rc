@@ -1,0 +1,150 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PREFERENCES_MP4 DIALOGEX 0, 0, 256, 167
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "MPEG-4 AAC Encoder Options",IDC_STATIC,0,0,255,130
+    LTEXT           "Mode:",IDC_STATIC,57,14,27,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_MODE,87,14,110,106,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Profile:",IDC_STATIC_PROFILE,57,32,27,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_PROFILE,87,32,110,103,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Preset:",IDC_STATIC_PRESET,9,43,24,15,SS_CENTERIMAGE
+    CONTROL         "",IDC_SLIDER_PRESET,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,28,57,170,15
+    EDITTEXT        IDC_EDIT_PRESET,203,58,25,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "kbps",IDC_KBPS,231,60,16,8,SS_CENTERIMAGE
+    LTEXT           "Smallest Size",IDC_STATIC,16,76,42,8
+    LTEXT           "Highest Quality",IDC_STATIC,168,76,50,8
+    GROUPBOX        "Output Information",IDC_STATIC,0,91,255,39
+    LTEXT           "",IDC_INFO_MODE,12,103,208,8
+    LTEXT           "",IDC_INFO_BITRATE,12,113,185,8
+    CONTROL         "Help",IDC_HELPLINK,"Button",BS_OWNERDRAW | WS_TABSTOP,223,108,19,10
+    LTEXT           "HE-AAC encoding licensed by ",IDC_STATIC,12,135,115,8,SS_CENTERIMAGE
+    CONTROL         "Fraunhofer IIS",IDC_URL,"Button",BS_OWNERDRAW | WS_TABSTOP,12,146,50,8
+    CONTROL         104,IDC_LOGO,"Static",SS_BITMAP | SS_NOTIFY,161,134,75,25
+    LTEXT           "",IDC_VERSION,12,157,115,8
+END
+
+IDD_PREFERENCES_ADTS DIALOGEX 0, 0, 256, 167
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "ADTS-AAC Encoder Options",IDC_STATIC,0,0,255,130
+    LTEXT           "Files created with this encoder will not play on most devices, including the iPod and Android!  Use the MPEG-4 AAC encoder instead, unless your device specifically requires ADTS files.",IDC_WARNING,9,10,232,24
+    LTEXT           "Profile:",IDC_STATIC_PROFILE,57,37,27,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_PROFILE,87,37,110,103,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Preset:",IDC_STATIC_PRESET,9,43,24,15,SS_CENTERIMAGE
+    CONTROL         "",IDC_SLIDER_PRESET,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,28,57,170,15
+    EDITTEXT        IDC_EDIT_PRESET,203,58,25,12,ES_AUTOHSCROLL
+    LTEXT           "kbps",IDC_KBPS,231,60,16,8,SS_CENTERIMAGE
+    LTEXT           "Smallest Size",IDC_STATIC,16,76,42,8
+    LTEXT           "Highest Quality",IDC_STATIC,168,76,50,8
+    GROUPBOX        "Output Information",IDC_STATIC,0,91,255,39
+    LTEXT           "",IDC_INFO_MODE,12,103,208,8
+    LTEXT           "",IDC_INFO_BITRATE,12,113,185,8
+    CONTROL         "Help",IDC_HELPLINK,"Button",BS_OWNERDRAW | WS_TABSTOP,223,108,19,10
+    LTEXT           "HE-AAC encoding licensed by ",IDC_STATIC,12,135,115,8,SS_CENTERIMAGE
+    CONTROL         "Fraunhofer IIS",IDC_URL,"Button",BS_OWNERDRAW | WS_TABSTOP,12,146,50,8
+    CONTROL         104,IDC_LOGO,"Static",SS_BITMAP | SS_NOTIFY,161,134,75,25
+    LTEXT           "",IDC_VERSION,12,157,115,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FHGLOGO             BITMAP                  "fraunhofer_wa_prefs_noalpha.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    65535                   "{E1763EF4-08AD-44a3-914A-8302748AB975}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ENC_FHGAAC_DESC     "MPEG-4 AAC Encoder v%s"
+    IDS_VBR_PRESET          "Variable Bitrate, Preset %u, typical bitrate: %u kbps"
+    IDS_CBR_PRESET          "Constant Bitrate, target bitrate: %u kbps"
+    IDS_VBR                 "Variable Bitrate (VBR)"
+    IDS_CBR                 "Constant Bitrate (CBR)"
+    IDS_AUTOMATIC           "Automatic"
+    IDS_BITRATE             "Bitrate:"
+    IDS_PRESET              "Preset:"
+    IDS_VERSION             "Version %s"
+    IDC_ENC_ADTS_DESC       "SHOUTcast MPEG-2 ADTS-AAC Encoder v%s"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

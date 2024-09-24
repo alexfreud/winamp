@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="nmrCommon">
+      <UniqueIdentifier>{c34a54ac-e9e7-4c8a-b9f9-9cc7758d3d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nmrCommon\services">
+      <UniqueIdentifier>{3f82ce9b-8dc8-424a-bdde-8c342e7feb9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nmrCommon\threading">
+      <UniqueIdentifier>{fb22ca6f-a754-4d98-b944-dd2661f51e25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nmrCommon\unicode">
+      <UniqueIdentifier>{22dcd7de-78a0-42dc-aaee-5e0e04ac5b77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nmrCommon\win32">
+      <UniqueIdentifier>{1988542f-b8aa-4c7c-8fb6-12b0e2526d28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nmrCommon\stl">
+      <UniqueIdentifier>{58a554bb-7523-4c5d-9241-bd5415e2c419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nmrCommon\file">
+      <UniqueIdentifier>{91c2a3ab-9a23-4d9e-bcd6-5b0d3e510903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webNet">
+      <UniqueIdentifier>{9ee51758-e92b-4ad9-aee0-ed69e46618d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aolxml">
+      <UniqueIdentifier>{1ddb836e-12e8-49a1-b8c2-909481bb2c6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flashPolicyServer">
+      <UniqueIdentifier>{737011da-050f-44ad-b3b6-5d567f7e4637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="listener_clients">
+      <UniqueIdentifier>{5ee15fe3-52cc-4159-923c-e836529f487a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="listener_clients\Header Files">
+      <UniqueIdentifier>{67d8861d-7f54-4184-80dd-c9678138388c}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="yp">
+      <UniqueIdentifier>{6e00589b-88ef-4ea1-8f8b-51596a345943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="geoip">
+      <UniqueIdentifier>{a656032e-a732-4832-b3a3-0bcea8f6d791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="updater">
+      <UniqueIdentifier>{07a48b1f-8e08-4e90-93b4-71653561b78a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="metrics">
+      <UniqueIdentifier>{d27744f0-c242-402c-95be-646dc831abea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="auth">
+      <UniqueIdentifier>{60d7f6d7-1b1e-464a-894b-52daa21450eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aac">
+      <UniqueIdentifier>{95b2a92c-2e41-4f7c-810d-a04ae787d388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mp3">
+      <UniqueIdentifier>{8b2c078c-2c94-41bc-9132-db30125dc6d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flv">
+      <UniqueIdentifier>{a969a98a-24a4-4466-95a2-829958825065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source_clients">
+      <UniqueIdentifier>{bdb6b5dd-09ef-4fd9-83b9-7ca8b40a7695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source_clients\Header Files">
+      <UniqueIdentifier>{1358113b-a1a5-45ec-8c3a-69915899e621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="web_ui">
+      <UniqueIdentifier>{46611830-1bd8-417e-9843-14aa9c2e3a92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="web_ui\Header Files">
+      <UniqueIdentifier>{d9918193-0071-4850-8917-f7ad4516fc3b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="adminList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agentList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bandwidth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="banList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cpucount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filenameMetadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="metadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ripList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streamData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="threadedRunner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uvox2Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="w3cLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="webClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nmrCommon\services\baseOptions.cpp">
+      <Filter>nmrCommon\services</Filter>
+    </ClCompile>
+    <ClCompile Include="nmrCommon\services\logger.cpp">
+      <Filter>nmrCommon\services</Filter>
+    </ClCompile>
+    <ClCompile Include="nmrCommon\services\serviceMain.cpp">
+      <Filter>nmrCommon\services</Filter>
+    </ClCompile>
+    <ClCompile Include="nmrCommon\services\stdServiceImpl.cpp">
+      <Filter>nmrCommon\services</Filter>
+    </ClCompile>
+    <ClCompile Include="nmrCommon\threading\thread.cpp">
+      <Filter>nmrCommon\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="nmrCommon\unicode\uniFile.cpp">
+      <Filter>nmrCommon\unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="nmrCommon\unicode\uniString.cpp">
+      <Filter>nmrCommon\unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="nmrCommon\win32\rezFuncs.cpp">
+      <Filter>nmrCommon\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="nmrCommon\file\fileUtils.cpp">
+      <Filter>nmrCommon\file</Filter>
+    </ClCompile>
+    <ClCompile Include="webNet\socketOps.cpp">
+      <Filter>webNet</Filter>
+    </ClCompile>
+    <ClCompile Include="webNet\urlUtils.cpp">
+      <Filter>webNet</Filter>
+    </ClCompile>
+    <ClCompile Include="aolxml\aolxml.cpp">
+      <Filter>aolxml</Filter>
+    </ClCompile>
+    <ClCompile Include="aolxml\aolxmlutils.cpp">
+      <Filter>aolxml</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_FlashPolicyServer.cpp">
+      <Filter>flashPolicyServer</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_flvClient.cpp">
+      <Filter>listener_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_HTTPClient.cpp">
+      <Filter>listener_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_m4aClient.cpp">
+      <Filter>listener_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_shoutcast1Client.cpp">
+      <Filter>listener_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_shoutcast2Client.cpp">
+      <Filter>listener_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_shoutcastClient.cpp">
+      <Filter>listener_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="yp2.cpp">
+      <Filter>yp</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoIP\libGeoIP\GeoIP.c">
+      <Filter>geoip</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoIP\libGeoIP\md5.c">
+      <Filter>geoip</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoIP\libGeoIP\regionName.c">
+      <Filter>geoip</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoIP\libGeoIP\timeZone.c">
+      <Filter>geoip</Filter>
+    </ClCompile>
+    <ClCompile Include="updater.cpp">
+      <Filter>updater</Filter>
+    </ClCompile>
+    <ClCompile Include="metrics.cpp">
+      <Filter>metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="auth.cpp">
+      <Filter>auth</Filter>
+    </ClCompile>
+    <ClCompile Include="ADTSHeader.cpp">
+      <Filter>aac</Filter>
+    </ClCompile>
+    <ClCompile Include="MP3Header.cpp">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="FLV.cpp">
+      <Filter>flv</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_backup.cpp">
+      <Filter>source_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_HTTPSource.cpp">
+      <Filter>source_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_relay.cpp">
+      <Filter>source_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_relay_shoutcast.cpp">
+      <Filter>source_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_relay_uvox.cpp">
+      <Filter>source_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_shoutcastSource.cpp">
+      <Filter>source_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_uvox2Source.cpp">
+      <Filter>source_clients</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_admincgi.cpp">
+      <Filter>web_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol_HTTPStyle.cpp">
+      <Filter>web_ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="adminList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agentList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bandwidth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="banList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpucount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ripList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streamData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="threadedRunner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uvox2Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="versions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="w3cLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="webClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\services\baseOptions.h">
+      <Filter>nmrCommon\services</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\services\logger.h">
+      <Filter>nmrCommon\services</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\services\serviceMain.h">
+      <Filter>nmrCommon\services</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\services\stdServiceImpl.h">
+      <Filter>nmrCommon\services</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\threading\MT_stl.h">
+      <Filter>nmrCommon\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\threading\thread.h">
+      <Filter>nmrCommon\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\unicode\uniFile.h">
+      <Filter>nmrCommon\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\unicode\uniString.h">
+      <Filter>nmrCommon\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\win32\rezFuncs.h">
+      <Filter>nmrCommon\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\stl\functors.h">
+      <Filter>nmrCommon\stl</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\stl\stlx.h">
+      <Filter>nmrCommon\stl</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\stl\stringUtils.h">
+      <Filter>nmrCommon\stl</Filter>
+    </ClInclude>
+    <ClInclude Include="nmrCommon\file\fileUtils.h">
+      <Filter>nmrCommon\file</Filter>
+    </ClInclude>
+    <ClInclude Include="webNet\socketops.h">
+      <Filter>webNet</Filter>
+    </ClInclude>
+    <ClInclude Include="webNet\urlUtils.h">
+      <Filter>webNet</Filter>
+    </ClInclude>
+    <ClInclude Include="aolxml\aolxml.h">
+      <Filter>aolxml</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_FlashPolicyServer.h">
+      <Filter>flashPolicyServer</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_flvClient.h">
+      <Filter>listener_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_HTTPClient.h">
+      <Filter>listener_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_m4aClient.h">
+      <Filter>listener_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_shoutcast1Client.h">
+      <Filter>listener_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_shoutcast2Client.h">
+      <Filter>listener_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_shoutcastClient.h">
+      <Filter>listener_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="yp2.h">
+      <Filter>yp</Filter>
+    </ClInclude>
+    <ClInclude Include="GeoIP\libGeoIP\GeoIP.h">
+      <Filter>geoip</Filter>
+    </ClInclude>
+    <ClInclude Include="GeoIP\libGeoIP\GeoIP_internal.h">
+      <Filter>geoip</Filter>
+    </ClInclude>
+    <ClInclude Include="GeoIP\libGeoIP\global.h">
+      <Filter>geoip</Filter>
+    </ClInclude>
+    <ClInclude Include="GeoIP\libGeoIP\md5.h">
+      <Filter>geoip</Filter>
+    </ClInclude>
+    <ClInclude Include="GeoIP\libGeoIP\types.h">
+      <Filter>geoip</Filter>
+    </ClInclude>
+    <ClInclude Include="metrics.h">
+      <Filter>metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="auth.h">
+      <Filter>auth</Filter>
+    </ClInclude>
+    <ClInclude Include="ADTSHeader.h">
+      <Filter>aac</Filter>
+    </ClInclude>
+    <ClInclude Include="MP3Header.h">
+      <Filter>mp3</Filter>
+    </ClInclude>
+    <ClInclude Include="FLV.h">
+      <Filter>flv</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_backup.h">
+      <Filter>source_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_HTTPSource.h">
+      <Filter>source_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_relay.h">
+      <Filter>source_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_relay_shoutcast.h">
+      <Filter>source_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_relay_uvox.h">
+      <Filter>source_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_shoutcastSource.h">
+      <Filter>source_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_uvox2Source.h">
+      <Filter>source_clients\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_admincgi.h">
+      <Filter>web_ui\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_HTTPStyle.h">
+      <Filter>web_ui\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icy.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="messagefile.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="sc_serv.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="messagefile.mc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="updater.h">
+      <Filter>updater</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

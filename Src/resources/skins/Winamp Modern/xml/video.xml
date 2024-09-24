@@ -1,0 +1,3 @@
+<container id="Video" name="Video" dynamic="1" component="guid:{F0816D7B-FFFC-4343-80F2-E8199AA15CC3}" default_visible="0" default_x="0" default_y="0" default_w="354">
+	<include file="video-normal.xml"/>
+</container>

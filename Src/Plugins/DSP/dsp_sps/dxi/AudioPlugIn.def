@@ -1,0 +1,7 @@
+LIBRARY         AudioPlugIn.dll
+DESCRIPTION     'AudioPlugIn DXi'
+EXPORTS
+                DllGetClassObject PRIVATE
+                DllCanUnloadNow PRIVATE
+                DllRegisterServer PRIVATE
+                DllUnregisterServer PRIVATE

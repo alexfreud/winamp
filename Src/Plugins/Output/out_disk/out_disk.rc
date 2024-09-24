@@ -1,0 +1,184 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 388, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Output File Location",IDC_OUTPUT_STATIC,4,4,185,126
+    LTEXT           "Directory:",IDC_OUTPUT_DIRECTORY_STATIC,11,20,31,8
+    PUSHBUTTON      "",IDC_OUTPUT_DIRECTORY,45,18,137,13
+    CONTROL         "Output to directory containing source files",IDC_OUTPUT_SRCDIR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,39,151,10
+    CONTROL         "Display ""save as"" dialog for every file",IDC_FILENAME_SAVEAS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,52,135,10
+    LTEXT           "Playlist index at the beginning:",IDC_FILENAME_INDEX_STATIC,11,70,99,8
+    COMBOBOX        IDC_FILENAME_INDEX,11,82,172,92,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Output Filename Format:",IDC_FILENAME_FORMAT_STATIC,11,101,81,8
+    COMBOBOX        IDC_FILENAME_FORMAT,11,111,172,94,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Output File Type",IDC_OUTMODE_STATIC,4,134,185,32
+    COMBOBOX        IDC_OUTMODE,11,147,172,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Single-File Mode",IDC_STATIC,194,4,188,61
+    CONTROL         "Enabled",IDC_SINGLEFILE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,201,17,41,10
+    LTEXT           "File:",IDC_SINGLEFILE_FILE_STATIC,211,32,14,8
+    PUSHBUTTON      "",IDC_SINGLEFILE_FILE_BUTTON,227,29,148,13
+    LTEXT           "Format:",IDC_SINGLEFILE_FORMAT_STATIC,201,48,24,8
+    PUSHBUTTON      "",IDC_SINGLEFILE_FORMAT_BUTTON,227,46,148,13
+    GROUPBOX        "Conversion",IDC_CONVERT_STATIC,194,69,188,67
+    CONTROL         "Convert to format:",IDC_CONVERT_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,201,81,77,10
+    PUSHBUTTON      "",IDC_CONVERT_BUTTON,200,93,175,21,BS_MULTILINE
+    LTEXT           "Note: some output formats will produce an error message",IDC_CONVERT_NOTE,199,115,178,17,SS_CENTERIMAGE | WS_DISABLED
+    CONTROL         "Override thread priority (hack)",IDC_THREAD_HACK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,194,140,114,10
+    DEFPUSHBUTTON   "OK",IDOK,280,153,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,334,153,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 384
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 166
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_DISK_WRITER "Nullsoft Disk Writer v%s"
+    65535                   "{1A710E67-5180-49ac-8102-105856ED0A2F}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_DISK_WRITER_OLD "Nullsoft Disk Writer"
+    IDS_AUTO_RECOMMENDED    "Auto (recommended)"
+    IDS_FORCE_WAV_FILE      "Force WAV file"
+    IDS_FORCE_RAW_DATA      "Force raw data"
+    IDS_DISABLED            "disabled"
+    IDS_1_DIGIT             "1 digit"
+    IDS_2_DIGITS            "2 digits"
+    IDS_3_DIGITS            "3 digits"
+    IDS_4_DIGITS            "4 digits"
+    IDS_SELECT_OUTPUT_DIRECTORY "Select output directory"
+    IDS_CHOOSE_FILE_NAME    "%s - Choose File Name"
+    IDS_X_FILES_DOT_X       "%s files|*%s|"
+    IDS_FILE_ALREADY_EXISTS_OVERWRITE 
+                            "File: ""%hs"" already exists. Overwrite?"
+    IDS_CANNOT_CREATE_OUTPUT_FILE "Cannot create output file"
+    IDS_CANNOT_OPEN_FILE    "Cannot open file"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOT_A_PCM_WAV_FILE  "Not a PCM WAV file"
+    IDS_ERROR_INITIALIZING_OUTPUT "Error initializing output."
+    IDS_ABOUT_TEXT          "%s\n© 2005-2023 Winamp SA\n© 2001-2002 Peter Pawlowski\nBuild date: %hs"
+    IDS_SETTINGS_TITLE      "%s Settings"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

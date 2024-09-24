@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="api.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SysCallbacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api__wasabi-replicant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SysCallbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wasabi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{95e2a764-deca-4145-a564-704813803543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7214e4d1-7da7-46b4-961e-a698574d8f9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{966f3869-2bed-42a3-885b-6104297b3673}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

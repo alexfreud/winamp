@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="webinfo_obj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="childwnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="colors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="comboskin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileview_columns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileview_compare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileview_filesystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileview_format.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileview_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileview_metadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileview_toolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flickerfix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="folderborwser_listbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="folderbrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gaystring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HeaderIconList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imagefilters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IPC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="itemlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaLibraryCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ml_cloud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ml_cloudcolumn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ml_imagefilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ml_imagelist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ml_imageloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ml_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ml_rating.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ml_ratingcolumn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mldwm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="navigation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OnlineMediaCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RatingsCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reflectmsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sendto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinexport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedcombo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinneddivider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinneddlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnededit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedfolder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedlistbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedlistview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedmenuthreadinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedmenuwnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedprogressbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedscrollwnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedstatic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedtooltip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinnedwnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skinning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SmoothScrollList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stockobjects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stringvector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_ml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa_dlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="webinfo_dlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\CCVersion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\HTMLContainer2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\menushortcuts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\mtbrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\ServiceWatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Winamp\strutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\trace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="webinfo_obj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stringvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stockobjects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedtooltip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedstatic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedscrollwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedprogressbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedmenuwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedmenuthreadinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedlistview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedlistbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedfolder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnededit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinneddlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinneddivider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedcombo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinnedbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skinexport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sendto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reflectmsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RatingsCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OnlineMediaCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="navigation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mldwm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ml_ratingcolumn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ml_rating.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ml_ipc_0313.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ml_ipc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ml_imageloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ml_imagelist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ml_imagefilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ml_cloudcolumn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ml_cloud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menufucker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaLibraryCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="itemlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imagefilters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gaystring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="folderbrowser_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="folderbrowser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fileview_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fileview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="comboskin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="colors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="childwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api__gen_ml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\HTMLContainer2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\mtbrowser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Winamp\strutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Winamp\wa_dlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Winamp\wa_ipc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gen_ml.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="png.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\filetype_video_32.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\filetype_audio_16.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\filetype_audio_32.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\filetype_playlist_16.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\filetype_playlist_32.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\filetype_unknown_16.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\filetype_unknown_32.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\filetype_video_16.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\cloud_16_unavail.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\cloud_16_partial.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\cloud_16_incloud.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\menu_arrow.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\menu_check.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\menu_dot.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\menu_scrollarrow.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\menu_scrollarrow_disabled.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\rating.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\sortarrow.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\splitarrow.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\splitarrow_pressed.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_cdrom_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_default_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_labs_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_playlist_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\tree_closed_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\tree_closed_disabled_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\tree_open_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\view_mode_detail.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\view_mode_icon.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\view_mode_list.png">
+      <Filter>Image Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0a05bd80-ec56-40ac-a633-3a3c9aa13bf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{5216efe6-f772-4af6-b4c9-3b7b25b0153c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2807c32e-739b-42a2-85e4-a5b2b4fc36be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{c5319216-3757-4121-90c8-052366765304}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dragdrop.cur">
+      <Filter>Image Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,32 @@
+Many AVS effects allow you to write simple expressions to control
+visualization. Here is a brief summary of how to write AVS code.
+
+Many aspects of AVS code are similar to C (including comments).
+
+You can create new variables just by using them, and you can read
+and write predefined variables (of which each effect has its own)
+to interact with the effect. Note that variables are all floating
+point numbers (no strings), and the maximum length of a variable's
+name is 8 characters (anything longer will be ignored.
+
+So, to create a variable, you can simply use it, for example:
+  x = 5;
+
+You can also use a variety of operators and math functions to
+modify variables, see the Operators and Functions tabs above.
+
+Code can include C and C++ style comments:
+  // using the doubleslash comments until the end of the line
+  /* using the classic C comments
+     comment a block of text */
+
+You can combine operators and functions into expressions, such
+as:
+  x = 5 * cos(y) / 32.0; // this does some leetness right here
+
+You can use multiple expressions by seperating them with one or
+more semicolons, for example:
+  x = x * 17.0; x = x / 5; y = pow(x,3.0);
+
+It is worth noting that extra whitespace (spaces, newlines) is
+ignored, so if you need to space things out for clarity, you can.

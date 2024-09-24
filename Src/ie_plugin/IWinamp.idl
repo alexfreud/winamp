@@ -1,0 +1,20 @@
+import "oaidl.idl";
+import "ocidl.idl";
+import "wtypes.idl";
+
+	[
+		uuid(B44A606E-EF90-4062-BD41-197D8495884D),
+		version(1.0),
+		helpstring("Winamp 1.0 Type Library")
+	]
+library ElevatorLib
+{
+	[
+		uuid(D9C17076-9F55-49b5-8BEB-6A857931E62C),
+		helpstring("Winamp Class")
+	]
+	coclass Winamp
+	{
+	};
+};
+

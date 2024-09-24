@@ -1,0 +1,99 @@
+Winamp 5 VIS Drawer API
+-----------------------
+
+
+Here are the steps to get your visualization plugin in the Winamp 5 drawer :
+
+1) Create an embedded window to serve as a parent for your vis Wnd using the Winamp 5 Embedded Window SDK :
+
+HWND parent = NULL;
+HWND (*e)(embedWindowState *v);
+*(void**)&e = (void *)SendMessage(this_mod->hwndParent,WM_WA_IPC,(LPARAM)0,IPC_GET_EMBEDIF);
+if (e) parent = e(&myWindowState);
+
+2) Create your vis window (say, g_hwnd) for your vis plugin, using the embedded window as a parent.
+
+3) BEFORE showing your parent window, notify Winamp that you are a VIS window :
+
+SendMessage(this_mod->hwndParent, WM_WA_IPC, (int)g_hwnd, IPC_SETVISWND);
+ShowWindow(parent, SW_SHOWNA);
+
+4) When your plugin is asked to terminate, notify winamp that the VIS has gone away :
+
+SendMessage(g_mod->hwndParent, WM_WA_IPC, NULL, IPC_SETVISWND);
+
+5) From now on, your vis is going to be automatically inserted in the drawer, and your window (the one you sent to winamp
+using SETVISWND) is going to receive commands when the user clicks in the vis buttons (ie, next/previous/random, etc). You 
+should implement these commands by trapping WM_COMMAND:
+
+case WM_COMMAND: {
+  int id = LOWORD(wParam);
+  switch (id) {
+
+    // user clicked on 'next' preset button
+    case ID_VIS_NEXT: next_preset(); break;
+
+    // user clicked on 'previous' preset button
+    case ID_VIS_PREV: previous_preset(); break;
+
+    // user clicked on 'random' togglebutton
+    case ID_VIS_RANDOM: {
+      // determine if we're switching random on or off or if Winamp is asking us about the state of our random flag
+      int v = HIWORD(wParam) ? 1 : 0; 
+
+      // are we being asked about the state of our random flag ?
+      if (wParam >> 16 == 0xFFFF) {
+        // tell winamp about our state
+        SendMessage(g_mod->hwndParent,WM_WA_IPC,random_presets_flag,IPC_CB_VISRANDOM);
+        break;
+      }
+      
+      // changes random_preset_flag 
+      set_random(v); 
+
+      // if we are turning random on, we should switch to a new random preset right away
+      if (v) load_random_preset();
+
+      break;
+    }
+    case ID_VIS_FS: go_fullscreen(); break;
+    case ID_VIS_CFG: open_configuration(); break;
+    case ID_VIS_MENU: open_popup_menu(); break;
+  }
+  break;
+}
+
+6) Before turning fullscreen on, you should check wether video is already fullscreen or not :
+
+if (SendMessage(g_mod->hwndParent,WM_WA_IPC,0,IPC_IS_PLAYING_VIDEO)>1) 
+{
+  cant_go_fullscreen_dlg();
+}
+
+7) You're almost done, the last thing to do is to notify Winamp when you go fullscreen :
+
+go_fullscreen() 
+{
+  if (SendMessage(g_mod->hwndParent,WM_WA_IPC,0,IPC_IS_PLAYING_VIDEO)>1) 
+  {
+    cant_go_fullscreen_dlg();
+  }
+  else
+  {
+    SendMessage(g_mod->hwndParent,WM_WA_IPC,1,IPC_SET_VIS_FS_FLAG);
+
+    ... now do the work of actually going fullscreen ...
+
+  }
+}
+
+go_windowed()
+{
+  SendMessage(g_mod->hwndParent,WM_WA_IPC,0,IPC_SET_VIS_FS_FLAG);
+
+  ... now do the work of going back to windowed mode ...
+
+}
+
+
+That should be all. Feel free to send your questions to francis@winamp.com

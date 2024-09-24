@@ -1,0 +1,43 @@
+------------------------------------------------------------------------------------------------------
+
+OpenSSL
+-------
+Linux / BSD / Mac OS X / Raspbian
+
+./config no-ssl2 no-ssl3 no-unit-test no-shared
+
+
+Windows
+
+Note: Use "Visual Studio 2008 Command Prompt"
+build-openssl.bat build x86 static release
+build-openssl.bat build x86 static debug
+
+Note: Use "Visual Studio 2008 x64 Win64 Command Prompt"
+build-openssl.bat build x64 static release
+build-openssl.bat build x64 static debug
+
+The generated lib files are created in build\openssl-x[86|64]-static-[release|debug]-vs2008\lib
+
+------------------------------------------------------------------------------------------------------
+
+libcurl
+-------
+Need to ensure that --with-ssl is set to the correct version of openssl being used otherwise we'll have inconsistencies in the generated libraries :o(
+(and not to use my folder path)
+
+Linux / BSD (SSL) - change the openssl path as needed
+
+./configure --with-ssl=/home/dro/Desktop/sc_serv3/openssl --disable-shared --disable-rtsp --disable-verbose --disable-dict --disable-file --disable-ftp --disable-gopher --disable-imap --disable-pop3 --disable-smtp --disable-telnet --disable-tftp --without-libidn --disable-smb --disable-dependency-tracking
+
+
+Mac OS X (SSL) - change the openssl path as needed
+
+./configure --with-ssl=/Users/dro/Desktop/sc_serv3/openssl --disable-shared --disable-rtsp --disable-verbose --disable-dict --disable-file --disable-ftp --disable-gopher --disable-imap --disable-pop3 --disable-smtp --disable-telnet --disable-tftp --without-libidn --disable-ldap --disable-ldaps --disable-smb --disable-dependency-tracking
+
+
+Raspbian (SSL) - change the openssl path as needed
+
+./configure --with-ssl=/home/pi/sc_serv3/openssl --disable-shared --disable-rtsp --disable-verbose --disable-dict --disable-file --disable-ftp --disable-gopher --disable-imap --disable-pop3 --disable-smtp --disable-telnet --disable-tftp --without-libidn --disable-ldap --disable-rtmp --disable-scp --disable-sftp --without-libssh2 --without-librtmp --disable-smb --disable-dependency-tracking
+
+Note: may also need to do 'apt-get install libcurl4-openssl-dev' first so that libcurl will see that there's a valid OpenSSL setup, otherwise HTTPS support will not build.

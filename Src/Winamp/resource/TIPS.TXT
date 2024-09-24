@@ -1,0 +1,140 @@
+Note that these keyboard shortcuts are a good starting point, but this list
+is far from complete. :)
+
+******* Keyboard Shortcuts (these can be used in most Winamp windows) *******
+
+Key		Action
+-----------------------------------------------------------------------------
+F1		Open Help
+Ctrl+F1		About Box
+Ctrl+A		Toggle Always on Top (N/A in playlist editor and media library)
+Ctrl+Alt+A	Toggle always on top (playlist editor)
+Ctrl+W		Toggle Windowshade mode (main window, unless in playlist editor)
+Ctrl+D		Toggle Doublesize Mode
+Ctrl+E		Toggle Easymove (only applicable in classic skins)
+Ctrl+T		Toggle Time Display Mode 
+Alt+W		Toggle Main Window
+Alt+E		Toggle Playlist Editor
+Alt+G		Toggle Graphical Equalizer
+Alt+V		Toggle Video Window
+Alt+L		Toggle Media Library
+Ctrl+Tab		Cycle through different Winamp windows
+Alt+S		Go to Skin selection
+Ctrl+P		Go to Preferences
+Alt+F		Open Main Menu
+Alt+K		Configure current visualization plug-in
+Ctrl+Sh+K	Start/stop current visualization plug-In
+Ctrl+K		Open visualization plug-in section of preferences
+Ctrl+J		Jump to time in current track
+J or Keypad .	Open jump-to-file box
+Ctrl+Alt+N	Spawn new Winamp instance
+Ctrl+Alt+B	Add current to bookmarks (requires ML and ml_bookmarks)
+Alt+M		Minimize Winamp
+Ctrl+H		Show recently played files/streams (History :)
+
+
+******* Main Window Keyboard Shortcuts *******
+
+Key		Action
+-----------------------------------------------------------------------------
+(options/toggles)
+R		Toggle Repeat
+S		Toggle Shuffle
+
+Alt+3		Current file info box/tag editor
+
+(playback controls)
+Z		Previous Track
+X		Play/Restart/Unpause
+C		Pause/Unpause
+V		Stop
+Shift+V		Stop with Fadeout
+Ctrl+V		Stop after current track
+B		Next Track
+L		Open/Play File
+Ctrl+L		Open/Play location
+Shift+L		Open/Play Directory
+
+Left Arrow	Rewind 5 seconds
+Right Arrow	Fast-forward 5 seconds
+Up Arrow		Turn Volume Up
+Down Arrow	Turn Volume Down
+
+Keypad 1		Jump Ten Songs Back
+Keypad 6		Next Track
+Keypad 5		Play/Restart/Unpause
+Keypad 4		Previous Track
+Keypad 3		Jump Ten Songs Forward
+Keypad 7		Rewind 5 seconds
+Keypad 9		Fast-forward 5 seconds
+Keypad 8		Turn Volume Up
+Keypad 2		Turn Volume Down
+Keypad 0		Open/Play File
+Ctrl+Keypad 0	Open/Play location
+Insert		Open/Play Directory
+
+
+******* Playlist Window Keyboard Shortcuts *******
+
+Key		Action
+-----------------------------------------------------------------------------
+R		Toggle Repeat
+S		Toggle Shuffle
+Ctrl+Z		Go to start of list
+Ctrl+B		Go to end of list
+Alt+I		Add current to bookmarks (requires ML and ml_bookmarks)
+
+(file io)
+L		Add File
+Ctrl+L		Add Location
+Shift+L	 	Add Directory
+Ctrl+N		New (Clear) Playlist
+Ctrl+O		Open (Load) Playlist
+Ctrl+S		Save Playlist
+Alt+3		View/Edit Track Info for selected track(s)
+Ctrl+E		Edit Selected Track Filename(s)
+Ctrl+Keypad 0	Add Location
+Insert		Add Directory
+
+(playlist manipulation)		
+Ctrl+A		Select All
+Ctrl+I		Invert Selection
+Delete		Remove Selected Files from Playlist
+Ctrl+Delete	Crop Playlist
+Ctrl+Sh+Del	Clear Playlist (same as Ctrl+N)
+
+Alt+Down Arrow	Move Selected Files Down
+Alt+Up Arrow	Move Selected Files Up
+
+Down Arrow	Move Cursor Down
+Up Arrow		Move Cursor Up
+Enter		Play Selected File
+End		Jump to End of List
+Home		Jump to Start of List
+Page Up		Move up by a fifth of a page
+Page Down	Move down by a fifth of a page
+
+Alt+Delete	Remove missing files from playlist
+
+(playlist sorting)
+Ctrl+Sh+1	Sort Playlist by Title
+Ctrl+Sh+2	Sort Playlist by File Name
+Ctrl+Sh+3	Sort Playlist by File Path and Name
+Ctrl+R		Reverse Playlist
+Ctrl+Sh+R	Randomize Playlist
+
+Most main window playback controls also work in the playlist editor.
+
+
+******* Equalizer Keyboard Shortcuts (Classic skins only) *******
+
+Key		Action
+-----------------------------------------------------------------------------
+1 - 0		Increase EQ bands 1-10
+Q - P		Decrease EQ bands 1-10
+`		Increase EQ Preamp
+TAB		Decrease EQ Preamp
+N		Toggle EQ Enabled
+A		Toggle EQ Auto-Loading
+S		Open Presets Menu
+Ctrl+Alt+S	Load Preset

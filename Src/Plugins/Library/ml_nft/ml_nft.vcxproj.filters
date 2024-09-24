@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\config.cpp">
+      <Filter>Source Files\gen_ml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\DialogSkinner.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\listview.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\MediaLibraryInterface.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\menu.cpp">
+      <Filter>Source Files\gen_ml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api__ml_nft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\config.h">
+      <Filter>Header Files\gen_ml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\DialogSkinner.h">
+      <Filter>Header Files\nu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\MediaLibraryInterface.h">
+      <Filter>Header Files\nu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\menu.h">
+      <Filter>Header Files\gen_ml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\listview.h">
+      <Filter>Header Files\nu</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{b4c6c983-ad68-4d2d-a542-7f1bf6b1c155}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{f072eba6-51ff-4c40-b136-bf3c79f3e120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b04fff17-1af4-4d74-b609-169c1a32b097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{56f5b459-ac0f-423d-b448-563135bf4bd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gen_ml">
+      <UniqueIdentifier>{0f139e2a-24a0-4f2f-8ef5-9f429704fc09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\nu">
+      <UniqueIdentifier>{33c224c5-9689-4e39-9fc1-95b30d7f72fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gen_ml">
+      <UniqueIdentifier>{2a93abc4-8246-41d7-b991-d111d36d5353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\nu">
+      <UniqueIdentifier>{b1c88e02-70f6-4a54-80fc-60a246835520}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ml_nft.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\nft_16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="generic">
+      <UniqueIdentifier>{adcd4975-46d4-4f20-8422-a898d3456999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{4fbef4da-8fe3-440e-858e-2fbabea42066}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="generic\borders.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\clamp.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\deblock.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\DeInterlace.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\dering.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\doptsystemdependant.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\loopfilter.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\postproc.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\scale.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\simpledeblocker.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\clamp_asm.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\deblockopt.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\deblockwmtopt.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\DeInterlaceMmx.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\DeInterlaceWmt.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\deringopt.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\deringwmtopt.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\doptsystemdependant.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\loopf_asm.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\newlooptest_asm.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\scaleopt.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\simpledeblock_asm.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

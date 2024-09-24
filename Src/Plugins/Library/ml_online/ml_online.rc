@@ -1,0 +1,453 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDIALOG DIALOGEX 0, 0, 225, 92
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Back",IDC_BACK,"Button",BS_OWNERDRAW | WS_TABSTOP,0,81,32,11
+    CONTROL         "Forward",IDC_FORWARD,"Button",BS_OWNERDRAW | WS_TABSTOP,36,81,40,11
+    CONTROL         "Home",IDC_HOME,"Button",BS_OWNERDRAW | WS_TABSTOP,80,81,32,11
+    CONTROL         "Stop",IDC_STOP,"Button",BS_OWNERDRAW | WS_TABSTOP,116,81,24,11
+    CONTROL         "Refresh",IDC_REFRESH,"Button",BS_OWNERDRAW | WS_TABSTOP,144,81,32,11
+END
+
+IDD_OMPREF DIALOGEX 0, 0, 272, 247
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "'Now Playing' Service",IDC_STATIC,0,0,272,72
+    LTEXT           "This allows you to specify an alternative Now Playing service to use in the 'Now Playing' node (if installed). Leave blank to reset to the default service.",IDC_STATIC,6,11,260,18
+    EDITTEXT        IDC_NOWPLAYINGURL,6,33,260,13,ES_AUTOHSCROLL
+    LTEXT           "Note: For now playing lookups to work when using an alternative Now Playing service, the service will need to use the available Winamp Javascript API.",IDC_STATIC,6,51,260,18,WS_DISABLED
+    GROUPBOX        "Online Media",IDC_STATIC,0,76,272,146
+    GROUPBOX        "General Settings",IDC_STATIC,5,87,260,30
+    CONTROL         "Allow sections to auto-resize",IDC_AUTOSIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,100,107,10
+    GROUPBOX        "Cache Preferences",IDC_STATIC,5,120,260,40
+    LTEXT           "Keep pages cached for:",IDC_STATIC,11,132,78,8
+    CONTROL         "Never",IDC_RADIO_NEVER,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,144,35,10
+    CONTROL         "One Hour",IDC_RADIO_HOURLY,"Button",BS_AUTORADIOBUTTON,62,144,47,10
+    CONTROL         "One Day",IDC_RADIO_DAILY,"Button",BS_AUTORADIOBUTTON,116,144,44,10
+    CONTROL         "One Week",IDC_RADIO_WEEKLY,"Button",BS_AUTORADIOBUTTON,167,144,51,10
+    GROUPBOX        "Bandwidth Control",IDC_STATIC,5,164,260,52
+    LTEXT           "Maximum bandwidth for media in Kbytes",IDC_STATIC,11,175,131,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_RADIO_MAXBW,154,174,30,12,ES_AUTOHSCROLL
+    LTEXT           "Minimum bandwidth for media in Kbytes\n(not used by some sections)",IDC_STATIC,11,190,129,16
+    EDITTEXT        IDC_RADIO_MINBW,154,190,31,12,ES_AUTOHSCROLL
+END
+
+IDD_MESSAGEBOX DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_TEXT,7,7,172,35
+END
+
+IDD_SETUPPAGE DIALOGEX 0, 0, 256, 158
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Choose Winamp's web services to experience premium media services online.",IDC_LABEL_HEADER,5,6,251,8
+    LISTBOX         IDC_SERVICELIST,5,24,99,126,LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | LBS_WANTKEYBOARDINPUT | LBS_NODATA | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PLACEHOLDER,"Static",SS_BLACKRECT | NOT WS_VISIBLE,107,24,148,126
+END
+
+IDD_SETUP_SERVICEDETAILS DIALOGEX 0, 0, 148, 126
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_THUMBNAIL,"Static",SS_BITMAP,0,0,45,45
+    LTEXT           "",IDC_TITLE,46,0,95,10
+    EDITTEXT        1316,1,46,140,80,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "line1\r\nline2",IDC_SERVICEMETA,46,10,102,26,NOT WS_VISIBLE
+END
+
+IDD_SETUP_GROUPDETAILS DIALOGEX 0, 0, 148, 126
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Group Title",IDC_TITLE,4,0,144,13
+    EDITTEXT        IDC_DESCRIPTION,2,15,145,97,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "to read about Winamp policies.",IDC_HELPTEXT,0,117,147,8
+END
+
+IDD_OPENURL DIALOGEX 0, 0, 220, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Open Url"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Enter service list address:",IDC_STATIC,5,4,210,10
+    COMBOBOX        IDC_ADDRESS,5,18,210,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,111,36,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,165,36,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTEXTMENU MENU 
+BEGIN
+    POPUP "ServiceContextMenu"
+    BEGIN
+        MENUITEM SEPARATOR
+        POPUP "&Service Management"
+        BEGIN
+            MENUITEM "&New",                        ID_SERVICE_NEW
+            POPUP "&Import"
+            BEGIN
+                MENUITEM "&File...",                    ID_SERVICE_IMPORT_FILE
+                MENUITEM "&Url..",                      ID_SERVICE_IMPORT_URL
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "&Edit",                       ID_SERVICE_EDIT
+            MENUITEM SEPARATOR
+            MENUITEM "Open Containing &Folder",     ID_SERVICE_LOCATE
+            MENUITEM "Open in E&xternal Editor",    ID_SERVICE_EDITEXTERNAL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Re&move",                     ID_SERVICE_UNSUBSCRIBE
+        MENUITEM "Reset Permi&ssions",          ID_SERVICE_RESETPOLICY
+    END
+    POPUP "GaleryContextMenu"
+    BEGIN
+        POPUP "&Service Management"
+        BEGIN
+            MENUITEM "&New",                        ID_SERVICE_NEW
+            MENUITEM SEPARATOR
+            MENUITEM "Import &File...",             ID_SERVICE_IMPORT_FILE
+            MENUITEM "Import &Url..",               ID_SERVICE_IMPORT_URL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Preferences...",             ID_PLUGIN_PREFERENCES
+        MENUITEM "&omBrowser Options...",       ID_OMBROWSER_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Help",                       ID_PLUGIN_HELP
+    END
+    POPUP "&Rate"
+    BEGIN
+        MENUITEM "*****",                       ID_RATING_VALUE_5
+        MENUITEM "****",                        ID_RATING_VALUE_4
+        MENUITEM "***",                         ID_RATING_VALUE_3
+        MENUITEM "**",                          ID_RATING_VALUE_2
+        MENUITEM "*",                           ID_RATING_VALUE_1
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "&Open",                       ID_VIEW_OPEN
+        MENUITEM "Open in &New Window",         ID_VIEW_OPENPOPUP
+    END
+    POPUP "Navigation"
+    BEGIN
+        MENUITEM "Back",                        ID_NAVIGATION_BACK
+        MENUITEM "Forward",                     ID_NAVIGATION_FORWARD
+        MENUITEM "Refresh",                     ID_NAVIGATION_REFRESH
+        MENUITEM "Stop",                        ID_NAVIGATION_STOP
+    END
+    POPUP "Toolbar"
+    BEGIN
+        MENUITEM "&Top Dock",                   ID_TOOLBAR_DOCKTOP
+        MENUITEM "&Bottom Dock",                ID_TOOLBAR_DOCKBOTTOM
+        MENUITEM SEPARATOR
+        MENUITEM "Auto-&Hide",                  ID_TOOLBAR_AUTOHIDE
+        MENUITEM "Enable &Tab Stop",            ID_TOOLBAR_TABSTOP
+    END
+END
+
+IDR_SETUPMENU MENU 
+BEGIN
+    POPUP "GroupContext"
+    BEGIN
+        MENUITEM "Expand",                      ID_GROUP_TOGGLE
+        MENUITEM SEPARATOR
+        MENUITEM "&Select All",                 ID_GROUP_SELECTALL
+        MENUITEM "&Unselect All",               ID_GROUP_UNSELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Reload",                     ID_GROUP_RELOAD
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MESSAGEBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_SETUPPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        VERTGUIDE, 104
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 150
+        HORZGUIDE, 24
+    END
+
+    IDD_SETUP_SERVICEDETAILS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 142
+        VERTGUIDE, 46
+        HORZGUIDE, 10
+        HORZGUIDE, 46
+    END
+
+    IDD_OPENURL, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 215
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 49
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_BROWSERACCEL ACCELERATORS 
+BEGIN
+    VK_F5,          ID_NAVIGATION_REFRESH,  VIRTKEY, NOINVERT
+    "R",            ID_NAVIGATION_REFRESH,  VIRTKEY, CONTROL, NOINVERT
+    VK_F11,         ID_WINDOW_FULLSCREEN,   VIRTKEY, NOINVERT
+    VK_F4,          ID_WINDOW_CLOSE,        VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_NAVIGATION_REFRESH_COMPLETELY, VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_NAVIGATION_REFRESH_COMPLETELY, VIRTKEY, SHIFT, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_EDITOR         HTML                    "resources\\pages\\serviceEditor.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ONLINE_SERVICES     "Online Services"
+    IDS_NO_INTERNET_CONNECTION 
+                            "The media library feature you are attempting to use requires an internet connection. Please make sure you are connected to the internet and try again."
+    IDS_SORRY               "Sorry"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUGIN_NAME         "Nullsoft Online Services v%d.%02d"
+    65535                   "{D006C700-557E-43c7-A580-B4C50C56957A}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEFAULT_SERVICENAME "Unknown name"
+    IDS_MORE                "More..."
+    IDS_HOME                "Home"
+    IDS_HOME_DESCRIPTION    "Navigate to the main service page"
+    IDS_BACK                "Back"
+    IDS_BACK_DESCRIPTION    "Go back one page"
+    IDS_FORWARD             "Forward"
+    IDS_FORWARD_DESCRIPTION "Go forward one page"
+    IDS_REFRESH             "Refresh"
+    IDS_REFRESH_DESCRIPTION "Reload current page"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STOP                "Stop"
+    IDS_STOP_DESCRIPTION    "Stop loading this page"
+    IDS_SEPARATOR           "Separator"
+    IDS_SPACE               "Space"
+    IDS_FLEXSPACE           "Flexible Space"
+    IDS_MORE_DESCRIPTION    "Show more items"
+    IDS_RATED               "Rating:"
+    IDS_PLEASE_WAIT         "Please wait..."
+    IDS_SERVICE_CHECKINGVERSION "Checking service version"
+    IDS_SERVICE_GETINFO     "Get Info..."
+    IDS_SERVICE_GETINFO_DESCRIPTION "Get service info"
+    IDS_SERVICE_REPORT      "Report..."
+    IDS_SERVICE_REPORT_DESCRIPTION "Report service"
+    IDS_SERVICE_UNSUBSCRIBE "Remove"
+    IDS_SERVICE_UNSUBSCRIBE_DESCRIPTION "Remove service"
+    IDS_RATING_0            "not rated"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RATING_1            "1 star"
+    IDS_RATING_2            "2 stars"
+    IDS_RATING_3            "3 stars"
+    IDS_RATING_4            "4 stars"
+    IDS_RATING_5            "5 stars"
+    IDS_RATING_CHANGETO     "Set to:"
+    IDS_RATING_CURRENT      "Rated:"
+    IDS_SETUPPAGE_TITLE     "Choose Online Services"
+    IDS_SETUP_EMPTYGROUP    "( empty )"
+    IDS_SETUP_LOADINGGROUP  "Loading..."
+    IDS_SERVICEGROUP_FEATURED "Featured"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SERVICEGROUP_KNOWN  "Already Subscribed"
+    IDS_SETUP_GROUPLOADFAILED "Error loading data"
+    IDS_SERVICE_BYAUTHOR    "  by: "
+    IDS_SERVICE_LASTUPDATED "  updated: "
+    IDS_SERVICEGROUP_FEATUREDLONG "Featured Services"
+    IDS_SERVICEGROUP_KNOWNLONG "Already Subscribed Services"
+    IDS_SERVICEGROUP_FEATURED_DESC 
+                            "This group contains some great services that we handpicked especially for you - including Winamp Charts & Add-ons. Also, if at any time you would like to try some other services, feel free to discover them by selecting the Online Services page in the Media Library."
+    IDS_SERVICEGROUP_KNOWN_DESC 
+                            "Services that you have already subscribed to."
+    IDS_MESSAGEBOX_UNSUBSCRIBE 
+                            "Are you sure you want to remove %s from your Online Services?"
+    IDS_MESSAGEBOX_UNSUBSCRIBE_CAPTION "Confirm Service Remove"
+    IDS_MESSAGEBOX_RESETTODEFAULT 
+                            "Are you sure you want to remove your current Online Services and restore the default Online Services?"
+    IDS_MESSAGEBOX_RESETTODEFAULT_CAPTION 
+                            "Confirm Restore to Default Services"
+    IDS_DOWNLOADSERVICE_JOB "Loading featured services"
+    IDS_SAVESERVICE_JOB     "Saving services"
+    IDS_CACHEICONS_JOB      "Caching service icons"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REGISTERINGSERVICE_JOB "Registering services"
+    IDS_MESSAGEBOX_NAMECHANGED_CAPTION "Service Name Changed"
+    IDS_MESSAGEBOX_NAMECHANGED "The service %s has been renamed to %s."
+    IDS_MESSAGEBOX_POLICYRESET_CAPTION "Confirm Permissions Reset"
+    IDS_MESSAGEBOX_POLICYRESET 
+                            "Are you sure you want to reset permissions for %s service?"
+    IDS_COLLAPSE            "Collapse"
+    IDS_EXPAND              "Expand"
+    IDS_SECURE_CONNECTION   "Show Page Identification"
+    IDS_SCRIPT_ERROR        "Show Script Errors"
+    IDS_SCRIPT_ERROR_DESCRIPTION "Page executed with some errors"
+    IDS_ENCRYPTION_MIXED    "Mixed security"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ENCRYPTION_40BIT    "40-bit security"
+    IDS_ENCRYPTION_56BIT    "56-bit security"
+    IDS_ENCRYPTION_FORTEZZA "Fortezza security"
+    IDS_ENCRYPTION_128BIT   "128-bit security"
+    IDS_CONNECTION_UNSECURE "Connection Not Encrypted"
+    IDS_CONNECTION_ENCRYPTED "Connection Encrypted"
+    IDS_NAVIGATING          "Navigating..."
+    IDS_MESSAGEBOX_FORCEREMOVE 
+                            "Service %s was cancelled and will be removed from your Online Services."
+    IDS_MESSAGEBOX_FORCEREMOVE_CAPTION "Service Cancelled"
+    IDS_HISTORY             "Recent pages"
+    IDS_HISTORY_DESCRIPTION "Recent pages"
+    IDS_CURRENT_PAGE        "Current Page"
+    IDS_CLICKHERE           "Click here"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGEBOX_DISCOVERBUSY 
+                            "Service discovery in progress. Please wait till completion and try again."
+    IDS_MESSAGEBOX_DISCOVERBUSY_CAPTION "Operation In Progress"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USERSERVICE_NAME    "My Service"
+    IDS_FILEFILTER_ALL      "All Files"
+    IDS_FILEFILTER_ALLKNOWN "All Supported Files"
+    IDS_IMPORT_FILES        "Import Service..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

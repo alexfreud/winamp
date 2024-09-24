@@ -1,0 +1,97 @@
+; -------------------------------------------------------------------------
+;
+;                       Duck Developer Support
+;              Copyright (c) 1995 Duck Corporation
+; -------------------------------------------------------------------------
+; MODULE   : Dukdll.DEF
+; PURPOSE  : module-definition file for the Duck Player
+; COMMENTS :
+; -------------------------------------------------------------------------
+;LIBRARY      DXV
+DESCRIPTION  'Duck Windows Player'
+
+EXPORTS
+	DXL_InitVideo @2
+	DXL_ExitVideo @3
+	DXL_CreateVScreen @4
+	DXL_DestroyVScreen @5
+	DXL_AlterVScreen @6
+	DXL_AlterVScreenClip @7
+	DXL_AlterVScreenView @8
+	DXL_AlterVScreenBackground @9
+	DXL_CreateXImage @10
+	DXL_DestroyXImage @11
+	DXL_AlterXImageData @12
+	DXL_MoveXImage @13
+
+;	DXL_AlterXImageSpriteModes @14
+
+	DXL_GetXImageColorDepth @15
+;	DXL_GetXImageDirtyXYWH @16
+	DXL_GetXImageXYWH @17
+	DXL_dxImageToVScreen @19
+	DXL_IsXImageKeyFrame @20
+	DXL_GetVScreenView   @21
+
+;	DXL_CreateDirtyBuffer @22
+;	DXL_DeriveVScreenFromXImage @23
+;	DXL_DisplayVScreen @24
+	DXL_SetVScreenBlitQuality @25
+	DXL_GetVScreenBlitQuality @26
+	DXL_GetVScreenAddr @27
+	DXL_CreateGenericXImage @28
+	DXL_EraseVScreen		@29
+
+	DXL_BlitXImageToVScreen @30
+
+	DXL_BlitVScreenToVScreen @31
+
+	DXL_GetXImageFrameBuffer @32
+	DXL_AlterXImage		@33
+	DXL_SetVScreenCLUTs @34
+	DXL_ResetVScreenCLUTs @35
+
+
+;	BlackBox     		@81
+
+	AnnDone				@86
+	Announcement		@88
+
+;	RestoreDirty		@90
+;	GetScreenAddr		@91
+;	resetDisplay		@92
+;	SetClutPtrs			@93
+;	MarkSkips		  	@94
+
+	DXL_Decompress16BitAs565 @107
+	
+	ErrorBuffer			@108
+	DXL_SetXImageBlitAll @109
+
+	DXV_Setmalloc		@111
+	DXV_Setcalloc		@112
+	DXV_Setfree			@113
+
+;    DUCK_rdtsc_Start    @114
+;    DUCK_rdtsc_End      @115
+;    DUCK_InitProfile    @116
+;    DUCK_ProcessCounts  @117
+;    DUCK_UninitProfile  @118
+;    DUCK_ClearI         @119
+;    DUCK_SetI           @120
+
+	DXL_CheckdxImageToVScreen @121
+	DXL_GetFourCCList @122
+	DXL_CreateXImageOfType @123
+	DXL_GetXImageCSize @124
+	DXL_GetBitDepthPalette @125
+
+	DXL_CheckVScreenBlit @126
+	DXL_CheckVScreenXImageBlit @127
+
+    DXL_BlackLineVScreen @128
+    DXL_GetCPUFeatures @129
+    DXL_GetXImageFOURCC @130
+
+	DXL_SetXImageCSize @131
+	DXL_InitVideoEx @132

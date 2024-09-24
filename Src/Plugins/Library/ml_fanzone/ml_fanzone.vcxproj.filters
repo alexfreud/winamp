@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\config.cpp">
+      <Filter>Source Files\gen_ml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\DialogSkinner.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\listview.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\MediaLibraryInterface.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\menu.cpp">
+      <Filter>Source Files\gen_ml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api__ml_fanzone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\config.h">
+      <Filter>Header Files\gen_ml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\DialogSkinner.h">
+      <Filter>Header Files\nu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\MediaLibraryInterface.h">
+      <Filter>Header Files\nu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\menu.h">
+      <Filter>Header Files\gen_ml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\nu\listview.h">
+      <Filter>Header Files\nu</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{b09f9553-f445-44f8-9a72-cb758d5286cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{be47cb42-3d48-4f47-83c8-6b797a58b3b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e2ca50af-70fe-46f4-86cf-1ca4d35f7af3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{ba64025b-123f-434f-b5cd-9f578be68b35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gen_ml">
+      <UniqueIdentifier>{a842431b-0ab9-48d1-afdd-2492128c0577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\nu">
+      <UniqueIdentifier>{88f1ad0f-1bde-4677-b4ef-149786474b02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gen_ml">
+      <UniqueIdentifier>{fc3b229a-9ed1-4937-bc2d-726130e69bbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\nu">
+      <UniqueIdentifier>{46374174-4599-4ca0-b088-999738b14566}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ml_fanzone.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\fanzone_16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\small.ico">
+      <Filter>Ressource Files</Filter>
+    </Image>
+    <Image Include="resources\cefsimple.ico">
+      <Filter>Ressource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
+</Project>

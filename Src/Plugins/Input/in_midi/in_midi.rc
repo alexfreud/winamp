@@ -1,0 +1,568 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 354, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_NOFAILCREATE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nullsoft Midi Player Preferences"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",WS_TABSTOP,4,4,346,149
+    LTEXT           "Note: Most settings take effect after restarting playback.",IDC_STATIC,4,158,214,12,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",IDOK,222,157,40,13
+    PUSHBUTTON      "Cancel",IDCANCEL,266,157,40,13
+    PUSHBUTTON      "Reset",IDRESET,310,157,40,13
+END
+
+IDD_CONFIG1 DIALOGEX 0, 0, 340, 134
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Device:",IDC_STATIC,3,6,30,8
+    COMBOBOX        IDC_PORT,37,4,300,68,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Device Info",IDC_STATIC,3,20,190,76
+    EDITTEXT        IDC_DEV_INFO,10,31,177,60,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    GROUPBOX        "Volume Control",IDC_STATIC,197,20,140,44
+    COMBOBOX        IDC_VOLMODE,204,31,126,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Use as logarithmic",IDC_LOGVOL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,49,126,10
+    GROUPBOX        "MIDI Extensions",IDC_STATIC,3,100,334,29
+    LTEXT           "Additional reset commands between tracks:",IDC_STATIC,12,113,150,8
+    COMBOBOX        IDC_HARDWARE_RESET,166,111,164,83,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CONFIG2 DIALOGEX 0, 0, 340, 134
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Sampling enabled",IDC_SAMPLING_ENABLED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,3,4,72,10
+    LTEXT           "Device:",IDC_STATIC,3,20,30,8
+    COMBOBOX        IDC_WAVEIN,37,18,293,81,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Source:",IDC_STATIC,3,37,30,8
+    COMBOBOX        IDC_WAVEIN_SRC,37,35,293,81,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Revert to previous source on stop",IDC_SAMP_REVERT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,3,52,157,10
+    GROUPBOX        "Format",IDC_STATIC,3,65,334,31
+    COMBOBOX        IDC_WAVEIN_SR,10,77,40,70,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Hz",IDC_WAVEIN_S2,51,79,10,8
+    COMBOBOX        IDC_WAVEIN_CH,69,77,37,40,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_WAVEIN_BPS,117,77,38,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Advanced",IDC_STATIC,3,100,334,29
+    CONTROL         "Send to Winamp's output system",IDC_SAMPLING_OUTPUT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,113,140,10
+END
+
+IDD_CONFIG3 DIALOGEX 0, 0, 340, 134
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Device Settings",IDC_STATIC,3,4,160,44
+    CONTROL         "Reverb",IDC_REVERB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,17,40,10
+    CONTROL         "Chorus",IDC_CHORUS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,17,40,10
+    LTEXT           "Mixing frequency:",IDC_STATIC,10,33,64,8
+    COMBOBOX        IDC_FREQ,74,31,43,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Hz",IDC_STATIC,121,33,10,8
+    GROUPBOX        "DLS Settings",IDC_STATIC,167,4,170,44
+    CONTROL         "Use custom DLS file",IDC_DLS_CB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,174,17,100,10
+    EDITTEXT        IDC_DLS,174,31,141,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_DLS_B,316,31,14,12
+    GROUPBOX        "Compatibility Settings",IDC_STATIC,3,52,334,36
+    CONTROL         "Keep DirectMusic port active between tracks\nFaster track changes, may cause problems (enable GM reset on device tab, etc)",IDC_DM_KEEP_PORT,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,10,65,320,16
+END
+
+IDD_CONFIG4 DIALOGEX 0, 0, 340, 134
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Playback Method",IDC_STATIC,3,4,334,54
+    COMBOBOX        IDC_PLAYBACK_METHOD,10,16,320,66,CBS_DROPDOWNLIST | WS_TABSTOP
+    CONTROL         "Show realtime MIDI control panel\n(works only with immediate playback method)",IDC_SHOW_PANEL,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,10,33,320,18
+    GROUPBOX        "Looping",IDC_LOOP_S,3,62,334,32
+    COMBOBOX        IDC_LOOP,10,75,129,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Loop",IDC_LOOP_S2,156,77,18,8
+    EDITTEXT        IDC_LOOP_T,178,75,28,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_LOOP_SP,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,198,74,11,14
+    LTEXT           "times",IDC_LOOP_S3,210,77,20,8
+    CONTROL         "Infinite",IDC_INFINITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,251,76,37,10
+END
+
+IDD_CONFIG5 DIALOGEX 0, 0, 340, 134
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Hacks",IDC_STATIC_CLN,3,4,160,69
+    CONTROL         "Fix missing DLS drum kits",IDC_HACK_DLS_DRUMS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,16,146,10
+    CONTROL         "Fix missing DLS instruments",IDC_HACK_DLS_INSTRUMENTS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,30,146,10
+    CONTROL         "Disable sysex commands",IDC_HACK_NO_SYSEX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,44,146,10
+    CONTROL         "Remove B9 00 00 / B9 20 00",IDC_HACK_XG_DRUMS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,57,146,10
+    GROUPBOX        "Misc",IDC_STATIC,167,4,170,45
+    CONTROL         "Try to recover incomplete tracks",IDC_HACKTRACK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,16,117,10
+    LTEXT           "Extra silence after end of song:",IDC_STATIC,173,32,105,8
+    EDITTEXT        IDC_EOF_DELAY,282,30,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_EOF_DELAY_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,310,29,9,14
+    LTEXT           "ms",IDC_STATIC,320,32,10,8
+END
+
+IDD_CONFIG6 DIALOGEX 0, 0, 340, 134
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "MIDI Hardware Setup (Advanced Users Only)",IDC_STATIC_MOS,3,4,334,125
+    LISTBOX         IDC_SYSEX_LIST,9,12,321,86,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "import file",IDC_IMP_F,9,103,42,14
+    PUSHBUTTON      "export file",IDC_EXP_F,51,103,42,14
+    PUSHBUTTON      "load preset",IDC_IMP_PR,93,103,46,14
+    PUSHBUTTON      "save preset",IDC_EXP_PR,139,103,48,14
+    PUSHBUTTON      "add new",IDC_SYSEX_ADD,187,103,38,14
+    PUSHBUTTON      "delete",IDC_SYSEX_DELETE,225,103,32,14
+    PUSHBUTTON      "edit",IDC_SYSEX_EDIT,257,103,24,14
+    PUSHBUTTON      "up",IDC_SYSEX_UP,282,103,20,14
+    PUSHBUTTON      "down",IDC_SYSEX_DOWN,302,103,28,14
+    CTEXT           "Sysex commands are sent before starting playback.",IDC_STATIC_MOS1,8,119,322,8
+END
+
+IDD_CONFIG7 DIALOGEX 0, 0, 340, 134
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Associate with extensions:",IDC_STATIC,4,4,100,8
+    LISTBOX         IDC_EXTS_LIST,4,15,86,115,NOT LBS_NOTIFY | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Additional extensions (separate with semicolons):",IDC_STATIC,114,4,223,8
+    EDITTEXT        IDC_EXTS_ED,114,15,152,12,ES_AUTOHSCROLL
+    LTEXT           "eg. ""MID;RMI;HMP""",IDC_STATIC,114,31,66,8
+END
+
+IDD_CONFIG8 DIALOGEX 0, 0, 340, 134
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "RMI Info Settings",IDC_STATIC,3,4,158,30
+    CONTROL         "Display RMI info dialog by default",IDC_RMI_DEF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,17,145,10
+    GROUPBOX        "Lyrics Display",IDC_STATIC,165,4,172,30
+    CONTROL         "Show lyrics window while playing",IDC_LYRICS_ENABLED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,172,17,158,10
+END
+
+IDD_EXT_IMM DIALOGEX 0, 0, 488, 212
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MIDI control panel"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "tempo",-1,2,2,20,8
+    CONTROL         "Slider1",IDC_TEMPO,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,24,2,100,11
+    CTEXT           "",IDC_TDISP,48,13,60,8
+    CONTROL         "disable volume commands",IDC_NOVOL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,156,8,99,10
+    CONTROL         "disable instrument commands",IDC_NOINS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,280,8,108,10
+    LTEXT           "channel",-1,4,24,26,8
+    LTEXT           "volume",-1,6,40,24,8
+    PUSHBUTTON      "all on",IDC_ALL_ON,4,92,28,11
+    PUSHBUTTON      "all off",IDC_ALL_OFF,4,104,28,11
+    LTEXT           "mute",-1,12,119,16,8
+    GROUPBOX        "instruments",-1,0,130,485,46
+    LTEXT           "patch",-1,2,140,19,8
+    LTEXT           "bank MSB",-1,2,152,34,8
+    LTEXT           "bank LSB",-1,2,164,32,8
+    GROUPBOX        "SysEx",-1,4,180,113,28
+    PUSHBUTTON      "reset GM",IDC_GMRESET,8,190,34,12
+    PUSHBUTTON      "reset GS",IDC_GSRESET,44,190,34,12
+    PUSHBUTTON      "reset XG",IDC_XGRESET,80,190,33,12
+    GROUPBOX        "",-1,116,180,125,28
+    LTEXT           "F0",-1,120,193,9,8
+    EDITTEXT        IDC_SYSEX1,132,190,68,12,ES_AUTOHSCROLL
+    LTEXT           "F7",-1,202,193,9,8
+    PUSHBUTTON      "send",IDC_SYSEX1_SEND,214,190,21,12
+    GROUPBOX        "",-1,240,180,125,28
+    LTEXT           "F0",-1,244,193,9,8
+    EDITTEXT        IDC_SYSEX2,256,190,68,12,ES_AUTOHSCROLL
+    LTEXT           "F7",-1,326,193,9,8
+    PUSHBUTTON      "send",IDC_SYSEX2_SEND,338,190,21,12
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(IN_MIDI)
+#if defined(APSTUDIO_INVOKED)
+IDD_INFO$(IN_MIDI) DIALOGEX 0, 0, 295, 86
+#else
+IDD_INFO DIALOGEX 0, 0, 295, 86
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Format:",IDC_STATIC,4,2,24,8
+    LTEXT           "",IDC_FORMAT,32,2,72,8
+    EDITTEXT        IDC_COPYRIGHT,2,12,126,55,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    LTEXT           "Length:",IDC_STATIC1,2,68,25,8
+    RTEXT           "",IDC_MS,26,68,28,8
+    RTEXT           "",IDC_TIX,26,77,28,8
+    LTEXT           "ms",IDC_STATIC2,58,68,10,8
+    LTEXT           "ticks",IDC_STATIC3,58,77,16,8
+    CTEXT           "",IDC_FSIZE,80,72,44,8
+    LTEXT           "",IDC_NTRAX,133,0,52,8
+    LISTBOX         IDC_TRAX,132,8,160,60,NOT LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "DLS data present",IDC_DLS,136,68,56,8,WS_DISABLED
+    LTEXT           "loop start found",IDC_LOOP,136,78,50,8,WS_DISABLED
+    PUSHBUTTON      "RMI info...",IDC_RMI_CRAP,196,72,41,12
+    PUSHBUTTON      "Save...",IDC_SAVE,240,72,29,12
+    DEFPUSHBUTTON   "Ok",IDOK,272,72,20,12
+END
+#endif
+
+IDD_LYRICS DIALOGEX 0, 0, 263, 220
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Lyrics"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_BLAH,0,0,260,216,ES_MULTILINE | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(IN_MIDI)
+#if defined(APSTUDIO_INVOKED)
+IDD_RMI_SHIZ$(IN_MIDI) DIALOGEX 0, 0, 316, 151
+#else
+IDD_RMI_SHIZ DIALOGEX 0, 0, 316, 151
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_NOFAILCREATE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "RMI info"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Display Name:",IDC_STATIC,2,6,46,8
+    EDITTEXT        IDC_DISP,48,4,128,12,ES_AUTOHSCROLL
+    LTEXT           "Name:",IDC_STATIC,26,22,22,8
+    EDITTEXT        IDC_NAME,48,20,128,12,ES_AUTOHSCROLL
+    LTEXT           "Artist:",IDC_STATIC,27,38,24,8
+    EDITTEXT        IDC_ARTIST,48,36,128,12,ES_AUTOHSCROLL
+    LTEXT           "Album:",IDC_STATIC,25,54,22,8
+    EDITTEXT        IDC_ALBUM,48,52,76,12,ES_AUTOHSCROLL
+    LTEXT           "Track:",IDC_STATIC,130,54,22,8
+    EDITTEXT        IDC_TRACK,152,52,24,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Genre:",IDC_STATIC,24,70,22,8
+    COMBOBOX        IDC_GENRE,47,68,129,68,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Date Created:",IDC_STATIC,1,86,46,8
+    EDITTEXT        IDC_DATE,47,84,129,12,ES_AUTOHSCROLL
+    LTEXT           "Software:",IDC_STATIC,16,102,31,8
+    EDITTEXT        IDC_SOFTWARE,47,100,129,12,ES_AUTOHSCROLL
+    LTEXT           "Engineer:",IDC_STATIC,16,118,31,8
+    EDITTEXT        IDC_ENGINEER,47,116,129,12,ES_AUTOHSCROLL
+    LTEXT           "Composer:",IDC_STATIC,12,134,34,8
+    EDITTEXT        IDC_COMPOSER,47,132,129,12,ES_AUTOHSCROLL
+    LTEXT           "Copyright:",IDC_STATIC,188,1,34,8
+    EDITTEXT        IDC_COPYRIGHT,188,9,124,36,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Comment:",IDC_STATIC,188,46,32,8
+    EDITTEXT        IDC_COMMENT,188,54,124,36,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Subject:",IDC_STATIC,188,91,27,8
+    EDITTEXT        IDC_SUBJECT,188,99,96,36,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_BMPVIEW,"BitmapView",WS_TABSTOP,288,100,24,22
+    DEFPUSHBUTTON   "OK",IDOK,206,138,50,12
+    PUSHBUTTON      "Cancel",IDCANCEL,262,138,50,12
+END
+#endif  // APSTUDIO_INVOKED || IN_MIDI
+
+IDD_SYSEX DIALOGEX 0, 0, 336, 38
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sysex Event Editor"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "F0",IDC_STATIC,4,6,9,8
+    EDITTEXT        IDC_EDIT1,24,4,290,12,ES_AUTOHSCROLL
+    LTEXT           "F7",IDC_STATIC,323,6,9,8
+    LTEXT           "wait",IDC_STATIC,4,23,20,8
+    EDITTEXT        IDC_DELAY,24,21,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,52,20,11,14
+    LTEXT           "ms after sending",IDC_STATIC,69,23,70,8
+    DEFPUSHBUTTON   "OK",IDOK,228,21,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,282,21,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 350
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_CONFIG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 337
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_CONFIG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 337
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_CONFIG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 337
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_CONFIG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 337
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_CONFIG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 337
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_CONFIG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 337
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 129
+    END
+
+    IDD_CONFIG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 337
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_CONFIG8, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 337
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 130
+    END
+
+    "IDD_RMI_SHIZ$(IN_MIDI)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_SYSEX, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 332
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 34
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_MIDI_PLAYER "Nullsoft MIDI Player v%s"
+    65535                   "{0FED0FEE-C995-4499-AB47-E2482336C046}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_MIDI_PLAYER_OLD "Nullsoft MIDI Player"
+    STRING_FILES_OTHER      "Other MIDI types ("
+    IDS_TO_ENABLE_LYRICS_DISPLAY 
+                            "To enable lyrics display again, go to MIDI plug-in config / display tab and check ""Show lyrics window while playing""."
+    IDS_INFORMATION         "Information"
+    STRING_INCOMPLETE       " (incomplete)"
+    STRING_TRACKS_FMT       "%u tracks:"
+    IDS_MIDIS_ARE_NOT_BURNABLE " MIDIs are not burnable."
+    IDS_NONE                "none"
+    IDS_STREAMED            "Streamed - send data to OS as large blocks / segments"
+    IDS_IMMEDIATE           "Immediate - send MIDI events to OS in realtime"
+    IDS_CONFIGURATION       "Configuration"
+    IDS_TYPE                "type : "
+    IDS_PREFS_DEVICE        "Device"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PREFS_DISPLAY       "Display"
+    IDS_PREFS_SAMPLING      "Sampling"
+    IDS_PREFS_DIRECTMUSIC   "DirectMusic"
+    IDS_PREFS_MISC          "Misc"
+    IDS_PREFS_FILE_TYPES    "File Types"
+    IDS_PREFS_FILES         "Files"
+    IDS_PREFS_HARDWARE_SETUP "Hardware setup"
+    IDS_UNABLE_TO_LOAD_FILE "Unable to load file."
+    STRING_RETRIEVING_FILE  "Retrieving MIDI file"
+    STRING_URL_ERROR        "URLs only supported in Winamp 2.50+"
+    STRING_UNKNOWN_MMSYSTEM "Unknown MMSYSTEM error."
+    STRING_MIDI_INFO_FMT2   "MIDI file info - %s"
+    STRING_MIDI_INFO_FMT1   "MIDI file info - %s (%s)"
+    STRING_BYTES_FMT        "%u bytes"
+    STRING_WRITE_ERROR_FMT  "Unable to create file: ""%s"""
+    STRING_INFO_FORMAT_FMT  " / format %u"
+END
+
+STRINGTABLE 
+BEGIN
+    STRING_RMI_INFO_FMT     "RMI info - %s"
+    STRING_CONFIG_RESET     "This will reset all settings to default values. Continue?"
+    STRING_STEREO           "Stereo"
+    STRING_MONO             "Mono"
+    STRING_VOLUME_AUTO      "Autodetect"
+    STRING_VOLUME_DRIVER_SPECIFIC "Driver-specific"
+    STRING_VOLUME_NONE      "None"
+    STRING_SAMP_SRC_DEFAULT "(default)"
+    STRING_LOOP1            "never"
+    STRING_LOOP2            "when loop start detected"
+    STRING_LOOP3            "always"
+    STRING_UNKNOWN          "unknown (%u)"
+    STRING_DIRECT_MIDISTREAM "direct midiStream support"
+    STRING_MOCAPS_WAVETABLE "hardware wavetable synthesizer"
+    STRING_MOCAPS_SYNTH     "synthesizer"
+    STRING_MOCAPS_SQUARE    "square wave synthesizer"
+END
+
+STRINGTABLE 
+BEGIN
+    STRING_MOCAPS_MAPPER    "MIDI mapper"
+    STRING_MOCAPS_HWPORT    "MIDI hardware port"
+    STRING_MOCAPS_FM        "FM synthesizer"
+    STRING_EFFECTS          "effects : "
+    STRING_DEVICE_TYPE      "device type : "
+    STRING_DMCAPS_WDM       "WDM driver"
+    STRING_DMCAPS_USERMODE  "User mode synthesizer"
+    STRING_DMCAPS_WINMM     "Windows Multimedia driver"
+    STRING_CHORUS           "chorus"
+    STRING_REVERB           "reverb"
+    STRING_DMCAPS_SHARE     "device is shareable"
+    STRING_DMCAPS_DSOUND    "uses DirectSound"
+    STRING_DMCAPS_XG        "built-in XG sound set"
+    STRING_DMCAPS_GS        "built-in GS sound set"
+    STRING_DMCAPS_GM        "built-in GM sound set"
+    STRING_DMCAPS_SOFTSYNTH "software synthesizer"
+END
+
+STRINGTABLE 
+BEGIN
+    STRING_DMCAPS_DLS2      "supports DLS level 2"
+    STRING_DMCAPS_DLS1      "supports DLS level 1"
+    STRING_FILES_SMF        "Standard MIDI"
+    STRING_FILES_CLONE      "MIDI Clones"
+    STRING_FILES_COMPRESSED "Compressed MIDI"
+    IDS_SYSEX_DATA          "Sysex Data"
+    IDS_MIDI_HARDWARE_PRESETS "MIDI Hardware Presets"
+    IDS_DLS_FILES           "DLS Files"
+    IDS_MIDI_FILES          "MIDI files"
+    IDS_COMPRESSED_MIDI_FILES "Compressed MIDI files"
+    IDS_RMI_FILES           "RMI files"
+    IDS_COMPRESSED_RMI_FILES "Compressed RMI files"
+    IDS_WITH_OUTPUT         " (with output)"
+    IDS_USES_WINAMPS_OUTPUT_PLUGINS "uses Winamp's Output plug-ins"
+    STRING_MS_FMT           "(%u ms)"
+    STRING_BIT_FMT          "%u bit"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FAMILY_STRING_MIDI  "MIDI File Format"
+    IDS_FAMILY_STRING_KARAOKE_MIDI "Karaoke MIDI File"
+    IDS_FAMILY_STRING_HMI_MIDI "Human Machine Interfaces MIDI File"
+    IDS_FAMILY_STRING_EXTENDED_MIDI "Extended MIDI File"
+    IDS_FAMILY_STRING_MSS_MIDI "MSS MIDI File"
+    IDS_FAMILY_STRING_FINALE_MIDI "Finale Notation MIDI Music File"
+    IDS_FAMILY_STRING_CREATIVE_MIDI "Creative Music MIDI Format"
+    IDS_FAMILY_STRING_GENERAL_MIDI_DUMP "General Midi Dump File"
+    IDS_FAMILY_STRING_COMPRESSED_MIDI "Compressed MIDI File"
+    IDS_FAMILY_STRING_COMPRESSED_HMI_MIDI 
+                            "Compressed Human Machine Interfaces MIDI File"
+    IDS_ABOUT_TEXT          "%s\n© 2000-2023 Winamp SA\n\nBuild date: %hs"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

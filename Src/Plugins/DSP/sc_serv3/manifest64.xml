@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" >
+ <assemblyIdentity
+  version="2.4.3.187"
+  processorArchitecture="amd64"
+  name="Radionomy.SHOUTcast.DNAS"
+  type="win32"
+ />
+ <description>SHOUTcast DNAS 2.4.3 Build 187</description>
+ <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+  <security>
+   <requestedPrivileges>
+    <requestedExecutionLevel
+     level="asInvoker"
+    />
+   </requestedPrivileges>
+  </security>
+ </trustInfo>
+</assembly>

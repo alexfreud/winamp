@@ -1,0 +1,145 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MP3 DIALOGEX 0, 0, 256, 167
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "MP3 Encoder Options",IDC_STATIC,0,0,256,166
+    LTEXT           "Mode:",IDC_STATIC,4,13,21,8
+    COMBOBOX        IDC_VBRMETHOD,28,11,52,155,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_STEREOMODE,87,11,66,184,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Bitrate:",IDC_BITRATE_TEXT1,6,28,80,8
+    COMBOBOX        IDC_BITRATE,87,25,38,98,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "kbps",IDC_BITRATE_TEXT2,129,28,16,8
+    LTEXT           "VBR Maximum Bitrate:",IDC_MAXBITRATE_TEXT1,6,42,77,8
+    COMBOBOX        IDC_MAXBITRATE,87,39,38,98,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "kbps",IDC_MAXBITRATE_TEXT2,129,42,16,8
+    LTEXT           "Average Bitrate:",IDC_AVGBITRATE_TEXT1,6,56,77,8
+    COMBOBOX        IDC_AVGBITRATE,87,53,38,98,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "kbps",IDC_AVGBITRATE_TEXT2,129,56,16,8
+    LTEXT           "Quality:",IDC_STATIC,7,74,24,8
+    COMBOBOX        IDC_QUALITY,33,72,98,110,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "VBR Q:",IDC_VBRQ_TEXT,136,74,25,8
+    COMBOBOX        IDC_VBRQ,161,72,40,98,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MPEG Layer-3 audio coding technology licensed from Fraunhofer IIS and Thomson.",IDC_STATIC,5,92,148,18,NOT WS_VISIBLE
+    LTEXT           "MPEG Layer-3 encoding technology by Mp3dev.",IDC_STATIC,5,115,154,8
+    LTEXT           "",IDC_LAMEVERSION,136,153,114,8,0,WS_EX_RIGHT
+END
+
+IDD_MP3_MISSING DIALOGEX 0, 0, 256, 167
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "MP3 Encoder Options",-1,0,0,256,166
+    LTEXT           "MP3 encoding support is not available as ""lame_enc.dll"" is not present.\n\nYou will need to manually download ""lame_enc.dll"" to the Winamp\Shared folder to enable MP3 encoding support.",-1,12,14,231,34
+    LTEXT           "Click here for information on where you can obtain ""lame_enc.dll"".",-1,12,54,231,10
+    CONTROL         "here",IDC_URL1,"Button",BS_OWNERDRAW | WS_TABSTOP,27,54,15,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    65535                   "{F1534ECA-6E64-42c2-9781-812E61154515}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BITRATE             "Bitrate:"
+    IDS_ABR_MIN_BITRATE     "ABR Minimum Bitrate"
+    IDS_VBR_MIN_BITRATE     "VBR Minimum Bitrate"
+    IDS_N_A                 "N/A"
+    IDS_ABR_MAX_BITRATE     "ABR Maximum Bitrate"
+    IDS_VBR_MAX_BITRATE     "VBR Maximum Bitrate"
+    IDS_AVERAGE_BITRATE     "Average Bitrate"
+    IDS_STEREO              "Stereo"
+    IDS_JOINT_STEREO        "Joint Stereo"
+    IDS_MULTI_CHANNEL       "Multi-Channel"
+    IDS_MONO                "Mono"
+    IDS_NORMAL              "Normal"
+    IDS_LOW                 "Low"
+    IDS_HIGH                "High"
+    IDS_VOICE               "Voice"
+    IDS_R3MIX               "R3mix"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VERY_HIGH           "Very High"
+    IDS_HIGH_BRACKET        "(High)"
+    IDS_LOW_BRACKET         "(Low)"
+    IDS_ENC_LAME_DESC       "MP3 Encoder %s"
+    IDS_ENC_LAME_DESC_MISSING "MP3 Encoder %s [NOT LOADED]"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

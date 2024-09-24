@@ -1,0 +1,186 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DEVICE_VIEW DIALOGEX 0, 0, 397, 282
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,57,23,101,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_TYPE,57,36,101,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CONNECTION,57,50,101,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_TITLE,57,70,101,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_ATTACHED,57,85,101,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_VISIBLE,57,101,101,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TOTALSPACE,57,117,101,16,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_TOTALSPACE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,149,118,9,12,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_USEDSPACE,57,134,101,16,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_USEDSPACE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,149,136,9,12,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO_ICONS,169,34,221,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New",IDC_BUTTON_NEWICON,264,49,40,14
+    PUSHBUTTON      "Edit",IDC_BUTTON_EDITICON,307,49,40,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVEICON,350,49,40,14
+    CONTROL         "",IDC_STATIC_PREVIEWICON,"Static",SS_BITMAP | SS_CENTERIMAGE,169,70,221,170,WS_EX_STATICEDGE
+    LTEXT           "Device View",IDC_STATIC,7,7,39,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,16,383,1
+    LTEXT           "Name:",IDC_STATIC,15,24,22,8
+    LTEXT           "Title:",IDC_STATIC,15,71,17,8
+    LTEXT           "Type:",IDC_STATIC,15,37,20,8
+    LTEXT           "Connection:",IDC_STATIC,15,51,40,8
+    LTEXT           "Attached:",IDC_STATIC,15,87,33,8
+    LTEXT           "Visible:",IDC_STATIC,15,103,23,8
+    LTEXT           "Capacity:",IDC_STATIC,15,119,32,8
+    LTEXT           "Used Space:",IDC_STATIC,15,136,41,8
+    LTEXT           "Icons:",IDC_STATIC,169,22,21,8
+END
+
+IDD_ICON_EDITOR DIALOGEX 0, 0, 290, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Device Icon"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,180,58,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,233,58,50,14
+    LTEXT           "Width:",IDC_STATIC,8,34,35,8
+    LTEXT           "Height:",IDC_STATIC,47,33,29,8
+    EDITTEXT        IDC_EDIT_WIDTH,7,44,35,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_HEIGHT,46,44,35,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_PATH,7,18,250,14,ES_AUTOHSCROLL
+    LTEXT           "Path:",IDC_STATIC,7,7,18,8
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSE,261,18,22,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DEVICE_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        VERTGUIDE, 15
+        VERTGUIDE, 57
+        VERTGUIDE, 158
+        VERTGUIDE, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_ICON_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        VERTGUIDE, 42
+        VERTGUIDE, 46
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DEVICE_VIEW DLGINIT
+BEGIN
+    IDC_COMBO_ATTACHED, 0x403, 4, 0
+0x6559, 0x0073, 
+    IDC_COMBO_ATTACHED, 0x403, 3, 0
+0x6f4e, "\000" 
+    IDC_COMBO_VISIBLE, 0x403, 4, 0
+0x6559, 0x0073, 
+    IDC_COMBO_VISIBLE, 0x403, 3, 0
+0x6f4e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUGIN_NAME         "Nullsoft Test Device Provider v%d.%d"
+END
+
+STRINGTABLE 
+BEGIN
+    65535                   "{51B54A05-B711-4509-80AE-5A0AAA502FA5}"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

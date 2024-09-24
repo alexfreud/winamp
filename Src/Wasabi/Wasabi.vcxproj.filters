@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="api\service\api_service.cpp">
+      <Filter>Source Files\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\abstractwndhold.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\appbarwnd.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\config\items\attribute.cpp">
+      <Filter>Source Files\api\config\items</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\basewnd.cpp">
+      <Filter>Source Files\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\buttwnd.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\c_checkbox.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\c_container.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\c_text.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\c_edit.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\c_group.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\c_guiobject.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\c_layout.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\c_rootobj.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\c_slider.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\config\items\cfgitemi.cpp">
+      <Filter>Source Files\api\config\items</Filter>
+    </ClCompile>
+    <ClCompile Include="api\config\items\cfgitemx.cpp">
+      <Filter>Source Files\api\config\items</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\clickwnd.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\di.cpp">
+      <Filter>Source Files\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\findobjectcb.cpp">
+      <Filter>Source Files\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\guiobjwnd.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\h_slider.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\h_checkbox.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\h_edit.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\h_guiobject.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\h_rootobj.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\labelwnd.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\listwnd.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\skin\nakedobject.cpp">
+      <Filter>Source Files\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objcontroller.cpp">
+      <Filter>Source Files\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\popup.cpp">
+      <Filter>Source Files\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\rootobj.cpp">
+      <Filter>Source Files\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\rootobjcbx.cpp">
+      <Filter>Source Files\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\rootwnd.cpp">
+      <Filter>Source Files\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\rootwndholder.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\scbkgwnd.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\objects\c_script\scripthook.cpp">
+      <Filter>Source Files\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\scriptobj.cpp">
+      <Filter>Source Files\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\scriptobji.cpp">
+      <Filter>Source Files\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\script\scriptobjx.cpp">
+      <Filter>Source Files\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\scrollbar.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\SelItemList.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\sepwnd.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\syscb\callbacks\skincb.cpp">
+      <Filter>Source Files\api\syscb\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wndmgr\skinwnd.cpp">
+      <Filter>Source Files\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="api\service\svc_enum.cpp">
+      <Filter>Source Files\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="api\service\svcs\svc_wndcreate.cpp">
+      <Filter>Source Files\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="api\service\svcs\svc_xuiobject.cpp">
+      <Filter>Source Files\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="api\service\svcenum.cpp">
+      <Filter>Source Files\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\svcwndhold.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\syscb\callbacks\syscbx.cpp">
+      <Filter>Source Files\api\syscb\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="api\timer\timerclient.cpp">
+      <Filter>Source Files\api\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\wndclass\tooltip.cpp">
+      <Filter>Source Files\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="api\wnd\virtualwnd.cpp">
+      <Filter>Source Files\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="api\service\waservicefactoryx.cpp">
+      <Filter>Source Files\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="bfc\std_file.cpp">
+      <Filter>Source Files\bfc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wasabicfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\service\api_service.h">
+      <Filter>Header Files\api\service</Filter>
+    </ClInclude>
+    <ClInclude Include="api\wnd\canvas.h">
+      <Filter>Header Files\api\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="api\wnd\bltcanvas.h">
+      <Filter>Header Files\api\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="api\wnd\wndclass\guiobjwnd.h">
+      <Filter>Header Files\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="bfc\std_file.h">
+      <Filter>Header Files\bfc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{dbf13851-c318-4a95-aff6-3b6055c6a205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{539a23c0-6b45-4ecc-b700-1517b9a2090b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b9f7a0c5-e7f3-4c5e-951a-cc659749236f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\api">
+      <UniqueIdentifier>{49e93f95-1142-4fd3-b901-d2e697a6f748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api">
+      <UniqueIdentifier>{c29b7e0a-c700-40e7-b9f1-e1a12b4c4344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\service">
+      <UniqueIdentifier>{6de55f05-d29e-4425-ac5c-4ba0206f2428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\api\service">
+      <UniqueIdentifier>{970810fc-bf0a-4538-a27d-a6cf74c9019f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\api\wnd">
+      <UniqueIdentifier>{5a3833d7-80e1-4bc5-ba8a-e45af67493c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\api\wnd\wndclass">
+      <UniqueIdentifier>{5a032a3e-0249-401d-affc-8f861417d7f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\wnd">
+      <UniqueIdentifier>{f8a52c4e-ae5b-480b-a9c3-2ee541f6a0b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\wnd\wndclass">
+      <UniqueIdentifier>{6976ca4e-861e-420a-829b-be7dd6d64c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\config">
+      <UniqueIdentifier>{56085077-5e0d-483d-bb6e-13e8032838af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\config\items">
+      <UniqueIdentifier>{0fef4cd4-2600-4334-915e-d5604319e199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\script">
+      <UniqueIdentifier>{4a5572b3-b76f-4ea3-9bda-6aa43a581d23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\script\objects">
+      <UniqueIdentifier>{1d14d1fd-a6a2-4301-a32a-4a04e6f089f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\script\objects\c_script">
+      <UniqueIdentifier>{6c231033-c54d-440b-9b95-e1d40014b9dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\skin">
+      <UniqueIdentifier>{7c03ecf2-ff49-4552-88ca-22e05b4dca52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\syscb">
+      <UniqueIdentifier>{ba806104-cc0c-4e8d-b485-714dbfae1202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\syscb\callbacks">
+      <UniqueIdentifier>{e9a18113-73d0-4870-873e-d3de2e9eea9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\wndmgr">
+      <UniqueIdentifier>{37ccb88f-129a-4a2f-a4c1-d84e93e3497c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\service\svcs">
+      <UniqueIdentifier>{7dc06802-d3ba-43c2-a0a8-4ee6be05fa4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\api\timer">
+      <UniqueIdentifier>{89dea900-93ab-4dd9-b005-127a49043617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bfc">
+      <UniqueIdentifier>{a95c28e4-88d9-4680-af04-41dc336ce90c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bfc">
+      <UniqueIdentifier>{b92f23f7-906b-4003-8b9c-fb5492e25090}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

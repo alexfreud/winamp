@@ -1,0 +1,10 @@
+#pragma once
+#include "read.h"
+#include "info.h"
+#include "avi_header.h"
+#include "avi_reader.h"
+#include "parserbase.h"
+#include "demuxer.h"
+#include "metadata.h"
+#include "duration.h"
+#include "seektable.h"

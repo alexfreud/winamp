@@ -1,0 +1,233 @@
+-francis:
+added floor(), ceil() and $Phi
+added "cancel fullscreen on deactivation" toggle option
+
+-mig:
+added example infrastructure to dmove.  :)
+now there are 8 examples in dmove.  also tuned up my beat-interpolation algos!  woo!
+
+-justin
+added blend modes to misc / buffer save
+made config expand trees by default
+
+-mig:
+started work on undo/redo system.
+infrastructure seems to work, but I can't figure out the magical
+  incantation to make the UI reflect the newly altered render list
+  although it seems to actually go back to the last values in the renderer.
+"Do you want to save?" dirty flag now contained (mostly) in the undo object.
+(In fact, it saves a dirty bit for every undo state, so you can undo twice,
+  save, then redo and you should have your dirty bit still set.  If you then
+  undo yet again, you're back to what you saved and you have no dirty bit)
+added more examples to SuperScope
+
+-justin:
+fixed memory leak in evallib stuff I made a bit back
+added debug window, moved register watch to it, added error listing
+added option for clear variables on recompile in debug window
+fixed bugs, too.
+
+-justin:
+started adding setting for reinit on edit for evallib stuff
+made config change detection a little more accurate
+made superscope/dmove/shift/etc reinit on edit work right
+made trans / movement only replace usereval with preseteval if editted
+fyi: trans / movement also provides 'sw' and 'sh' for screen width and height,
+  so things like 'd=d*0.93 + (((x*sw/2)&(y*sh/2)&1)*-0.3);' are fun :)
+fixed trans / movement backwards compatible stuff (no crashy at least)
+updated eval documentation stuff, need people to write docs for it, too.. heheh
+lots of ui cleanups (more edit room!)
+fixed some fullscreen new fbresize bugs
+updated fullscreen overlay mode some
+updated maximum local variables to 256 from 64 
+added global registers [reg00,reg01,... reg99] for debug 
+  and effect synchronization (or inter-preset communication) 
+added global register watch in root list window (for debugging) 
+added comments for eval code. // and /* bla */ 
+updated eval documentation 
+added gettime() function to eval 
+made annoying grey rectangle below tree go away when you aren't docked 
+added new color modifier effect, which can be used to replace 
+  (with script) a lot of different effects (and be faster and more flexible). 
+added 'minimum blend' mode for effect lists/line drawing 
+added 'round up' option for Blur. 
+made a generic avs directory scanner routine for subdirs (yay!)
+   made it only generate menus when opened, for speed
+made effects that use evallib reset variables to empty on recompile
+made avs track dirtiness of presets, and (optionally) prompt to save etc
+made avs resize images when resizing (optionally)
+added extended APE interface, that lets you access evallib, global registers,
+  line blend/width modes. (see apesdk.zip)
+
+
+
+
+- mig: made most of the presets in Trans/Movement show their algos in the edit field (so you can tune them yourself)
+       added multiple new algos to the preset list
+
+- mig: removed ability to RMB in fullscreen mode.  Bug 331 from the database.  want make new gui.  want make now.
+- basu: added 'onbeat enabled' option to lists
+- christophe: added thread priority settings (so you can set avs in idle prority while keeping winamp in
+  high prio.)
+2.0a7:
+- made better multimonitor support -- still needs more work (making it able to go fullscreen and you do other things
+2.0a6:
+- added 'skip first' in misc/custom bpm
+- added interferences effect
+2.0a4:
+- auto fullscreen window resizing
+2.0a3:
+- updated fullscreen vis code to handle leaving fullscreen
+  unexpectedly better
+- made configwnd repopulation more robust
+- made transitions work when preinit is disabled and you just
+  started up
+2.0a2:
+- updated options of display/fullscreen/trans
+- added doublesize for windowed
+- added seperate opts for windowed/fullscreen for text
+- fixed bug in mosaic.
+
+2.0a1:
+- preinit of presets for better transitions
+- integrated laser support (built-time option)
+- changed name to 'Winamp AVS'
+- Improved SVP/UVS loading
+- Made superscope support 'red' 'green' and 'blue'
+
+1.5a6:
+- preset transitions, woohoo
+- yay
+
+1.5a4:
+- presets for superscope
+- more superscope options
+- made random preset loading on beat
+- bugfixes
+
+1.5a3:
+- line width option
+- ability to use buffer as alpha channel for blending sub-effects back in
+- tons more
+
+1.5a2:
+- deadbeef: cleanups
+- lone: adjustable blend for sub-effects
+
+1.5a1:
+- deadbeef: made new effect system completely hiererchical and scaleable. 
+			reorganized code a lot. cleaned things up. made it nice.
+
+1.0a53:
+- deadbeef: superscope effect
+			made it save to plugins\vis_avs.dat, instead.
+-lone :		added Trans / Invert
+			added Trans / Unique tone
+			added Render / Timescope
+
+a52:
+- deadbeef: optimized/simplified evallib. made it limited to 8 char variable names,
+			32 variables max.
+			improved ddm effect.
+			improved color clip effect
+
+a51:
+- deadbeef:	optimized mosaic, grain, brightness, and bump effects
+			optimized and added more functionality to interleave effect
+- lone :	clear - fixed 'first frame only'
+			eval - added sigmoid, sign, max, min, rand, band, bor, bnot, if, equal, above, below
+			ddm  - added code for init and beat
+			bump - added 'bi' var to control bump intensity thru exps.
+			     - added depth source
+			clear - fixed 'first frame only' (again)
+			onbeat clear - fixed 'skip n beats' which was not saved
+- ron : picture - fixed picture border bugs when aspect ratio was on
+
+a50:
+- deadbeef: added subtractive blend, every other line blend to stack
+			fixed window-no-erase bug.
+			added new dynamic distance modifier effect
+			added 'go' button to fullscreen options
+			added wait for retrace options
+			revised logarithmic spectrum scaling table
+- ron: better no-minimize-on-winamp (now displays a separate window in taskman)
+- lone : bpm - better out of range detection in average calculation
+						 - better confidence calculation
+						 - added option to predict beats only if bpm has been found
+						 - fixed relearn/adapt on new song option
+						 - fixed unwanted resets when using 'don't minimize avs when minimizing winamp' option
+				 brightness - now works actually like a brightness filter (bit slower tho)
+				 text - fixed crash when window is smaller than width/height of text and random mode was checked
+				 bump - added invert depth
+				      - fixed exclusive use of eval lib, was choking with misc trans/custom
+							  or additional bump effects, now saves/restores vars in a clean way.
+							- changed 0-100 range to 0-1 which is much easier to use with math exps
+							  (for backward compatibility, old settings are still using the old range)
+
+a49:
+
+- ron: added transparency settings (win2k only). 
+			added AVI and Water Bump effects.
+			settings are now drageable (fixed).
+			deleting a setting now doesn't loose selection.
+			evallib now works when AVS is compiled in debug mode.
+			added "don't minimize avs with winamp" setting in Display tab.
+			added BMP Picture rendering.
+- lone: disabled resize in fullscreen mode, fixes directx lockups
+      added Custom BPM filter
+			fixed stuck moving particles when no beat occurs for a long time
+			fixed random word option in text renderer
+			added beat learning - fixed broken version, now better than ever :>
+			added option to dock AVS into litestep's wharfamp window :)
+- deadbeef: restyled editor. 
+			made rotation switching variable in rotoblitter, and onbeat zoom changes
+			made loading/saving of unsupported effects/ape's better
+            fixed text drawing bugs. 
+			fixed fullscreen-when-no-mode-selected, and made it verify video modes
+            made skin change detection
+			added vertical blank wait options
+			fixed rotoblitter crashing effect
+			tons of other stuff. 
+
+
+
+a46: more effects, etc from lone/ron. Improved main interface.
+     a few small bugfixes.
+a44: crashing bugfixes. border drawing bugfixes.
+a43: skinnability. Put the avs.bmp in the skin directory. 
+     avs.bmp.
+a42: improved mirror effect. Misc trans now has mixed mapping mode 
+     (onbeat changes). should either have fixed or broken coming out 
+     of fullscreen modes. Fixed a few cosmetic bugs.
+a41: added lone's mirror effect.
+a40: comment bugfix, lone's effects, MUCH better beat detection
+a39: source mapping translation mode. Fadeto has color to fade to.
+a38: clone button. One level of presets directories allowed. Lets 
+     you select a preset directory to pull random/cycles from.
+     Neato.
+a37: comment thingy. Status line. More improvements. No more keyboard
+     controls for config, though :(
+a36: optimized colorfade, moving particle is nicer circle, water effect,
+     little cleanups, AVS editor now in own thread, keyboard controls 
+     work better, etc etc .
+a35: more blur options, more presets, new APE module (FyreWurx)
+a33: ultra-fast expression eval. test those custom trantabs to make sure they didn't break.
+a32: unfucks blur for older presets
+a31: dot fountain, baby.
+a30: made effects alpha-channel-safe, made random switching adjustable,
+     a lot of little tastey cleanups, etc.
+a29: nifty-ass framebuffer saving/restoring effect
+a28: adjustable CPU usage. better beat detection stuff. etc.
+a26: new effect (dot grid), widescreen fullscreen modes, etc.
+a25: bugfixes, you can now drop .avs's into the window, etc.
+a24: much better custom transtab stuff (thanks, LONE, not lore. no 
+     offense, lore, though :)
+a23: custom transtabs much faster. buggier, though. will be fixed soon.
+     lone owns. :)
+a22: higher framerate, custom transtabs, more effects, etc.
+a21 adds new "Scatter" effect
+a20 adds DLL effect loading (APE)
+a18 fixes close-winamp die bug.
+a18 speeds up colorfade (all table driven)
+a17 fixes win2k fullscreen issues (afaik)
+a16 adds some fixes, and new winamp styled window
