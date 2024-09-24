@@ -1,0 +1,1713 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.30729.01 (3e575fdd).
+//
+// f:\sandbox\20131028_225933\winamp\release\cddbplaylist2winamp.tlh
+//
+// C++ source equivalent of Win32 type library ../gracenote/CddbPlaylist2Winamp.dll
+// compiler-generated file created 10/28/13 at 23:18:29 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("7919d0ca-3043-4c02-b778-ab2bf4931f58"))
+/* LIBID */ __CDDBPLAYLIST2LibNSWinamp;
+enum gnpl_crit_field_t;
+enum gnpl_crit_field_type_t;
+enum gnpl_rank_order_t;
+enum gnpl_crit_op_t;
+enum gnpl_crit_param_num_t;
+enum gnpl_criteria_matchmode_t;
+enum __MIDL___MIDL_itf_CddbPlaylist_0000_0001;
+enum gnpl_user_info_t;
+enum __MIDL___MIDL_itf_CddbPlaylist_0000_0002;
+enum __MIDL___MIDL_itf_CddbPlaylist_0000_0003;
+enum __MIDL___MIDL_itf_CddbPlaylist_0000_0004;
+enum __MIDL___MIDL_itf_CddbPlaylist_0000_0005;
+enum CddbPlaylistErrors;
+enum CddbPlaylistUpdateFlags;
+enum CddbPlaylistMLDBFlags;
+struct __declspec(uuid("a58522b9-6b50-4033-9246-1ec5701ed85c"))
+/* dispinterface */ DPlaylist2Events;
+struct __declspec(uuid("34655d2e-8550-421f-a67d-a002f14d8d5e"))
+/* dual interface */ ICddbPlaylist2Mgr;
+struct __declspec(uuid("223e85f1-b287-4571-aa1a-a6d6144d0696"))
+/* dual interface */ ICddbPL2Criteria;
+struct __declspec(uuid("29327d31-2587-48c6-8b11-3f57b096c2ea"))
+/* dual interface */ ICddbPL2ResultList;
+struct __declspec(uuid("6ac694d3-4e30-47f3-93dd-236dbb308715"))
+/* dual interface */ ICddbPL2Result;
+struct __declspec(uuid("c0e6e3a0-2fcf-4a33-8e55-19920b83d759"))
+/* dual interface */ ICddbPL2Timestamp;
+struct __declspec(uuid("b0c8851a-0209-419b-84bc-1d03e6a0dc86"))
+/* dual interface */ ICddbPL2FindData;
+struct __declspec(uuid("f8d8ee69-e17d-442f-bb11-d8a1a214feba"))
+/* dual interface */ ICddbPLGeneratorList;
+struct __declspec(uuid("5311019a-98c9-4377-b8cf-72c00a55914a"))
+/* dual interface */ ICddbPLGenerator;
+struct __declspec(uuid("a9f50e0f-859d-4397-959e-3bb7aacbb564"))
+/* dual interface */ ICddbPLGenCriteriaList;
+struct __declspec(uuid("1754c0c9-24b5-4ed6-8eea-52620ed16e58"))
+/* dual interface */ ICddbPLGenCriteria;
+struct __declspec(uuid("8d951c2e-56fb-4e0b-903c-fe738da573c1"))
+/* dual interface */ ICddbPLGenLimitList;
+struct __declspec(uuid("d79ffaf8-1bc2-4bde-b5f7-1baa899865d2"))
+/* dual interface */ ICddbPLGenLimit;
+struct __declspec(uuid("0281a5e7-bd75-4ed3-9872-3331157b923d"))
+/* dual interface */ ICddbPLGenRank;
+struct __declspec(uuid("3bfa2b55-49a3-42a0-bd2d-4d60d9b9c93f"))
+/* dual interface */ ICddbGenreDisplayList;
+struct __declspec(uuid("5e484009-3e2b-426a-b496-aebcacd6deb7"))
+/* dual interface */ ICddbPLDataList;
+struct __declspec(uuid("53881256-92a2-4292-8e24-68ca3992e337"))
+/* dual interface */ ICddbPLDataListItem;
+struct __declspec(uuid("5a4471da-0283-449e-8ee2-b0716e3c168b"))
+/* dual interface */ ICddbPLIDList;
+struct __declspec(uuid("84e284d8-34cc-4337-b1dc-d7d6f0e431cb"))
+/* dual interface */ ICddbArtistTypeList;
+struct __declspec(uuid("ba5342dc-41d7-4954-9501-fdc6acd0dc2f"))
+/* dual interface */ ICddbOriginsList;
+struct __declspec(uuid("15d93d1e-50f1-444c-9e76-e4c8aca0a29d"))
+/* dual interface */ ICddbEraDisplayList;
+struct __declspec(uuid("a2c6c4ee-32fe-4bb7-8a47-dc615034bd7c"))
+/* dual interface */ ICddbEra;
+struct __declspec(uuid("3580dee2-b1d1-46ae-88b0-cbac62d1e157"))
+/* dual interface */ ICddbPopularityRangeList;
+struct __declspec(uuid("6e1eeee1-7227-4bad-b955-b84bea914a5a"))
+/* dual interface */ ICddbPL25Generator;
+struct __declspec(uuid("b282f975-ac68-41c1-bded-de683bb8e403"))
+/* dual interface */ ICddbPLGenWeightedRank;
+struct __declspec(uuid("3ffd3787-fe3a-4f44-be99-4289875eb925"))
+/* dual interface */ ICddbPLGen25Criteria;
+struct __declspec(uuid("e0d26898-f166-4f42-9a6a-5d2e346ed6ed"))
+/* dual interface */ ICddbPLInfo;
+struct __declspec(uuid("f7bcb924-06da-41e2-af0c-c249c136303a"))
+/* dual interface */ ICddbMLDBManager;
+struct __declspec(uuid("df17e91f-434a-4e75-8645-13dd56a4cc86"))
+/* dual interface */ ICddbMLDBManager2;
+struct __declspec(uuid("be4e7feb-ee3a-4a41-b370-ae37e656be29"))
+/* dual interface */ ICddbPopularityRange;
+struct __declspec(uuid("ba9a4ba6-1879-4a32-82c8-bd84d8fadf00"))
+/* dual interface */ ICddbPlaylist25Mgr;
+struct __declspec(uuid("dbbc42ac-1409-4d95-98fc-7f6acb33ec15"))
+/* dual interface */ ICddbPLMoreLikeThisCfg;
+struct __declspec(uuid("dcf3b306-aa51-455c-9b39-51f8cb8590aa"))
+/* dual interface */ ICddbPLMoreLikeThisCfg2;
+struct __declspec(uuid("59ce219f-46aa-4fc1-85b8-31290e454503"))
+/* dual interface */ ICddbPLMoreLikeThisCfg25;
+struct /* coclass */ CddbNSWinampPlaylist2Mgr;
+struct /* coclass */ CddbPL2Criteria;
+struct /* coclass */ CddbPL2Timestamp;
+struct /* coclass */ CddbPL2FindData;
+struct /* coclass */ CddbPL2Result;
+struct /* coclass */ CddbPL2ResultList;
+struct /* coclass */ CddbEra;
+struct /* coclass */ CddbPLGeneratorList;
+struct /* coclass */ CddbPLGenerator;
+struct /* coclass */ CddbPLGenCriteria;
+struct /* coclass */ CddbPLGenLimit;
+struct /* coclass */ CddbPLGenCriteriaList;
+struct /* coclass */ CddbPLGenLimitList;
+struct /* coclass */ CddbPLGenRank;
+struct /* coclass */ CddbPLInfo;
+struct /* coclass */ CddbPLDataList;
+struct /* coclass */ CddbPLDataListItem;
+struct /* coclass */ CddbPLIDList;
+struct /* coclass */ CddbArtistTypeList;
+struct /* coclass */ CddbOriginsList;
+struct /* coclass */ CddbGenreDisplayList;
+struct /* coclass */ CddbEraDisplayList;
+struct /* coclass */ CddbPopularityRangeList;
+struct /* coclass */ CddbMLDBManager;
+struct /* coclass */ CddbPopularityRange;
+struct /* coclass */ CddbPLMoreLikeThisCfg;
+typedef enum __MIDL___MIDL_itf_CddbPlaylist_0000_0001 gnpl_stats_getdate_enum;
+typedef enum __MIDL___MIDL_itf_CddbPlaylist_0000_0002 gnpl_results_data_mask_flags_enum;
+typedef enum __MIDL___MIDL_itf_CddbPlaylist_0000_0003 gnpl_morelikethis_algorithm_t;
+typedef enum __MIDL___MIDL_itf_CddbPlaylist_0000_0004 gnpl_crit_similarity_function_t;
+typedef enum __MIDL___MIDL_itf_CddbPlaylist_0000_0005 gnpl_crit_selection_t;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(DPlaylist2Events, __uuidof(DPlaylist2Events));
+_COM_SMARTPTR_TYPEDEF(ICddbPL2Criteria, __uuidof(ICddbPL2Criteria));
+_COM_SMARTPTR_TYPEDEF(ICddbPL2Result, __uuidof(ICddbPL2Result));
+_COM_SMARTPTR_TYPEDEF(ICddbPL2ResultList, __uuidof(ICddbPL2ResultList));
+_COM_SMARTPTR_TYPEDEF(ICddbPL2Timestamp, __uuidof(ICddbPL2Timestamp));
+_COM_SMARTPTR_TYPEDEF(ICddbPL2FindData, __uuidof(ICddbPL2FindData));
+_COM_SMARTPTR_TYPEDEF(ICddbPLGenCriteria, __uuidof(ICddbPLGenCriteria));
+_COM_SMARTPTR_TYPEDEF(ICddbPLGenCriteriaList, __uuidof(ICddbPLGenCriteriaList));
+_COM_SMARTPTR_TYPEDEF(ICddbPLGenLimit, __uuidof(ICddbPLGenLimit));
+_COM_SMARTPTR_TYPEDEF(ICddbPLGenLimitList, __uuidof(ICddbPLGenLimitList));
+_COM_SMARTPTR_TYPEDEF(ICddbPLGenRank, __uuidof(ICddbPLGenRank));
+_COM_SMARTPTR_TYPEDEF(ICddbPLGenerator, __uuidof(ICddbPLGenerator));
+_COM_SMARTPTR_TYPEDEF(ICddbPLIDList, __uuidof(ICddbPLIDList));
+_COM_SMARTPTR_TYPEDEF(ICddbPLDataListItem, __uuidof(ICddbPLDataListItem));
+_COM_SMARTPTR_TYPEDEF(ICddbPLDataList, __uuidof(ICddbPLDataList));
+_COM_SMARTPTR_TYPEDEF(ICddbGenreDisplayList, __uuidof(ICddbGenreDisplayList));
+_COM_SMARTPTR_TYPEDEF(ICddbPLGeneratorList, __uuidof(ICddbPLGeneratorList));
+_COM_SMARTPTR_TYPEDEF(ICddbArtistTypeList, __uuidof(ICddbArtistTypeList));
+_COM_SMARTPTR_TYPEDEF(ICddbOriginsList, __uuidof(ICddbOriginsList));
+_COM_SMARTPTR_TYPEDEF(ICddbEra, __uuidof(ICddbEra));
+_COM_SMARTPTR_TYPEDEF(ICddbEraDisplayList, __uuidof(ICddbEraDisplayList));
+_COM_SMARTPTR_TYPEDEF(ICddbPopularityRangeList, __uuidof(ICddbPopularityRangeList));
+_COM_SMARTPTR_TYPEDEF(ICddbPlaylist2Mgr, __uuidof(ICddbPlaylist2Mgr));
+_COM_SMARTPTR_TYPEDEF(ICddbPLGenWeightedRank, __uuidof(ICddbPLGenWeightedRank));
+_COM_SMARTPTR_TYPEDEF(ICddbPL25Generator, __uuidof(ICddbPL25Generator));
+_COM_SMARTPTR_TYPEDEF(ICddbPLGen25Criteria, __uuidof(ICddbPLGen25Criteria));
+_COM_SMARTPTR_TYPEDEF(ICddbPLInfo, __uuidof(ICddbPLInfo));
+_COM_SMARTPTR_TYPEDEF(ICddbMLDBManager, __uuidof(ICddbMLDBManager));
+_COM_SMARTPTR_TYPEDEF(ICddbMLDBManager2, __uuidof(ICddbMLDBManager2));
+_COM_SMARTPTR_TYPEDEF(ICddbPopularityRange, __uuidof(ICddbPopularityRange));
+_COM_SMARTPTR_TYPEDEF(ICddbPLMoreLikeThisCfg, __uuidof(ICddbPLMoreLikeThisCfg));
+_COM_SMARTPTR_TYPEDEF(ICddbPlaylist25Mgr, __uuidof(ICddbPlaylist25Mgr));
+_COM_SMARTPTR_TYPEDEF(ICddbPLMoreLikeThisCfg2, __uuidof(ICddbPLMoreLikeThisCfg2));
+_COM_SMARTPTR_TYPEDEF(ICddbPLMoreLikeThisCfg25, __uuidof(ICddbPLMoreLikeThisCfg25));
+
+//
+// Type library items
+//
+
+enum gnpl_crit_field_t
+{
+    gnpl_crit_field_first = 0,
+    gnpl_crit_field_file_name = 1,
+    gnpl_crit_field_file_size = 2,
+    gnpl_crit_field_file_length = 3,
+    gnpl_crit_field_file_created_date = 4,
+    gnpl_crit_field_file_modified_date = 5,
+    gnpl_crit_field_file_lastplayed_date = 6,
+    gnpl_crit_field_file_bitrate = 7,
+    gnpl_crit_field_file_codec_format = 8,
+    gnpl_crit_field_file_drm = 9,
+    gnpl_crit_field_track_name = 10,
+    gnpl_crit_field_track_sort_name = 11,
+    gnpl_crit_field_track_artist_name = 12,
+    gnpl_crit_field_track_artist_sortname = 13,
+    gnpl_crit_field_track_releaseyear = 14,
+    gnpl_crit_field_track_langid = 15,
+    gnpl_crit_field_track_bpm = 16,
+    gnpl_crit_field_track_num = 17,
+    gnpl_crit_field_track_genre = 18,
+    gnpl_crit_field_track_genrev2 = 19,
+    gnpl_crit_field_track_mood = 20,
+    gnpl_crit_field_track_tempo = 21,
+    gnpl_crit_field_track_album_pop = 22,
+    gnpl_crit_field_track_global_pop = 23,
+    gnpl_crit_field_album_name = 24,
+    gnpl_crit_field_album_sortname = 25,
+    gnpl_crit_field_album_primaryartist = 26,
+    gnpl_crit_field_album_releaseyear = 27,
+    gnpl_crit_field_album_label = 28,
+    gnpl_crit_field_album_compilation = 29,
+    gnpl_crit_field_album_region = 30,
+    gnpl_crit_field_album_genre = 31,
+    gnpl_crit_field_album_genrev2 = 32,
+    gnpl_crit_field_album_pop = 33,
+    gnpl_crit_field_artist_region = 34,
+    gnpl_crit_field_artist_era = 35,
+    gnpl_crit_field_artist_type = 36,
+    gnpl_crit_field_track_local_pop = 37,
+    gnpl_crit_field_artist_local_pop = 38,
+    gnpl_crit_field_track_playcount = 39,
+    gnpl_crit_field_track_myrating = 40,
+    gnpl_crit_field_album_myrating = 41,
+    gnpl_crit_field_artist_myrating = 42,
+    gnpl_crit_field_genre_myrating = 43,
+    gnpl_crit_field_playlist_myrating = 44,
+    gnpl_crit_field_xdev1 = 45,
+    gnpl_crit_field_xdev2 = 46,
+    gnpl_crit_field_xdev3 = 47,
+    gnpl_crit_field_xdev = 48,
+    gnpl_crit_field_tagid = 49,
+    gnpl_crit_field_path_name = 50,
+    gnpl_crit_field_genredesc = 51,
+    gnpl_crit_field_track_composer = 52,
+    gnpl_crit_field_track_conductor = 53,
+    gnpl_crit_field_track_ensemble = 54,
+    gnpl_crit_field_reserved4 = 55,
+    gnpl_crit_field_reserved5 = 56,
+    gnpl_crit_field_reserved6 = 57,
+    gnpl_crit_field_reserved7 = 58,
+    gnpl_crit_field_reserved8 = 59,
+    gnpl_crit_field_reserved9 = 60,
+    gnpl_crit_field_reserved10 = 61,
+    gnpl_crit_field_reserved11 = 62,
+    gnpl_crit_field_reserved12 = 63,
+    gnpl_crit_field_reserved13 = 64,
+    gnpl_crit_field_reserved14 = 65,
+    gnpl_crit_field_idx_numdev1 = 66,
+    gnpl_crit_field_idx_numdev2 = 67,
+    gnpl_crit_field_idx_numdev3 = 68,
+    gnpl_crit_field_idx_alphdev1 = 69,
+    gnpl_crit_field_idx_alphdev2 = 70,
+    gnpl_crit_field_idx_alphdev3 = 71,
+    gnpl_crit_field_numdev1 = 72,
+    gnpl_crit_field_numdev2 = 73,
+    gnpl_crit_field_numdev3 = 74,
+    gnpl_crit_field_numdev4 = 75,
+    gnpl_crit_field_numdev5 = 76,
+    gnpl_crit_field_alphdev1 = 77,
+    gnpl_crit_field_alphdev2 = 78,
+    gnpl_crit_field_alphdev3 = 79,
+    gnpl_crit_field_alphdev4 = 80,
+    gnpl_crit_field_alphdev5 = 81,
+    gnpl_crit_field_primary_mood_id = 82,
+    gnpl_crit_field_primary_tempo_id = 83,
+    gnpl_crit_field_track_general_dsp = 84,
+    gnpl_crit_field_last = 85
+};
+
+enum gnpl_crit_field_type_t
+{
+    gnpl_crit_field_type_unknown = 0,
+    gnpl_crit_field_type_string = 1,
+    gnpl_crit_field_type_num = 2,
+    gnpl_crit_field_type_enum = 3,
+    gnpl_crit_field_type_date = 4,
+    gnpl_crit_field_type_key_ivalue_array = 5,
+    gnpl_crit_field_type_last = 6
+};
+
+enum gnpl_rank_order_t
+{
+    gnpl_rank_order_none = 0,
+    gnpl_rank_order_ascending = 1,
+    gnpl_rank_order_descending = 2
+};
+
+enum gnpl_crit_op_t
+{
+    gnpl_crit_op_str_first = 0,
+    gnpl_crit_op_str_eq = 1,
+    gnpl_crit_op_str_neq = 2,
+    gnpl_crit_op_str_cont = 3,
+    gnpl_crit_op_str_ncont = 4,
+    gnpl_crit_op_str_sta = 5,
+    gnpl_crit_op_str_end = 6,
+    gnpl_crit_op_str_last = 7,
+    gnpl_crit_op_num_first = 8,
+    gnpl_crit_op_num_eq = 9,
+    gnpl_crit_op_num_neq = 10,
+    gnpl_crit_op_num_lt = 11,
+    gnpl_crit_op_num_gt = 12,
+    gnpl_crit_op_num_rang = 13,
+    gnpl_crit_op_num_last = 14,
+    gnpl_crit_op_enum_first = 15,
+    gnpl_crit_op_enum_eq = 16,
+    gnpl_crit_op_enum_neq = 17,
+    gnpl_crit_op_enum_sim = 18,
+    gnpl_crit_op_enum_last = 19,
+    gnpl_crit_op_date_first = 20,
+    gnpl_crit_op_date_eq = 21,
+    gnpl_crit_op_date_neq = 22,
+    gnpl_crit_op_date_lt = 23,
+    gnpl_crit_op_date_gt = 24,
+    gnpl_crit_op_date_rang = 25,
+    gnpl_crit_op_date_inlast = 26,
+    gnpl_crit_op_date_notinlast = 27,
+    gnpl_crit_op_date_last = 28,
+    gnpl_crit_op_enum_rang = 29,
+    gnpl_crit_op_kiva_first = 30,
+    gnpl_crit_op_kiva_eq = 31,
+    gnpl_crit_op_kiva_neq = 32,
+    gnpl_crit_op_kiva_sim = 33,
+    gnpl_crit_op_kiva_last = 34,
+    gnpl_crit_op_last = 35
+};
+
+enum gnpl_crit_param_num_t
+{
+    gnpl_crit_param_1 = 0,
+    gnpl_crit_param_2 = 1,
+    gnpl_crit_param_3 = 2
+};
+
+enum gnpl_criteria_matchmode_t
+{
+    gnpl_matchmode_match_any = 0,
+    gnpl_matchmode_match_all = 1
+};
+
+enum __MIDL___MIDL_itf_CddbPlaylist_0000_0001
+{
+    gnpl_stats_lastplaydate = 1,
+    gnpl_stats_lastupdateddate = 2,
+    gnpl_stats_createddate = 3
+};
+
+enum gnpl_user_info_t
+{
+    gnpl_user_rating_first = 0,
+    gnpl_user_rating_highest = 1,
+    gnpl_user_rating_favorite = 2,
+    gnpl_user_rating_lowest = 3,
+    gnpl_user_rating_good = 4,
+    gnpl_user_play_never = 5,
+    gnpl_user_play_recent = 6,
+    gnpl_user_play_last_30_days = 7,
+    gnpl_user_play_last_week = 8,
+    gnpl_user_play_last_day = 9,
+    gnpl_user_info_last = 10
+};
+
+enum __MIDL___MIDL_itf_CddbPlaylist_0000_0002
+{
+    GNPL_RESULTS_DATA_MINIMUM = 0,
+    GNPL_RESULTS_DATA_FILEPATH = 1,
+    GNPL_RESULTS_DATA_ARTIST = 2,
+    GNPL_RESULTS_DATA_ALBUM = 4,
+    GNPL_RESULTS_DATA_POPULARITY = 8,
+    GNPL_RESULTS_DATA_USER_RATING = 16,
+    GNPL_RESULTS_DATA_BITRATE = 32,
+    GNPL_RESULTS_DATA_DEVFIELD1 = 64,
+    GNPL_RESULTS_DATA_RELEASEYEAR = 128,
+    GNPL_RESULTS_DATA_LASTPLAYED = 256,
+    GNPL_RESULTS_DATA_ALL = -1
+};
+
+enum __MIDL___MIDL_itf_CddbPlaylist_0000_0003
+{
+    GNPL_MORELIKETHIS_BEGIN_ALG = 0,
+    GNPL_MORELIKETHIS_ALG_DEFAULT = 0,
+    GNPL_MORELIKETHIS_ALG_20 = 1,
+    GNPL_MORELIKETHIS_ALG_25 = 2,
+    GNPL_MORELIKETHIS_ALG_DSP_1 = 3,
+    GNPL_MORELIKETHIS_ALG_DSP_2 = 4,
+    GNPL_MORELIKETHIS_END_ALG = 4
+};
+
+enum __MIDL___MIDL_itf_CddbPlaylist_0000_0004
+{
+    GNPL_CRIT_SIMILARITY_FUNCTION_DEFAULT = 0,
+    GNPL_CRIT_SIMILARITY_FUNCTION_1 = 1,
+    GNPL_CRIT_SIMILARITY_FUNCTION_2 = 2,
+    GNPL_CRIT_SIMILARITY_FUNCTION_3 = 3
+};
+
+enum __MIDL___MIDL_itf_CddbPlaylist_0000_0005
+{
+    GNPL_CRITERION_NOT_SELECTION_BASED = 0,
+    GNPL_CRITERION_IS_SELECTION_BASED = 1,
+    GNPL_CRITERION_INCLUDE_SEED_SELECTION = 2,
+    GNPL_CRITERION_TOP_SEED_SELECTION = 3,
+    GNPL_CRITERION_EXCLUDE_SEED_SELECTION = 4
+};
+
+enum CddbPlaylistErrors
+{
+    ERR_PL_DomainPlaylist = 768,
+    ERR_PL_CDDBControlVersion = -1023409920,
+    ERR_PL_DB_Corrupt = -1023409919,
+    ERR_PL_DB_IndexCorrupt = -1023409918,
+    ERR_PL_DB_BothCorrupt = -1023409917,
+    ERR_PL_Initialized = -1023409916,
+    ERR_PL_NotInitialized = -1023409915,
+    ERR_PL_NotShutdown = -1023409914
+};
+
+enum CddbPlaylistUpdateFlags
+{
+    CDDB_UPDATE_STANDARD = 1,
+    CDDB_UPDATE_POP = 2,
+    CDDB_UPDATE_EXTENDED = 4,
+    CDDB_UPDATE_ALL = 8,
+    CDDB_UPDATE_UNPOPULATED = 16,
+    CDDB_UPDATE_NONE = 0
+};
+
+enum CddbPlaylistMLDBFlags
+{
+    PL_MLDB_FLAGS_ZERO = 0,
+    PL_MLDB_CHECK_BASE = 1,
+    PL_MLDB_CHECK_INDEX = 2,
+    PL_MLDB_CHECK_DEEP = 4,
+    PL_MLDB_CHECK_DEFAULT = 7,
+    PL_MLDB_CLEAR_INIT_FLAG = 16,
+    PL_MLDB_SET_INIT_FLAG = 32,
+    PL_MLDB_BACKUP_BASE = 256,
+    PL_MLDB_BACKUP_INDEX = 512,
+    PL_MLDB_RESTORE_BASE = 1024,
+    PL_MLDB_RESTORE_INDEX = 2048,
+    PL_MLDB_DELETE_INDEX = 4096,
+    PL_MLDB_DELETE_BASE = 8192,
+    PL_MLDB_DELETE_BACKUPS = 16384,
+    PL_MLDB_DELETE_OTHER = 32768,
+    PL_MLDB_AUTO_REINDEX = 65536,
+    PL_MLDB_AUTO_BACKUP = 131072,
+    PL_MLDB_AUTO_MANAGE_INIT_FLAG = 262144,
+    PL_MLDB_AUTO_CHECK_IF_INIT_SET = 524288,
+    PL_MLDB_AUTO_CHECK_AT_INIT = 1048576,
+    PL_MLDB_AUTO_DEFAULT = 786432,
+    PL_MLDB_AUTO_MASK = 16711680,
+    PL_MLDB_DEVICE_MLDB_42 = 16777216
+};
+
+struct __declspec(uuid("a58522b9-6b50-4033-9246-1ec5701ed85c"))
+DPlaylist2Events : IDispatch
+{};
+
+struct __declspec(uuid("223e85f1-b287-4571-aa1a-a6d6144d0696"))
+ICddbPL2Criteria : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_GenreId (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_GenreId (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Similarity (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Similarity (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_SimilarityWindow (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_SimilarityWindow (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_SimilarityMinimum (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_SimilarityMaximum (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Popularity (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Popularity (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_PopularityWindow (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_PopularityWindow (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Artist (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Artist (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Album (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Album (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SortOrder (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_SortOrder (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Seed (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Seed (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxPerArtist (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxPerArtist (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxPerAlbum (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxPerAlbum (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxResults (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxResults (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("6ac694d3-4e30-47f3-93dd-236dbb308715"))
+ICddbPL2Result : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetFilename (
+        BSTR * filename ) = 0;
+      virtual HRESULT __stdcall GetArtist (
+        BSTR * Artist ) = 0;
+      virtual HRESULT __stdcall GetAlbum (
+        BSTR * Album ) = 0;
+      virtual HRESULT __stdcall GetTitle (
+        BSTR * title ) = 0;
+      virtual HRESULT __stdcall GetGenreId (
+        BSTR * GenreId ) = 0;
+      virtual HRESULT __stdcall GetFilesize (
+        /*[out,retval]*/ unsigned int * pVal ) = 0;
+      virtual HRESULT __stdcall GetTracklength (
+        /*[out,retval]*/ unsigned int * pVal ) = 0;
+      virtual HRESULT __stdcall GetBitrate (
+        /*[out,retval]*/ unsigned int * pVal ) = 0;
+};
+
+struct __declspec(uuid("29327d31-2587-48c6-8b11-3f57b096c2ea"))
+ICddbPL2ResultList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetResult (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ICddbPL2Result * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("c0e6e3a0-2fcf-4a33-8e55-19920b83d759"))
+ICddbPL2Timestamp : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Year (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Year (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Month (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Month (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Day (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Day (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Hour (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Hour (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Minute (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Minute (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall SetToNow ( ) = 0;
+      virtual HRESULT __stdcall GetAsString (
+        BSTR * str ) = 0;
+      virtual HRESULT __stdcall SetAsString (
+        BSTR str ) = 0;
+};
+
+struct __declspec(uuid("b0c8851a-0209-419b-84bc-1d03e6a0dc86"))
+ICddbPL2FindData : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Artist (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Artist (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Album (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Album (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Keyword (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Keyword (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_GenreId (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_GenreId (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall put_LastPlayRange (
+        long bSet,
+        struct ICddbPL2Timestamp * start,
+        struct ICddbPL2Timestamp * end ) = 0;
+      virtual HRESULT __stdcall get_LastPlayRange (
+        struct ICddbPL2Timestamp * start,
+        struct ICddbPL2Timestamp * end ) = 0;
+      virtual HRESULT __stdcall put_YearRange (
+        long bSet,
+        long start,
+        long end ) = 0;
+      virtual HRESULT __stdcall get_YearRange (
+        long * start,
+        long * end ) = 0;
+      virtual HRESULT __stdcall put_PlaysRange (
+        long bSet,
+        long start,
+        long end ) = 0;
+      virtual HRESULT __stdcall get_PlaysRange (
+        long * start,
+        long * end ) = 0;
+      virtual HRESULT __stdcall put_RatingRange (
+        long bSet,
+        long start,
+        long end ) = 0;
+      virtual HRESULT __stdcall get_RatingRange (
+        long * start,
+        long * end ) = 0;
+};
+
+struct __declspec(uuid("1754c0c9-24b5-4ed6-8eea-52620ed16e58"))
+ICddbPLGenCriteria : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Field (
+        /*[out,retval]*/ enum gnpl_crit_field_t * pVal ) = 0;
+      virtual HRESULT __stdcall put_Field (
+        /*[in]*/ enum gnpl_crit_field_t pVal ) = 0;
+      virtual HRESULT __stdcall get_FieldType (
+        /*[out,retval]*/ enum gnpl_crit_field_type_t * pVal ) = 0;
+      virtual HRESULT __stdcall put_FieldType (
+        /*[in]*/ enum gnpl_crit_field_type_t pVal ) = 0;
+      virtual HRESULT __stdcall get_Operation (
+        /*[out,retval]*/ enum gnpl_crit_op_t * pVal ) = 0;
+      virtual HRESULT __stdcall put_Operation (
+        /*[in]*/ enum gnpl_crit_op_t pVal ) = 0;
+      virtual HRESULT __stdcall get_IntParam1 (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_IntParam1 (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_IntParam2 (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_IntParam2 (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_IntParam3 (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_IntParam3 (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_StrParam1 (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_StrParam1 (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_StrParam2 (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_StrParam2 (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Weight (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_Weight (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_Order (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_Order (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_SelectionBased (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_SelectionBased (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_DateParam1 (
+        /*[out,retval]*/ struct ICddbPL2Timestamp * * pVal ) = 0;
+      virtual HRESULT __stdcall put_DateParam1 (
+        /*[in]*/ struct ICddbPL2Timestamp * pVal ) = 0;
+      virtual HRESULT __stdcall get_DateParam2 (
+        /*[out,retval]*/ struct ICddbPL2Timestamp * * pVal ) = 0;
+      virtual HRESULT __stdcall put_DateParam2 (
+        /*[in]*/ struct ICddbPL2Timestamp * pVal ) = 0;
+};
+
+struct __declspec(uuid("a9f50e0f-859d-4397-959e-3bb7aacbb564"))
+ICddbPLGenCriteriaList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetCriteria (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ICddbPLGenCriteria * * pVal ) = 0;
+      virtual HRESULT __stdcall DeleteCriteria (
+        /*[in]*/ long Index,
+        /*[in]*/ struct ICddbPLGenCriteria * criteria ) = 0;
+      virtual HRESULT __stdcall AddCriteria (
+        /*[in]*/ long Where,
+        /*[in]*/ struct ICddbPLGenCriteria * criteria ) = 0;
+      virtual HRESULT __stdcall ClearCriteria ( ) = 0;
+};
+
+struct __declspec(uuid("d79ffaf8-1bc2-4bde-b5f7-1baa899865d2"))
+ICddbPLGenLimit : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Field (
+        /*[out,retval]*/ enum gnpl_crit_field_t * pVal ) = 0;
+      virtual HRESULT __stdcall put_Field (
+        /*[in]*/ enum gnpl_crit_field_t pVal ) = 0;
+      virtual HRESULT __stdcall get_Limit (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Limit (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("8d951c2e-56fb-4e0b-903c-fe738da573c1"))
+ICddbPLGenLimitList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetLimit (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ICddbPLGenLimit * * pVal ) = 0;
+      virtual HRESULT __stdcall DeleteLimit (
+        /*[in]*/ long Index,
+        /*[in]*/ struct ICddbPLGenLimit * Limit ) = 0;
+      virtual HRESULT __stdcall AddLimit (
+        /*[in]*/ long Where,
+        /*[in]*/ struct ICddbPLGenLimit * Limit ) = 0;
+      virtual HRESULT __stdcall GetLimitForField (
+        /*[in]*/ enum gnpl_crit_field_t Field,
+        /*[out,retval]*/ struct ICddbPLGenLimit * * pVal ) = 0;
+};
+
+struct __declspec(uuid("0281a5e7-bd75-4ed3-9872-3331157b923d"))
+ICddbPLGenRank : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Field (
+        /*[out,retval]*/ enum gnpl_crit_field_t * pVal ) = 0;
+      virtual HRESULT __stdcall put_Field (
+        /*[in]*/ enum gnpl_crit_field_t pVal ) = 0;
+      virtual HRESULT __stdcall get_RankOrder (
+        /*[out,retval]*/ enum gnpl_rank_order_t * pVal ) = 0;
+      virtual HRESULT __stdcall put_RankOrder (
+        /*[in]*/ enum gnpl_rank_order_t pVal ) = 0;
+};
+
+struct __declspec(uuid("5311019a-98c9-4377-b8cf-72c00a55914a"))
+ICddbPLGenerator : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Description (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_CriteriaList (
+        /*[out,retval]*/ struct ICddbPLGenCriteriaList * * pVal ) = 0;
+      virtual HRESULT __stdcall put_CriteriaList (
+        /*[in]*/ struct ICddbPLGenCriteriaList * pVal ) = 0;
+      virtual HRESULT __stdcall get_MatchMode (
+        /*[out,retval]*/ enum gnpl_criteria_matchmode_t * pVal ) = 0;
+      virtual HRESULT __stdcall put_MatchMode (
+        /*[in]*/ enum gnpl_criteria_matchmode_t pVal ) = 0;
+      virtual HRESULT __stdcall get_LimitKilobytes (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LimitKilobytes (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LimitMinutes (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LimitMinutes (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LimitSongs (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LimitSongs (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Seed (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Seed (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LimitList (
+        /*[out,retval]*/ struct ICddbPLGenLimitList * * pVal ) = 0;
+      virtual HRESULT __stdcall put_LimitList (
+        /*[in]*/ struct ICddbPLGenLimitList * pVal ) = 0;
+      virtual HRESULT __stdcall get_Rank (
+        /*[in]*/ unsigned int RankOrder,
+        /*[out,retval]*/ struct ICddbPLGenRank * * pVal ) = 0;
+      virtual HRESULT __stdcall put_Rank (
+        /*[in]*/ unsigned int RankOrder,
+        /*[in]*/ struct ICddbPLGenRank * pVal ) = 0;
+      virtual HRESULT __stdcall get_AutoUpdate (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoUpdate (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_IsSelectionBased (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_IsSelectionBased (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall Clone (
+        struct ICddbPLGenerator * * ppClonedGenerator ) = 0;
+};
+
+struct __declspec(uuid("5a4471da-0283-449e-8ee2-b0716e3c168b"))
+ICddbPLIDList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetID (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("53881256-92a2-4292-8e24-68ca3992e337"))
+ICddbPLDataListItem : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Description (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Children (
+        /*[out,retval]*/ struct ICddbPLIDList * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Parents (
+        /*[out,retval]*/ struct ICddbPLIDList * * pVal ) = 0;
+};
+
+struct __declspec(uuid("5e484009-3e2b-426a-b496-aebcacd6deb7"))
+ICddbPLDataList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetItem (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ICddbPLDataListItem * * pVal ) = 0;
+      virtual HRESULT __stdcall GetItemById (
+        /*[in]*/ long Id,
+        /*[out,retval]*/ struct ICddbPLDataListItem * * pVal ) = 0;
+      virtual HRESULT __stdcall get_DescendantsById (
+        /*[in]*/ long Id,
+        /*[out,retval]*/ struct ICddbPLIDList * * pVal ) = 0;
+      virtual HRESULT __stdcall get_LeafDescendantsById (
+        /*[in]*/ long Id,
+        /*[out,retval]*/ struct ICddbPLIDList * * pVal ) = 0;
+};
+
+struct __declspec(uuid("3bfa2b55-49a3-42a0-bd2d-4d60d9b9c93f"))
+ICddbGenreDisplayList : ICddbPLDataList
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetDisplayItemByID (
+        /*[in]*/ long Id,
+        /*[out,retval]*/ struct ICddbPLDataListItem * * pVal ) = 0;
+};
+
+struct __declspec(uuid("f8d8ee69-e17d-442f-bb11-d8a1a214feba"))
+ICddbPLGeneratorList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetPLGenerator (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ICddbPLGenerator * * pPlGenerator ) = 0;
+      virtual HRESULT __stdcall SavePLGensToFile (
+        /*[in]*/ BSTR filepath ) = 0;
+      virtual HRESULT __stdcall AddPLGenerator (
+        /*[in]*/ struct ICddbPLGenerator * pPlGenerator ) = 0;
+      virtual HRESULT __stdcall RemovePLGenerator (
+        /*[in]*/ struct ICddbPLGenerator * pPlGenerator ) = 0;
+      virtual HRESULT __stdcall AddPLGeneratorAtIndex (
+        /*[in]*/ struct ICddbPLGenerator * pPlGenerator,
+        /*[in,out]*/ int * pIndex ) = 0;
+      virtual HRESULT __stdcall SetGenreDisplayList (
+        struct ICddbGenreDisplayList * pGenreDisplayList ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long lIndex,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("84e284d8-34cc-4337-b1dc-d7d6f0e431cb"))
+ICddbArtistTypeList : ICddbPLDataList
+{};
+
+struct __declspec(uuid("ba5342dc-41d7-4954-9501-fdc6acd0dc2f"))
+ICddbOriginsList : ICddbPLDataList
+{};
+
+struct __declspec(uuid("a2c6c4ee-32fe-4bb7-8a47-dc615034bd7c"))
+ICddbEra : ICddbPLDataListItem
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_StartYear (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_EndYear (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("15d93d1e-50f1-444c-9e76-e4c8aca0a29d"))
+ICddbEraDisplayList : ICddbPLDataList
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetEraByYear (
+        /*[in]*/ unsigned long Year,
+        /*[in]*/ unsigned short minspread,
+        /*[out,retval]*/ struct ICddbEra * * pEra ) = 0;
+};
+
+struct __declspec(uuid("3580dee2-b1d1-46ae-88b0-cbac62d1e157"))
+ICddbPopularityRangeList : ICddbPLDataList
+{};
+
+struct __declspec(uuid("34655d2e-8550-421f-a67d-a002f14d8d5e"))
+ICddbPlaylist2Mgr : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Initialize (
+        struct ICDDBControl * pCDDBControl,
+        BSTR db_path ) = 0;
+      virtual HRESULT __stdcall Shutdown ( ) = 0;
+      virtual HRESULT __stdcall DownloadCorrelates (
+        long bForce ) = 0;
+      virtual HRESULT __stdcall CreatePlaylist (
+        struct ICddbPL2Criteria * pCriteria,
+        struct ICddbPL2ResultList * * ppPLResults ) = 0;
+      virtual HRESULT __stdcall CreatePlaylistFromFolder (
+        BSTR folder,
+        long bRecurse,
+        struct ICddbPL2Criteria * criteria,
+        struct ICddbPL2ResultList * * ppPLResults ) = 0;
+      virtual HRESULT __stdcall AddFile (
+        BSTR filename ) = 0;
+      virtual HRESULT __stdcall AddFolder (
+        BSTR folder,
+        long bRecurse ) = 0;
+      virtual HRESULT __stdcall DeleteFile (
+        BSTR filename ) = 0;
+      virtual HRESULT __stdcall UpdateFile (
+        BSTR filename ) = 0;
+      virtual HRESULT __stdcall TestFile (
+        BSTR filename,
+        struct ICddbPL2Criteria * pCriteria,
+        struct ICddbPL2ResultList * pPLResults ) = 0;
+      virtual HRESULT __stdcall GetFileData (
+        BSTR filename,
+        struct ICddbDisc2 * * pDisc ) = 0;
+      virtual HRESULT __stdcall GetFileIdentifier (
+        BSTR filename,
+        BSTR * fileId ) = 0;
+      virtual HRESULT __stdcall NewPlaylistCriteria (
+        BSTR filename,
+        struct ICddbPL2Criteria * * criteria ) = 0;
+      virtual HRESULT __stdcall RetrieveCriteria (
+        long Index,
+        struct ICddbPL2Criteria * * ppCriteria ) = 0;
+      virtual HRESULT __stdcall SaveCriteria (
+        struct ICddbPL2Criteria * criteria,
+        long * Index ) = 0;
+      virtual HRESULT __stdcall DeleteCriteria (
+        long Index ) = 0;
+      virtual HRESULT __stdcall NumSavedCriteria (
+        long * Count ) = 0;
+      virtual HRESULT __stdcall StatsPlayedFile (
+        BSTR filename ) = 0;
+      virtual HRESULT __stdcall StatsGetPlays (
+        BSTR filename,
+        long * plays ) = 0;
+      virtual HRESULT __stdcall StatsRateFile (
+        BSTR filename,
+        long rating ) = 0;
+      virtual HRESULT __stdcall StatsGetRating (
+        BSTR filename,
+        long * rating ) = 0;
+      virtual HRESULT __stdcall StatsGetDate (
+        BSTR filename,
+        long type,
+        struct ICddbPL2Timestamp * date ) = 0;
+      virtual HRESULT __stdcall FindOpen (
+        struct ICddbPL2FindData * pFindData ) = 0;
+      virtual HRESULT __stdcall FindNext (
+        struct ICddbPL2FindData * pFindData,
+        struct ICddbDisc2 * * ppDisc ) = 0;
+      virtual HRESULT __stdcall FindClose (
+        struct ICddbPL2FindData * pFindData ) = 0;
+      virtual HRESULT __stdcall UpdateDatabase (
+        long flags ) = 0;
+      virtual HRESULT __stdcall CompactDatabase (
+        long flags ) = 0;
+      virtual HRESULT __stdcall GetEras (
+        IUnknown * * pEras ) = 0;
+      virtual HRESULT __stdcall GetPresetPlaylistGenList (
+        /*[out,retval]*/ struct ICddbPLGeneratorList * * pPresetPLGenList ) = 0;
+      virtual HRESULT __stdcall GetUserPlaylistGenList (
+        /*[out,retval]*/ struct ICddbPLGeneratorList * * pUserPlGenList ) = 0;
+      virtual HRESULT __stdcall LoadUserPLGens ( ) = 0;
+      virtual HRESULT __stdcall CreateDynPlaylist (
+        struct ICddbPLGenerator * pPLGen,
+        VARIANT filenamesArray,
+        struct ICddbPL2ResultList * * ppPLResults ) = 0;
+      virtual HRESULT __stdcall SaveUserPLGens ( ) = 0;
+      virtual HRESULT __stdcall GetArtistTypes (
+        /*[out,retval]*/ struct ICddbArtistTypeList * * pList ) = 0;
+      virtual HRESULT __stdcall GetOrigins (
+        /*[out,retval]*/ struct ICddbOriginsList * * pList ) = 0;
+      virtual HRESULT __stdcall GetGenreDisplayList (
+        /*[in]*/ long flags,
+        /*[out,retval]*/ struct ICddbGenreDisplayList * * pVal ) = 0;
+      virtual HRESULT __stdcall GetEraDisplayList (
+        /*[in]*/ long flags,
+        /*[out,retval]*/ struct ICddbEraDisplayList * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall FileGetDevField (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ int fieldnum,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall FileSetDevField (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ int fieldnum,
+        /*[in]*/ BSTR fieldval ) = 0;
+      virtual HRESULT __stdcall get_DirDelim (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DirDelim (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall AddFileWithTag (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ struct ICddbFileTag * tag ) = 0;
+      virtual HRESULT __stdcall AddFileWithDisc (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ struct ICddbDisc * disc ) = 0;
+      virtual HRESULT __stdcall FileSetFieldVal (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ enum gnpl_crit_field_t Field,
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall FileSetFieldValDate (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ enum gnpl_crit_field_t Field,
+        /*[in]*/ struct ICddbPL2Timestamp * pTimestamp ) = 0;
+      virtual HRESULT __stdcall FileGetFieldVal (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ enum gnpl_crit_field_t Field,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall FileGetFieldValDate (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ enum gnpl_crit_field_t Field,
+        /*[out,retval]*/ struct ICddbPL2Timestamp * * pDate ) = 0;
+      virtual HRESULT __stdcall GetPopularityRanges (
+        /*[out,retval]*/ struct ICddbPopularityRangeList * * pList ) = 0;
+      virtual HRESULT __stdcall AddEntry (
+        /*[in]*/ BSTR filename ) = 0;
+      virtual HRESULT __stdcall FileSetTagID (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ BSTR TagID,
+        /*[in]*/ int flags ) = 0;
+      virtual HRESULT __stdcall AddEntryWithTag (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ BSTR TagID ) = 0;
+      virtual HRESULT __stdcall CDDBUpdateEntry (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ int flags ) = 0;
+      virtual HRESULT __stdcall AddEntryWithDisc (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ struct ICddbDisc * disc ) = 0;
+      virtual HRESULT __stdcall UpdateFileWithDisc (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ struct ICddbDisc * pDisc ) = 0;
+      virtual HRESULT __stdcall GetPLDataList (
+        /*[in]*/ long flags,
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct ICddbPLDataList * * pList ) = 0;
+};
+
+struct __declspec(uuid("b282f975-ac68-41c1-bded-de683bb8e403"))
+ICddbPLGenWeightedRank : ICddbPLGenRank
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Weight (
+        /*[out,retval]*/ unsigned int * pVal ) = 0;
+      virtual HRESULT __stdcall put_Weight (
+        /*[in]*/ unsigned int pVal ) = 0;
+};
+
+struct __declspec(uuid("6e1eeee1-7227-4bad-b955-b84bea914a5a"))
+ICddbPL25Generator : ICddbPLGenerator
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_WeightedRank (
+        /*[in]*/ struct ICddbPLGenWeightedRank * _arg1 ) = 0;
+      virtual HRESULT __stdcall GetWeightedRankCount (
+        /*[out,retval]*/ unsigned int * pCount ) = 0;
+      virtual HRESULT __stdcall get_WeightedRankByIndex (
+        /*[in]*/ unsigned int Index,
+        /*[out,retval]*/ struct ICddbPLGenWeightedRank * * pVal ) = 0;
+      virtual HRESULT __stdcall get_WeightedRankByField (
+        /*[in]*/ enum gnpl_crit_field_t Field,
+        /*[out,retval]*/ struct ICddbPLGenWeightedRank * * pVal ) = 0;
+      virtual HRESULT __stdcall DeleteWeightedRank (
+        /*[in]*/ struct ICddbPLGenWeightedRank * pRank ) = 0;
+      virtual HRESULT __stdcall DeleteWeightedRankWithField (
+        /*[in]*/ enum gnpl_crit_field_t Field ) = 0;
+      virtual HRESULT __stdcall ClearRanks ( ) = 0;
+      virtual HRESULT __stdcall ClearWeightedRanks ( ) = 0;
+};
+
+struct __declspec(uuid("3ffd3787-fe3a-4f44-be99-4289875eb925"))
+ICddbPLGen25Criteria : ICddbPLGenCriteria
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_DevFieldNum (
+        /*[out,retval]*/ int * pDevFieldNum ) = 0;
+      virtual HRESULT __stdcall put_DevFieldNum (
+        /*[in]*/ int pDevFieldNum ) = 0;
+};
+
+struct __declspec(uuid("e0d26898-f166-4f42-9a6a-5d2e346ed6ed"))
+ICddbPLInfo : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetCriteriaFieldType (
+        /*[in]*/ enum gnpl_crit_field_t Field,
+        /*[out,retval]*/ enum gnpl_crit_field_type_t * pVal ) = 0;
+      virtual HRESULT __stdcall GetCriteriaFieldDescription (
+        /*[in]*/ enum gnpl_crit_field_t Field,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall GetCriteriaFieldUnits (
+        /*[in]*/ enum gnpl_crit_field_t Field,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall GetCriteriaOpDescription (
+        /*[in]*/ enum gnpl_crit_op_t Op,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall GetCriteriaOpUnits (
+        /*[in]*/ enum gnpl_crit_op_t Op,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall GetUserInfoDescription (
+        /*[in]*/ enum gnpl_user_info_t Info,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Language (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Language (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall GetCutoffFieldDescription (
+        /*[in]*/ enum gnpl_crit_field_t Field,
+        /*[in]*/ enum gnpl_rank_order_t Order,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall SetDevFieldInfo (
+        /*[in]*/ int fieldnum,
+        /*[in]*/ enum gnpl_crit_field_type_t FieldType ) = 0;
+};
+
+struct __declspec(uuid("f7bcb924-06da-41e2-af0c-c249c136303a"))
+ICddbMLDBManager : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Attach (
+        /*[in]*/ struct ICddbPlaylist2Mgr * pMgr ) = 0;
+      virtual HRESULT __stdcall Detach (
+        /*[in]*/ struct ICddbPlaylist2Mgr * pMgr ) = 0;
+      virtual HRESULT __stdcall GetOptions (
+        /*[out]*/ long * flags,
+        /*[out]*/ BSTR * backup_path ) = 0;
+      virtual HRESULT __stdcall SetOptions (
+        /*[in]*/ long flags,
+        /*[in]*/ BSTR backup_path ) = 0;
+      virtual HRESULT __stdcall CheckDB (
+        /*[in]*/ long flags,
+        /*[in]*/ BSTR db_path ) = 0;
+      virtual HRESULT __stdcall RebuildDBIndex (
+        /*[in]*/ long flags,
+        /*[in]*/ BSTR db_path ) = 0;
+      virtual HRESULT __stdcall BackupDBFiles (
+        /*[in]*/ long flags,
+        /*[in]*/ BSTR db_path,
+        /*[in]*/ BSTR backup_path ) = 0;
+      virtual HRESULT __stdcall RestoreDBFiles (
+        /*[in]*/ long flags,
+        /*[in]*/ BSTR db_path,
+        /*[in]*/ BSTR restore_path ) = 0;
+      virtual HRESULT __stdcall CheckInitFlag (
+        /*[in]*/ long flags,
+        /*[in]*/ BSTR db_path,
+        /*[out]*/ long * exists ) = 0;
+      virtual HRESULT __stdcall ModifyInitFlag (
+        /*[in]*/ long flags,
+        /*[in]*/ BSTR db_path ) = 0;
+      virtual HRESULT __stdcall CommitDB ( ) = 0;
+      virtual HRESULT __stdcall DeleteDBFiles (
+        /*[in]*/ long flags,
+        /*[in]*/ BSTR db_path ) = 0;
+};
+
+struct __declspec(uuid("df17e91f-434a-4e75-8645-13dd56a4cc86"))
+ICddbMLDBManager2 : ICddbMLDBManager
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ExportMLDB (
+        /*[in]*/ long flags,
+        /*[in]*/ long collection_id,
+        /*[in]*/ BSTR db_path,
+        /*[in]*/ BSTR export_path ) = 0;
+      virtual HRESULT __stdcall ImportMLDB (
+        /*[in]*/ long flags,
+        /*[in]*/ long collection_id,
+        /*[in]*/ BSTR import_path,
+        /*[in]*/ BSTR db_path ) = 0;
+};
+
+struct __declspec(uuid("be4e7feb-ee3a-4a41-b370-ae37e656be29"))
+ICddbPopularityRange : ICddbPLDataListItem
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_StartRange (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_EndRange (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("dbbc42ac-1409-4d95-98fc-7f6acb33ec15"))
+ICddbPLMoreLikeThisCfg : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_TrackLimit (
+        /*[out,retval]*/ unsigned int * pVal ) = 0;
+      virtual HRESULT __stdcall put_TrackLimit (
+        /*[in]*/ unsigned int pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxPerArtist (
+        /*[out,retval]*/ unsigned int * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxPerArtist (
+        /*[in]*/ unsigned int pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxPerAlbum (
+        /*[out,retval]*/ unsigned int * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxPerAlbum (
+        /*[in]*/ unsigned int pVal ) = 0;
+      virtual HRESULT __stdcall get_Algorithm (
+        /*[out,retval]*/ int * pVal ) = 0;
+      virtual HRESULT __stdcall put_Algorithm (
+        /*[in]*/ int pVal ) = 0;
+      virtual HRESULT __stdcall get_Seed (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Seed (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_flags (
+        /*[out,retval]*/ int * pVal ) = 0;
+      virtual HRESULT __stdcall put_flags (
+        /*[in]*/ int pVal ) = 0;
+      virtual HRESULT __stdcall get_SortByField (
+        /*[out,retval]*/ enum gnpl_crit_field_t * pVal ) = 0;
+      virtual HRESULT __stdcall put_SortByField (
+        /*[in]*/ enum gnpl_crit_field_t pVal ) = 0;
+      virtual HRESULT __stdcall get_Option (
+        /*[in]*/ BSTR optionName,
+        /*[out,retval]*/ unsigned int * pVal ) = 0;
+      virtual HRESULT __stdcall put_Option (
+        /*[in]*/ BSTR optionName,
+        /*[in]*/ unsigned int pVal ) = 0;
+};
+
+struct __declspec(uuid("ba9a4ba6-1879-4a32-82c8-bd84d8fadf00"))
+ICddbPlaylist25Mgr : ICddbPlaylist2Mgr
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall MoreLikeThisSong (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ struct ICddbPLMoreLikeThisCfg * pConfig,
+        /*[out,retval]*/ struct ICddbPL2ResultList * * ppPLResults ) = 0;
+      virtual HRESULT __stdcall MoreLikeTheseSongs (
+        /*[in]*/ VARIANT filenamesArray,
+        /*[in]*/ struct ICddbPLMoreLikeThisCfg * pConfig,
+        /*[out,retval]*/ struct ICddbPL2ResultList * * ppPLResults ) = 0;
+      virtual HRESULT __stdcall MoreLikeThisArtist (
+        /*[in]*/ BSTR artist_name,
+        /*[in]*/ struct ICddbPLMoreLikeThisCfg * pConfig,
+        /*[out,retval]*/ struct ICddbPL2ResultList * * ppPLResults ) = 0;
+      virtual HRESULT __stdcall MoreLikeThisAlbum (
+        /*[in]*/ BSTR album_name,
+        /*[in]*/ BSTR artist_name,
+        /*[in]*/ struct ICddbPLMoreLikeThisCfg * pConfig,
+        /*[out,retval]*/ struct ICddbPL2ResultList * * ppPLResults ) = 0;
+      virtual HRESULT __stdcall MoreLikeThisDisc (
+        /*[in]*/ struct ICddbDisc * pDisc,
+        /*[in]*/ struct ICddbPLMoreLikeThisCfg * pConfig,
+        /*[out,retval]*/ struct ICddbPL2ResultList * * ppPLResults ) = 0;
+      virtual HRESULT __stdcall MoreOfThisField (
+        /*[in]*/ VARIANT filenamesArray,
+        enum gnpl_crit_field_t Field,
+        /*[in]*/ struct ICddbPLMoreLikeThisCfg * pConfig,
+        /*[out,retval]*/ struct ICddbPL2ResultList * * ppPLResults ) = 0;
+      virtual HRESULT __stdcall FileSetDevFieldValDate (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ int DevFieldNum,
+        /*[in]*/ struct ICddbPL2Timestamp * pTimestamp ) = 0;
+      virtual HRESULT __stdcall FileGetDevFieldValDate (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ int DevFieldNum,
+        /*[out,retval]*/ struct ICddbPL2Timestamp * * pDate ) = 0;
+      virtual HRESULT __stdcall LoadUserPLGensFromFile (
+        /*[in]*/ BSTR bmlfile ) = 0;
+      virtual HRESULT __stdcall FileSetExtData (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ struct ICddbExtData * pExtData,
+        /*[in]*/ long lExtDataFlags ) = 0;
+      virtual HRESULT __stdcall FileGetExtData (
+        /*[in]*/ BSTR filename,
+        /*[out]*/ struct ICddbExtData * * ppExtData,
+        /*[in]*/ long lExtDataFlags ) = 0;
+      virtual HRESULT __stdcall FileSetExtDataSerialized (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ BSTR bstrSerialized,
+        /*[in]*/ long lExtDataFlags ) = 0;
+      virtual HRESULT __stdcall FileGetExtDataSerialized (
+        /*[in]*/ BSTR filename,
+        /*[out]*/ BSTR * pVal,
+        /*[in]*/ long lExtDataFlags ) = 0;
+      virtual HRESULT __stdcall AddFileWithTagEx (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ struct ICddbFileTag * pTag,
+        /*[in]*/ long lPlaylistLookupFlags ) = 0;
+      virtual HRESULT __stdcall AddFileWithDiscEx (
+        /*[in]*/ BSTR filename,
+        /*[in]*/ struct ICddbDisc * pDisc,
+        /*[in]*/ long lTrackNum,
+        /*[in]*/ long lPlaylistLookupFlags ) = 0;
+      virtual HRESULT __stdcall RenameEntry (
+        /*[in]*/ BSTR oldFilename,
+        /*[in]*/ BSTR newFilename ) = 0;
+};
+
+struct __declspec(uuid("dcf3b306-aa51-455c-9b39-51f8cb8590aa"))
+ICddbPLMoreLikeThisCfg2 : ICddbPLMoreLikeThisCfg
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_MaxKilobytes (
+        /*[out,retval]*/ unsigned int * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxKilobytes (
+        /*[in]*/ unsigned int pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxMinutes (
+        /*[out,retval]*/ unsigned int * pVal ) = 0;
+      virtual HRESULT __stdcall put_MaxMinutes (
+        /*[in]*/ unsigned int pVal ) = 0;
+};
+
+struct __declspec(uuid("59ce219f-46aa-4fc1-85b8-31290e454503"))
+ICddbPLMoreLikeThisCfg25 : ICddbPLMoreLikeThisCfg2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_SelectionType (
+        /*[out,retval]*/ gnpl_crit_selection_t * pVal ) = 0;
+      virtual HRESULT __stdcall put_SelectionType (
+        /*[in]*/ gnpl_crit_selection_t pVal ) = 0;
+      virtual HRESULT __stdcall get_ExcludeList (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_ExcludeList (
+        /*[in]*/ VARIANT pVal ) = 0;
+};
+
+struct __declspec(uuid("39c806ec-eb0a-4f6e-b40d-c41d92281b5e"))
+CddbNSWinampPlaylist2Mgr;
+    // [ default ] interface ICddbPlaylist2Mgr
+    // [ default, source ] dispinterface DPlaylist2Events
+
+struct __declspec(uuid("d593724f-d0dc-431b-a395-8280d5aceccb"))
+CddbPL2Criteria;
+    // [ default ] interface ICddbPL2Criteria
+
+struct __declspec(uuid("fe4c8bff-961f-42c2-bad8-808f76edde15"))
+CddbPL2Timestamp;
+    // [ default ] interface ICddbPL2Timestamp
+
+struct __declspec(uuid("870a8c49-8935-430b-9ffe-175c47fb6b0b"))
+CddbPL2FindData;
+    // [ default ] interface ICddbPL2FindData
+
+struct __declspec(uuid("1cb70589-414c-40a6-b108-a5f02ae4cb62"))
+CddbPL2Result;
+    // [ default ] interface ICddbPL2Result
+
+struct __declspec(uuid("45f626aa-a0b4-4f3c-a173-64a7aac44670"))
+CddbPL2ResultList;
+    // [ default ] interface ICddbPL2ResultList
+
+struct __declspec(uuid("684aa29d-14f5-4dd9-949f-c2ae96e7f9ac"))
+CddbEra;
+    // [ default ] interface ICddbEra
+    // interface ICddbPLDataListItem
+
+struct __declspec(uuid("d7fbfb00-25ec-41f6-b64e-fab7668d5b75"))
+CddbPLGeneratorList;
+    // [ default ] interface ICddbPLGeneratorList
+
+struct __declspec(uuid("7052a035-2aee-4d5d-be82-6b12437bfcba"))
+CddbPLGenerator;
+    // [ default ] interface ICddbPLGenerator
+
+struct __declspec(uuid("b1f7d50c-a3fe-4bbb-9389-25b78d70b593"))
+CddbPLGenCriteria;
+    // [ default ] interface ICddbPLGenCriteria
+
+struct __declspec(uuid("783dcf23-fde3-44e1-ad01-c8100596a81b"))
+CddbPLGenLimit;
+    // [ default ] interface ICddbPLGenLimit
+
+struct __declspec(uuid("7f403f21-383b-4faf-94c7-e2c2f487f926"))
+CddbPLGenCriteriaList;
+    // [ default ] interface ICddbPLGenCriteriaList
+
+struct __declspec(uuid("f78ae80a-3ef5-498e-bf16-7696f7d31fed"))
+CddbPLGenLimitList;
+    // [ default ] interface ICddbPLGenLimitList
+
+struct __declspec(uuid("bf1caa94-1d1c-4ae7-b94c-10fdc05f493d"))
+CddbPLGenRank;
+    // [ default ] interface ICddbPLGenRank
+
+struct __declspec(uuid("654e1149-060b-4fd1-af4b-07e1d2a83ae0"))
+CddbPLInfo;
+    // [ default ] interface ICddbPLInfo
+
+struct __declspec(uuid("0f81de5a-2181-4b4a-af32-de4f21409bee"))
+CddbPLDataList;
+    // [ default ] interface ICddbPLDataList
+
+struct __declspec(uuid("56fce24a-250a-4399-bb0c-f8c5a5169f86"))
+CddbPLDataListItem;
+    // [ default ] interface ICddbPLDataListItem
+
+struct __declspec(uuid("671d0917-5346-4a5e-8100-0e75c423fdab"))
+CddbPLIDList;
+    // [ default ] interface ICddbPLIDList
+
+struct __declspec(uuid("c367baf6-6587-45a8-b774-aa20d6aa5ce4"))
+CddbArtistTypeList;
+    // [ default ] interface ICddbArtistTypeList
+    // interface ICddbPLDataList
+
+struct __declspec(uuid("642e727f-4ba8-4514-972b-d1d554d62d2f"))
+CddbOriginsList;
+    // [ default ] interface ICddbOriginsList
+    // interface ICddbPLDataList
+
+struct __declspec(uuid("09e3539f-d0cc-4913-a025-104323c2caab"))
+CddbGenreDisplayList;
+    // [ default ] interface ICddbGenreDisplayList
+    // interface ICddbPLDataList
+
+struct __declspec(uuid("f613382c-27f6-42ca-9b9b-1f1890c19c03"))
+CddbEraDisplayList;
+    // [ default ] interface ICddbEraDisplayList
+    // interface ICddbPLDataList
+
+struct __declspec(uuid("52380d21-992d-416f-97d2-3a2dd46ad7ea"))
+CddbPopularityRangeList;
+    // [ default ] interface ICddbPopularityRangeList
+
+struct __declspec(uuid("d374ceca-3e86-4ab4-87a9-3ff7e03e3cad"))
+CddbMLDBManager;
+    // [ default ] interface ICddbMLDBManager
+
+struct __declspec(uuid("b0204aad-f796-4221-acf3-c24fcee9421a"))
+CddbPopularityRange;
+    // [ default ] interface ICddbPopularityRange
+    // interface ICddbPLDataListItem
+
+struct __declspec(uuid("b3f484a1-e3b4-4ad5-a9a9-52592a08dbd2"))
+CddbPLMoreLikeThisCfg;
+    // [ default ] interface ICddbPLMoreLikeThisCfg
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CDDBPLAYLIST2LibNSWinamp =
+    {0x7919d0ca,0x3043,0x4c02,{0xb7,0x78,0xab,0x2b,0xf4,0x93,0x1f,0x58}};
+extern "C" const GUID __declspec(selectany) DIID_DPlaylist2Events =
+    {0xa58522b9,0x6b50,0x4033,{0x92,0x46,0x1e,0xc5,0x70,0x1e,0xd8,0x5c}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPL2Criteria =
+    {0x223e85f1,0xb287,0x4571,{0xaa,0x1a,0xa6,0xd6,0x14,0x4d,0x06,0x96}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPL2Result =
+    {0x6ac694d3,0x4e30,0x47f3,{0x93,0xdd,0x23,0x6d,0xbb,0x30,0x87,0x15}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPL2ResultList =
+    {0x29327d31,0x2587,0x48c6,{0x8b,0x11,0x3f,0x57,0xb0,0x96,0xc2,0xea}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPL2Timestamp =
+    {0xc0e6e3a0,0x2fcf,0x4a33,{0x8e,0x55,0x19,0x92,0x0b,0x83,0xd7,0x59}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPL2FindData =
+    {0xb0c8851a,0x0209,0x419b,{0x84,0xbc,0x1d,0x03,0xe6,0xa0,0xdc,0x86}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLGenCriteria =
+    {0x1754c0c9,0x24b5,0x4ed6,{0x8e,0xea,0x52,0x62,0x0e,0xd1,0x6e,0x58}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLGenCriteriaList =
+    {0xa9f50e0f,0x859d,0x4397,{0x95,0x9e,0x3b,0xb7,0xaa,0xcb,0xb5,0x64}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLGenLimit =
+    {0xd79ffaf8,0x1bc2,0x4bde,{0xb5,0xf7,0x1b,0xaa,0x89,0x98,0x65,0xd2}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLGenLimitList =
+    {0x8d951c2e,0x56fb,0x4e0b,{0x90,0x3c,0xfe,0x73,0x8d,0xa5,0x73,0xc1}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLGenRank =
+    {0x0281a5e7,0xbd75,0x4ed3,{0x98,0x72,0x33,0x31,0x15,0x7b,0x92,0x3d}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLGenerator =
+    {0x5311019a,0x98c9,0x4377,{0xb8,0xcf,0x72,0xc0,0x0a,0x55,0x91,0x4a}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLIDList =
+    {0x5a4471da,0x0283,0x449e,{0x8e,0xe2,0xb0,0x71,0x6e,0x3c,0x16,0x8b}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLDataListItem =
+    {0x53881256,0x92a2,0x4292,{0x8e,0x24,0x68,0xca,0x39,0x92,0xe3,0x37}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLDataList =
+    {0x5e484009,0x3e2b,0x426a,{0xb4,0x96,0xae,0xbc,0xac,0xd6,0xde,0xb7}};
+extern "C" const GUID __declspec(selectany) IID_ICddbGenreDisplayList =
+    {0x3bfa2b55,0x49a3,0x42a0,{0xbd,0x2d,0x4d,0x60,0xd9,0xb9,0xc9,0x3f}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLGeneratorList =
+    {0xf8d8ee69,0xe17d,0x442f,{0xbb,0x11,0xd8,0xa1,0xa2,0x14,0xfe,0xba}};
+extern "C" const GUID __declspec(selectany) IID_ICddbArtistTypeList =
+    {0x84e284d8,0x34cc,0x4337,{0xb1,0xdc,0xd7,0xd6,0xf0,0xe4,0x31,0xcb}};
+extern "C" const GUID __declspec(selectany) IID_ICddbOriginsList =
+    {0xba5342dc,0x41d7,0x4954,{0x95,0x01,0xfd,0xc6,0xac,0xd0,0xdc,0x2f}};
+extern "C" const GUID __declspec(selectany) IID_ICddbEra =
+    {0xa2c6c4ee,0x32fe,0x4bb7,{0x8a,0x47,0xdc,0x61,0x50,0x34,0xbd,0x7c}};
+extern "C" const GUID __declspec(selectany) IID_ICddbEraDisplayList =
+    {0x15d93d1e,0x50f1,0x444c,{0x9e,0x76,0xe4,0xc8,0xac,0xa0,0xa2,0x9d}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPopularityRangeList =
+    {0x3580dee2,0xb1d1,0x46ae,{0x88,0xb0,0xcb,0xac,0x62,0xd1,0xe1,0x57}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPlaylist2Mgr =
+    {0x34655d2e,0x8550,0x421f,{0xa6,0x7d,0xa0,0x02,0xf1,0x4d,0x8d,0x5e}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLGenWeightedRank =
+    {0xb282f975,0xac68,0x41c1,{0xbd,0xed,0xde,0x68,0x3b,0xb8,0xe4,0x03}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPL25Generator =
+    {0x6e1eeee1,0x7227,0x4bad,{0xb9,0x55,0xb8,0x4b,0xea,0x91,0x4a,0x5a}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLGen25Criteria =
+    {0x3ffd3787,0xfe3a,0x4f44,{0xbe,0x99,0x42,0x89,0x87,0x5e,0xb9,0x25}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLInfo =
+    {0xe0d26898,0xf166,0x4f42,{0x9a,0x6a,0x5d,0x2e,0x34,0x6e,0xd6,0xed}};
+extern "C" const GUID __declspec(selectany) IID_ICddbMLDBManager =
+    {0xf7bcb924,0x06da,0x41e2,{0xaf,0x0c,0xc2,0x49,0xc1,0x36,0x30,0x3a}};
+extern "C" const GUID __declspec(selectany) IID_ICddbMLDBManager2 =
+    {0xdf17e91f,0x434a,0x4e75,{0x86,0x45,0x13,0xdd,0x56,0xa4,0xcc,0x86}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPopularityRange =
+    {0xbe4e7feb,0xee3a,0x4a41,{0xb3,0x70,0xae,0x37,0xe6,0x56,0xbe,0x29}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLMoreLikeThisCfg =
+    {0xdbbc42ac,0x1409,0x4d95,{0x98,0xfc,0x7f,0x6a,0xcb,0x33,0xec,0x15}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPlaylist25Mgr =
+    {0xba9a4ba6,0x1879,0x4a32,{0x82,0xc8,0xbd,0x84,0xd8,0xfa,0xdf,0x00}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLMoreLikeThisCfg2 =
+    {0xdcf3b306,0xaa51,0x455c,{0x9b,0x39,0x51,0xf8,0xcb,0x85,0x90,0xaa}};
+extern "C" const GUID __declspec(selectany) IID_ICddbPLMoreLikeThisCfg25 =
+    {0x59ce219f,0x46aa,0x4fc1,{0x85,0xb8,0x31,0x29,0x0e,0x45,0x45,0x03}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbNSWinampPlaylist2Mgr =
+    {0x39c806ec,0xeb0a,0x4f6e,{0xb4,0x0d,0xc4,0x1d,0x92,0x28,0x1b,0x5e}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPL2Criteria =
+    {0xd593724f,0xd0dc,0x431b,{0xa3,0x95,0x82,0x80,0xd5,0xac,0xec,0xcb}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPL2Timestamp =
+    {0xfe4c8bff,0x961f,0x42c2,{0xba,0xd8,0x80,0x8f,0x76,0xed,0xde,0x15}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPL2FindData =
+    {0x870a8c49,0x8935,0x430b,{0x9f,0xfe,0x17,0x5c,0x47,0xfb,0x6b,0x0b}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPL2Result =
+    {0x1cb70589,0x414c,0x40a6,{0xb1,0x08,0xa5,0xf0,0x2a,0xe4,0xcb,0x62}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPL2ResultList =
+    {0x45f626aa,0xa0b4,0x4f3c,{0xa1,0x73,0x64,0xa7,0xaa,0xc4,0x46,0x70}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbEra =
+    {0x684aa29d,0x14f5,0x4dd9,{0x94,0x9f,0xc2,0xae,0x96,0xe7,0xf9,0xac}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPLGeneratorList =
+    {0xd7fbfb00,0x25ec,0x41f6,{0xb6,0x4e,0xfa,0xb7,0x66,0x8d,0x5b,0x75}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPLGenerator =
+    {0x7052a035,0x2aee,0x4d5d,{0xbe,0x82,0x6b,0x12,0x43,0x7b,0xfc,0xba}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPLGenCriteria =
+    {0xb1f7d50c,0xa3fe,0x4bbb,{0x93,0x89,0x25,0xb7,0x8d,0x70,0xb5,0x93}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPLGenLimit =
+    {0x783dcf23,0xfde3,0x44e1,{0xad,0x01,0xc8,0x10,0x05,0x96,0xa8,0x1b}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPLGenCriteriaList =
+    {0x7f403f21,0x383b,0x4faf,{0x94,0xc7,0xe2,0xc2,0xf4,0x87,0xf9,0x26}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPLGenLimitList =
+    {0xf78ae80a,0x3ef5,0x498e,{0xbf,0x16,0x76,0x96,0xf7,0xd3,0x1f,0xed}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPLGenRank =
+    {0xbf1caa94,0x1d1c,0x4ae7,{0xb9,0x4c,0x10,0xfd,0xc0,0x5f,0x49,0x3d}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPLInfo =
+    {0x654e1149,0x060b,0x4fd1,{0xaf,0x4b,0x07,0xe1,0xd2,0xa8,0x3a,0xe0}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPLDataList =
+    {0x0f81de5a,0x2181,0x4b4a,{0xaf,0x32,0xde,0x4f,0x21,0x40,0x9b,0xee}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPLDataListItem =
+    {0x56fce24a,0x250a,0x4399,{0xbb,0x0c,0xf8,0xc5,0xa5,0x16,0x9f,0x86}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPLIDList =
+    {0x671d0917,0x5346,0x4a5e,{0x81,0x00,0x0e,0x75,0xc4,0x23,0xfd,0xab}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbArtistTypeList =
+    {0xc367baf6,0x6587,0x45a8,{0xb7,0x74,0xaa,0x20,0xd6,0xaa,0x5c,0xe4}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbOriginsList =
+    {0x642e727f,0x4ba8,0x4514,{0x97,0x2b,0xd1,0xd5,0x54,0xd6,0x2d,0x2f}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbGenreDisplayList =
+    {0x09e3539f,0xd0cc,0x4913,{0xa0,0x25,0x10,0x43,0x23,0xc2,0xca,0xab}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbEraDisplayList =
+    {0xf613382c,0x27f6,0x42ca,{0x9b,0x9b,0x1f,0x18,0x90,0xc1,0x9c,0x03}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPopularityRangeList =
+    {0x52380d21,0x992d,0x416f,{0x97,0xd2,0x3a,0x2d,0xd4,0x6a,0xd7,0xea}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbMLDBManager =
+    {0xd374ceca,0x3e86,0x4ab4,{0x87,0xa9,0x3f,0xf7,0xe0,0x3e,0x3c,0xad}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPopularityRange =
+    {0xb0204aad,0xf796,0x4221,{0xac,0xf3,0xc2,0x4f,0xce,0xe9,0x42,0x1a}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbPLMoreLikeThisCfg =
+    {0xb3f484a1,0xe3b4,0x4ad5,{0xa9,0xa9,0x52,0x59,0x2a,0x08,0xdb,0xd2}};
+
+#pragma pack(pop)

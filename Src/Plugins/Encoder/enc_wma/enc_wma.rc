@@ -1,0 +1,128 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 256, 167
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Windows Media Audio",IDC_STATIC,0,0,256,167
+    COMBOBOX        IDC_ENCODER,18,13,145,148,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Encoder Format",IDC_STATIC,166,13,60,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_SAMPLE_FORMAT,17,30,145,133,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sample Format",IDC_STATIC,166,30,71,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_VBR,18,48,59,67,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BRATE,86,48,77,116,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Bitrate (Bits/Sec)",IDC_STATIC_BITRATE,165,48,54,12,SS_CENTERIMAGE
+    CTEXT           "Portions utilize Microsoft Windows Media Technologies.\nCopyright © 1992-2019 Microsoft Corporation. All Rights Reserved.",IDC_STATIC,14,144,227,18
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    65535                   "{33BC12FD-E7F7-42ec-8FE3-2D8BD3A977C2}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANNOT_FIND_INPUT_FORMATTER 
+                            "Cannot find input formatter for:\n\nChannels = %d, Sample Rate = %d, Bits/Sample = %d\n\nNo resampler available for this input format"
+    IDS_WARNING             "WARNING"
+    IDS_CANNOT_ALLOCATE_MEM "Cannot allocate memory for WMA encoder format info"
+    IDS_WMA_ENCODER_ERROR   "WMA Encoder Error"
+    IDS_CANNOT_GET_STRUCTURE "Cannot get structure with format details"
+    IDS_CANNOT_GET_ENCODER4_INFO "Cannot get detail info for Encoder4 format"
+    IDS_SAVE_PROFILE_READ_ERROR "Save profile read error"
+    IDS_MEM_ALLOCATION_ERROR "Memory allocation error"
+    IDS_PROFILE_SAVE_SIZE_ERROR "Profile save size get error"
+    IDS_CANNOT_READ_AUDIO_STREAM "Cannot create audio stream"
+    IDS_CANNOT_GET_CODEC_INFO "Cannot get codec interface"
+    IDS_CANNOT_CREATE_A_PROFILE "Cannot create a profile"
+    IDS_CANNOT_CREATE_PROFILE_MANAGER "Cannot create a profile manager"
+    IDS_WMA_CONFIG_FILE_ERROR "WMA Config File Error"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CBR                 "CBR"
+    IDS_2_PASS_CBR          "2-pass CBR"
+    IDS_VBR                 "VBR"
+    IDS_ABR                 "ABR"
+    IDS_MONO_INFO           "%d bits, mono, %d Hz"
+    IDS_STEREO_INFO         "%d bits, stereo, %d Hz"
+    IDS_CHANNELS_INFO       "%d bits, %d channels, %d Hz"
+    IDS_QUALITY             "Quality (0-100)"
+    IDS_BITRATE             "Bitrate (Bits/Sec)"
+    IDS_ENC_WMA_DESC        "WMA Encoder %s"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

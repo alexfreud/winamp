@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="B4SLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="B4SWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="factory_Handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="factory_playlistmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="factory_playlists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_Creator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_Playlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSAPI2_Playlists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="M3U8Writer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="M3UWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="M3ULoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pl_entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Playlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaylistCounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaylistManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Playlists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaylistsXML.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PLSLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PLSWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptObjectFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptObjectService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SPlaylist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SPlaylistManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SPlaylists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SPlaylistsEnumerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\bfc\assert.cpp">
+      <Filter>Source Files\Wasabi\bfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\bfc\foreach.cpp">
+      <Filter>Source Files\Wasabi\bfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Winamp\JSAPI_CallbackParameters.cpp">
+      <Filter>Source Files\Winamp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Winamp\JSAPI_ObjectArray.cpp">
+      <Filter>Source Files\Winamp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\bfc\memblock.cpp">
+      <Filter>Source Files\Wasabi\bfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\bfc\nsguid.cpp">
+      <Filter>Source Files\Wasabi\bfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\api\script\objcontroller.cpp">
+      <Filter>Source Files\Wasabi\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\bfc\parse\PathParseW.cpp">
+      <Filter>Source Files\Wasabi\bfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\api\script\objects\rootobj.cpp">
+      <Filter>Source Files\Wasabi\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\api\script\objects\rootobjcbx.cpp">
+      <Filter>Source Files\Wasabi\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\api\script\scriptobji.cpp">
+      <Filter>Source Files\Wasabi\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\api\script\scriptobjx.cpp">
+      <Filter>Source Files\Wasabi\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nu\ServiceWatcher.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\bfc\std_string.cpp">
+      <Filter>Source Files\Wasabi\bfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\bfc\string\StringW.cpp">
+      <Filter>Source Files\Wasabi\bfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\bfc\string\string.cpp">
+      <Filter>Source Files\Wasabi\bfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Winamp\strutil.cpp">
+      <Filter>Source Files\Winamp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wasabi\bfc\wasabi_std.cpp">
+      <Filter>Source Files\Wasabi\bfc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api__playlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api_playlistmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api_playlists.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="B4SLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="B4SWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="factory_Handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="factory_playlistmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="factory_playlists.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ifc_playlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ifc_playlistloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Winamp\JSAPI_ObjectArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_Creator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_Playlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSAPI2_Playlists.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="M3U8Writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="M3ULoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="M3UWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pl_entry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaylistCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaylistManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Playlists.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaylistsXML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaylistWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PLSLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="plstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PLSWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptObjectFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptObjectService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SPlaylist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SPlaylistManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SPlaylists.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SPlaylistsEnumerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="svc_playlisthandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Winamp\strutil.h">
+      <Filter>Header Files\Winamp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e091476c-aae2-467b-9b96-08b12796cbcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{b035c0ae-5ec9-481d-a5ce-02d790985bc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3c7b3569-6627-448b-a320-57a5fc880fe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi">
+      <UniqueIdentifier>{158dd0e1-252e-49be-8630-9d3b31313f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\bfc">
+      <UniqueIdentifier>{9b816713-5c43-4613-9a32-54c9413d76fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Winamp">
+      <UniqueIdentifier>{95d29037-d9f4-4431-8b6d-9312dcbdc38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api">
+      <UniqueIdentifier>{93f96976-a073-46d0-822d-c7da3c1c8286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\nu">
+      <UniqueIdentifier>{01f330ce-f18e-43d9-9b79-b8def37065b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Winamp">
+      <UniqueIdentifier>{31801414-58c9-4a09-bd1a-2a71d7255072}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="playlist.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

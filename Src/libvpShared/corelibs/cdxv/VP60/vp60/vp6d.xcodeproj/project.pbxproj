@@ -1,0 +1,257 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C02406A0BB7912C00AE885C /* boolhuff.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C0240690BB7912C00AE885C /* boolhuff.c */; };
+		0C02406D0BB7913500AE885C /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C02406C0BB7913500AE885C /* debug.c */; };
+		0C0240840BB7916D00AE885C /* DSystemDependant.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C0240760BB7916D00AE885C /* DSystemDependant.c */; };
+		0C0240850BB7916D00AE885C /* FrameIni.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C0240770BB7916D00AE885C /* FrameIni.c */; };
+		0C0240880BB7916D00AE885C /* modestats.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C02407A0BB7916D00AE885C /* modestats.c */; };
+		0C0240890BB7916D00AE885C /* pb_globals.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C02407B0BB7916D00AE885C /* pb_globals.c */; };
+		0C02408A0BB7916D00AE885C /* Huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C02407C0BB7916D00AE885C /* Huffman.c */; };
+		0C02408B0BB7916D00AE885C /* quantize.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C02407D0BB7916D00AE885C /* quantize.c */; };
+		0C02408C0BB7916D00AE885C /* recon.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C02407E0BB7916D00AE885C /* recon.c */; };
+		0C02408D0BB7916D00AE885C /* TokenEntropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C02407F0BB7916D00AE885C /* TokenEntropy.c */; };
+		0C0240B30BB791FF00AE885C /* vp60dxv.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C0240B20BB791FF00AE885C /* vp60dxv.c */; };
+		0C1423C30BB819EB00FDDAB7 /* vfwpbdll_if.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C1423C20BB819EB00FDDAB7 /* vfwpbdll_if.c */; };
+		0C1423D90BB81A1200FDDAB7 /* decodembs.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C1423D80BB81A1200FDDAB7 /* decodembs.c */; };
+		0C1423E00BB81A3000FDDAB7 /* decodemode.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C1423DD0BB81A3000FDDAB7 /* decodemode.c */; };
+		0C1423E10BB81A3000FDDAB7 /* decodemv.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C1423DE0BB81A3000FDDAB7 /* decodemv.c */; };
+		0C1423E20BB81A3000FDDAB7 /* DFrameR.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C1423DF0BB81A3000FDDAB7 /* DFrameR.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C0240690BB7912C00AE885C /* boolhuff.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = boolhuff.c; path = dx/Generic/boolhuff.c; sourceTree = "<group>"; };
+		0C02406C0BB7913500AE885C /* debug.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = debug.c; path = dx/Generic/debug.c; sourceTree = "<group>"; };
+		0C0240760BB7916D00AE885C /* DSystemDependant.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = DSystemDependant.c; path = dx/Generic/DSystemDependant.c; sourceTree = "<group>"; };
+		0C0240770BB7916D00AE885C /* FrameIni.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = FrameIni.c; path = dx/Generic/FrameIni.c; sourceTree = "<group>"; };
+		0C02407A0BB7916D00AE885C /* modestats.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = modestats.c; path = dx/Generic/modestats.c; sourceTree = "<group>"; };
+		0C02407B0BB7916D00AE885C /* pb_globals.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = pb_globals.c; path = dx/Generic/pb_globals.c; sourceTree = "<group>"; };
+		0C02407C0BB7916D00AE885C /* Huffman.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = Huffman.c; path = dx/Generic/Huffman.c; sourceTree = "<group>"; };
+		0C02407D0BB7916D00AE885C /* quantize.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = quantize.c; path = dx/Generic/quantize.c; sourceTree = "<group>"; };
+		0C02407E0BB7916D00AE885C /* recon.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = recon.c; path = dx/Generic/recon.c; sourceTree = "<group>"; };
+		0C02407F0BB7916D00AE885C /* TokenEntropy.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = TokenEntropy.c; path = dx/Generic/TokenEntropy.c; sourceTree = "<group>"; };
+		0C0240B20BB791FF00AE885C /* vp60dxv.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = vp60dxv.c; path = dx/Win32/vp60dxv.c; sourceTree = "<group>"; };
+		0C1423C20BB819EB00FDDAB7 /* vfwpbdll_if.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = vfwpbdll_if.c; path = dx/Generic/vfwpbdll_if.c; sourceTree = "<group>"; };
+		0C1423D80BB81A1200FDDAB7 /* decodembs.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = decodembs.c; path = dx/Generic/decodembs.c; sourceTree = "<group>"; };
+		0C1423DD0BB81A3000FDDAB7 /* decodemode.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = decodemode.c; path = dx/Generic/decodemode.c; sourceTree = "<group>"; };
+		0C1423DE0BB81A3000FDDAB7 /* decodemv.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = decodemv.c; path = dx/Generic/decodemv.c; sourceTree = "<group>"; };
+		0C1423DF0BB81A3000FDDAB7 /* DFrameR.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = DFrameR.c; path = dx/Generic/DFrameR.c; sourceTree = "<group>"; };
+		D2AAC046055464E500DB518D /* libvp6d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libvp6d.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289987405E68DCB004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* vp60 */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6A0FF2B0290797F04C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = vp60;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0C0240B20BB791FF00AE885C /* vp60dxv.c */,
+				0C1423C20BB819EB00FDDAB7 /* vfwpbdll_if.c */,
+				0C1423D80BB81A1200FDDAB7 /* decodembs.c */,
+				0C1423DD0BB81A3000FDDAB7 /* decodemode.c */,
+				0C1423DE0BB81A3000FDDAB7 /* decodemv.c */,
+				0C1423DF0BB81A3000FDDAB7 /* DFrameR.c */,
+				0C0240690BB7912C00AE885C /* boolhuff.c */,
+				0C02406C0BB7913500AE885C /* debug.c */,
+				0C0240760BB7916D00AE885C /* DSystemDependant.c */,
+				0C0240770BB7916D00AE885C /* FrameIni.c */,
+				0C02407A0BB7916D00AE885C /* modestats.c */,
+				0C02407B0BB7916D00AE885C /* pb_globals.c */,
+				0C02407C0BB7916D00AE885C /* Huffman.c */,
+				0C02407D0BB7916D00AE885C /* quantize.c */,
+				0C02407E0BB7916D00AE885C /* recon.c */,
+				0C02407F0BB7916D00AE885C /* TokenEntropy.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC046055464E500DB518D /* libvp6d.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6A0FF2B0290797F04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC043055464E500DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC045055464E500DB518D /* vp60 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91EB08733DB70010E9CD /* Build configuration list for PBXNativeTarget "vp60" */;
+			buildPhases = (
+				D2AAC043055464E500DB518D /* Headers */,
+				D2AAC044055464E500DB518D /* Sources */,
+				D289987405E68DCB004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vp60;
+			productName = vp60;
+			productReference = D2AAC046055464E500DB518D /* libvp6d.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "vp6d" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* vp60 */;
+			projectDirPath = "";
+			targets = (
+				D2AAC045055464E500DB518D /* vp60 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC044055464E500DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C02406A0BB7912C00AE885C /* boolhuff.c in Sources */,
+				0C02406D0BB7913500AE885C /* debug.c in Sources */,
+				0C0240840BB7916D00AE885C /* DSystemDependant.c in Sources */,
+				0C0240850BB7916D00AE885C /* FrameIni.c in Sources */,
+				0C0240880BB7916D00AE885C /* modestats.c in Sources */,
+				0C0240890BB7916D00AE885C /* pb_globals.c in Sources */,
+				0C02408A0BB7916D00AE885C /* Huffman.c in Sources */,
+				0C02408B0BB7916D00AE885C /* quantize.c in Sources */,
+				0C02408C0BB7916D00AE885C /* recon.c in Sources */,
+				0C02408D0BB7916D00AE885C /* TokenEntropy.c in Sources */,
+				0C0240B30BB791FF00AE885C /* vp60dxv.c in Sources */,
+				0C1423C30BB819EB00FDDAB7 /* vfwpbdll_if.c in Sources */,
+				0C1423D90BB81A1200FDDAB7 /* decodembs.c in Sources */,
+				0C1423E00BB81A3000FDDAB7 /* decodemode.c in Sources */,
+				0C1423E10BB81A3000FDDAB7 /* decodemv.c in Sources */,
+				0C1423E20BB81A3000FDDAB7 /* DFrameR.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91EC08733DB70010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = vp6d;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB91ED08733DB70010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = vp6d;
+			};
+			name = Release;
+		};
+		1DEB91F008733DB70010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = build;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SYMROOT = ../../../../lib/osx;
+				USER_HEADER_SEARCH_PATHS = "include ../../include ../../../include ../../../../include ../../../../include/vp60";
+			};
+			name = Debug;
+		};
+		1DEB91F108733DB70010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = build;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SYMROOT = ../../../../lib/osx;
+				USER_HEADER_SEARCH_PATHS = "include ../../include ../../../include ../../../../include ../../../../include/vp60";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91EB08733DB70010E9CD /* Build configuration list for PBXNativeTarget "vp60" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91EC08733DB70010E9CD /* Debug */,
+				1DEB91ED08733DB70010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "vp6d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91F008733DB70010E9CD /* Debug */,
+				1DEB91F108733DB70010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -1,0 +1,446 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "setup_resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "setup_resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETUP DIALOGEX 0, 0, 369, 214
+STYLE DS_SETFONT | DS_NOIDLEMSG | DS_SETFOREGROUND | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CENTER | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_CONTROLPARENT | WS_EX_APPWINDOW
+CAPTION "Winamp Setup"
+MENU IDR_SETUPMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_FRAME,7,6,355,180,NOT LBS_NOTIFY | LBS_NOREDRAW | LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | LBS_NODATA | LBS_NOSEL | WS_DISABLED
+    LISTBOX         IDC_LB_NAVIGATION,7,6,96,180,LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_DISABLED | NOT WS_BORDER | WS_TABSTOP
+    PUSHBUTTON      "&Cancel",IDCANCEL,7,194,50,14
+    PUSHBUTTON      "&Back",IDC_BTN_BACK,197,194,50,14
+    DEFPUSHBUTTON   "&Next",IDC_BTN_NEXT,255,194,50,14
+    PUSHBUTTON      "Fini&sh",IDOK,312,194,50,14
+    CONTROL         "",IDC_HEADER,"Static",SS_OWNERDRAW,129,8,233,28
+END
+
+IDD_SETUP_PAGE_ASSOC DIALOGEX 0, 0, 241, 152
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Select the file types you want to be associated with Winamp.",IDC_LBL_HEADER,6,6,229,18
+    CONTROL         "",IDC_TREE_TYPES,"SysTreeView32",TVS_HASBUTTONS | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,6,24,229,87
+    CONTROL         "Show Winamp in the folder context menus in Windows Explorer",IDC_CHK_EXPLORER_MENU,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,115,229,10
+    CONTROL         "Enable Winamp Agent",IDC_CHK_AGENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,126,229,9
+    LTEXT           "Places a Winamp icon in the notification area.",IDC_LBL_AGENT_DESC,17,136,218,9
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(NOT_USED)
+#if defined(APSTUDIO_INVOKED)
+IDD_SETUP_PAGE_CONNECT$(NOT_USED) DIALOGEX 0, 0, 225, 137
+#else
+IDD_SETUP_PAGE_CONNECT DIALOGEX 0, 0, 225, 137
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Select your internet connection type:",IDC_LBL_HEADER,6,6,213,18
+    COMBOBOX        IDC_CB_CONNECT,6,24,213,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "HTTP Proxy (Optional)",IDC_GRP_PROXY,6,49,213,82
+    EDITTEXT        IDC_EDT_SERVER,16,82,193,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Server address (Server:Port):",IDC_LBL_SERVER,16,71,193,8
+    CONTROL         "Use proxy only for port 80 URLs",IDC_CHK_PORT80,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,101,193,10
+END
+#endif
+
+IDD_SETUP_PAGE_SKIN DIALOGEX 0, 0, 257, 158
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Choose the look and feel for your Winamp.",IDC_LBL_HEADER,5,6,246,8
+    LISTBOX         IDC_LB_SKIN,5,24,101,126,LBS_SORT | LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Preview",IDC_GRP_PREVIEW,114,22,137,128
+    CONTROL         "",IDC_PIC_PREVIEW,"Static",SS_BITMAP,122,35,124,43
+    LTEXT           "Name:",IDC_LBL_NAME,122,87,28,8
+    EDITTEXT        IDC_EDT_NAME,150,87,96,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_TRANSPARENT
+    LTEXT           "Type:",IDC_LBL_TYPE,122,98,20,8
+    EDITTEXT        IDC_EDT_TYPE,150,98,96,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "Author:",IDC_LBL_AUTHOR,122,109,26,8
+    EDITTEXT        IDC_EDT_AUTHOR,150,109,96,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "Version:",IDC_LBL_VERSION,122,120,27,8
+    EDITTEXT        IDC_EDT_VERSION,150,120,96,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    PUSHBUTTON      "More Info...",IDC_BTN_MOREINFO,194,133,52,13,NOT WS_VISIBLE
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 206, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Winamp Setup - About"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         108,IDC_PIC_ABOUT,"Static",SS_BITMAP | SS_REALSIZEIMAGE,4,4,35,32,WS_EX_TRANSPARENT
+    LTEXT           "Winamp Setup Wizard",IDC_STATIC,50,4,152,8
+    LTEXT           "Copyright © 1997-2023 Winamp SA",IDC_STATIC,50,15,152,9,NOT WS_GROUP
+    LTEXT           "v%s %s - %s",IDC_VER_TEXT,4,42,144,8
+    DEFPUSHBUTTON   "Close",IDOK,152,36,50,14
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(NOT_USED)
+#if defined(APSTUDIO_INVOKED)
+IDD_SETUP_PAGE_LANG$(NOT_USED) DIALOGEX 0, 0, 160, 152
+#else
+IDD_SETUP_PAGE_LANG DIALOGEX 0, 0, 160, 152
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Choose one of the available languages:",IDC_LBL_HEADER,6,6,148,18
+    LISTBOX         IDC_LB_LANG,6,24,148,122,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDD_SETUP_PAGE_FEEDBACK$(DISABLED) DIALOGEX 0, 0, 256, 158
+#else
+IDD_SETUP_PAGE_FEEDBACK DIALOGEX 0, 0, 256, 158
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Let us know more about you so we can continue to improve Winamp.",IDC_LBL_HEADER,5,6,245,18
+    LTEXT           "Email:",IDC_LBL_EMAIL,12,36,102,12
+    EDITTEXT        IDC_EDT_EMAIL,114,36,130,12,ES_AUTOHSCROLL
+    LTEXT           "Zip code (US) or Country:",IDC_LBL_COUNTRY,12,51,98,12
+    EDITTEXT        IDC_EDT_COUNTRY,114,51,130,12,ES_AUTOHSCROLL
+    LTEXT           "Gender:",IDC_LBL_GENDER,12,67,98,12
+    COMBOBOX        IDC_CB_GENDER,114,66,130,46,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Yes, send me information about Winamp",IDC_CHK_ANNOUNCEMENTS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,129,232,10
+    CONTROL         "Yes, allow anonymous usage statistics (recommended)",IDC_CHK_STATISTICS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,140,232,10
+END
+#endif
+
+IDD_SETUPSTATUS DIALOGEX 0, 0, 249, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Winamp Setup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LBL_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | WS_GROUP,11,12,226,9
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,11,25,226,12
+    PUSHBUTTON      "Skip",IDC_BTN_SKIP,181,47,56,14,WS_DISABLED
+END
+
+IDD_SETUP_PAGE_ERROR DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Unable to load setup page",IDC_LBL_MESSAGE,5,37,304,8
+END
+
+IDD_SETUP_PAGE_ASSOC_WIN8 DIALOGEX 0, 0, 257, 152
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Select the file types you want to be associated with Winamp.",IDC_LBL_HEADER,5,6,248,18
+    LTEXT           "To associate files with Winamp on this version of Windows, you need to go to 'Set Default Programs' in the Control Panel once Winamp's setup is complete.\n\nNote: This can also be accessed via Winamp's 'File Types' preferences page.",IDC_STATIC,5,24,248,32
+    CONTROL         "Launch Winamp for Audio CDs",IDC_CHK_CD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,66,242,9
+    CONTROL         "Show Winamp in the folder context menus in Windows Explorer",IDC_CHK_EXPLORER_MENU,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,78,242,10
+    CONTROL         "Enable Winamp Agent",IDC_CHK_AGENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,90,242,9
+    LTEXT           "Places a Winamp icon in the notification area.",IDC_LBL_AGENT_DESC,22,101,231,9
+    CONTROL         "",IDC_TREE_TYPES,"SysTreeView32",TVS_HASBUTTONS | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | NOT WS_VISIBLE | WS_BORDER | WS_HSCROLL | WS_TABSTOP,5,144,248,0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 208
+        HORZGUIDE, 186
+    END
+
+    IDD_SETUP_PAGE_ASSOC, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 235
+        VERTGUIDE, 17
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 144
+        HORZGUIDE, 24
+    END
+
+    "IDD_SETUP_PAGE_CONNECT$(NOT_USED)", DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 219
+        VERTGUIDE, 16
+        VERTGUIDE, 209
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 131
+        HORZGUIDE, 24
+        HORZGUIDE, 49
+        HORZGUIDE, 111
+    END
+
+    IDD_SETUP_PAGE_SKIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 251
+        VERTGUIDE, 106
+        VERTGUIDE, 114
+        VERTGUIDE, 122
+        VERTGUIDE, 150
+        VERTGUIDE, 246
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 150
+        HORZGUIDE, 24
+        HORZGUIDE, 35
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 202
+        VERTGUIDE, 50
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 50
+    END
+
+    "IDD_SETUP_PAGE_LANG$(NOT_USED)", DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 154
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 146
+        HORZGUIDE, 24
+    END
+
+    IDD_SETUPSTATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 11
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_SETUP_PAGE_ERROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_SETUP_PAGE_ASSOC_WIN8, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 253
+        VERTGUIDE, 11
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 144
+        HORZGUIDE, 24
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SETUPMENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Save Changes\tCtrl+S",       40013
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               40016
+    END
+    POPUP "Na&vigation"
+    BEGIN
+        MENUITEM "&Back\tAlt+B",                40011
+        MENUITEM "&Next\tAlt+N",                40012
+    END
+    POPUP "&Tools", GRAYED
+    BEGIN
+        MENUITEM "Migrate/Import...",           40009
+        MENUITEM "Register Winamp...",          40010
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About\tF1",                  40008
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HEADER_STRIP        BITMAP                  "headerstrip.bmp"
+IDB_NAVITEM_STRIP       BITMAP                  "navitemstrip.bmp"
+IDB_CHECKBOX            BITMAP                  "checkbox.bmp"
+IDB_NAVIGATION_STRIP    BITMAP                  "navstrip.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PREVIEW_NO          PNG                     "preview_no.png"
+IDB_PREVIEW_CLASSIC     PNG                     "preview_classic.png"
+IDB_ABOUT               PNG                     "smokingllama.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCEL_SETUP ACCELERATORS 
+BEGIN
+    VK_F1,          IDM_HELP_ABOUT,         VIRTKEY, NOINVERT
+    "S",            IDM_FILE_SAVECHANGES,   VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_SKIN_CURRENT        "Current"
+    IDS_SKIN_PROMO1         "Bento Skin"
+    IDS_SKIN_PROMO2         "Bento Skin (Large)"
+    IDS_PAGE_SKIN           "Skin"
+    IDS_PAGE_LANGUAGE       "Language"
+    IDS_PAGE_CONNECTIVITY   "Connectivity"
+    IDS_SAVE_CHANGES_BEFORE_EXIT "Do you want to save changes before exit?"
+    IDS_UNKNOWN             "Unknown"
+    IDS_CHANGES_NOT_SAVED   "Some settings were not saved."
+    IDS_MODERN              "Modern"
+    IDS_CLASSIC             "Classic"
+    IDS_QUIT_OK             "Are you sure you want to quit Winamp Setup?"
+    IDS_PAGE_ASSOCIATIONS   "Associations"
+    IDS_FILETYPE_VIDEO      "Video Files"
+    IDS_FILETYPE_AUDIO      "Audio Files"
+    IDS_FILETYPE_UNKNOWN    "Other Files"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILETYPE_PLAYLIST   "Playlist Files"
+    IDS_PAGE_FEEDBACK       "Feedback"
+    IDS_GENDER_MALE         "Male"
+    IDS_GENDER_FEMALE       "Female"
+    IDS_GENDER_UNKNOWN      "Select gender"
+    IDS_REGISTER_CDPLAYER   "Launch Winamp for Audio CDs"
+    IDS_STATUS_SAVING       "Saving settings"
+    IDS_STATUS_JOBS         "Executing scripts"
+    IDS_STATUS_RUNWA        "Starting Winamp"
+    IDS_PAGE_SKIN_LONG      "Choose Skin"
+    IDS_REGISTER_AGENT      "Enable Winamp Agent"
+    IDS_PAGE_ASSOCIATIONS_LONG "File Associations"
+    IDS_PAGE_FEEDBACK_LONG  "User Feedback"
+    IDS_PAGE_INCORRECT_EMAIL_ADDRESS "Incorrect email address."
+    IDS_FILETYPE_AUXILIARY  "Winamp Specific Files"
+    IDS_WINAMP_SKIN_MODERN  "Winamp Skin (Modern)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WINAMP_SKIN_CLASSIC "Winamp Skin (Classic)"
+    IDS_WINAMP_LANG_PACK    "Winamp Language Pack"
+    IDS_DOWNLOADSTATUS_INITIALIZING "Initializing..."
+    IDS_DOWNLOADSTATUS_CONNECTING "Connecting..."
+    IDS_DOWNLOADSTATUS_CONNECTED "Connected"
+    IDS_DOWNLOADSTATUS_RECEIVING "Downloading..."
+    IDS_DOWNLOADSTATUS_RECEIVINGPERCENT "Downloading... (%d%% completed)"
+    IDS_DOWNLOADSTATUS_SUCCESS "Success."
+    IDS_DOWNLOADSTATUS_FAILED "Failed."
+    IDS_DOWNLOADSTATUS_ABORTING "Aborting..."
+    IDS_DOWNLOADSTATUS_ABORTED "Aborted."
+    IDS_SETUP_WND_TITLE     "Winamp v%s Setup"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8105B192-3D54-4D0F-A5CD-4EEFC869C4EF}</ProjectGuid>
+    <RootNamespace>vis_avs</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>false</VcpkgEnableManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;evallib;..\..\..\Wasabi;..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;UNICODE;WA2_EMBED;WIN32;_WINDOWS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT;_CRT_SECURE_NO_WARNINGS;NO_X86ASM;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4302;4799;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ddraw.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <MapFileName>$(IntDir)$(TargetName).map</MapFileName>
+      <GenerateMapFile>true</GenerateMapFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ 
+xcopy /Y /D $(IntDir)$(TargetName).pdb ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;evallib;..\..\..\Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;UNICODE;WA2_EMBED;WIN32;_WINDOWS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT;_CRT_SECURE_NO_WARNINGS;NO_X86ASM;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4302;4799;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ddraw.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <MapFileName>$(IntDir)$(TargetName).map</MapFileName>
+      <GenerateMapFile>true</GenerateMapFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ 
+xcopy /Y /D $(IntDir)$(TargetName).pdb ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>.;evallib;..\..\..\Wasabi;..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;UNICODE;WA2_EMBED;WIN32;_WINDOWS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT;_CRT_SECURE_NO_WARNINGS;NO_X86ASM;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4302;4799;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ddraw.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(IntDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>.;evallib;../Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WINVER=0x0601;UNICODE;WA2_EMBED;WIN32;_WINDOWS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT;_CRT_SECURE_NO_WARNINGS;NO_X86ASM;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4302;4799;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ddraw.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(IntDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\ns-eel2\y.tab.c" />
+    <ClCompile Include="..\..\..\ns-eel2\nseel-caltab.c" />
+    <ClCompile Include="..\..\..\ns-eel2\nseel-cfunc.c" />
+    <ClCompile Include="..\..\..\ns-eel2\nseel-compiler.c" />
+    <ClCompile Include="..\..\..\ns-eel2\nseel-eval.c" />
+    <ClCompile Include="..\..\..\ns-eel2\nseel-lextab.c" />
+    <ClCompile Include="..\..\..\ns-eel2\nseel-ram.c" />
+    <ClCompile Include="avs_eelif.cpp" />
+    <ClCompile Include="bpm.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="cfgwin.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT;NO_X86ASM;</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT;NO_X86ASM;</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT;NO_X86ASM;</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT;NO_X86ASM;</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="laser\laser.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="laser\laserline.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="laser\ld32.c">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="laser\linelist.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="laser\rl_beathold.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="laser\rl_bren.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="laser\rl_cones.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="laser\rl_line.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="laser\rl_trans.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="linedraw.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="matrix.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="render.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="rlib.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_avi.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_blit.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_blur.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_bpm.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_bright.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_bspin.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_bump.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_chanshift.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_clear.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_colorfade.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_colorreduction.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_comment.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_contrast.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_dcolormod.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_ddm.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_dmove.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_dotfnt.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_dotgrid.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_dotpln.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_fadeout.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_fastbright.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_grain.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_interf.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_interleave.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_invert.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_linemode.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_list.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_mirror.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_mosaic.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_multidelay.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_multiplier.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_nfclr.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_onetone.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_oscring.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_oscstar.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_parts.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_picture.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_rotblit.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_rotstar.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_scat.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_shift.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_simple.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_sscope.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_stack.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_stars.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_svp.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_text.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_timescope.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_trans.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_transition.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_unkn.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_videodelay.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_water.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="r_waterbump.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="TIMING.C">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="undo.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="wnd.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WA2_EMBED;WIN32;_WINDOWS;_MBCS;_USRDLL;VIS_PL_EXPORTS;NSEEL_LOOPFUNC_SUPPORT;AVS_MEGABUF_SUPPORT</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\ns-eel2\ns-eel-addfuncs.h" />
+    <ClInclude Include="..\..\..\ns-eel2\ns-eel-int.h" />
+    <ClInclude Include="..\..\..\ns-eel2\ns-eel.h" />
+    <ClInclude Include="..\..\..\ns-eel2\glue_x86.h" />
+    <ClInclude Include="ape.h" />
+    <ClInclude Include="avs_eelif.h" />
+    <ClInclude Include="bpm.h" />
+    <ClInclude Include="cfgwnd.h" />
+    <ClInclude Include="draw.h" />
+    <ClInclude Include="laser\laserline.h" />
+    <ClInclude Include="laser\Ld32.h" />
+    <ClInclude Include="laser\linelist.h" />
+    <ClInclude Include="render.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="rlib.h" />
+    <ClInclude Include="r_defs.h" />
+    <ClInclude Include="r_list.h" />
+    <ClInclude Include="r_transition.h" />
+    <ClInclude Include="r_unkn.h" />
+    <ClInclude Include="TIMING.H" />
+    <ClInclude Include="undo.h" />
+    <ClInclude Include="wnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="vis_avs.txt" />
+    <Text Include="whatsnew.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bump_lig.bin" />
+    <None Include="color_mo.bin" />
+    <None Include="dyn_dist.bin" />
+    <None Include="dyn_move.bin" />
+    <None Include="dyn_shift.bin" />
+    <None Include="effect_l.bin" />
+    <None Include="help_1.bin" />
+    <None Include="help_2.bin" />
+    <None Include="help_3.bin" />
+    <None Include="help_4.bin" />
+    <None Include="movement.bin" />
+    <None Include="supersco.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="avs-hilited.png" />
+    <Image Include="avs-normal.png" />
+    <Image Include="avs-selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\tataki\tataki.vcxproj">
+      <Project>{255b68b5-7ef8-45ef-a675-2d6b88147909}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wasabi\Wasabi.vcxproj">
+      <Project>{3e0bfa8a-b86a-42e9-a33f-ec294f823f7f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\WAT\WAT.vcxproj">
+      <Project>{c5714908-a71f-4644-bd95-aad8ee7914da}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

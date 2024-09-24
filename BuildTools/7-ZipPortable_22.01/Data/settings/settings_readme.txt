@@ -1,0 +1,1 @@
+Your 7-zip settings registry files will go here

@@ -1,0 +1,7 @@
+* Removed incorrect manifest file which causes issues loading the plug-in on some systems
+* Now built with VS2008 so now depends on 5.57+ due to msvcr90.dll dependency (cuts size)
+* Changed localisation system to directly use api_language
+* Added %type%, %family% (used mainly by the installer) and %gain% to complement the other replaygain options
+* Removed config dialog as not applicable now with new defaults and also if we're following Winamp's settings
+* Changed some of the stringtable resource (adds new strings, removes deprecated strings and some minor tweaks)
+* Changed some of the options for the plug-in project (including using lng_generator directly)

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="api__gen_tray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RESOURCE.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WINAMPCMD.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icons\icon1.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="icons\icon2.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="icons\icon3.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="icons\icon4.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="icons\icon5.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="icons\icon7.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="icons\icon8.ico">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="icons\compact.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{96125085-f1a0-41bb-a9be-181833e83c26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{79c08881-db4b-4236-bf7d-aedeb08c65b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{642a812f-646c-4a9b-ba39-93c8405dcf96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{ec91a377-7c2d-47f3-8508-27f333a2c638}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gen_tray.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TRAYCTL.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,38 @@
+Winamp 5.0:
+* Support for classic Winamp 1.x/2.x/2.9x skins and Winamp 3 ("Modern") skins
+* Fancy new modern skin:
+   - Integrated video, AVS, and Milkdrop support
+   - Many built-in colorthemes
+* Same ol' classic skin for people who want the Winamp 2 feel
+* Vastly more powerful media library:
+   - Automatic background directory scanning options
+   - Customizable views and columns, graphical view editor
+   - Internet Radio (SHOUTcast) and TV listings 
+   - Context-sensitive item info viewer
+* CD ripping support (AAC@2x in free version, MP3 at unlimited speeds in pro)
+* CD burning support (limited to 2x in free version)
+* Advanced title formatting logic for file types that support it
+* Huge AVS updates:
+   - New effects, bundled some popular 3rd party APEs
+   - A much better selection of default presets
+   - Experimental SMP support
+   - Full AVS preset subdirectory support
+   - Extensions and optimizations to the AVS evaluation library
+* Support for playback of AAC and VP6 in NSV files/streams
+* Global hotkey support
+* new Signal Processing Studio DSP plug-in
+* Options to disable plugin exception handling for developers
+* A ton of new plug-in API calls (SDK forthcoming)
+* fixed changing-systray options while minimized bug
+* new Winamp icon
+* added XP Manifest.xml to winamp.exe
+* made agent icon use configured winamp system tray icon
+* optimized winamp's load titles on demand logic, made faster
+* made winamp's internal submenu management more reliable
+* added skin font override preferences
+* added spacebar shows current playlist item in playlist editor
+* fixed manual playlist advance w/ repeat
+* made winamp's open directory recurse checkbox nicer looking
+* big prefs overhaul to make steve happy
+* huge thanks to Amir Szekely and the rest of the NSIS developers 
+  for their help

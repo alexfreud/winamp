@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gen_classicart", "gen_classicart.vcxproj", "{DD15E699-90D2-4301-921A-7C2C48B25766}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Profiling|x86 = Profiling|x86
+		Release Static|x86 = Release Static|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD15E699-90D2-4301-921A-7C2C48B25766}.Debug|x86.ActiveCfg = Debug|Win32
+		{DD15E699-90D2-4301-921A-7C2C48B25766}.Debug|x86.Build.0 = Debug|Win32
+		{DD15E699-90D2-4301-921A-7C2C48B25766}.Profiling|x86.ActiveCfg = Profiling|Win32
+		{DD15E699-90D2-4301-921A-7C2C48B25766}.Profiling|x86.Build.0 = Profiling|Win32
+		{DD15E699-90D2-4301-921A-7C2C48B25766}.Release Static|x86.ActiveCfg = Release|Win32
+		{DD15E699-90D2-4301-921A-7C2C48B25766}.Release Static|x86.Build.0 = Release|Win32
+		{DD15E699-90D2-4301-921A-7C2C48B25766}.Release|x86.ActiveCfg = Release|Win32
+		{DD15E699-90D2-4301-921A-7C2C48B25766}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66E16789-5B4D-4040-B006-59B99C861563}
+	EndGlobalSection
+EndGlobal

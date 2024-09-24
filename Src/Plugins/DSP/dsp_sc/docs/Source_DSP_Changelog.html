@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Shoutcast Source DSP Changelog</title>
+	<style type="text/css">body,table,textarea,pre{font-family:Arial,Helvetica,sans-serif;font-size:10pt;}
+	.header{background-color:rgb(66,164,189);color:white;padding:1px;}
+	a:link,a:visited{color:#2762AE;text-decoration:none;}
+	a:hover{text-decoration:underline;}
+	ul{list-style-type:none;text-align:left;}
+	ul.n{list-style-type:square;text-align:left;}
+	pre{background-color:#F0F0F0;border:1px solid #CCCCCC;font-weight:bold;padding:5px 10px 5px 10px;display:inline-block;margin-top:0;margin-bottom:0;margin-left:25px;}
+	pre.src{border:0;font-family:monospace;background-color:white;}
+	span.b{font-weight:normal;color:#3366CC;}
+	span.c{font-style:italic;font-weight:normal;color:#808080;}
+	span.v{font-weight:normal;}
+	span.r{font-weight:normal;color:#000066;}
+	span.s{font-weight:normal;color:#FF0000;}
+	#toc{border:1px solid #CCCCCC;padding:0 5px 0 5px;text-align: center;}
+	p.ver{font-size:85%;margin-top:-1.5em;text-align:center;}
+	.thumb{float:right;clear:both;margin-left:10px;margin-top:5px;margin-bottom:10px;width:202px;}
+	.serv{float:right;clear:both;margin-left:10px;margin-top:5px;margin-bottom:10px;width:252px;}
+	.pages{white-space:nowrap;padding-right:25px;}
+	img{width:200px;}
+	img.serv{width:250px;}
+	img.thumb{border:1px solid #CCCCCC;}
+	hr{border:0;background-color:#CCCCCC;height:1px;)</style>
+	<script type="text/javascript">if(window.showTocToggle){var tocShowText="show";var tocHideText="hide";showTocToggle()}function showTocToggle(){if(document.createTextNode){var linkHolder=document.getElementById('toctitle');if(!linkHolder){return}var outerSpan=document.createElement('span');outerSpan.className='toctoggle';var toggleLink=document.createElement('a');toggleLink.id='togglelink';toggleLink.className='internal';toggleLink.href='javascript:toggleToc()';toggleLink.appendChild(document.createTextNode(tocHideText));outerSpan.appendChild(document.createTextNode('['));outerSpan.appendChild(toggleLink);outerSpan.appendChild(document.createTextNode(']'));linkHolder.appendChild(document.createTextNode(' '));linkHolder.appendChild(outerSpan);var cookiePos=document.cookie.indexOf("dlog_hidetoc=");if(cookiePos>-1&&document.cookie.charAt(cookiePos+13)==1){toggleToc()}}}function changeText(el,newText){if(el.innerText){el.innerText=newText}else if(el.firstChild&&el.firstChild.nodeValue){el.firstChild.nodeValue=newText}}function toggleToc(){var toc=document.getElementById('toc').getElementsByTagName('ul')[0];var first=document.getElementById('first');var toggleLink=document.getElementById('togglelink');if(toc&&toggleLink&&toc.style.display=='none'){changeText(toggleLink,tocHideText);document.getElementById('toc').style.cssFloat='left';toc.style.display='block';first.style.marginLeft='150px';document.cookie="dlog_hidetoc=0"}else{changeText(toggleLink,tocShowText);document.getElementById('toc').style.cssFloat='';toc.style.display='none';first.style.marginLeft='';document.cookie="dlog_hidetoc=1"}}window.onload=function(){var cookiePos=document.cookie.indexOf("dlog_hidetoc=");if(cookiePos>-1&&document.cookie.charAt(cookiePos+13)==1){toggleToc()}}</script>
+</head>
+<div class="header">
+<h1 align="center">Shoutcast Source DSP Changelog</h1>
+<p class="ver">(Last Updated 25 August 2022)</p>
+</div>
+<table id="toc" style="float:left;margin-right:40px;margin-bottom:5px;"><tbody><tr><td>
+<div id="toctitle"><b>Contents</b> <span class="toctoggle">[<a id="togglelink" class="internal" href="javascript:toggleToc()">hide</a>]</span></div>
+<ul style="padding-left:0px;">
+<li><a href="#241">2.4.1 Build 444</a></li>
+<li><a href="#235">2.3.5 Build 222</a></li>
+<li><a href="#234">2.3.4 Build 210</a></li>
+<li><a href="#233">2.3.3 Build 201</a></li>
+<li><a href="#232">2.3.2 Build 189</a></li>
+<li><a href="#231">2.3.1 Build 182</a></li>
+<li><a href="#230">2.3.0 Build 177</a></li>
+<li><a href="#223">2.2.3 Build 112</a></li>
+<li><a href="#222">2.2.2 Build 107</a></li>
+<li><a href="#221">2.2.1 Build 99</a></li>
+<li><a href="#220">2.2.0 Build 97</a></li>
+<li><a href="#213">2.1.3 Build 42</a></li>
+<li><a href="#211">2.1.1 Build 36</a></li>
+<li><a href="#210">2.1.0 Build 33</a></li>
+<li><a href="#202">2.0.2 Build 27</a></li>
+<li><a href="#200">2.0.0</a></li>
+</ul>
+</td></tr></tbody></table>
+
+<a name="241"></a><h3>2.4.1 Build 444</h3>
+<hr>
+<ul class="n" id="first" style="margin-left:150px;">
+<li>Built with VS2019 using Winamp 5.9-specific internal code
+<li>Will only install on Winamp 5.9.0 or newer
+<li>Required VS2019 runtimes installed on Win7-8.1 (minimum OS = Win7)
+<li>Updated: Lame encoder v3.100.1
+</ul>
+<p>&nbsp;</p>
+
+<a name="235"></a><h3>2.3.5 Build 222</h3>
+<hr>
+<ul class="n" id="first" style="margin-left:150px;">
+<li>Changed to use Winamp's networking library (jnetlib) instead of the older forked version being used (this will be helpful in the future)</li>
+<li>Changed to prompt if Winamp is set to use 24-bit playback mode (which we do not support in this plug-in)</li>
+<li>Fixed some setups not being able to connect to a 2.x DNAS in 2.x mode due to the recent 'automatic mode' support and slow DNAS handshaking</li>
+<li>Fixed the next song title not being recognised by the DNAS (expects the XML with a specific case of the element names e.g. soon, not SOON)</li>
+<li>Fixed the automatic reconnect time being reset to 1 second between sessions</li>
+<li>Reduced the memory usage of connections to only allocate the memory needed (this typically only saves a few KB but it's still a saving!)</li>
+<li>Miscellaneous code tidyups, documentation updates, branding changes and other small related changes</li>
+</ul>
+<p><br></p>
+
+<a name="234"></a><h3>2.3.4 Build 210</h3>
+<hr>
+<ul class="n">
+<li>The first Radionomy provided Shoutcast Source DSP release after the sale of Shoutcast (and Winamp) in January 2014</li>
+<li>This is primarily a maintenance release to resolve issues and broadcaster requests with the 2.3.x Source DSP since the last build provided under AOL ownership<br></li>
+<li>Added 'automatic mode' for selecting the Shoutcast protocol to use which should ease setup issues (there is still the ability to explicitly set the protocol mode like before)</li>
+<li>Changed minimum required version of Winamp to v5.6+ due to building changes (below) and to simplify version compatibility and testing</li>
+<li>Changed building of the plug-in to better match with the Winamp style for dependent dlls (this saves ~132KB)
+<li>Changed title update handling in respect to issues related to CVE-2014-4166 (which we were not informed about before it was disclosed!)</li>
+<li>Changed to allow the plug-in to load if lame_enc.dll cannot be found (related to the change below) - previously it would not load at all</li>
+<li>Updated genres to the current supported list of genres (as detailed in http://forums.shoutcast.com/showthread.php?t=303241)</li>
+<li>Removed lame_enc.dll from the installer - if not present in your Winamp install you will need to manually obtain a copy and place in the Shared folder of your Winamp install</li>
+<li>Miscellaneous code tidyups, optimisations, adjustments for future Winamp releases, branding resource changes and other related changes</li>
+</ul>
+<p><br></p>
+
+<a name="233"></a><h3>2.3.3 Build 201</h3>
+<hr>
+<ul class="n">
+<li>Added support for multiple instances of the plug-in so as not to mangle the settings (ini name is now based on the plug-in dll name)</li>
+<li>Added blocking of station names with only punctuation in them from being allowed to connect (matches YP-side) and updated illegal list</li>
+<li>Added displaying of the metadata and artwork currently present in Winamp when that is the selected mode on the input tab</li>
+<li>Added reporting of the 'type' of the artwork on the Winamp metadata panel (generally requires Winamp 5.64+ to work correctly)</li>
+<li>Added double-click to view file in explorer on the Winamp metadata panel</li>
+<li>Added Winamp v5.64+ safe mode support</li>
+<li>Changed how loading of the dialog is handled to try to improve it to appear on top of Winamp if set to load on startup</li>
+<li>Changed selecting appropriate input fields to select all text in the field (makes it quicker to enter new port values, etc)</li>
+<li>Changed handling of the UI tabs to reduced memory usage where possible</li>
+<li>Changed default playing artwork to use jpeg when not able to get the raw artwork on older (<5.6) Winamp clients</li>
+<li>Changed main input dialog to hide the soundcard options when in Winamp mode instead of disabling and changing the text</li>
+<li>Changed the 'quit' code to better ensure everything applicable is left in a clean state (helps to improve re-opening the window without a complete unload of the plug-in</li>
+<li>Fixed loading of the plug-in to not crash / lockup Winamp's UI when lame_enc.dll cannot be found</li>
+<li>Fixed Winamp / Soundcard options on the summary tab not being checked on loading</li>
+<li>Fixed some of the error indicator drawing appearing incorrectly after closing the window and re-opening (without a complete unload of the plug-in)</li>
+<li>Fixed closing the window not working properly next time / after a few repeat closes due to memory corruption issues and not correctly stopping the broadcast threads in all scenarios</li>
+<li>Miscellaneous code tidyups, size optimisations (~40kb), crash fixes, improved memory handling and other related changes to improve useability of the plug-in</li>
+</ul>
+<p><br></p>
+
+<a name="232"></a><h3>2.3.2 Build 189</h3>
+<hr>
+<ul class="n">
+<li>Fixed all reproduceable issues when switching between Winamp and Soundcard mode as well as switching between the different soundcard input modes (should fix all reported crashes when switching between these modes)</li>
+<li>Fixed soundcard input not being initialised correctly in all of the previous v2.3.x releases</li>
+<li>Fixed the 'connect' button getting disabled when switching from the 'summary' to the 'output' tab</li>
+<li>Fixed crash when playlist was cleared and Winamp was in a specific playback state leading to information could not be properly handled</li>
+<li>Updated list of station names not allows for being listed in the Directory</li>
+<li>Updated albumart support to get the raw playing artwork instead of the decoded artwork and having to re-encode to png when using Winamp v5.6+ (still happens on pre-5.6 or if there is an external artwork file due to the Winamp artwork api)</li>
+</ul>
+<p><br></p>
+
+<a name="231"></a><h3>2.3.1 Build 182</h3>
+<hr>
+<ul class="n">
+<li>Added logging of the metadata and artwork details obtained from Winamp before sent to the server (if logging it enabled)</li>
+<li>Fixed some connection stability issues when connecting to a remote server (typically happens when in-stream artwork is enabled)</li>
+<li>Fixed large metadata updates (typically in-stream artwork but also could affect title updates) not sending all frames to the server</li>
+<li>Fixed some rare lockups when sending metadata frames to the server</li>
+<li>Fixed the 'kill' action not working or responding as expected in certain scenarios</li>
+<li>Changed the 'Directory' tab to enable Name, Url and Genre options when using v2 mode and the stream is set to be public</li>
+<li>Changed toggling of the in-stream artwork options to refresh the cached artwork copy when re-enabled</li>
+<li>Changed log messages to filter out excessive "Cipher Response Received" messages and changed to show "Unable To Connect To The Server. Try enabling 'Shoutcast v1 mode'." if stuck at that state</li>
+<li>Removed the "Ignore 'Sent X bytes' status messages" option from the logging tab (should have been removed in v2.3.0)</li>
+</ul>
+<p><br></p>
+
+<a name="230"></a><h3>2.3.0 Build 177</h3>
+<hr>
+<ul class="n">
+<li>Added a number of stream configuration details onto the summary view to see what each stream is configured for without having to go to the 'output' tab</li>
+<li>Added clickable buttons on the summary listview to allow for quick control of the streams</li>
+<li>Added toggling of the stream playing state in the summary listview view via the space key</li>
+<li>Added support for saving the encoded stream output to a specified file to allow DJ's to keep a copy of their output</li>
+<li>Added options for toggling between Winamp and Soundcard mode on the summary page</li>
+<li>Added tooltips to the summary listview so any clipped text can be seen</li>
+<li>Added peak level indication since the DSP was started for left and right</li>
+<li>Added visual info on the artwork page if artwork will be sent or not</li>
+<li>Added better checking of entered values to ensure only what is supported can be entered e.g. port range limit from 1-65535</li>
+<li>Added better handling of NAK errors from the DNAS in v1 and v2 mode as well as required updates from v2 protocol changes e.g. for 'Bit Rate Error' and 'Stream Moved' responses</li>
+<li>Added 'red' tab text to indicate the tab which has missing or invalid information which prevents a connection from starting</li>
+<li>Added some details of the connection in the logs to make it easier to see the details</li>
+<li>Added handling to remember custom titles between Winamp instances</li>
+<li>Changed all of the known genres to support all changes made to the official genre list at the time of release including the adding of new genres (Decades -> 00s, Folk -> Old Time, International -> German) and changing some (Jewish to Hebrew or removing any dashes)</li>
+<li>Changed some of the output sub-tab names to make things more consistent</li>
+<li>Changed 'user id' to be able to accept the DJ name when used in v1 mode so it will automatically convert it to the 'name:password' format as used with v1 Transcoder DJ connections</li>
+<li>Changed the title options to be on their own page with some layout changes</li>
+<li>Changed a failed connection to now wait up to a second before trying again to prevent hammering the server</li>
+<li>Changed '[xx:xx:xx] Sent xxx bytes' to now scale from bytes to KiB to MiB to GiB</li>
+<li>Changed in-stream metadata (titles and artwork) to be included in the v2 stream bytes sent total shown</li>
+<li>Changed paused / stopped silence filling to keep the output bitrate the same as playing now without the prior hacks</li>
+<li>Changed the 'online documentation' link to open a local copy if available</li>
+<li>Changed the GUID for the plug-in's language file to now be {88380E65-4068-49BA-8EA4-3F2AF12D0A4F} due to the large number of resource changes from the previous releases</li>
+<li>Changed user-agent for v1 title updates to match with the v2 metadata's TENC field version (is now "Shoutcast Source DSP x.x.xx Title Update (Mozilla)")</li>
+<li>Changed to use Lame 3.99.5 (lame_enc.dll) or the most current version shipped with Winamp (makes it easier to update without a custom built lamedll.dll as previously used)</li>
+<li>Changed the 'connect' button to show 'set password' or 'change name' or 'set encoder' or 'set server' when disabled to make it clearer why it's not enabled e.g. if 'unnamed server' or nothing is set for the station name or password fields</li>
+<li>Changed default page to be the output page instead of summary on new installs</li>
+<li>Changed encoder default to be AAC+ if possible (so it's one less thing to do on loading) and fixed MP3 to default to 96kbps stereo on clean installs</li>
+<li>Changed how the dialog is loaded to resolve a part close / crash seen in a few rare cases</li>
+<li>Changed the waveInReset(..) change from 2.1.3 back to the pre-2.1.3 behaviour to see if it resolves some of the crash issues reported since the change</li>
+<li>Fixed a small audio loss / silence injection when a stream starts or when a title update happens</li>
+<li>Fixed the title cache update to only send an update if there is an actual change (filters out quirks with streaming from another stream)</li>
+<li>Fixed 'invalid password' scenarios not being correctly reported</li>
+<li>Fixed stream artwork not being correctly updated after being set to an invalid / empty file</li>
+<li>Fixed unusually large cipherkeys causing a crash when attempting to connect to the server</li>
+<li>Fixed v2 mode doubling up the sent bytes total in some specific scenarios</li>
+<li>Fixed memory leak when processing the playing album art due to not always removing the original image</li>
+<li>Fixed a disconnect-connect or re-connect scenario incorrectly trying to re-send the stream artwork when not present / not enabled</li>
+<li>Fixed metadata packet creation some times going over the 16384 byte limit (16371 byte payload limit)</li>
+<li>Fixed artwork cleared updates being sent when not applicable</li>
+<li>Fixed playing state not being correctly detected if Winamp was already playing when the DSP is loaded</li>
+<li>Fixed issue causing sparodic injection of invalid data into the output buffer for encoding</li>
+<li>Fixed artwork not being correctly sent after a disconnect in some scenarios</li>
+<li>Fixed random crash when updating the next playing song information</li>
+<li>Fixed excessive updating of the controls on the output page</li>
+<li>Fixed MP3 encoder not showing all encoding options when in Winamp mode under some incorrectly inherited settings</li>
+<li>Fixed v1 metadata updates potentially causing a one handle leak for each title update</li>
+<li>Fixed manual titles not being sent in all cases</li>
+<li>Fixed next titles being sent even if option is unchecked</li>
+<li>Removed dsp_sc_enc.ini usage with all temporary encoder settings now stored in dsp_sc.ini</li>
+<li>Removed default values for userid and password to force a valid value to be entered</li>
+<li>Miscellaneous code tidyups, optimisations, removal of unwanted code, resource changes and other related changes to improve useability of the plug-in</li>
+</ul>
+<p><br></p>
+
+<a name="223"></a><h3>2.2.3 Build 112 <a href="#" style="font-size:55%;">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Fixed title updates to remove characters the v2 DNAS will abort a connection on</li>
+<li>Fixed DSP not starting connections if Winamp is starting minimised</li>
+<li>Fixed the AAC encoder not being re-loaded if closing the dialog and re-opening without re-loading the DSP</li>
+<li>Fixed some rare issues preventing the dialog from loading correctly</li>
+</ul>
+<p><br></p>
+
+<a name="222"></a><h3>2.2.2 Build 107 <a href="#" style="font-size:55%;">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Added support for Winamp 5.62's new AAC encoder dll (Winamp now uses Fraunhofer's AAC library instead of Coding Technologies)</li>
+<li>Changed the genre to be chosen from a menu (in supported situations) so only allow supported values</li>
+<li>Changed MP3 default settings to be 96 kbps Stereo (meant to have been this for a while but wasn't working)</li>
+<li>Changed default genre to be 'Misc' on clean installs or on loading and not matching the supported genre list</li>
+<li>Changed the version string so it's more like the v1 tools (and pending DNAS / Transcoder updates)</li>
+<li>Changed 'Description' to 'Name' on the Yellow Pages tab</li>
+<li>Fixed the vu input meters to not show a level if there is currently no audio input instead of keeping the last value</li>
+<li>Fixed issue with loading of the config dialog not showing the tabs correctly in some situations</li>
+<li>Fixed sending a manual title update in v2 mode also incorrectly sending inappropriate cached title data</li>
+<li>Miscellaneous code tidyups, optimisations, removal of unwanted code</li>
+</ul>
+<p><br></p>
+
+<a name="221"></a><h3>2.2.1 Build 99 <a href="#" style="font-size:55%;">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Fixed crash on some machines when the playlist editor is empty</li>
+<li>Fixed some minor localisation issues with some of the error messages</li>
+<li>Fixed the installer not setting the DSP as the default DSP for some non-standard installs</li>
+<li>Changed message when loading in an invalid configuration to mention DSP stackers</li>
+</ul>
+<p><br></p>
+
+<a name="220"></a><h3>2.2.0 Build 97 <a href="#" style="font-size:55%;">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Added new 'Artwork' tab which allows for configuration of how and what artwork will be sent for Shoutcast 2 streams to a compatible Shoutcast 2 DNAS)</li>
+<li>Added support of the IPC_GETNEXTLISTPOS api in Winamp 5.61+ to better determine the next song to be played even if shuffle is enabled</li>
+<li>Added explict blocking of trying to load the plug-in not in Winamp to resolve loading issues and crashes due to lacking api support required</li>
+<li>Added to the logs tab the option to log the next tracks to be played from the DSP in plain txt or in xml format</li>
+<li>Added sending of icypub data as per Shoutcast 2 protocol specifications (only needed for the Shoutcast 2 DNAS)</li>
+<li>Added 'lookahead' ini only option for determining how many next tracks from the playback queue (if available) to report (default is 3)</li>
+<li>Changed all of the Shoutcast 2 packet generation to fix a number of issues like large / invalid packets, being unable to connect, unstable connections</li>
+<li>Changed all of the title gathering to no long poll Winamp but instead query it directly (reduces cpu usage and inproves reliability of metadata gathering)</li>
+<li>Changed all of the plug-in UI to use unicode where possible to improve localisation support</li>
+<li>Changed some of the UI elements to make certain information or errors more obvious (like the 'Cipher Response' message when using the wrong Shoutcast mode)</li>
+<li>Changed the 'Logging' tab to 'Logs' due to the wider range of options it now provides</li>
+<li>Changed next track logging to be a per-configuration feature instead of being applied globally (as in the previous DSP release)</li>
+<li>Changed to send the full title in the metadata <extension> block for the first (current) title so it follows the Shoutcast 2 specs</li>
+<li>Changed the 'Send Update' button to not be enabled unless there is a title to send as well as disabling the next title option as applicable</li>
+<li>Changed YellowPages tab to disable options not applicable to Shoutcast 2 mode and when running as a public server (where the details relating to 'streamauthhash' for the DNAS are used instead)</li>
+<li>Changed to send a default stream id if one is not specified in Shoutcast 2 mode to improve DJ connection issues (which can fail if not specified)</li>
+<li>Fixed some metadata conversions leading to crashes</li>
+<li>Fixed internal utf8 conversions to prevent malformed Shoutcast 2 metadata being generated which would cause the Shoutcast 2 DNAS to block the connection</li>
+<li>Fixed some of the entered stream configuration options to not accept invalid input and revert to safe defaults as applicable if this happens</li>
+<li>Fixed some issues with logging initialisation leading to random lockups in some rare cases</li>
+<li>Fixed memory corruption using Shoutcast 2 mode preventing 'Connection 1' being used in rare cases (mainly affected Windows 2000 / XP systems)</li>
+<li>Fixed metadata not being sent if the connection to the DNAS is lost and a connection then comes back or is manually started</li>
+<li>Fixed clean up of resources if unloading whilst Winamp is still running to prevent a potential crash on close or UI corruption when the plug-in is loaded again</li>
+<li>Fixed when Winamp is not playing or is paused outputting blank stream data at a higher rate compared to playing leading to higher bandwidth usage then should be happening</li>
+<li>Fixed the Summary page listview flickering on update</li>
+<li>Fixed rare crash when Winamp is not playing and certain playlist configurations are in use when trying to find the next track title</li>
+<li>Fixed to not reset the music levels if not using the soundcard input on closing</li>
+<li>Fixed to not reset the Winamp level if not using the soundcard input on startup but will instead apply it on changing to soundcard input</li>
+<li>Fixed playback queue lookup issues on older 5.5x clients when api_queue is not present or not correctly loaded when queried</li>
+<li>Fixed the 'Send Update' option to not send cached information from Winamp's title and to not crash in rare situations</li>
+<li>Fixed rare lockup issue when using the soundcard input due to the input device taking longer to reset than expected</li>
+<li>Fixed refresh capture device not setting to a valid selection if the number of devices changed</li>
+<li>Updated help link for the plug-in to go to the new page at <a target="_blank" href="http://wiki.shoutcast.com/wiki/Source_DSP_Plug-in">http://wiki.shoutcast.com/wiki/Source_DSP_Plug-in</a></li>
+<li>Updated installer to allow the plug-in to be set as the default DSP as well as run Winamp after completion (with the checked states remembered for next time)</li>
+<li>Miscellaneous code tidyups, optimisations, removal of unwanted code and other build related changes to make this more portable at a later date</li>
+</ul>
+<p><br></p>
+
+<a name="213"></a><h3>2.1.3 Build 42 <a href="#" style="font-size:55%;">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Added passing of metadata from the playing track (if known) to the server so it acts like sc_trans from a client connecting to the stream</li>
+<li>Added an option to not log 'Status X bytes' messages (enabled by default) and improved log file handling</li>
+<li>Added a refresh capture device button to help update the plug-in if connected capture devices have changed</li>
+<li>Changed status info duration to be the time connected rather than a relative date time and allows for more than 24hrs to be displayed e.g. 26:48:57 instead of looping back to 03:48:57</li>
+<li>Changed logging to filter 'Status X bytes' messages to only 1 second (if the option to include them is enabled)</li>
+<li>Changed log files to use CR+LF linebreaks instead of just LF</li>
+<li>Changed logging to remove newlines so each message is a single line to match the status info</li>
+<li>Fixed crash on Vista (and potentially Windows 7) where no capture devices are being present resulting in no default capture device known</li>
+<li>Fixed crash in SC2 mode when a different cipher is set in the plug-in to the server as well as indicating this error in the status info</li>
+<li>Fixed button images in the 'Soundcard Mixer Control' section not appearing on all OSes</li>
+</ul>
+<p><br></p>
+
+<a name="211"></a><h3>2.1.1 Build 36 <a href="#" style="font-size:55%;">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Added new 'Logging' tab on the Output tab to log the connection status messages</li>
+<li>Added a mini dropdown next to the 'Lock' button for 'Push to Talk' to allow the mode to be automatically enabled on startup</li>
+<li>Fixed plug-in to not crash when the network connection is lost</li>
+<li>Fixed random plug-in crashes whilst the plug-in is streaming (mainly in SC2 mode)</li>
+<li>Fixed internal plug-in uninstall not always working</li>
+<li>Fixed SC2 title updates to properly work as UTF-8 and to not strip out characters incorrectly</li>
+<li>Fixed next track detection to only be reported if shuffle mode is off and not to act in an undefined manner when on the last playlist item (wraps around to the start of the playlist as needed)</li>
+<li>Fixed title updates to cope with the same title being played but the next song title being different</li>
+<li>Changed SC2 metadata to not output &lt;soon&gt; and &lt;title seq="2"&gt; tags in the xml metadata if they are not known (when shuffle mode is enabled)</li>
+<li>Changed the &lt;TENC/&gt; tag in the xml metadata to include the plug-in version</li>
+</ul>
+<p><br></p>
+
+<a name="210"></a><h3>2.1.0 Build 33 <a href="#" style="font-size:55%;">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Added a separate capture device fader timeout option</li>
+<li>Added copies of the plug-in documentation as an installer option</li>
+<li>Added help and documentation links to the 'About' tab</li>
+<li>Changed on Vista / Windows 7 to only show actually connected capture devices (requires a restart of the plug-in if connecting a new device whilst the plug-in is active)</li>
+<li>Changed the 'Open Mixer' button to open to the recording devices dialog on Vista / Windows 7</li>
+<li>Changed wording of the legacy mode checkbox to be clearer (hopefully) and added an info panel below to deal with the 'Cipher response message'</li>
+<li>Changed capture device level to not alter the device's level unless Push to Talk is active</li>
+<li>Changed the resolution on the faders from 500ms to 100ms (will re-map old settings)</li>
+<li>Changed opening of help links in the plug-in to follow Winamp's style of handling</li>
+<li>Fixed major issue in the plug-in leading to breaking of Winamp (and 3rd party plug-in's) COM usage</li>
+<li>Fixed running of the plug-in not starting auto-connect connections when 'Input' or 'About' were the opened tab</li>
+<li>Fixed capture device level not being correctly handled leading to spiking in on transitions (affected at least Windows 2000 / XP where it is all known to work)</li>
+<li>Fixed capture devices source selection not being remembered</li>
+<li>Fixed capture device and source levels not being set back to the non-Push to Talk level if Push to Talk is active when the plug-in is closed</li>
+<li>Fixed a few localisation issues with missing items on Windows 2000 / XP</li>
+<li>Fixed capture deviceRemoved tooltip from the microphone slider on the line-in page</li>
+<li>Fixed some issues with the installer and uninstaller</li>
+<li>Miscellaneous code changes to make some things easier to manage</li>
+</ul>
+<p><br></p>
+
+<a name="202"></a><h3>2.0.2 Build 27 <a href="#" style="font-size:55%;">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Fixed Shoutcast 1 connection errors to a remote connection</li>
+<li>Fixed authorisation error checking for Ultravox 2 & 2.1</li>
+<li>More changes to the output manager to avoid out of sync states</li>
+<li>Fixed timing issue which caused out of sequence Ultravox audio data frames in some scenarios</li>
+<li>Fixed some localisation and tabbing order issues on the config pages</li>
+<li>Removed unwanted encoder option on the Output -> Connection tab</li>
+<li>Added a Shoutcast 1 mode only information prompt on how to enter the password for DJ connections</li>
+</ul>
+<p><br></p>
+
+<a name="200"></a><h3>2.0.0 <a href="#" style="font-size:55%;">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Added Shoutcast 2 (Ultravox 2.1) support for the generated stream data</li>
+<li>Cleanup and general fixes to the streaming support in the plug-in</li>
+<li>Fixed settings not being saved on Vista / Windows 7</li>
+<li>Fixed a number of lock-ups in the plug-in (should be more stable now)</li>
+<li>Fixed plug-in to not stall if Winamp is not playing</li>
+<li>Fixed a number of UI issues (tabs not showing in all cases, controls not in the correct tabbing order, theming issues, notification icon handling)</li>
+<li>Config window now remembers its last position between use</li>
+<li>Improved Lame encoder quality</li>
+<li>Attempted to resolve standard AAC (LC-AAC) not working (additionally this is reported as audio/aacp so it will work with the YP)</li>
+<li>Uses the current enc_aacplus.dll (AAC / AAC+ encoder) from the Winamp install used instead of bundling an old version from Winamp 5.1)</li>
+<li>Fixed Shoutcast 1 issue with titles containing "[" & "]"</li>
+<li>Changes made to improve selection of the 'microphone' device allowing for more control over the capture device used</li>
+<li>Added localisation support to the plug-in (including supporting localised encoder plug-ins when showing their configurations)</li>
+<li>Some other minor changes including those from the <a target="_blank" href="http://forums.shoutcast.com/showthread.php?t=322874">1.9.2 beta</a></li>
+</ul>
+<p><br></p>

@@ -1,0 +1,26 @@
+HKCR
+{
+	Elevator.WFileTypeRegistrar.1 = s 'WFileTypeRegistrar Class'
+	{
+		CLSID = s '{3B29AB5C-52CB-4a36-9314-E3FEE0BA7468}'
+	}
+	Elevator.WFileTypeRegistrar = s 'WFileTypeRegistrar Class'
+	{
+		CLSID = s '{3B29AB5C-52CB-4a36-9314-E3FEE0BA7468}'
+		CurVer = s 'Elevator.WFileTypeRegistrar.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {3B29AB5C-52CB-4a36-9314-E3FEE0BA7468} = s 'WFileTypeRegistrar Class'
+		{
+			ProgID = s 'Elevator.WFileTypeRegistrar.1'
+			VersionIndependentProgID = s 'Elevator.WFileTypeRegistrar'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{E06EFB8F-75A5-4AEF-B4E4-245664CF74EC}'
+		}
+	}
+}

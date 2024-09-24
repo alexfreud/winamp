@@ -1,0 +1,1786 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CPUIdLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPB85.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\cpuID\release\VerifyXMMReg.lst /Fo .\..\..\..\ObjectCode\cpuID\release\VerifyXMMReg.obj .\Win32\VerifyXMMReg.asm
+]
+Creating command line "C:\tmp\RSPB85.bat"
+Creating temporary file "C:\tmp\RSPB86.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\cpuID\release\TrashXMMreg.lst /Fo .\..\..\..\ObjectCode\cpuID\release\TrashXMMreg.obj .\Win32\TrashXMMreg.asm
+]
+Creating command line "C:\tmp\RSPB86.bat"
+Creating temporary file "C:\tmp\RSPB87.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\cpuID\release\InitXMMReg.lst /Fo .\..\..\..\ObjectCode\cpuID\release\InitXMMReg.obj .\Win32\InitXMMReg.asm
+]
+Creating command line "C:\tmp\RSPB87.bat"
+Creating temporary file "C:\tmp\RSPB88.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\cpuID\release\D9xOSSupXMM.lst /Fo .\..\..\..\ObjectCode\cpuID\release\D9xOSSupXMM.obj .\Win32\D9xOSSupXMM.asm
+]
+Creating command line "C:\tmp\RSPB88.bat"
+Creating temporary file "C:\tmp\RSPB89.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\cpuID\release\cpuid.lst /Fo .\..\..\..\ObjectCode\cpuID\release\cpuid.obj .\Win32\cpuid.asm
+]
+Creating command line "C:\tmp\RSPB89.bat"
+Creating temporary file "C:\tmp\RSPB8A.tmp" with contents
+[
+/nologo /G6 /MT /W3 /GX /O2 /I "..\include" /I "..\..\include" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"..\..\..\ObjectCode\cpuID\release/" /Fd"..\..\..\ObjectCode\cpuID\release/" /FD /c 
+"C:\NEWZIP\VP6\corelibs\CpuID\Win32\cid.c"
+"C:\NEWZIP\VP6\corelibs\CpuID\Win32\Wmt_CpuID.cpp"
+]
+Creating command line "cl.exe @C:\tmp\RSPB8A.tmp" 
+Performing Custom Build Step on .\Win32\VerifyXMMReg.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\VerifyXMMReg.asm
+Performing Custom Build Step on .\Win32\TrashXMMreg.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\TrashXMMreg.asm
+Performing Custom Build Step on .\Win32\InitXMMReg.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\InitXMMReg.asm
+Performing Custom Build Step on .\Win32\D9xOSSupXMM.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\D9xOSSupXMM.asm
+Performing Custom Build Step on .\Win32\cpuid.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\cpuid.asm
+Creating temporary file "C:\tmp\RSPB8B.tmp" with contents
+[
+/nologo /out:"..\..\lib\win32\Release\s_cpuid.lib" 
+\NEWZIP\ObjectCode\cpuID\release\cid.obj
+\NEWZIP\ObjectCode\cpuID\release\Wmt_CpuID.obj
+\NEWZIP\ObjectCode\cpuID\release\cpuid.obj
+\NEWZIP\ObjectCode\cpuID\release\D9xOSSupXMM.obj
+\NEWZIP\ObjectCode\cpuID\release\InitXMMReg.obj
+\NEWZIP\ObjectCode\cpuID\release\TrashXMMreg.obj
+\NEWZIP\ObjectCode\cpuID\release\VerifyXMMReg.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPB8B.tmp"
+<h3>Output Window</h3>
+Compiling...
+cid.c
+Generating Code...
+Compiling...
+Wmt_CpuID.cpp
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+s_cpuid.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: CPUIdLib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPB8C.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\cpuID\debug\VerifyXMMReg.lst /Fo .\..\..\..\ObjectCode\cpuID\debug\VerifyXMMReg.obj .\Win32\VerifyXMMReg.asm
+]
+Creating command line "C:\tmp\RSPB8C.bat"
+Creating temporary file "C:\tmp\RSPB8D.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\cpuID\debug\TrashXMMreg.lst /Fo .\..\..\..\ObjectCode\cpuID\debug\TrashXMMreg.obj .\Win32\TrashXMMreg.asm
+]
+Creating command line "C:\tmp\RSPB8D.bat"
+Creating temporary file "C:\tmp\RSPB8E.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\cpuID\debug\InitXMMReg.lst /Fo .\..\..\..\ObjectCode\cpuID\debug\InitXMMReg.obj .\Win32\InitXMMReg.asm
+]
+Creating command line "C:\tmp\RSPB8E.bat"
+Creating temporary file "C:\tmp\RSPB8F.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\cpuID\debug\D9xOSSupXMM.lst /Fo .\..\..\..\ObjectCode\cpuID\debug\D9xOSSupXMM.obj .\Win32\D9xOSSupXMM.asm
+]
+Creating command line "C:\tmp\RSPB8F.bat"
+Creating temporary file "C:\tmp\RSPB90.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\cpuID\debug\cpuid.lst /Fo .\..\..\..\ObjectCode\cpuID\debug\cpuid.obj .\Win32\cpuid.asm
+]
+Creating command line "C:\tmp\RSPB90.bat"
+Creating temporary file "C:\tmp\RSPB91.tmp" with contents
+[
+/nologo /G6 /MTd /W3 /GX /Z7 /Od /I "..\..\include" /I "..\include" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\ObjectCode\cpuID\debug/CPUIdLib.pch" /YX /Fo"..\..\..\ObjectCode\cpuID\debug/" /Fd"..\..\..\ObjectCode\cpuID\debug/" /FD /GZ /c 
+"C:\NEWZIP\VP6\corelibs\CpuID\Win32\cid.c"
+"C:\NEWZIP\VP6\corelibs\CpuID\Win32\Wmt_CpuID.cpp"
+]
+Creating command line "cl.exe @C:\tmp\RSPB91.tmp" 
+Performing Custom Build Step on .\Win32\VerifyXMMReg.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\VerifyXMMReg.asm
+Performing Custom Build Step on .\Win32\TrashXMMreg.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\TrashXMMreg.asm
+Performing Custom Build Step on .\Win32\InitXMMReg.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\InitXMMReg.asm
+Performing Custom Build Step on .\Win32\D9xOSSupXMM.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\D9xOSSupXMM.asm
+Performing Custom Build Step on .\Win32\cpuid.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\cpuid.asm
+Creating temporary file "C:\tmp\RSPB92.tmp" with contents
+[
+/nologo /out:"..\..\lib\win32\debug\s_cpuid.lib" 
+\NEWZIP\ObjectCode\cpuID\debug\cid.obj
+\NEWZIP\ObjectCode\cpuID\debug\Wmt_CpuID.obj
+\NEWZIP\ObjectCode\cpuID\debug\cpuid.obj
+\NEWZIP\ObjectCode\cpuID\debug\D9xOSSupXMM.obj
+\NEWZIP\ObjectCode\cpuID\debug\InitXMMReg.obj
+\NEWZIP\ObjectCode\cpuID\debug\TrashXMMreg.obj
+\NEWZIP\ObjectCode\cpuID\debug\VerifyXMMReg.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPB92.tmp"
+<h3>Output Window</h3>
+Compiling...
+cid.c
+Wmt_CpuID.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+s_cpuid.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: colorconversions - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPB93.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\ColorSpaces\Release\rgb32toyv12_xmm.lst /Fo .\..\..\..\ObjectCode\ColorSpaces\Release\rgb32toyv12_xmm.obj .\Win32\rgb32toyv12_xmm.asm
+]
+Creating command line "C:\tmp\RSPB93.bat"
+Creating temporary file "C:\tmp\RSPB94.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\ColorSpaces\Release\rgb32toyv12_mmx.lst /Fo .\..\..\..\ObjectCode\ColorSpaces\Release\rgb32toyv12_mmx.obj .\Win32\rgb32toyv12_mmx.asm
+]
+Creating command line "C:\tmp\RSPB94.bat"
+Creating temporary file "C:\tmp\RSPB95.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\ColorSpaces\Release\rgb24toyv12_xmm.lst /Fo .\..\..\..\ObjectCode\ColorSpaces\Release\rgb24toyv12_xmm.obj .\Win32\rgb24toyv12_xmm.asm
+]
+Creating command line "C:\tmp\RSPB95.bat"
+Creating temporary file "C:\tmp\RSPB96.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\ColorSpaces\Release\rgb24toyv12_mmx.lst /Fo .\..\..\..\ObjectCode\ColorSpaces\Release\rgb24toyv12_mmx.obj .\Win32\rgb24toyv12_mmx.asm
+]
+Creating command line "C:\tmp\RSPB96.bat"
+Creating temporary file "C:\tmp\RSPB97.tmp" with contents
+[
+/nologo /G6 /MT /W3 /GX /O2 /I "..\..\include" /I "..\include" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\ObjectCode\ColorSpaces\Release/colorconversions.pch" /YX /Fo"..\..\..\ObjectCode\ColorSpaces\Release/" /Fd"..\..\..\ObjectCode\ColorSpaces\Release/" /FD /c 
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\Win32\uyvytoyv12_mmx.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\Win32\yuy2toyv12_mmx.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\Win32\yvyutoyv12_mmx.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\ColorConversions.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\lutbl.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgb24toyv12.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgb24toyv12f.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgb32toyv12.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgb32toyv12f.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgbtorgb.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgbtoyuv.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgbtoyuvi.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\uyvytoyv12.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\uyvytoyv12f.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuvitorgb.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuvitoyuv.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuvtorgb.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuvtoyuv.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuvtoyuvi.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuy2toyv12.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuy2toyv12f.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yvyutoyv12.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yvyutoyv12f.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPB97.tmp" 
+Performing Custom Build Step on .\Win32\rgb32toyv12_xmm.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\rgb32toyv12_xmm.asm
+Performing Custom Build Step on .\Win32\rgb32toyv12_mmx.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\rgb32toyv12_mmx.asm
+Performing Custom Build Step on .\Win32\rgb24toyv12_xmm.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\rgb24toyv12_xmm.asm
+Performing Custom Build Step on .\Win32\rgb24toyv12_mmx.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\rgb24toyv12_mmx.asm
+Creating temporary file "C:\tmp\RSPB98.tmp" with contents
+[
+/nologo /out:"..\..\lib\win32\release\s_cconv.lib" 
+\NEWZIP\ObjectCode\ColorSpaces\Release\uyvytoyv12_mmx.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\yuy2toyv12_mmx.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\yvyutoyv12_mmx.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\ColorConversions.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\lutbl.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\rgb24toyv12.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\rgb24toyv12f.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\rgb32toyv12.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\rgb32toyv12f.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\rgbtorgb.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\rgbtoyuv.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\rgbtoyuvi.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\uyvytoyv12.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\uyvytoyv12f.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\yuvitorgb.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\yuvitoyuv.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\yuvtorgb.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\yuvtoyuv.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\yuvtoyuvi.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\yuy2toyv12.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\yuy2toyv12f.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\yvyutoyv12.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\yvyutoyv12f.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\rgb24toyv12_mmx.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\rgb24toyv12_xmm.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\rgb32toyv12_mmx.obj
+\NEWZIP\ObjectCode\ColorSpaces\Release\rgb32toyv12_xmm.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPB98.tmp"
+<h3>Output Window</h3>
+Compiling...
+uyvytoyv12_mmx.c
+yuy2toyv12_mmx.c
+yvyutoyv12_mmx.c
+ColorConversions.c
+lutbl.c
+rgb24toyv12.c
+rgb24toyv12f.c
+rgb32toyv12.c
+rgb32toyv12f.c
+rgbtorgb.c
+rgbtoyuv.c
+rgbtoyuvi.c
+uyvytoyv12.c
+uyvytoyv12f.c
+yuvitorgb.c
+yuvitoyuv.c
+yuvtorgb.c
+yuvtoyuv.c
+yuvtoyuvi.c
+yuy2toyv12.c
+yuy2toyv12f.c
+yvyutoyv12.c
+yvyutoyv12f.c
+Creating library...
+
+
+
+<h3>Results</h3>
+s_cconv.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: colorconversions - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPB99.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\ColorSpaces\Debug\rgb32toyv12_xmm.lst /Fo .\..\..\..\ObjectCode\ColorSpaces\Debug\rgb32toyv12_xmm.obj .\Win32\rgb32toyv12_xmm.asm
+]
+Creating command line "C:\tmp\RSPB99.bat"
+Creating temporary file "C:\tmp\RSPB9A.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\ColorSpaces\Debug\rgb32toyv12_mmx.lst /Fo .\..\..\..\ObjectCode\ColorSpaces\Debug\rgb32toyv12_mmx.obj .\Win32\rgb32toyv12_mmx.asm
+]
+Creating command line "C:\tmp\RSPB9A.bat"
+Creating temporary file "C:\tmp\RSPB9B.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\ColorSpaces\Debug\rgb24toyv12_xmm.lst /Fo .\..\..\..\ObjectCode\ColorSpaces\Debug\rgb24toyv12_xmm.obj .\Win32\rgb24toyv12_xmm.asm
+]
+Creating command line "C:\tmp\RSPB9B.bat"
+Creating temporary file "C:\tmp\RSPB9C.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\ObjectCode\ColorSpaces\Debug\rgb24toyv12_mmx.lst /Fo .\..\..\..\ObjectCode\ColorSpaces\Debug\rgb24toyv12_mmx.obj .\Win32\rgb24toyv12_mmx.asm
+]
+Creating command line "C:\tmp\RSPB9C.bat"
+Creating temporary file "C:\tmp\RSPB9D.tmp" with contents
+[
+/nologo /G6 /MTd /W3 /GX /Z7 /Od /I "..\..\include" /I "..\include" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\ObjectCode\ColorSpaces\Debug/colorconversions.pch" /YX /Fo"..\..\..\ObjectCode\ColorSpaces\Debug/" /Fd"..\..\..\ObjectCode\ColorSpaces\Debug/" /FD /GZ /c 
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\Win32\uyvytoyv12_mmx.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\Win32\yuy2toyv12_mmx.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\Win32\yvyutoyv12_mmx.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\ColorConversions.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\lutbl.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgb24toyv12.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgb24toyv12f.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgb32toyv12.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgb32toyv12f.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgbtorgb.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgbtoyuv.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\rgbtoyuvi.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\uyvytoyv12.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\uyvytoyv12f.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuvitorgb.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuvitoyuv.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuvtorgb.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuvtoyuv.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuvtoyuvi.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuy2toyv12.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yuy2toyv12f.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yvyutoyv12.c"
+"C:\NEWZIP\VP6\corelibs\ColorSpaces\yvyutoyv12f.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPB9D.tmp" 
+Performing Custom Build Step on .\Win32\rgb32toyv12_xmm.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\rgb32toyv12_xmm.asm
+Performing Custom Build Step on .\Win32\rgb32toyv12_mmx.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\rgb32toyv12_mmx.asm
+Performing Custom Build Step on .\Win32\rgb24toyv12_xmm.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\rgb24toyv12_xmm.asm
+Performing Custom Build Step on .\Win32\rgb24toyv12_mmx.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\Win32\rgb24toyv12_mmx.asm
+Creating temporary file "C:\tmp\RSPB9E.tmp" with contents
+[
+/nologo /out:"..\..\lib\win32\debug\s_cconv.lib" 
+\NEWZIP\ObjectCode\ColorSpaces\Debug\uyvytoyv12_mmx.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\yuy2toyv12_mmx.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\yvyutoyv12_mmx.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\ColorConversions.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\lutbl.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\rgb24toyv12.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\rgb24toyv12f.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\rgb32toyv12.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\rgb32toyv12f.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\rgbtorgb.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\rgbtoyuv.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\rgbtoyuvi.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\uyvytoyv12.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\uyvytoyv12f.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\yuvitorgb.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\yuvitoyuv.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\yuvtorgb.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\yuvtoyuv.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\yuvtoyuvi.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\yuy2toyv12.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\yuy2toyv12f.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\yvyutoyv12.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\yvyutoyv12f.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\rgb24toyv12_mmx.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\rgb24toyv12_xmm.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\rgb32toyv12_mmx.obj
+\NEWZIP\ObjectCode\ColorSpaces\Debug\rgb32toyv12_xmm.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPB9E.tmp"
+<h3>Output Window</h3>
+Compiling...
+uyvytoyv12_mmx.c
+yuy2toyv12_mmx.c
+yvyutoyv12_mmx.c
+ColorConversions.c
+lutbl.c
+rgb24toyv12.c
+rgb24toyv12f.c
+rgb32toyv12.c
+rgb32toyv12f.c
+rgbtorgb.c
+rgbtoyuv.c
+rgbtoyuvi.c
+uyvytoyv12.c
+uyvytoyv12f.c
+yuvitorgb.c
+yuvitoyuv.c
+yuvtorgb.c
+yuvtoyuv.c
+yuvtoyuvi.c
+yuy2toyv12.c
+yuy2toyv12f.c
+yvyutoyv12.c
+yvyutoyv12f.c
+Creating library...
+
+
+
+<h3>Results</h3>
+s_cconv.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: dxv - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPB9F.tmp" with contents
+[
+/nologo /G6 /MT /W3 /GX /O2 /I "..\include" /I "..\..\include" /I "..\..\..\include" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\..\ObjectCode\dxv\Release/dxv.pch" /YX /Fo"..\..\..\..\ObjectCode\dxv\Release/" /Fd"..\..\..\..\ObjectCode\dxv\Release/" /FD /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\dxv\generic\vscreen.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\dxv\generic\ximage.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPB9F.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\..\Lib\Win32\Release\s_dxv.lib"  \NEWZIP\ObjectCode\dxv\Release\vscreen.obj \NEWZIP\ObjectCode\dxv\Release\ximage.obj "
+<h3>Output Window</h3>
+Compiling...
+vscreen.c
+ximage.c
+Creating library...
+
+
+
+<h3>Results</h3>
+s_dxv.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: dxv - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBA0.tmp" with contents
+[
+/nologo /G6 /MTd /W3 /Gm /GX /ZI /Od /I "..\include" /I "..\..\include\win32" /I "..\..\include" /I "..\..\..\include" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\..\ObjectCode\dxv\debug/dxv.pch" /YX /Fo"..\..\..\..\ObjectCode\dxv\debug/" /Fd"..\..\..\..\ObjectCode\dxv\debug/" /FD /GZ /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\dxv\generic\vscreen.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\dxv\generic\ximage.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBA0.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\..\Lib\Win32\Debug\s_dxv.lib"  \NEWZIP\ObjectCode\dxv\debug\vscreen.obj \NEWZIP\ObjectCode\dxv\debug\ximage.obj "
+<h3>Output Window</h3>
+Compiling...
+vscreen.c
+ximage.c
+Creating library...
+
+
+
+<h3>Results</h3>
+s_dxv.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: on2_mem - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBA1.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\..\include" /I "..\..\..\common\include" /I "..\..\memory_manager\include" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\..\obj\on2_mem\win32\release/on2_mem.pch" /YX /Fo"..\..\..\..\obj\on2_mem\win32\release/" /Fd"..\..\..\..\obj\on2_mem\win32\release/" /FD /c 
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_alloc.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_base.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_dflt_abort.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_grow.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_largest.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_resize.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_shrink.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_true.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\on2_mem.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\on2_mem_tracker.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBA1.tmp" 
+Creating temporary file "C:\tmp\RSPBA2.tmp" with contents
+[
+/nologo /out:"..\..\..\..\..\..\lib\win32\release\on2_mem.lib" 
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\release\hmm_alloc.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\release\hmm_base.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\release\hmm_dflt_abort.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\release\hmm_grow.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\release\hmm_largest.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\release\hmm_resize.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\release\hmm_shrink.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\release\hmm_true.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\release\on2_mem.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\release\on2_mem_tracker.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPBA2.tmp"
+<h3>Output Window</h3>
+Compiling...
+hmm_alloc.c
+hmm_base.c
+hmm_dflt_abort.c
+hmm_grow.c
+hmm_largest.c
+hmm_resize.c
+hmm_shrink.c
+hmm_true.c
+on2_mem.c
+on2_mem_tracker.c
+Creating library...
+
+
+
+<h3>Results</h3>
+on2_mem.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: on2_mem - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBA3.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\..\include" /I "..\..\..\common\include" /I "..\..\memory_manager\include" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\..\obj\on2_mem\win32\debug/on2_mem.pch" /YX /Fo"..\..\..\..\obj\on2_mem\win32\debug/" /Fd"..\..\..\..\obj\on2_mem\win32\debug/" /FD /GZ /c 
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_alloc.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_base.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_dflt_abort.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_grow.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_largest.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_resize.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_shrink.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\memory_manager\hmm_true.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\on2_mem.c"
+"C:\NEWZIP\VP6\corelibs\on2_common\src\on2_mem\on2_mem_tracker.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBA3.tmp" 
+Creating temporary file "C:\tmp\RSPBA4.tmp" with contents
+[
+/nologo /out:"..\..\..\..\..\..\lib\win32\debug\on2_mem.lib" 
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\debug\hmm_alloc.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\debug\hmm_base.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\debug\hmm_dflt_abort.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\debug\hmm_grow.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\debug\hmm_largest.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\debug\hmm_resize.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\debug\hmm_shrink.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\debug\hmm_true.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\debug\on2_mem.obj
+\NEWZIP\VP6\corelibs\on2_common\obj\on2_mem\win32\debug\on2_mem_tracker.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPBA4.tmp"
+<h3>Output Window</h3>
+Compiling...
+hmm_alloc.c
+hmm_base.c
+hmm_dflt_abort.c
+hmm_grow.c
+hmm_largest.c
+hmm_resize.c
+hmm_shrink.c
+hmm_true.c
+on2_mem.c
+on2_mem_tracker.c
+Creating library...
+
+
+
+<h3>Results</h3>
+on2_mem.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: preproc - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBA5.tmp" with contents
+[
+/nologo /G6 /MT /W3 /GX /O2 /I "..\vp60\include" /I "..\include" /I "..\..\include" /I ".\include" /I "..\..\..\include" /I "..\..\..\..\include" /I "..\..\..\..\include\vp60" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"Release/preproc.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\preproc\preproc.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBA5.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\..\Lib\Win32\Release\s_preproc.lib"  .\Release\preproc.obj "
+<h3>Output Window</h3>
+Compiling...
+preproc.c
+Creating library...
+
+
+
+<h3>Results</h3>
+s_preproc.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: preproc - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBA6.tmp" with contents
+[
+/nologo /G6 /MTd /W3 /Gm /GX /ZI /Od /I "..\vp60\include" /I "..\..\include" /I ".\include" /I "..\include" /I "..\..\..\include" /I "..\..\..\..\include" /I "..\..\..\..\include\vp60" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\preproc\preproc.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBA6.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\..\..\Lib\Win32\Debug\s_preproc.lib"  .\Debug\preproc.obj "
+<h3>Output Window</h3>
+Compiling...
+preproc.c
+Creating library...
+
+
+
+<h3>Results</h3>
+s_preproc.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: vp6d - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBA7.tmp" with contents
+[
+/nologo /G6 /MT /W3 /GX /Ox /Ot /Oa /Ow /Og /Oi /Ob2 /I ".\include" /I "..\include" /I "..\..\include" /I "..\..\..\include" /I "..\..\..\..\include" /I "..\..\..\..\include\vp60" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "vp6D_EXPORTS" /D "PREDICT_2D" /D "PBDLL" /D "VFW_PB" /D "USE_DRAWDIB" /D "POSTPROCESS" /D "NORMALIZED" /D INLINE=__forceinline /D FORCEINLINE=__forceinline /Fo"..\..\..\..\ObjectCode\vp6d\Release/" /Fd"..\..\..\..\ObjectCode\vp6d\Release/" /FD /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\boolhuff.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\debug.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\decodembs.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\decodemode.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\decodemv.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\DX\Generic\DFrameR.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\FrameIni.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\Huffman.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\DX\Generic\pb_globals.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\quantize.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\recon.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\TokenEntropy.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\DX\Generic\vfwpbdll_if.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Win32\dsystemdependant.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Win32\quantindexmmx.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Win32\vp60dxv.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\xprintf\xprintf.cpp"
+]
+Creating command line "cl.exe @C:\tmp\RSPBA7.tmp" 
+Creating temporary file "C:\tmp\RSPBA8.tmp" with contents
+[
+/nologo /out:"..\..\..\..\Lib\Win32\Release\s_vp60d.lib" 
+\NEWZIP\VP6\ObjectCode\vp6d\Release\boolhuff.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\debug.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\decodembs.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\decodemode.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\decodemv.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\DFrameR.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\FrameIni.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\Huffman.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\pb_globals.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\quantize.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\recon.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\TokenEntropy.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\vfwpbdll_if.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\dsystemdependant.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\quantindexmmx.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\vp60dxv.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Release\xprintf.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPBA8.tmp"
+<h3>Output Window</h3>
+Compiling...
+boolhuff.c
+debug.c
+decodembs.c
+decodemode.c
+decodemv.c
+DFrameR.c
+FrameIni.c
+Huffman.c
+pb_globals.c
+quantize.c
+recon.c
+TokenEntropy.c
+vfwpbdll_if.c
+dsystemdependant.c
+quantindexmmx.c
+vp60dxv.c
+Generating Code...
+Compiling...
+xprintf.cpp
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+s_vp60d.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: vp6d - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBA9.tmp" with contents
+[
+/nologo /G6 /MTd /W3 /Gm /GX /Zi /Od /I ".\include" /I "..\include" /I "..\..\include" /I "..\..\..\..\include" /I "..\..\..\..\include\vp60" /I "..\..\..\include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "vp6D_EXPORTS" /D "PREDICT_2D" /D "PBDLL" /D "VFW_PB" /D "USE_DRAWDIB" /D "POSTPROCESS" /D "NORMALIZED" /D INLINE=__forceinline /D FORCEINLINE=__forceinline /Fo"..\..\..\..\ObjectCode\vp6d\Debug/" /Fd"..\..\..\..\ObjectCode\vp6d\Debug/" /FD /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\boolhuff.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\debug.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\decodembs.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\decodemode.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\decodemv.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\DX\Generic\DFrameR.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\FrameIni.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\Huffman.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\DX\Generic\pb_globals.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\quantize.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\recon.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Generic\TokenEntropy.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\DX\Generic\vfwpbdll_if.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Win32\dsystemdependant.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Win32\quantindexmmx.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\dx\Win32\vp60dxv.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\xprintf\xprintf.cpp"
+]
+Creating command line "cl.exe @C:\tmp\RSPBA9.tmp" 
+Creating temporary file "C:\tmp\RSPBAA.tmp" with contents
+[
+/nologo /out:"..\..\..\..\Lib\Win32\Debug\s_vp60d.lib" 
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\boolhuff.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\debug.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\decodembs.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\decodemode.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\decodemv.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\DFrameR.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\FrameIni.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\Huffman.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\pb_globals.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\quantize.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\recon.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\TokenEntropy.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\vfwpbdll_if.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\dsystemdependant.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\quantindexmmx.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\vp60dxv.obj
+\NEWZIP\VP6\ObjectCode\vp6d\Debug\xprintf.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPBAA.tmp"
+<h3>Output Window</h3>
+Compiling...
+boolhuff.c
+debug.c
+decodembs.c
+decodemode.c
+decodemv.c
+DFrameR.c
+FrameIni.c
+Huffman.c
+pb_globals.c
+quantize.c
+recon.c
+TokenEntropy.c
+vfwpbdll_if.c
+dsystemdependant.c
+quantindexmmx.c
+vp60dxv.c
+Generating Code...
+Compiling...
+xprintf.cpp
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+s_vp60d.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: vp6e - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBAB.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\ObjectCode\vp6e\Release\XmmSAD.lst /Fo .\..\..\..\..\ObjectCode\vp6e\Release\XmmSAD.obj .\cx\Win32\XmmSAD.asm
+]
+Creating command line "C:\tmp\RSPBAB.bat"
+Creating temporary file "C:\tmp\RSPBAC.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\ObjectCode\vp6e\Release\XmmGetSAD8.lst /Fo .\..\..\..\..\ObjectCode\vp6e\Release\XmmGetSAD8.obj .\CX\Win32\XmmGetSAD8.asm
+]
+Creating command line "C:\tmp\RSPBAC.bat"
+Creating temporary file "C:\tmp\RSPBAD.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\ObjectCode\vp6e\Release\XmmGetError.lst /Fo .\..\..\..\..\ObjectCode\vp6e\Release\XmmGetError.obj .\cx\Win32\XmmGetError.asm
+]
+Creating command line "C:\tmp\RSPBAD.bat"
+Creating temporary file "C:\tmp\RSPBAE.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\ObjectCode\vp6e\Release\MmxEncodeMath.lst /Fo .\..\..\..\..\ObjectCode\vp6e\Release\MmxEncodeMath.obj .\cx\Win32\MmxEncodeMath.asm
+]
+Creating command line "C:\tmp\RSPBAE.bat"
+Creating temporary file "C:\tmp\RSPBAF.tmp" with contents
+[
+/nologo /G6 /MT /W3 /GX /O2 /I ".\include" /I "..\include" /I "..\..\include" /I "..\..\..\include" /I "..\..\..\..\include" /I "..\..\..\..\Include\vp60" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "vp6E_EXPORTS" /D "PREDICT_2D" /D "VFW_COMP" /D "COMPDLL" /D "POSTPROCESS" /D "CPUISLITTLEENDIAN" /D "NORMALIZED" /D INLINE=__forceinline /D FORCEINLINE=__forceinline /Fo"..\..\..\..\ObjectCode\vp6e\Release/" /Fd"..\..\..\..\ObjectCode\vp6e\Release/" /FD /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\CX\Generic\Comp_Globals.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\Encode.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\encodembs.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\encodemode.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\encodemv.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\fullframefdct.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\CX\Generic\mcomp.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\CX\Generic\misc_common.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\PackVideo.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\PickModes.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\RawBuffer.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\Tokenize.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\Transform.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\twopass.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\CX\Generic\vfwcomp.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\CX\Generic\vfwcomp_if.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Win32\COptFunctions.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Win32\csystemdependant.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Win32\CWmtFunctions.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Win32\WmtTransform.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBAF.tmp" 
+Performing Custom Build Step on .\cx\Win32\XmmSAD.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\cx\Win32\XmmSAD.asm
+Performing Custom Build Step on .\CX\Win32\XmmGetSAD8.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\CX\Win32\XmmGetSAD8.asm
+Performing Custom Build Step on .\cx\Win32\XmmGetError.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\cx\Win32\XmmGetError.asm
+Performing Custom Build Step on .\cx\Win32\MmxEncodeMath.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\cx\Win32\MmxEncodeMath.asm
+Creating temporary file "C:\tmp\RSPBB0.tmp" with contents
+[
+/nologo /out:"..\..\..\..\Lib\Win32\Release\s_vp60e.lib" 
+\NEWZIP\VP6\ObjectCode\vp6e\Release\Comp_Globals.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\Encode.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\encodembs.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\encodemode.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\encodemv.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\fullframefdct.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\mcomp.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\misc_common.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\PackVideo.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\PickModes.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\RawBuffer.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\Tokenize.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\Transform.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\twopass.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\vfwcomp.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\vfwcomp_if.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\COptFunctions.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\csystemdependant.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\CWmtFunctions.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\WmtTransform.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\MmxEncodeMath.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\XmmGetError.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\XmmGetSAD8.obj
+\NEWZIP\VP6\ObjectCode\vp6e\Release\XmmSAD.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPBB0.tmp"
+<h3>Output Window</h3>
+Compiling...
+Comp_Globals.c
+Encode.c
+encodembs.c
+encodemode.c
+encodemv.c
+fullframefdct.c
+mcomp.c
+misc_common.c
+PackVideo.c
+PickModes.c
+RawBuffer.c
+Tokenize.c
+Transform.c
+twopass.c
+vfwcomp.c
+vfwcomp_if.c
+COptFunctions.c
+csystemdependant.c
+CWmtFunctions.c
+WmtTransform.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+s_vp60e.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: vp6e - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBB1.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\ObjectCode\vp6e\debug\XmmSAD.lst /Fo .\..\..\..\..\ObjectCode\vp6e\debug\XmmSAD.obj .\cx\Win32\XmmSAD.asm
+]
+Creating command line "C:\tmp\RSPBB1.bat"
+Creating temporary file "C:\tmp\RSPBB2.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\ObjectCode\vp6e\debug\XmmGetSAD8.lst /Fo .\..\..\..\..\ObjectCode\vp6e\debug\XmmGetSAD8.obj .\CX\Win32\XmmGetSAD8.asm
+]
+Creating command line "C:\tmp\RSPBB2.bat"
+Creating temporary file "C:\tmp\RSPBB3.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\ObjectCode\vp6e\debug\XmmGetError.lst /Fo .\..\..\..\..\ObjectCode\vp6e\debug\XmmGetError.obj .\cx\Win32\XmmGetError.asm
+]
+Creating command line "C:\tmp\RSPBB3.bat"
+Creating temporary file "C:\tmp\RSPBB4.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\ObjectCode\vp6e\debug\MmxEncodeMath.lst /Fo .\..\..\..\..\ObjectCode\vp6e\debug\MmxEncodeMath.obj .\cx\Win32\MmxEncodeMath.asm
+]
+Creating command line "C:\tmp\RSPBB4.bat"
+Creating temporary file "C:\tmp\RSPBB5.tmp" with contents
+[
+/nologo /G6 /MTd /W3 /Gm /GX /Zi /Od /I ".\include" /I "..\include" /I "..\..\include" /I "..\..\..\include" /I "..\..\..\..\include" /I "..\..\..\..\Include\vp60" /I "..\..\..\..\include\vp60" /D "vp6E_EXPORTS" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PREDICT_2D" /D "VFW_COMP" /D "COMPDLL" /D "POSTPROCESS" /D "CPUISLITTLEENDIAN" /D "NORMALIZED" /D INLINE=__forceinline /D FORCEINLINE=__forceinline /Fo"..\..\..\..\ObjectCode\vp6e\debug/" /Fd"..\..\..\..\ObjectCode\vp6e\debug/" /FD /GZ /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\CX\Generic\Comp_Globals.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\Encode.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\encodembs.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\encodemode.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\encodemv.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\fullframefdct.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\CX\Generic\mcomp.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\CX\Generic\misc_common.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\PackVideo.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\PickModes.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\RawBuffer.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\Tokenize.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\Transform.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Generic\twopass.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\CX\Generic\vfwcomp.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\CX\Generic\vfwcomp_if.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Win32\COptFunctions.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Win32\csystemdependant.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Win32\CWmtFunctions.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\VP60\vp60\cx\Win32\WmtTransform.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBB5.tmp" 
+Performing Custom Build Step on .\cx\Win32\XmmSAD.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\cx\Win32\XmmSAD.asm
+Performing Custom Build Step on .\CX\Win32\XmmGetSAD8.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\CX\Win32\XmmGetSAD8.asm
+Performing Custom Build Step on .\cx\Win32\XmmGetError.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\cx\Win32\XmmGetError.asm
+Performing Custom Build Step on .\cx\Win32\MmxEncodeMath.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\cx\Win32\MmxEncodeMath.asm
+Creating temporary file "C:\tmp\RSPBB6.tmp" with contents
+[
+/nologo /out:"..\..\..\..\Lib\Win32\Debug\s_vp60e.lib" 
+\NEWZIP\VP6\ObjectCode\vp6e\debug\Comp_Globals.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\Encode.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\encodembs.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\encodemode.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\encodemv.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\fullframefdct.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\mcomp.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\misc_common.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\PackVideo.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\PickModes.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\RawBuffer.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\Tokenize.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\Transform.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\twopass.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\vfwcomp.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\vfwcomp_if.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\COptFunctions.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\csystemdependant.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\CWmtFunctions.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\WmtTransform.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\MmxEncodeMath.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\XmmGetError.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\XmmGetSAD8.obj
+\NEWZIP\VP6\ObjectCode\vp6e\debug\XmmSAD.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPBB6.tmp"
+<h3>Output Window</h3>
+Compiling...
+Comp_Globals.c
+Encode.c
+encodembs.c
+encodemode.c
+encodemv.c
+fullframefdct.c
+mcomp.c
+misc_common.c
+PackVideo.c
+PickModes.c
+RawBuffer.c
+Tokenize.c
+Transform.c
+twopass.c
+vfwcomp.c
+vfwcomp_if.c
+COptFunctions.c
+csystemdependant.c
+CWmtFunctions.c
+WmtTransform.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+s_vp60e.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: vppp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBB7.tmp" with contents
+[
+/nologo /G6 /MT /W3 /GX /Zi /O2 /Ob2 /I ".\include" /I "..\include" /I "..\vp60\include" /I "..\..\..\include" /I "..\..\include" /D "_MBCS" /D "_LIB" /D "NDEBUG" /D INLINE=__inline /D "WIN32" /Fo"..\..\..\..\ObjectCode\vpppd6\Release/" /Fd"..\..\..\..\ObjectCode\vpppd6\Release/" /FD /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\borders.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\clamp.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\deblock.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\DeInterlace.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\dering.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\loopfilter.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\postproc.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\scale.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\simpledeblocker.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\clamp_asm.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\deblockopt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\deblockwmtopt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\DeInterlaceMmx.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\DeInterlaceWmt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\deringopt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\deringwmtopt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\doptsystemdependant.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\loopf_asm.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\newlooptest_asm.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\scaleopt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\simpledeblock_asm.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBB7.tmp" 
+Creating temporary file "C:\tmp\RSPBB8.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Win32\release\s_vpppd.lib" 
+\NEWZIP\ObjectCode\vpppd6\Release\borders.obj
+\NEWZIP\ObjectCode\vpppd6\Release\clamp.obj
+\NEWZIP\ObjectCode\vpppd6\Release\deblock.obj
+\NEWZIP\ObjectCode\vpppd6\Release\DeInterlace.obj
+\NEWZIP\ObjectCode\vpppd6\Release\dering.obj
+\NEWZIP\ObjectCode\vpppd6\Release\loopfilter.obj
+\NEWZIP\ObjectCode\vpppd6\Release\postproc.obj
+\NEWZIP\ObjectCode\vpppd6\Release\scale.obj
+\NEWZIP\ObjectCode\vpppd6\Release\simpledeblocker.obj
+\NEWZIP\ObjectCode\vpppd6\Release\clamp_asm.obj
+\NEWZIP\ObjectCode\vpppd6\Release\deblockopt.obj
+\NEWZIP\ObjectCode\vpppd6\Release\deblockwmtopt.obj
+\NEWZIP\ObjectCode\vpppd6\Release\DeInterlaceMmx.obj
+\NEWZIP\ObjectCode\vpppd6\Release\DeInterlaceWmt.obj
+\NEWZIP\ObjectCode\vpppd6\Release\deringopt.obj
+\NEWZIP\ObjectCode\vpppd6\Release\deringwmtopt.obj
+\NEWZIP\ObjectCode\vpppd6\Release\doptsystemdependant.obj
+\NEWZIP\ObjectCode\vpppd6\Release\loopf_asm.obj
+\NEWZIP\ObjectCode\vpppd6\Release\newlooptest_asm.obj
+\NEWZIP\ObjectCode\vpppd6\Release\scaleopt.obj
+\NEWZIP\ObjectCode\vpppd6\Release\simpledeblock_asm.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPBB8.tmp"
+<h3>Output Window</h3>
+Compiling...
+borders.c
+clamp.c
+deblock.c
+DeInterlace.c
+dering.c
+loopfilter.c
+postproc.c
+scale.c
+simpledeblocker.c
+clamp_asm.c
+deblockopt.c
+deblockwmtopt.c
+DeInterlaceMmx.c
+DeInterlaceWmt.c
+deringopt.c
+deringwmtopt.c
+doptsystemdependant.c
+loopf_asm.c
+newlooptest_asm.c
+scaleopt.c
+Generating Code...
+Compiling...
+simpledeblock_asm.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+s_vpppd.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: vppp - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBB9.tmp" with contents
+[
+/nologo /G6 /MTd /W3 /Gm /GX /Zi /Od /I ".\include" /I "..\include" /I "..\vp60\include" /I "..\..\..\include" /I "..\..\include" /D "_MBCS" /D "_LIB" /D "_DEBUG" /D INLINE=__inline /D "WIN32" /Fp"..\..\..\..\ObjectCode\vppp\Debug/vppp.pch" /YX /Fo"..\..\..\..\ObjectCode\vppp\Debug/" /Fd"..\..\..\..\ObjectCode\vppp\Debug/" /FD /GZ /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\borders.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\clamp.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\deblock.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\DeInterlace.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\dering.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\loopfilter.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\postproc.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\scale.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\generic\simpledeblocker.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\clamp_asm.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\deblockopt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\deblockwmtopt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\DeInterlaceMmx.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\DeInterlaceWmt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\deringopt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\deringwmtopt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\doptsystemdependant.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\loopf_asm.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\newlooptest_asm.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\scaleopt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vppp\win32\simpledeblock_asm.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBB9.tmp" 
+Creating temporary file "C:\tmp\RSPBBA.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Win32\Debug\s_vpppd.lib" 
+\NEWZIP\ObjectCode\vppp\Debug\borders.obj
+\NEWZIP\ObjectCode\vppp\Debug\clamp.obj
+\NEWZIP\ObjectCode\vppp\Debug\deblock.obj
+\NEWZIP\ObjectCode\vppp\Debug\DeInterlace.obj
+\NEWZIP\ObjectCode\vppp\Debug\dering.obj
+\NEWZIP\ObjectCode\vppp\Debug\loopfilter.obj
+\NEWZIP\ObjectCode\vppp\Debug\postproc.obj
+\NEWZIP\ObjectCode\vppp\Debug\scale.obj
+\NEWZIP\ObjectCode\vppp\Debug\simpledeblocker.obj
+\NEWZIP\ObjectCode\vppp\Debug\clamp_asm.obj
+\NEWZIP\ObjectCode\vppp\Debug\deblockopt.obj
+\NEWZIP\ObjectCode\vppp\Debug\deblockwmtopt.obj
+\NEWZIP\ObjectCode\vppp\Debug\DeInterlaceMmx.obj
+\NEWZIP\ObjectCode\vppp\Debug\DeInterlaceWmt.obj
+\NEWZIP\ObjectCode\vppp\Debug\deringopt.obj
+\NEWZIP\ObjectCode\vppp\Debug\deringwmtopt.obj
+\NEWZIP\ObjectCode\vppp\Debug\doptsystemdependant.obj
+\NEWZIP\ObjectCode\vppp\Debug\loopf_asm.obj
+\NEWZIP\ObjectCode\vppp\Debug\newlooptest_asm.obj
+\NEWZIP\ObjectCode\vppp\Debug\scaleopt.obj
+\NEWZIP\ObjectCode\vppp\Debug\simpledeblock_asm.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPBBA.tmp"
+<h3>Output Window</h3>
+Compiling...
+borders.c
+clamp.c
+deblock.c
+DeInterlace.c
+dering.c
+loopfilter.c
+postproc.c
+scale.c
+simpledeblocker.c
+clamp_asm.c
+deblockopt.c
+deblockwmtopt.c
+DeInterlaceMmx.c
+DeInterlaceWmt.c
+deringopt.c
+deringwmtopt.c
+doptsystemdependant.c
+loopf_asm.c
+newlooptest_asm.c
+scaleopt.c
+simpledeblock_asm.c
+Creating library...
+
+
+
+<h3>Results</h3>
+s_vpppd.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: vputil - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBBB.tmp" with contents
+[
+/nologo /G6 /MT /W3 /GX /O2 /I ".\include" /I "..\include" /I "..\..\..\include" /I "..\vp60\include" /I "..\..\include" /I "..\..\..\..\include" /I "..\..\..\..\include\vp60" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"..\..\..\..\ObjectCode\vputil\Release/" /Fd"..\..\..\..\ObjectCode\vputil\Release/" /FD /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\generic\fdct.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\generic\idctpart.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\generic\reconstruct.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\generic\vputil.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\fdctmmx.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\fdctwmt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\filtmmx.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\filtwmt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\mmxidct.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\mmxrecon.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\uoptsystemdependant.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\vputilasm.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\wmtidct.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\wmtrecon.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBBB.tmp" 
+Creating temporary file "C:\tmp\RSPBBC.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Win32\Release\s_vputil.lib" 
+\NEWZIP\ObjectCode\vputil\Release\fdct.obj
+\NEWZIP\ObjectCode\vputil\Release\idctpart.obj
+\NEWZIP\ObjectCode\vputil\Release\reconstruct.obj
+\NEWZIP\ObjectCode\vputil\Release\vputil.obj
+\NEWZIP\ObjectCode\vputil\Release\fdctmmx.obj
+\NEWZIP\ObjectCode\vputil\Release\fdctwmt.obj
+\NEWZIP\ObjectCode\vputil\Release\filtmmx.obj
+\NEWZIP\ObjectCode\vputil\Release\filtwmt.obj
+\NEWZIP\ObjectCode\vputil\Release\mmxidct.obj
+\NEWZIP\ObjectCode\vputil\Release\mmxrecon.obj
+\NEWZIP\ObjectCode\vputil\Release\uoptsystemdependant.obj
+\NEWZIP\ObjectCode\vputil\Release\vputilasm.obj
+\NEWZIP\ObjectCode\vputil\Release\wmtidct.obj
+\NEWZIP\ObjectCode\vputil\Release\wmtrecon.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPBBC.tmp"
+<h3>Output Window</h3>
+Compiling...
+fdct.c
+idctpart.c
+reconstruct.c
+vputil.c
+fdctmmx.c
+fdctwmt.c
+filtmmx.c
+filtwmt.c
+mmxidct.c
+mmxrecon.c
+uoptsystemdependant.c
+vputilasm.c
+wmtidct.c
+wmtrecon.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+s_vputil.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: vputil - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBBD.tmp" with contents
+[
+/nologo /G6 /MTd /W3 /Gm /GX /ZI /Od /I ".\include" /I "..\include" /I "..\..\..\include" /I "..\vp60\include" /I "..\..\include" /I "..\..\..\..\include" /I "..\..\..\..\include\vp60" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"..\..\..\..\..\ObjectCode\vputil\Debug/vputil.pch" /YX /Fo"..\..\..\..\..\ObjectCode\vputil\Debug/" /Fd"..\..\..\..\..\ObjectCode\vputil\Debug/" /FD /GZ /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\generic\fdct.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\generic\idctpart.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\generic\reconstruct.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\generic\vputil.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\fdctmmx.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\fdctwmt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\filtmmx.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\filtwmt.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\mmxidct.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\mmxrecon.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\uoptsystemdependant.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\vputilasm.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\wmtidct.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vputil\win32\wmtrecon.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBBD.tmp" 
+Creating temporary file "C:\tmp\RSPBBE.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Win32\Debug\s_vputil.lib" 
+\ObjectCode\vputil\Debug\fdct.obj
+\ObjectCode\vputil\Debug\idctpart.obj
+\ObjectCode\vputil\Debug\reconstruct.obj
+\ObjectCode\vputil\Debug\vputil.obj
+\ObjectCode\vputil\Debug\fdctmmx.obj
+\ObjectCode\vputil\Debug\fdctwmt.obj
+\ObjectCode\vputil\Debug\filtmmx.obj
+\ObjectCode\vputil\Debug\filtwmt.obj
+\ObjectCode\vputil\Debug\mmxidct.obj
+\ObjectCode\vputil\Debug\mmxrecon.obj
+\ObjectCode\vputil\Debug\uoptsystemdependant.obj
+\ObjectCode\vputil\Debug\vputilasm.obj
+\ObjectCode\vputil\Debug\wmtidct.obj
+\ObjectCode\vputil\Debug\wmtrecon.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPBBE.tmp"
+<h3>Output Window</h3>
+Compiling...
+fdct.c
+idctpart.c
+reconstruct.c
+vputil.c
+fdctmmx.c
+fdctwmt.c
+filtmmx.c
+filtwmt.c
+mmxidct.c
+mmxrecon.c
+uoptsystemdependant.c
+vputilasm.c
+wmtidct.c
+wmtrecon.c
+Creating library...
+
+
+
+<h3>Results</h3>
+s_vputil.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: vpxblit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBBF.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Release\const.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Release\const.obj .\wx86\const.asm
+]
+Creating command line "C:\tmp\RSPBBF.bat"
+Creating temporary file "C:\tmp\RSPBC0.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Release\bcy00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Release\bcy00.obj .\wx86\bcy00.asm
+]
+Creating command line "C:\tmp\RSPBC0.bat"
+Creating temporary file "C:\tmp\RSPBC1.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Release\bcu00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Release\bcu00.obj .\wx86\bcu00.asm
+]
+Creating command line "C:\tmp\RSPBC1.bat"
+Creating temporary file "C:\tmp\RSPBC2.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Release\bct10.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Release\bct10.obj .\wx86\bct10.asm
+]
+Creating command line "C:\tmp\RSPBC2.bat"
+Creating temporary file "C:\tmp\RSPBC3.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Release\bct00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Release\bct00.obj .\wx86\bct00.asm
+]
+Creating command line "C:\tmp\RSPBC3.bat"
+Creating temporary file "C:\tmp\RSPBC4.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Release\bcs10.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Release\bcs10.obj .\wx86\bcs10.asm
+]
+Creating command line "C:\tmp\RSPBC4.bat"
+Creating temporary file "C:\tmp\RSPBC5.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Release\bcs00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Release\bcs00.obj .\wx86\bcs00.asm
+]
+Creating command line "C:\tmp\RSPBC5.bat"
+Creating temporary file "C:\tmp\RSPBC6.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Release\bcf10.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Release\bcf10.obj .\wx86\bcf10.asm
+]
+Creating command line "C:\tmp\RSPBC6.bat"
+Creating temporary file "C:\tmp\RSPBC7.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Release\bcf00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Release\bcf00.obj .\wx86\bcf00.asm
+]
+Creating command line "C:\tmp\RSPBC7.bat"
+Creating temporary file "C:\tmp\RSPBC8.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Release\bcd00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Release\bcd00.obj .\wx86\bcd00.asm
+]
+Creating command line "C:\tmp\RSPBC8.bat"
+Creating temporary file "C:\tmp\RSPBC9.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Release\bcc10.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Release\bcc10.obj .\wx86\bcc10.asm
+]
+Creating command line "C:\tmp\RSPBC9.bat"
+Creating temporary file "C:\tmp\RSPBCA.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Release\bcc00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Release\bcc00.obj .\wx86\bcc00.asm
+]
+Creating command line "C:\tmp\RSPBCA.bat"
+Creating temporary file "C:\tmp\RSPBCB.tmp" with contents
+[
+/nologo /G6 /MT /W3 /GX /Zi /O2 /I "..\..\include" /I "..\..\..\include\vp31" /I "..\..\..\include" /I ".\generic" /D "_WINDOWS" /D "NDEBUG" /D INLINE=__inline /D "WIN32" /Fo"..\..\..\..\..\ObjectCode\vpxblit\Release/" /Fd"..\..\..\..\..\ObjectCode\vpxblit\Release/" /FD /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\win32\ctables.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\win32\wksetblt.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBCB.tmp" 
+Creating temporary file "C:\tmp\RSPBCC.tmp" with contents
+[
+/nologo /G6 /MT /W3 /GX /Zi /O2 /I "..\..\include" /I "..\..\..\include\vp31" /I "..\..\..\include" /D "_WINDOWS" /D "NDEBUG" /D INLINE=__inline /D "WIN32" /Fo"..\..\..\..\..\ObjectCode\vpxblit\Release/" /Fd"..\..\..\..\..\ObjectCode\vpxblit\Release/" /FD /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bcf00_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bcf10_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bcs00_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bcs10_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bct00_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bct10_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bcu00_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bcy00_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\vpx_reg.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bct00_targa_c.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBCC.tmp" 
+Performing Custom Build Step on .\wx86\const.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\const.asm
+Performing Custom Build Step on .\wx86\bcy00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcy00.asm
+Performing Custom Build Step on .\wx86\bcu00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcu00.asm
+Performing Custom Build Step on .\wx86\bct10.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bct10.asm
+Performing Custom Build Step on .\wx86\bct00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bct00.asm
+Performing Custom Build Step on .\wx86\bcs10.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcs10.asm
+Performing Custom Build Step on .\wx86\bcs00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcs00.asm
+Performing Custom Build Step on .\wx86\bcf10.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcf10.asm
+Performing Custom Build Step on .\wx86\bcf00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcf00.asm
+Performing Custom Build Step on .\wx86\bcd00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcd00.asm
+Performing Custom Build Step on .\wx86\bcc10.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcc10.asm
+Performing Custom Build Step on .\wx86\bcc00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcc00.asm
+Creating temporary file "C:\tmp\RSPBCD.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Win32\Release\s_vpxblit.lib" 
+\ObjectCode\vpxblit\Release\ctables.obj
+\ObjectCode\vpxblit\Release\wksetblt.obj
+\ObjectCode\vpxblit\Release\bcf00_c.obj
+\ObjectCode\vpxblit\Release\bcf10_c.obj
+\ObjectCode\vpxblit\Release\bcs00_c.obj
+\ObjectCode\vpxblit\Release\bcs10_c.obj
+\ObjectCode\vpxblit\Release\bct00_c.obj
+\ObjectCode\vpxblit\Release\bct10_c.obj
+\ObjectCode\vpxblit\Release\bcu00_c.obj
+\ObjectCode\vpxblit\Release\bcy00_c.obj
+\ObjectCode\vpxblit\Release\vpx_reg.obj
+\ObjectCode\vpxblit\Release\bct00_targa_c.obj
+\ObjectCode\vpxblit\Release\bcc00.obj
+\ObjectCode\vpxblit\Release\bcc10.obj
+\ObjectCode\vpxblit\Release\bcd00.obj
+\ObjectCode\vpxblit\Release\bcf00.obj
+\ObjectCode\vpxblit\Release\bcf10.obj
+\ObjectCode\vpxblit\Release\bcs00.obj
+\ObjectCode\vpxblit\Release\bcs10.obj
+\ObjectCode\vpxblit\Release\bct00.obj
+\ObjectCode\vpxblit\Release\bct10.obj
+\ObjectCode\vpxblit\Release\bcu00.obj
+\ObjectCode\vpxblit\Release\bcy00.obj
+\ObjectCode\vpxblit\Release\const.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPBCD.tmp"
+<h3>Output Window</h3>
+Compiling...
+ctables.c
+wksetblt.c
+Generating Code...
+Compiling...
+bcf00_c.c
+bcf10_c.c
+bcs00_c.c
+bcs10_c.c
+bct00_c.c
+bct10_c.c
+bcu00_c.c
+bcy00_c.c
+vpx_reg.c
+bct00_targa_c.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+s_vpxblit.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: vpxblit - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\tmp\RSPBCE.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Debug\const.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Debug\const.obj .\wx86\const.asm
+]
+Creating command line "C:\tmp\RSPBCE.bat"
+Creating temporary file "C:\tmp\RSPBCF.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcy00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcy00.obj .\wx86\bcy00.asm
+]
+Creating command line "C:\tmp\RSPBCF.bat"
+Creating temporary file "C:\tmp\RSPBD0.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcu00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcu00.obj .\wx86\bcu00.asm
+]
+Creating command line "C:\tmp\RSPBD0.bat"
+Creating temporary file "C:\tmp\RSPBD1.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Debug\bct10.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Debug\bct10.obj .\wx86\bct10.asm
+]
+Creating command line "C:\tmp\RSPBD1.bat"
+Creating temporary file "C:\tmp\RSPBD2.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Debug\bct00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Debug\bct00.obj .\wx86\bct00.asm
+]
+Creating command line "C:\tmp\RSPBD2.bat"
+Creating temporary file "C:\tmp\RSPBD3.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcs10.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcs10.obj .\wx86\bcs10.asm
+]
+Creating command line "C:\tmp\RSPBD3.bat"
+Creating temporary file "C:\tmp\RSPBD4.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcs00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcs00.obj .\wx86\bcs00.asm
+]
+Creating command line "C:\tmp\RSPBD4.bat"
+Creating temporary file "C:\tmp\RSPBD5.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcf10.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcf10.obj .\wx86\bcf10.asm
+]
+Creating command line "C:\tmp\RSPBD5.bat"
+Creating temporary file "C:\tmp\RSPBD6.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcf00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcf00.obj .\wx86\bcf00.asm
+]
+Creating command line "C:\tmp\RSPBD6.bat"
+Creating temporary file "C:\tmp\RSPBD7.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcd00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcd00.obj .\wx86\bcd00.asm
+]
+Creating command line "C:\tmp\RSPBD7.bat"
+Creating temporary file "C:\tmp\RSPBD8.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcc10.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcc10.obj .\wx86\bcc10.asm
+]
+Creating command line "C:\tmp\RSPBD8.bat"
+Creating temporary file "C:\tmp\RSPBD9.bat" with contents
+[
+@echo off
+ml /Zi /Zm /Cx /c /coff /Fl.\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcc00.lst /Fo .\..\..\..\..\..\ObjectCode\vpxblit\Debug\bcc00.obj .\wx86\bcc00.asm
+]
+Creating command line "C:\tmp\RSPBD9.bat"
+Creating temporary file "C:\tmp\RSPBDA.tmp" with contents
+[
+/nologo /G6 /MTd /W3 /Gm /GX /ZI /Od /I "..\..\include" /I "..\..\..\include\vp31" /I "..\..\..\include" /I ".\generic" /D "_WINDOWS" /D "_DEBUG" /D INLINE=__inline /D "WIN32" /Fp"..\..\..\..\..\ObjectCode\vpxblit\Debug/vpxblit.pch" /YX /Fo"..\..\..\..\..\ObjectCode\vpxblit\Debug/" /Fd"..\..\..\..\..\ObjectCode\vpxblit\Debug/" /FD /GZ /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\win32\ctables.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\win32\wksetblt.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBDA.tmp" 
+Creating temporary file "C:\tmp\RSPBDB.tmp" with contents
+[
+/nologo /G6 /MTd /W3 /Gm /GX /ZI /Od /I "..\..\include" /I "..\..\..\include\vp31" /I "..\..\..\include" /D "_WINDOWS" /D "_DEBUG" /D INLINE=__inline /D "WIN32" /Fp"..\..\..\..\..\ObjectCode\vpxblit\Debug/vpxblit.pch" /YX /Fo"..\..\..\..\..\ObjectCode\vpxblit\Debug/" /Fd"..\..\..\..\..\ObjectCode\vpxblit\Debug/" /FD /GZ /c 
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bcf00_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bcf10_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bcs00_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bcs10_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bct00_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bct10_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bcu00_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bcy00_c.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\vpx_reg.c"
+"C:\NEWZIP\VP6\corelibs\cdxv\vpxblit\generic\bct00_targa_c.c"
+]
+Creating command line "cl.exe @C:\tmp\RSPBDB.tmp" 
+Performing Custom Build Step on .\wx86\const.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\const.asm
+Performing Custom Build Step on .\wx86\bcy00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcy00.asm
+Performing Custom Build Step on .\wx86\bcu00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcu00.asm
+Performing Custom Build Step on .\wx86\bct10.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bct10.asm
+Performing Custom Build Step on .\wx86\bct00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bct00.asm
+Performing Custom Build Step on .\wx86\bcs10.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcs10.asm
+Performing Custom Build Step on .\wx86\bcs00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcs00.asm
+Performing Custom Build Step on .\wx86\bcf10.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcf10.asm
+Performing Custom Build Step on .\wx86\bcf00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcf00.asm
+Performing Custom Build Step on .\wx86\bcd00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcd00.asm
+Performing Custom Build Step on .\wx86\bcc10.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcc10.asm
+Performing Custom Build Step on .\wx86\bcc00.asm
+Microsoft (R) Macro Assembler Version 6.15.8803
+Copyright (C) Microsoft Corp 1981-2000.  All rights reserved.
+
+ Assembling: .\wx86\bcc00.asm
+Creating temporary file "C:\tmp\RSPBDC.tmp" with contents
+[
+/nologo /out:"..\..\..\Lib\Win32\Debug\s_vpxblit.lib" 
+\ObjectCode\vpxblit\Debug\ctables.obj
+\ObjectCode\vpxblit\Debug\wksetblt.obj
+\ObjectCode\vpxblit\Debug\bcf00_c.obj
+\ObjectCode\vpxblit\Debug\bcf10_c.obj
+\ObjectCode\vpxblit\Debug\bcs00_c.obj
+\ObjectCode\vpxblit\Debug\bcs10_c.obj
+\ObjectCode\vpxblit\Debug\bct00_c.obj
+\ObjectCode\vpxblit\Debug\bct10_c.obj
+\ObjectCode\vpxblit\Debug\bcu00_c.obj
+\ObjectCode\vpxblit\Debug\bcy00_c.obj
+\ObjectCode\vpxblit\Debug\vpx_reg.obj
+\ObjectCode\vpxblit\Debug\bct00_targa_c.obj
+\ObjectCode\vpxblit\Debug\bcc00.obj
+\ObjectCode\vpxblit\Debug\bcc10.obj
+\ObjectCode\vpxblit\Debug\bcd00.obj
+\ObjectCode\vpxblit\Debug\bcf00.obj
+\ObjectCode\vpxblit\Debug\bcf10.obj
+\ObjectCode\vpxblit\Debug\bcs00.obj
+\ObjectCode\vpxblit\Debug\bcs10.obj
+\ObjectCode\vpxblit\Debug\bct00.obj
+\ObjectCode\vpxblit\Debug\bct10.obj
+\ObjectCode\vpxblit\Debug\bcu00.obj
+\ObjectCode\vpxblit\Debug\bcy00.obj
+\ObjectCode\vpxblit\Debug\const.obj
+]
+Creating command line "link.exe -lib @C:\tmp\RSPBDC.tmp"
+<h3>Output Window</h3>
+Compiling...
+ctables.c
+wksetblt.c
+Compiling...
+bcf00_c.c
+bcf10_c.c
+bcs00_c.c
+bcs10_c.c
+bct00_c.c
+bct10_c.c
+bcu00_c.c
+bcy00_c.c
+vpx_reg.c
+bct00_targa_c.c
+Creating library...
+
+
+
+<h3>Results</h3>
+s_vpxblit.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

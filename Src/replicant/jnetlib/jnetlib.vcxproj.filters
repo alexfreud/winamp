@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jnetlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="multicastlisten.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="connection.cpp">
+      <Filter>Source Files\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="asyncdns.cpp">
+      <Filter>Source Files\DNS</Filter>
+    </ClCompile>
+    <ClCompile Include="sslconnection.cpp">
+      <Filter>Source Files\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="httpget.cpp">
+      <Filter>Source Files\HTTP Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="httpserv.cpp">
+      <Filter>Source Files\HTTP Server</Filter>
+    </ClCompile>
+    <ClCompile Include="udpconnection.cpp">
+      <Filter>Source Files\UDP Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="listen.cpp">
+      <Filter>Source Files\Web Server</Filter>
+    </ClCompile>
+    <ClCompile Include="httpuserv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="httpuserv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jnetlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jnetlib_defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="netinc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="connection.h">
+      <Filter>Header Files\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="asyncdns.h">
+      <Filter>Header Files\DNS</Filter>
+    </ClInclude>
+    <ClInclude Include="sslconnection.h">
+      <Filter>Header Files\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="httpget.h">
+      <Filter>Header Files\HTTP Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="httpserv.h">
+      <Filter>Header Files\HTTP Server</Filter>
+    </ClInclude>
+    <ClInclude Include="listen.h">
+      <Filter>Header Files\Web Server</Filter>
+    </ClInclude>
+    <ClInclude Include="udpconnection.h">
+      <Filter>Header Files\UDP Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="multicastlisten.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{bcdc816d-5cef-49ce-bcae-e765d84d9d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{22cf6f69-c499-4eb0-851c-e405c0343744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ebc9b8af-fa9f-4cb3-bd28-a6f2fa43f47a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Connection">
+      <UniqueIdentifier>{08aa3960-7673-4eee-a554-f75b30f6ca9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DNS">
+      <UniqueIdentifier>{2194f281-7614-4fce-ae5b-14ebe64c75df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\HTTP Receiver">
+      <UniqueIdentifier>{2a2b5cdf-93f4-4228-ab77-50138a1df782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\HTTP Server">
+      <UniqueIdentifier>{c3f9a1b8-ab75-4d41-b614-df702b4a9113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UDP Connection">
+      <UniqueIdentifier>{080bb148-d8bc-41d5-b2a2-405b3068b15f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Web Server">
+      <UniqueIdentifier>{2208b2ff-bd0e-42a9-b60b-fb6c1be6bad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Connection">
+      <UniqueIdentifier>{ab26ced4-713d-4b15-bea7-49219fe68955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DNS">
+      <UniqueIdentifier>{336ee3a1-044b-42c0-9f39-f03f381c73ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HTTP Receiver">
+      <UniqueIdentifier>{b7051bc5-90cf-4673-8274-02c12e3da56c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HTTP Server">
+      <UniqueIdentifier>{48e64e69-bc76-467b-8fd3-3430694896ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Web Server">
+      <UniqueIdentifier>{ad8b2861-d8e2-4737-b293-124ad361f20c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UDP Connection">
+      <UniqueIdentifier>{60bab4c5-d369-4284-b314-dd8c3c4dcd37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="jnetlib-replicant.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

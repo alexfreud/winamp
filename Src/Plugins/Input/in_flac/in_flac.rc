@@ -1,0 +1,163 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INFOCHILD_ADVANCED DIALOGEX 0, 0, 341, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Advanced",IDC_STATIC,0,0,341,164
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,13,164,143
+    LTEXT           "Name:",IDC_STATIC,175,13,22,8
+    EDITTEXT        IDC_NAME,175,23,159,14,ES_AUTOHSCROLL
+    LTEXT           "Value:",IDC_STATIC,175,39,21,8
+    EDITTEXT        IDC_VALUE,175,49,159,90,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Add New",IDC_BUTTON_ADD,176,142,50,13
+    PUSHBUTTON      "Delete",IDC_BUTTON_DEL,230,142,50,13
+    PUSHBUTTON      "Delete All",IDC_BUTTON_DELALL,284,142,50,13
+END
+
+IDD_PREFERENCES DIALOGEX 0, 0, 175, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nullsoft FLAC Decoder Preferences"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Extensions",IDC_STATIC,5,4,166,43
+    EDITTEXT        IDC_EXTENSIONS,12,16,153,13,ES_AUTOHSCROLL
+    LTEXT           "Semi-colon separated (e.g. FLAC;FLA)",IDC_STATIC,12,33,124,8
+    CONTROL         "Show average bitrate",IDC_AVERAGE_BITRATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,52,110,10
+    DEFPUSHBUTTON   "OK",IDOK,67,67,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,121,67,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_INFOCHILD_ADVANCED, DIALOG
+    BEGIN
+        RIGHTMARGIN, 340
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_PREFERENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 171
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 80
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_FLAC_DECODER_OLD "Nullsoft FLAC Decoder"
+    IDS_TO_ADVANCED_MODE    "to advanced mode >>"
+    IDS_TO_SIMPLE_MODE      "<< to simple mode"
+    IDS_NAME                "Name"
+    IDS_VALUE               "Value"
+    IDS_TRACK_GAIN          "Track Gain: %s\n"
+    IDS_ALBUM_GAIN          "Album Gain: %s\n"
+    IDS_NOT_PRESENT         "not present"
+    IDS_LENGTH_IN_SECONDS   "Length: %I64d seconds\n"
+    IDS_CHANNELS            "Channels: %d\n"
+    IDS_BITS_PER_SAMPLE     "Bits per sample: %d\n"
+    IDS_SAMPLE_RATE         "Sample Rate: %d Hz\n"
+    IDS_FILE_SIZE_IN_BYTES  "File Size: %I64d bytes\n"
+    IDS_AVERAGE_BITRATE     "Average bitrate: %I64d kbps\n"
+    IDS_COMPRESSION_RATIO   "Compression Ratio: %u%%\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_FLAC_DECODER "Nullsoft FLAC Decoder v%s"
+    65535                   "{9475116B-F8C4-4dff-BC19-9601B238557D}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LIBFLAC_DLL_MISSING "[libflac.dll missing]"
+    IDS_FLAC_FILES          "FLAC Files"
+    IDS_FAMILY_STRING       "Free Lossless Audio Codec File"
+    IDS_ABOUT_TEXT          "%s\n© 2007-2023 Winamp SA\nWritten by Ben Allison\nBuild date: %hs\n\nUsing FLAC v%hs"
+    IDS_CANNOT_SAVE_METADATA "Cannot save metadata: Error writing data."
+    IDS_ERROR_SAVING_METADATA "Error saving metadata"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

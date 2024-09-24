@@ -1,0 +1,114 @@
+libdiscid ChangeLog:
+--------------------
+
+libdiscid-0.6.2:
+
+ - ISRC and MCN support on BSD
+ - LIB-60: fix make check for default device on generic/unknown platform
+ - make Doxygen output reproducible (no timestamps)
+ - remove newline for Linux device "1" from proc
+
+libdiscid-0.6.1:
+
+ - LIB-59: windows: fix bug preventing ISRC reads
+
+libdiscid-0.6.0:
+
+ - LIB-41: add discid_get_troc_string() for fuzzy toc lookup
+ - LIB-54: add libmusicbrainz example with fuzzy toc lookup
+ - LIB-43: windows: the default drive is the first cd drive letter
+ - LIB-45: Linux/BSD/Solaris: try several possible default device names
+ - LIB-28: Mac: allow drive numbers as devices, default now "1"
+ - LIB-55, LIB-56: allow drive numbers for Windows and Linux
+ - LIB-53: discid_get_submission_url() returns the new NGS url
+           currently no functional change, the old url was redirected
+ - LIB-52: more validation for parameters of discid_put()
+ - LIB-48: assert successful read/put when API is used
+ - the discisrc example prints the name of the device used
+
+libdiscid-0.5.2:
+
+ - LIB-51: fix ISRC reading on Mac OS X again
+ - LIB-50: fix segfault in mb_disc_load_toc on Solaris
+ - LIB-26: add a better test suite, including valgrind memcheck target
+ - print time information in the discid example
+
+libdiscid-0.5.1:
+
+ - LIB-40: discid_get_webservice_url() (web service version 1) is deprecated
+           please use libmusicbrainz to gather metadata by disc ID
+ - LIB-7:  rewrote data track handling, releases with multiple data tracks
+           This also fixes LIB-18 (no ID for DVDs) and LIB-9 (PS/PS2 CDs)
+ - LIB-44: fix invalid disc IDs on first read of multi-session discs
+ - LIB-37: Autotools optimization (non-recursive build etc.)
+ - LIB-42: remove Windows 9x platform code
+ - renamed openbsd platform code to netbsd, still used by both.
+
+libdiscid-0.5.0:
+
+ - LIB-29: add read_sparse() for faster reading again
+ - LIB-35: add HAVE_SPARSE_READ and VERSION_* defines
+ - LIB-36: hide internal symbols on Linux/Unix
+ - LIB-34: distmac and distwin32 cmake targets
+
+libdiscid-0.4.1:
+
+ - fix distribution: include disc_generic.c in Autotools dist
+
+libdiscid-0.4.0:
+
+ - LIB-23: add has_feature() and get_feature_list() to API (platform check)
+ - add get_version_string() to API
+ - CMake : add FreeBSD, NetBSD, OpenBSD -> all platforms supported
+ - LIB-24: support generic platform (discid_put() only)
+ - Win32 : Added versioninfo resource to DLL
+ - LIB-32: change libtool from -version-info to -version-name
+ - LIB-27: fix (k)FreeBSD includes
+ - fix lots of compiler warnings
+
+libdiscid-0.3.2:
+
+  - fix distribution so it works for autotools AND cmake
+
+libdiscid-0.3.1:
+
+  - ISRC and MCN support on Linux
+  - Autotools: fix Windows, remove unneeded libs on SunOS
+  - CMake: add Cygwin, add SunOS, fix Mac OS X
+  - updated docs, created INSTALL file
+
+libdiscid-0.3.0:
+
+  - Fixed reading of 99 track CDs on Mac OS X.
+  - Added API for reading ISRCs and MCNs (implemented on Windows and Mac OS X).
+  - Added Solaris, OpenBSD and kFreeBSD support.
+
+libdiscid-0.2.2:
+
+  - Set libtool version number to 2:1:2 because it is backwards compatible
+    with versions 0.1.x. Thanks to Luks for spotting this.
+
+
+libdiscid-0.2.1:
+
+  - Added code for automatic CD drive detection on darwin (Rob).
+
+
+libdiscid-0.2.0:
+
+  - Use accurate TOC reading method for multi-session CDs on
+    Windows NT/2000/XP (Lukas).
+  - Replace custom MSVC makefile with CMake build system (Lukas).
+  - Added support for FreeBSD (Patrick Hurrelmann).
+  - Addded the discid_get_webservice_url() function (Rob).
+   
+
+libdiscid-0.1.1:
+
+  - Use generic 'cdaudio' device name on windows (Lukas).
+   
+
+libdiscid-0.1.0:
+
+  - Initial public release.
+

@@ -1,0 +1,27 @@
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+IDR_SERVICE64X64_IMAGE  RCDATA
+".\\resources\\service64x64.png" 
+IDR_ICON_DEFAULT RCDATA
+".\\resources\\iconDefault.png" 
+//IDR_ICON_AOL  RCDATA
+//".\\resources\\iconAol.png" 
+//IDR_ICON_AOL_GAMES  RCDATA
+//".\\resources\\iconAolGames.png" 
+//IDR_ICON_IN2TV RCDATA
+//".\\resources\\iconIn2Tv.png" 
+//IDR_ICON_MUSICNOW  RCDATA
+//".\\resources\\iconMusicNow.png" 
+IDR_ICON_SHOUTCASTRADIO  RCDATA
+".\\resources\\iconShoutcastRadio.png" 
+//IDR_ICON_SHOUTCASTTV  RCDATA
+//".\\resources\\iconShoutcastTv.png" 
+//IDR_ICON_SINGINGFISH  RCDATA
+//".\\resources\\iconSingingfish.png" 
+//IDR_ICON_WINAMPMUSIC  RCDATA
+//".\\resources\\iconWaMusic.png" 
+//IDR_ICON_WINAMREMOTE  RCDATA
+//".\\resources\\iconWaRemote.png"

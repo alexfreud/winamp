@@ -1,0 +1,91 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_P4S_PLUGIN "Nullsoft PlaysForSure Plug-in v%s"
+    65535                   "{01C3E74C-261E-45e2-AA30-ED4039DCD3A2}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRANSFERRING_PERCENT "Transferring %d%%"
+    IDS_LOADING             "Loading %s..."
+    IDS_COUND_NOT_CREATE_FOLDER "Error: Could not create folder on device"
+    IDS_COULD_NOT_CREATE_METADATA "Error: Could not create metadata: %x"
+    IDS_INCOMPATABLE_DEVICE "Incompatable device"
+    IDS_ERROR_IN_INSERT     "Error in Insert: %x"
+    IDS_UNSPECIFIED_ERROR   "Unspecified Error"
+    IDS_WAITING_FOR_OTHER_TRANSFERS "Waiting for other transfers to finish..."
+    IDS_TRANSFERRING        "Transferring..."
+    IDS_DONE                "Done"
+    IDS_WAITING             "Waiting..."
+    IDS_FAILED              "Failed"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

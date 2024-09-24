@@ -1,0 +1,76 @@
+//
+// MPTRACK.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+#include "../common/versionNumber.h"
+#include <winver.h>
+
+#define VER_HELPER_STRINGIZE(x) #x
+#define VER_STRINGIZE(x)        VER_HELPER_STRINGIZE(x)
+
+#define VER_FILEVERSION       VER_MAJORMAJOR,VER_MAJOR,VER_MINOR,VER_MINORMINOR
+#define VER_FILEVERSION_DOT   VER_MAJORMAJOR.VER_MAJOR.VER_MINOR.VER_MINORMINOR
+#define VER_FILEVERSION_STR   VER_STRINGIZE(VER_FILEVERSION_DOT)
+
+#ifdef _DEBUG
+    #define VER_DEBUG   VS_FF_DEBUG
+#else
+    #define VER_DEBUG   0
+#endif
+
+#define MAKEHEX(c) 0x##c	// Avoid issues with version numbers 08 and 09 being interpreted as octal
+#if (MAKEHEX(VER_MINOR) == 0) || (MAKEHEX(VER_MINORMINOR) != 0)
+    #define VER_PRERELEASE   VS_FF_PRERELEASE
+#else
+    #define VER_PRERELEASE   0
+#endif
+#undef MAKEHEX
+
+// Note: Changing this might need changes to BLOCK "StringFileInfo" defined below.
+#define VER_FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+#define VER_FILEFLAGS       (VER_DEBUG|VER_PRERELEASE)
+
+#ifdef VER_ARCHNAME
+#define VER_FILEDESCRIPTION "OpenMPT (" VER_ARCHNAME ")"
+#else
+#define VER_FILEDESCRIPTION "OpenMPT"
+#endif
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION      VER_FILEVERSION
+ PRODUCTVERSION   VER_FILEVERSION
+ FILEFLAGSMASK    VER_FILEFLAGSMASK
+ FILEFLAGS        VER_FILEFLAGS
+ FILEOS           VOS_NT_WINDOWS32
+ FILETYPE         VFT_APP
+ FILESUBTYPE      0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName",      "OpenMPT (https://openmpt.org)"
+            VALUE "FileDescription",  VER_FILEDESCRIPTION
+            VALUE "FileVersion",      VER_FILEVERSION_STR
+            VALUE "InternalName",     "OpenMPT"
+            VALUE "LegalCopyright",   "Copyright © 2004-2022 OpenMPT Project Developers and Contributors, Copyright © 1997-2003 Olivier Lapicque"
+            VALUE "OriginalFilename", "OpenMPT.exe"
+            VALUE "ProductName",      "OpenMPT"
+            VALUE "ProductVersion",   VER_FILEVERSION_STR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////

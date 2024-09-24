@@ -1,0 +1,153 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INFODIALOG DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MKV File Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,259,162,50,14
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,7,7,302,151
+END
+
+IDD_TRACKS DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TRACKLIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,7,7,302,169
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_INFODIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_TRACKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_MKV        "Nullsoft Matroska Demuxer v%s"
+    65535                   "{5BDA8055-292D-4fcd-8404-884C2A34A8F9}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_MKV_OLD    "Nullsoft Matroska Demuxer"
+    IDS_BUFFERING           "Buffering"
+    IDS_FAMILY_STRING       "Matroska Video"
+    IDS_TAB_TRACKS          "Tracks"
+    IDS_COLUMN_TRACK_TYPE   "Type"
+    IDS_COLUMN_CODEC_NAME   "Codec Name"
+    IDS_COLUMN_CODEC_ID     "Codec ID"
+    IDS_COLUMN_DESCRIPTION  "Description"
+    IDS_COLUMN_STREAM_NAME  "Stream Name"
+    IDS_COLUMN_LANGUAGE     "Language"
+    IDS_TYPE_VIDEO          "Video"
+    IDS_TYPE_AUDIO          "Audio"
+    IDS_TYPE_SUBTITLE       "Subtitle"
+    IDS_MKV_DESC            "Matroska Video (MKV)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WEBM_DESC           "WebM Video (webm)"
+    IDS_FAMILY_STRING_WEBM  "WebM Video"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUT_TEXT          "%s\n© 2009-2023 Winamp SA\nWritten by: Ben Allison\nBuild date: %s"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

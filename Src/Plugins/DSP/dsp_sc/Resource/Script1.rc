@@ -1,0 +1,679 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 213, 301
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Shoutcast Source"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",WS_TABSTOP,4,4,206,293
+    GROUPBOX        "",IDC_RECT,10,22,194,267,NOT WS_VISIBLE
+END
+
+IDD_ENCODER DIALOGEX 0, 0, 180, 139
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Encoder Configuration",IDC_INFO_FRAME4,0,0,179,56
+    GROUPBOX        "Encoder Configuration",IDC_INFO_FRAME5,0,0,180,73
+    LTEXT           "Encoder Type",IDC_ENCODER_HEADER,5,12,45,8
+    COMBOBOX        IDC_ENCTYPE,5,24,169,52,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Encoder Settings",IDC_ENCSETTINGS_LABEL,5,41,95,8
+    RTEXT           "",IDC_ENCSETTINGS_LAME_VER,104,41,70,8,NOT WS_VISIBLE
+    PUSHBUTTON      "Encoder Settings...",IDC_ENCSETTINGS_BUTTON,5,52,169,14,NOT WS_VISIBLE
+    COMBOBOX        IDC_ENCSETTINGS,5,53,169,105,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Save Encoded Output",IDC_INFO_FRAME3,0,77,180,55
+    CONTROL         "Save a copy of the encoded stream audio\nNote: Extension is updated on encoder change",IDC_SAVE_ENCODED_AUDIO,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,5,89,169,16
+    EDITTEXT        IDC_SAVE_ENCODED_AUDIO_EDIT,15,110,142,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_SAVE_ENCODED_AUDIO_BROWSE,158,110,16,14
+END
+
+IDD_MAIN DIALOGEX 0, 0, 194, 271
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Status / Info (Double-Click To Configure)",IDC_STATIC,0,0,193,164,BS_LEFT
+    CONTROL         "List1",IDC_OUTPUTSTATUS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSCROLL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,6,12,182,70,WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_SUMMARY,8,86,180,72
+    GROUPBOX        "Active input device:  ",IDC_INPUT_METERS,0,168,193,102
+    CTEXT           "Input Levels\n(Current / Peak)",IDC_STATIC,7,178,60,16
+    CTEXT           "-inf dB",IDC_VOLUMETEXT_L,8,195,21,8
+    CTEXT           "-inf dB",IDC_VOLUMETEXT_R,46,195,21,8
+    CTEXT           "(-inf dB)",IDC_VOLUMETEXT_LP,5,204,27,8
+    CTEXT           "(-inf dB)",IDC_VOLUMETEXT_RP,43,204,27,8
+    CONTROL         "Progress1",IDC_VOLUMEGRAPH_L,"msctls_progress32",PBS_SMOOTH | PBS_VERTICAL,15,215,9,47
+    RTEXT           "0 dB",IDC_STATIC,28,215,21,8
+    RTEXT           "-22 dB",IDC_STATIC,28,224,21,8
+    RTEXT           "-45 dB",IDC_STATIC,28,234,21,8
+    RTEXT           "-67 dB",IDC_STATIC,28,243,21,8
+    RTEXT           "-inf dB",IDC_STATIC,28,253,21,8
+    CONTROL         "Progress1",IDC_VOLUMEGRAPH_R,"msctls_progress32",PBS_SMOOTH | PBS_VERTICAL,53,215,9,47
+    CONTROL         "&Winamp",IDC_INPUT_WINAMP,"Button",BS_AUTORADIOBUTTON,73,168,40,8
+    CONTROL         "&Soundcard",IDC_INPUT_SOUNDCARD,"Button",BS_AUTORADIOBUTTON,114,168,48,8
+END
+
+IDD_INPUT DIALOGEX 0, 0, 194, 271
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Input Configuration",IDC_STATIC,0,0,193,105
+    LTEXT           "Input Device",IDC_INPUTDEVICESTATIC,6,12,42,8,WS_DISABLED
+    COMBOBOX        IDC_INPUTDEVICE,6,24,100,70,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Input Settings",IDC_INPUTSETUPSTATIC,6,42,46,8
+    COMBOBOX        IDC_INPUTSETUP,6,54,100,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "",IDC_CURDEVICE,6,77,116,20
+    CTEXT           "Input Levels\n(Current / Peak)",IDC_STATIC,120,12,60,16
+    CTEXT           "-inf dB",IDC_VOLUMETEXT_L,120,31,21,8
+    CTEXT           "-inf dB",IDC_VOLUMETEXT_R,158,31,21,8
+    CTEXT           "(-inf dB)",IDC_VOLUMETEXT_LP,117,40,27,8
+    CTEXT           "(-inf dB)",IDC_VOLUMETEXT_RP,155,40,27,8
+    CONTROL         "Progress1",IDC_VOLUMEGRAPH_L,"msctls_progress32",PBS_SMOOTH | PBS_VERTICAL,127,50,9,47
+    RTEXT           "0 dB",IDC_STATIC,140,50,21,8
+    RTEXT           "-22 dB",IDC_STATIC,140,59,21,8
+    RTEXT           "-45 dB",IDC_STATIC,140,68,21,8
+    RTEXT           "-67 dB",IDC_STATIC,140,78,21,8
+    RTEXT           "-inf dB",IDC_STATIC,140,88,21,8
+    CONTROL         "Progress1",IDC_VOLUMEGRAPH_R,"msctls_progress32",PBS_SMOOTH | PBS_VERTICAL,165,50,9,47
+    GROUPBOX        "",IDC_PANEL_RECT,0,109,193,138,NOT WS_VISIBLE
+END
+
+IDD_PANEL_WINAMP DIALOGEX 0, 0, 194, 160
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Metadata (Double-click to explore item folder)",IDC_SNDCARDSTATIC,0,0,193,84
+    CONTROL         "",IDC_METALIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,5,11,183,67
+    GROUPBOX        "Playing Artwork",IDC_SNDCARDSTATIC2,0,87,193,72
+    CONTROL         "",IDC_ARTWORK,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE,5,99,102,54
+    CONTROL         "",IDC_ARTWORK3,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,115,99,72,54
+    CTEXT           "No artwork available for the playing item",IDC_ARTWORK2,63,116,65,18
+END
+
+IDD_CONNECTION DIALOGEX 0, 0, 194, 271
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Output",IDC_STATIC,0,0,193,67
+    LISTBOX         IDC_OUTPUTLIST,6,12,50,46,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    GROUPBOX        "Status",IDC_STATIC,62,8,126,33
+    LTEXT           "",IDC_STATUS,68,18,113,18
+    CONTROL         "Auto Connect",IDC_AUTOCONNECT,"Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,62,45,60,16
+    PUSHBUTTON      "Connect",IDC_CONNECT,127,45,61,16
+    CONTROL         "Tab1",IDC_CONTAB,"SysTabControl32",WS_TABSTOP,0,71,194,198
+    GROUPBOX        "",IDC_PANELRECT_C,6,90,180,171,NOT WS_VISIBLE | WS_DISABLED
+END
+
+IDD_PANEL_DIRECTORY DIALOGEX 0, 0, 180, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Directory Configuration",IDC_STATIC,0,0,180,105
+    CONTROL         "Make this stream public (Recommended)",IDC_PUBLIC,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,12,144,10
+    LTEXT           "Name",IDC_NAME_HEADER,5,25,19,8
+    EDITTEXT        IDC_DESCRIPTION,5,33,169,14,ES_AUTOHSCROLL
+    LTEXT           "URL",IDC_STATIC,5,50,16,8
+    EDITTEXT        IDC_SERVERURL,5,58,84,14,ES_AUTOHSCROLL
+    LTEXT           "Genre",IDC_STATIC,93,50,20,8
+    EDITTEXT        IDC_GENRE,93,58,70,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "",IDC_GENRES,164,57,11,15,BS_ICON
+    LTEXT           "AIM",IDC_STATIC,5,77,14,8
+    EDITTEXT        IDC_AIM,5,85,54,14,ES_AUTOHSCROLL
+    LTEXT           "ICQ",IDC_STATIC,63,77,13,8
+    EDITTEXT        IDC_ICQ,63,85,54,14,ES_AUTOHSCROLL
+    LTEXT           "IRC",IDC_STATIC,121,77,13,8
+    EDITTEXT        IDC_IRC,121,85,53,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_INFO_FRAME,0,107,179,52
+    CTEXT           "Making the stream 'public' will instruct the server to list the stream in the Shoutcast Radio Directory. Uncheck this if this is not wanted e.g. for a internal company stream.",IDC_INFO_TEXT,4,118,172,34
+END
+
+IDD_PANEL_LOGIN DIALOGEX 0, 0, 180, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Output Configuration",IDC_STATIC,0,0,180,114
+    LTEXT           "Server Address",IDC_ADDRESS_HEADER,5,12,50,8
+    EDITTEXT        IDC_ADDRESS,5,22,80,14,ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_STATIC,89,12,14,8
+    EDITTEXT        IDC_PORT,89,22,40,14,ES_AUTOHSCROLL
+    LTEXT           "Stream ID",IDC_STATIC,133,12,32,8
+    EDITTEXT        IDC_STATIONID,133,22,40,14,ES_AUTOHSCROLL
+    LTEXT           "DJ / User ID",IDC_STATIC,5,40,40,8
+    EDITTEXT        IDC_USERID,5,50,60,14,ES_AUTOHSCROLL
+    LTEXT           "Password",IDC_PASSWORD_HEADER,69,40,32,8
+    EDITTEXT        IDC_PASSWORD,69,50,104,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Automatic reconnection on connection failure",IDC_RECONNECT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,68,160,10
+    LTEXT           "Reconnection timeout",IDC_STATIC,5,83,73,8
+    EDITTEXT        IDC_TIMEOUT,80,81,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "seconds",IDC_STATIC,110,83,29,8
+    LTEXT           "Connect using:",IDC_STATIC,5,98,50,8
+    COMBOBOX        IDC_PROTOCOL,59,96,114,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_INFO_FRAME2,0,115,179,59
+    CTEXT           "Connecting to a v1.x server in v2.x mode will show the ""Unable To Connect To The Server"" error. To fix this error you will need to select either ""Automatic mode"" or ""v1.x mode"".",IDC_INFO_TEXT2,4,126,172,42,NOT WS_VISIBLE
+    CTEXT           "When the DJ password is formatted as <djlogin>:<djpassword> e.g. dj_1:noise\n\nEnter <djlogin> in 'DJ / User ID' e.g. dj_1\nEnter <djpassword> in 'Password' e.g. noise",IDC_INFO_TEXT3,4,126,172,42,NOT WS_VISIBLE
+    CTEXT           """Automatic mode"" attempts to pick the most appropriate protocol mode to connect to the server. If this does not work correctly, you can select a specific protocol mode to use.",IDC_INFO_TEXT4,4,126,172,42,NOT WS_VISIBLE
+END
+
+IDD_NSVCONFIG DIALOGEX 0, 0, 269, 198
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "AAC+ Encoder Options"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDCANCEL,214,177,50,14
+    GROUPBOX        "",IDC_GO_HERE,7,7,255,167,NOT WS_VISIBLE
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 194, 271
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "About",IDC_STATIC,0,0,193,100
+    ICON            IDI_ICY,IDC_ABOUT_ICON,86,11,20,20,SS_NOTIFY | SS_REALSIZEIMAGE
+    CTEXT           "",IDC_PROGRAMNAME,27,35,140,61
+    RTEXT           "Alternatively visit",IDC_STATIC,10,256,58,8
+    CONTROL         "www.shoutcast.com",IDC_ABOUTLINK,"Button",BS_OWNERDRAW | BS_CENTER | BS_VCENTER | WS_TABSTOP,71,254,68,11
+    LTEXT           "for updates.",IDC_STATIC,141,256,42,8
+    GROUPBOX        "Documentation and Support",IDC_STATIC,0,104,193,62
+    LTEXT           "For more information about the features available in the plug-in please look at the provided plug-in",IDC_STATIC,5,116,182,18
+    CONTROL         "documentation",IDC_HELPLINK,"Button",BS_OWNERDRAW | BS_CENTER | BS_TOP | WS_TABSTOP,139,123,51,11
+    LTEXT           "For issues with the plug-in not covered by the online documentation please visit the",IDC_STATIC,5,142,182,18
+    CONTROL         "Shoutcast support forum",IDC_FORUMLINK,"Button",BS_OWNERDRAW | BS_CENTER | BS_TOP | WS_TABSTOP,103,149,86,11
+    GROUPBOX        "Updates",IDC_UPDATE_HEADER,0,170,193,100
+    LTEXT           "We recommend keeping the plug-in up-to-date for bug fixes, perfomance improvements and new features.",IDC_STATIC,5,181,182,18
+    PUSHBUTTON      "Check for updates",IDC_GET_UPDATE,47,205,100,14
+    CTEXT           "A new version of the Source DSP is now available.\n\t   to download and install the new version.",IDC_STATIC_UPDATE,5,226,182,18,NOT WS_VISIBLE
+    CONTROL         "Click here",IDC_UPDATELINK,"Button",BS_OWNERDRAW | BS_CENTER | BS_TOP | NOT WS_VISIBLE | WS_TABSTOP,13,233,33,11
+END
+
+IDD_LOGGING DIALOGEX 0, 0, 180, 160
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Connection Logging",IDC_STATIC,0,0,180,60
+    CONTROL         "Enable logging of connection status messages",IDC_LOGGING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,12,163,10
+    CONTROL         "Clear log file on logging startup",IDC_CLEAR_ON_STARTUP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,26,115,10
+    PUSHBUTTON      "Open log file...",IDC_VIEW_LOG,5,40,82,14
+    PUSHBUTTON      "Clear log file",IDC_CLEAR_LOG,91,40,82,14
+    GROUPBOX        "Next Track Logging",IDC_STATIC,0,64,180,60
+    CONTROL         "Enable next track logging",IDC_NEXT_TRACK_LOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,77,97,10
+    EDITTEXT        IDC_NEXT_TRACK_EDIT,15,91,142,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_NEXT_TRACK_BROWSE,158,91,16,14
+    CONTROL         "Save report as xml instead of plain text",IDC_NEXT_TRACK_XML,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,109,142,10
+END
+
+IDD_ARTWORK DIALOGEX 0, 0, 180, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Artwork",IDC_ARTWORK_V1_FRAME,0,0,179,70
+    CTEXT           "Stream is setup for a Shoutcast v1.x server which does not support in-stream artwork.\n\nTo send in-stream artwork, select either ""Automatic mode"" or ""v2.x mode"" and ensure you are connecting to a v2.x server.",IDC_ART_V1_NOTE,5,12,169,54,NOT WS_VISIBLE
+    GROUPBOX        "Artwork",IDC_ARTWORK_V2_FRAME,0,0,179,136
+    CONTROL         "Send in-stream artwork",IDC_USE_ART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,12,91,10
+    CONTROL         "Send artwork from the playing file (if available)\nNote: This is sent in the loaded image format",IDC_USE_ART_PLAYING,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,15,26,160,18
+    CONTROL         "Send artwork for stream branding",IDC_USE_ART_STREAM,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,47,124,10
+    EDITTEXT        IDC_ART_EDIT,25,61,132,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_ART_BROWSE,158,61,16,14
+    CTEXT           "",IDC_ART_V2_NOTE,5,84,168,44
+END
+
+#if defined(APSTUDIO_INVOKED) || !defined(FULL)
+IDD_PANEL_TITLE DIALOGEX 0, 0, 180, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Title Update Configuration",IDC_STATIC,0,0,180,109
+    CONTROL         "Disable title updates",IDC_NOTITLES,"Button",BS_AUTORADIOBUTTON,5,13,81,10
+    CONTROL         "Follow Winamp's title updates",IDC_AUTOTITLE,"Button",BS_AUTORADIOBUTTON,5,27,110,10
+    CONTROL         "Send next track title to the server (if available)",IDC_SENDNEXTTITLES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,41,166,10
+    CONTROL         "Manual title updates",IDC_MANUALTITLE,"Button",BS_AUTORADIOBUTTON,5,55,81,10
+    RTEXT           "Now",IDC_STATIC,13,72,15,8
+    EDITTEXT        IDC_TITLE,33,69,98,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Next",IDC_STATIC,13,89,16,8
+    EDITTEXT        IDC_NEXT,34,88,97,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Send\nUpdate",IDC_SEND,135,68,40,35,BS_MULTILINE
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(FULL)
+#if defined(APSTUDIO_INVOKED)
+IDD_PANEL_TITLE$(FULL) DIALOGEX 0, 0, 180, 175
+#else
+IDD_PANEL_TITLE DIALOGEX 0, 0, 180, 175
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Title Update Configuration",IDC_STATIC,0,0,180,94
+    CONTROL         "Follow Winamp updates",IDC_AUTOTITLE,"Button",BS_AUTORADIOBUTTON,5,13,91,10
+    CONTROL         "Send next track title to the server (if available)",IDC_SENDNEXTTITLES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,27,166,10
+    CONTROL         "Manually update",IDC_MANUALTITLE,"Button",BS_AUTORADIOBUTTON,5,41,69,10
+    RTEXT           "Now",IDC_STATIC,13,58,15,8
+    EDITTEXT        IDC_TITLE,33,55,98,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Next",IDC_STATIC,13,75,16,8
+    EDITTEXT        IDC_NEXT,34,74,97,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Send\nUpdate",IDC_SEND,135,55,40,32,BS_MULTILINE
+    CONTROL         "Use external file",IDC_EXTERNALTITLE,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,5,92,68,10
+    EDITTEXT        IDC_NEXT_TRACK_EDIT,15,106,142,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    CONTROL         "Send when file content changes",IDC_AUTOTITLE4,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,15,124,118,10
+    CONTROL         "Send every",IDC_AUTOTITLE5,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,15,138,53,10
+    LTEXT           "Delay sending title update by",IDC_STATIC,15,157,94,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_TIMEOUT,68,137,32,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | NOT WS_VISIBLE,98,135,11,16
+    LTEXT           "seconds (if changed)",IDC_STATIC,104,139,68,8,NOT WS_VISIBLE
+    PUSHBUTTON      "...",IDC_NEXT_TRACK_BROWSE,158,106,16,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_TIMEOUT2,112,155,32,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | NOT WS_VISIBLE,143,152,11,16
+    LTEXT           "seconds",IDC_STATIC,148,157,27,8,NOT WS_VISIBLE
+END
+#endif
+
+IDD_PANEL_LINEIN DIALOGEX 0, 0, 194, 160
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Soundcard Mixer Control",IDC_SNDCARDSTATIC,0,0,193,156
+    LTEXT           "Choose Capture Device",IDC_STATIC,6,12,76,8
+    COMBOBOX        IDC_DEVBOX,6,24,163,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    PUSHBUTTON      "",IDC_REFRESH_DEVICES,170,23,16,15,BS_ICON
+    PUSHBUTTON      "Open Mixer",IDC_MIXER,5,41,181,15
+    RTEXT           "Music Level",IDC_MUSSTATIC,10,61,46,8,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_MUSSLIDER,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,59,61,96,12
+    LTEXT           "0 dB",IDC_MUSLEV1_TEXT,159,61,24,8,SS_CENTERIMAGE
+    RTEXT           "BG Level",IDC_BGMUSSTATIC,10,74,46,8,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_MUS2SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,59,74,96,12
+    LTEXT           "0 dB",IDC_MUSLEV2_TEXT,159,74,25,8,SS_CENTERIMAGE
+    RTEXT           "Mic Level",IDC_MICSTATIC,10,87,46,8,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_MICSLIDER,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,59,87,96,12
+    LTEXT           "0 dB",IDC_MICLEV_TEXT,159,87,26,8,SS_CENTERIMAGE
+    RTEXT           "Fade Time",IDC_FADESTATIC,10,100,46,8,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_FADESLIDER,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,59,100,96,12
+    LTEXT           "0ms",IDC_FADETIME_TEXT,159,100,28,8,SS_CENTERIMAGE
+    RTEXT           "Capture Device Fade Time",IDC_MICFADESTATIC,7,113,49,18
+    CONTROL         "",IDC_MICFADESLIDER,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,59,114,96,12
+    LTEXT           "0ms",IDC_MICFADETIME_TEXT,159,114,28,8,SS_CENTERIMAGE
+    PUSHBUTTON      "Push to Talk",IDC_PTT,5,133,130,17
+    CONTROL         "Lock",IDC_LOCK,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,139,133,38,17
+    PUSHBUTTON      "",IDC_LOCK_MODE,177,133,11,17,BS_ICON
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+    END
+
+    IDD_ENCODER, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 174
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 188
+    END
+
+    IDD_INPUT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_CONNECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 188
+    END
+
+    IDD_NSVCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_LOGGING, DIALOG
+    BEGIN
+        HORZGUIDE, 74
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICY                 ICON                    "ICY.ICO"
+IDI_DOWNARROW           ICON                    "downarrow.ico"
+IDI_REFRESH             ICON                    "refresh.ico"
+IDI_PLAY                ICON                    "play.ico"
+IDI_STOP                ICON                    "stop.ico"
+IDI_KILL                ICON                    "kill.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,4,2,449
+ PRODUCTVERSION 2,4,2,449
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Radionomy SA"
+            VALUE "FileDescription", "Winamp DSP Plug-in"
+            VALUE "FileVersion", "2, 4, 2, 449"
+            VALUE "InternalName", "dsp_sc.dll"
+            VALUE "LegalCopyright", "Copyright © 2023 Radionomy SA"
+            VALUE "LegalTrademarks", "Shoutcast is a trademark of Radionomy SA"
+            VALUE "OriginalFilename", "dsp_sc.dll"
+            VALUE "ProductName", "Shoutcast Source DSP"
+            VALUE "ProductVersion", "2, 4, 2, 449"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    65535                   "{88380E65-4068-49BA-8EA4-3F2AF12D0A4F}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUGIN_NAME         "Shoutcast Source DSP v%s"
+    IDS_MODULE_NAME         "Shoutcast Source DSP"
+    IDS_LAMEDLL_ISSUE       "There was an error while trying to load the encoder dll file (lamedll.dll).\nPlease make sure you have the correct version required for this plug-in.\n\nThe Source DSP will now abort loading until resolved."
+    IDS_CURRENT_BITRATE     "Current bitrate: %d kbps"
+    IDS_ENCODER_SETTINGS    "Encoder Settings"
+    IDS_OUTPUT_X            "Output %u"
+    IDS_NONE                "None"
+    IDS_MP3_ENCODER         "MP3 Encoder"
+    IDS_AACP_ENCODER        "AAC+ Encoder"
+    IDS_NO_ENCODER_SELECTED "No encoder selected"
+    IDS_PANEL_LOGIN         "Login"
+    IDS_PANEL_DIRECTORY     "Directory"
+    IDS_PANEL_ENCODERS      "Encoder"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TAB_MAIN            "Summary"
+    IDS_TAB_OUTPUT          "Output"
+    IDS_TAB_INPUT           "Input"
+    IDS_COL_OUTPUT_NAME     "Stream"
+    IDS_COL_STATUS          "Status"
+    IDS_INPUT_WINAMP        "Winamp (Recommended)"
+    IDS_INPUT_SOUNDCARD     "Soundcard Input"
+    IDS_X_DB                "%d dB"
+    IDS_INF_DB              "-Inf dB"
+    IDS_NOT_CONNECTED       "Not Connected"
+    IDS_ERROR               "Error!"
+    IDS_CONNECTING          "Connecting..."
+    IDS_SEND_CIPHER_REQUEST "Sending Cipher Request"
+    IDS_CIPHER_RESPONSE_RECEIVED "Cipher Response Received"
+    IDS_SENDING_AUTH        "Sending Authorization"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RECEIVING_AUTH_RESPONSE "Receiving Authorization Response"
+    IDS_SENDING_CONTENT_TYPE "Sending Content Type"
+    IDS_RESPONSE_RECEIVED   "Response Received"
+    IDS_SENDING_BITRATE     "Sending Bitrate"
+    IDS_SEND_BUF_SIZE       "Sending Buffer Size"
+    IDS_SEND_MAX_PAYLOAD_SIZE "Sending Maximum Payload Size"
+    IDS_SEND_YP_INFO        "Sending YP Information"
+    IDS_SEND_FLUSH          "Sending Flush"
+    IDS_SEND_STANDBY        "Sending Standby"
+    IDS_SEND_INTRO_FILE     "Sending Intro File"
+    IDS_SEND_BACKUP_FILE    "Sending Backup File"
+    IDS_DISCONNECTING       "Disconnecting"
+    IDS_RECONNECTING_X      "Reconnecting [%u]"
+    IDS_SEND_TITLE_UPDATE   "Sending Title Update"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONNECT             "Connect"
+    IDS_KILL                "Kill"
+    IDS_ABORT               "Abort"
+    IDS_DISCONNECT          "Disconnect"
+    IDS_X_HZ_X              "%u Hz, %s"
+    IDS_MONO                "Mono"
+    IDS_STEREO              "Stereo"
+    IDS_X_MS                "%u ms"
+    IDS_PLUGIN_UNINSTALL    "Do you also want to remove the saved settings for this plug-in?"
+    IDS_PASS_ERROR          "Authentication Error:\nInvalid DJ / User ID or Password"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEVICE_STRING       "Device: %s"
+    IDS_MIC_LEGACY_MODE     "Microphone (Legacy mode)"
+    IDS_LINEIN_LEGACY_MODE  "Line In (Legacy mode)"
+    IDS_PTT_ON_STARTUP      "Enable 'Push to Talk' on startup"
+    IDS_PANEL_LOGGING       "Logs"
+    IDS_CIPHER_ERROR        "Authentication Error:\nCipher Does Not Match"
+    IDS_NO_DEVICES_FOUND    "No input devices found or currently available"
+    IDS_NO_CAPTURE_DEVICES  "No available capture devices found"
+    IDS_ABOUT_MESSAGE       "%s\nv%hs [Build %hs]\n\nBuild date: %hs\n\nCopyright © 2014 Radionomy SA\nAll Rights Reserved."
+    IDS_PANEL_ART           "Artwork"
+    IDS_JPEG_FILE           "JPEG File"
+    IDS_PNG_FILE            "PNG File"
+    IDS_BMP_FILE            "BMP File"
+    IDS_GIF_FILE            "GIF File"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FHGAAC_ENCODER      "ADTS-AAC Encoder"
+    IDS_PANEL_TITLES        "Titles"
+    IDS_PUBLIC              "Public"
+    IDS_PRIVATE             "Private"
+    IDS_FOLLOW_WA           "Follow Winamp"
+    IDS_MANUAL              "Manual"
+    IDS_DISABLED            "Disabled"
+    IDS_NOT_SET             "Not set"
+    IDS_SUMMARY             "Shoutcast mode: v%d\nDirectory mode: %s\nOutput server: %hs:%d\nTitle updates: %s\nEncoder mode: %s%s\nLogging enabled: %s\nAuto Connect: %s\nSave Encoded Output: %s"
+    IDS_LAME_ENCODER_VER    "Encoder v%s"
+    IDS_SUMMARY_KBPS        " at %d kbps"
+    IDS_X_DB_PEAK           "(%d dB)"
+    IDS_CHANGE_NAME         "Change Name"
+    IDS_SET_PASSWORD        "Set Password"
+    IDS_SET_ENCODER         "Set Encoder"
+    IDS_STREAMID_ERROR      "Authentication Error:\nEntered Stream ID Not Allowed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PARSE_ERROR         "Connection Error:\nSent or Received Invalid Request"
+    IDS_VERSION_ERROR       "Authentication Error:\nUltravox Version Not Supported"
+    IDS_IN_USE_ERROR        "Connection Not Allowed By Server Due To Existing Source Connection"
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+    IDS_NOT_CONFIGURED      "Stream Configuration Not Complete"
+    IDS_ALL_FILES           "All Files (*.*)|*.*||"
+    IDS_MPEG_AUDIO_FILES    "MPEG Audio Files (*.%s)|*.%s||"
+    IDS_BITRATE_ERROR       "Connection Not Allowed By Server Due To Configured Output Bitrate"
+    IDS_SET_SERVER          "Set Server"
+    IDS_NOT_SET_SUMMARY     "<not set>"
+    IDS_SENT_X              "[%u:%0.2u:%0.2u] Sent %s"
+    IDS_B                   "bytes"
+    IDS_KIB                 "KiB"
+    IDS_MIB                 "MiB"
+    IDS_GIB                 "GiB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TIB                 "TiB"
+    IDS_BLOCKED_ERROR       "Connection Not Allowed By Server"
+    IDS_V2_ARTWORK          "Stream artwork: %s\nPlaying artwork: %s\n\nArtwork which is over 511 KiB in size will\nnot be sent to the Shoutcast v2 server."
+    IDS_ENABLED_SIZE        "Loaded (%s)"
+    IDS_EMPTY_ART           "Oversized or empty"
+    IDS_STREAM_MOVED_ERROR  "Connection Not Allowed By Server Due To Stream Having Been Moved"
+    IDS_ARTWORK_SIZES       "Width: %dpx\nHeight: %dpx\n\nRaw size: %s\nType: %s"
+    IDS_FILEPATH            "Filepath"
+    IDS_TITLE               "Title"
+    IDS_ARTIST              "Artist"
+    IDS_ALBUM               "Album"
+    IDS_GENRE               "Genre"
+    IDS_YEAR                "Year"
+    IDS_COMMENT             "Comment"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FAILED_LOAD_LAMEDLL "Unable to find the MP3 encoder dll (lame_enc.dll).\nPlease make sure it is installed in the following location:\n\n""%s""\n\n\nThe Shoutcast Source DSP will load in a reduced mode."
+    IDS_MP3_ENCODING_NOT_AVAILABLE "MP3 encoding not available"
+    IDS_SWITCHING_PROTOCOL  "Automatically Switching Shoutcast Protocol Mode From v%d.x To v%d.x"
+    IDS_AUTOMATIC           "Automatic mode"
+    IDS_V2_MODE             "v2.x mode"
+    IDS_V1_MODE             "v1.x mode (legacy servers)"
+    IDS_ENABLE_OTHER_MODE   "Unable To Connect To The Server.\nEnable 'Automatic' or 'v%d.x' mode."
+    IDS_24BIT_MODE_DETECTED "Winamp appears to be configured to provide 24-bit audio via the 'Playback' preferences.\n\nThis is not supported by this plug-in and it will now abort loading.\n\nDisabling the 24-bit audio option on the 'Playback' preferences page will allow this plug-in to be used."
+    IDS_UPDATE_HEADER       "Update: v%hs is now available"
+    IDS_UPDATE_TITLE        "<> Plug-in Update Available <>"
+    IDS_TAB_ABOUT           "About | Support | Updates"
+    IDS_UPDATE              "Updates"
+    IDS_UPDATE_CHECK_ERROR  "The Winamp install is not able to run the update check\nat this time. If this warning persists you will need to\nmanually check for an updated version of the plug-in.\n\nChoose 'Yes' to go to the Shoutcast download page."
+    IDS_CHECK_FOR_UPDATES   "Check for updates"
+    IDS_CHECKING_FOR_UPDATES "Checking for updates..."
+    IDS_NO_NEW_UPDATE       "This is the current version of the Source DSP plug-in."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HAS_NEW_UPDATE      "A new version of the Source DSP is now available.\n\t   to download and install the new version."
+    IDS_CHECK_UPDATE_FAIL   "Unable to check for version updates at this time."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

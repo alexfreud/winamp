@@ -1,0 +1,5 @@
+<container id="Pledit" name="Playlist Editor" dynamic="1" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_x="354" default_y="0" default_visible="1">
+  <include file="pledit-normal.xml"/>
+  <include file="pledit-shade.xml"/>
+  <include file="playlistpro.xml"/>
+</container>

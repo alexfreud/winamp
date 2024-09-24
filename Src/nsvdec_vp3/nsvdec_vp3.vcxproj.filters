@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{aeaac310-e5fb-4d39-9126-c0edea7b6192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Win32">
+      <UniqueIdentifier>{d6b78406-d15a-4542-8d4e-2b63264c2996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Win64">
+      <UniqueIdentifier>{3ef2e9d5-ddeb-435e-9c5e-bba526e2cb0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{ff9ffd58-bfab-4c0e-834b-ab7934412a33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="vp3stub.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vp3stub.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\vp32\lib\win32\Release\s_cpuid.lib">
+      <Filter>Libraries\Win32</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nsvdec_vp3.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\vp32\lib\win32\Release\s_dxv.lib">
+      <Filter>Libraries\Win32</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\vp32\lib\win32\Release\s_sal.lib">
+      <Filter>Libraries\Win32</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\vp32\lib\win32\Release\s_vp31d.lib">
+      <Filter>Libraries\Win32</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

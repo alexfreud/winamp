@@ -1,0 +1,396 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PODCAST DIALOGEX 0, 0, 285, 277
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_CHANNELLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_TABSTOP,0,0,122,181,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_VDIV,"Static",SS_BLACKFRAME,122,0,5,182
+    CONTROL         "",IDC_ITEMLIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_TABSTOP,127,0,156,181,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Directory",IDC_FINDNEW,2,183,41,11
+    PUSHBUTTON      "Add",IDC_ADD,45,183,35,11
+    PUSHBUTTON      "Edit",IDC_EDIT,83,183,35,11
+    PUSHBUTTON      "Delete",IDC_DELETE,121,183,35,11
+    PUSHBUTTON      "Update",IDC_REFRESH,159,183,35,11
+    CONTROL         "",IDC_HDIV,"Static",SS_BLACKFRAME,0,194,285,5
+    CONTROL         "",IDC_EPISODE_INFO,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_TABSTOP,0,198,285,10,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_DESCRIPTION,"Static",SS_BLACKRECT,0,208,283,55
+    PUSHBUTTON      "Play",IDC_PLAY,0,266,37,11
+    PUSHBUTTON      "Enqueue",IDC_ENQUEUE,39,266,37,11
+    PUSHBUTTON      "Download",IDC_DOWNLOAD,78,266,40,11
+    PUSHBUTTON      "Visit site",IDC_VISIT,120,266,40,11
+    CONTROL         "",IDC_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | SS_WORDELLIPSIS | WS_GROUP,164,266,120,11
+END
+
+IDD_ADDURL DIALOGEX 0, 0, 270, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Add RSS Subscription"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITURL,4,7,262,14,ES_AUTOHSCROLL
+    CONTROL         "Use default settings",IDC_USEDEFAULTS,"Button",BS_AUTORADIOBUTTON,8,25,88,10
+    CONTROL         "Use custom settings",IDC_USECUSTOM,"Button",BS_AUTORADIOBUTTON,114,25,93,10
+    LTEXT           "Update Every:",IDC_STATIC_UPDATEEVERY,8,42,48,8,WS_DISABLED
+    COMBOBOX        IDC_UPDATELIST,59,40,70,95,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Download New Episodes:",IDC_STATIC_AUTODOWNLOAD,8,58,81,8,WS_DISABLED
+    COMBOBOX        IDC_AUTODOWNLOADLIST,93,56,122,30,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDOK,162,73,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,216,73,50,13
+END
+
+IDD_DOWNLOADS DIALOGEX 0, 0, 266, 92
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_DOWNLOADLIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_TABSTOP,0,0,264,79
+    CONTROL         "Play",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,0,81,37,11
+    CONTROL         "Enqueue",IDC_ENQUEUE,"Button",BS_OWNERDRAW | WS_TABSTOP,40,81,37,11
+    CONTROL         "Remove",IDC_REMOVE,"Button",BS_OWNERDRAW | WS_TABSTOP,80,81,37,11
+    CONTROL         "Clean up",IDC_CLEANUP,"Button",BS_OWNERDRAW | WS_TABSTOP,120,81,37,11
+    CONTROL         "",IDC_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | SS_ENDELLIPSIS | WS_GROUP,163,81,102,11
+END
+
+IDD_PREFERENCES DIALOGEX 0, 0, 272, 247
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Podcasts",IDC_STATIC,0,0,272,246
+    GROUPBOX        "Subscription Updates",IDC_STATIC,5,11,260,53
+    LTEXT           "Update every:",IDC_STATICUPDATEEVERY,11,28,50,9,SS_CENTERIMAGE
+    COMBOBOX        IDC_UPDATELIST,65,27,94,131,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Update on launch",IDC_UPDATEONLAUNCH,"Button",BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,181,28,72,10
+    LTEXT           "Download New Episodes:",IDC_STATICAUTODOWNLOAD,11,47,84,9
+    COMBOBOX        IDC_AUTODOWNLOADLIST,99,45,112,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Podcast Download Location",IDC_STATIC,5,67,260,34
+    EDITTEXT        IDC_DOWNLOADLOCATION,11,81,198,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,209,81,50,13
+    GROUPBOX        "'Podcast Directory' Service",IDC_STATIC,5,105,260,72
+    LTEXT           "This allows you to specify an alternative Podcast Directory service to display in the 'Podcast Directory' node. Leave blank to reset to the default service.",IDC_STATIC,11,116,248,18
+    EDITTEXT        IDC_DIRECTORYURL,11,138,248,13,ES_AUTOHSCROLL
+    LTEXT           "Note: To subscribe to feeds when using an alternative Podcast Directory service, the service will need to use the available Winamp Javascript API.",IDC_STATIC,11,155,248,18,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ADDURL, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_PREFERENCES, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 246
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "Podcast"
+    BEGIN
+        MENUITEM "Update podcast\tF5",          IDC_REFRESH
+        MENUITEM "Edit podcast...\tF2",         IDC_EDIT
+        MENUITEM "Delete podcast\tDel",         IDC_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Visit site\tF7",              IDC_VISIT
+        MENUITEM SEPARATOR
+        MENUITEM "Add podcast...\tInsert",      IDC_ADD
+        MENUITEM "Update all\tShift+F5",        IDC_REFRESHALL
+    END
+    POPUP "Episode"
+    BEGIN
+        MENUITEM "Play media",                  IDC_PLAY
+        MENUITEM "Enqueue media",               IDC_ENQUEUE
+        POPUP "Send to:"
+        BEGIN
+            MENUITEM "",                            ID_Menu
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Download media",              IDC_DOWNLOAD
+        MENUITEM SEPARATOR
+        MENUITEM "Select all\tCtrl+A",          IDC_SELECTALL
+        MENUITEM "Explore media folder\tCtrl+F", ID_DOWNLOADS_EXPLORERITEMFOLDER
+        MENUITEM "Visit site\tF7",              IDC_VISIT
+        MENUITEM SEPARATOR
+        MENUITEM "Update podcast\tF5",          IDC_REFRESH
+    END
+    POPUP "Downloads"
+    BEGIN
+        MENUITEM "Play file\tEnter",            IDC_PLAY
+        MENUITEM "Enqueue file\tShift+Enter",   IDC_ENQUEUE
+        POPUP "Send to:"
+        BEGIN
+            MENUITEM "",                            ID_Menu
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Select all\tCtrl+A",          IDC_SELECTALL
+        MENUITEM "View file info...\tAlt+3",    IDC_INFOBOX
+        MENUITEM "Explore item folder\tCtrl+F", ID_DOWNLOADS_EXPLORERITEMFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "Remove from list\tDel",       IDC_REMOVE
+        MENUITEM "Delete file\tShift+Del",      IDC_DELETE
+    END
+    POPUP "Navigation"
+    BEGIN
+        MENUITEM "&Preferences",                ID_NAVIGATION_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "Help",                        ID_NAVIGATION_HELP
+    END
+    POPUP "SubscriptionNavigation"
+    BEGIN
+        MENUITEM "Directory",                   ID_NAVIGATION_DIRECTORY
+        MENUITEM "&Preferences",                ID_NAVIGATION_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "Update all",                  ID_NAVIGATION_REFRESHALL
+        MENUITEM SEPARATOR
+        MENUITEM "Help",                        ID_NAVIGATION_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_VIEW_DOWNLOAD_ACCELERATORS ACCELERATORS 
+BEGIN
+    "F",            ID_DOWNLOADS_EXPLORERITEMFOLDER, VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      IDC_CUSTOM,             VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_DELETE,      IDC_DELETE,             VIRTKEY, SHIFT, NOINVERT
+    VK_RETURN,      IDC_ENQUEUE,            VIRTKEY, SHIFT, NOINVERT
+    "3",            IDC_INFOBOX,            VIRTKEY, ALT, NOINVERT
+    VK_RETURN,      IDC_PLAY,               VIRTKEY, NOINVERT
+    VK_DELETE,      IDC_REMOVE,             VIRTKEY, NOINVERT
+    "A",            IDC_SELECTALL,          VIRTKEY, CONTROL, NOINVERT
+    VK_F7,          IDC_VISIT,              VIRTKEY, NOINVERT
+    VK_F5,          IDC_REFRESH,            VIRTKEY, NOINVERT
+    "D",            IDC_DOWNLOAD,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUGIN_NAME         "Nullsoft Podcasts v%d.%02d"
+    65535                   "{1FF327B2-A41D-4c67-A58A-EB09BA1470D3}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PODCASTS            "Podcasts"
+    IDS_DOWNLOADING_KB_COMPLETE "Downloading %u files, %ukb complete."
+    IDS_DOWNLOADING_KB_PROGRESS 
+                            "Downloading %u files, %ukb of %ukb complete (%d%%)."
+    IDS_SUBSCRIPTIONS       "Subscriptions"
+    IDS_DOWNLOADS           "Downloads"
+    IDS_DOWNLOADING         "Downloading..."
+    IDS_CHOOSE_FOLDER       "Choose folder to store downloaded media."
+    IDS_ALREADY_SUBSCRIBED  "You are already subscribed to %s.\n%s"
+    IDS_FILE_NOT_FOUND      "Cannot connect to %s\nFile not Found."
+    IDS_CONNECTION_TIMED_OUT "Cannot connect to %s\nConnection timed out."
+    IDS_ERROR_PARSING_XML   "Subscription to %s failed.\nError parsing XML data from server."
+    IDS_INVALID_RSS_FEED    "Subscription to %s failed.\nDoes not appear to be a valid RSS feed."
+    IDS_NO_JNETLIB          "HTTP Downloader library is missing.\nPlease reinstall Winamp."
+    IDS_JNETLIB_MISSING     "JNetLib missing"
+    IDS_NO_EXPAT            "XML Parsing library is missing.\nPlease reinstall Winamp."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXPAT_MISSING       "Expat missing"
+    IDS_CONNECTION_RESET    "Subscription to %s failed.\nConnection reset by peer."
+    IDS_ERROR_SUBSCRIBING_TO_PODCAST "Error Subscribing to Podcast"
+    IDS_UPD_MANUALLY        "Manually"
+    IDS_UPD_WEEK            "Week"
+    IDS_UPD_DAY             "Day"
+    IDS_UPD_12HRS           "12 hours"
+    IDS_UPD_6HRS            "6 hours"
+    IDS_UPD_3HRS            "3 hours"
+    IDS_UPD_HOUR            "Hour"
+    IDS_UPD_30MINS          "30 minutes"
+    IDS_ERROR_FYEO          "ERROR ! ! YOU SHOULDN'T SEE THIS"
+    IDS_WDAY_SUN            "Sun"
+    IDS_WDAY_MON            "Mon"
+    IDS_WDAY_TUE            "Tue"
+    IDS_WDAY_WED            "Wed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WDAY_THU            "Thu"
+    IDS_WDAY_FRI            "Fri"
+    IDS_WDAY_SAT            "Sat"
+    IDS_MONTH_JAN           "Jan"
+    IDS_MONTH_FEB           "Feb"
+    IDS_MONTH_MAR           "Mar"
+    IDS_MONTH_APR           "Apr"
+    IDS_MONTH_MAY           "May"
+    IDS_MONTH_JUN           "Jun"
+    IDS_MONTH_JUL           "Jul"
+    IDS_MONTH_AUG           "Aug"
+    IDS_MONTH_SEP           "Sep"
+    IDS_MONTH_OCT           "Oct"
+    IDS_MONTH_NOV           "Nov"
+    IDS_MONTH_DEC           "Dec"
+    IDS_RECEIVING_UPDATES_FOR "Retrieving updates for "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GOT_NEW_ITEMS_FOR   "Got new items for "
+    IDS_CHANNEL_ALREADY_PRESENT "Podcast Already Present:\n%s\n%s"
+    IDS_DUPLICATE_CHANNEL   "Duplicate Podcast"
+    IDS_ERROR_ADDING_URL    "Error adding URL"
+    IDS_ERROR_PARSING_XML_FROM_SERVER "Error parsing XML data from server"
+    IDS_LINK_HAS_NO_RSS_INFO "Link does not contain valid RSS information"
+    IDS_INVALID_LINK        "Invalid link (404 or timeout)"
+    IDS_CONNECTION_RESET_BY_PEER "Connection reset by peer."
+    IDS_DOWNLOADING_PERCENT "Downloading %d%%"
+    IDS_CHANNEL             "Podcast"
+    IDS_ITEM                "Episode"
+    IDS_PROGRESS            "Progress"
+    IDS_PATH                "Path"
+    IDS_PERM_DELETE_ARE_YOU_SURE 
+                            "This will permanently delete this file, are you sure?"
+    IDS_PERM_DELETE_THESE_ARE_YOU_SURE 
+                            "This will permanently delete these %d files, are you sure?"
+    IDS_DELETION            "Deletion"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CLEAR_ALL_FINISHED_DOWNLOADS 
+                            "This will clear all finished downloads, are you sure?\n\nTip: You can view all your downloaded podcasts in Local Media/Podcasts"
+    IDS_CLEAN_UP_LIST       "Clean Up List"
+    IDS_DONE                "Done"
+    IDS_SAVE                "Save"
+    IDS_REQUIRES_INTERNET_CONNECTION_ENSURE_CONNECTION 
+                            "The media library feature you are attempting to use requires an internet connection. Please make sure you are connected to the internet and try again."
+    IDS_ADD_TO_DOWNLOADS    "Added to downloads."
+    IDS_NO_MEDIA_TO_DOWNLOAD "No media to download."
+    IDS_TEXT_ARTICLE        "Text article"
+    IDS_DATE_ADDED          "Date Added"
+    IDS_MEDIA_PRESENT       "Media Present"
+    IDS_SURE_YOU_WANT_TO_REMOVE_THIS 
+                            "Are you sure you want to remove %s\n(%s)"
+    IDS_CONFIRM             "Confirm"
+    IDS_CANCEL_DOWNLOADS_AND_QUIT 
+                            "You are currently downloading podcasts\nAre you sure you want to cancel these downloads and quit?"
+    IDS_CONFIRM_QUIT        "Confirm Quit"
+    IDS_ARTICLE_WITH_MEDIA  "Article with media"
+    IDS_PODCAST_DIRECTORY   "Podcast Directory"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DELETEFAILED        "Delete Failed"
+    IDS_SORRY               "Sorry"
+    IDS_EDIT_CHANNEL        "Edit Podcast"
+    IDS_ATD_NEVER           "Never"
+    IDS_ATD_LASTONE         "Most recent episode"
+    IDS_ATD_LASTTWO         "Last 2 episodes"
+    IDS_ATD_LASTTHREE       "Last 3 episodes"
+    IDS_ATD_LASTFIVE        "Last 5 episodes"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PODCAST_SUBSCRIPTION_HEADER "Winamp Podcast Subscription"
+    IDS_PODCAST_SUBSCRIPTION_PROMP 
+                            "Are you sure that you want to subscribe to this podcast?\n\n%s"
+    IDS_MEDIA_TIME          "Time"
+    IDS_EPISODE_INFO        "Episode Info"
+    IDS_MEDIA_SIZE          "Size"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

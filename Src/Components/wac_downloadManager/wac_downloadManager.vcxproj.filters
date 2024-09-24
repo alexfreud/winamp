@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Header Files\HTTP Receiver">
+      <UniqueIdentifier>{738d86e2-2471-4e0d-bcb4-dd3b1c132c01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\downloadManager">
+      <UniqueIdentifier>{ddf711c1-7782-4349-9835-758b85fcfe53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HTTP Receiver">
+      <UniqueIdentifier>{9892fa19-d3f5-43cf-a433-aa513290ca0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\downloadManager">
+      <UniqueIdentifier>{c31b92ff-4576-420f-885a-333d90811b9b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api__wac_downloadManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundDownloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DownloadCallbackT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_download_http_receiver_factory.h">
+      <Filter>Header Files\HTTP Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_download_http_receiver_api.h">
+      <Filter>Header Files\HTTP Receiver</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_downloadManager_api.h">
+      <Filter>Header Files\downloadManager</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_downloadManager_factory.h">
+      <Filter>Header Files\downloadManager</Filter>
+    </ClInclude>
+    <ClCompile Include="wac_downloadManager_api.cpp">
+      <Filter>Source Files\downloadManager</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_downloadManager_factory.cpp">
+      <Filter>Source Files\downloadManager</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_download_http_receiver.cpp">
+      <Filter>Source Files\HTTP Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_download_http_receiver_api.cpp">
+      <Filter>Source Files\HTTP Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_download_http_receiver_factory.cpp">
+      <Filter>Source Files\HTTP Receiver</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_downloadManager.cpp">
+      <Filter>Source Files\downloadManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BackgroundDownloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="wac_download_http_receiver.h">
+      <Filter>Header Files\HTTP Receiver</Filter>
+    </QtMoc>
+    <QtMoc Include="wac_downloadManager.h">
+      <Filter>Header Files\downloadManager</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wac_downloadManager_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_downloadManager_Headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wac_downloadManager.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="version.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,227 @@
+<!-- Common menu buttons -->
+
+<groupdef id="menu.button.normal" xuitag="menu:button_normal" rectrgn="1" h="16">
+  <!-- Dummy -->
+</groupdef>
+
+<groupdef id="menu.button.hover" xuitag="menu:button_hover" rectrgn="1" h="16">
+  <layer id="button.left" image="button.menu.hover.left" x="0" y="0"/>
+  <layer id="button.middle" image="button.menu.hover.middle" x="4" y="0" w="-7" relatw="1"/>
+  <layer id="button.right" image="button.menu.hover.right" x="-3" y="0" relatx="1"/>
+</groupdef>
+
+<groupdef id="menu.button.pressed" xuitag="menu:button_pressed" rectrgn="1" h="16">
+  <layer id="button.left" image="button.menu.pressed.left" x="0" y="0"/>
+  <layer id="button.middle" image="button.menu.pressed.middle" x="4" y="0" w="-7" relatw="1"/>
+  <layer id="button.right" image="button.menu.pressed.right" x="-3" y="0" relatx="1"/>
+</groupdef>
+
+<!-- End of menu buttons -->
+
+<groupdef id="menugroup.file" autowidthsource="File.txt" h="16">
+  <menu:button_normal id="File.up.btn" x="0" y="0"/>
+  <menu:button_pressed id="File.down.btn" x="0" y="0" visible="0"/>
+  <menu:button_hover id="File.hover.btn" x="0" y="0" visible="0"/>
+  <layer id="File.txt" image="txt.menu.file" x="0" y="0"/>
+  <Menu id="File.menu" menugroup="main" next="Play.menu" prev="Help.menu" x="0" y="0" h="16" w="0" relatw="1" menu="WA5:File" normal="File.up.btn" hover="File.hover.btn" down="File.down.btn" />
+</groupdef>
+
+<groupdef id="menugroup.play" autowidthsource="Play.txt" h="16">
+  <menu:button_normal id="Play.up.btn" x="0" y="0"/>
+  <menu:button_pressed id="Play.down.btn" x="0" y="0" visible="0"/>
+  <menu:button_hover id="Play.hover.btn" x="0" y="0" visible="0"/>
+  <layer id="Play.txt" image="txt.menu.play" x="0" y="0"/>
+  <Menu id="Play.menu" menugroup="main" next="Options.menu" prev="File.menu" x="0" y="0" h="16" w="0" relatw="1" menu="WA5:Play" normal="Play.up.btn" hover="Play.hover.btn" down="Play.down.btn" />
+</groupdef> 
+
+<groupdef id="menugroup.options" autowidthsource="Options.txt" h="16">
+  <menu:button_normal id="Options.up.btn" x="0" y="0"/>
+  <menu:button_pressed id="Options.down.btn" x="0" y="0" visible="0"/>
+  <menu:button_hover id="Options.hover.btn" x="0" y="0" visible="0"/>
+  <layer id="Options.txt" image="txt.menu.options" x="0" y="0"/>
+  <Menu id="Options.menu" menugroup="main" next="View.menu" prev="Play.menu" x="0" y="0" h="16" w="0" relatw="1" menu="WA5:Options" normal="Options.up.btn" hover="Options.hover.btn" down="Options.down.btn" />
+</groupdef> 
+
+<groupdef id="menugroup.view" autowidthsource="View.txt" h="16">
+  <menu:button_normal id="View.up.btn" x="0" y="0"/>
+  <menu:button_pressed id="View.down.btn" x="0" y="0" visible="0"/>
+  <menu:button_hover id="View.hover.btn" x="0" y="0" visible="0"/>
+  <layer id="View.txt" image="txt.menu.view" x="0" y="0"/>
+  <Menu id="View.menu" menugroup="main" next="Help.menu" prev="Options.menu" x="0" y="0" h="16" w="0" relatw="1" menu="WA5:Windows" normal="View.up.btn" hover="View.hover.btn" down="View.down.btn" />
+</groupdef> 
+
+<groupdef id="menugroup.help" autowidthsource="Help.txt" h="16">
+  <menu:button_normal id="Help.up.btn" x="0" y="0"/>
+  <menu:button_pressed id="Help.down.btn" x="0" y="0" visible="0"/>
+  <menu:button_hover id="Help.hover.btn" x="0" y="0" visible="0"/>
+  <layer id="Help.txt" image="txt.menu.help" x="0" y="0"/>
+  <Menu id="Help.menu" menugroup="main" next="File.menu" prev="View.menu" x="0" y="0" h="16" w="0" relatw="1" menu="WA5:Help" normal="Help.up.btn" hover="Help.hover.btn" down="Help.down.btn" />
+</groupdef> 
+
+<groupdef id="menu.group" rectrgn="1">
+  <group id="menugroup.file"/>
+  <group id="menugroup.play"/>
+  <group id="menugroup.options"/>
+  <group id="menugroup.view"/>
+  <group id="menugroup.help"/>
+  <script id="mainmenu.script" file="scripts/menualign.maki" param="menugroup.file,menugroup.play,menugroup.options,menugroup.view,menugroup.help"/>
+</groupdef>
+
+<groupdef id="menugroup.pe_file" autowidthsource="label.txt" h="16">
+  <menu:button_normal id="up.btn" x="0" y="0"/>
+  <menu:button_pressed id="down.btn" x="0" y="0" visible="0"/>
+  <menu:button_hover id="hover.btn" x="0" y="0" visible="0"/>
+  <layer id="label.txt" image="txt.menu.file" x="0" y="0"/>
+  <Menu id="PE_File.menu" menugroup="pl" next="PE_Playlist.menu" prev="PE_Help.menu" x="0" y="0" h="16" w="0" relatw="1" menu="WA5:PE_File" normal="up.btn" hover="hover.btn" down="down.btn" />
+</groupdef> 
+
+<groupdef id="menugroup.pe_playlist" autowidthsource="label.txt" h="16">
+  <menu:button_normal id="up.btn" x="0" y="0"/>
+  <menu:button_pressed id="down.btn" x="0" y="0" visible="0"/>
+  <menu:button_hover id="hover.btn" x="0" y="0" visible="0"/>
+  <layer id="label.txt" image="txt.menu.playlist" x="0" y="0"/>
+  <Menu id="PE_Playlist.menu" menugroup="pl" next="PE_Sort.menu" prev="PE_File.menu" x="0" y="0" h="16" w="0" relatw="1" menu="WA5:PE_Playlist" normal="up.btn" hover="hover.btn" down="down.btn" />
+</groupdef>
+
+<groupdef id="menugroup.pe_sort" autowidthsource="label.txt" h="16">
+  <menu:button_normal id="up.btn" x="0" y="0"/>
+  <menu:button_pressed id="down.btn" x="0" y="0" visible="0"/>
+  <menu:button_hover id="hover.btn" x="0" y="0" visible="0"/>
+  <layer id="label.txt" image="txt.menu.sort" x="0" y="0"/>
+  <Menu id="PE_Sort.menu" menugroup="pl" next="PE_Help.menu" prev="PE_Playlist.menu" x="0" y="0" h="16" w="0" relatw="1" menu="WA5:PE_Sort" normal="up.btn" hover="hover.btn" down="down.btn" />
+</groupdef>
+
+<groupdef id="menugroup.pe_help" autowidthsource="label.txt" h="16">
+  <menu:button_normal id="up.btn" x="0" y="0"/>
+  <menu:button_pressed id="down.btn" x="0" y="0" visible="0"/>
+  <menu:button_hover id="hover.btn" x="0" y="0" visible="0"/>
+  <layer id="label.txt" image="txt.menu.help" x="0" y="0"/>
+  <Menu id="PE_Help.menu" menugroup="pl" next="PE_File.menu" prev="PE_Sort.menu" x="0" y="0" h="16" w="0" relatw="1" menu="WA5:PE_Help" normal="up.btn" hover="hover.btn" down="down.btn" />
+</groupdef>
+
+<groupdef id="menu.group.pl" rectrgn="1">
+  <group id="menugroup.pe_file"/>
+  <group id="menugroup.pe_playlist"/>
+  <group id="menugroup.pe_sort"/>
+  <group id="menugroup.pe_help"/>
+  <script id="mainmenu.script" file="scripts/menualign.maki" param="menugroup.pe_file,menugroup.pe_playlist,menugroup.pe_sort,menugroup.pe_help"/>
+</groupdef>
+
+<groupdef id="menugroup.ml_file" autowidthsource="label.txt" h="16">
+  <menu:button_normal id="up.btn" x="0" y="0"/>
+  <menu:button_pressed id="down.btn" x="0" y="0" visible="0"/>
+  <menu:button_hover id="hover.btn" x="0" y="0" visible="0"/>
+  <layer id="label.txt" image="txt.menu.file" x="0" y="0"/>
+  <Menu id="ML_File.menu" menugroup="ml" next="ML_View.menu" prev="ML_Help.menu" x="0" y="0" h="16" w="0" relatw="1" menu="WA5:ML_File" normal="up.btn" hover="hover.btn" down="down.btn" />
+</groupdef>
+
+<groupdef id="menugroup.ml_view" autowidthsource="label.txt" h="16">
+  <menu:button_normal id="up.btn" x="0" y="0"/>
+  <menu:button_pressed id="down.btn" x="0" y="0" visible="0"/>
+  <menu:button_hover id="hover.btn" x="0" y="0" visible="0"/>
+  <layer id="label.txt" image="txt.menu.view" x="0" y="0"/>
+  <Menu id="ML_View.menu" menugroup="ml" next="ML_Help.menu" prev="ML_File.menu" x="0" y="0" h="16" w="0" relatw="1" menu="WA5:ML_View" normal="up.btn" hover="hover.btn" down="down.btn" />
+</groupdef>
+
+<groupdef id="menugroup.ml_help" autowidthsource="label.txt" h="16">
+  <menu:button_normal id="up.btn" x="0" y="0"/>
+  <menu:button_pressed id="down.btn" x="0" y="0" visible="0"/>
+  <menu:button_hover id="hover.btn" x="0" y="0" visible="0"/>
+  <layer id="label.txt" image="txt.menu.help" x="0" y="0"/>
+  <Menu id="ML_Help.menu" menugroup="ml" next="ML_File.menu" prev="ML_View.menu" x="0" y="0" h="16" w="0" relatw="1" menu="WA5:ML_Help" normal="up.btn" hover="hover.btn" down="down.btn" />
+</groupdef>
+
+<groupdef id="menu.group.ml" rectrgn="1">
+  <group id="menugroup.ml_file"/>
+  <group id="menugroup.ml_view"/>
+  <group id="menugroup.ml_help"/>
+  <script id="mainmenu.script" file="scripts/menualign.maki" param="menugroup.ml_file,menugroup.ml_view,menugroup.ml_help"/>
+</groupdef>
+
+
+<groupdef id="wasabi.menubar" background="wasabi.frame.basetexture" h="17">
+  <layer
+    id="menubar.left"
+    x="0" y="0"
+    w="5" h="17"
+    image="wasabi.menubar.left"
+  />
+  <layer
+    id="menubar.center"
+    x="5" y="0"
+    w="-50" h="17"
+    relatw="1"
+    image="wasabi.menubar.center"
+  />
+  <layer
+    id="menubar.right"
+    x="-45" y="0"
+    w="45" h="17"
+    relatx="1"
+    image="wasabi.menubar.right"
+  />
+  <layer
+    id="menubar.right"
+    x="-45" y="0"
+    w="45" h="17"
+    relatx="1"
+    image="wasabi.menubar.right.overlay"
+  />
+  <layer
+    id="menubar.right.textoverlay"
+    x="-45" y="0"
+    w="45" h="17"
+    relatx="1"
+    image="wasabi.menubar.right.textoverlay"
+  />
+  <group id="menu.group" x="1" y="0"/>
+  <script id="mainmenuoverlay.script" file="scripts/mainmenuoverlay.maki" />
+</groupdef>
+
+<groupdef id="wasabi.menubar.pl" background="wasabi.frame.basetexture" h="17">
+  <layer
+    id="menubar.left"
+    x="0" y="0"
+    w="5" h="17"
+    image="wasabi.menubar.left"
+  />
+  <layer
+    id="menubar.center"
+    x="5" y="0"
+    w="-50" h="17"
+    relatw="1"
+    image="wasabi.menubar.center"
+  />
+  <layer
+    id="menubar.right"
+    x="-45" y="0"
+    w="45" h="17"
+    relatx="1"
+    image="wasabi.menubar.right"
+  />
+  <group id="menu.group.pl" x="1" y="0"/>
+</groupdef>
+
+<groupdef id="wasabi.menubar.ml" background="wasabi.frame.basetexture" h="17">
+  <layer
+    id="menubar.left"
+    x="0" y="0"
+    w="5" h="17"
+    image="wasabi.menubar.left"
+  />
+  <layer
+    id="menubar.center"
+    x="5" y="0"
+    w="-50" h="17"
+    relatw="1"
+    image="wasabi.menubar.center"
+  />
+  <layer
+    id="menubar.right"
+    x="-45" y="0"
+    w="45" h="17"
+    relatx="1"
+    image="wasabi.menubar.right"
+  />
+  <group id="menu.group.ml" x="1" y="0"/>
+</groupdef>

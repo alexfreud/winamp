@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JSAPI2::Config Api</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<script type="text/javascript" src="api2.js"></script>
+</head>
+<body style="FONT-FAMILY: MS Shell Dlg 2;">
+	<h2>Config API</h2>
+	<h3>Methods:</h3>
+	<input type="button" value="Set Property" onclick="ConfigSetPropertyClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Property Name:<input type="text" size="20" id="config_t_SetPropertyName_in" value="myProperty">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Property Type:
+	<input type="radio" name="pType" id="config_t_SetPropertyType_in" checked>string</input>
+	<input type="radio" name="pType" id="config_t_SetPropertyType_in">number</input>
+	<input type="radio" name="pType" id="config_t_SetPropertyType_in">boolean</input>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Property Value:<input type="text" size="20" id="config_t_SetPropertyValue_in" value="myPropertyValue">
+	<br><br>
+	<input type="button" value="Get Property" onclick="ConfigGetPropertyClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Property Value:<input type="text" readonly size="20" id="config_t_GetPropertyValue">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Property Name:<input type="text" size="20" id="config_t_GetPropertyName_in" value="myProperty">
+</body>
+</html>

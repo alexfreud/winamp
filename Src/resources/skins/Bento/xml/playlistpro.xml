@@ -1,0 +1,62 @@
+<groupdef id="PlaylistPro.list.group" minimum_h="64" background="studio.BaseTexture">
+
+	<grid
+    fitparent="1"
+		topleft="sui.pl.search.box.1"
+		top="sui.pl.search.box.2"
+		topright="sui.pl.search.box.3"
+		left="sui.pl.search.box.4"
+		middle="sui.pl.search.box.5"
+		right="sui.pl.search.box.6"
+		bottomleft="sui.pl.search.box.7"
+		bottom="sui.pl.search.box.8"
+		bottomright="sui.pl.search.box.9"
+		sysregion="1"
+	/>
+	
+	<list id="PlaylistPro.list" x="4" y="0" w="-6" h="-24" relatw="1" relath="1" nocolheader="1" antialias="1" font="arial" multiselect="1"/>
+	<text id="PlaylistPro.list.news" x="3" y="-22" w="-6" h="20" relaty="1" relatw="1" text="Results found: 22 items" font="arial" color="wasabi.list.text" align="center" antialias="1" fontsize="17"/>
+	<layer x="0" y="-1" relaty="1" w="0" relatw="1" h="20" resize="bottom" />
+	
+</groupdef>
+
+<container id="searchresults" name="Search Results" dynamic="1" default_visible="0" nomenu="1" nofocusapponclose="1" autoclose="1">
+	<layout id="normal" noparent="1" ontop="1" noactivation="1" nodock="1" move="0" autoclose="1">
+		<group id="PlaylistPro.list.group" x="1" y="0" h="0" w="-12" relath="1" relatw="1"/>
+		<layer id="1px.patch" x="-11" y="0" w="1" relath="1" relatx="1" h="20" image="sui.pl.search.box.6" sysregion="1"/>
+	</layout>
+</container>
+
+
+<groupdef id="wasabi.edits" xuitag="Wasabi:EditBox2" embed_xui="wasabi.edit.box" h="24">
+	<button id="pl.search.edit.rect" x="1" y="2" w="-4" h="22" relatw="1" relath="0" rectrgn="1" tooltip="Click to search the playlist (Right-Click for search history)" cursor="IDC_IBEAM"/>
+	<text id="pl.search.edit.searchhelp" x="1" y="2" w="-5" h="19" relatw="1" antialias="1" color="wasabi.list.text" text="Search in Playlist" ghost="1" font="arial" alpha="230" fontsize="16"/>
+	<edit id="wasabi.edit.box" x="1" y="0" w="-21" h="22" relatw="1" relath="0" autoselect="1" visible="0"/>
+
+<button id="pl.search.edit.clear.text" x="-20" y="2" h="19" w="20" relatx="1" rectrgn="1" image="sui.pl.search.stop.bgv" visible="0"/>
+<button id="pl.search.edit.clear" x="-20" y="2" h="19" w="20" relatx="1" rectrgn="1" image="sui.pl.search.stop.1" hoverimage="sui.pl.search.stop.1" downimage="sui.pl.search.stop.3" cursor="IDC_HAND" tooltip="Clear Search" visible="0"/>
+</groupdef>
+
+<groupdef id="player.component.playlist.searchbar.search" h="30">
+	<grid x="0" y="0" h="31" w="0" relatw="1"
+		left="sui.pl.search.bgv.1" middle="sui.pl.search.bgv.2" right="sui.pl.search.bgv.3"/>
+		
+	<grid x="0" y="0" h="30" w="0" relatw="1"
+		left="sui.pl.search.bg.1" middle="sui.pl.search.bg.2" right="sui.pl.search.bg.3"/>
+	
+	<button id="pl.search.go" x="-26" y="4" h="19" w="20" relatx="1" image="sui.pl.search.go.1" hoverimage="sui.pl.search.go.2" downimage="sui.pl.search.go.3" tooltip="Go Search" rectrgn="1"/>
+	<Wasabi:EditBox2 id="pl.search.edit" x="4" y="4" relatw="1" w="-10" h="20" text=""/>
+</groupdef>
+<groupdef id="PlaylistPro.topbar">
+	<group id="player.component.playlist.searchbar.search" x="0" y="0" w="0" relatw="1"/>
+</groupdef>
+
+<groupdef id="PlaylistPro.xui" wantfocus="1" rectrgn="1" xuitag="PlaylistPro" embed_xui="wdh.playlist">
+	<!--rect fitparent="1" filled="1" color="wasabi.window.background"/-->
+		
+	<windowholder id="wdh.playlist" h="0" x="0" w="0" relath="1" relatw="1" autofocus="0" wantfocus="0" autoclose="1" autoopen="1" autoavailable="1" hold="guid:{45f3f7c1-a6f3-4ee6-a15e-125e92fc3f8d}"/>
+
+<group id="PlaylistPro.topbar" x="0" y="0" w="0" h="30" relatw="1" visible="0"/>
+		<script file="scripts/playlistpro.maki"/>
+</groupdef>
+

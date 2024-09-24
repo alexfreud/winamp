@@ -1,0 +1,162 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TRANSCODE DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | DS_CENTERMOUSE | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Converting..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_CURRENTTRACK,7,7,172,8
+    CONTROL         "",IDC_TRACKPROGRESS,"msctls_progress32",WS_BORDER,7,18,172,14
+    LTEXT           "",IDC_TOTALCAPTION,7,38,172,8
+    CONTROL         "",IDC_TOTALPROGRESS,"msctls_progress32",WS_BORDER,7,49,172,14
+    PUSHBUTTON      "Abort",IDC_ABORT,67,70,50,13
+END
+
+IDD_TRANSCODE_CONFIG DIALOGEX 0, 0, 271, 319
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Format Converter Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Output File Naming Scheme",IDC_STATIC,7,4,256,80
+    LTEXT           "Specify the destination folder to store your converted music:",IDC_STATIC,13,15,231,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_ROOTDIR,14,26,192,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,207,26,50,13
+    LTEXT           "Specify the naming scheme:",IDC_STATIC,13,42,198,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_NAMING,14,52,192,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Format Help",IDC_FORMATHELP,207,52,50,13
+    CONTROL         "Use old file name and path (just change the extension)",IDC_USE_FILENAME,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,70,219,10
+    GROUPBOX        "Encoding Format",IDC_STATIC,7,87,256,40
+    LTEXT           "Select the format you wish to convert to:",IDC_STATIC,13,97,135,8
+    COMBOBOX        IDC_ENCFORMAT,14,108,243,116,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_ENC_CONFIG,7,129,256,169,NOT WS_VISIBLE
+    CONTROL         "Show this before each convert",IDC_SHOWEVERY,"Button",BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,7,304,140,9
+    DEFPUSHBUTTON   "Ok",IDOK,159,302,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,213,302,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TRANSCODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_TRANSCODE_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 315
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_FORMAT_CONVERTER "Nullsoft Format Converter v%s"
+    65535                   "{699B8BA5-B292-4aba-8047-D46B0DF4E1D6}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FORMAT_CONVERTER    "Format Converter"
+    IDS_DONE                "Done"
+    IDS_TRANSCODING_FAILED  "Transcoding Failed"
+    IDS_ABORT               "Abort"
+    IDS_TRACKS_DONE_REMAINING_FAILED 
+                            "%d tracks done, %d tracks remaining, %d failed"
+    IDS_FILENAME_FORMAT_HELP 
+                            "You may enter a filename format string for your copied files.\nIt can contain \\ or / to delimit a path, and the following keywords:\n\n<Artist> - inserts the artist with the default capitalization\n<ARTIST> - inserts the artist in all uppercase\n<artist> - inserts the artist in all lowercase\n<Albumartist>/<ALBUMARTIST>/<albumartist> - inserts the album artist\n<Album>/<ALBUM>/<album> - inserts the album\n<year> - inserts the album year\n<Genre>/<GENRE>/<genre> - inserts the album genre\n<Title>/<TITLE>/<title> - inserts the track title\n#, ##, ### - inserts the track number, with leading 0s if ## or ###\n<filename> - uses the old filename of the file (not the full path)\n<disc> - inserts the disc number\n<discs> - inserts the total discs number (e.g. CD<disc> of <discs>)"
+    IDS_FILENAME_FORMAT_HELP_TITLE "Filename format help"
+    IDS_CHOOSE_FOLDER       "Choose a folder or create a new one"
+    IDS_SELECT_WHERE_TO_SAVE "Choose where to save converted files"
+    IDS_DO_YOU_ALSO_WANT_TO_REMOVE_SETTINGS 
+                            "Do you also want to remove the saved settings file for this plug-in?"
+    IDS_TRANSCODING_ABORTED "Transcoding Aborted"
+    IDS_REMOVE_PARTIAL_FILE "Do you want to remove the partially transcoded file\n '%s' or keep it?\n\n(Note: it is likely to be invalid and not play correctly)"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

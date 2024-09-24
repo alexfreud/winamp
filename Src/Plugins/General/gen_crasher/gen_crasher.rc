@@ -1,0 +1,193 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CRASHDLG DIALOGEX 0, 0, 187, 42
+STYLE DS_SYSMODAL | DS_SETFONT | DS_SETFOREGROUND | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY
+CAPTION "Winamp Error Reporter"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON            102,IDC_BMP_LOGO,8,6,21,20,SS_REALSIZEIMAGE
+    LTEXT           "",IDC_LBL_STEP,48,6,127,10
+    CONTROL         "",IDC_PRG_COLLECT,"msctls_progress32",WS_BORDER,48,19,127,9
+END
+
+IDD_CONFIG DIALOGEX 0, 0, 273, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "General",IDC_GRP_GENERAL,0,0,273,64
+    CONTROL         "Auto Restart",IDC_CHK_RESTART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,12,90,10
+    CONTROL         "Compress results",IDC_CHK_COMPRESS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,24,90,10
+    CONTROL         "Create Dump File",IDC_CHK_CREATEDMP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,36,90,10
+    CONTROL         "Create Log File",IDC_CHK_CREATELOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,49,90,10
+    GROUPBOX        "",IDC_GRP_EMAIL,101,13,165,45
+    CONTROL         "Send Data",IDC_CHK_SEND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,12,46,10
+    CONTROL         "Using default email program",IDC_RB_USECLIENT,"Button",BS_AUTORADIOBUTTON,106,27,105,10
+    CONTROL         "Using SMTP server",IDC_RB_USESMTP,"Button",BS_AUTORADIOBUTTON,106,41,75,10
+    PUSHBUTTON      "SMTP Settings...",IDC_BTN_SMTP,185,39,75,13
+    GROUPBOX        "Dump File",IDC_GRP_DUMP,0,67,273,66
+    LTEXT           "OS version:",IDC_LBL_OSVERSION_CAPTION,6,78,38,8
+    LTEXT           "",IDC_LBL_OSVERSION,48,78,218,8
+    LTEXT           "Dll path:",IDC_LBL_DLLPATH_CAPTION,6,90,38,8
+    LTEXT           "",IDC_LBL_DLLPATH,48,90,218,8,SS_PATHELLIPSIS
+    LTEXT           "Dll version:",IDC_LBL_DLLVERSION_CAPTION,6,102,38,8
+    LTEXT           "unknown [unable to load]",IDC_LBL_DLLVERSION,48,102,219,8
+    LTEXT           "Type:",IDC_LBL_DMPTYPE,6,116,20,8
+    COMBOBOX        IDC_CMB_DMPTYPE,30,114,237,84,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Log File",IDC_GRP_LOG,0,136,273,28
+    CONTROL         "System info",IDC_CHK_LOGSYSTEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,149,53,10
+    CONTROL         "Stack data",IDC_CHK_LOGSTACK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,149,50,10
+    CONTROL         "Registry state",IDC_CHK_LOGREGISTRY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,149,62,10
+    CONTROL         "Loaded modules",IDC_CHK_LOGMODULE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,183,149,67,10
+    LTEXT           "Save report in:",IDC_LBL_PATH,6,180,50,8
+    EDITTEXT        IDC_EDT_PATH,60,178,188,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_PATH,249,178,19,12
+    GROUPBOX        "File Paths",IDC_GRP_ZIP,1,168,272,76
+    LTEXT           "Zip filename:",IDC_LBL_ZIPNAME,6,196,50,8
+    EDITTEXT        IDC_EDT_ZIPNAME,60,194,208,12,ES_AUTOHSCROLL
+    LTEXT           "Dump filename:",IDC_LBL_DMPNAME,6,212,50,8
+    EDITTEXT        IDC_EDT_DMPNAME,60,210,208,12,ES_AUTOHSCROLL
+    LTEXT           "Log filename:",IDC_LBL_LOGNAME,6,229,50,8
+    EDITTEXT        IDC_EDT_LOGNAME,60,227,208,12,ES_AUTOHSCROLL
+    CONTROL         "Do not ask questions",IDC_CHK_SILENT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,281,0,90,10
+END
+
+IDD_DLG_SMTP DIALOGEX 0, 0, 180, 155
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "SMTP Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Server Details",IDC_GRP_AUTH2,5,5,170,63,BS_LEFT
+    LTEXT           "Server:",IDC_LBL_SERVER,12,18,54,8
+    EDITTEXT        IDC_EDT_SERVER,70,16,100,12,ES_AUTOHSCROLL
+    LTEXT           "Port:",IDC_LBL_PORT,12,33,54,8
+    EDITTEXT        IDC_EDT_PORT,70,32,21,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_RIGHT
+    LTEXT           "Sender Address:",IDC_LBL_ADDRESS,12,50,54,8
+    EDITTEXT        IDC_EDT_ADDRESS,70,48,100,14,ES_AUTOHSCROLL
+    GROUPBOX        "Authentication",IDC_GRP_AUTH,5,71,170,62,BS_LEFT
+    CONTROL         "Server requires authentication",IDC_CHK_AUTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,84,116,9
+    LTEXT           "User:",IDC_LBL_USER,11,100,34,8
+    EDITTEXT        IDC_EDT_USER,49,97,120,12,ES_AUTOHSCROLL
+    LTEXT           "Password:",IDC_LBL_PWD,11,116,34,8
+    EDITTEXT        IDC_EDT_PWD,49,113,120,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Close",IDCANCEL,125,137,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CRASHDLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_DLG_SMTP, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 175
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 150
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_FEEDBACK      "Error Feedback"
+    IDS_UNKNOWN             "unknown"
+    IDS_LOADED_OK           "loaded"
+    IDS_UNABLE_TO_LOAD      "unable to load"
+    IDS_NOT_FOUND           "not found"
+    IDS_UNABLE_TO_SAVE_SETTINGS "Unable to save error feedback settings"
+    IDS_SAVE_ERROR          "Save Error"
+    IDS_SELECT_FOLDER_FOR_ERROR_INFO 
+                            "Select folder where the error information will be saved to"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_ERROR_FEEDBACK "Nullsoft Error Feedback v%s"
+    65535                   "{092A97EF-7DC0-41a7-80D1-90DEEB18F12D}"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

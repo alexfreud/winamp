@@ -1,0 +1,939 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VIEW_WAIT DIALOGEX 0, 0, 291, 242
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Show Info",IDC_BTN_SHOWINFO,"Button",BS_OWNERDRAW | WS_TABSTOP,251,231,40,11
+    CTEXT           "",IDC_LBL_TEXT,0,19,290,209,SS_CENTERIMAGE
+END
+
+IDD_PREFSCDRIPFR DIALOGEX 0, 0, 272, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",WS_TABSTOP,0,0,271,246
+END
+
+IDD_PREFS_CDRIP1 DIALOGEX 0, 0, 260, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Output Filenames",IDC_STATIC,4,3,256,108
+    LTEXT           "Specify the destination folder for ripped tracks:",IDC_STATIC,10,15,204,8
+    EDITTEXT        IDC_DESTPATH,10,26,198,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BUTTON1,208,26,44,13
+    LTEXT           "Specify the naming convention for ripped tracks:",IDC_STATIC,10,44,203,8
+    EDITTEXT        IDC_FILENAMEFMT,10,55,198,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Format Help",IDC_BUTTON2,208,55,44,13
+    CONTROL         "Use uppercase file extensions  (i.e. MP3 instead of mp3)",IDC_UPPERCASEEXT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,73,192,10
+    LTEXT           "",IDC_FMTOUT,10,87,244,18
+    GROUPBOX        "Tagging Settings",IDC_STATIC,4,115,256,110
+    CONTROL         "Automatically add ripped files to Library database",IDC_CHECK_ML,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,128,193,10
+    CONTROL         "Automatically add tags with metadata to ripped files",IDC_TAGFILES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,141,183,10
+    CONTROL         "Automatically calculate replay gain",IDC_AUTO_RG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,154,126,10
+    CONTROL         "Write track numbers as track/total (e.g. 12/15)",IDC_TOTAL_TRACKS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,167,167,10
+    LTEXT           "When tagging ripped CDs, make track numbers start with:",IDC_STATIC,10,181,186,8
+    EDITTEXT        IDC_EDIT2,198,179,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Add the following to the comment field of ripped files:",IDC_STATIC,10,195,174,8
+    EDITTEXT        IDC_EDIT1,10,206,243,13,ES_AUTOHSCROLL
+END
+
+IDD_PREFS_CDRIP2 DIALOGEX 0, 0, 260, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Encoding Format",IDC_STATIC,4,3,256,44
+    LTEXT           "Select the format you wish to encode to:",IDC_STATIC,12,15,240,11
+    COMBOBOX        IDC_ENCFORMAT,20,27,233,116,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_ENC_CONFIG,"Static",SS_BLACKRECT | NOT WS_VISIBLE,4,51,255,167
+END
+
+IDD_VIEW_CDROM_EXTRACT DIALOGEX 0, 0, 269, 156
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "Ripping from CD..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Current Track",IDC_CTFRAME,4,7,261,70
+    EDITTEXT        IDC_CURTRACK,16,18,240,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "",IDC_STATUS,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,16,31,240,18
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,16,52,240,14
+    GROUPBOX        "All Tracks",IDC_STATIC,4,72,261,62
+    LTEXT           "",IDC_STATUS2,16,88,240,22
+    CONTROL         "Progress1",IDC_PROGRESS2,"msctls_progress32",WS_BORDER,16,114,240,14
+    PUSHBUTTON      "Hide Window",IDCANCEL,76,139,57,13
+    PUSHBUTTON      "Cancel",IDC_BUTTON1,137,139,57,13
+END
+
+IDD_PREFS_CDRIP4 DIALOGEX 0, 0, 260, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Playlist Creation Settings",IDC_STATIC,4,3,256,152
+    LTEXT           "When Winamp completes ripping an entire CD, it can automatically generate a playlist of the ripped tracks.",IDC_STATIC,10,15,243,18
+    LTEXT           "Create the following playlists:",IDC_STATIC,10,37,230,10
+    CONTROL         "Library playlist",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,49,80,10
+    CONTROL         ".M3U playlist",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,62,57,10
+    CONTROL         "Use extended M3U playlist format",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,74,121,10
+    CONTROL         ".PLS playlist",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,86,53,10
+    LTEXT           "Specify the naming convention for M3U and PLS playlists:",IDC_STATIC,10,102,183,8
+    EDITTEXT        IDC_FILENAMEFMT,10,114,196,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Format Help",IDC_BUTTON2,207,114,45,13
+    LTEXT           "",IDC_FMTOUT,13,131,242,18
+END
+
+IDD_VIEW_CDROM_EX2 DIALOGEX 0, 0, 291, 242
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_CDINFO,1,0,288,18,SS_NOPREFIX
+    CONTROL         "List4",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_TABSTOP,0,19,290,209
+    CONTROL         "Rip Options",IDC_RIPOPTS,"Button",BS_OWNERDRAW | WS_TABSTOP,0,231,48,11
+    CONTROL         "Cancel Rip",IDC_CANCEL_RIP,"Button",BS_OWNERDRAW | WS_TABSTOP,52,231,44,11
+    CONTROL         "Show Info",IDC_BTN_SHOWINFO,"Button",BS_OWNERDRAW | WS_TABSTOP,251,231,40,11
+END
+
+IDD_VIEW_CDROM_BURN DIALOGEX 0, 0, 291, 242
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_CDINFO,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,1,0,255,17
+    CONTROL         1101,IDC_LOGO,"Static",SS_BITMAP | SS_NOTIFY | SS_REALSIZEIMAGE,260,2,31,15
+    CONTROL         "List4",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_OWNERDATA | LVS_NOSORTHEADER | WS_TABSTOP,0,19,290,209
+    CONTROL         "Add...",IDC_ADD,"Button",BS_OWNERDRAW | WS_TABSTOP,0,231,40,11
+    CONTROL         "Burn Options",IDC_BURN_OPTS,"Button",BS_OWNERDRAW | NOT WS_VISIBLE | WS_TABSTOP,0,231,46,11
+    CONTROL         "Clear",IDC_CLEAR,"Button",BS_OWNERDRAW | WS_TABSTOP,42,231,40,11
+    CONTROL         "Cancel Burn",IDC_CANCEL_BURN,"Button",BS_OWNERDRAW | NOT WS_VISIBLE | WS_TABSTOP,51,231,46,11
+    CONTROL         "Burn",IDC_BURN,"Button",BS_OWNERDRAW | WS_TABSTOP,84,231,40,11
+    CONTROL         "Show Info",IDC_BTN_SHOWINFO,"Button",BS_OWNERDRAW | WS_TABSTOP,251,231,40,11
+END
+
+IDD_BURN_ADD_STATUS DIALOGEX 0, 0, 160, 42
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "CD Burner"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Adding tracks to burner...",IDC_STAT,7,7,146,8
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,7,21,146,14
+END
+
+IDD_BURN DIALOGEX 0, 0, 251, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Burn speed:",IDC_STATIC,7,9,39,8
+    COMBOBOX        IDC_COMBO1,50,7,71,154,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Want to burn at your computer's maximum speed?",IDC_PRO1,7,23,168,8
+    CONTROL         "Click here",IDC_PRO2,"Button",BS_OWNERDRAW | WS_TABSTOP,176,23,35,10
+    CONTROL         "Enable Burn-proof mode (when available)",IDC_CHECK2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,35,145,10
+    LTEXT           "Burn-proof mode is supported on newer CD burners and helps ensure that the burn does not fail. The downside of burn-proof mode is higher memory use. Burn-proof mode is highly recommended.",IDC_STATIC,20,47,224,26
+    CONTROL         "Test mode (do not actually write to media)",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,77,147,10
+    LTEXT           "Test mode lets you go through the burning process without actually writing to the physical CD. This can be useful to test system performance without risking making unusable media.",IDC_STATIC,20,91,222,26
+    DEFPUSHBUTTON   "Burn",IDOK,71,123,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,124,123,50,13
+END
+
+IDD_WAITFORCDR DIALOGEX 0, 0, 186, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Waiting for blank CD..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_TEXT,7,7,172,8
+    PUSHBUTTON      "Cancel",IDCANCEL,64,42,50,14
+END
+
+/* IDD_UPSELL_RIPPING DIALOGEX 0, 0, 223, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rip CDs faster in MP3"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "With Winamp Pro you can:\n\t- Rip in MP3\n\t- Burn and Rip Faster\n\t- Support Winamp",IDC_STATIC,7,7,209,33
+    LTEXT           "The free version of Winamp will only rip CDs at 8x speed in AAC.",IDC_STATIC,7,43,209,10
+    CONTROL         "Never show me this again",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,57,97,10
+    PUSHBUTTON      "More Info",IDC_BUTTON1,7,73,60,13
+    PUSHBUTTON      "Rip at 8x in AAC",IDOK,70,73,60,13
+    PUSHBUTTON      "Cancel Rip",IDCANCEL,166,73,50,13
+END */
+
+IDD_NOBURN DIALOGEX 0, 0, 300, 58
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cannot burn track"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Skip File",IDOK,192,41,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,246,41,50,13
+    EDITTEXT        IDC_MESSAGE2,4,4,292,32,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+IDD_VIEW_RIPBURN DIALOGEX 0, 0, 294, 236
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Available drives:",IDC_LBL_DRIVES,0,2,66,12,SS_CENTERIMAGE
+    LTEXT           "Drive Info:",IDC_LBL_INFO_DRIVE,70,2,222,69
+    LISTBOX         IDC_LIST_DRIVES,0,18,66,205,LBS_SORT | LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_WANTKEYBOARDINPUT | NOT WS_BORDER | WS_TABSTOP
+    LTEXT           "Drive Letter:",IDC_LBL_DRIVE_LETTER,80,18,58,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_LBL_DRIVE_LETTER_VAL,"Static",SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | NOT WS_VISIBLE | WS_GROUP,140,18,150,8
+    LTEXT           "Description:",IDC_LBL_DRIVE_DESCRIPTION,80,28,58,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_LBL_DRIVE_DESCRIPTION_VAL,"Static",SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | NOT WS_VISIBLE | WS_GROUP,140,28,150,8
+    LTEXT           "Bus type:",IDC_LBL_DRIVE_BUS,80,38,58,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_LBL_DRIVE_BUS_VAL,"Static",SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | NOT WS_VISIBLE | WS_GROUP,140,38,150,8
+    LTEXT           "Supported Types:",IDC_LBL_DRIVE_TYPES,80,48,58,8,NOT WS_VISIBLE
+    LTEXT           "",IDC_LBL_DRIVE_TYPES_VAL,140,48,150,16,SS_ENDELLIPSIS | NOT WS_VISIBLE
+    LTEXT           "Medium Info:",IDC_LBL_INFO_MEDIUM,70,77,222,146
+//  LTEXT           "Medium information is not available due to the Sonic Burning engine not being installed.\n\nPlease install the Sonic Burning engine if you want to see medium information.",IDC_LBL_MEDIUM_UPDATE,110,112,150,51
+    LTEXT           "This feature is not available in this Winamp build.\n\nDrive info and CD Burning will return for the next release.",IDC_LBL_MEDIUM_UPDATE,110,112,150,51
+    LTEXT           "Type:",IDC_LBL_MEDIUM_TYPE,80,91,50,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_LBL_MEDIUM_DISC_VAL,"Static",SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | NOT WS_VISIBLE | WS_GROUP,140,91,150,8
+    LTEXT           "Format:",IDC_LBL_MEDIUM_FORMAT,80,101,50,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_LBL_MEDIUM_FORMAT_VAL,"Static",SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | NOT WS_VISIBLE | WS_GROUP,140,101,150,8
+    LTEXT           "Tracks #:",IDC_LBL_MEDIUM_TRACKN,80,111,50,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_LBL_MEDIUM_TRACKN_VAL,"Static",SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | NOT WS_VISIBLE | WS_GROUP,140,111,150,8
+    LTEXT           "Capacity:",IDC_LBL_MEDIUM_CAPACITY,80,121,50,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_LBL_MEDIUM_CAPACITY_VAL,"Static",SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | NOT WS_VISIBLE | WS_GROUP,140,121,150,8
+    LTEXT           "Recordable:",IDC_LBL_MEDIUM_RECORDABLE,80,135,50,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_LBL_MEDIUM_RECORDABLE_VAL,"Static",SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | NOT WS_VISIBLE | WS_GROUP,140,135,150,8
+    LTEXT           "Erasable:",IDC_LBL_MEDIUM_ERASEABLE,80,145,50,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_LBL_MEDIUM_ERASEABLE_VAL,"Static",SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | NOT WS_VISIBLE | WS_GROUP,140,145,150,8
+    LTEXT           "Additional Info:",IDC_LBL_MEDIUM_ADDINFO,80,159,50,8,NOT WS_VISIBLE
+    LTEXT           "",IDC_LBL_MEDIUM_ADDINFO_VAL,140,159,149,8,SS_ENDELLIPSIS | NOT WS_VISIBLE
+    CONTROL         "Refresh List",IDC_BTN_REFRESH,"Button",BS_OWNERDRAW | WS_TABSTOP,0,225,67,11
+END
+
+IDD_VIEW_CONTAINER DIALOGEX 0, 0, 276, 166
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_VIEW_CDROM DIALOGEX 0, 0, 291, 242
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_CDINFO,1,0,173,18,SS_NOPREFIX
+    LTEXT           "",IDC_CDINFO2,174,0,116,18
+    CONTROL         "List4",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_TABSTOP,0,19,290,209
+    CONTROL         "Play",IDC_BUTTON_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,0,231,35,11
+    CONTROL         "Enqueue",IDC_BUTTON_ENQUEUE,"Button",BS_OWNERDRAW | WS_TABSTOP,39,231,38,11
+    CONTROL         "Rip",IDC_BUTTON_EXTRACT,"Button",BS_OWNERDRAW | WS_TABSTOP,81,231,32,11
+    CONTROL         "Eject CD",IDC_BUTTON_EJECT,"Button",BS_OWNERDRAW | WS_TABSTOP,117,231,42,11
+    CONTROL         "Show Info",IDC_BTN_SHOWINFO,"Button",BS_OWNERDRAW | WS_TABSTOP,251,231,40,11
+END
+
+IDD_VIEW_INFO DIALOGEX 0, 0, 291, 242
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Show Info",IDC_BTN_SHOWINFO,"Button",BS_OWNERDRAW | WS_TABSTOP,251,231,40,11
+    CTEXT           "\n\n\nAnother instance of Winamp has locked this drive.\nYou will need to wait or cancel the operation.",IDC_LBL_TEXT,0,19,290,209
+END
+
+IDD_VIEW_CDROM_DATA DIALOGEX 0, 0, 478, 474
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+IDD_COMMANDBAR_DATA DIALOGEX 0, 0, 291, 14
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDC_BTN_PLAYEX,0,0,75,14,WS_GROUP
+    PUSHBUTTON      "Copy...",IDC_BTN_COPY,83,0,50,14
+    PUSHBUTTON      "",IDC_BTN_EJECT,265,0,24,14
+    CONTROL         "",IDC_LBL_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_CENTERIMAGE | SS_WORDELLIPSIS | WS_GROUP,137,0,108,14
+END
+
+IDD_FILECOPY_PREPARE DIALOGEX 0, 0, 279, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Copy Files"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_BTN_OPTIONS,4,43,59,14
+    DEFPUSHBUTTON   "OK",IDOK,169,43,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,225,43,50,14
+    EDITTEXT        IDC_EDT_PATH,10,83,259,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BTN_BROWSE,219,98,50,14
+    CONTROL         "Add files to Library database",IDC_CHK_ADDTOMLDB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,123,259,10
+    CONTROL         "Use custom naming",IDC_CHK_CUSTOMNAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,135,259,10
+    EDITTEXT        IDC_EDT_NAMEFORMAT,20,147,249,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Help",IDC_BTN_HELP,219,179,50,14
+    LTEXT           "",IDC_LBL_MESSAGE,68,6,207,28
+    CONTROL         "Destination folder:",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,10,73,259,8
+    GROUPBOX        "",IDC_GRP_OPTIONS,4,65,271,135
+    CONTROL         "",IDC_PIC_LOGO,"Static",SS_BITMAP | SS_REALSIZEIMAGE,10,6,15,13
+    CONTROL         "",IDC_LBL_EXAMPLE,"Static",SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | WS_GROUP,56,162,211,8
+    CONTROL         "Example:",IDC_LBL_EXAMPLE_TITLE,"Static",SS_SIMPLE | WS_GROUP,22,162,30,8
+    CONTROL         "Free:",IDC_LBL_FREE_TITLE,"Static",SS_SIMPLE | WS_GROUP,12,97,18,8
+    CONTROL         "Required:",IDC_LBL_REQUIRED_TITLE,"Static",SS_SIMPLE | WS_GROUP,12,106,32,8
+    LTEXT           "",IDC_LBL_FREE,49,97,113,8
+    LTEXT           "",IDC_LBL_REQUIRED,49,106,113,8
+END
+
+IDD_FILECOPY_PROGRESS DIALOGEX 0, 0, 279, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "Copy Files"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,225,43,50,14
+    CONTROL         "",IDC_PIC_LOGO,"Static",SS_BITMAP | SS_REALSIZEIMAGE,10,6,15,13
+    LTEXT           "",IDC_LBL_TASK,68,6,207,9
+    CONTROL         "",IDC_PRG_TOTAL,"msctls_progress32",WS_BORDER,68,27,207,10
+    LTEXT           "",IDC_LBL_OPERATION,68,16,207,9
+END
+
+IDD_SIMPLEHELP DIALOGEX 0, 0, 148, 123
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_NOFAILCREATE | WS_POPUP | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDCANCEL,90,102,50,14
+    EDITTEXT        IDC_EDT_TEXT,7,39,133,50,ES_MULTILINE | ES_READONLY | ES_WANTRETURN | NOT WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    LTEXT           "",IDC_LBL_CAPTION,7,7,133,24
+END
+
+IDD_FILECOPY_QUESTION DIALOGEX 0, 0, 248, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,136,46,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,192,46,50,14
+    LTEXT           "Label",IDC_LBL_MESSAGE,53,6,189,23
+    CONTROL         "",IDC_CHECKBOX1,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,6,35,236,10
+    PUSHBUTTON      "Extra1",IDC_BTN_EXTRA1,80,46,50,14,NOT WS_VISIBLE
+    ICON            32514,IDC_PIC_ICON,6,6,21,20,SS_REALSIZEIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LISTITEM_CDDRIVE    BITMAP                  "resources\\cdrom_32x32_24.bmp"
+IDB_LISTBOX_BACK        BITMAP                  "resources\\listbox_back_2x68x24.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTEXTMENUS MENU 
+BEGIN
+    POPUP "ExtractMenu"
+    BEGIN
+        MENUITEM "CD ripping preferences...",   40001
+        MENUITEM SEPARATOR
+        MENUITEM "Rip all tracks",              40002
+        MENUITEM "Rip selected tracks",         40003
+    END
+    POPUP "CdromMenu"
+    BEGIN
+        MENUITEM "Play selection\tEnter",       40004
+        MENUITEM "Enqueue selection\tShift+Enter", 40005
+        MENUITEM SEPARATOR
+        MENUITEM "Select All\tCtrl+A",          ID_CDROMMENU_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "Play all tracks",             40006
+        MENUITEM "Enqueue all tracks",          40007
+        MENUITEM SEPARATOR
+        MENUITEM "Edit &CD Info...\tAlt+3",     40008
+        POPUP "Rip"
+        BEGIN
+            MENUITEM "Rip selected track(s)",       40009
+            MENUITEM "Rip all tracks",              40010
+            MENUITEM SEPARATOR
+            MENUITEM "CD ripping preferences...",   40011
+        END
+    END
+    POPUP "CdromMenu2"
+    BEGIN
+        MENUITEM "Play audio CD",               40006
+        MENUITEM "Enqueue audio CD",            40007
+        MENUITEM SEPARATOR
+        MENUITEM "Rip audio CD",                40010
+        MENUITEM "CD ripping preferences...",   40011
+        MENUITEM SEPARATOR
+        MENUITEM "Eject CD",                    40012
+        MENUITEM SEPARATOR
+        MENUITEM "Help",                        ID_CDROMMENU_EXTRACT_HELP
+    END
+    POPUP "BurnAddMenu"
+    BEGIN
+        MENUITEM "Files...",                    40013
+        MENUITEM "Folder...",                   40014
+        MENUITEM SEPARATOR
+        MENUITEM "Current playlist",            40015
+    END
+    POPUP "BurnContextMenu"
+    BEGIN
+        MENUITEM "Play selection\tEnter",       40016
+        MENUITEM "Enqueue selection\tShift+Enter", 40017
+        MENUITEM SEPARATOR
+        MENUITEM "Select all\tCtrl+A",          ID_BURNCONTEXTMENU_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "Move selected items up\tAlt+Up", 40018
+        MENUITEM "Move selected items down\tAlt+Down", 40019
+        MENUITEM SEPARATOR
+        MENUITEM "Remove selected items\tDel",  40020
+        MENUITEM SEPARATOR
+        MENUITEM "Burn...",                     40021
+    END
+    POPUP "RipOptions"
+    BEGIN
+        POPUP "Priority"
+        BEGIN
+            MENUITEM "Highest",                     40022
+            MENUITEM "Above normal",                40023
+            MENUITEM "Normal",                      40024
+            MENUITEM "Below normal",                40025
+            MENUITEM "Lowest",                      40026
+            MENUITEM "Idle",                        40027
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Ripping Status Window",      40028
+        MENUITEM SEPARATOR
+        MENUITEM "&Eject CD when complete",     40029
+        MENUITEM "&Play tracks when complete",  40030
+        MENUITEM "&Close view when complete",   40031
+    END
+    POPUP "BurnOptions"
+    BEGIN
+        MENUITEM "&Burning Status Window",      40028
+        MENUITEM SEPARATOR
+        MENUITEM "&Eject CD when complete",     40029
+        MENUITEM "&Close view when complete",   40031
+        MENUITEM "&Add CD titles to local DB when complete", 40032
+    END
+    POPUP "Navigation"
+    BEGIN
+        MENUITEM "&Preferences",                ID_NAVIGATION_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "Help",                        ID_NAVIGATION_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_VIEW_CDROM_EXTRACT, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 265
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_NOBURN, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 296
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_VIEW_CONTAINER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_VIEW_CDROM_DATA, DIALOG
+    BEGIN
+        RIGHTMARGIN, 477
+        BOTTOMMARGIN, 472
+    END
+
+    IDD_FILECOPY_PREPARE, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 275
+        VERTGUIDE, 10
+        VERTGUIDE, 20
+        VERTGUIDE, 49
+        VERTGUIDE, 68
+        VERTGUIDE, 269
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 200
+        HORZGUIDE, 57
+        HORZGUIDE, 97
+        HORZGUIDE, 106
+    END
+
+    IDD_FILECOPY_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 275
+        VERTGUIDE, 68
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_SIMPLEHELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_FILECOPY_QUESTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 242
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 60
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR_VIEW ACCELERATORS 
+BEGIN
+    VK_RETURN,      ID_COPY_SELECTION,      VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_EJECT_DISC,          VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "I",            ID_MINIINFO_SHOW,       VIRTKEY, CONTROL, NOINVERT
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_RIP_AND_BURN "Nullsoft Rip & Burn v%d.%02d"
+    65535                   "{2C913A2F-CD49-40a1-8F1A-8EF7C2A22229}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_WRITING_TEMP_BURN_LIST "Error writing temporary burning list."
+    IDS_ERROR               "Error"
+    IDS_BURN_X_TRACKX_ON_X  "Burn %d %s on %c:"
+    IDS_X_OF_X_SECTORS_FREE "%d  of  %d  sectors free"
+    IDS_GET_PRO_FOR_BURN_HIGHER_THAN_2X 
+                            "In order to use more than 2x burning, you must purchase Winamp Pro.\nWould you like information on purchasing Winamp Pro?"
+//  IDS_WINAMP_PRO_FEATURE  "Winamp Pro Feature"
+    IDS_NEED_TO_ADD_SOME_TRACKS_TO_BURN 
+                            "You need to add some tracks to burn first!"
+    IDS_TOTAL_LENGTH_IS_BIGGER_THAN_MEDIA_CAPACITY 
+                            "The total length of the tracks in the list is bigger than the capacity of the blank CD in the drive!\n\nYou need to remove %01d:%02ds from the list."
+    IDS_BURNING             "Burning..."
+    IDS_CANCEL_BURN         "Cancel Burn"
+    IDS_NO_BLANK_CDR_IN_DRIVE "No blank CD-R in drive.\n"
+    IDS_X_CAPACITY_DETAILS  "%s - Capacity: %01d:%02d.\n"
+    IDS_USED_X_X_TRACKS     "Used: %01d:%02d (%d %s)"
+    IDS_AVAILABLE_X_X       ", Available: %01d:%02d."
+    IDS_X_OVER_CAPACITY_REMOVE_X_TRACKS 
+                            ", %01d:%02d over capacity. Please remove %d tracks."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_X_CANNOT_BE_BURNED_REASON_NOT_FOUND 
+                            "The file\n%s\ncannot be burned.\nReason: File not found."
+    IDS_FILE_X_CANNOT_BE_BURNED_REASON_FILETYPE_NOT_REGISTERED 
+                            "The file\n%s\ncannot be burned.\nReason: The file type (extension %s) is not registered with Winamp"
+    IDS_FILE_X_CANNOT_BE_BURNED_REASON_X 
+                            "The file\n%s\ncannot be burned.\nReason: %s"
+    IDS_VIDEO_FILES_CANNOT_BE_BURNED "Video files cannot be burned"
+    IDS_NOT_AN_AUDIO_FILE   "Not an audio file"
+    IDS_FILE_CANNOT_BE_BURNED "The file\n%s\ncannot be burned."
+    IDS_TRACK_NUMBER        "Track #"
+    IDS_TITLE               "Title"
+    IDS_LENGTH              "Length"
+    IDS_STATUS              "Status"
+    IDS_CANCELLING          "Cancelling..."
+    IDS_BURNING_AUDIO_CANCELLING 
+                            "Burning Audio CD...\nCurrent Operation: Canceling..."
+    IDS_BURNING_AUDIO_FINISHING 
+                            "Burning Audio CD...\nCurrent Operation: Finishing..."
+    IDS_BURNING_AUDIO_DATA_PREP_FINISHED 
+                            "Burning Audio CD...\nCurrent Operation: Data preparation finished."
+    IDS_BURNING_AUDIO_VERIFYING_FILES 
+                            "Burning Audio CD...\nCurrent Operation: Verifying files..."
+    IDS_BURNING_AUDIO_VERIFICATION_COMPLETED 
+                            "Burning Audio CD...\nCurrent Operation: Verification completed."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OPENING_DISC_WRITING_LEAD_IN "Opening disc / Writing Lead-In..."
+    IDS_CLOSING_DISC_WRITING_LEAD_OUT "Closing disc / Writing Lead-Out..."
+    IDS_BURNING_AUDIO_CURRENT_OPERATION 
+                            "Burning Audio CD...  ( %d%% completed)\nCurrent Operation: %s"
+    IDS_BURNING_AUDIO_CD_PREP_DATA 
+                            "Burning Audio CD...  ( %d%% completed)\nCurrent Operation: Preparing data..."
+    IDS_BURNING_AUDIO_BURNING_DATA 
+                            "Burning Audio CD...  ( %d%% completed)\nCurrent Operation: Burning data..."
+    IDS_CLOSE               "Close"
+    IDS_AUDIO_CD_BURNED_SUCCESSFULLY "Audio CD burned successfully."
+    IDS_BURN_ABORTED_BY_USER "Burning aborted by user."
+    IDS_BURNING_FAILED      "Burning failed."
+    IDS_BURNING_COMPLETED_STATUS_X "Burning completed.\nStatus: %s"
+    IDS_ALL_FILES           "All files"
+    IDS_ADD_FILES_TO_BURNING_LIST "Add file(s) to burning list"
+    IDS_CHOOSE_A_FOLDER_TO_ADD_TO_BURNING_LIST 
+                            "Choose a folder to add to the burning list"
+    IDS_SURE_YOU_WANT_TO_CLEAR_BURNING_LIST 
+                            "Are you sure you want to clear the burning list?"
+    IDS_CONFIRMATION        "Confirmation"
+    IDS_BURNING_            "Burning"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PREPARING           "Preparing"
+    IDS_FINISHED            "Finished"
+    IDS_PREPARED            "Prepared"
+    IDS_SKIPPED             "Skipped"
+    IDS_SCHEDULED           "Scheduled"
+    IDS_CHECKING_LICENSE    "Checking License..."
+    IDS_LICENSED            "Licensed"
+    IDS_CANCELLED           "Cancelled"
+    IDS_FAILED              "Failed"
+    IDS_BAD_FILENAME        "Bad filename"
+    IDS_UNABLE_TO_OPEN_FILE "Unable to open file"
+    IDS_CACHE_WRITE_FAILED  "Cache write failed"
+    IDS_UNABLE_TO_FIND_DECODER "Unable to find decoder"
+    IDS_CANNOT_ADD_TO_THE_DISC "Cannot add to the disc"
+    IDS_CACHE_READ_FAILED   "Cache read failed"
+    IDS_UNKNOWN_ERROR       "Unknown Error"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADDING_TRACKS_TO_BURNER_TOTAL_LENGTH_X 
+                            "Adding tracks to burner. Total length: %01d:%02d"
+    IDS_PLEASE_INSERT_BLANK_RECORDABLE_CD 
+                            "Please insert a blank recordable CD in drive %c:"
+    IDS_COMPLETED           "Completed"
+    IDS_QUEUED              "Queued"
+    IDS_RIPPING             "Ripping"
+    IDS_CANCEL_RIP          "Cancel rip?"
+    IDS_CD_RIP_QUESTION     "CD Rip Question"
+    IDS_INITIALIZING        "Initializing..."
+    IDS_CALCULATING_REPLAY_GAIN "Calculating Replay Gain"
+    IDS_UNKNOWN_ARTIST      "Unknown Artist"
+    IDS_UNKNOWN_ALBUM       "Unknown Album"
+    IDS_UNKNOWN             "Unknown"
+    IDS_RIP_COMPLETE        "Rip Complete"
+    IDS_RIP_FAILED          "Rip Failed"
+    IDS_X_TRACKS_RIPPED_IN_X 
+                            "%d track%s ripped in %d:%02d (%.1fx realtime)\nOutput bitrate: %dkbps, Output size: %.1fMB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DONE                "Done"
+    IDS_ELAPSED_X_REMAINING_X_TOTAL_X 
+                            "Elapsed: %d:%02d, Remaining: %d:%02d, Total: %d:%02d (%.1fx realtime)\nOutput bitrate: %dkbps, Output size (estimated): %.1fMB"
+    IDS_X_KBPS_AT_X_REALTIME "%02d%%: %dkbps at %.1fx realtime"
+    IDS_X_OF_X_ELAPSED_X_REMAINING_X 
+                            "%d/%d: Elapsed: %d:%02d, Remaining: %d:%02d, Total: %d:%02d (%.1fx realtime)\nOutput bitrate: %dkbps, Output size (estimated): %.1fMB"
+    IDS_X_PERCENT_RIPPING_FROM_CD "[%d%%] Ripping from CD..."
+    IDS_WAITING             "Waiting..."
+    IDS_STAMPED_DISC_OR_RECORDABLE_THAT_HAS_BEEN_RECORDED 
+                            "Stamped disc or a recordable disc that has been recorded Disc-At-Once."
+    IDS_REWRITEABLE_DISC_HAS_DATA_BUT_KEPT_OPEN_FOR_APPEND 
+                            "Rewritable disc that contains data but remains open, allowing the appending of additional data."
+    IDS_REWRITEABLE_DISC_NOT_POSSIBLE_TO_APPEND_DATA 
+                            "Rewritable disc not possible to append additional data."
+    IDS_BLANK_REWRITEABLE_DISC "Blank rewritable disc."
+    IDS_MEDIA_BLANK_DISC    "Blank disc"
+    IDS_MEDIA_DATA_MODE_1_DAO "Data Mode 1 DAO"
+    IDS_MEDIA_KODAK_PHOTO_CD "Kodak Photo CD"
+    IDS_MEDIA_DATA_MULTISESSION_MODE_1_CLOSED 
+                            "Data multisession Mode 1 (closed)"
+    IDS_MEDIA_DATA_MULTISESSION_MODE_2_CLOSED 
+                            "Data multisession Mode 2 (closed)"
+    IDS_MEDIA_DATA_MODE_2_DAO "Data Mode 2 DAO"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MEDIA_CDRFS         "CDRFS"
+    IDS_MEDIA_PACKET_WRITING "Packet writing"
+    IDS_MEDIA_DATA_MULTISESSION_MODE_1_OPEN "Data multisession Mode 1 (open)"
+    IDS_MEDIA_DATA_MULTISESSION_MODE_2_OPEN "Data multisession Mode 2 (open)"
+    IDS_MEDIA_AUDIO_DAO_SAO_TAO "Audio DAO/SAO/TAO"
+    IDS_MEDIA_AUDIO_REWRITEABLE_DISC_WITH_SESSION_NOT_CLOSED 
+                            "Audio Rewritable disc with session not closed (TAO or SAO)"
+    IDS_MEDIA_FIRST_TYPE_OF_ENHANCED_CD_ABORTED 
+                            "First type of Enhanced CD (aborted)"
+    IDS_MEDIA_CD_EXTRA      "CD Extra"
+    IDS_MEDIA_AUDIO_TAO_WITH_SESSION_NOT_WRITTEN 
+                            "Audio TAO with session not written (in-progress compilation)"
+    IDS_MEDIA_FIRST_TRACK_DATA_OTHERS_AUDIO "First track data, others audio"
+    IDS_MEDIA_MIXED_MODE_MADE_TAO "Mixed-mode made TAO"
+    IDS_MEDIA_KODAK_PORTFOLIO "Kodak Portfolio (as per the Kodak standard)"
+    IDS_MEDIA_VIDEO_CD      "Video CD"
+    IDS_MEDIA_CDi           "CD-i"
+    IDS_MEDIA_PLAYSTATION_SONY_GAMES "PlayStation (Sony games)"
+    IDS_MEDIA_OBSOLETE      "Obsolete"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MEDIA_OBSOLETE_FOR_RESTRICTED_OVERWRITE_DVD 
+                            "Obsolete for restricted overwrite DVD (DLA DVD-RW)"
+    IDS_MEDIA_DVDROM_OR_CLOSED_RECORDABLE "DVD-ROM or closed recordable"
+    IDS_MEDIA_INCREMENTAL_DVD_WITH_APPENDABLE_ZONE 
+                            "Incremental DVD with appendable zone (DLA DVD-R and DVD+RW)"
+    IDS_MEDIA_APPENDABLE_DVD_OF_ANY_TYPE 
+                            "Appendable DVD of any type (single border or multiborder)"
+    IDS_MEDIA_DVDRAM_CARTRIDGE "DVD-RAM cartridge"
+    IDS_MEDIA_CD_OTHER_TYPE "CD (other type)"
+    IDS_X_DRIVE_X           "%s Drive %c:"
+    IDS_X_DRIVE_BRACKET_X   "%s Drive   (%c:)"
+    IDS_YOU_ARE_CURRENTLY_BURNING_AUDIO_CD_MUST_CANCEL_TO_CLOSE_WINAMP 
+                            "You are currently burning Audio CD in drive %c:\nYou must first cancel burning in order to close Winamp."
+    IDS_NOTIFICATION        "Notification"
+    IDS_RIP_AND_BURN        "Rip & Burn"
+    IDS_CD_RIPPING          "CD Ripping"
+    IDS_CD_BURNER_ON_X      "CD Burner on %c:"
+    IDS_EXAMPLE_RIPPED_FILE_FILENAME "Example ripped file filename:\n"
+    IDS_EXAMPLE_PLAYLIST_FILENAME "Example playlist filename:\n"
+    IDS_RIPPED_FILENAME_FORMAT_HELP "Ripped Filename Format Help"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIPPPED_PLAYLIST_FORMAT_HELP "Ripped Playlist Filename Format Help"
+    IDS_RIPPED_PLAYLIST_FORMAT 
+                            "<Album> - inserts the album (default capitalization)\r\n<ALBUM> - inserts the album (all uppercase)\r\n<album> - inserts the album (all lowercase)\r\n<Artist> - inserts the album artist (default capitalization)\r\n<ARTIST> - inserts the album artist (all uppercase)\r\n<artist> - inserts the album artist (all lowercase)\r\n<Genre> - inserts the album genre (default capitalization)\r\n<GENRE> - inserts the album genre (all uppercase)\r\n<genre> - inserts the album genre (all lowercase)\r\n<year> - inserts the album year\r\n<disc> - inserts the disc number\r\n<discs> - inserts the total discs number (e.g. CD<disc> of <discs>)"
+    IDS_RIPPED_FILENAME_FORMAT 
+                            "<Album> - inserts the album (default capitalization)\r\n<ALBUM> - inserts the album (all uppercase)\r\n<album> - inserts the album (all lowercase)\r\n<Artist> - inserts the album artist (default capitalization)\r\n<ARTIST> - inserts the album artist (all uppercase)\r\n<artist> - inserts the album artist (all lowercase)\r\n<Genre> - inserts the album genre (default capitalization)\r\n<GENRE> - inserts the album genre (all uppercase)\r\n<genre> - inserts the album genre (all lowercase)\r\n<Title> - inserts the track title (default capitalization)\r\n<TITLE>  - inserts the track title (all uppercase)\r\n<title> - inserts the track title (all lowercase)\r\n<Trackartist> - inserts the track artist (default capitalization)\r\n<TRACKARTIST> - inserts the track artist (all uppercase)\r\n<trackartist> - inserts the track artist (all lowercase)\r\n<year> - inserts the album year\r\n#, ##, or ### - inserts the track number, with leading 0s if ## or ###\r\n<disc> - inserts the disc number\r\n<discs> - inserts the total discs number (e.g. CD<disc> of <discs>)"
+    IDS_CHOOSE_A_FOLDER     "Choose a folder"
+    IDS_TO_EXTRACT_TO_MP3_NEED_TO_PURCHASE_WINAMP_PRO 
+                            "In order to extract to MP3, you must purchase Winamp Pro.\nWould you like information on purchasing Winamp Pro?"
+    IDS_ENCODER             "Encoder"
+    IDS_OUTPUT_FILE_SETTINGS "Output File Settings"
+    IDS_PLAYLIST_GENERATION "Playlist Generation"
+    IDS_ERROR_CD_RIP_IN_PROGRESS "Error - CD Rip in progress"
+    IDS_CD_RIP              "CD Rip"
+    IDS_ERROR_CD_BURN_IN_PROGRESS "Error - CD Burn in progress"
+    IDS_ERROR_CANNOT_EXTRACT_DATA_CDS "Error - Cannot extract Data CDs"
+    IDS_NO_TRACKS_TO_RIP    "No tracks to rip"
+    IDS_CD_PLAYBACK_ERROR   "CD Playback Error"
+    IDS_CD_EJECT            "CD Eject"
+    IDS_NO_CD               "No CD"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DATA_TRACK          "Data track"
+    IDS_AUDIO_TRACK         "Audio track"
+    IDS_DISC_READ_ERROR     "Unable to read disc info."
+    IDS_DATA_CD             "Data CD"
+    IDS_DRIVE               "drive"
+    IDS_ARTIST              "Artist"
+    IDS_TRACK               "track"
+    IDS_TRACKS              "tracks"
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+    IDS_SHOW_INFO           "Show Info"
+    IDS_HIDE_INFO           "Hide Info"
+    IDS_READINGDISC         "Reading Disc..."
+    IDS_INFO_RIPPING        "Sorry, Information unavailable while ripping cd."
+    IDS_DVD_DRIVE           "DVD Drive"
+    IDS_CD_DRIVE            "CD Drive"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CD_RECORDER         "CD Recorder"
+    IDS_DATA_DISC           "Data Disc"
+    IDS_BLANK_DISC          "Blank Disc"
+    IDS_DRIVE_CAP           "Drive"
+    IDS_RECORDER_CAP        "Recorder"
+    IDS_CD_AUDIO            "Audio CD"
+    IDS_DISC_BLANK          "Blank Disc"
+    IDS_DISC_DATA           "Data Disc"
+    IDS_CD                  "CD"
+    IDS_DVD                 "DVD"
+    IDS_CALCULATING         "Calculating..."
+    IDS_ML_VIEW_ARTIST_ALBUM "Artist: %s\nAlbum: %s"
+    IDS_ML_VIEW_YEAR_GENRE  "Year: %s\nGenre: %s"
+    IDS_RIPPED_PLAYLIST_FORMAT_CAPTION 
+                            "You may enter a format string for the playlist of your ripped files.\nIt can contain \\ or / to delimit a path, and the following keywords:"
+    IDS_RIPPED_FILENAME_FORMAT_CAPTION 
+                            "You may enter a filename format string for your ripped files.\nIt can contain \\ or / to delimit a path, and the following keywords:"
+    IDS_COPY_FILENAME_FORMAT_TITLE "Filename Format Help"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COPY_FILENAME_FORMAT_CAPTION 
+                            "You may enter a format string for your copied files.\nIt can contain \\ or / to delimit a path, and the following keywords:"
+    IDS_COPY_FILENAME_FORMAT 
+                            "<Album> - inserts the album (default capitalization)\r\n<ALBUM> - inserts the album (all uppercase)\r\n<album> - inserts the album (all lowercase)\r\n<Artist> - inserts the album artist (default capitalization)\r\n<ARTIST> - inserts the album artist (all uppercase)\r\n<artist> - inserts the album artist (all lowercase)\r\n<Extension> - inserts file extension (default capitalization)\r\n<EXTENSION> - inserts file extension (all uppercase)\r\n<extension> - inserts file extension (all lowercase)\r\n<Filename> - inserts file name (default capitalization)\r\n<FILENAME> - inserts file name (all uppercase)\r\n<filename> - inserts file name (all lowercase)\r\n<Genre> - inserts the album genre (default capitalization)\r\n<GENRE> - inserts the album genre (all uppercase)\r\n<genre> - inserts the album genre (all lowercase)\r\n<Title> - inserts the track title (default capitalization)\r\n<TITLE>  - inserts the track title (all uppercase)\r\n<title> - inserts the track title (all lowercase)\r\n<Trackartist> - inserts the track artist (default capitalization)\r\n<TRACKARTIST> - inserts the track artist (all uppercase)\r\n<trackartist> - inserts the track artist (all lowercase)\r\n<year> - inserts the album year\r\n#, ##, or ### - inserts the track number, with leading 0s if ## or ###"
+    IDS_OPTIONS_SHOW        "Show Options"
+    IDS_OPTIONS_HIDE        "Hide Options"
+    IDS_COPY_PREP_MESSAGE_SINGLE_FILE 
+                            "Are you sure you want to copy '%s' to '%s'?"
+    IDS_COPY_PREP_MESSAGE_MULTIPLE_FILES 
+                            "Are you sure you want to copy these %d files to '%s'?"
+    IDS_COPY_TASK_PREPARE   "Initializing..."
+    IDS_COPY_TASK_COPY      "Copying..."
+    IDS_COPY_OP_CALCULATESIZE "Calculating total size..."
+    IDS_COPY_OP_CHECKDESTINATION "Checking destination..."
+    IDS_COPY_TASK_FINISHED  "Completed"
+    IDS_COPY_ERROR_CAPTION  "File Copy Error"
+    IDS_COPY_ERROR_MESSAGE  "Unable to copy files to '%s'.\n\nReason:\t %s.\nCode:\t %d\nDetails:\t %s"
+    IDS_COPY_ERRMSG_INITIALIZATION_FAILED "Initialization failed"
+    IDS_COPY_ERRMSG_DIRECTORYCREATE_FAILED "Unable to create directory"
+    IDS_COPY_ERRMSG_COPYFILE_FAILED "Unable to copy file"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COPY_ERRMSG_TITLEFORMAT_FAILED "File title formatting failed"
+    IDS_COPY_ERRMSG_ADDTOMLDB_FAILED 
+                            "Unable to add file to local media database"
+    IDS_COPY_ERRMSG_SETATTRIBUTES_FAILED "Unable to set file attributes"
+    IDS_COPY_ERRMSG_COPYFILE_USERABORT "User abort"
+    IDS_COPY_ERRMSG_DELETEFILE_FAILED "Unable to delete file"
+    IDS_CONFIRM_CREATE_DESTINATION "Confirm Create Destination"
+    IDS_DESTINATION_NOT_EXIST_FORMAT 
+                            "Destination path '%s' does not exist.\nDo you want to create it?"
+    IDS_CANCEL              "Cancel"
+    IDS_SKIP                "Skip"
+    IDS_OVERWRITE           "Overwrite"
+    IDS_APPLY_TO_ALL_FILES  "Apply to all files"
+    IDS_CONFIRM_FILE_REPLACE "Confirm File Replace"
+    IDS_FILE_REPLACE_FORMAT "Destination folder '%s' already contains file named '%s'.\n\nWould you like to replace existing file %s with this one? %s"
+    IDS_CONFIRM_FILE_DELETE "Confirm File Delete"
+    IDS_READONLY_FILE_DELETE_FORMAT 
+                            "The file '%s' is a read-only file.\nAre you sure you want to delete it? "
+    IDS_SIZE                "Size"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CREATED             "Created"
+    IDS_MODIFIED            "Modified"
+    IDS_UNKNOWN_GENRE       "Unknown Genre"
+    IDS_YOU_ARE_CURRENTLY_COPYING_DATA_CD_MUST_CANCEL_TO_CLOSE_WINAMP 
+                            "You are currently copying files from drive %c:\nYou must first cancel copying in order to close Winamp."
+    IDS_YOU_ARE_CURRENTLY_RIPPING_AUDIO_CD_MUST_CANCEL_TO_CLOSE_WINAMP 
+                            "You are currently ripping Audio CD in drive %c:\nYou must first cancel ripping in order to close Winamp."
+    IDS_ERROR_RIPPING_TRACK "Error ripping track #%d: %s\n\nAborting."
+    IDS_NO_INFO_AVAILABLE   "No information available"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

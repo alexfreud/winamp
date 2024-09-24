@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>Scriptable Plug-in Test</TITLE>
+</HEAD>
+<BODY id="bodyId">
+
+<center>
+<h1>Scriptable Plug-in </h1>
+</center>
+
+<br><br>
+
+<center>
+
+<embed id="pluginobj" type="application/x-winampx-1.0.0.1" width=600 height=0><br>
+
+<script>
+var pluginobj = document.getElementById('pluginobj');
+</script>
+
+<br>
+<form name="formname">
+<br>
+<input type=button value="alert(pluginobj.getVersion())" onclick='alert(pluginobj.getVersion())'>
+</form>
+
+</center>
+
+</BODY>
+</HTML>

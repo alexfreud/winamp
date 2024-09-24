@@ -1,0 +1,178 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 215, 212
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nullsoft Notification Area Control Preferences"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Enable Nullsoft Notification Area Control",IDC_ONOFF,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,4,4,207,10
+    CONTROL         "",IDC_PREV,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,12,18,199,10
+    CONTROL         "",IDC_PREV2,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,12,32,199,10
+    CONTROL         "",IDC_PREV3,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,12,45,199,10
+    CONTROL         "",IDC_PREV4,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,12,58,199,10
+    CONTROL         "",IDC_PREV5,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,12,72,199,10
+    CONTROL         "",IDC_PREV6,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,12,85,199,10
+    CONTROL         "",IDC_PREV7,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,12,98,199,10
+    CONTROL         "",IDC_PREV8,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,12,111,199,10
+    GROUPBOX        "Icon Pack Selection",IDC_STATIC,4,124,207,67
+    LTEXT           "Select the icon pack to use instead of the default ones or select a custom option to manually specify the pack location",IDC_STATIC,10,136,195,18
+    COMBOBOX        IDC_COMBO2,10,157,178,58,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "?",ID_INFO,192,157,14,12
+    EDITTEXT        IDC_EDIT1,10,173,158,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON1,172,173,16,12
+    CONTROL         "",IDC_LINK,"Button",BS_OWNERDRAW | BS_NOTIFY | WS_TABSTOP,4,198,53,10
+    DEFPUSHBUTTON   "Close",IDOK,162,195,49,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 211
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icons/icon1.ico"
+IDI_ICON2               ICON                    "icons/icon2.ico"
+IDI_ICON3               ICON                    "icons/icon3.ico"
+IDI_ICON4               ICON                    "icons/icon4.ico"
+IDI_ICON5               ICON                    "icons/icon5.ico"
+IDI_ICON7               ICON                    "icons/icon7.ico"
+IDI_ICON8               ICON                    "icons/icon8.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "icons\\compact.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_TRAY_CONTROL "Nullsoft Notification Area Control v%s"
+    65535                   "{25B50046-5B31-418b-B77E-1B0D140D64ED}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PREVIOUS_TRACK      "Previous Track"
+    IDS_PLAY_PAUSE          "Play/Pause"
+    IDS_STOP                "Stop"
+    IDS_NEXT_TRACK          "Next Track"
+    IDS_OPEN_FILE           "Open File"
+    IDS_COMPACT_MODE        "Compact Mode"
+    IDS_DECREASE_VOLUME     "Decrease Volume"
+    IDS_INCREASE_VOLUME     "Increase Volume"
+    IDS_HOLD_CTRL           "(hold Ctrl to restart current song)"
+    IDS_HOLD_SHIFT          "(hold Shift for 'stop with fadeout')"
+//  IDS_WIN2K_PLUS          "(only available on WinXP and up)"
+    IDS_CTRL_TO_DECREASE    "(hold Ctrl to decrease faster)"
+    IDS_CTRL_TO_INCREASE    "(hold Ctrl to increase faster)"
+    IDS_STOPPED_STR         " [Stopped]"
+    IDS_PAUSED_STR          " [Paused]"
+    IDS_DEFAULT_ICONS       "Default Icons"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CUSTOM_ICON_PACK    "Custom Icon Pack..."
+    IDS_CONFIG_INFO         "Notification area icon packs consist of upto 9 files (1 *.icp, 7 *.ico and 1 *.bmp)  \n& all of the required files need to be in the same folder to be found.\n\nThe format of the icp file is:\n\n[tray icon pack]\nico1=1.ico\nico2=2.ico\nico3=3.ico\nico4=4.ico\nico5=5.ico\nico6=my.bmp\nico7=7.ico\nico8=8.ico\n\nOrder is: Previous, Play/Pause, Stop, Next, Open, Compact Mode\n\tVolume Down and Volume Up\n\nEach line requires just the image filename to be specified.\nThe plug-in then looks for them in the same folder as the icp file.\n\nThe 'ico6' entry provides the image for the compact mode icon and is\nmade up of 6 8x8 pixel blocks which are merged together as needed\nto form the final 16x16 icon. For transparent areas you will need to\nset the required areas in your bitmap to pink (RGB 255,0,255).\n\nThe default icon pack location is:\n%s\\Plugins\\Tray_Control"
+    IDS_OFD_FILTER_STR      "Notification area icon pack (*.icp)"
+    IDS_OFD_TITLE_STR       "Choose a notification area icon pack to use..."
+    IDS_GET_ICON_PACKS      "Get Icon Packs"
+    IDS_DO_YOU_ALSO_WANT_TO_REMOVE_SETTINGS 
+                            "Do you also want to remove the saved settings for this plug-in?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

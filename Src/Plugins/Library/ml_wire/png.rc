@@ -1,0 +1,15 @@
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+IDR_DISCOVER_ICON  RCDATA
+".\\resources\\discoverIcon.png"
+IDR_DOWNLOAD_ICON  RCDATA
+".\\resources\\downloadIcon.png"
+IDR_SUBSCRIPTION_ICON  RCDATA
+".\\resources\\subscriptionIcon.png"
+IDR_MEDIA_ICON  RCDATA
+".\\resources\\mediaIcon.png"
+IDR_TEXT_ICON  RCDATA
+".\\resources\\textIcon.png"

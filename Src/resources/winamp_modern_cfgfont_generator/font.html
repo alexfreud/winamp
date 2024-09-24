@@ -1,0 +1,59 @@
+<!doctype html public "-//w3c//dtd html 3.2 final//en">
+<html>
+<head>
+<title></title>
+<meta name="generator" content="textpad 4.0">
+<meta name="author" content="Metrix - www.metrix.de">
+<meta name="keywords" content="">
+<meta name="description" content="">
+</head>
+<body background="" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" bgcolor="#000000" text="#ffffff" link="#ffffff" vlink="#ffffff" alink="#ff00ff">
+<center>
+
+
+
+<form name="f">
+
+<textarea name="t1" cols="40" rows="10">
+</textarea>
+
+<a href="JavaScript:makeit()">make it....</a>
+
+</form>
+
+
+<script language="JavaScript" type="text/javascript">
+
+function makeit() {
+
+	tt=document.forms["f"].t1.value;
+
+
+	document.write('<body bgcolor=#000000>');
+
+	for (i=0;i<tt.length;i++) {
+		if (tt.charCodeAt(i)>64) cc=tt.charAt(i)+"1";
+		if (tt.charCodeAt(i)>96) cc=tt.charAt(i)+"2";
+		if (tt.charCodeAt(i)<64) cc=tt.charAt(i);
+		if (tt.charCodeAt(i)==32) cc="space";
+		if (tt.charAt(i)=="/") cc="slash";
+
+
+		if (tt.charAt(i)!="\n" && tt.charCodeAt(i)!=13) {
+			document.write('<img src="'+cc+'.gif">');
+		} else {
+			if (tt.charCodeAt(i)!=13) document.write('<br>');
+		}
+	}
+
+
+
+}
+
+
+</script>
+
+
+</center>
+</body>
+</html>

@@ -1,0 +1,7 @@
+Better Dynamic shift help goes here (send me some :)
+
+Variables:
+  x,y = amount to shift (in pixels - set these)
+  w,h = width, height (in pixels)
+  b = isBeat
+  alpha = alpha value (0.0-1.0) for blend

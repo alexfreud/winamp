@@ -1,0 +1,2074 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AlbumArt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="embedwndguid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ff_ipc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fsmonitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaDownloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menuactions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="minibrowserCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prefs_about.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prefs_alpha.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prefs_colorthemes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prefs_font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prefs_general.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="servicelink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skininfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa2buckitems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa2cfgitems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa2core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa2coreactions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa2frontend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa2groupdefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa2playlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa2pldirobj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa2pledit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa2songticker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa2wndembed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinampConfigScriptObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\abstractwndhold.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\alphamgr.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\animate.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\animlayer.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\api_config.cpp">
+      <Filter>Source Files\Wasabi\api\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\api_configi.cpp">
+      <Filter>Source Files\Wasabi\api\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\api_configx.cpp">
+      <Filter>Source Files\Wasabi\api\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\core\api_core.cpp">
+      <Filter>Source Files\Wasabi\api\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\dependency\api_dependent.cpp">
+      <Filter>Source Files\Wasabi\api\dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\dependency\api_dependentviewer.cpp">
+      <Filter>Source Files\Wasabi\api\dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\filereader\api_filereader.cpp">
+      <Filter>Source Files\Wasabi\api\filereader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\api_imgldr.cpp">
+      <Filter>Source Files\Wasabi\api\imgldr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\locales\api_locales.cpp">
+      <Filter>Source Files\Wasabi\api\locales</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\locales\api_localesi.cpp">
+      <Filter>Source Files\Wasabi\api\locales</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\locales\api_localesx.cpp">
+      <Filter>Source Files\Wasabi\api\locales</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\api_maki.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\api_makidebug.cpp">
+      <Filter>Source Files\Wasabi\api\script\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\api_makii.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\api_makix.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\api_palette.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\api_service.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\api_skin.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\api_syscb.cpp">
+      <Filter>Source Files\Wasabi\api\syscb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\feeds\api_textfeed.cpp">
+      <Filter>Source Files\Wasabi\api\skin\feeds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\api_window.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\api_wnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\api_wndmgr.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\appbarwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\appcmds.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\items\attribute.cpp">
+      <Filter>Source Files\Wasabi\api\config\items</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\items\attrstr.cpp">
+      <Filter>Source Files\Wasabi\api\config\items</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\autopopup.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\basewnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\font\bitmapfont.cpp">
+      <Filter>Source Files\Wasabi\api\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\blankwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\browsercb.cpp">
+      <Filter>Source Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\bufferpaintwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\buttbar.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\button.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\buttwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_browser.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_button.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_checkbox.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_container.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_dropdownlist.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_edit.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_group.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_guilist.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_guiobject.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_guitree.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_layout.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_menubutton.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_querylist.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_rootobj.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_slider.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_text.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_togglebutton.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\c_treeitem.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\items\cfgitemi.cpp">
+      <Filter>Source Files\Wasabi\api\config\items</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\items\cfgitemx.cpp">
+      <Filter>Source Files\Wasabi\api\config\items</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\apiinit.cpp">
+      <Filter>Source Files\Wasabi\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\spanbar.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\spopup.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sprivate.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sregion.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\sseeker.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\sstatus.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\stats\statswnd.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\status.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\bfc\std_file.cpp">
+      <Filter>Source Files\Wasabi\bfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_action.cpp">
+      <Filter>Source Files\Wasabi\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svc_enum.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_fileread.cpp">
+      <Filter>Source Files\Wasabi\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_font.cpp">
+      <Filter>Source Files\Wasabi\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_imggen.cpp">
+      <Filter>Source Files\Wasabi\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_imgload.cpp">
+      <Filter>Source Files\Wasabi\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_minibrowser.cpp">
+      <Filter>Source Files\Wasabi\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\core\svc_scriptcore.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_scriptobj.cpp">
+      <Filter>Source Files\Wasabi\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_skinfilter.cpp">
+      <Filter>Source Files\Wasabi\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_textfeed.cpp">
+      <Filter>Source Files\Wasabi\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_tooltips.cpp">
+      <Filter>Source Files\Wasabi\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_wndcreate.cpp">
+      <Filter>Source Files\Wasabi\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcs\svc_xuiobject.cpp">
+      <Filter>Source Files\Wasabi\api\service\svcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svccache.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcenum.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcenumbyguid.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\svcenumt.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\svcwndhold.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\svolbar.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sxmldoc.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\syscb.cpp">
+      <Filter>Source Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\syscbi.cpp">
+      <Filter>Source Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\syscbx.cpp">
+      <Filter>Source Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\systemobj.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\util\systray.cpp">
+      <Filter>Source Files\Wasabi\api\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\tabsheet.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\tabsheetbar.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\text.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\textbase.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\feeds\textfeed.cpp">
+      <Filter>Source Files\Wasabi\api\skin\feeds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\tgbutton.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\bfc\util\timefmt.cpp">
+      <Filter>Source Files\Wasabi\bfc\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\timer\timerclient.cpp">
+      <Filter>Source Files\Wasabi\api\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\title.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\titlebox.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\tooltip.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\treewnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\font\win32\truetypefont_win32.cpp">
+      <Filter>Source Files\Wasabi\api\font\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\typesheet.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\uioptions.cpp">
+      <Filter>Source Files\Wasabi\api\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\util\varmgr.cpp">
+      <Filter>Source Files\Wasabi\api\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\vcpu.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\vcpudebug.cpp">
+      <Filter>Source Files\Wasabi\api\script\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\virtualwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\wacobj.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\waservicefactory.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\waservicefactorybase.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\waservicefactoryi.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\waservicefactoryt.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\waservicefactorytsingle.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\waservicefactoryx.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndapi.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\wndholder.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\wndmgrapi.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndtrack.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\xml\XMLAutoInclude.cpp">
+      <Filter>Source Files\Wasabi\api\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\xml\xmlparams.cpp">
+      <Filter>Source Files\Wasabi\api\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\xml\xmlparamsi.cpp">
+      <Filter>Source Files\Wasabi\api\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\xml\xmlparamsx.cpp">
+      <Filter>Source Files\Wasabi\api\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\xml\xmlreader.cpp">
+      <Filter>Source Files\Wasabi\api\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\xml\xmlwrite.cpp">
+      <Filter>Source Files\Wasabi\api\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuiaddparams.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuibookmarklist.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mb\xuibrowser.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets\mb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuicheckbox.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuicombobox.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuicustomobject.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuidownloadslist.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuidropdownlist.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuieditbox.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuiframe.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuigradientwnd.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuigrid.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuigroupxfade.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuihideobject.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuihistoryedit.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuilist.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuimenu.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuimenuso.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuiobjdirwnd.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuioswndhost.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuipathpicker.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuiprogressgrid.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuiradiogroup.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuirect.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuisendparams.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\stats\xuistats.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuistatus.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuitabsheet.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuithemeslist.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuititlebox.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuitree.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\wa2\xuiwa2slider.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets\wa2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\xuiwndholder.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\cfglist.cpp">
+      <Filter>Source Files\Wasabi\api\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\cfgscriptobj.cpp">
+      <Filter>Source Files\Wasabi\api\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\checkbox.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\clickwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\combobox.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\compbuck2.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wac\compon.cpp">
+      <Filter>Source Files\Wasabi\api\wac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\config.cpp">
+      <Filter>Source Files\Wasabi\api\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\container.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\contextmenu.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\core\coreadminobj.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\corecb.cpp">
+      <Filter>Source Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\core\coreobj.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\cursor.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\cursormgr.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\customobject.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\deactivatemgr.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\debugapi.cpp">
+      <Filter>Source Files\Wasabi\api\script\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\debuggerui.cpp">
+      <Filter>Source Files\Wasabi\api\script\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\debugsymbols.cpp">
+      <Filter>Source Files\Wasabi\api\script\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\bfc\depend.cpp">
+      <Filter>Source Files\Wasabi\bfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\bfc\depview.cpp">
+      <Filter>Source Files\Wasabi\bfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\di.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\disasm.cpp">
+      <Filter>Source Files\Wasabi\api\script\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\dragitemi.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\bfc\draw\drawpoly.cpp">
+      <Filter>Source Files\Wasabi\bfc\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\dropdownlist.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\edit.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\editwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\editwndstring.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\embeddedxui.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\feeds\feedwatch.cpp">
+      <Filter>Source Files\Wasabi\api\skin\feeds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\feeds\feedwatcherso.cpp">
+      <Filter>Source Files\Wasabi\api\skin\feeds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\filereader\local\fileread.cpp">
+      <Filter>Source Files\Wasabi\api\filereader\local</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\filereader\filereaderapi.cpp">
+      <Filter>Source Files\Wasabi\api\filereader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\findobjectcb.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\bfc\util\findopenrect.cpp">
+      <Filter>Source Files\Wasabi\bfc\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\font\font.cpp">
+      <Filter>Source Files\Wasabi\api\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\font\fontapi.cpp">
+      <Filter>Source Files\Wasabi\api\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\foreignwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\framewnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\fx_dmove.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\gammamgr.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\gc.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\imggen\grad.cpp">
+      <Filter>Source Files\Wasabi\api\imgldr\imggen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\bfc\draw\gradient.cpp">
+      <Filter>Source Files\Wasabi\bfc\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\gradientwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\group.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\groupclickwnd.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\grouplist.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\groupmgr.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\grouptgbutton.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\grouptips.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\groupwndcreate.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\guiobj.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\guiobjectx.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\guiobjwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\guiradiogroup.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\guistatuscb.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\guitree.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\guru.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_browser.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_button.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_checkbox.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_container.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_dropdownlist.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_edit.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_group.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_guilist.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_guiobject.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_guitree.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_layout.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_menubutton.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_querylist.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_rootobj.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_slider.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_text.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_togglebutton.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\h_treeitem.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\historyeditbox.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\HTMLContainer2.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mb\iebrowser.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets\mb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\application\ifc_messageprocessori.cpp">
+      <Filter>Source Files\Wasabi\api\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\imgldr.cpp">
+      <Filter>Source Files\Wasabi\api\imgldr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\imgldrapi.cpp">
+      <Filter>Source Files\Wasabi\api\imgldr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\bfc\util\inifile.cpp">
+      <Filter>Source Files\Wasabi\bfc\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\items\intarray.cpp">
+      <Filter>Source Files\Wasabi\api\config\items</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\jitd.cpp">
+      <Filter>Source Files\Wasabi\api\script\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\jitdbreak.cpp">
+      <Filter>Source Files\Wasabi\api\script\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\keyboard.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\labelwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\layer.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\layout.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\listview.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\listwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\xml\LoadXML.cpp">
+      <Filter>Source Files\Wasabi\api\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mb\mainminibrowser.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets\mb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mb\mbsvc.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets\mb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mb\minibrowser.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets\mb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mb\minibrowserwnd.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets\mb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\mouseredir.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\msgbox.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\nakedobject.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objcontroller.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objcontrollert.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\objdirwnd.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\objectactuator.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objecttable.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\config\options.cpp">
+      <Filter>Source Files\Wasabi\api\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\imggen\osedge.cpp">
+      <Filter>Source Files\Wasabi\api\imgldr\imggen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\oswnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\oswndhost.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\paintset.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\pathpicker.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\playlistcb.cpp">
+      <Filter>Source Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\PlaylistScriptObject.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\imggen\poly.cpp">
+      <Filter>Source Files\Wasabi\api\imgldr\imggen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\popexitcb.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\popexitchecker.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\popup.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\pslider.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\qpaintwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\regexp.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\regioncache.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\resize.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobj.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobjcb.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobjcbi.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobjcbx.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobjcontroller.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobject.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobjecti.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\rootobjectx.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\rootwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\rootwndholder.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\sa.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sapplication.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sbitlist.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\scbkgwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\scolor.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\scolormgr.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\locales\localesmgr.cpp">
+      <Filter>Source Files\Wasabi\api\locales</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\script.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\c_script\scripthook.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects\c_script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\scriptmgr.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\scriptobj.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\scriptobji.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\scriptobjx.cpp">
+      <Filter>Source Files\Wasabi\api\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\scrollbar.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\sdebuggerui.cpp">
+      <Filter>Source Files\Wasabi\api\script\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\util\selectfile.cpp">
+      <Filter>Source Files\Wasabi\api\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\SelItemList.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\sepwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\seqband.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\seqpreamp.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\widgets\seqvis.cpp">
+      <Filter>Source Files\Wasabi\api\skin\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\service\servicei.cpp">
+      <Filter>Source Files\Wasabi\api\service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sfile.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sgammagroup.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\sgammaset.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skin.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skinapi.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\syscb\callbacks\skincb.cpp">
+      <Filter>Source Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skinelem.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\skinembed.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skinfilter.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skinfont.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skinitem.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\skinparse.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\skin\SkinVersion.cpp">
+      <Filter>Source Files\Wasabi\api\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\skinwnd.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wnd\wndclass\slider.cpp">
+      <Filter>Source Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\slist.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\objects\smap.cpp">
+      <Filter>Source Files\Wasabi\api\script\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\wndmgr\snappnt.cpp">
+      <Filter>Source Files\Wasabi\api\wndmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\imgldr\imggen\solid.cpp">
+      <Filter>Source Files\Wasabi\api\imgldr\imggen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gen_ml\menu.cpp">
+      <Filter>Source Files\gen_ml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Wasabi\api\script\debugger\sourcecodeline.cpp">
+      <Filter>Source Files\Wasabi\api\script\debugger</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlbumArt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="embedwndguid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gen_ml\menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menuactions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="minibrowserCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp__gen_ff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skininfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa2buckitems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa2cfgitems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa2core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa2coreactions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa2frontend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa2groupdefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa2playlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa2pldirobj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa2pledit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa2songticker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa2wndembed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wasabicfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinampConfigScriptObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\abstractwndhold.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\alphamgr.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\animate.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\config\api_config.h">
+      <Filter>Header Files\Wasabi\api\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\config\api_configi.h">
+      <Filter>Header Files\Wasabi\api\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\config\api_configx.h">
+      <Filter>Header Files\Wasabi\api\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\font\api_font.h">
+      <Filter>Header Files\Wasabi\api\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\filereader\api_readercallback.h">
+      <Filter>Header Files\Wasabi\api\filereader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\feeds\api_textfeed.h">
+      <Filter>Header Files\Wasabi\api\skin\feeds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\timer\api_timer.h">
+      <Filter>Header Files\Wasabi\api\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\api_wndmgr.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\appbarwnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\appcmds.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\autopopup.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\font\bitmapfont.h">
+      <Filter>Header Files\Wasabi\api\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\blankwnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\browsercb.h">
+      <Filter>Header Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\browsercbi.h">
+      <Filter>Header Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\buttbar.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\button.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\buttwnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\config\cfglist.h">
+      <Filter>Header Files\Wasabi\api\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\combobox.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\compbuck2.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\config\config.h">
+      <Filter>Header Files\Wasabi\api\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\container.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\customobject.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\dropdownlist.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\editwnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\feeds\ezfeed.h">
+      <Filter>Header Files\Wasabi\api\skin\feeds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\filereader\filereaderapi.h">
+      <Filter>Header Files\Wasabi\api\filereader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\font\font.h">
+      <Filter>Header Files\Wasabi\api\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\font\fontapi.h">
+      <Filter>Header Files\Wasabi\api\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\framewnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\gc.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\gradientwnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\group.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\grouptgbutton.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\grouptips.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\guiobjwnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\guiradiogroup.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\c_script\h_rootobj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\historyeditbox.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\application\ifc_messageprocessori.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\imgldr\imgldr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\imgldr\imgldrapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\imgldr\ImgLoaderEnum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\labelwnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\layer.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\layout.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\listwnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\xml\LoadXML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\metacb.h">
+      <Filter>Header Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\mb\minibrowser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\mb\minibrowserwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\mouseredir.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\msgbox.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\objdirwnd.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\playlistcb.h">
+      <Filter>Header Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\PlaylistScriptObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\pslider.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\resize.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\rootobj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\rootobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\rootobjecti.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\rootobjectx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\rootwndholder.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\sapplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\scbkgwnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\scolor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\scolormgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\c_script\scripthook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\debugger\sdebuggerui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\util\selectfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\sepwnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\seqband.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\seqpreamp.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\sfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\sgammagroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\sgammaset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skinapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skinelem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\skinembed.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skinfilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skinfont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skinitem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\skinparse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\SkinVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\skinwnd.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\snappnt.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\sprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_accessibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_accroleserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_action.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_droptarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_fileread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\filereader\svc_filereadI.h">
+      <Filter>Header Files\Wasabi\api\filereader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_filesel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_objectdir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_scriptobj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_textfeed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\service\svcs\svc_wndcreate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\svccbi.h">
+      <Filter>Header Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\svcwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\svcwndhold.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\sxmldoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\syscb.h">
+      <Filter>Header Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\util\systray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\tabsheet.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\tabsheetbar.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\text.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\textbase.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\feeds\textfeed.h">
+      <Filter>Header Files\Wasabi\api\skin\feeds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\timer\timerclient.h">
+      <Filter>Header Files\Wasabi\api\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\timer\timermul.h">
+      <Filter>Header Files\Wasabi\api\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\timer\tmultiplex.h">
+      <Filter>Header Files\Wasabi\api\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\treewnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\font\win32\truetypefont_win32.h">
+      <Filter>Header Files\Wasabi\api\font\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\config\uioptions.h">
+      <Filter>Header Files\Wasabi\api\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\util\varmgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\vcpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\virtualhostwnd.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\service\waservicefactoryt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\syscb\callbacks\wndcb.h">
+      <Filter>Header Files\Wasabi\api\syscb\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndclass\wndholder.h">
+      <Filter>Header Files\Wasabi\api\wnd\wndclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wndmgr\wndmgrapi.h">
+      <Filter>Header Files\Wasabi\api\wndmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\xml\XMLAutoInclude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\xml\xmlparams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\xml\xmlparamsi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\xml\xmlparamsx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\xml\xmlreader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\xml\xmlwrite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\xuicustomobject.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\xuiframe.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\xuilist.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\xuimenu.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\xuithemeslist.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\xuitree.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\wa2\xuiwa2slider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\minibrowser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\paintcb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\popexitchecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\popup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\resizable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\rootwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\virtualwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\wndtrack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\config\items\intarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\locales\localesmgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api__gen_ff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\api_colorthemes.h">
+      <Filter>Header Files\Wasabi\api\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\core\api_core.h">
+      <Filter>Header Files\Wasabi\api\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\dependency\api_dependent.h">
+      <Filter>Header Files\Wasabi\api\dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\dependency\api_dependentviewer.h">
+      <Filter>Header Files\Wasabi\api\dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\filereader\api_filereader.h">
+      <Filter>Header Files\Wasabi\api\filereader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\imgldr\api_imgldr.h">
+      <Filter>Header Files\Wasabi\api\imgldr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\locales\api_locales.h">
+      <Filter>Header Files\Wasabi\api\locales</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\locales\api_localesx.h">
+      <Filter>Header Files\Wasabi\api\locales</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\locales\api_localesi.h">
+      <Filter>Header Files\Wasabi\api\locales</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\api_maki.h">
+      <Filter>Header Files\Wasabi\api\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\api_makii.h">
+      <Filter>Header Files\Wasabi\api\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\api_makix.h">
+      <Filter>Header Files\Wasabi\api\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\api_palette.h">
+      <Filter>Header Files\Wasabi\api\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\api_skin.h">
+      <Filter>Header Files\Wasabi\api\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\api_window.h">
+      <Filter>Header Files\Wasabi\api\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\api_wnd.h">
+      <Filter>Header Files\Wasabi\api\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\apiinit.h">
+      <Filter>Header Files\Wasabi\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\config\items\attribute.h">
+      <Filter>Header Files\Wasabi\api\config\items</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\config\items\attrstr.h">
+      <Filter>Header Files\Wasabi\api\config\items</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\basewnd.h">
+      <Filter>Header Files\Wasabi\api\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\platform\win32\bitmap.h">
+      <Filter>Header Files\Wasabi\api\wnd\platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\config\items\cfgitem.h">
+      <Filter>Header Files\Wasabi\api\config\items</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\config\items\cfgitemi.h">
+      <Filter>Header Files\Wasabi\api\config\items</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\config\items\cfgitemx.h">
+      <Filter>Header Files\Wasabi\api\config\items</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wac\compon.h">
+      <Filter>Header Files\Wasabi\api\wac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\contextmenu.h">
+      <Filter>Header Files\Wasabi\api\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\core\coreactions.h">
+      <Filter>Header Files\Wasabi\api\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\core\coreadminobj.h">
+      <Filter>Header Files\Wasabi\api\script\objects\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\core\coreobj.h">
+      <Filter>Header Files\Wasabi\api\script\objects\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\cursor.h">
+      <Filter>Header Files\Wasabi\api\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\cursormgr.h">
+      <Filter>Header Files\Wasabi\api\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\deactivatemgr.h">
+      <Filter>Header Files\Wasabi\api\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\debugger\debugsymbols.h">
+      <Filter>Header Files\Wasabi\api\script\debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\bfc\depend.h">
+      <Filter>Header Files\Wasabi\bfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\bfc\depview.h">
+      <Filter>Header Files\Wasabi\bfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\drag.h">
+      <Filter>Header Files\Wasabi\api\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\dragitemi.h">
+      <Filter>Header Files\Wasabi\api\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\dragitem.h">
+      <Filter>Header Files\Wasabi\api\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\filereader\local\fileread.h">
+      <Filter>Header Files\Wasabi\api\filereader\local</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\wnd\findobjectcb.h">
+      <Filter>Header Files\Wasabi\api\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\bfc\util\findopenrect.h">
+      <Filter>Header Files\Wasabi\bfc\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\gammamgr.h">
+      <Filter>Header Files\Wasabi\api\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\imgldr\imggen\grad.h">
+      <Filter>Header Files\Wasabi\api\imgldr\imggen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\group.h">
+      <Filter>Header Files\Wasabi\api\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\groupmgr.h">
+      <Filter>Header Files\Wasabi\api\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\groupwndcreate.h">
+      <Filter>Header Files\Wasabi\api\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\guiobj.h">
+      <Filter>Header Files\Wasabi\api\script\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\guiobjectx.h">
+      <Filter>Header Files\Wasabi\api\script\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\script\objects\guiobject.h">
+      <Filter>Header Files\Wasabi\api\script\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\guitree.h">
+      <Filter>Header Files\Wasabi\api\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Wasabi\api\skin\widgets\mb\iebrowser.h">
+      <Filter>Header Files\Wasabi\api\skin\widgets\mb</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\gen_ml\ml.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Winamp\wa_ipc.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Winamp\FRONTEND.H">
+      <Filter>Header Files\Winamp</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{bf65d618-5e45-4f2a-8125-af87835711e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{bbaa79ab-c1cc-4e73-b671-e9532c2313cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{076c0d6d-9764-48af-83ce-e1e298abadcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi">
+      <UniqueIdentifier>{3ddc66e2-c10a-44eb-846f-dde2fd579af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api">
+      <UniqueIdentifier>{ed9da2cf-84b0-4883-8183-5756443f1d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\config">
+      <UniqueIdentifier>{428efb3d-499b-4538-b225-59995d0a4ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\skin">
+      <UniqueIdentifier>{711418c8-1bf4-487d-8e5e-55bc545352a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\skin\widgets">
+      <UniqueIdentifier>{a935b145-a8e6-4fb1-b6d3-2a7d252c9a51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\wnd">
+      <UniqueIdentifier>{71c5c868-2d6d-405c-8cb7-76423e1d7c52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\wnd\wndclass">
+      <UniqueIdentifier>{430dcbf9-48d9-4b4a-ab86-d7d4d6a6d60b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\wac">
+      <UniqueIdentifier>{6d228362-30a9-4c00-a03e-2a09d669b992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\script">
+      <UniqueIdentifier>{83e1c33a-cf4b-4207-ac1c-87b8755d4ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\script\objects">
+      <UniqueIdentifier>{8520b576-ce2c-469c-86fa-14d0f9763eca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\script\objects\core">
+      <UniqueIdentifier>{f2411e13-0f08-4b12-a167-2f4aafb392a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\syscb">
+      <UniqueIdentifier>{cf9bb71c-7c6e-4425-b0a4-0f5a534db77f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\syscb\callbacks">
+      <UniqueIdentifier>{d148307d-f103-4179-b419-39c6d223d3b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\script\debugger">
+      <UniqueIdentifier>{a47af283-0ae4-4855-9719-db7403be60f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\bfc">
+      <UniqueIdentifier>{c2af4389-c666-45af-9218-86f2adccdcdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\bfc\draw">
+      <UniqueIdentifier>{117e60d7-5011-40d3-b3ec-abdceaa4c72e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\skin\feeds">
+      <UniqueIdentifier>{ebddb0e8-052a-41d9-8506-f61752e88cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\filereader">
+      <UniqueIdentifier>{034c19ed-376c-4107-93e5-ba0861c07235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\filereader\local">
+      <UniqueIdentifier>{55d69045-d7bf-4a69-b84a-7538dfe6baed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\bfc\util">
+      <UniqueIdentifier>{f448e746-ba3c-42bb-a0c1-f7e93508834f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\font">
+      <UniqueIdentifier>{2372ff4c-f72f-43de-a65d-ba9f537b2913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\wndmgr">
+      <UniqueIdentifier>{a657e19a-8af2-4f0b-955c-9ccbae2e77d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\imgldr">
+      <UniqueIdentifier>{1f90661a-bc0a-441b-b342-2d6eedf9fb94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\imgldr\imggen">
+      <UniqueIdentifier>{0ae62a5f-d0c5-4ff6-89ca-ab170103c2bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\script\objects\c_script">
+      <UniqueIdentifier>{5ab5bf42-9891-4d5f-a9ff-9ece8a4270c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\nu">
+      <UniqueIdentifier>{3d2e3e56-48d8-430f-94de-9b8a57dfe4c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\skin\widgets\mb">
+      <UniqueIdentifier>{93fe5f86-d0f9-4c43-8e81-cddae4227244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\application">
+      <UniqueIdentifier>{584eed9a-47e5-4c37-8bca-a95d75c29f62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\config\items">
+      <UniqueIdentifier>{bffcb066-b578-490f-aaf9-fbf8aef6d4c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\xml">
+      <UniqueIdentifier>{dd59272c-3349-40ef-b44b-7347bbf4392d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\locales">
+      <UniqueIdentifier>{15a4a353-d120-484d-a13a-6ba08eb013b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\util">
+      <UniqueIdentifier>{c56b1f21-e4b6-4135-b990-c5530dd83d03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\service">
+      <UniqueIdentifier>{b9f8ab37-1686-49b1-b338-ba9dd90c6886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gen_ml">
+      <UniqueIdentifier>{339b1b9e-0d18-4483-a452-2d7dac4e9774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\skin\widgets\stats">
+      <UniqueIdentifier>{c9c62206-3924-43e8-b900-a52671601a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\service\svcs">
+      <UniqueIdentifier>{f7c32081-1c3e-4652-8fdc-999024d3abab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\timer">
+      <UniqueIdentifier>{92bac19f-25cb-4864-ad12-9454ca805370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\font\win32">
+      <UniqueIdentifier>{bfa00cac-2671-4338-a525-dc2a7a3cb835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\skin\widgets\wa2">
+      <UniqueIdentifier>{e4c9b2bb-dd6a-4bc2-ad09-ca5df8a0f6b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\core">
+      <UniqueIdentifier>{5b8e1124-eb86-4fdb-80b1-e62a9038d935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Wasabi\api\dependency">
+      <UniqueIdentifier>{d3a01f56-464b-4976-813a-80569bcdac9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi">
+      <UniqueIdentifier>{e8d5e893-f323-4825-991f-51c02ed78ecd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api">
+      <UniqueIdentifier>{e0ab39aa-1910-4819-a602-0fdd17d66456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\wnd">
+      <UniqueIdentifier>{6ef901fe-7701-4453-b9c4-d7472c0de173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\skin">
+      <UniqueIdentifier>{ff1b723c-3fc3-46c9-8cef-2cc3425816c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\skin\widgets">
+      <UniqueIdentifier>{a415d0c3-a60e-464c-81cc-706cb07d84d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\skin\widgets\wa2">
+      <UniqueIdentifier>{2a37a25a-a795-41d6-b223-ab458cea036f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\xml">
+      <UniqueIdentifier>{29e11ac1-6f08-4aaa-a395-e3848eb70331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\wnd\wndclass">
+      <UniqueIdentifier>{5e435b28-0443-4721-8b76-88aa15f8328f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\syscb">
+      <UniqueIdentifier>{1e142ae9-c0c9-48cc-9c21-ff3aa423aa04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\syscb\callbacks">
+      <UniqueIdentifier>{39f17d69-60a7-4065-b4a4-7c29811564e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\service">
+      <UniqueIdentifier>{8d268021-ee46-4bee-9f81-7c6abfc875a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\script">
+      <UniqueIdentifier>{e86e6bdd-0733-456f-9887-0255316e7467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\util">
+      <UniqueIdentifier>{781a8fb4-cac7-4473-a69c-1756a64cfd49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\config">
+      <UniqueIdentifier>{c861b738-eb90-48e4-968a-772d679f3cc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\font">
+      <UniqueIdentifier>{b0ee89d7-6347-4058-8480-871ff274503e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\font\win32">
+      <UniqueIdentifier>{aee2537a-d56d-463e-9f3d-0cb76daf7c94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\timer">
+      <UniqueIdentifier>{763bb103-bdcd-4a05-be99-8424a41baedc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\skin\feeds">
+      <UniqueIdentifier>{590fffe6-e7cb-4003-881e-cb8e3de02a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\script\objects">
+      <UniqueIdentifier>{94de1687-3b46-432c-b0db-2f3d91b37c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\service\svcs">
+      <UniqueIdentifier>{24e3748f-b780-4f9b-b819-c3d885bd2794}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\filereader">
+      <UniqueIdentifier>{aec2a760-6241-4542-9d9d-fd2c87cb86bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\wndmgr">
+      <UniqueIdentifier>{76ae14a7-78a1-4352-873a-7ec4c1673336}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\script\debugger">
+      <UniqueIdentifier>{13b72f8c-f0f6-4cdc-a8ae-a9dfee4b3b84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\script\objects\c_script">
+      <UniqueIdentifier>{8d9f0dc3-353d-4ea1-999b-d0c58e5d8237}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\core">
+      <UniqueIdentifier>{44c64431-48ef-4126-865d-e7eedbe2d502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\dependency">
+      <UniqueIdentifier>{7ecf8a6f-c16e-4ab5-a085-15df6e952981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\imgldr">
+      <UniqueIdentifier>{94eb27c8-6d80-4b08-8f0e-36c68aa47651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\locales">
+      <UniqueIdentifier>{6bbae227-6fd3-40d9-8e81-64146c137948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\config\items">
+      <UniqueIdentifier>{56124eba-f9ec-4c7b-ab97-d0d84b0e32ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\wnd\platform">
+      <UniqueIdentifier>{6f852919-472d-458b-8ac5-5f8d41657372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\wnd\platform\win32">
+      <UniqueIdentifier>{40ebbca9-2cf3-41fe-bf4b-7265a5d488ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\wac">
+      <UniqueIdentifier>{6b36cef2-2356-41af-b817-f508f96d78d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\script\objects\core">
+      <UniqueIdentifier>{0291d685-9a9b-485b-9aae-744d4afbde70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\bfc">
+      <UniqueIdentifier>{1edcd4ab-1ef7-48fb-a49c-35b3a9a3be5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\filereader\local">
+      <UniqueIdentifier>{a80e512f-2eda-4ae3-978f-9030b568f8da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\bfc\util">
+      <UniqueIdentifier>{19b8ce8d-6a1f-4eca-8e27-4e84a9be5014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Winamp">
+      <UniqueIdentifier>{fb9b1379-7d7c-4066-a819-80a2e55dd0d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\imgldr\imggen">
+      <UniqueIdentifier>{a9dc66ed-6c31-4fae-a36c-9743ba4a33a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wasabi\api\skin\widgets\mb">
+      <UniqueIdentifier>{70d07248-75c9-493f-b244-fe2e839114d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gen_ff.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+; specify langpacks 
+;
+;
+;
+;
+all
+en-us
+es-us
+fr-fr
+hu-hu
+ja-jp
+pl-pl
+pt-br
+ro-ro
+ru-ru
+tr-tr
+
+; these are ear-marked for being removed if no longer updated from 5.71
+;de-de
+;id-id
+;it-it
+;ko-kr
+;nl-nl
+;sv-se
+;zh-cn
+;zh-tw

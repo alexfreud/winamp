@@ -1,0 +1,54 @@
+diff --git a/src/share/win_utf8_io/win_utf8_io.c b/src/share/win_utf8_io/win_utf8_io.c
+index 65b5699..af6d0f4 100644
+--- a/src/share/win_utf8_io/win_utf8_io.c
++++ b/src/share/win_utf8_io/win_utf8_io.c
+@@ -115,7 +115,11 @@ int get_utf8_argv(int *argc, char ***argv)
+ 	char **utf8argv;
+ 	int ret, i;
+ 
++#if defined (WINAPI_FAMILY_PARTITION) && !WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP | WINAPI_PARTITION_SYSTEM)
++	if ((handle = LoadPackagedLibrary("msvcrt.dll", 0)) == NULL) return 1;
++#else
+ 	if ((handle = LoadLibraryW(L"msvcrt.dll")) == NULL) return 1;
++#endif
+ 	if ((wgetmainargs = (wgetmainargs_t)GetProcAddress(handle, "__wgetmainargs")) == NULL) {
+ 		FreeLibrary(handle);
+ 		return 1;
+@@ -192,6 +196,9 @@ size_t strlen_utf8(const char *str)
+ /* get the console width in characters */
+ int win_get_console_width(void)
+ {
++#if defined (WINAPI_FAMILY_PARTITION) && !WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP | WINAPI_PARTITION_SYSTEM)
++	return 80;
++#else    
+ 	int width = 80;
+ #if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
+ 	CONSOLE_SCREEN_BUFFER_INFO csbi;
+@@ -201,6 +208,7 @@ int win_get_console_width(void)
+ 			width = csbi.dwSize.X;
+ #endif // WINAPI_PARTITION_DESKTOP
+ 	return width;
++#endif    
+ }
+ 
+ /* print functions */
+@@ -211,6 +219,11 @@ static int wprint_console(FILE *stream, const wchar_t *text, size_t len)
+ 	DWORD out;
+ 	int ret;
+ 
++#if defined (WINAPI_FAMILY_PARTITION) && !WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP | WINAPI_PARTITION_SYSTEM)
++	// disabled for UWP as there's no alternative:
++	// https://docs.microsoft.com/en-us/uwp/win32-and-com/alternatives-to-windows-apis-uwp
++#else
++    
+ 	do {
+ 		if (stream == stdout) {
+ 			HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+@@ -229,6 +242,7 @@ static int wprint_console(FILE *stream, const wchar_t *text, size_t len)
+ 			return out;
+ 		}
+ 	} while(0);
++#endif
+ 
+ 	ret = fputws(text, stream);
+ 	if (ret < 0)

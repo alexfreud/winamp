@@ -1,0 +1,212 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AUTOTAGGER DIALOGEX 0, 0, 420, 318
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Winamp Auto Tagger"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply Changes",IDOK,296,297,62,14
+    PUSHBUTTON      "Cancel",IDCANCEL,363,297,50,14
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,7,406,157
+    GROUPBOX        "Old Info",IDC_STATIC_OLDINFO,7,175,201,93
+    LTEXT           "Title:",IDC_STATIC_TITLE_NEW,216,185,30,8
+    LTEXT           "Track #:",IDC_STATIC_TRACK_NEW,216,194,30,8
+    LTEXT           "Artist:",IDC_STATIC_ARTIST_NEW,216,203,30,8
+    LTEXT           "Album:",IDC_STATIC_ALBUM_NEW,216,212,30,8
+    LTEXT           "Genre:",IDC_STATIC_GENRE_NEW,216,221,30,8
+    LTEXT           "Year:",IDC_STATIC_YEAR_NEW,216,230,30,8
+    LTEXT           "",IDC_TITLE_NEW,246,185,162,8,SS_NOPREFIX
+    LTEXT           "",IDC_TRACK_NEW,246,194,66,8
+    LTEXT           "",IDC_ARTIST_NEW,246,203,162,8,SS_NOPREFIX
+    LTEXT           "",IDC_ALBUM_NEW,246,212,162,8,SS_NOPREFIX
+    LTEXT           "",IDC_GENRE_NEW,246,221,162,8,SS_NOPREFIX
+    LTEXT           "",IDC_YEAR_NEW,246,230,66,8
+    GROUPBOX        "New Info",IDC_STATIC_NEWINFO,212,175,201,93
+    LTEXT           "Selected:",IDC_STATIC_FILENAME,7,165,31,8
+    LTEXT           "filename",IDC_FILENAME,41,165,275,8,SS_PATHELLIPSIS
+    LTEXT           "Disc #:",IDC_STATIC_DISC_NEW,312,194,30,8
+    LTEXT           "",IDC_DISC_NEW,342,194,66,8
+    LTEXT           "Title:",IDC_STATIC_TITLE_OLD,11,185,30,8
+    LTEXT           "Track #:",IDC_STATIC_TRACK_OLD,11,194,30,8
+    LTEXT           "Artist:",IDC_STATIC_ARTIST_OLD,11,203,30,8
+    LTEXT           "Album:",IDC_STATIC_ALBUM_OLD,11,212,30,8
+    LTEXT           "Genre:",IDC_STATIC_GENRE_OLD,11,221,30,8
+    LTEXT           "Year:",IDC_STATIC_YEAR_OLD,11,230,30,8
+    LTEXT           "",IDC_TITLE_OLD,41,185,162,8,SS_NOPREFIX
+    LTEXT           "",IDC_TRACK_OLD,41,194,66,8
+    LTEXT           "",IDC_ARTIST_OLD,41,203,162,8,SS_NOPREFIX
+    LTEXT           "",IDC_ALBUM_OLD,41,212,162,8,SS_NOPREFIX
+    LTEXT           "",IDC_GENRE_OLD,41,221,162,8,SS_NOPREFIX
+    LTEXT           "",IDC_YEAR_OLD,41,230,66,8
+    LTEXT           "Disc #:",IDC_STATIC_DISC_OLD,107,194,30,8
+    LTEXT           "",IDC_DISC_OLD,137,194,66,8
+    PUSHBUTTON      "Check All",IDC_CHECK_ALL,319,165,46,11
+    PUSHBUTTON      "Check None",IDC_CHECK_NONE,367,165,46,11
+    LTEXT           "Accessing Gracenote Media Database...",IDC_BRANDTXT,7,303,129,8,NOT WS_VISIBLE
+    LTEXT           "Album Artist:",IDC_STATIC_ALBUMARTIST_OLD,11,239,42,8
+    LTEXT           "Publisher:",IDC_STATIC_PUBLISHER_OLD,11,248,32,8
+    LTEXT           "",IDC_PUBLISHER_OLD,49,248,154,8,SS_NOPREFIX
+    LTEXT           "",IDC_ALBUMARTIST_OLD,55,239,148,8,SS_NOPREFIX
+    LTEXT           "Album Artist:",IDC_STATIC_ALBUMARTIST_NEW,216,239,42,8
+    LTEXT           "Publisher:",IDC_STATIC_PUBLISHER_NEW,216,248,32,8
+    LTEXT           "",IDC_PUBLISHER_NEW,254,248,154,8,SS_NOPREFIX
+    LTEXT           "",IDC_ALBUMARTIST_NEW,260,239,148,8,SS_NOPREFIX
+    LTEXT           "Composer:",IDC_STATIC_COMPOSER_OLD,11,257,36,8
+    LTEXT           "",IDC_COMPOSER_OLD,49,257,154,8,SS_NOPREFIX
+    LTEXT           "Composer:",IDC_STATIC_COMPOSER_NEW,216,257,36,8
+    LTEXT           "",IDC_COMPOSER_NEW,254,257,154,8,SS_NOPREFIX
+    LTEXT           "BPM:",IDC_STATIC_BPM_OLD,108,230,17,8
+    LTEXT           "",IDC_BPM_OLD,138,230,66,8
+    LTEXT           "BPM:",IDC_STATIC_BPM_NEW,312,230,17,8
+    LTEXT           "",IDC_BPM_NEW,342,230,66,8
+END
+
+IDD_SAVING DIALOGEX 0, 0, 186, 45
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Updating Files..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,7,172,14
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,68,24,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_AUTOTAGGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 413
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 311
+    END
+
+    IDD_SAVING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUGINNAME          "Nullsoft Auto-Tagger v%s"
+    65535                   "{D8DBA660-90BD-431d-8F4E-189D6ACB407E}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GRACENOTE_TOOLS_NOT_INSTALLED "Gracenote tools are not installed"
+    IDS_ERROR               "Error"
+    IDS_FILENAME            "Filename"
+    IDS_STATUS              "Status"
+    IDS_PROCESSING          "Processing..."
+    IDS_LOOKINGUP           "Looking up..."
+    IDS_QUERYING            "Querying..."
+    IDS_QUERIED             "Queried"
+    IDS_PROCESSED           "Done"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ANALYZING           "Analyzing..."
+    IDS_WAITING             "Waiting"
+    IDS_NOMATCH             "No Match"
+    IDS_AUTOTAG             "Auto-Tag"
+    IDS_FUZZY               "Unsure"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="add.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlbumArtCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlbumArtContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlbumArtFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlbumFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api_mldb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bgscan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBitemrecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editquery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FolderBrowseEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="guess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="handleMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="local_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalMediaCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ml_local.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ml_subclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mldbApi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mldbApiFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nde_itemRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pe_subclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="queries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReIndexUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="remove.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanFolderBrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wa_subclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_miniinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_media.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_errorinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_audio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\ChildSizer.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\config.cpp">
+      <Filter>Source Files\gen_ml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\DialogSkinner.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\gaystring.cpp">
+      <Filter>Source Files\gen_ml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\listview.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\MediaLibraryInterface.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\menu.cpp">
+      <Filter>Source Files\gen_ml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\menushortcuts.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\ServiceWatcher.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\sort.cpp">
+      <Filter>Source Files\nu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Winamp\strutil.cpp">
+      <Filter>Source Files\Winamp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlbumArtCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlbumArtContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlbumArtFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlbumFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api__ml_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api_mldb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="editquery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FolderBrowseEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="local_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalMediaCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ml_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mldbApi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mldbApiFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MLString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanFolderBrowser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ml_cloud\CloudCallback.h">
+      <Filter>Header Files\ml_cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\config.h">
+      <Filter>Header Files\gen_ml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\gaystring.h">
+      <Filter>Header Files\gen_ml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\menu.h">
+      <Filter>Header Files\gen_ml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Winamp\strutil.h">
+      <Filter>Header Files\Winamp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\replicant\nu\menushortcuts.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\icn_view_mode.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\icn_columns.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\icn_alb_art.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\nf_simple.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\nf_simplealbum.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\nf_threefilters.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\nf_twofilters.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\notfound.png">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_audio_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_most_played_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_never_played_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_podcasts_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_recently_added_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_recently_modified_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_recently_played_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_top_rated_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+    <Image Include="resources\ti_video_16x16x16.bmp">
+      <Filter>Image Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="db_error.txt" />
+    <Text Include="nde_error.txt" />
+    <Text Include="queries.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f6d09751-2ba8-4112-b488-dc1f0ea05c94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{3c287e55-bc08-4d03-824d-ee4d32647054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{13873f78-eb7e-495e-beaa-a25de0940e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{35f126e7-3751-48fb-b7e5-f4aad512a831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\nu">
+      <UniqueIdentifier>{d65e9d81-15db-4230-8fa3-a293d35217b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gen_ml">
+      <UniqueIdentifier>{21c5748c-8e27-4395-80cf-865cb7d06a76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Winamp">
+      <UniqueIdentifier>{4dd5349f-8664-4615-8297-acc4d62c215f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ml_cloud">
+      <UniqueIdentifier>{d3b5c0d1-2830-46e2-a1fe-d83606b83427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gen_ml">
+      <UniqueIdentifier>{a811db7d-f845-4bb5-9437-1c7ac6b27f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\nu">
+      <UniqueIdentifier>{e9155744-9138-4cbe-84e6-413d3b07daa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Winamp">
+      <UniqueIdentifier>{aaff6d40-e86b-4dc0-aa3c-02a2046a8d6a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ml_local.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

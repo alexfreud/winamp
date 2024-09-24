@@ -1,0 +1,245 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0A79AA0BC0A29300FC9A90 /* alac.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A79A90BC0A29300FC9A90 /* alac.c */; };
+		0C0A79AD0BC0A2A100FC9A90 /* decomp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0A79AC0BC0A2A100FC9A90 /* decomp.h */; };
+		0C0A79C20BC0A2D500FC9A90 /* ALACDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A79C00BC0A2D500FC9A90 /* ALACDecoder.cpp */; };
+		0C0A79C30BC0A2D500FC9A90 /* ALACDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0A79C10BC0A2D500FC9A90 /* ALACDecoder.h */; };
+		0C0A79F60BC0A35D00FC9A90 /* api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A79F50BC0A35D00FC9A90 /* api.cpp */; };
+		0C0A7A000BC0A36F00FC9A90 /* factory_alac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A79FB0BC0A36F00FC9A90 /* factory_alac.cpp */; };
+		0C0A7A010BC0A36F00FC9A90 /* factory_alac.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0A79FC0BC0A36F00FC9A90 /* factory_alac.h */; };
+		0C0A7A020BC0A36F00FC9A90 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A79FD0BC0A36F00FC9A90 /* main.cpp */; };
+		0C0A7A030BC0A36F00FC9A90 /* wa5_alac.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0A79FE0BC0A36F00FC9A90 /* wa5_alac.h */; };
+		0C0A7A040BC0A36F00FC9A90 /* api.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0A79FF0BC0A36F00FC9A90 /* api.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C0A79A90BC0A29300FC9A90 /* alac.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = alac.c; sourceTree = "<group>"; };
+		0C0A79AC0BC0A2A100FC9A90 /* decomp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = decomp.h; sourceTree = "<group>"; };
+		0C0A79C00BC0A2D500FC9A90 /* ALACDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ALACDecoder.cpp; sourceTree = "<group>"; };
+		0C0A79C10BC0A2D500FC9A90 /* ALACDecoder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ALACDecoder.h; sourceTree = "<group>"; };
+		0C0A79F50BC0A35D00FC9A90 /* api.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = api.cpp; sourceTree = "<group>"; };
+		0C0A79FB0BC0A36F00FC9A90 /* factory_alac.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = factory_alac.cpp; sourceTree = "<group>"; };
+		0C0A79FC0BC0A36F00FC9A90 /* factory_alac.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = factory_alac.h; sourceTree = "<group>"; };
+		0C0A79FD0BC0A36F00FC9A90 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0C0A79FE0BC0A36F00FC9A90 /* wa5_alac.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = wa5_alac.h; sourceTree = "<group>"; };
+		0C0A79FF0BC0A36F00FC9A90 /* api.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = api.h; sourceTree = "<group>"; };
+		D2AAC0630554660B00DB518D /* libalac.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libalac.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* alac */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = alac;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0C0A7A070BC0A37B00FC9A90 /* Wasabi */,
+				0C0A7A060BC0A37500FC9A90 /* ALAC */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		0C0A7A060BC0A37500FC9A90 /* ALAC */ = {
+			isa = PBXGroup;
+			children = (
+				0C0A79A90BC0A29300FC9A90 /* alac.c */,
+				0C0A79AC0BC0A2A100FC9A90 /* decomp.h */,
+			);
+			name = ALAC;
+			sourceTree = "<group>";
+		};
+		0C0A7A070BC0A37B00FC9A90 /* Wasabi */ = {
+			isa = PBXGroup;
+			children = (
+				0C0A79C00BC0A2D500FC9A90 /* ALACDecoder.cpp */,
+				0C0A79C10BC0A2D500FC9A90 /* ALACDecoder.h */,
+				0C0A79F50BC0A35D00FC9A90 /* api.cpp */,
+				0C0A79FB0BC0A36F00FC9A90 /* factory_alac.cpp */,
+				0C0A79FC0BC0A36F00FC9A90 /* factory_alac.h */,
+				0C0A79FD0BC0A36F00FC9A90 /* main.cpp */,
+				0C0A79FE0BC0A36F00FC9A90 /* wa5_alac.h */,
+				0C0A79FF0BC0A36F00FC9A90 /* api.h */,
+			);
+			name = Wasabi;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* libalac.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0A79AD0BC0A2A100FC9A90 /* decomp.h in Headers */,
+				0C0A79C30BC0A2D500FC9A90 /* ALACDecoder.h in Headers */,
+				0C0A7A010BC0A36F00FC9A90 /* factory_alac.h in Headers */,
+				0C0A7A030BC0A36F00FC9A90 /* wa5_alac.h in Headers */,
+				0C0A7A040BC0A36F00FC9A90 /* api.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* alac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "alac" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = alac;
+			productName = alac;
+			productReference = D2AAC0630554660B00DB518D /* libalac.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "alac" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* alac */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* alac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0A79AA0BC0A29300FC9A90 /* alac.c in Sources */,
+				0C0A79C20BC0A2D500FC9A90 /* ALACDecoder.cpp in Sources */,
+				0C0A79F60BC0A35D00FC9A90 /* api.cpp in Sources */,
+				0C0A7A000BC0A36F00FC9A90 /* factory_alac.cpp in Sources */,
+				0C0A7A020BC0A36F00FC9A90 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB914B08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_EXTENSION = w5s;
+				EXECUTABLE_PREFIX = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = alac;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB914C08733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+					ppc64,
+					x86_64,
+				);
+				EXECUTABLE_PREFIX = lib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = alac;
+			};
+			name = Release;
+		};
+		1DEB914F08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../Wasabi;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB915008733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../Wasabi;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "alac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914B08733D8E0010E9CD /* Debug */,
+				1DEB914C08733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "alac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914F08733D8E0010E9CD /* Debug */,
+				1DEB915008733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

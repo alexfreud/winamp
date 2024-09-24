@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="WAC_Network objects">
+      <UniqueIdentifier>{7c3b93ee-aa47-40c6-95ad-e4afcd39d3d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\Connection">
+      <UniqueIdentifier>{ca35cd6a-dc64-43ca-bfee-ad2cf0120441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\DNS">
+      <UniqueIdentifier>{4deadf48-881f-4f00-b669-a3a077876b55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\HTTP Receiver">
+      <UniqueIdentifier>{15fc15ab-935f-48bc-9189-e91b505ea9a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\HTTP Server">
+      <UniqueIdentifier>{f25ad28a-4456-4d23-af2b-4adc9024d51e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\UDPConnection">
+      <UniqueIdentifier>{f7113691-5b0b-4dcb-9dea-886d6d190881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\Web Server">
+      <UniqueIdentifier>{ff90b68d-efba-4f10-93f2-fb80e6914598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\Connection\Header Files">
+      <UniqueIdentifier>{06efca75-980f-4e94-8167-eac0bee8e4da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\Connection\Source Files">
+      <UniqueIdentifier>{c673ac45-6d54-4f49-b929-e1711381f80a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\DNS\Header Files">
+      <UniqueIdentifier>{05d9e8c6-75cb-4bad-a57e-201b1e3e9395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\DNS\Source Files">
+      <UniqueIdentifier>{2540b583-f949-45cc-b16d-a8503f68c9e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\HTTP Receiver\Header Files">
+      <UniqueIdentifier>{c2f99250-dce7-46e2-a6b7-764c7f91bafb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\HTTP Receiver\Source Files">
+      <UniqueIdentifier>{13edb61c-1a45-465b-9e15-38a239e1856b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\HTTP Server\Header Files">
+      <UniqueIdentifier>{8ff797fd-bd42-4adc-8085-e0fce9da0a1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\HTTP Server\Source Files">
+      <UniqueIdentifier>{9e55efae-2529-4cdf-8e6d-c54beef6e110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\Web Server\Header Files">
+      <UniqueIdentifier>{ad2b1c56-21b5-4706-933b-cd844db4c03f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\Web Server\Source Files">
+      <UniqueIdentifier>{dd64aa09-a6f6-4d61-a51d-e3b8377bf6be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\UDPConnection\Header Files">
+      <UniqueIdentifier>{494d20c6-2df8-4b83-8eb0-59973bf83d9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WAC_Network objects\UDPConnection\Source Files">
+      <UniqueIdentifier>{26d1af8a-8e2c-4778-9dc1-319e662a4d0f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nu\RingBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_connection_factory.cpp">
+      <Filter>WAC_Network objects\Connection\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_ssl_connection_factory.cpp">
+      <Filter>WAC_Network objects\Connection\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_connection.cpp">
+      <Filter>WAC_Network objects\Connection\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_ssl_connection.cpp">
+      <Filter>WAC_Network objects\Connection\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_connection_api.cpp">
+      <Filter>WAC_Network objects\Connection\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_dns_factory.cpp">
+      <Filter>WAC_Network objects\DNS\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_dns.cpp">
+      <Filter>WAC_Network objects\DNS\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_dns_api.cpp">
+      <Filter>WAC_Network objects\DNS\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_http_receiver_factory.cpp">
+      <Filter>WAC_Network objects\HTTP Receiver\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_http_receiver.cpp">
+      <Filter>WAC_Network objects\HTTP Receiver\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_http_receiver_api.cpp">
+      <Filter>WAC_Network objects\HTTP Receiver\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_http_server_factory.cpp">
+      <Filter>WAC_Network objects\HTTP Server\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_http_server.cpp">
+      <Filter>WAC_Network objects\HTTP Server\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_http_server_api.cpp">
+      <Filter>WAC_Network objects\HTTP Server\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_web_server_factory.cpp">
+      <Filter>WAC_Network objects\Web Server\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_web_server_listen.cpp">
+      <Filter>WAC_Network objects\Web Server\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_web_server.cpp">
+      <Filter>WAC_Network objects\Web Server\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_onconncb_api.cpp">
+      <Filter>WAC_Network objects\Web Server\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_page_generator_api.cpp">
+      <Filter>WAC_Network objects\Web Server\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wac_network_web_server_api.cpp">
+      <Filter>WAC_Network objects\Web Server\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceBuild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api__wac_network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="netinc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_ssl_connection_factory.h">
+      <Filter>WAC_Network objects\Connection\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_connection_factory.h">
+      <Filter>WAC_Network objects\Connection\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_connection.h">
+      <Filter>WAC_Network objects\Connection\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_ssl_connection.h">
+      <Filter>WAC_Network objects\Connection\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_connection_api.h">
+      <Filter>WAC_Network objects\Connection\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_dns_factory.h">
+      <Filter>WAC_Network objects\DNS\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_dns.h">
+      <Filter>WAC_Network objects\DNS\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_dns_api.h">
+      <Filter>WAC_Network objects\DNS\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_http_receiver_factory.h">
+      <Filter>WAC_Network objects\HTTP Receiver\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_http_receiver_api.h">
+      <Filter>WAC_Network objects\HTTP Receiver\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_http_server_factory.h">
+      <Filter>WAC_Network objects\HTTP Server\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_http_server.h">
+      <Filter>WAC_Network objects\HTTP Server\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_http_server_api.h">
+      <Filter>WAC_Network objects\HTTP Server\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_web_server_factory.h">
+      <Filter>WAC_Network objects\Web Server\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_web_server_listen.h">
+      <Filter>WAC_Network objects\Web Server\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_web_server.h">
+      <Filter>WAC_Network objects\Web Server\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_onconncb_api.h">
+      <Filter>WAC_Network objects\Web Server\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_page_generator_api.h">
+      <Filter>WAC_Network objects\Web Server\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_web_server_api.h">
+      <Filter>WAC_Network objects\Web Server\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wac_network_http_receiver.h">
+      <Filter>WAC_Network objects\HTTP Receiver\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wac_network.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="version.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

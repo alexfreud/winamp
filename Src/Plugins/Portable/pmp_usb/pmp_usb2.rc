@@ -1,0 +1,209 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_PSP_ICON            PNG                     "resources\\pspIcon.png"
+IDR_USB_ICON            PNG                     "resources\\usbIcon.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 264, 226
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "File Name Format",IDC_STATIC,7,10,56,8
+    EDITTEXT        IDC_NAMEFORMAT,80,7,127,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Format Help",IDC_FILENAMEHELP,211,7,46,14
+    LTEXT           "Playlist Directory",IDC_STATIC,7,26,54,8
+    EDITTEXT        IDC_PLDIR,80,24,128,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_PLBROWSE,211,23,46,14
+    LTEXT           "Supported Formats",IDC_STATIC,7,42,62,8
+    EDITTEXT        IDC_SUPPORTEDFORMATS,80,40,128,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Syntax Help",IDC_FORMATSHELP,211,40,46,14
+    LTEXT           "Delete Empty Folders",IDC_STATIC,7,55,69,8
+    CONTROL         "",IDC_PURGEFOLDERS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,56,8,8
+    PUSHBUTTON      "Save and Rescan",IDC_RESCAN,7,71,66,14
+    PUSHBUTTON      "Refresh Cache",IDC_REFRESHCACHE,79,71,66,14
+    GROUPBOX        "Playlist Writing Options",IDC_STATIC,7,95,250,49
+    COMBOBOX        IDC_PL_WRITE_COMBO,12,108,120,35,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Changing how Winamp saves its playlists may improve compatability with other portable devices.",IDC_STATIC,137,104,113,34
+    LTEXT           "",IDC_PL_WRITE_EG,12,126,120,10
+END
+
+IDD_CONFIG_GLOBAL DIALOGEX 0, 0, 196, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "USB Device Support Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Select the Drive to use from the available list below",IDC_STATIC,5,3,186,67
+    COMBOBOX        IDC_COMBO_MANUALCONNECT,31,17,40,242,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Connect Drive",IDC_MANUALCONNECT,75,17,90,13
+    PUSHBUTTON      "Disconnect Drive",IDC_MANUALDISCONNECT,75,34,90,13
+    PUSHBUTTON      "Blacklist Drive",IDC_MANUALBLACKLIST,75,51,90,13
+    DEFPUSHBUTTON   "Close",IDOK,75,73,45,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_CONFIG_GLOBAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 191
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 86
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_USB_DEVICE_PLUGIN "Nullsoft USB Device Plug-in v%s"
+    65535                   "{E553C1A4-5DE2-4838-8000-FDF8DC377DD4}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANNOT_OPEN_FILE    "Cannot open file"
+    IDS_CANNOT_CREATE_FILE  "Cannot create file"
+    IDS_TRANSFERING_PERCENT "Transferring %d%%"
+    IDS_CANCELLED           "Cancelled"
+    IDS_DONE                "Done"
+    IDS_TRANSFER_FAILED     "Transfer failed"
+    IDS_REMOVEABLE_DRIVE_DETECTED 
+                            "Winamp has detected a removable drive, ""%s (%c:)"".\nIs this a portable music player that you want to manage with Winamp?"
+    IDS_WINAMP_PMP_SUPPORT  "Winamp Portable Music Player Support"
+    IDS_MANUAL_CONNECT_PROMPT 
+                            "Manually connecting the wrong device could cause problems.\nPlease be sure that you have entered a valid USB device letter.\n\nAre you sure you wish to continue?"
+    IDS_WARNING             "Warning"
+    IDS_LOADING_DRIVE_X     "Loading Drive X:"
+    IDS_FAILED_TO_EJECT_DRIVE 
+                            "Failed to eject device. Is something else using it?"
+    IDS_ERROR               "Error"
+    IDS_USB_DRIVE_X         "USB Drive X:"
+    IDS_TRACK_IN_USE        "Track is in use - Could not delete!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CACHE_UPDATED       "Cache updated."
+    IDS_SUCCESS             "Success"
+    IDS_FILENAME_FORMATTING_INFO 
+                            "You may enter a filename format string for your files.\nIt can contain \\ or / to delimit a path, and the following keywords:\n\n  <Artist> - inserts the artist with the default capitalization\n  <ARTIST> - inserts the artist in all uppercase\n  <artist> - inserts the artist in all lowercase\n  <Albumartist>/<ALBUMARTIST>/<albumartist> - inserts the album artist\n  <Album>/<ALBUM>/<album> - inserts the album\n  <year> - inserts the album year\n  <Genre>/<GENRE>/<genre> - inserts the album genre\n  <Title>/<TITLE>/<title> - inserts the track title\n  <filename> - inserts the original filename (extension safe)\n  <disc> - inserts the disc number\n  #, ##, or ### - inserts the track number, with leading 0s if ## or ###\n\n  For Example:     E:\\Music\\<Artist>\\<Album>\\## - <Title>\n"
+    IDS_FILENAME_FORMAT_HELP "Filename Format Help"
+    IDS_SELECT_FOLDER_TO_LOAD_PLAYLISTS 
+                            "Please select a folder to load playlists from the device."
+    IDS_ERR_SELECTED_PATH_NOT_ON_DEVICE 
+                            "Error: selected path is not on device!"
+    IDS_SUPPORTED_FORMAT_INFO 
+                            "You may enter supported extensions in the form of\nextensions separated by semicolons.\n\nFor Example:   mp3;wav;wma"
+    IDS_SUPPORTED_FORMAT_HELP "Supported Formats Help"
+    IDS_RESCAN_COMPLETE_SAVED "Rescan complete, device settings saved."
+    IDS_RESCAN_COMPLETE     "Rescan complete"
+    IDS_ADVANCED            "Advanced"
+    IDS_UNBLACKLIST_DRIVE   "Un-blacklist Drive"
+    IDS_BLACKLIST_DRIVE     "Blacklist Drive"
+    IDS_DRIVE_CONNECTED_DISCONNECT_Q 
+                            "The Drive you have selected to blacklist is currently connected and being managed.\n\nWould you like to disconnect the Drive now or you can wait until you restart Winamp."
+    IDS_SLASH_AT_START      "Slash at start of paths (default)"
+    IDS_DOT_AT_START        "Dot at start of paths"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NO_SLASH_OR_DOT     "No slash or dot at start"
+    IDS_EG_SLASH            "e.g.  \\path\\to\\file.mp3"
+    IDS_EG_DOT              "e.g.  .\\path\\to\\file.mp3"
+    IDS_EG_NEITHER          "e.g.  path\\to\\file.mp3"
+    IDS_DELAYLOAD_FAILURE   "USB plug-in cannot load the database to write the cache file"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

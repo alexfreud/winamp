@@ -1,0 +1,98 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "..\\Winamp\\resource\\WinampIcon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_WINAMP_AGENT        "Winamp Agent"
+    IDS_OPEN_WINAMP         "Open Winamp"
+    IDS_DISABLE_WINAMP_AGENT "Disable Winamp Agent"
+    IDS_CLOSE_WINAMP_AGENT  "Close Winamp Agent"
+    IDS_AUDIO_CD            "Audio CD %c: [%s]"
+    IDS_EMPTY               "Empty"
+    IDS_BOOKMARKS           "Bookmarks"
+    IDS_NO_BOOKMARKS_FOUND  "No bookmarks found"
+    IDS_WINAMP_AGENT_ERROR  "Winamp Agent Error"
+    IDS_CANNOT_REGISTER_WINDOW_CLASS "Cannot register window class!"
+    IDS_CANNOT_CREATE_WINDOW "Cannot create window!"
+END
+
+STRINGTABLE 
+BEGIN
+    65535                   "{0E844B2A-70E8-4007-A73A-E9C05DB3F06D}"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

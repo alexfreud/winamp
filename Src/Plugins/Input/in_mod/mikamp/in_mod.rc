@@ -1,0 +1,391 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PREFS DIALOGEX 0, 0, 293, 205
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Tab1",MM_PREFTAB,"SysTabControl32",WS_TABSTOP,4,3,285,180
+    DEFPUSHBUTTON   "OK",IDOK,185,188,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,239,188,50,13
+END
+
+IDD_ID3EDIT DIALOGEX 0, 0, 273, 239
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Module Info"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_ID3_FN,4,4,265,12,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Title",IDC_STATIC,4,22,14,8
+    EDITTEXT        IDC_TITLE,22,21,133,12,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Type",IDC_STATIC,160,22,15,8
+    EDITTEXT        IDC_TYPE,180,21,89,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Header Info",IDC_STATIC,4,38,130,57
+    LTEXT           "File Size:\nLength:\nChannels:\nSamples:\nInstruments:",IDC_STATIC,8,49,45,40
+    LTEXT           "",IDC_INFOLEFT,61,49,70,40
+    GROUPBOX        "Player Info",IDC_STATIC,139,38,130,57
+    LTEXT           "BPM:\nSong Spd:\nPosition:\nRow:\nVoices:",IDC_STATIC,142,49,45,40
+    LTEXT           "",IDC_INFORIGHT,195,49,70,40
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",WS_TABSTOP,4,99,265,120
+    CONTROL         "Track song",IDC_TRACK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,224,52,10
+    DEFPUSHBUTTON   "Close",IDOK,227,223,42,13
+END
+
+IDD_INSTRUMENTS DIALOGEX 0, 0, 262, 103
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_INSTLIST,2,3,128,98,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Instrument Header",IDC_STATIC,134,0,125,101
+    LTEXT           "Def. Volume:\nAuto-Vibrato:\nFade out:",IDC_STATIC,138,9,44,24
+    LTEXT           "",IDC_INSTHEAD,190,9,64,24
+    GROUPBOX        "Envelopes",IDC_STATIC,134,34,125,67
+    LTEXT           "Volume:\nPanning:\nPitch:",IDC_STATIC,138,42,44,24
+    LTEXT           "",IDC_INSTENV,190,42,64,24
+    GROUPBOX        "Samples Used",IDC_STATIC,134,67,125,34
+    EDITTEXT        TB_SAMPLELIST,137,77,119,21,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+IDD_SAMPLES DIALOGEX 0, 0, 262, 103
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_SAMPLIST,2,3,128,98,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Sample Header",IDC_STATIC,134,0,125,68
+    LTEXT           "Length:\nFormat:\nQuality:\nLooping:\nAuto-Vibrato:\nVolume:\nPanning:",IDC_STATIC,139,8,45,56
+    LTEXT           "",IDC_SAMPINFO,190,8,66,56
+END
+
+IDD_COMMENT DIALOGEX 0, 0, 262, 103
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        CEMENT_BOX,2,3,258,98,ES_MULTILINE | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_PREFTAB_DECODER DIALOGEX 0, 0, 282, 163
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Song Looping",IDC_STATIC,4,1,273,64
+    CONTROL         "Slider1",IDC_LOOPS,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,7,15,127,12
+    LTEXT           "",IDC_LOOPTEXT,141,15,129,12
+    CONTROL         "Unconditional Looping\n(Forces all songs to loop even if they lack specific loop information)",IDC_LOOPALL,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,9,32,126,27
+    CONTROL         "Continue Play After Loop\n(useful for some games' modules, that contain several songs indeed)",IDC_CONT_LOOP,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,144,32,127,27
+    CONTROL         "Play Unlisted Patterns\n(Otherwise-unplayed pattern data is tacked onto the end of the song)",IDC_PLAYALL,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_DISABLED | WS_TABSTOP,9,69,130,27
+    CONTROL         "Use Resonant Lowpass Filters\n(Used by some Impulse Tracker songs; CPU intensive)",IDC_RESONANCE,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,144,69,131,27
+    CONTROL         "Strip Trailing Silence\n(May cause some songs to end or loop a few seconds prematurely)",IDC_STRIPSILENCE,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,8,100,130,26
+    CONTROL         "Seek by orders (as opposed to seek by seconds; song length will be displayed in orders, too)",IDC_SEEKBYORDERS,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,144,100,131,27
+    LTEXT           "Stereo Separation",IDC_STATIC,4,140,42,18
+    LTEXT           "0%",IDC_STATIC,48,132,17,9
+    LTEXT           "100%",IDC_STATIC,102,132,21,9
+    LTEXT           "400%",IDC_STATIC,159,132,22,9
+    CONTROL         "Slider1",IDC_PANSEP,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,48,145,123,9
+    CONTROL         "Fadeout for...",IDC_FADECHECK,"Button",BS_AUTOCHECKBOX | BS_TOP | WS_TABSTOP,205,132,69,10
+    EDITTEXT        IDC_FADEOUT,205,145,49,12,ES_RIGHT | ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Spin1",IDC_FADESPIN,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,248,145,8,13
+    LTEXT           "sec.",IDC_FADESEC,260,148,14,10,WS_DISABLED
+END
+
+IDD_PREFTAB_MIXER DIALOGEX 0, 0, 282, 163
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_TRANSPARENT | WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Output Mode",IDC_STATIC,4,1,134,47
+    CONTROL         "Reverse Stereo",OUTMODE_REVERSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,15,72,10
+    LTEXT           "Max voices:",IDC_STATIC,12,31,39,8
+    COMBOBOX        IDC_VOICES,60,29,42,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Streaming",IDC_STATIC,4,49,134,29
+    CONTROL         "Prompt to save to disk",IDC_SAVESTR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,61,85,11
+    GROUPBOX        "Output Quality",IDC_STATIC,143,1,134,149
+    LTEXT           "Mixing Rate:",IDC_STATIC,149,17,41,9
+    COMBOBOX        OQ_QUALITY,195,15,66,76,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Interpolation\n(Disable for lower-quality sound and 20% improvement in mixer efficiency)",OQ_INTERP,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,149,33,121,35
+    CONTROL         "FIR interpolation (high quality)",OQ_CUBIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,71,109,10
+    CONTROL         "Micro Volume-Ramping\n(Helps remove clicks and pops from interpolated sound)",OQ_NOCLICK,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,149,86,124,27
+    LTEXT           "Note: Try lower sample rates before disabling interpolation for slower machines.  It sounds better that way.",IDC_STATIC,150,116,121,30
+END
+
+IDD_PREFTAB_LOADER DIALOGEX 0, 0, 282, 163
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_TRANSPARENT | WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Available Loaders:",IDC_STATIC,4,2,80,9
+    LISTBOX         IDLDR_LIST,4,11,118,59,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Default Panning",IDC_STATIC,4,72,118,88
+    LTEXT           "Mono",IDC_STATIC,8,81,19,8
+    LTEXT           "Full Stereo",IDC_STATIC,83,81,34,9
+    CONTROL         "Slider1",IDLDR_PANPOS,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,14,92,96,12
+    CTEXT           "Default panning is only set at load-time and can be overridden by the song during replay",IDC_STATIC,8,111,108,25
+    PUSHBUTTON      "Reset",IDC_DEFPAN,30,141,65,13
+    LTEXT           "",IDLDR_DESCRIPTION,133,4,143,34
+    CONTROL         "Enabled\n(When disabled, this filetype is ignored by Mikamp)",IDLDR_ENABLED,
+                    "Button",BS_3STATE | BS_TOP | BS_MULTILINE | WS_TABSTOP,133,42,137,27
+    GROUPBOX        "Advanced Effects Options",IDC_STATIC,128,72,149,88
+    CONTROL         "Disable DMP Panning Effects (8xx)\n(Select this for songs that seem to incorrectly pan to the left speaker)",IDLDR_EFFOPT1,
+                    "Button",BS_3STATE | BS_TOP | BS_MULTILINE | WS_TABSTOP,133,84,137,25
+    CONTROL         "Disable Resonance Filter Effects (Zxx)",IDLDR_EFFOPT2,
+                    "Button",BS_3STATE | BS_TOP | WS_TABSTOP,133,113,138,10
+    CTEXT           "It is not recommended to change the advanced options unless you really\nknow what you are doing",IDC_ADV_TEXT_INFO,132,129,138,25,WS_DISABLED
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PREFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 289
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 201
+    END
+
+    IDD_ID3EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 269
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_INSTRUMENTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 259
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_SAMPLES, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 259
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_COMMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 260
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_PREFTAB_DECODER, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 278
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_PREFTAB_MIXER, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 278
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_PREFTAB_LOADER, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 277
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_MODULE_DECODER "Nullsoft Module Decoder v%s"
+    65535                   "{A1A39D49-671A-4c2f-AE42-BEA134EAF6A9}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_MODULE_DECODER_OLD "Nullsoft Module Decoder"
+    IDS_PROTRACKER_AND_CLONES 
+                            "Protracker and clones [mod]:\nIncludes Protracker, Fasttracker 1, Taketracker, Startrekker. Limited to 31 samples."
+    IDS_OLD_SKOOL_AMIGA_MODULES 
+                            "Old-skool Amiga Modules [mod]:\nSoundtracker, Ultimate Soundtracker. Very old and extremely limited in many ways (4 channels, 15 samples)"
+    IDS_SCREAM_TRACKER_2XX  "Scream Tracker 2.xx [stm]:\nSimilar to ST3 modules, but limited to 4 channels; Various format quirks."
+    IDS_SCREAM_TRACKER_3XX  "Scream Tracker 3.xx [s3m]:\nUp to 32 channels; Features a wavetable/FM combo (albeit rarely used)."
+    IDS_IMPULSE_TRACKER     "Impulse Tracker (all versions) [it]:\nSupports 64 channels, new note actions, and resonance filters."
+    IDS_FASTTRACKER_2XX     "Fasttracker 2.xx [xm]:\nSupports 32 channels, 128 instruments, and volume/panning envelopes."
+    IDS_MULTITRACKER        "Multitracker [mtm]:\nA ""superfied"" Protracker-based format, features std effects /w 32 channels."
+    IDS_ULTRA_TRACKER       "Ultra Tracker [ult]:\nDesigned specifically for the Gravis Ultrasound, features 32 channels and two effects per row."
+    IDS_COMPOSER_669        "Composer 669/UNIS 669 [669]:\nOne of the first PC trackers. 8 channels, up to 64 samples, few effects."
+    IDS_FARANDOLE_COMPOSER  "Farandole Composer [far]:\nYet another composer. The 16 channel version of the Composer 669, but with more messy effects."
+    IDS_DIGITAL_SOUND_AND_MUSIC_INTERFACE 
+                            "Digital Sound and Music Interface [amf]:\nAdvanced Module Format... May be even too advanced to support it... Anyway, here it goes."
+    IDS_AMIGA_OKTALYZER     "Amiga Oktalyzer [okt]:\n4-8 voices, 36 samples (usually), rather strange effects. The source code is about 20000 lines!"
+    IDS_POLYTRACKER         "PolyTracker [ptm]:\nA Scream Tracker 3 clone (with ""protrac- kerized"" effects and some extra features), created by Lone Ranger / AcmE."
+    IDS_MULTIPLE_ITEMS_SELECTED "Multiple items selected..."
+    IDS_MUSIC_MODULES       "Music Modules"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MIXER               "Mixer"
+    IDS_PLAYER              "Player"
+    IDS_LOADERS             "Loaders"
+    IDS_DEFAULT             " (default)"
+    IDS_SELECT_ANY_LOADER   "Select any loader(s) to edit their properties..."
+    IDS_DO_NOT_LOOP         "Do not loop"
+    IDS_LOOP_FOREVER        "Loop forever"
+    IDS_LOOP_X_TIMES        "Loop %d times"
+    IDS_PREFERENCES_TITLE   "%s Preferences"
+    IDS_SAMPLES             "Samples"
+    IDS_INSTRUMENTS         "Instruments"
+    IDS_COMMENT             "Comment"
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+    IDS_SUSTAIN             "Sustain"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FINETUNE            "(finetune)"
+    IDS_HZ_SIGNED           "Hz signed"
+    IDS_HZ_UNSIGNED         "Hz unsigned"
+    IDS_PING_PONG           "Ping-Pong"
+    IDS_REVERSE             "Reverse"
+    IDS_FORWARD             "Forward"
+    IDS_SUSTAIN_PING_PONG   "Sustain Ping-Pong"
+    IDS_NONE                "None"
+    IDS_X_X_X_OF_X_NOT_PLAYING "%d\n%d\n0 of %d\n\nNot Playing..."
+    IDS_X_X_X_OF_X_X_OF_X_X_OF_X "%d\n%d\n%d of %d (%d)\n%d of %d\n%d (%d)"
+    IDS_X_BTYES_X_OF_X_MINUTES "%d bytes\n%d:%02d minutes\n%d\n%d\n%d"
+    IDS_URLS_ONLY_SUPPORTED_IN_2_10_PLUS "URLs only supported in Winamp 2.10+"
+    IDS_MOD_PLUGIN_ERROR    "Module Plug-in Error"
+    IDS_SAVE_MODULE         "Save Module"
+    IDS_ALL_FILES           "All files"
+    IDS_RETRIEVING_MODULE   "Retrieving Module"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_KILLING_DECODING_THREAD "Error killing decoding thread."
+    IDS_LOOP                "Loop"
+    IDS_ON                  "On"
+    IDS_OFF                 "Off"
+    IDS_BYTES               "bytes"
+    IDS_BITS                "bits"
+    IDS_FAMILY_STRING_COMPOSER_669 "Composer 669"
+    IDS_FAMILY_STRING_DSMI_AMF "DSMI AMF"
+    IDS_FAMILY_STRING_FARANDOLE_COMPOSER "Farandole Composer"
+    IDS_FAMILY_STRING_IMPULSETRACKER "Impulsetracker"
+    IDS_FAMILY_STRING_SOUNDTRACKER "Soundtracker (15-inst)"
+    IDS_FAMILY_STRING_PROTRACKER "Protracker"
+    IDS_FAMILY_STRING_MULTITRACKER "Multitracker"
+    IDS_FAMILY_STRING_AMIGA_OKTALYZER "Amiga Oktalyzer"
+    IDS_FAMILY_STRING_POLYTRACKER "PolyTracker"
+    IDS_FAMILY_STRING_SCREAMTRACKER3 "Screamtracker 3"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FAMILY_STRING_SCREAMTRACKER2 "Screamtracker 2"
+    IDS_FAMILY_STRING_ULTRATRACKER "Ultratracker"
+    IDS_FAMILY_STRING_FASTRACKER2 "Fasttracker 2"
+    IDS_FAMILY_STRING_NOISETRACKER "NoiseTracker Module"
+    IDS_X_MODULE            "%s Module"
+    IDS_X_COMPRESSED_MODULE "%s Compressed Module"
+    IDS_ABOUT_TEXT          "%s\n© 1998-2014 Winamp SA\nWritten by: Justin Frankel & Jake Stine\nBuild date: %hs\n\nMikamp - Nullsoft Module Decoder plug-in\nbased on the Mikmod Sound System\n\nModule loading & rendering by: Jake Stine\nThanks to Jeffrey Lim for additional Impulse Tracker info.\nAdditional code by: Peter Pawlowski & X-Fixer"
+    IDS_CORRUPT_UNSUPPORTED_TYPE "Corrupt file or unsupported module type."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

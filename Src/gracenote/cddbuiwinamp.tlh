@@ -1,0 +1,268 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.30729.01 (1a958924).
+//
+// f:\sandbox\20131028_225933\winamp\release\cddbuiwinamp.tlh
+//
+// C++ source equivalent of Win32 type library ../gracenote/CDDBUIWinamp.dll
+// compiler-generated file created 10/28/13 at 23:18:29 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("49f3ccb6-3ba4-4b64-9451-ccf4d42581b1"))
+/* LIBID */ __CDDBUICONTROLLibNSWinamp;
+struct __declspec(uuid("92892c0b-8da6-49df-b484-d5571c7e48cd"))
+/* dual interface */ ICddbUI;
+struct __declspec(uuid("03396e62-5abb-4e75-af96-5cc6171354ba"))
+/* dual interface */ ICddbInfoWindow2;
+struct __declspec(uuid("c50aaf00-4954-405f-abf8-1ff32be762bb"))
+/* dual interface */ ICddbUIOptions2;
+struct __declspec(uuid("038841ae-24d2-4a27-a69d-21a58e4b1077"))
+/* dual interface */ ICddbUI2;
+struct /* coclass */ CddbNSWinampUI;
+struct /* coclass */ CddbInfoWindow2;
+struct /* coclass */ CddbUIOptions2;
+struct /* coclass */ CddbUI2;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICddbUI, __uuidof(ICddbUI));
+_COM_SMARTPTR_TYPEDEF(ICddbInfoWindow2, __uuidof(ICddbInfoWindow2));
+_COM_SMARTPTR_TYPEDEF(ICddbUIOptions2, __uuidof(ICddbUIOptions2));
+_COM_SMARTPTR_TYPEDEF(ICddbUI2, __uuidof(ICddbUI2));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("92892c0b-8da6-49df-b484-d5571c7e48cd"))
+ICddbUI : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Initialize (
+        /*[in]*/ IUnknown * Control,
+        /*[in]*/ long hWND,
+        /*[in]*/ long Flags ) = 0;
+      virtual HRESULT __stdcall SetParent (
+        /*[in]*/ long hWND ) = 0;
+      virtual HRESULT __stdcall Shutdown ( ) = 0;
+      virtual HRESULT __stdcall InvokeInfoBrowser (
+        /*[in]*/ IUnknown * Disc,
+        /*[in]*/ IUnknown * URL,
+        /*[in]*/ long Flags,
+        /*[in,out]*/ long * pHWND ) = 0;
+      virtual HRESULT __stdcall InvokeSubmitDisc (
+        /*[in]*/ BSTR MediaToc,
+        /*[in]*/ long MciDeviceId,
+        /*[in]*/ long Flags,
+        /*[in,out]*/ long * pHWND,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall DisplayDiscInfo (
+        /*[in]*/ IUnknown * Disc,
+        /*[in]*/ long Flags,
+        /*[in,out]*/ long * pHWND,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall InvokeDiscInfo (
+        /*[in]*/ BSTR MediaToc,
+        /*[in]*/ BSTR MediaId,
+        /*[in]*/ BSTR MuiId,
+        /*[in]*/ long MciDeviceId,
+        /*[in]*/ long Flags,
+        /*[in,out]*/ long * pHWND,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall InvokeNoMatchDialog (
+        /*[in]*/ long Flags,
+        /*[in,out]*/ long * pHWND,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall InvokeFuzzyMatchDialog (
+        /*[in]*/ IUnknown * Discs,
+        /*[in]*/ BSTR Toc,
+        /*[in]*/ long Flags,
+        /*[in,out]*/ long * pHWND,
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall InvokeOptionsDialog (
+        /*[in]*/ IUnknown * Options,
+        /*[in]*/ long Flags,
+        /*[in,out]*/ long * pHWND,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall InvokeUserRegDialog (
+        /*[in]*/ IUnknown * UserInfo,
+        /*[in]*/ long Flags,
+        /*[in,out]*/ long * pHWND,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall InvokePopupMenu (
+        /*[in]*/ long Flags,
+        /*[in]*/ IUnknown * URLList,
+        /*[in]*/ IUnknown * DiscURLList,
+        /*[in,out]*/ long * pHWND ) = 0;
+      virtual HRESULT __stdcall InvokeAboutCddbDialog (
+        /*[in]*/ long Flags,
+        /*[in,out]*/ long * pHWND ) = 0;
+      virtual HRESULT __stdcall DrawLogo (
+        /*[in]*/ void * DrawInfo ) = 0;
+      virtual HRESULT __stdcall GetUrlFromMenu (
+        /*[in]*/ long MenuId,
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall StartConnectDlg (
+        /*[in]*/ long Flags,
+        /*[in,out]*/ long * hWND ) = 0;
+      virtual HRESULT __stdcall StopConnectDlg (
+        /*[in]*/ long Flags ) = 0;
+      virtual HRESULT __stdcall SetUILanguage (
+        /*[in]*/ BSTR Id,
+        /*[in]*/ BSTR DllName,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall GetUIResourceInstance (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall SetInfoDisc (
+        /*[in]*/ IUnknown * Disc ) = 0;
+      virtual HRESULT __stdcall GetUIObject (
+        /*[in]*/ long Id,
+        /*[out,retval]*/ void * * pVal ) = 0;
+};
+
+struct __declspec(uuid("03396e62-5abb-4e75-af96-5cc6171354ba"))
+ICddbInfoWindow2 : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Init (
+        /*[in]*/ long hWND,
+        /*[in]*/ long Left,
+        /*[in]*/ long Top,
+        /*[in]*/ long Right,
+        /*[in]*/ long Bottom ) = 0;
+      virtual HRESULT __stdcall SetRawURL (
+        /*[in]*/ BSTR RawURL ) = 0;
+      virtual HRESULT __stdcall GetHwnd (
+        /*[out]*/ long * pHWND ) = 0;
+      virtual HRESULT __stdcall SetDisc (
+        /*[in]*/ IUnknown * Disc ) = 0;
+      virtual HRESULT __stdcall SetURL (
+        /*[in]*/ IUnknown * URL ) = 0;
+      virtual HRESULT __stdcall Refresh ( ) = 0;
+      virtual HRESULT __stdcall Shutdown ( ) = 0;
+      virtual HRESULT __stdcall SetAdPosition (
+        /*[in]*/ BSTR Position ) = 0;
+};
+
+struct __declspec(uuid("c50aaf00-4954-405f-abf8-1ff32be762bb"))
+ICddbUIOptions2 : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetCurrent (
+        /*[in]*/ long Flags ) = 0;
+      virtual HRESULT __stdcall SetCurrent (
+        /*[in]*/ long Flags ) = 0;
+      virtual HRESULT __stdcall get_ParentHWND (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ParentHWND (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Left (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Left (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Top (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Top (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Right (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Right (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Bottom (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Bottom (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ResourceHINSTANCE (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ResourceHINSTANCE (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ProgressResourceID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ProgressResourceID (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_StaticResourceID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_StaticResourceID (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Frames (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Frames (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_BonusResourceID (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_BonusResourceID (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("038841ae-24d2-4a27-a69d-21a58e4b1077"))
+ICddbUI2 : ICddbUI
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall InvokeFuzzyMatchDialog2 (
+        /*[in]*/ IUnknown * Discs,
+        /*[in,out]*/ long * Flags,
+        /*[in,out]*/ long * pHWND,
+        /*[out]*/ long * Selection ) = 0;
+};
+
+struct __declspec(uuid("75ae99c2-fe58-4aa4-8135-11d794adfd48"))
+CddbNSWinampUI;
+    // [ default ] interface ICddbUI
+
+struct __declspec(uuid("4274782f-e631-487b-bc58-34f36a2b9203"))
+CddbInfoWindow2;
+    // [ default ] interface ICddbInfoWindow2
+
+struct __declspec(uuid("a68d109d-ab8e-4476-8ba8-bce0879c4f8f"))
+CddbUIOptions2;
+    // [ default ] interface ICddbUIOptions2
+
+struct __declspec(uuid("4d60fc87-14b0-48b3-93c2-5967b0fb6f96"))
+CddbUI2;
+    // [ default ] interface ICddbUI2
+    // interface ICddbUI
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CDDBUICONTROLLibNSWinamp =
+    {0x49f3ccb6,0x3ba4,0x4b64,{0x94,0x51,0xcc,0xf4,0xd4,0x25,0x81,0xb1}};
+extern "C" const GUID __declspec(selectany) IID_ICddbUI =
+    {0x92892c0b,0x8da6,0x49df,{0xb4,0x84,0xd5,0x57,0x1c,0x7e,0x48,0xcd}};
+extern "C" const GUID __declspec(selectany) IID_ICddbInfoWindow2 =
+    {0x03396e62,0x5abb,0x4e75,{0xaf,0x96,0x5c,0xc6,0x17,0x13,0x54,0xba}};
+extern "C" const GUID __declspec(selectany) IID_ICddbUIOptions2 =
+    {0xc50aaf00,0x4954,0x405f,{0xab,0xf8,0x1f,0xf3,0x2b,0xe7,0x62,0xbb}};
+extern "C" const GUID __declspec(selectany) IID_ICddbUI2 =
+    {0x038841ae,0x24d2,0x4a27,{0xa6,0x9d,0x21,0xa5,0x8e,0x4b,0x10,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbNSWinampUI =
+    {0x75ae99c2,0xfe58,0x4aa4,{0x81,0x35,0x11,0xd7,0x94,0xad,0xfd,0x48}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbInfoWindow2 =
+    {0x4274782f,0xe631,0x487b,{0xbc,0x58,0x34,0xf3,0x6a,0x2b,0x92,0x03}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbUIOptions2 =
+    {0xa68d109d,0xab8e,0x4476,{0x8b,0xa8,0xbc,0xe0,0x87,0x9c,0x4f,0x8f}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbUI2 =
+    {0x4d60fc87,0x14b0,0x48b3,{0x93,0xc2,0x59,0x67,0xb0,0xfb,0x6f,0x96}};
+
+#pragma pack(pop)

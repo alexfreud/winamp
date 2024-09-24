@@ -1,0 +1,58 @@
+<!--
+
+  system-colors.xml
+
+  this file contains all the static color definitions for Wasabi. An objects that does not rely on a group will use
+  one of these elements to decide what color to use.
+
+-->
+
+
+<elements>
+
+  <!-- Winamp Modern Skin custom colors - use your own instead -->
+
+  <color id="font.display" value="255,255,255" gammagroup="DisplayElements"/>
+  <color id="font.display.songticker" value="255,255,255" gammagroup="DisplaySongticker"/>
+  <color id="font.display.songtickershade" value="255,255,255" gammagroup="DisplaySongtickerShade"/>
+  <color id="titlebar.text.color" value="255,255,255" gammagroup="TitlebarText"/>
+  <color id="drawer.color.text.dark" value="0,0,0" gammagroup="TextDark"/>
+
+  <!-- Generic Lists -->
+  <color id="wasabi.list.text" value="255,255,255" gammagroup="ListText"/> <!--lists/trees item foreground (also edit text) -->
+  <color id="wasabi.list.background" value="28,61,125" gammagroup="ListBackground"/>  <!--lists/trees item background (also bg for edit) -->
+  <color id="wasabi.list.text.alternate" value="255,255,255" gammagroup="ListText"/> 
+  <color id="wasabi.list.background.alternate" value="38,71,135" gammagroup="ListBackground"/>	
+
+  <color id="wasabi.list.text.selected" value="214,228,255" gammagroup="ListTextSelected"/> <!--listview/treeview selection bar text color -->
+  <color id="wasabi.list.text.selected.background" value="103,136,201" gammagroup="ListSelBackground"/> <!--listview/treeview selection bar backcolor -->
+  <color id="studio.list.item.selected" value="103,136,201" gammagroup="ListSelBackground"/>
+  <color id="studio.list.item.focused" value="103,136,201" gammagroup="ListSelBackground"/>
+
+
+  <color id="wasabi.list.text.current" value="187,210,255" gammagroup="ListTextCurrent"/> <!-- currently playing item in lists -->
+  <color id="wasabi.list.text.selected.inactive" value="214,228,255" gammagroup="ListTextSelected"/> <!-- listview/treeview selection bar textcolor (inactive) -->
+  <color id="wasabi.list.text.selected.background.inactive" value="68,90,133" gammagroup="ListSelBackground"/> <!-- listview/treeview selectionbar back color (inactive) -->
+
+  <color id="wasabi.list.column.background" value="204,208,217" gammagroup="Backgrounds"/> <!-- listview header background color -->
+  <color id="wasabi.list.column.text" value="0,0,0" gammagroup="ListColumnText"/> <!-- listview header text color -->
+  <color id="wasabi.list.column.frame.top" value="246,246,248" gammagroup="Backgrounds"/> // listview header frame top color
+  <color id="wasabi.list.column.frame.middle" value="142,150,163" gammagroup="Backgrounds"/> // listview header frame middle color
+  <color id="wasabi.list.column.frame.bottom" value="0,0,0" gammagroup="Backgrounds"/> // listview header frame bottom color
+  <color id="wasabi.list.column.empty" value="142,150,163" gammagroup="Backgrounds"/> // listview header empty color (beyond the columns
+
+  <!-- edit wnds -->
+  <color id="wasabi.window.background" value="127,135,149" gammagroup="Backgrounds"/> <!--window background. -  If this color is not defined, a whole container is created in memory to extract a pixel, so specifying it makes skin loading faster -->
+  <color id="wasabi.window.text" value="255,255,255" gammagroup="listText"/> <!--text color within windows -->
+  <color id="wasabi.border.sunken" value="204,208,217" gammagroup="Backgrounds"/> // color of dividers and sunken borders
+
+  <color id="wasabi.scrollbar.foreground" value="28,61,125" gammagroup="ListBackground"/> <!-- scrollbar foreground color -->
+  <color id="wasabi.scrollbar.background" value="0,0,0" gammagroup="ListBackground"/> <!-- scrollbar background color -->
+  <color id="wasabi.scrollbar.foreground.inverted" value="0,0,0" gammagroup="ListBackground"/> <!-- inverse scrollbar foreground color -->
+  <color id="wasabi.scrollbar.background.inverted" value="0,0,0" gammagroup="ListBackground"/> <!-- inverse scrollbar background color -->
+
+  <color id="wasabi.button.text" value="0,0,0" gammagroup="ButtonText"/> <!-- Buttons text color -->
+  <color id="wasabi.button.hiliteText" value="0,0,0" gammagroup="ButtonText"/> <!-- Buttons hilite text color, used by tab windows-->
+  <color id="wasabi.button.dimmedText" value="149,156,169" gammagroup="ButtonText"/> <!-- Buttons dimmed text color, when disabled -->
+
+</elements>

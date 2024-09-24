@@ -1,0 +1,161 @@
+<groupdef id="plshade" name="Playlist Shade" w="0" h="25" relatw="1">
+
+  <!-- BACKGROUND -->
+  <layer
+    x="0" y="0"
+    image="shade.pl.bg.left"
+    dblClickAction="SWITCH;normal"
+    resize="left"
+  />
+  <layer
+    x="30" y="0"
+    w="-104" relatw="1"
+    image="shade.pl.bg.center"
+    dblClickAction="SWITCH;normal"
+  />
+  <layer
+    x="-74" y="0"
+    relatx="1"
+    image="shade.pl.bg.right"
+    dblClickAction="SWITCH;normal"
+  />
+  <layer
+    x="-10" y="0"
+    w="10" h="25"
+    relatx="1"
+    dblClickAction="SWITCH;normal"
+    resize="right"
+  />
+  <layer
+    x="-40" y="1"
+    w="9" h="23"
+    relatx="1"
+    image="shade.pl.resize"
+    resize="right"
+    rectrgn="1"
+  />
+
+  <layer
+    id="shade.pl.region.left"
+    x="0" y="0"
+    image="shade.regions.left"
+    sysregion="-2"
+  />
+  <layer
+    id="shade.pl.region.right"
+    x="-5" y="0"
+    relatx="1"
+    image="shade.regions.right"
+    sysregion="-2"
+  />
+
+  <!-- DISPLAY -->
+  <layer
+    x="23" y="4"
+    image="shade.pl.display.left"
+    ghost="1"
+  />
+  <layer
+    x="33" y="4"
+    w="-105" relatw="1"
+    image="shade.pl.display.center"
+    tile="1"
+    ghost="1"
+  />
+  <layer
+    x="-72" y="4"
+    relatx="1"
+    image="shade.pl.display.right"
+    ghost="1"
+  />
+
+  <!-- SEEK SLIDER -->
+  <slider
+    id="plshadeSeeker"
+    action="SEEK"
+    x="22" y="15"
+    h="9" w="-87"
+    relatw="1"
+    thumb="shade.pl.seek"
+    downThumb="shade.pl.seek.pressed"
+    hoverThumb="shade.pl.seek.hover"
+    tooltip="Seeker"
+    alpha="100"
+  />
+  <slider
+    id="plshadeSeekerGhost"
+    action="SEEK"
+    x="22" y="15"
+    h="9" w="-87"
+    relatw="1"
+    thumb="shade.pl.seek"
+    downThumb="shade.pl.seek.pressed"
+    hoverThumb="shade.pl.seek.hover"
+    tooltip="Seeker"
+  />
+
+  <!-- LIST BUTTON -->
+  <button
+    id="plshadeMLList"
+    action="PE_ListOfLists"
+    x="-59" y="5"
+    relatx="1"
+    image="shade.pl.button.list"
+    downImage="shade.pl.button.list.pressed"
+    activeImage="shade.pl.button.list"
+    hoverImage="shade.pl.button.list.hover"
+    tooltip="Library's Playlists"
+  />
+
+  <!-- Songticker -->
+  <Songticker
+    id="PESongticker" ticker="1"
+    x="26" y="4"
+    w="-95" h="13" relatw="1"
+    leftpadding="5"
+    rightpadding="-5"
+    font="shade.songticker.font"
+    align="left"
+    dblClickAction="SWITCH;normal"
+	rightclickaction="trackmenu"
+    fontsize="13"
+    color="font.display"
+    altfont="Arial"
+   />
+
+
+  <!-- CLOSE/SHADE/SYSTEM -->
+  <button
+    id="plshadeClose"
+    action="CLOSE"
+    x="-17" y="4"
+    relatx="1"
+    image="shade.button.close"
+    downImage="shade.button.close.pressed"
+    hoverImage="shade.button.close.hover"
+    tooltip="Close Window"
+  />
+  <button
+    id="plshadeWinshade"
+    action="SWITCH" param="normal"
+    x="-29" y="4"
+    relatx="1"
+    image="shade.button.winshade"
+    downImage="shade.button.winshade.pressed"
+    hoverImage="shade.button.winshade.hover"
+    tooltip="Return to Normal Mode"
+  />
+  <button
+    id="plshadeSysmenu"
+    action="SYSMENU"
+    x="6" y="4"
+    image="shade.button.sysmenu"
+    downImage="shade.button.sysmenu.pressed"
+    hoverImage="shade.button.sysmenu.hover"
+    tooltip="Main Menu"
+  />
+
+
+
+
+</groupdef>

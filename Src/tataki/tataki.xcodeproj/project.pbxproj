@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C2D18FA0C0BDD0B00ED9158 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D18F50C0BDD0B00ED9158 /* main.cpp */; };
+		0C2D18FB0C0BDD0B00ED9158 /* export.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D18F60C0BDD0B00ED9158 /* export.h */; };
+		0C2D18FC0C0BDD0B00ED9158 /* api.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D18F70C0BDD0B00ED9158 /* api.h */; };
+		0C2D192C0C0BDE7400ED9158 /* canvas.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D19220C0BDE7400ED9158 /* canvas.h */; };
+		0C2D192D0C0BDE7400ED9158 /* PaintCanvas.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D19230C0BDE7400ED9158 /* PaintCanvas.h */; };
+		0C2D19300C0BDE7400ED9158 /* osx_canvas_layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D19260C0BDE7400ED9158 /* osx_canvas_layer.cpp */; };
+		0C2D19310C0BDE7400ED9158 /* PaintCanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D19270C0BDE7400ED9158 /* PaintCanvas.cpp */; };
+		0C2D19320C0BDE7400ED9158 /* osx_canvas_quartz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D19280C0BDE7400ED9158 /* osx_canvas_quartz.cpp */; };
+		0C2D19340C0BDE7400ED9158 /* bltcanvas.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D192A0C0BDE7400ED9158 /* bltcanvas.h */; };
+		0C2D193C0C0BDEB400ED9158 /* api_canvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D19370C0BDEB400ED9158 /* api_canvas.cpp */; };
+		0C2D193D0C0BDEB400ED9158 /* canvas.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D19380C0BDEB400ED9158 /* canvas.h */; };
+		0C2D193E0C0BDEB400ED9158 /* PaintCanvas.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D19390C0BDEB400ED9158 /* PaintCanvas.h */; };
+		0C2D193F0C0BDEB400ED9158 /* api_canvas.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D193A0C0BDEB400ED9158 /* api_canvas.h */; };
+		0C2D19400C0BDEB400ED9158 /* bltcanvas.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D193B0C0BDEB400ED9158 /* bltcanvas.h */; };
+		0C2D194B0C0BDEFD00ED9158 /* ifc_bitmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D19490C0BDEFD00ED9158 /* ifc_bitmap.h */; };
+		0C2D194C0C0BDEFD00ED9158 /* bitmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D194A0C0BDEFD00ED9158 /* bitmap.h */; };
+		0C2D19500C0BDFFF00ED9158 /* osx_bitmap_cgimage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D194E0C0BDFFF00ED9158 /* osx_bitmap_cgimage.cpp */; };
+		0C2D19510C0BDFFF00ED9158 /* osx_bitmap_cgimage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D194F0C0BDFFF00ED9158 /* osx_bitmap_cgimage.h */; };
+		0C2D19580C0BE06A00ED9158 /* region.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D19550C0BE06A00ED9158 /* region.h */; };
+		0C2D19590C0BE06A00ED9158 /* api_region.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D19560C0BE06A00ED9158 /* api_region.h */; };
+		0C2D195A0C0BE06A00ED9158 /* api_region.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D19570C0BE06A00ED9158 /* api_region.cpp */; };
+		0C2D195F0C0BE08400ED9158 /* osx_region_hishape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D195D0C0BE08400ED9158 /* osx_region_hishape.cpp */; };
+		0C2D19600C0BE08400ED9158 /* region.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C2D195E0C0BE08400ED9158 /* region.h */; };
+		0CF66DD30CD5070800FF5DAF /* ServiceWatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CF66DD10CD5070800FF5DAF /* ServiceWatcher.cpp */; };
+		0CF66DD40CD5070800FF5DAF /* ServiceWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF66DD20CD5070800FF5DAF /* ServiceWatcher.h */; };
+		0CF66DE20CD507D000FF5DAF /* Vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF66DE10CD507D000FF5DAF /* Vector.h */; };
+		0CF66E990CD50E6C00FF5DAF /* libbfc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF66E980CD50E6C00FF5DAF /* libbfc.a */; };
+		0CF66F5B0CD50E9800FF5DAF /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF66F5A0CD50E9800FF5DAF /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C2D19740C0BE0EA00ED9158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C2D19670C0BE0EA00ED9158 /* bfc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC06F0554671400DB518D;
+			remoteInfo = bfc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C2D18F50C0BDD0B00ED9158 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0C2D18F60C0BDD0B00ED9158 /* export.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = export.h; sourceTree = "<group>"; };
+		0C2D18F70C0BDD0B00ED9158 /* api.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = api.h; sourceTree = "<group>"; };
+		0C2D19220C0BDE7400ED9158 /* canvas.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = canvas.h; path = canvas/mac/canvas.h; sourceTree = "<group>"; };
+		0C2D19230C0BDE7400ED9158 /* PaintCanvas.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PaintCanvas.h; path = canvas/mac/PaintCanvas.h; sourceTree = "<group>"; };
+		0C2D19260C0BDE7400ED9158 /* osx_canvas_layer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = osx_canvas_layer.cpp; path = canvas/mac/osx_canvas_layer.cpp; sourceTree = "<group>"; };
+		0C2D19270C0BDE7400ED9158 /* PaintCanvas.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = PaintCanvas.cpp; path = canvas/mac/PaintCanvas.cpp; sourceTree = "<group>"; };
+		0C2D19280C0BDE7400ED9158 /* osx_canvas_quartz.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = osx_canvas_quartz.cpp; path = canvas/mac/osx_canvas_quartz.cpp; sourceTree = "<group>"; };
+		0C2D192A0C0BDE7400ED9158 /* bltcanvas.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = bltcanvas.h; path = canvas/mac/bltcanvas.h; sourceTree = "<group>"; };
+		0C2D19370C0BDEB400ED9158 /* api_canvas.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = api_canvas.cpp; path = canvas/api_canvas.cpp; sourceTree = "<group>"; };
+		0C2D19380C0BDEB400ED9158 /* canvas.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = canvas.h; path = canvas/canvas.h; sourceTree = "<group>"; };
+		0C2D19390C0BDEB400ED9158 /* PaintCanvas.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PaintCanvas.h; path = canvas/PaintCanvas.h; sourceTree = "<group>"; };
+		0C2D193A0C0BDEB400ED9158 /* api_canvas.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = api_canvas.h; path = canvas/api_canvas.h; sourceTree = "<group>"; };
+		0C2D193B0C0BDEB400ED9158 /* bltcanvas.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = bltcanvas.h; path = canvas/bltcanvas.h; sourceTree = "<group>"; };
+		0C2D19490C0BDEFD00ED9158 /* ifc_bitmap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ifc_bitmap.h; path = bitmap/ifc_bitmap.h; sourceTree = "<group>"; };
+		0C2D194A0C0BDEFD00ED9158 /* bitmap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = bitmap.h; path = bitmap/bitmap.h; sourceTree = "<group>"; };
+		0C2D194E0C0BDFFF00ED9158 /* osx_bitmap_cgimage.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = osx_bitmap_cgimage.cpp; path = bitmap/mac/osx_bitmap_cgimage.cpp; sourceTree = "<group>"; };
+		0C2D194F0C0BDFFF00ED9158 /* osx_bitmap_cgimage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = osx_bitmap_cgimage.h; path = bitmap/mac/osx_bitmap_cgimage.h; sourceTree = "<group>"; };
+		0C2D19550C0BE06A00ED9158 /* region.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = region.h; path = region/region.h; sourceTree = "<group>"; };
+		0C2D19560C0BE06A00ED9158 /* api_region.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = api_region.h; path = region/api_region.h; sourceTree = "<group>"; };
+		0C2D19570C0BE06A00ED9158 /* api_region.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = api_region.cpp; path = region/api_region.cpp; sourceTree = "<group>"; };
+		0C2D195D0C0BE08400ED9158 /* osx_region_hishape.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = osx_region_hishape.cpp; path = region/mac/osx_region_hishape.cpp; sourceTree = "<group>"; };
+		0C2D195E0C0BE08400ED9158 /* region.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = region.h; path = region/mac/region.h; sourceTree = "<group>"; };
+		0C2D19670C0BE0EA00ED9158 /* bfc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = bfc.xcodeproj; path = ../Wasabi/bfc/bfc.xcodeproj; sourceTree = SOURCE_ROOT; };
+		0CF66DD10CD5070800FF5DAF /* ServiceWatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ServiceWatcher.cpp; path = ../nu/ServiceWatcher.cpp; sourceTree = SOURCE_ROOT; };
+		0CF66DD20CD5070800FF5DAF /* ServiceWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceWatcher.h; path = ../nu/ServiceWatcher.h; sourceTree = SOURCE_ROOT; };
+		0CF66DE10CD507D000FF5DAF /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector.h; path = ../nu/Vector.h; sourceTree = SOURCE_ROOT; };
+		0CF66E980CD50E6C00FF5DAF /* libbfc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbfc.a; path = ../Wasabi/bfc/build/Release/libbfc.a; sourceTree = SOURCE_ROOT; };
+		0CF66F5A0CD50E9800FF5DAF /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		D2AAC0630554660B00DB518D /* libtataki.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libtataki.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF66E990CD50E6C00FF5DAF /* libbfc.a in Frameworks */,
+				0CF66F5B0CD50E9800FF5DAF /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* tataki */ = {
+			isa = PBXGroup;
+			children = (
+				0CF66F5A0CD50E9800FF5DAF /* Carbon.framework */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = tataki;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0CF66E980CD50E6C00FF5DAF /* libbfc.a */,
+				0CF66DE00CD5079C00FF5DAF /* nu */,
+				0C2D19670C0BE0EA00ED9158 /* bfc.xcodeproj */,
+				0C2D19540C0BE05D00ED9158 /* Region */,
+				0C2D19480C0BDEEC00ED9158 /* Bitmap */,
+				0C2D191E0C0BDE3300ED9158 /* Canvas */,
+				0C2D18F50C0BDD0B00ED9158 /* main.cpp */,
+				0C2D18F60C0BDD0B00ED9158 /* export.h */,
+				0C2D18F70C0BDD0B00ED9158 /* api.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		0C2D191E0C0BDE3300ED9158 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D19370C0BDEB400ED9158 /* api_canvas.cpp */,
+				0C2D19380C0BDEB400ED9158 /* canvas.h */,
+				0C2D19390C0BDEB400ED9158 /* PaintCanvas.h */,
+				0C2D193A0C0BDEB400ED9158 /* api_canvas.h */,
+				0C2D193B0C0BDEB400ED9158 /* bltcanvas.h */,
+				0C2D19360C0BDE7700ED9158 /* Mac */,
+			);
+			name = Canvas;
+			sourceTree = "<group>";
+		};
+		0C2D19360C0BDE7700ED9158 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D19220C0BDE7400ED9158 /* canvas.h */,
+				0C2D19230C0BDE7400ED9158 /* PaintCanvas.h */,
+				0C2D19260C0BDE7400ED9158 /* osx_canvas_layer.cpp */,
+				0C2D19270C0BDE7400ED9158 /* PaintCanvas.cpp */,
+				0C2D19280C0BDE7400ED9158 /* osx_canvas_quartz.cpp */,
+				0C2D192A0C0BDE7400ED9158 /* bltcanvas.h */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		0C2D19480C0BDEEC00ED9158 /* Bitmap */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D194D0C0BDFC200ED9158 /* Mac */,
+				0C2D19490C0BDEFD00ED9158 /* ifc_bitmap.h */,
+				0C2D194A0C0BDEFD00ED9158 /* bitmap.h */,
+			);
+			name = Bitmap;
+			sourceTree = "<group>";
+		};
+		0C2D194D0C0BDFC200ED9158 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D194E0C0BDFFF00ED9158 /* osx_bitmap_cgimage.cpp */,
+				0C2D194F0C0BDFFF00ED9158 /* osx_bitmap_cgimage.h */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		0C2D19540C0BE05D00ED9158 /* Region */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D195C0C0BE07400ED9158 /* Mac */,
+				0C2D19550C0BE06A00ED9158 /* region.h */,
+				0C2D19560C0BE06A00ED9158 /* api_region.h */,
+				0C2D19570C0BE06A00ED9158 /* api_region.cpp */,
+			);
+			name = Region;
+			sourceTree = "<group>";
+		};
+		0C2D195C0C0BE07400ED9158 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D195D0C0BE08400ED9158 /* osx_region_hishape.cpp */,
+				0C2D195E0C0BE08400ED9158 /* region.h */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		0C2D19680C0BE0EA00ED9158 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D19750C0BE0EA00ED9158 /* libbfc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CF66DE00CD5079C00FF5DAF /* nu */ = {
+			isa = PBXGroup;
+			children = (
+				0CF66DE10CD507D000FF5DAF /* Vector.h */,
+				0CF66DD10CD5070800FF5DAF /* ServiceWatcher.cpp */,
+				0CF66DD20CD5070800FF5DAF /* ServiceWatcher.h */,
+			);
+			name = nu;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* libtataki.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2D18FB0C0BDD0B00ED9158 /* export.h in Headers */,
+				0C2D18FC0C0BDD0B00ED9158 /* api.h in Headers */,
+				0C2D192C0C0BDE7400ED9158 /* canvas.h in Headers */,
+				0C2D192D0C0BDE7400ED9158 /* PaintCanvas.h in Headers */,
+				0C2D19340C0BDE7400ED9158 /* bltcanvas.h in Headers */,
+				0C2D193D0C0BDEB400ED9158 /* canvas.h in Headers */,
+				0C2D193E0C0BDEB400ED9158 /* PaintCanvas.h in Headers */,
+				0C2D193F0C0BDEB400ED9158 /* api_canvas.h in Headers */,
+				0C2D19400C0BDEB400ED9158 /* bltcanvas.h in Headers */,
+				0C2D194B0C0BDEFD00ED9158 /* ifc_bitmap.h in Headers */,
+				0C2D194C0C0BDEFD00ED9158 /* bitmap.h in Headers */,
+				0C2D19510C0BDFFF00ED9158 /* osx_bitmap_cgimage.h in Headers */,
+				0C2D19580C0BE06A00ED9158 /* region.h in Headers */,
+				0C2D19590C0BE06A00ED9158 /* api_region.h in Headers */,
+				0C2D19600C0BE08400ED9158 /* region.h in Headers */,
+				0CF66DD40CD5070800FF5DAF /* ServiceWatcher.h in Headers */,
+				0CF66DE20CD507D000FF5DAF /* Vector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* tataki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "tataki" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tataki;
+			productName = tataki;
+			productReference = D2AAC0630554660B00DB518D /* libtataki.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "tataki" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* tataki */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0C2D19680C0BE0EA00ED9158 /* Products */;
+					ProjectRef = 0C2D19670C0BE0EA00ED9158 /* bfc.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* tataki */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0C2D19750C0BE0EA00ED9158 /* libbfc.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbfc.a;
+			remoteRef = 0C2D19740C0BE0EA00ED9158 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2D18FA0C0BDD0B00ED9158 /* main.cpp in Sources */,
+				0C2D19300C0BDE7400ED9158 /* osx_canvas_layer.cpp in Sources */,
+				0C2D19310C0BDE7400ED9158 /* PaintCanvas.cpp in Sources */,
+				0C2D19320C0BDE7400ED9158 /* osx_canvas_quartz.cpp in Sources */,
+				0C2D193C0C0BDEB400ED9158 /* api_canvas.cpp in Sources */,
+				0C2D19500C0BDFFF00ED9158 /* osx_bitmap_cgimage.cpp in Sources */,
+				0C2D195A0C0BE06A00ED9158 /* api_region.cpp in Sources */,
+				0C2D195F0C0BE08400ED9158 /* osx_region_hishape.cpp in Sources */,
+				0CF66DD30CD5070800FF5DAF /* ServiceWatcher.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB914B08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../Wasabi/bfc/build/Debug\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../Wasabi/bfc/build/Release\"";
+				PRODUCT_NAME = tataki;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB914C08733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				EXECUTABLE_PREFIX = lib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = TATAKI_EXPORTS;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../Wasabi/bfc/build/Debug\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../Wasabi/bfc/build/Release\"";
+				PRODUCT_NAME = tataki;
+			};
+			name = Release;
+		};
+		1DEB914F08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = TATAKI_EXPORTS;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					..,
+					../Wasabi,
+				);
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB915008733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PREPROCESSOR_DEFINITIONS = TATAKI_EXPORTS;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					..,
+					../Wasabi,
+				);
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "tataki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914B08733D8E0010E9CD /* Debug */,
+				1DEB914C08733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "tataki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914F08733D8E0010E9CD /* Debug */,
+				1DEB915008733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

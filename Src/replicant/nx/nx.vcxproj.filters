@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="win\nxdata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\nxfile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\NXFileObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\NXFileProgressiveDownloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\nxonce.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\nxpath.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\nxsleep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\nxstring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\nxthread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\nxuri.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\NXZipFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\foundation\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\foundation\guid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\nxonce.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\foundation\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxuri.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e3ece7c2-5453-4ab4-9b86-9c6e0ea664d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{fe5588c0-7153-48f2-b1ba-c2406e319412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{44167388-5010-436c-8849-1fc629ca5549}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nx.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

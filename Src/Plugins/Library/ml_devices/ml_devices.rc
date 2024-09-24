@@ -1,0 +1,172 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MANAGER_VIEW DIALOGEX 0, 0, 317, 186
+STYLE DS_SETFONT | DS_NOIDLEMSG | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT | WS_EX_NOACTIVATE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Discover",IDC_BUTTON_DISCOVER,0,172,50,14
+    CONTROL         "",IDC_SLIDER_ZOOM,"msctls_trackbar32",TBS_NOTICKS | TBS_ENABLESELRANGE | NOT WS_VISIBLE | WS_TABSTOP,244,174,73,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_PLUGIN_MENU MENU 
+BEGIN
+    POPUP "NavigationRootContext"
+    BEGIN
+        MENUITEM "&Open",                       ID_VIEW_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Start &Discovery",            ID_DISCOVERY_BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Help",                       ID_PLUGIN_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_WELCOMEWIDGET_TITLE "WINAMP DEVICE MANAGER"
+    IDS_WELCOMEWIDGET_TEXT  "Manage the media on your devices by connecting them to Winamp.  To get started, connect a device or click Discover to find already connected devices. To manage Android devices over Wi-Fi, ensure wireless sync is enabled in the Winamp App settings."
+    IDS_DEVICES_NAVIGATION_NODE "Devices"
+    IDS_CATEGORY_ATTACHED   "Attached"
+    IDS_CATEGORY_DISCOVERED "Discovered"
+    IDS_INFOWIDGET_TITLE    "Winamp Device Manager"
+    IDS_DEVICE_SERVICE_NOT_FOUND 
+                            "Winamp Device Manager unable to communicate with device service. Try reinstalling application."
+    IDS_CREATE_DEVICE_VIEW_FAILED 
+                            "Error creating device view. Verify that you have latest version of portable media plug-in."
+    IDS_SYNC_COMMAND_TITLE  "&Sync"
+    IDS_SYNC_COMMAND_DESC   "Transfer media to device"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUGIN_NAME         "Nullsoft Device Manager v%d.%02d"
+    65535                   "{CA4D071B-4E9B-44fd-862A-783FC763B63D}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANCEL_SYNC_COMMAND_TITLE "C&ancel Sync"
+    IDS_CANCEL_SYNC_COMMAND_DESC "Cancel synchronization"
+    IDS_CREATE_MANAGER_VIEW_FAILED "Unable to create device manager view."
+    IDS_ATTACH_COMMAND_TITLE "&Attach"
+    IDS_ATTACH_COMMAND_DESC "Connect device to Winamp"
+    IDS_DETACH_COMMAND_TITLE "&Detach"
+    IDS_DETACH_COMMAND_DESC "Detach device from Winamp"
+    IDS_EJECT_COMMAND_TITLE "&Eject"
+    IDS_EJECT_COMMAND_DESC  "Eject device"
+    IDS_DEVICE_TYPE_SHORT   "Type"
+    IDS_DEVICE_CONNECTION_SHORT "Connection"
+    IDS_TOTAL_SPACE         "Total"
+    IDS_FREE_SPACE          "Free"
+    IDS_USED_SPACE          "Used"
+    IDS_FRACTION_SEPARATOR  "."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEVICE_ACTIVITY_SHORT "Status"
+    IDS_PLUGIN_HELP_URL     "https://help.winamp.com/hc/articles/8106455294612-Winamp-Portables-Guide"
+    IDS_RENAME_COMMAND_TITLE "&Rename\tF2"
+    IDS_RENAME_COMMAND_DESC "Change the name of this device."
+    IDS_VIEW_OPEN_COMMAND_TITLE "&Open"
+    IDS_VIEW_OPEN_COMMAND_DESC "Show contents of this device."
+    IDS_PREFERENCES_COMMAND_TITLE "&Preferences"
+    IDS_PREFERENCES_COMMAND_DESC "Change settings for this device."
+    IDS_PLAYLIST_CREATE_COMMAND_TITLE "&New Playlist"
+    IDS_PLAYLIST_CREATE_COMMAND_DESC "Make a new playlist on this device."
+    IDS_MESSAGEBOX_TITLE    "Winamp Device Manager"
+    IDS_MESSAGE_UNABLE_TO_RENAME "Unable to change device name."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEVICE_MODEL_SHORT  "Model"
+    IDS_DEVICE_STATUS_SHORT "Status"
+    IDS_STATUS_DISCOVERY_ACTIVE "Discovering devices..."
+    IDS_STATUS_SPACE_TEMPLATE "%s free of %s"
+    IDS_CATEGORY_ATTACHED_EMPTY_TEXT 
+                            "No devices are attached, select a discovered device to attach."
+    IDS_WELCOMEWIDGET_HELP_URL 
+                            "https://help.winamp.com/hc/articles/8106455294612-Winamp-Portables-Guide"
+    IDS_HELP_LINK           "Help"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

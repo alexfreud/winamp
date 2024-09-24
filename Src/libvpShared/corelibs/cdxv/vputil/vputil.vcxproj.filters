@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="generic">
+      <UniqueIdentifier>{f7966dc8-1d55-46a4-b0e6-8584774d721d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{ad0ce32e-d033-416c-813e-7a7f913ac3fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="generic\fdct.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\idctpart.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\reconstruct.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\uoptsystemdependant.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="generic\vputil.c">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\fdctmmx.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\fdctwmt.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\filtmmx.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\filtwmt.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\mmxidct.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\mmxrecon.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\uoptsystemdependant.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\vputilasm.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\wmtidct.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\wmtrecon.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,67 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "burnlib", "burnlib.vcproj", "{374717BA-EF3A-4BF6-AC4D-A532E08BE904}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8FBD5E01-B920-44D8-9687-88AE0C3CA833} = {8FBD5E01-B920-44D8-9687-88AE0C3CA833}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "burnlibres", "resdll\resdll.vcproj", "{8FBD5E01-B920-44D8-9687-88AE0C3CA833}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winampv6", "..\Winamp\winampv6.vcproj", "{7DE5C6C7-DAF2-42F9-9324-C8CF4E7E8AC5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8FBD5E01-B920-44D8-9687-88AE0C3CA833} = {8FBD5E01-B920-44D8-9687-88AE0C3CA833}
+		{374717BA-EF3A-4BF6-AC4D-A532E08BE904} = {374717BA-EF3A-4BF6-AC4D-A532E08BE904}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "in_wmvdrm", "..\in_wmvdrm\in_wmvdrm.vcproj", "{9362E6C2-EFCC-4104-8671-78222E0A5FCC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8FBD5E01-B920-44D8-9687-88AE0C3CA833} = {8FBD5E01-B920-44D8-9687-88AE0C3CA833}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Profiling = Profiling
+		Release = Release
+		Revoked = Revoked
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{374717BA-EF3A-4BF6-AC4D-A532E08BE904}.Debug.ActiveCfg = Debug|Win32
+		{374717BA-EF3A-4BF6-AC4D-A532E08BE904}.Debug.Build.0 = Debug|Win32
+		{374717BA-EF3A-4BF6-AC4D-A532E08BE904}.Profiling.ActiveCfg = Release|Win32
+		{374717BA-EF3A-4BF6-AC4D-A532E08BE904}.Profiling.Build.0 = Release|Win32
+		{374717BA-EF3A-4BF6-AC4D-A532E08BE904}.Release.ActiveCfg = Release|Win32
+		{374717BA-EF3A-4BF6-AC4D-A532E08BE904}.Release.Build.0 = Release|Win32
+		{374717BA-EF3A-4BF6-AC4D-A532E08BE904}.Revoked.ActiveCfg = Release|Win32
+		{374717BA-EF3A-4BF6-AC4D-A532E08BE904}.Revoked.Build.0 = Release|Win32
+		{8FBD5E01-B920-44D8-9687-88AE0C3CA833}.Debug.ActiveCfg = Debug|Win32
+		{8FBD5E01-B920-44D8-9687-88AE0C3CA833}.Debug.Build.0 = Debug|Win32
+		{8FBD5E01-B920-44D8-9687-88AE0C3CA833}.Profiling.ActiveCfg = Release|Win32
+		{8FBD5E01-B920-44D8-9687-88AE0C3CA833}.Profiling.Build.0 = Release|Win32
+		{8FBD5E01-B920-44D8-9687-88AE0C3CA833}.Release.ActiveCfg = Release|Win32
+		{8FBD5E01-B920-44D8-9687-88AE0C3CA833}.Release.Build.0 = Release|Win32
+		{8FBD5E01-B920-44D8-9687-88AE0C3CA833}.Revoked.ActiveCfg = Release|Win32
+		{8FBD5E01-B920-44D8-9687-88AE0C3CA833}.Revoked.Build.0 = Release|Win32
+		{7DE5C6C7-DAF2-42F9-9324-C8CF4E7E8AC5}.Debug.ActiveCfg = Debug|Win32
+		{7DE5C6C7-DAF2-42F9-9324-C8CF4E7E8AC5}.Debug.Build.0 = Debug|Win32
+		{7DE5C6C7-DAF2-42F9-9324-C8CF4E7E8AC5}.Profiling.ActiveCfg = Profiling|Win32
+		{7DE5C6C7-DAF2-42F9-9324-C8CF4E7E8AC5}.Profiling.Build.0 = Profiling|Win32
+		{7DE5C6C7-DAF2-42F9-9324-C8CF4E7E8AC5}.Release.ActiveCfg = Release|Win32
+		{7DE5C6C7-DAF2-42F9-9324-C8CF4E7E8AC5}.Release.Build.0 = Release|Win32
+		{7DE5C6C7-DAF2-42F9-9324-C8CF4E7E8AC5}.Revoked.ActiveCfg = Release|Win32
+		{7DE5C6C7-DAF2-42F9-9324-C8CF4E7E8AC5}.Revoked.Build.0 = Release|Win32
+		{9362E6C2-EFCC-4104-8671-78222E0A5FCC}.Debug.ActiveCfg = Debug|Win32
+		{9362E6C2-EFCC-4104-8671-78222E0A5FCC}.Debug.Build.0 = Debug|Win32
+		{9362E6C2-EFCC-4104-8671-78222E0A5FCC}.Profiling.ActiveCfg = Profiling|Win32
+		{9362E6C2-EFCC-4104-8671-78222E0A5FCC}.Profiling.Build.0 = Profiling|Win32
+		{9362E6C2-EFCC-4104-8671-78222E0A5FCC}.Release.ActiveCfg = Release|Win32
+		{9362E6C2-EFCC-4104-8671-78222E0A5FCC}.Release.Build.0 = Release|Win32
+		{9362E6C2-EFCC-4104-8671-78222E0A5FCC}.Revoked.ActiveCfg = Revoked|Win32
+		{9362E6C2-EFCC-4104-8671-78222E0A5FCC}.Revoked.Build.0 = Revoked|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

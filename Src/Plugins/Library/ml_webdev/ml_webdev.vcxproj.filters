@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="commands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="forceUrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="importFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="importUrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="local_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="navigation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wasabi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="serviceHost.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="serviceHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Winamp\JSAPI_CallbackParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\General\gen_ml\menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\menuHelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\sort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\nu\trace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="commands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="forceUrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="import.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="local_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="navigation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="serviceHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="serviceHost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wasabi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\General\gen_ml\menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="png.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="testPages.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="ml_webdev.rc">
+      <Filter>Ressource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource.hi">
+      <Filter>Ressource Files</Filter>
+    </None>
+    <None Include="resources\pages\api2.js">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\applicationApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\asyncDownloaderApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\bookmarkApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\configApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\historyApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\mediaCoreApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\playlistApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\playQueueApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\podcastApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\securityApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\serviceEditor.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\skinApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\transportApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\transportEventsApi.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\webdev.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\webdev.js">
+      <Filter>HTM Files</Filter>
+    </None>
+    <None Include="resources\pages\welcome.htm">
+      <Filter>HTM Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ae54a1c4-5018-4345-b9e9-0721b28bca7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{70f7d7d1-2117-46a3-9271-35a7b3817d6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{36a28036-6df6-46f8-a5fc-6846e411aa7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTM Files">
+      <UniqueIdentifier>{db057e45-2170-41cd-85d0-b8250030d0ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

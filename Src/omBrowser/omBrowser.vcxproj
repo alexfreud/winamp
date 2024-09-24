@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FC74DB95-5008-4D22-9147-1C052F43CDD3}</ProjectGuid>
+    <RootNamespace>omBrowser</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;../wasabi;../agave;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_WIN32_WINNT=0x0601;WINVER=0x0601;_WIN32_IE=0x0A00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;comctl32.lib;rpcrt4.lib;wininet.lib;msimg32.lib;urlmon.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(ProjectDir)x86_Debug\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\ 
+xcopy /Y /D $(IntDir)$(TargetName).pdb ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;../wasabi;../agave;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;_USRDLL;_WIN32_WINNT=0x0601;WINVER=0x0601;_WIN32_IE=0x0A00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;comctl32.lib;rpcrt4.lib;wininet.lib;msimg32.lib;urlmon.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(ProjectDir)x64_Debug\$(ProjectName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\ 
+xcopy /Y /D $(IntDir)$(TargetName).pdb ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>.;..;../wasabi;../agave;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_WIN32_WINNT=0x0601;WINVER=0x0601;_WIN32_IE=0x0A00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;comctl32.lib;rpcrt4.lib;wininet.lib;msimg32.lib;urlmon.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(ProjectDir)x86_Release\$(ProjectName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>.;..;../wasabi;../agave;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_USRDLL;_WIN32_WINNT=0x0601;WINVER=0x0601;_WIN32_IE=0x0A00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;comctl32.lib;rpcrt4.lib;wininet.lib;msimg32.lib;urlmon.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(ProjectDir)x64_Release\$(ProjectName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\System\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\nu\HTMLContainer2.cpp" />
+    <ClCompile Include="..\nu\menuHelpers.cpp" />
+    <ClCompile Include="..\nu\trace.cpp" />
+    <ClCompile Include="addressEncoder.cpp" />
+    <ClCompile Include="browser.cpp" />
+    <ClCompile Include="browserClass.cpp" />
+    <ClCompile Include="browserFactory.cpp" />
+    <ClCompile Include="browserHost.cpp" />
+    <ClCompile Include="browserInternal.cpp" />
+    <ClCompile Include="browserObject.cpp" />
+    <ClCompile Include="browserPopup.cpp" />
+    <ClCompile Include="browserRegistry.cpp" />
+    <ClCompile Include="browserThread.cpp" />
+    <ClCompile Include="browserUiCommon.cpp" />
+    <ClCompile Include="browserUiHook.cpp" />
+    <ClCompile Include="browserView.cpp" />
+    <ClCompile Include="browserWndEnum.cpp" />
+    <ClCompile Include="browserWndRecord.cpp" />
+    <ClCompile Include="cacheDownloader.cpp" />
+    <ClCompile Include="cacheGroup.cpp" />
+    <ClCompile Include="cacheManager.cpp" />
+    <ClCompile Include="cacheRecord.cpp" />
+    <ClCompile Include="component.cpp" />
+    <ClCompile Include="configIni.cpp" />
+    <ClCompile Include="curtain.cpp" />
+    <ClCompile Include="enumAsync.cpp" />
+    <ClCompile Include="enumIniFile.cpp" />
+    <ClCompile Include="enumXmlBuffer.cpp" />
+    <ClCompile Include="enumXmlFile.cpp" />
+    <ClCompile Include="flagTracker.cpp" />
+    <ClCompile Include="graphics.cpp" />
+    <ClCompile Include="graphicsObject.cpp" />
+    <ClCompile Include="ieversion.cpp" />
+    <ClCompile Include="internetFeatures.cpp" />
+    <ClCompile Include="loaderIni.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="mlNavigationHelper.cpp" />
+    <ClCompile Include="options.cpp" />
+    <ClCompile Include="optionsDebug.cpp" />
+    <ClCompile Include="optionsHook.cpp" />
+    <ClCompile Include="optionsInfo.cpp" />
+    <ClCompile Include="optionsUi.cpp" />
+    <ClCompile Include="pngLoader.cpp" />
+    <ClCompile Include="ratingMenu.cpp" />
+    <ClCompile Include="ratingMenuCustomizer.cpp" />
+    <ClCompile Include="service.cpp" />
+    <ClCompile Include="serviceDetails.cpp" />
+    <ClCompile Include="serviceDispatch.cpp" />
+    <ClCompile Include="serviceEditor.cpp" />
+    <ClCompile Include="serviceEventMngr.cpp" />
+    <ClCompile Include="serviceFactory.cpp" />
+    <ClCompile Include="serviceList.cpp" />
+    <ClCompile Include="serviceManager.cpp" />
+    <ClCompile Include="skinHelper.cpp" />
+    <ClCompile Include="statusbar.cpp" />
+    <ClCompile Include="storageDwnld.cpp" />
+    <ClCompile Include="storageEnum.cpp" />
+    <ClCompile Include="storageHandler.cpp" />
+    <ClCompile Include="storageHandlerEnum.cpp" />
+    <ClCompile Include="storageHelper.cpp" />
+    <ClCompile Include="storageIni.cpp" />
+    <ClCompile Include="storageUrl.cpp" />
+    <ClCompile Include="storageXml.cpp" />
+    <ClCompile Include="stringBuilder.cpp" />
+    <ClCompile Include="toolbar.cpp" />
+    <ClCompile Include="toolbarAddress.cpp" />
+    <ClCompile Include="toolbarButton.cpp" />
+    <ClCompile Include="toolbarEditbox.cpp" />
+    <ClCompile Include="toolbarItem.cpp" />
+    <ClCompile Include="toolbarProgress.cpp" />
+    <ClCompile Include="toolbarRating.cpp" />
+    <ClCompile Include="toolbarStatic.cpp" />
+    <ClCompile Include="travelLogHelper.cpp" />
+    <ClCompile Include="utility.cpp" />
+    <ClCompile Include="utilityFactory.cpp" />
+    <ClCompile Include="wasabiHelper.cpp" />
+    <ClCompile Include="winampHook.cpp" />
+    <ClCompile Include="xmlResponseParser.cpp" />
+    <ClCompile Include="xmlServiceParser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="addressEncoder.h" />
+    <ClInclude Include="browser.h" />
+    <ClInclude Include="browserClass.h" />
+    <ClInclude Include="browserFactory.h" />
+    <ClInclude Include="browserHost.h" />
+    <ClInclude Include="browserInternal.h" />
+    <ClInclude Include="browserObject.h" />
+    <ClInclude Include="browserPopup.h" />
+    <ClInclude Include="browserRegistry.h" />
+    <ClInclude Include="browserThread.h" />
+    <ClInclude Include="browserUiCommon.h" />
+    <ClInclude Include="browserUiHook.h" />
+    <ClInclude Include="browserUiInternal.h" />
+    <ClInclude Include="browserView.h" />
+    <ClInclude Include="browserWndEnum.h" />
+    <ClInclude Include="browserWndRecord.h" />
+    <ClInclude Include="cacheDownloader.h" />
+    <ClInclude Include="cacheGroup.h" />
+    <ClInclude Include="cacheManager.h" />
+    <ClInclude Include="cacheRecord.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="component.h" />
+    <ClInclude Include="configIni.h" />
+    <ClInclude Include="curtain.h" />
+    <ClInclude Include="enumAsync.h" />
+    <ClInclude Include="enumIniFile.h" />
+    <ClInclude Include="enumXmlBuffer.h" />
+    <ClInclude Include="enumXmlFile.h" />
+    <ClInclude Include="flagTracker.h" />
+    <ClInclude Include="graphics.h" />
+    <ClInclude Include="graphicsObject.h" />
+    <ClInclude Include="ieversion.h" />
+    <ClInclude Include="ifc_imageloader.h" />
+    <ClInclude Include="ifc_menucustomizer.h" />
+    <ClInclude Include="ifc_mlnavigationcallback.h" />
+    <ClInclude Include="ifc_mlnavigationhelper.h" />
+    <ClInclude Include="ifc_ombrowserclass.h" />
+    <ClInclude Include="ifc_ombrowserconfig.h" />
+    <ClInclude Include="ifc_ombrowserevent.h" />
+    <ClInclude Include="ifc_ombrowsereventmngr.h" />
+    <ClInclude Include="ifc_ombrowserregistry.h" />
+    <ClInclude Include="ifc_ombrowserwndenum.h" />
+    <ClInclude Include="ifc_ombrowserwndmngr.h" />
+    <ClInclude Include="ifc_omcachecallback.h" />
+    <ClInclude Include="ifc_omcachegroup.h" />
+    <ClInclude Include="ifc_omcachemanager.h" />
+    <ClInclude Include="ifc_omcacherecord.h" />
+    <ClInclude Include="ifc_omconfig.h" />
+    <ClInclude Include="ifc_omconfigcallback.h" />
+    <ClInclude Include="ifc_omdebugconfig.h" />
+    <ClInclude Include="ifc_omfilestorage.h" />
+    <ClInclude Include="ifc_omgraphics.h" />
+    <ClInclude Include="ifc_omservice.h" />
+    <ClInclude Include="ifc_omservicecommand.h" />
+    <ClInclude Include="ifc_omservicecopier.h" />
+    <ClInclude Include="ifc_omservicedetails.h" />
+    <ClInclude Include="ifc_omserviceeditor.h" />
+    <ClInclude Include="ifc_omserviceenum.h" />
+    <ClInclude Include="ifc_omserviceevent.h" />
+    <ClInclude Include="ifc_omserviceeventmngr.h" />
+    <ClInclude Include="ifc_omservicehost.h" />
+    <ClInclude Include="ifc_omservicehostext.h" />
+    <ClInclude Include="ifc_omservicemanager.h" />
+    <ClInclude Include="ifc_omstatusbarconfig.h" />
+    <ClInclude Include="ifc_omstorage.h" />
+    <ClInclude Include="ifc_omstorageasync.h" />
+    <ClInclude Include="ifc_omstorageenum.h" />
+    <ClInclude Include="ifc_omstorageext.h" />
+    <ClInclude Include="ifc_omstoragehandler.h" />
+    <ClInclude Include="ifc_omstoragehandlerenum.h" />
+    <ClInclude Include="ifc_omstoragehelper.h" />
+    <ClInclude Include="ifc_omtoolbarconfig.h" />
+    <ClInclude Include="ifc_omutility.h" />
+    <ClInclude Include="ifc_omwebstorage.h" />
+    <ClInclude Include="ifc_omxmlserviceenum.h" />
+    <ClInclude Include="ifc_skinhelper.h" />
+    <ClInclude Include="ifc_skinnedbrowser.h" />
+    <ClInclude Include="ifc_skinnedmenu.h" />
+    <ClInclude Include="ifc_skinnedrating.h" />
+    <ClInclude Include="ifc_travelloghelper.h" />
+    <ClInclude Include="ifc_wasabihelper.h" />
+    <ClInclude Include="ifc_winamphook.h" />
+    <ClInclude Include="internetFeatures.h" />
+    <ClInclude Include="loaderIni.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="mlNavigationHelper.h" />
+    <ClInclude Include="obj_ombrowser.h" />
+    <ClInclude Include="options.h" />
+    <ClInclude Include="optionsHook.h" />
+    <ClInclude Include="pngLoader.h" />
+    <ClInclude Include="ratingMenu.h" />
+    <ClInclude Include="ratingMenuCustomizer.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="service.h" />
+    <ClInclude Include="serviceFactory.h" />
+    <ClInclude Include="serviceList.h" />
+    <ClInclude Include="serviceManager.h" />
+    <ClInclude Include="skinHelper.h" />
+    <ClInclude Include="statusbar.h" />
+    <ClInclude Include="storageDwnld.h" />
+    <ClInclude Include="storageEnum.h" />
+    <ClInclude Include="storageHandler.h" />
+    <ClInclude Include="storageHandlerEnum.h" />
+    <ClInclude Include="storageHelper.h" />
+    <ClInclude Include="storageIni.h" />
+    <ClInclude Include="storageUrl.h" />
+    <ClInclude Include="storageXml.h" />
+    <ClInclude Include="stringBuilder.h" />
+    <ClInclude Include="toolbar.h" />
+    <ClInclude Include="toolbarAddress.h" />
+    <ClInclude Include="toolbarButton.h" />
+    <ClInclude Include="toolbarEditbox.h" />
+    <ClInclude Include="toolbarItem.h" />
+    <ClInclude Include="toolbarProgress.h" />
+    <ClInclude Include="toolbarRating.h" />
+    <ClInclude Include="toolbarStatic.h" />
+    <ClInclude Include="travelLogHelper.h" />
+    <ClInclude Include="utility.h" />
+    <ClInclude Include="utilityFactory.h" />
+    <ClInclude Include="wasabiHelper.h" />
+    <ClInclude Include="winampHook.h" />
+    <ClInclude Include="xmlResponseParser.h" />
+    <ClInclude Include="xmlServiceParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\pages\errorIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="errorPages.rc" />
+    <ResourceCompile Include="omBrowser.rc" />
+    <ResourceCompile Include="png.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\pages\dnsError.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="resources\pages\errorPageFunctions.js" />
+    <None Include="resources\pages\errorPageStrings.js" />
+    <None Include="resources\pages\httpError.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="resources\pages\navCancel.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="resources\pages\winampError.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wasabi\Wasabi.vcxproj">
+      <Project>{3e0bfa8a-b86a-42e9-a33f-ec294f823f7f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="errorPages.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7DE5C6C7-DAF2-42F9-9324-C8CF4E7E8AC5}</ProjectGuid>
+    <RootNamespace>winampv6</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <TargetName>winamp</TargetName>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetName>winamp</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <TargetName>winamp</TargetName>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetName>winamp</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>false</VcpkgEnableManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgInstalledDir>
+    </VcpkgInstalledDir>
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+    <VcpkgTriplet>x86-windows-static-md</VcpkgTriplet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;..\Wasabi;..\external_dependencies\microsoft_directx_sdk_2010\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_WIN32_DCOM;_WIN32_WINNT=0x0601;WINVER=0x0601;_WIN32_IE=0x0A00;WIN32;_WINDOWS;FFSKIN;USE_VIS_HDR_HWND;_CRT_SECURE_NO_WARNINGS;_WA_IPC_LEAN_H_;IGNORE_API_GRACENOTE;D3D_DEBUG_INFO;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4013;4100;4995;4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;winmm.lib;msacm32.lib;shlwapi.lib;Rpcrt4.lib;d3dx9d.lib;wininet.lib;fmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\external_dependencies\vcpkg\buildtrees\fmt\$(PlatformShortName)-windows-dbg;..\external_dependencies\microsoft_directx_sdk_2010\Lib\$(PlatformShortName);..\nsutil\$(PlatformShortName)_$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <DelayLoadDLLs>msacm32.dll;nsutil.dll;comctl32.dll;comdlg32.dll;tataki.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+      <StackReserveSize>4194304</StackReserveSize>
+      <StackCommitSize>38892</StackCommitSize>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+xcopy /Y /D /S $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\
+xcopy /Y /D /S $(IntDir)$(TargetName).pdb ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\
+
+xcopy /Y /D /S ..\resources\languages\*.wlz ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Lang\
+
+xcopy /Y /D /S ..\resources\data\whatsnew.txt ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\
+
+xcopy /Y /D /S ..\resources\skins\Bento\ ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Bento\
+
+del /Q /F /S ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Bento\*.m
+
+xcopy /Y /D /S "..\resources\skins\Big Bento\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Big Bento\"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Big Bento\*.m"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Big Bento\*.bat"
+
+xcopy /Y /D /S "..\resources\skins\Winamp Modern\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Winamp Modern\"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Winamp Modern\*.m"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Winamp Modern\*.bat"
+
+xcopy /Y /D /S "..\resources\license" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\license\"
+
+xcopy /Y /D /S "..\resources\media" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\media\"
+
+xcopy /Y /D /S "..\resources\data\avs" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\avs\"
+
+xcopy /Y /D /S "..\resources\data\freeform\xml\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\freeform\xml\"
+
+xcopy /Y /D /S ..\resources\data\vis_avs.dat ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\
+
+xcopy /Y /D /S "..\resources\data\dsp_sps\*.sps" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\DSP_SPS\"
+
+xcopy /Y /D /S "..\..\Qt\DLL_5.12_$(PlatformShortName)\$(Configuration)\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\"
+</Command>
+      <Message>Copy resources: whatsnew.txt file, languages, skins (Bento, Big Bento, Winamp Modern) other files to ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\</Message>
+    </PostBuildEvent>
+    <Manifest>
+      <AdditionalManifestFiles>$(ProjectDir)manifest.xml</AdditionalManifestFiles>
+      <OutputManifestFile>$(OutDir)$(TargetName)$(TargetExt).embed.manifest</OutputManifestFile>
+    </Manifest>
+    <ManifestResourceCompile>
+      <ResourceOutputFileName>$(OutDir)$(TargetName)$(TargetExt).embed.manifest.res</ResourceOutputFileName>
+    </ManifestResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;..\Wasabi;..\external_dependencies\microsoft_directx_sdk_2010\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_WIN32_DCOM;WIN64;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;_WIN32_IE=0x0A00;USE_VIS_HDR_HWND;D3D_DEBUG_INFO;_CRT_SECURE_NO_WARNINGS;_WA_IPC_LEAN_H_;IGNORE_API_GRACENOTE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4013;4100;4995;4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;winmm.lib;msacm32.lib;shlwapi.lib;Rpcrt4.lib;d3dx9d.lib;wininet.lib;fmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\external_dependencies\vcpkg\buildtrees\fmt\$(PlatformShortName)-windows-dbg;..\external_dependencies\microsoft_directx_sdk_2010\Lib\$(PlatformShortName);..\nsutil\$(PlatformShortName)_$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <DelayLoadDLLs>msacm32.dll;nsutil.dll;comctl32.dll;comdlg32.dll;tataki.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <StackReserveSize>4194304</StackReserveSize>
+      <StackCommitSize>38892</StackCommitSize>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D /S $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\
+xcopy /Y /D /S $(IntDir)$(TargetName).pdb ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\
+
+xcopy /Y /D /S "..\external_dependencies\vcpkg\buildtrees\fmt\$(PlatformShortName)-windows-dbg\bin\fmtd.dll" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\"
+
+xcopy /Y /D /S ..\resources\languages\*.wlz ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Lang\
+
+xcopy /Y /D /S ..\resources\data\whatsnew.txt ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\
+
+xcopy /Y /D /S ..\resources\skins\Bento\ ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Bento\
+
+del /Q /F /S ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Bento\*.m
+
+xcopy /Y /D /S "..\resources\skins\Big Bento\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Big Bento\"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Big Bento\*.m"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Big Bento\*.bat"
+
+xcopy /Y /D /S "..\resources\skins\Winamp Modern\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Winamp Modern\"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Winamp Modern\*.m"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Winamp Modern\*.bat"
+
+xcopy /Y /D /S "..\resources\license" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\license\"
+
+xcopy /Y /D /S "..\resources\media" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\media\"
+
+xcopy /Y /D /S "..\resources\data\avs" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\avs\"
+
+xcopy /Y /D /S "..\resources\data\freeform\xml\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\freeform\xml\"
+
+xcopy /Y /D /S ..\resources\data\vis_avs.dat ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\
+
+xcopy /Y /D /S ..\resources\plugins\dsp_sps.dll ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\
+
+xcopy /Y /D /S "..\resources\data\dsp_sps\*.sps" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\DSP_SPS\"</Command>
+      <Message>Copy resources: whatsnew.txt file, languages, skins (Bento, Big Bento, Winamp Modern) other files to ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.;..;..\Wasabi;..\external_dependencies\microsoft_directx_sdk_2010\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_WIN32_DCOM;_WIN32_WINNT=0x0601;WINVER=0x0601;_WIN32_IE=0x0A00;WIN32;_WINDOWS;FFSKIN;USE_VIS_HDR_HWND;_CRT_SECURE_NO_WARNINGS;_WA_IPC_LEAN_H_;IGNORE_API_GRACENOTE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4995;4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;winmm.lib;msacm32.lib;shlwapi.lib;Rpcrt4.lib;d3dx9.lib;wininet.lib;fmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <DelayLoadDLLs>msacm32.dll;nsutil.dll;comctl32.dll;comdlg32.dll;tataki.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalLibraryDirectories>..\external_dependencies\vcpkg\buildtrees\fmt\$(PlatformShortName)-windows-rel;..\external_dependencies\microsoft_directx_sdk_2010\Lib\$(PlatformShortName);..\nsutil\$(PlatformShortName)_$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+      <StackReserveSize>4194304</StackReserveSize>
+      <StackCommitSize>38892</StackCommitSize>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D /S $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\
+
+xcopy /Y /D /S ..\resources\languages\*.wlz ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Lang\
+
+xcopy /Y /D /S ..\resources\data\whatsnew.txt ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\
+
+xcopy /Y /D /S ..\resources\skins\Bento\ ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Bento\
+
+del /Q /F /S ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Bento\*.m
+
+xcopy /Y /D /S "..\resources\skins\Big Bento\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Big Bento\"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Big Bento\*.m"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Big Bento\*.bat"
+
+xcopy /Y /D /S "..\resources\skins\Winamp Modern\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Winamp Modern\"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Winamp Modern\*.m"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Winamp Modern\*.bat"
+
+xcopy /Y /D /S "..\resources\license" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\license\"
+
+xcopy /Y /D /S "..\resources\media" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\media\"
+
+xcopy /Y /D /S "..\resources\data\avs" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\avs\"
+
+xcopy /Y /D /S "..\resources\data\freeform\xml\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\freeform\xml\"
+
+xcopy /Y /D /S ..\resources\data\vis_avs.dat ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\
+
+xcopy /Y /D /S "..\resources\data\dsp_sps\*.sps" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\DSP_SPS\"
+
+xcopy /Y /D /S "..\..\Qt\DLL_5.12_$(PlatformShortName)\$(Configuration)\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\"
+</Command>
+      <Message>Copy resources: whatsnew.txt file, languages, skins (Bento, Big Bento, Winamp Modern) other files to ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\</Message>
+    </PostBuildEvent>
+    <Manifest>
+      <OutputManifestFile>$(OutDir)$(TargetName)$(TargetExt).embed.manifest</OutputManifestFile>
+      <AdditionalManifestFiles>$(ProjectDir)manifest.xml</AdditionalManifestFiles>
+    </Manifest>
+    <ManifestResourceCompile>
+      <ResourceOutputFileName>$(OutDir)$(TargetName)$(TargetExt).embed.manifest.res</ResourceOutputFileName>
+    </ManifestResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.;..;..\Wasabi;..\external_dependencies\microsoft_directx_sdk_2010\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_WIN32_DCOM;_WIN32_WINNT=0x0601;WINVER=0x0601;_WIN32_IE=0x0A00;WIN64;NDEBUG;_WINDOWS;FFSKIN;USE_VIS_HDR_HWND;_CRT_SECURE_NO_WARNINGS;_WA_IPC_LEAN_H_;IGNORE_API_GRACENOTE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4995;4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;winmm.lib;msacm32.lib;shlwapi.lib;Rpcrt4.lib;d3dx9.lib;wininet.lib;fmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <DelayLoadDLLs>msacm32.dll;nsutil.dll;comctl32.dll;comdlg32.dll;tataki.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalLibraryDirectories>..\external_dependencies\vcpkg\buildtrees\fmt\$(PlatformShortName)-windows-rel;..\external_dependencies\microsoft_directx_sdk_2010\Lib\$(PlatformShortName);..\nsutil\$(PlatformShortName)_$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <StackReserveSize>4194304</StackReserveSize>
+      <StackCommitSize>38892</StackCommitSize>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D /S $(OutDir)$(TargetName)$(TargetExt) ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\
+
+xcopy /Y /D /S "..\external_dependencies\vcpkg\buildtrees\fmt\$(PlatformShortName)-windows-rel\bin\fmt.dll" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\"
+
+xcopy /Y /D /S ..\resources\languages\*.wlz ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Lang\
+
+xcopy /Y /D /S ..\resources\data\whatsnew.txt ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\
+
+xcopy /Y /D /S ..\resources\skins\Bento\ ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Bento\
+
+del /Q /F /S ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Bento\*.m
+
+xcopy /Y /D /S "..\resources\skins\Big Bento\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Big Bento\"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Big Bento\*.m"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Big Bento\*.bat"
+
+xcopy /Y /D /S "..\resources\skins\Winamp Modern\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Winamp Modern\"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Winamp Modern\*.m"
+
+del /Q /F /S "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Skins\Winamp Modern\*.bat"
+
+xcopy /Y /D /S "..\resources\license" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\license\"
+
+xcopy /Y /D /S "..\resources\media" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\media\"
+
+xcopy /Y /D /S "..\resources\data\avs" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\avs\"
+
+xcopy /Y /D /S "..\resources\data\freeform\xml\" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\freeform\xml\"
+
+xcopy /Y /D /S ..\resources\data\vis_avs.dat ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\
+
+xcopy /Y /D /S ..\resources\plugins\dsp_sps.dll ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\
+
+xcopy /Y /D /S "..\resources\data\dsp_sps\*.sps" "..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\Plugins\DSP_SPS\"</Command>
+      <Message>Copy resources: whatsnew.txt file, languages, skins (Bento, Big Bento, Winamp Modern) other files to ..\..\Build\Winamp_$(PlatformShortName)_$(Configuration)\</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\nsutil\nsutil.vcxproj">
+      <Project>{dabe6307-f8dd-416d-9dac-673e2decb73f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\tataki\tataki.vcxproj">
+      <Project>{255b68b5-7ef8-45ef-a675-2d6b88147909}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Wasabi\bfc\bfc.vcxproj">
+      <Project>{d0ec862e-dddd-4f4f-934f-b75dc9062dc1}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\albumart\albumart.vcxproj">
+      <Project>{388476b7-c0a1-4853-b6f4-9a64ca346ba9}</Project>
+      <IncludeIsGuid>true</IncludeIsGuid>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Elevator\Elevator.vcxproj">
+      <Project>{977153bf-8420-4c8d-aa25-592faedb6cba}</Project>
+      <IncludeIsGuid>true</IncludeIsGuid>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\playlist\playlist.vcxproj">
+      <Project>{b2c0f048-c7fa-4864-b5b3-75e69458ba9e}</Project>
+      <IncludeIsGuid>true</IncludeIsGuid>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Wasabi\Wasabi.vcxproj">
+      <Project>{3e0bfa8a-b86a-42e9-a33f-ec294f823f7f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WAT\WAT.vcxproj">
+      <Project>{c5714908-a71f-4644-bd95-aad8ee7914da}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Agave\Metadata\api_metadata.cpp" />
+    <ClCompile Include="..\config\config.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\Elevator\FileTypeRegistrar.cpp" />
+    <ClCompile Include="..\Plugins\General\gen_crasher\GetWinVer.cpp" />
+    <ClCompile Include="..\Plugins\General\gen_ml\menu.cpp" />
+    <ClCompile Include="..\Plugins\General\gen_ml\ml_lib.cpp" />
+    <ClCompile Include="../Plugins/Library/ml_bookmarks\bookmark.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)%(Filename)2.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)%(Filename)2.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)%(Filename)2.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)%(Filename)2.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\nu\ConfigCOM.cpp" />
+    <ClCompile Include="..\nu\HTMLContainer.cpp" />
+    <ClCompile Include="..\nu\ServiceWatcher.cpp" />
+    <ClCompile Include="..\nu\threadpool\ThreadFunctions.cpp" />
+    <ClCompile Include="..\nu\threadpool\ThreadID.cpp" />
+    <ClCompile Include="..\nu\threadpool\ThreadPool.cpp" />
+    <ClCompile Include="..\nu\trace.cpp" />
+    <ClCompile Include="..\Wasabi\api\skin\skinitem.cpp" />
+    <ClCompile Include="..\Wasabi\api\syscb\callbacks\syscbx.cpp" />
+    <ClCompile Include="About.cpp" />
+    <ClCompile Include="AccessibilityConfigGroup.cpp" />
+    <ClCompile Include="AdData.cpp" />
+    <ClCompile Include="AlbumArtRetrieval.cpp" />
+    <ClCompile Include="api_videopreferences.cpp" />
+    <ClCompile Include="application.cpp" />
+    <ClCompile Include="ApplicationCOM.cpp" />
+    <ClCompile Include="AppRefCount.cpp" />
+    <ClCompile Include="benskiQ\benskiQ.cpp" />
+    <ClCompile Include="benskiQ\Biquad.cpp" />
+    <ClCompile Include="benskiQ\EqBand.cpp" />
+    <ClCompile Include="bm.cpp" />
+    <ClCompile Include="BookmarksCOM.cpp" />
+    <ClCompile Include="BoolAttribute.cpp" />
+    <ClCompile Include="BrowserCOM.cpp" />
+    <ClCompile Include="burn.cpp" />
+    <ClCompile Include="BurnManager.cpp" />
+    <ClCompile Include="classic_vis.cpp" />
+    <ClCompile Include="cmdline.cpp" />
+    <ClCompile Include="commandLink.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="conversions.cpp" />
+    <ClCompile Include="convert.cpp" />
+    <ClCompile Include="creditsrend.c" />
+    <ClCompile Include="CurrentSongCOM.cpp" />
+    <ClCompile Include="DataStoreCOM.cpp" />
+    <ClCompile Include="DecodeFile.cpp" />
+    <ClCompile Include="DeveloperConfigGroup.cpp" />
+    <ClCompile Include="dispatchCallback.cpp" />
+    <ClCompile Include="dock.cpp" />
+    <ClCompile Include="dpi.cpp" />
+    <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="draw_embed.cpp" />
+    <ClCompile Include="draw_eq.cpp" />
+    <ClCompile Include="draw_main.cpp" />
+    <ClCompile Include="draw_mb.cpp" />
+    <ClCompile Include="draw_pe.cpp" />
+    <ClCompile Include="draw_sa.cpp" />
+    <ClCompile Include="draw_vw.cpp" />
+    <ClCompile Include="dsp.cpp" />
+    <ClCompile Include="dwm.cpp" />
+    <ClCompile Include="embwnd.cpp" />
+    <ClCompile Include="Eq.cpp" />
+    <ClCompile Include="eq10dsp.cpp" />
+    <ClCompile Include="EQConfigGroup.cpp" />
+    <ClCompile Include="Equi.cpp" />
+    <ClCompile Include="ExplorerFindFile.cpp" />
+    <ClCompile Include="ExtendedInfo.cpp" />
+    <ClCompile Include="ExtendedReader.cpp" />
+    <ClCompile Include="ExternalCOM.cpp" />
+    <ClCompile Include="FeedBase.cpp" />
+    <ClCompile Include="feeds.cpp" />
+    <ClCompile Include="Fft.cpp" />
+    <ClCompile Include="FileInfo.cpp" />
+    <ClCompile Include="FloatAttribute.cpp" />
+    <ClCompile Include="fullscreen.cpp" />
+    <ClCompile Include="GammaFilter.cpp" />
+    <ClCompile Include="GammaManagerAPI.cpp" />
+    <ClCompile Include="gen.cpp" />
+    <ClCompile Include="handler.cpp" />
+    <ClCompile Include="html.cpp" />
+    <ClCompile Include="Http.cpp" />
+    <ClCompile Include="HTTPRetrieveFile.cpp" />
+    <ClCompile Include="In.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)%(Filename)3.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)%(Filename)3.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)%(Filename)3.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)%(Filename)3.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="install.cpp" />
+    <ClCompile Include="IntAttribute.cpp" />
+    <ClCompile Include="InternetConfigGroup.cpp" />
+    <ClCompile Include="InW.cpp" />
+    <ClCompile Include="ipc.cpp" />
+    <ClCompile Include="IVideoD3DOSD.cpp" />
+    <ClCompile Include="jnetcom.cpp" />
+    <ClCompile Include="JSAPI2_Application.cpp" />
+    <ClCompile Include="JSAPI2_AsyncDownloader.cpp" />
+    <ClCompile Include="JSAPI2_Bookmarks.cpp" />
+    <ClCompile Include="JSAPI2_CallbackManager.cpp" />
+    <ClCompile Include="JSAPI2_Creator.cpp" />
+    <ClCompile Include="JSAPI2_DownloaderAPI.cpp" />
+    <ClCompile Include="JSAPI2_ExternalObject.cpp" />
+    <ClCompile Include="JSAPI2_MediaCore.cpp" />
+    <ClCompile Include="JSAPI2_PlayerAPI.cpp" />
+    <ClCompile Include="JSAPI2_Security.cpp" />
+    <ClCompile Include="JSAPI2_SecurityAPI.cpp" />
+    <ClCompile Include="JSAPI2_SecurityPrompt.cpp" />
+    <ClCompile Include="JSAPI2_SkinAPI.cpp" />
+    <ClCompile Include="JSAPI2_TransportAPI.cpp" />
+    <ClCompile Include="JSAPI_CallbackParameters.cpp" />
+    <ClCompile Include="JSAPI_DispatchTable.cpp" />
+    <ClCompile Include="JSAPI_Info.cpp" />
+    <ClCompile Include="JUMP.cpp" />
+    <ClCompile Include="lang.cpp" />
+    <ClCompile Include="LazyServiceFactory.cpp" />
+    <ClCompile Include="linklist.cpp" />
+    <ClCompile Include="M3u.cpp" />
+    <ClCompile Include="main.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)%(Filename)4.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)%(Filename)4.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)%(Filename)4.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)%(Filename)4.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="main_buttons.cpp" />
+    <ClCompile Include="main_close.cpp" />
+    <ClCompile Include="main_command.cpp" />
+    <ClCompile Include="main_display.cpp" />
+    <ClCompile Include="main_init.cpp" />
+    <ClCompile Include="main_mouse.cpp" />
+    <ClCompile Include="main_nonclient.cpp" />
+    <ClCompile Include="main_timer.cpp" />
+    <ClCompile Include="main_wndproc.cpp" />
+    <ClCompile Include="MediaCoreCOM.cpp" />
+    <ClCompile Include="MemoryManager.cpp" />
+    <ClCompile Include="menuv5.cpp" />
+    <ClCompile Include="MergePlaylist.cpp" />
+    <ClCompile Include="Metadata.cpp" />
+    <ClCompile Include="metrics.cpp" />
+    <ClCompile Include="MoreItems.cpp" />
+    <ClCompile Include="ole.cpp" />
+    <ClCompile Include="OpenFileDialog.cpp" />
+    <ClCompile Include="Options.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)%(Filename)5.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)%(Filename)5.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)%(Filename)5.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)%(Filename)5.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="options_bookmarks.cpp" />
+    <ClCompile Include="options_classic.cpp" />
+    <ClCompile Include="options_dsp.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)%(Filename)6.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)%(Filename)6.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)%(Filename)6.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)%(Filename)6.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="options_filetypes.cpp" />
+    <ClCompile Include="options_gen.cpp" />
+    <ClCompile Include="options_general.cpp" />
+    <ClCompile Include="options_in.cpp" />
+    <ClCompile Include="options_lang.cpp" />
+    <ClCompile Include="options_output.cpp" />
+    <ClCompile Include="options_playback.cpp" />
+    <ClCompile Include="options_playlist.cpp" />
+    <ClCompile Include="options_plugins.cpp" />
+    <ClCompile Include="options_skin.cpp" />
+    <ClCompile Include="options_title.cpp" />
+    <ClCompile Include="options_video.cpp" />
+    <ClCompile Include="options_vis.cpp" />
+    <ClCompile Include="Out.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)%(Filename)7.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)%(Filename)7.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)%(Filename)7.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)%(Filename)7.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="OutputPluginAudioStream.cpp" />
+    <ClCompile Include="PaletteManager.cpp" />
+    <ClCompile Include="ParamList.cpp" />
+    <ClCompile Include="paths.cpp" />
+    <ClCompile Include="PathsINI.cpp" />
+    <ClCompile Include="peui.cpp" />
+    <ClCompile Include="Play.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)%(Filename)8.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)%(Filename)8.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)%(Filename)8.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)%(Filename)8.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="PlaybackConfigGroup.cpp" />
+    <ClCompile Include="PlayList.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)%(Filename)9.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)%(Filename)9.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)%(Filename)9.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Wx64'">$(OutDir)%(Filename)9.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="PlayQueue.cpp" />
+    <ClCompile Include="Pledit.cpp" />
+    <ClCompile Include="Pls.cpp" />
+    <ClCompile Include="plush\cam.c" />
+    <ClCompile Include="plush\clip.c" />
+    <ClCompile Include="plush\light.c" />
+    <ClCompile Include="plush\make.c" />
+    <ClCompile Include="plush\mat.c" />
+    <ClCompile Include="plush\math.c" />
+    <ClCompile Include="plush\obj.c" />
+    <ClCompile Include="plush\pf_ptex.c" />
+    <ClCompile Include="plush\pf_tex.c" />
+    <ClCompile Include="plush\pf_trans.c" />
+    <ClCompile Include="plush\pf_solid.c" />
+    <ClCompile Include="plush\plush.c" />
+    <ClCompile Include="plush\render.c" />
+    <ClCompile Include="plush\spline.c" />
+    <ClCompile Include="plush\text.c" />
+    <ClCompile Include="precomp.cpp" />
+    <ClCompile Include="rand.cpp" />
+    <ClCompile Include="registry.cpp" />
+    <ClCompile Include="Resampler.cpp" />
+    <ClCompile Include="ResamplingReader.cpp" />
+    <ClCompile Include="Sa.cpp" />
+    <ClCompile Include="SABuffer.cpp" />
+    <ClCompile Include="SecurityCOM.cpp" />
+    <ClCompile Include="ServiceFactory.cpp" />
+    <ClCompile Include="ServiceManager.cpp" />
+    <ClCompile Include="Set.cpp" />
+    <ClCompile Include="setup\httpgrab.cpp" />
+    <ClCompile Include="setup\langutil.cpp" />
+    <ClCompile Include="setup\loadimage.cpp" />
+    <ClCompile Include="setup\postsetup.cpp" />
+    <ClCompile Include="setup\setup.cpp" />
+    <ClCompile Include="setup\setupfactory.cpp" />
+    <ClCompile Include="setup\sjob_register.cpp" />
+    <ClCompile Include="setup\skininfo.cpp" />
+    <ClCompile Include="setup\spage_assoc.cpp" />
+    <ClCompile Include="setup\spage_connect.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="setup\spage_feedback.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="setup\spage_lang.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="setup\spage_skin.cpp" />
+    <ClCompile Include="SHELL.CPP" />
+    <ClCompile Include="SkinBitmapElement.cpp" />
+    <ClCompile Include="SkinColorElement.cpp" />
+    <ClCompile Include="SkinCOM.cpp" />
+    <ClCompile Include="SkinCursorElement.cpp" />
+    <ClCompile Include="SkinElementAlias.cpp" />
+    <ClCompile Include="Skins.cpp" />
+    <ClCompile Include="SkinUtils.cpp" />
+    <ClCompile Include="skinWindow.cpp" />
+    <ClCompile Include="SPLASH.cpp" />
+    <ClCompile Include="stats.cpp" />
+    <ClCompile Include="strutil.cpp" />
+    <ClCompile Include="SysCallbacks.cpp" />
+    <ClCompile Include="SYSTRAY.cpp" />
+    <ClCompile Include="TagProvider.cpp" />
+    <ClCompile Include="tagz.cpp" />
+    <ClCompile Include="TempFileCOM.cpp" />
+    <ClCompile Include="TIMING.cpp" />
+    <ClCompile Include="Ui.cpp" />
+    <ClCompile Include="UnsignedAttribute.cpp" />
+    <ClCompile Include="updateService.cpp" />
+    <ClCompile Include="updateServicePopup.cpp" />
+    <ClCompile Include="UpdateWindow.cpp" />
+    <ClCompile Include="urlmanager.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="VersionCheck.cpp" />
+    <ClCompile Include="video.cpp" />
+    <ClCompile Include="VideoConfigGroup.cpp" />
+    <ClCompile Include="VideoOSD.cpp" />
+    <ClCompile Include="VideoOutput.cpp" />
+    <ClCompile Include="VideoOutputChild.cpp" />
+    <ClCompile Include="VideoOutputChildDDraw.cpp" />
+    <ClCompile Include="VideoPreferences.cpp" />
+    <ClCompile Include="videoui.cpp" />
+    <ClCompile Include="video_ipc.cpp" />
+    <ClCompile Include="vid_d3d.cpp" />
+    <ClCompile Include="vid_ddraw.cpp" />
+    <ClCompile Include="vid_none.cpp" />
+    <ClCompile Include="vid_overlay.cpp" />
+    <ClCompile Include="vid_subs.cpp" />
+    <ClCompile Include="Vis.cpp" />
+    <ClCompile Include="vu.cpp" />
+    <ClCompile Include="w5s.cpp" />
+    <ClCompile Include="WADrawDC.cpp" />
+    <ClCompile Include="Wasabi.cpp" />
+    <ClCompile Include="winampApi.cpp" />
+    <ClCompile Include="WinampAttributes.cpp" />
+    <ClCompile Include="WinampPlaylist.cpp" />
+    <ClCompile Include="wintheme.cpp" />
+    <ClCompile Include="wpz.cpp" />
+    <ClCompile Include="XMLString.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Agave\ExplorerFindFile\api_explorerfindfile.h" />
+    <ClInclude Include="..\Agave\Language\api_language.h" />
+    <ClInclude Include="..\Agave\Language\lang.h" />
+    <ClInclude Include="..\Agave\Metadata\api_metadata.h" />
+    <ClInclude Include="..\Agave\Metadata\ifc_metadataReader.h" />
+    <ClInclude Include="..\Agave\Metadata\svc_metatag.h" />
+    <ClInclude Include="..\config\config.h" />
+    <ClInclude Include="..\Plugins\General\gen_crasher\GetWinVer.h" />
+    <ClInclude Include="..\Plugins\General\gen_ml\menu.h" />
+    <ClInclude Include="..\nu\AutoLock.h" />
+    <ClInclude Include="..\nu\ConfigCOM.h" />
+    <ClInclude Include="..\nu\HTMLContainer.h" />
+    <ClInclude Include="..\nu\threadpool\api_threadpool.h" />
+    <ClInclude Include="..\nu\threadpool\ThreadFunctions.h" />
+    <ClInclude Include="..\nu\threadpool\ThreadID.h" />
+    <ClInclude Include="..\nu\threadpool\ThreadPool.h" />
+    <ClInclude Include="..\nu\threadpool\threadpool_types.h" />
+    <ClInclude Include="..\Wasabi\api\application\api_application.h" />
+    <ClInclude Include="..\Wasabi\api\application\api_messageprocessor.h" />
+    <ClInclude Include="..\Wasabi\api\application\ifc_messageprocessor.h" />
+    <ClInclude Include="..\Wasabi\api\service\api_service.h" />
+    <ClInclude Include="..\Wasabi\api\skin\api_colorthemes.h" />
+    <ClInclude Include="..\Wasabi\api\skin\feeds\api_textfeed.h" />
+    <ClInclude Include="AccessibilityConfigGroup.h" />
+    <ClInclude Include="AdData.h" />
+    <ClInclude Include="api.h" />
+    <ClInclude Include="api_audiostream.h" />
+    <ClInclude Include="api_decodefile.h" />
+    <ClInclude Include="api_random.h" />
+    <ClInclude Include="api_stats.h" />
+    <ClInclude Include="api_urlmanager.h" />
+    <ClInclude Include="api_videopreferences.h" />
+    <ClInclude Include="api_winamp.h" />
+    <ClInclude Include="application.h" />
+    <ClInclude Include="ApplicationCOM.h" />
+    <ClInclude Include="AppRefCount.h" />
+    <ClInclude Include="attributes.h" />
+    <ClInclude Include="benskiQ\Biquad.h" />
+    <ClInclude Include="benskiQ\EqBand.h" />
+    <ClInclude Include="BookmarksCOM.h" />
+    <ClInclude Include="BurnManager.h" />
+    <ClInclude Include="commandLink.h" />
+    <ClInclude Include="CommonReader.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="CurrentSongCOM.h" />
+    <ClInclude Include="DataStoreCOM.h" />
+    <ClInclude Include="DecodeFile.h" />
+    <ClInclude Include="DeveloperConfigGroup.h" />
+    <ClInclude Include="directdraw.h" />
+    <ClInclude Include="dispatchCallback.h" />
+    <ClInclude Include="dpi.h" />
+    <ClInclude Include="draw.h" />
+    <ClInclude Include="dsp.h" />
+    <ClInclude Include="eq10dsp.h" />
+    <ClInclude Include="EQConfigGroup.h" />
+    <ClInclude Include="ExplorerFindFile.h" />
+    <ClInclude Include="ExtendedReader.h" />
+    <ClInclude Include="ExternalCOM.h" />
+    <ClInclude Include="FeedBase.h" />
+    <ClInclude Include="feeds.h" />
+    <ClInclude Include="FFT.H" />
+    <ClInclude Include="GammaFilter.h" />
+    <ClInclude Include="GammaManagerAPI.h" />
+    <ClInclude Include="gen.h" />
+    <ClInclude Include="handler.h" />
+    <ClInclude Include="in2.h" />
+    <ClInclude Include="InternetConfigGroup.h" />
+    <ClInclude Include="ipc_pe.h" />
+    <ClInclude Include="IVideoD3DOSD.h" />
+    <ClInclude Include="IWasabiDispatchable.h" />
+    <ClInclude Include="jnetcom.h" />
+    <ClInclude Include="JSAPI.h" />
+    <ClInclude Include="JSAPI2_api_security.h" />
+    <ClInclude Include="JSAPI2_Application.h" />
+    <ClInclude Include="JSAPI2_AsyncDownloader.h" />
+    <ClInclude Include="JSAPI2_Bookmarks.h" />
+    <ClInclude Include="JSAPI2_CallbackManager.h" />
+    <ClInclude Include="JSAPI2_Creator.h" />
+    <ClInclude Include="JSAPI2_Downloader.h" />
+    <ClInclude Include="JSAPI2_ExternalObject.h" />
+    <ClInclude Include="JSAPI2_MediaCore.h" />
+    <ClInclude Include="JSAPI2_PlayerAPI.h" />
+    <ClInclude Include="JSAPI2_Security.h" />
+    <ClInclude Include="JSAPI2_SecurityAPI.h" />
+    <ClInclude Include="JSAPI2_SkinAPI.h" />
+    <ClInclude Include="JSAPI2_svc_apicreator.h" />
+    <ClInclude Include="JSAPI2_TransportAPI.h" />
+    <ClInclude Include="JSAPI_CallbackParameters.h" />
+    <ClInclude Include="JSAPI_DispatchTable.h" />
+    <ClInclude Include="JSAPI_Info.h" />
+    <ClInclude Include="language.h" />
+    <ClInclude Include="LazyServiceFactory.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="main.hpp" />
+    <ClInclude Include="MediaCoreCOM.h" />
+    <ClInclude Include="MemoryManager.h" />
+    <ClInclude Include="MergePlaylist.h" />
+    <ClInclude Include="Metadata.h" />
+    <ClInclude Include="MoreItems.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="out.h" />
+    <ClInclude Include="OutputPluginAudioStream.h" />
+    <ClInclude Include="PaletteManager.h" />
+    <ClInclude Include="ParamList.h" />
+    <ClInclude Include="PlaybackConfigGroup.h" />
+    <ClInclude Include="Playlist.h" />
+    <ClInclude Include="precomp.h" />
+    <ClInclude Include="random.h" />
+    <ClInclude Include="Resampler.h" />
+    <ClInclude Include="ResamplingReader.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SecurityCOM.h" />
+    <ClInclude Include="ServiceManager.h" />
+    <ClInclude Include="setup\httpgrab.h" />
+    <ClInclude Include="setup\ifc_setupjob.h" />
+    <ClInclude Include="setup\ifc_setuppage.h" />
+    <ClInclude Include="setup\langutil.h" />
+    <ClInclude Include="setup\loadimage.h" />
+    <ClInclude Include="setup\postsetup.h" />
+    <ClInclude Include="setup\resource.h" />
+    <ClInclude Include="setup\setup.h" />
+    <ClInclude Include="setup\setupcommon.h" />
+    <ClInclude Include="setup\setupfactory.h" />
+    <ClInclude Include="setup\setup_api.h" />
+    <ClInclude Include="setup\setup_resource.h" />
+    <ClInclude Include="setup\sjob_register.h" />
+    <ClInclude Include="setup\skininfo.h" />
+    <ClInclude Include="setup\spage_assoc.h" />
+    <CustomBuild Include="setup\spage_connect.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="setup\spage_feedback.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="setup\spage_lang.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="setup\spage_skin.h" />
+    <ClInclude Include="setup\svc_setup.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="SkinBitmapElement.h" />
+    <ClInclude Include="SkinColorElement.h" />
+    <ClInclude Include="SkinCOM.h" />
+    <ClInclude Include="SkinCursorElement.h" />
+    <ClInclude Include="SkinElementAlias.h" />
+    <ClInclude Include="skinWindow.h" />
+    <ClInclude Include="skinWindowIPC.h" />
+    <ClInclude Include="stats.h" />
+    <ClInclude Include="strutil.h" />
+    <ClInclude Include="SysCallbacks.h" />
+    <ClInclude Include="TagProvider.h" />
+    <ClInclude Include="tagz.h" />
+    <ClInclude Include="TempFileCOM.h" />
+    <ClInclude Include="TIMING.H" />
+    <ClInclude Include="updateService.h" />
+    <ClInclude Include="urlmanager.h" />
+    <ClInclude Include="video.h" />
+    <ClInclude Include="VideoAspectAdjuster.h" />
+    <ClInclude Include="VideoConfigGroup.h" />
+    <ClInclude Include="VideoFeedFactory.h" />
+    <ClInclude Include="VideoOSD.h" />
+    <ClInclude Include="VideoOutput.h" />
+    <ClInclude Include="VideoOutputChild.h" />
+    <ClInclude Include="VideoOutputChildDDraw.h" />
+    <ClInclude Include="vid_d3d.h" />
+    <ClInclude Include="vid_ddraw.h" />
+    <ClInclude Include="vid_none.h" />
+    <ClInclude Include="vid_overlay.h" />
+    <ClInclude Include="vid_subs.h" />
+    <ClInclude Include="vis.h" />
+    <ClInclude Include="w5s.h" />
+    <ClInclude Include="WADrawDC.h" />
+    <ClInclude Include="Wasabi.h" />
+    <ClInclude Include="wasabicfg.h" />
+    <ClInclude Include="wa_ipc.h" />
+    <ClInclude Include="winampApi.h" />
+    <ClInclude Include="WinampAttributes.h" />
+    <ClInclude Include="WinampPlaylist.h" />
+    <ClInclude Include="wintheme.h" />
+    <ClInclude Include="XMLString.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\atf.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="resource\cur00001.cur" />
+    <None Include="resource\danger.cur" />
+    <None Include="resource\danger1.cur" />
+    <None Include="resource\lrscroll.cur" />
+    <None Include="resource\move.cur" />
+    <None Include="resource\resize.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\balance.bmp" />
+    <Image Include="resource\beta.bmp" />
+    <Image Include="resource\cbuttons.bmp" />
+    <Image Include="resource\djegg.bmp" />
+    <Image Include="resource\embwnd.bmp" />
+    <Image Include="resource\eqmain.bmp" />
+    <Image Include="resource\Eqmain_ISO.bmp" />
+    <Image Include="RESOURCE\eq_ex.bmp" />
+    <Image Include="resource\gen.bmp" />
+    <Image Include="resource\genex.bmp" />
+    <Image Include="resource\ICON1.ICO" />
+    <Image Include="resource\ICON10.ICO" />
+    <Image Include="resource\Icon11.ico" />
+    <Image Include="resource\ICON12.ICO" />
+    <Image Include="resource\icon13.ico" />
+    <Image Include="resource\Icon2.ico" />
+    <Image Include="resource\ICON3.ICO" />
+    <Image Include="resource\Icon5.ico" />
+    <Image Include="resource\ICON6.ICO" />
+    <Image Include="resource\ICON7.ICO" />
+    <Image Include="resource\ICON8.ICO" />
+    <Image Include="resource\ICON9.ICO" />
+    <Image Include="resource\main.bmp" />
+    <Image Include="RESOURCE\mb.bmp" />
+    <Image Include="resource\MONOSTER.BMP" />
+    <Image Include="resource\numbers.bmp" />
+    <Image Include="resource\OSD-Sprite-Controls.png" />
+    <Image Include="resource\PLAYPAUS.BMP" />
+    <Image Include="resource\pledit.bmp" />
+    <Image Include="resource\POSBAR.BMP" />
+    <Image Include="resource\shufrep.bmp" />
+    <Image Include="resource\splash2.bmp" />
+    <Image Include="resource\TBICON1.ico" />
+    <Image Include="resource\TBICON2.ico" />
+    <Image Include="resource\TBICON3.ico" />
+    <Image Include="resource\TBICON4.ico" />
+    <Image Include="resource\TBICON5.ico" />
+    <Image Include="resource\team.bmp" />
+    <Image Include="resource\text.bmp" />
+    <Image Include="resource\titlebar.bmp" />
+    <Image Include="resource\uninstallwa.ico" />
+    <Image Include="resource\video.bmp" />
+    <Image Include="resource\video_logo.bmp" />
+    <Image Include="resource\volbar.bmp" />
+    <Image Include="resource\volume.bmp" />
+    <Image Include="resource\WinampIcon.ico" />
+    <Image Include="setup\checkbox.bmp" />
+    <Image Include="setup\headerstrip.bmp" />
+    <Image Include="setup\navitemstrip.bmp" />
+    <Image Include="setup\navstrip.bmp" />
+    <Image Include="setup\preview_classic.png" />
+    <Image Include="setup\preview_no.png" />
+    <Image Include="setup\smokingllama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="resource\cmdline.txt" />
+    <Text Include="resource\tips.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="manifest.xml" />
+    <Xml Include="manifest64.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="setup\setup.rc" />
+    <ResourceCompile Include="Winamp.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

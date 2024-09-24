@@ -1,0 +1,304 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DS_CONFIG DIALOGEX 0, 0, 247, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DirectSound output settings"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Note: Most settings take full effect after restarting playback",IDC_STATIC,2,194,194,8,WS_DISABLED
+    PUSHBUTTON      "Apply",IDABORT,212,192,32,12
+    LTEXT           "",IDC_VER,1,211,40,8
+    PUSHBUTTON      "Reset all",IDC_RESET,136,206,36,12
+    DEFPUSHBUTTON   "OK",IDOK,176,206,32,12
+    PUSHBUTTON      "Cancel",IDCANCEL,212,206,32,12
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",WS_TABSTOP,0,0,244,188
+END
+
+IDD_CONFIG_TAB1 DIALOGEX 0, 0, 242, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_DEVICE,4,5,196,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Refresh",IDC_REFRESH,202,5,36,13
+    CONTROL         "Allow hardware acceleration\n(may cause problems with broken drivers)",IDC_HW_MIX,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,8,24,228,17
+    CONTROL         "Create primary buffer\n(for old soundcards, fixes sound quality problems)",IDC_CREATE_PRIMARY,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,8,45,228,18
+    GROUPBOX        "Device Info",-1,4,68,234,56
+    LTEXT           "",IDC_DEVICE_INFO,8,78,226,42
+    LTEXT           "Note that info above is what your soundcard driver reports; it might not match actual hardware specs in certain cases.",IDC_STATIC_BLEH,4,128,234,17
+    LTEXT           "",IDC_PDS_FAQ,4,148,234,18
+END
+
+IDD_CONFIG_TAB2 DIALOGEX 0, 0, 238, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Buffer length:",-1,8,4,46,8
+    PUSHBUTTON      "Reset to default values",IDC_BUF_RESET,147,0,90,12
+    CONTROL         "Slider1",IDC_BUFFER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,4,14,232,12
+    CTEXT           "",IDC_BUF_DISP,8,26,224,8
+    LTEXT           "Prebuffer on start / seek / underrun:",-1,8,39,119,8
+    CONTROL         "Slider1",IDC_PREBUFFER_1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,4,49,232,12
+    CTEXT           "",IDC_PREBUF_DISP_1,8,61,224,8
+    LTEXT           "Buffer-ahead on track change:",-1,8,74,100,8
+    CONTROL         "Slider1",IDC_PREBUFFER_2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,4,84,232,12
+    CTEXT           "",IDC_PREBUF_DISP_2,8,96,224,8
+    LTEXT           "Longer buffer gives better skipping (underrun) protection at cost of higher CPU usage when starting (Winamp decodes as fast as possible until buffer is full). Big buffer also causes EQ/DSP setting changes to lag.",-1,2,104,236,25
+    LTEXT           "Prebuffer determines how much data to eat before starting to output; recommended values are 500-1000ms, higher values can cause problems.",-1,2,131,236,16
+    CONTROL         "Enable CPU usage control (experimental, keeps CPU usage fluid when starting/seeking, even with very big buffers)",IDC_PREBUF_AUTO,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,2,151,220,16
+END
+
+IDD_CONFIG_TAB3 DIALOGEX 0, 0, 242, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Default fade length:",-1,10,9,66,8
+    EDITTEXT        IDC_FADE,78,7,38,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_FADE_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,104,7,11,14
+    LTEXT           "ms",-1,118,9,10,8
+    CONTROL         "Old-style fade on pause",IDC_PAUSEFADE2,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,8,24,116,10
+    CONTROL         "Don't abort fadeout when Winamp is shutting down",IDC_WAITx,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,36,177,10
+    LISTBOX         IDC_LIST,8,50,224,45,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_FADE_GROUP,8,95,224,39,WS_DISABLED
+    CONTROL         "Enabled",IDC_FADE_ENABLED,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,18,106,42,10
+    CONTROL         "Use custom fade time:",IDC_USE_CUSTOM_FADE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,18,118,84,10
+    EDITTEXT        IDC_CUSTOM_FADE,106,117,34,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Spin1",IDC_CUSTOM_FADE_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_DISABLED,128,118,11,14
+    LTEXT           "ms",IDC_STATIC_MS,142,119,10,8,WS_DISABLED
+    LTEXT           "Note: all fadeouts are limited to buffer length. You may need to set longer buffer in order to get what you want.",-1,4,137,232,16
+    LTEXT           "FAQ: fades on end of song and on start will disable gapless playback.",-1,4,157,226,8
+END
+
+IDD_CONFIG_TAB4 DIALOGEX 0, 0, 242, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Silence remover",-1,4,4,234,76
+    CONTROL         "Remove silence at the beginning / end of track",IDC_KILLSIL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,17,165,10
+    LTEXT           "Cutoff:",-1,16,30,24,8
+    CONTROL         "Slider1",IDC_DB,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,10,38,220,12
+    CTEXT           "",IDC_DB_DISPLAY,14,50,212,8
+    LTEXT           "Note: amount of removed silence at the end of track\nis limited to buffer length (see buffering tab)",-1,12,58,168,16
+    GROUPBOX        "Volume control",-1,4,88,234,76
+    CONTROL         "Enable volume control",IDC_VOLUME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,106,86,10
+    CONTROL         "Smooth volume changes",IDC_FADEVOL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,106,93,10
+    LTEXT           "Volume control:",-1,12,127,50,8
+    COMBOBOX        IDC_VOLMODE,62,124,138,76,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Map 0% to -",IDC_LOGVOL_STATIC,24,144,38,8
+    EDITTEXT        IDC_LOGVOL_MIN,62,142,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_LOGVOL_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,88,150,11,14
+    LTEXT           "dB",IDC_LOGVOL_STATIC2,92,144,10,8
+    CONTROL         "Logarithmic fades",IDC_LOGFADES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,144,71,10
+END
+
+IDD_CONFIG_TAB6 DIALOGEX 0, 0, 242, 174
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Copy",IDC_STAT_COPY,4,157,28,14
+    LTEXT           "Refresh every",-1,147,159,47,8
+    EDITTEXT        IDC_REFRESH,196,157,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_REFRESH_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,212,159,11,14
+    LTEXT           "ms",-1,230,159,10,8
+END
+
+IDD_CONFIG_STATUS DIALOGEX 0, 0, 290, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 7, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATUS,0,0,289,170,0,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DS_CONFIG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 244
+        BOTTOMMARGIN, 219
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_DS_OUTPUT  "Nullsoft DirectSound Output v%s"
+    65535                   "{A812F3D3-633B-4af6-8749-3BA75290BAC0}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_DS_OUTPUT_OLD "Nullsoft DirectSound Output"
+    IDS_ERROR_CODE_08X      "%s\nError code: %08X"
+    IDS_DEVICE_NOT_FOUND    "device not found"
+    IDS_BAD_DS_DRIVER       "Bad DirectSound driver. Please install proper drivers or select another device in configuration."
+    IDS_DEVICE_NOT_FOUND_SELECT_ANOTHER 
+                            "Device not found. Please select another device in configuration."
+    IDS_ERROR_SETTING_DS_COOPERATIVE_LEVEL 
+                            "Error setting DirectSound cooperative level; please shutdown other programs using your soundcard."
+    IDS_ERROR_CREATING_DS_BUFFER "Error creating DirectSound buffer."
+    IDS_ERROR               "%s Error"
+    IDS_FAQ_PREFERRED_DEVICE 
+                            "FAQ: ""%s"" refers to preferred sound device selected in Windows control panel."
+    IDS_NO_DS_DEVICES_PRESENT 
+                            "No DirectSound devices present. Please install soundcard drivers first."
+    IDS_DS_DOES_NOT_APPEAR_TO_BE_INSTALLED 
+                            "DirectSound does not appear to be installed on this system. Please install DirectX first."
+    IDS_NO_DEVICES_FOUND    "no devices found"
+    IDS_ERROR_GETTING_DEVICE_INFO 
+                            "error getting device info\n(device in use?)"
+    IDS_UNSUPPORTED         "unsupported"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SUPPORTED_X_FREE_STREAMS "supported, %u free streams (%u max)"
+    IDS_X_BYTES             "%u bytes (%u bytes free)"
+    IDS_NA                  "N/A"
+    IDS_FADE_ON_X_SETTINGS  "Fade on%s settings"
+    IDS_LINEAR              "Linear"
+    IDS_LOGARITHMIC         "Logarithmic"
+    IDS_HYBRID              "Hybrid"
+    IDS_NOT_ACTIVE_TOTAL_PLAYED "Not active.\n\nTotal time played: %s"
+    IDS_RESET_ALL_SETTINGS_TO_DEFAULTS 
+                            "This will reset all settings to their default values. Continue?"
+    IDS_WARNING             "Warning"
+    IDS_SOME_FADE_TIMES_ARE_BIGGER_THAN_BUFFER 
+                            "Some fade times are bigger than buffer length; in order to get what you want, please increase buffer size to %u ms.\nWould you like your settings to be automatically corrected?"
+    IDS_5_1                 "5.1"
+    IDS_HEADPHONES          "Headphones"
+    IDS_MONO                "Mono"
+    IDS_QUAD                "Quad"
+    IDS_STEREO              "Stereo"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SURROUND            "Surround"
+    IDS_UNKNOWN             "Unknown"
+    IDS_DS_INFO             "Certified: %s, emulated: %s\nSupports sample rates from %u Hz to %u Hz%s\nHardware memory: %s\nHardware mixing: %s\nSpeaker setup: %s"
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+    IDS_CONTINUOUS          " (continuous)"
+    IDS_STATUS_TEXT         "Output format: %u Hz, %u bits per sample, %u %s\nActive buffer size: %u ms (%u bytes)\nDevice: ""%s""\nMixing: %s, primary buffer: %s%s\n\nBuffer playback cursor: %u bytes%s\n%s\nBuffer write cursor: %u bytes\n%s\n\nData buffered:\nTotal: %u ms (%u bytes)\nAsync buffer: %u ms (%u bytes)\n\nBuffer locks done: %u\nUnderruns: %u\nTime played: %s (%s bytes)\nTime written: %s (%s bytes)\nTotal time played: %s\nVolume: %f dB / %f dB"
+    IDS_HARDWARE            "hardware"
+    IDS_SOFTWARE            "software"
+    IDS_ACTIVE              "active"
+    IDS_INACTIVE            "inactive"
+    IDS_HARDWARE_BRACKETED  " (hardware)"
+    IDS_SOFTWARE_BRACKETED  " (software)"
+    IDS_PAUSED_BRACKETED    " (paused)"
+    IDS_EMPTY               "  "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEVICE              "Device"
+    IDS_BUFFERING           "Buffering"
+    IDS_FADING              "Fading"
+    IDS_OTHER               "Other"
+    IDS_STATUS              "Status"
+    IDS_PREFS_TITLE         "%s Settings"
+    IDS_DISABLED            " (disabled)"
+    IDS_ON                  "on"
+    IDS_FADE_START          " start"
+    IDS_FADE_FIRSTSTART     " first start"
+    IDS_FADE_STOP           " end of song"
+    IDS_FADE_PAUSE          " pause/stop"
+    IDS_FADE_SEEK           " seek"
+    IDS_CHANNEL             "channel"
+    IDS_CHANNELS            "channels"
+    IDS_DS_U_MS             "%u ms"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DS_DB               "dB"
+    IDS_ABOUT_TEXT          "%s\n© 2005-2023 Winamp SA\n© 2001-2002 Peter Pawlowski\t\nBuild date: %hs"
+    IDS_7_1                 "7.1"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

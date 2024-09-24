@@ -1,0 +1,20 @@
+LIBRARY   vp31e
+
+EXPORTS
+	StartEncoder
+	ChangeCompressorSetting
+	ChangeEncoderConfig
+	EncodeFrame
+	EncodeFrameYuv
+	StopEncoder
+	StartDecoder
+	SetPbParam
+	GetYUVConfig
+	DecodeFrame
+	DecodeFrameToYUV
+	DrawFrame
+	StopDecoder
+	wilkDXrefCreate
+	wilkDXrefDestroy
+	wilkDXrefKeyFrame
+	wilkDXrefInterFrame

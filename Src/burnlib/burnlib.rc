@@ -1,0 +1,1092 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_UNITNOTREADY DIALOGEX 0, 0, 235, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY
+CAPTION "Nullsoft Burner"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         106,IDC_PIC,"Static",SS_BITMAP,7,7,33,28
+    LTEXT           "Drive G: is not ready.",IDC_CAPTION,45,7,186,9
+    LTEXT           "Reason:",IDC_LBL_REASON,45,19,28,8
+    LTEXT           "string 1\nstring 2",IDC_LBL_REASON_VAL,74,19,157,18
+    LTEXT           "Please insert proper disc and close tray or click 'Cancel' to abort operation.",IDC_LBL_HELP,45,37,186,17
+    DEFPUSHBUTTON   "Retry",IDOK,119,55,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,181,55,50,14
+END
+
+IDD_DLG_WRONGMEDIUM DIALOGEX 0, 0, 267, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Nullsoft Burner - Wrong Media"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Drive G: contains wrong media type.",IDC_CAPTION,3,7,260,15,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CONTROL         107,IDC_PIC,"Static",SS_BITMAP,3,26,47,87
+    GROUPBOX        "Required",IDC_STATIC,55,25,208,33
+    LTEXT           "string 1\nstring 2",IDC_LBL_REQUESTEDMEDIUM,60,35,199,18
+    GROUPBOX        "Detected",IDC_STATIC,55,63,208,78
+    LTEXT           "string 1\nstring 2\nstring 3\nstring 4\nstring 5\nstring 6\nstring 7\nstring 8",IDC_LBL_DETECTEDMEDIUM,60,73,199,64
+    PUSHBUTTON      "Erase\r\nthis disc",IDC_BTN_ERASE,3,120,47,22,BS_CENTER | BS_VCENTER | BS_MULTILINE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,3,150,260,1
+    DEFPUSHBUTTON   "Check again",IDOK,144,156,64,14
+    PUSHBUTTON      "Cancel",IDCANCEL,213,156,50,14
+END
+
+IDD_DLG_ERASEMEDIUMSTATUS DIALOGEX 0, 0, 219, 60
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Nullsoft Disc Eraser"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Erasing...",IDC_LBL_STATUS,7,7,133,8
+    RTEXT           "00:00 / 01:45",IDC_LBL_TIME,145,7,66,10
+    CONTROL         "",IDC_PRG_PROGRESS,"msctls_progress32",WS_BORDER,7,17,204,14
+    CONTROL         "Eject when done (recommended).",IDC_BTN_EJECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,43,119,10
+    PUSHBUTTON      "Cancel",IDCANCEL,161,39,50,14
+END
+
+IDD_DLG_ERASEMEDIUMPREPARE DIALOGEX 0, 0, 209, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Nullsoft Disc Eraser"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Plese select erasing method for disc in drive G:",IDC_CAPTION,7,7,195,8
+    LTEXT           "Erase method:",IDC_STATIC,7,29,57,8
+    COMBOBOX        IDC_CMB_ERASEMETHOD,61,27,141,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Estimated time:",IDC_STATIC,7,47,57,8
+    LTEXT           "00:02:15",IDC_LBL_TIME,61,47,141,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,64,195,1
+    DEFPUSHBUTTON   "OK",IDOK,94,69,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,152,69,50,14
+END
+
+IDD_DLG_UPDATING DIALOGEX 0, 0, 183, 35
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST | WS_EX_TOOLWINDOW
+CAPTION "Nullsoft Burner"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Updating data...",IDC_LBL_TEXT,7,6,169,8
+END
+
+IDD_DLG_BURNER DIALOGEX 0, 0, 298, 234
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Winamp Burner - Audio CD "
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Burning Audio disc in drive G:",IDC_LBL_CAPTION,7,7,241,9
+    RTEXT           "20%",IDC_LBL_PERCENT,267,7,24,8
+    CONTROL         "",IDC_PRG_TOTAL,"msctls_progress32",WS_BORDER,7,16,284,14
+    LTEXT           "Currently:",IDC_LBL_CURRENTOPERATION,7,33,41,9
+    CONTROL         "Preparing data... (1 of 10 completed)",IDC_LBL_CURRENTOPERATION_VAL,
+                    "Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_ENDELLIPSIS | WS_GROUP,43,33,206,8
+    CONTROL         109,IDC_PIC_TESTMODE,"Static",SS_BITMAP | SS_REALSIZEIMAGE,252,32,39,8
+    LTEXT           "Elapsed time:",IDC_LBL_ELAPSED,7,46,55,8
+    LTEXT           "00:01:46",IDC_LBL_ELAPSED_VAL,62,46,32,8
+    LTEXT           "Estimated time:",IDC_LBL_ESTIMATED,7,56,55,8
+    LTEXT           "00:10:12",IDC_LBL_ESTIMATED_VAL,62,56,32,8
+    PUSHBUTTON      "Continue Anyway",IDC_BTN_CONTINUE,113,51,66,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Show More",IDC_BTN_EXTENDEDVIEW,187,51,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,241,51,50,14
+    CONTROL         "",IDC_LST_DETAILS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,73,284,113
+    GROUPBOX        "Options",IDC_GRP_OPTIONS,7,188,284,39
+    CONTROL         "Close this window when done.",IDC_CHK_AUTOCLOSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,200,120,8
+    CONTROL         "Eject CD when done.",IDC_CHK_EJECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,212,120,8
+    CONTROL         "Remember this compilation.",IDC_CHK_ADDTODB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,200,122,8
+    CONTROL         "Hide this window.",IDC_CHK_HIDEWINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,212,122,8
+END
+
+IDD_DLG_COMPILATION DIALOGEX 0, 0, 221, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Winamp Compilation Info"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,84,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,164,84,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_UNITNOTREADY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        VERTGUIDE, 45
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_DLG_WRONGMEDIUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 263
+        VERTGUIDE, 49
+        VERTGUIDE, 55
+        VERTGUIDE, 60
+        VERTGUIDE, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DLG_ERASEMEDIUMSTATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_DLG_ERASEMEDIUMPREPARE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        VERTGUIDE, 61
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DLG_UPDATING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 29
+    END
+
+    IDD_DLG_BURNER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        VERTGUIDE, 12
+        VERTGUIDE, 62
+        VERTGUIDE, 132
+        VERTGUIDE, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_DLG_COMPILATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DRIVE1              BITMAP                  ".\\resources\\drive1.bmp"
+IDB_DISC1               BITMAP                  ".\\resources\\disc1.bmp"
+IDB_TESTMODE            BITMAP                  "resources\\testmode.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,8,0,0
+ PRODUCTVERSION 5,8,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Winamp SA"
+            VALUE "FileDescription", "Winamp Support Library"
+            VALUE "FileVersion", "5, 8, 0, 0"
+            VALUE "InternalName", "burnlib.dll"
+            VALUE "LegalCopyright", "Copyright © 2003-2019 Winamp SA"
+            VALUE "OriginalFilename", "burnlib.dll"
+            VALUE "ProductName", "Winamp CD Rip & Burn Resources"
+            VALUE "ProductVersion", "5, 8, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_MEDIUM_BDR          "Write-Once BD disc"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COLUMN_TITLE        "Title"
+    IDS_COLUMN_DURATION     "Duration"
+    IDS_COLUMN_STATUS       "Status"
+    IDS_COLUMN_FILE         "File"
+    IDS_OK                  "Ok"
+    IDS_CANCEL              "Cancel"
+    IDS_STOP                "Stop"
+    IDS_CLOSE               "Close"
+    IDS_UNKNOWN             "Unknown"
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+    IDS_MEDIUM_CD           "CD-ROM"
+    IDS_MEDIUM_CDR          "CD-R"
+    IDS_MEDIUM_CDRW         "CD-RW"
+    IDS_MEDIUM_DVD          "DVD-ROM"
+    IDS_MEDIUM_DVDR         "DVD-R"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MEDIUM_DVDRW        "DVD-RW"
+    IDS_MEDIUM_DVDPR        "DVD+R"
+    IDS_MEDIUM_DVDPRW       "DVD+RW"
+    IDS_MEDIUM_DVDRAM       "DVD-RAM"
+    IDS_MEDIUM_DDCD         "DDCD-ROM"
+    IDS_MEDIUM_DDCDR        "DDCD-R"
+    IDS_MEDIUM_DDCDRW       "DDCD-RW"
+    IDS_MEDIUM_DVDPR9       "DL DVD+R"
+    IDS_MEDIUM_DVDR9        "DL DVD-R"
+    IDS_MEDIUM_BDRE         "Rewritable BD disc"
+    IDS_MEDIUMTYPE_SILVER   "Stamped disc or a recordable disc that has been recorded Disc-At-Once"
+    IDS_MEDIUMTYPE_COMPILATIONGOLD 
+                            "Recordable or rewritable disc that contains data but remains open, allowing the appending of additional data"
+    IDS_MEDIUMTYPE_OTHERGOLD 
+                            "Recordable disc to which is not possible to append additional data"
+    IDS_MEDIUMTYPE_BLANK    "Blank recordable or rewritable disc"
+    IDS_MEDIUMFORMAT_B1     "Blank disc"
+    IDS_MEDIUMFORMAT_D1     "Data Mode 1 (Disc At Once)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MEDIUMFORMAT_D2     "Kodak Photo CD"
+    IDS_MEDIUMFORMAT_D3     "Data multisession Mode 1 (closed recordable disc)"
+    IDS_MEDIUMFORMAT_D4     "Data multisession Mode 2 (closed recordable disc)"
+    IDS_MEDIUMFORMAT_D5     "Data Mode 2 (Disc At Once)"
+    IDS_MEDIUMFORMAT_D6     "CDRFS"
+    IDS_MEDIUMFORMAT_D7     "Packet writing"
+    IDS_MEDIUMFORMAT_D8     "Data multisession Mode 1 (open recordable disc)"
+    IDS_MEDIUMFORMAT_D9     "Data multisession Mode 2 (open recordable disc)"
+    IDS_MEDIUMFORMAT_A1     "Audio stamped or closed recordable disc (Disk At Once / Session At Once / Track At Once)"
+    IDS_MEDIUMFORMAT_A2     "Audio recordable disc with session not closed (Track At Once or Session At Once)"
+    IDS_MEDIUMFORMAT_A3     "First type of Enhanced CD (aborted)"
+    IDS_MEDIUMFORMAT_A4     "CD Extra"
+    IDS_MEDIUMFORMAT_A5     "Audio disc with session not written (Track At Once)"
+    IDS_MEDIUMFORMAT_M1     "First track data, others audio"
+    IDS_MEDIUMFORMAT_M2     "Mixed-mode made (Track At Once)"
+    IDS_MEDIUMFORMAT_M3     "Kodak Portfolio (as per the Kodak standard)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MEDIUMFORMAT_M4     "Video CD"
+    IDS_MEDIUMFORMAT_M5     "CD-i"
+    IDS_MEDIUMFORMAT_M6     "PlayStation (Sony games)"
+    IDS_MEDIUMFORMAT_F1     "Obsolete"
+    IDS_MEDIUMFORMAT_F2     "Obsolete for restricted overwrite DVD (DLA DVD-RW)"
+    IDS_MEDIUMFORMAT_F3     "Completed (non-appendable) DVD (DVD-ROM or closed recordable)"
+    IDS_MEDIUMFORMAT_F4     "Incremental DVD with appendable zone (DLA DVD-R and DVD+RW)"
+    IDS_MEDIUMFORMAT_F5     "Layer Jump DVD-R9 Disc"
+    IDS_MEDIUMFORMAT_F8     "Recordable DVD-R, open"
+    IDS_MEDIUMFORMAT_FA     "DVD-RAM cartridge"
+    IDS_MEDIUMFORMAT_GENERICCD "CD (other type)"
+    IDS_BUSSTYPE_ATAPI      "ATAPI"
+    IDS_BUSSTYPE_SCSI       "SCSI"
+    IDS_BUSSTYPE_1394       "FireWire"
+    IDS_BUSSTYPE_USB        "USB"
+    IDS_BUSSTYPE_USB2       "USB 2"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRACKTYPE_AUDIO     "Audio"
+    IDS_TRACKTYPE_TRACK1    "Mode 1"
+    IDS_TRACKTYPE_TRACK2    "Mode 2"
+    IDS_PRIMOCODE_OK        "The operation completed successfully."
+    IDS_PRIMOCODE_CMDSEQUENCE 
+                            "The function was used in the incorrect sequence. Another PrimoSDK API is required before calling this function."
+    IDS_PRIMOCODE_NOASPI    "The ASPI layer is not loading or is in error."
+    IDS_PRIMOCODE_INTERR    "An internal error occured."
+    IDS_PRIMOCODE_BADPARAM  "The function was passed an invalid parameter."
+    IDS_PRIMOCODE_ALREADYEXIST 
+                            "The function was passed a pointer to a directory element that already exists in the target data structure."
+    IDS_PRIMOCODE_NOTREADABLE 
+                            "The function was passed a pointer to source file that either cannot be found or is not readable."
+    IDS_PRIMOCODE_NOSPACE   "Completion of the operation would result in too many files for the system memory."
+    IDS_PRIMOCODE_INVALIDMEDIUM "Invalid disc."
+    IDS_PRIMOCODE_RUNNING   "The operation whose status is being queried is currently running."
+    IDS_PRIMOCODE_BUR       "Buffer underrun occured."
+    IDS_PRIMOCODE_SCSIERROR "Drive communication error."
+    IDS_PRIMOCODE_UNITERROR "The SCSI command sent by the function returned a check condition."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PRIMOCODE_NOTREADY  "Specified drive is not ready."
+    IDS_PRIMOCODE_INVALIDSOURCE 
+                            "The function was passed a pointer to a disc or file that is not valid."
+    IDS_PRIMOCODE_INCOMPATIBLE 
+                            "The function was passed a pointer to an image from a type of disc that is not compatible with the capabilities of the recorder."
+    IDS_PRIMOCODE_FILEERROR "The function was passed a pointer to a file that cannot be found."
+    IDS_PRIMOCODE_ITSADEMO  "The operation requested by the function would exceed the limits allowed by the Demo version of PrimoSDK."
+    IDS_PRIMOCODE_USERABORT "User abort."
+    IDS_PRIMOCODE_BADHANDLE "The function was passed an invalid PrimoSDK handle."
+    IDS_PRIMOCODE_BADUNIT   "Specified drive is not exist."
+    IDS_PRIMOCODE_ERRORLOADING 
+                            "An error occurred while reading the directory of the specified session/border."
+    IDS_PRIMOCODE_NOAINCONTROL 
+                            "AIN control cannot be activated, typically because PrimoSDK is running under WinASPI instead of PxHelper."
+    IDS_PRIMOCODE_READERROR "Drive reported a reading error."
+    IDS_PRIMOCODE_WRITEERROR "Drive reported a writing error."
+    IDS_PRIMOCODE_TMPOVERFLOW "A temporary file went into overflow."
+    IDS_PRIMOCODE_DVDSTRUCTERROR 
+                            "A data structure includes a VIDEO_TS or AUDIO_TS folder that is not compliant with DVD-Video or DVD-Audio rules."
+    IDS_PRIMOCODE_FILETOOLARGE 
+                            "The function was passed a pointer to a file that is bigger than 9.99 GB for UDF or 4 GB for ISO."
+    IDS_PRIMOCODE_CACHEFULL "Not currently used."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PRIMOCODE_FEATURE_NOT_SUPPORTED 
+                            "The device does not support the requested feature."
+    IDS_PRIMOCODE_FEATURE_DISABLED 
+                            "Use of the requested feature is not included in the license under which the SDK was provided."
+    IDS_PRIMOCODE_CALLBACK_ERROR "Stream terminated by the callback."
+    IDS_PRIMOCODE_PROTECTEDWMA "No permission to burn specified WMA file."
+    IDS_DRIVEERRORCODE_000000 "No Additional Sense Information"
+    IDS_DRIVEERRORCODE_000001 "Filemark Detected"
+    IDS_DRIVEERRORCODE_000002 "End-Of-Partition/Medium Detected"
+    IDS_DRIVEERRORCODE_000003 "Setmark Detected"
+    IDS_DRIVEERRORCODE_000004 "Beginning-Of-Partition/Medium Detected"
+    IDS_DRIVEERRORCODE_000005 "End-Of-Data Detected"
+    IDS_DRIVEERRORCODE_000011 "Audio Play Operation In Progress Audio Play"
+    IDS_DRIVEERRORCODE_000012 "Audio Play Operation Paused Audio Play"
+    IDS_DRIVEERRORCODE_000013 
+                            "Audio Play Operation Successfully Completed Audio Play"
+    IDS_DRIVEERRORCODE_000014 
+                            "Audio Play Operation Stopped Due To Error Audio Play"
+    IDS_DRIVEERRORCODE_000015 "No Current Audio Status To Return Audio Play"
+    IDS_DRIVEERRORCODE_000016 "Operation In Progress"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_010B00 "Warning"
+    IDS_DRIVEERRORCODE_010B01 "Warning - Specified Temperature Exceeded"
+    IDS_DRIVEERRORCODE_010B02 "Warning - Enclosure Degraded"
+    IDS_DRIVEERRORCODE_010C0A "Write Error - Padding Blocks Added"
+    IDS_DRIVEERRORCODE_011700 
+                            "Recovered Data With No Error Correction Applied"
+    IDS_DRIVEERRORCODE_011701 "Recovered Data With Retries"
+    IDS_DRIVEERRORCODE_011702 "Recovered Data With Positive Head Offset"
+    IDS_DRIVEERRORCODE_011703 "Recovered Data With Negative Head Offset"
+    IDS_DRIVEERRORCODE_011704 
+                            "Recovered Data With Retries And/Or Circ Applied"
+    IDS_DRIVEERRORCODE_011705 "Recovered Data Using Previous Sector Id"
+    IDS_DRIVEERRORCODE_011706 
+                            "Recovered Data Without ECC - Data Auto-Reallocated"
+    IDS_DRIVEERRORCODE_011707 
+                            "Recovered Data Without ECC - Recommend Reassignment"
+    IDS_DRIVEERRORCODE_011708 "Recovered Data Without ECC - Recommend Rewrite"
+    IDS_DRIVEERRORCODE_011709 "Recovered Data Without ECC - Data Rewritten"
+    IDS_DRIVEERRORCODE_011800 "Recovered Data With Error Correction Applied"
+    IDS_DRIVEERRORCODE_011801 
+                            "Recovered Data With Error Correction & Retries Applied"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_011802 "Recovered Data - Data Auto-Reallocated"
+    IDS_DRIVEERRORCODE_011803 "Recovered Data With Circ"
+    IDS_DRIVEERRORCODE_011804 "Recovered Data With L-EC"
+    IDS_DRIVEERRORCODE_011805 "Recovered Data - Recommend Reassignment"
+    IDS_DRIVEERRORCODE_011806 "Recovered Data - Recommend Rewrite"
+    IDS_DRIVEERRORCODE_011807 "Recovered Data With ECC - Data Rewritten"
+    IDS_DRIVEERRORCODE_011808 "Recovered Data With Linking"
+    IDS_DRIVEERRORCODE_011E00 "Recovered Id With ECC Correction"
+    IDS_DRIVEERRORCODE_013700 "Rounded Parameter"
+    IDS_DRIVEERRORCODE_015D00 
+                            "Failure Prediction Threshold Exceeded - Predicted Logical Unit Failure"
+    IDS_DRIVEERRORCODE_015D01 
+                            "Failure Prediction Threshold Exceeded - Predicted Media Failure"
+    IDS_DRIVEERRORCODE_015DFF "Failure Prediction Threshold Exceeded (False)"
+    IDS_DRIVEERRORCODE_016A00 "Informational, Refer To Log"
+    IDS_DRIVEERRORCODE_017301 "Power Calibration Area Almost Full"
+    IDS_DRIVEERRORCODE_017306 "PROGRAM MEMORY AREA/PMA IS (Almost) FULL"
+    IDS_DRIVEERRORCODE_020400 "Logical Unit Not Ready, Cause Not Reportable"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_020401 "Logical Unit Is In Process Of Becoming Ready"
+    IDS_DRIVEERRORCODE_020402 
+                            "Logical Unit Not Ready, Initializing Command. Required"
+    IDS_DRIVEERRORCODE_020403 
+                            "Logical Unit Not Ready, Manual Intervention Required"
+    IDS_DRIVEERRORCODE_020404 "Logical Unit Not Ready, Format In Progress"
+    IDS_DRIVEERRORCODE_020405 "Logical Unit Not Ready, Rebuild In Progress"
+    IDS_DRIVEERRORCODE_020406 
+                            "Logical Unit Not Ready, Recalculation In Progress"
+    IDS_DRIVEERRORCODE_020407 "Logical Unit Not Ready, Operation In Progress"
+    IDS_DRIVEERRORCODE_020408 "Logical Unit Not Ready, Long Write In Progress"
+    IDS_DRIVEERRORCODE_020500 "Logical Unit Does Not Respond To Selection"
+    IDS_DRIVEERRORCODE_020600 
+                            "NO REFERENCE POSITION FOUND (Medium May Be Upside Down)"
+    IDS_DRIVEERRORCODE_023000 "Incompatible Medium Installed"
+    IDS_DRIVEERRORCODE_023001 "Cannot Read Medium - Unknown Format"
+    IDS_DRIVEERRORCODE_023002 "Cannot Read Medium - Incompatible Format"
+    IDS_DRIVEERRORCODE_023003 "Cleaning Cartridge Installed"
+    IDS_DRIVEERRORCODE_023004 "Cannot write medium unknown format"
+    IDS_DRIVEERRORCODE_023005 "Cannot write medium incompatible format"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_023007 "Cleaning Failure"
+    IDS_DRIVEERRORCODE_023502 "Enclosure Services Unavailable"
+    IDS_DRIVEERRORCODE_023A00 "Medium Not Present"
+    IDS_DRIVEERRORCODE_023A01 "Medium Not Present - Tray Closed"
+    IDS_DRIVEERRORCODE_023A02 "Medium Not Present - Tray Open"
+    IDS_DRIVEERRORCODE_023E00 "Logical Unit Has Not Self-Configured Yet"
+    IDS_DRIVEERRORCODE_025300 "Medium Load/Eject Failed"
+    IDS_DRIVEERRORCODE_025302 "Medium Removal Prevented"
+    IDS_DRIVEERRORCODE_025700 "Unable to recover TOC"
+    IDS_DRIVEERRORCODE_026800 "Logical Unit Not Configured"
+    IDS_DRIVEERRORCODE_030014 "Audio play op. Stopped due error (Plextor)"
+    IDS_DRIVEERRORCODE_030200 "No Seek Complete"
+    IDS_DRIVEERRORCODE_030280 "Servo Seek Error (Plextor)"
+    IDS_DRIVEERRORCODE_030281 "Servo Seek Error Sync error (Plextor)"
+    IDS_DRIVEERRORCODE_030282 "Servo Seek Error Header error (Plextor)"
+    IDS_DRIVEERRORCODE_030283 "Servo Seek Error Target not met (Plextor)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_030300 "Peripheral Device Write Fault"
+    IDS_DRIVEERRORCODE_030301 "No Write Current"
+    IDS_DRIVEERRORCODE_030302 "Excessive Write Errors"
+    IDS_DRIVEERRORCODE_030600 "No reference position found"
+    IDS_DRIVEERRORCODE_030C00 "Write Error"
+    IDS_DRIVEERRORCODE_030C01 "Write Error - Recovered With Auto Reallocation"
+    IDS_DRIVEERRORCODE_030C02 "Write Error - Auto Reallocation Failed"
+    IDS_DRIVEERRORCODE_030C03 "Write Error - Recommend Reassignment"
+    IDS_DRIVEERRORCODE_030C04 "Compression Check Miscompare Error"
+    IDS_DRIVEERRORCODE_030C05 "Data Expansion Occurred During Compression"
+    IDS_DRIVEERRORCODE_030C06 "Block Not Compressible"
+    IDS_DRIVEERRORCODE_030C07 "Write Error - Recovery Needed"
+    IDS_DRIVEERRORCODE_030C08 "Write Error - Recovery Failed"
+    IDS_DRIVEERRORCODE_030C09 "Write Error - Loss Of Streaming"
+    IDS_DRIVEERRORCODE_030C0A "Write Error - Padding blocks added"
+    IDS_DRIVEERRORCODE_031000 "Id CRC Or ECC Error"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_031100 "Unrecovered Read Error"
+    IDS_DRIVEERRORCODE_031101 "Read Retries Exhausted"
+    IDS_DRIVEERRORCODE_031102 "Error Too Long To Correct"
+    IDS_DRIVEERRORCODE_031103 "Multiple Read Errors"
+    IDS_DRIVEERRORCODE_031104 
+                            "Unrecovered Read Error - Auto Reallocate Failed"
+    IDS_DRIVEERRORCODE_031105 "L-EC Uncorrectable Error"
+    IDS_DRIVEERRORCODE_031106 "Circ Unrecovered Error"
+    IDS_DRIVEERRORCODE_031107 "Re-Synchronization Error"
+    IDS_DRIVEERRORCODE_031108 "Incomplete Block"
+    IDS_DRIVEERRORCODE_031109 "No Gap Found"
+    IDS_DRIVEERRORCODE_03110A "Miscorrected Error"
+    IDS_DRIVEERRORCODE_03110B 
+                            "Unrecovered Read Error - Recommend Reassignment"
+    IDS_DRIVEERRORCODE_03110C 
+                            "Unrecovered Read Error - Recommend Rewrite The Data"
+    IDS_DRIVEERRORCODE_03110D "De-Compression CRC Error"
+    IDS_DRIVEERRORCODE_03110E "Cannot Decompress Using Declared Algorithm"
+    IDS_DRIVEERRORCODE_03110F "Error Reading UPC/EAN Number"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_031110 "Error Reading ISRC Number"
+    IDS_DRIVEERRORCODE_031200 "Address Mark Not Found For Id Field"
+    IDS_DRIVEERRORCODE_031300 "Address Mark Not Found For Data Field"
+    IDS_DRIVEERRORCODE_031400 "Recorded Entity Not Found"
+    IDS_DRIVEERRORCODE_031401 "Record Not Found"
+    IDS_DRIVEERRORCODE_031402 "Filemark Or Setmark Not Found"
+    IDS_DRIVEERRORCODE_031403 "End-Of-Data Not Found"
+    IDS_DRIVEERRORCODE_031404 "Block Sequence Error"
+    IDS_DRIVEERRORCODE_031405 "Record Not Found - Recommend Reassignment"
+    IDS_DRIVEERRORCODE_031406 "Record Not Found - Data Auto-Reallocated"
+    IDS_DRIVEERRORCODE_031500 "Random Positioning Error"
+    IDS_DRIVEERRORCODE_031501 "Mechanical Positioning Error"
+    IDS_DRIVEERRORCODE_031502 "Positioning Error Detected By Read Of Medium"
+    IDS_DRIVEERRORCODE_031600 "Data Synchronization Mark Error"
+    IDS_DRIVEERRORCODE_031601 "Data Sync Error - Data Rewritten"
+    IDS_DRIVEERRORCODE_031602 "Data Sync Error - Recommend Rewrite"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_031603 "Data Sync Error - Data Auto-Reallocated"
+    IDS_DRIVEERRORCODE_031604 "Data Sync Error - Recommend Reassignment"
+    IDS_DRIVEERRORCODE_031900 "Defect List Error"
+    IDS_DRIVEERRORCODE_031901 "Defect List Not Available"
+    IDS_DRIVEERRORCODE_031902 "Defect List Error In Primary List"
+    IDS_DRIVEERRORCODE_031903 "Defect List Error In Grown List"
+    IDS_DRIVEERRORCODE_031F00 "Partial Defect List Transfer"
+    IDS_DRIVEERRORCODE_032D00 "Overwrite Error On Update In Place"
+    IDS_DRIVEERRORCODE_033000 "Incompatible medium installed"
+    IDS_DRIVEERRORCODE_033100 "Medium Format Corrupted"
+    IDS_DRIVEERRORCODE_033101 "Format Command Failed Formattable"
+    IDS_DRIVEERRORCODE_033102 
+                            "Zoned Formatting Failed Due To Spare Linking Formattable"
+    IDS_DRIVEERRORCODE_033200 "No Defect Spare Location Available"
+    IDS_DRIVEERRORCODE_033201 "Defect List Update Failure"
+    IDS_DRIVEERRORCODE_033300 "Tape Length Error"
+    IDS_DRIVEERRORCODE_033600 "Ribbon, Ink, Or Toner Failure"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_033B00 "Sequential Positioning Error"
+    IDS_DRIVEERRORCODE_033B01 "Tape Position Error At Beginning-Of-Medium"
+    IDS_DRIVEERRORCODE_033B02 "Tape Position Error At End-Of-Medium"
+    IDS_DRIVEERRORCODE_033B03 
+                            "Tape Or Electronic Vertical Forms Unit Not Ready"
+    IDS_DRIVEERRORCODE_033B06 "Failed To Sense Top-Of-Form"
+    IDS_DRIVEERRORCODE_033B07 "Failed To Sense Bottom-Of-Form"
+    IDS_DRIVEERRORCODE_033B08 "Reposition Error"
+    IDS_DRIVEERRORCODE_033B09 "Read Past End Of Medium"
+    IDS_DRIVEERRORCODE_033B0A "Read Past Beginning Of Medium"
+    IDS_DRIVEERRORCODE_033B0B "Position Past End Of Medium"
+    IDS_DRIVEERRORCODE_033B0C "Position Past Beginning Of Medium"
+    IDS_DRIVEERRORCODE_035100 "Erase Failure"
+    IDS_DRIVEERRORCODE_035200 "Cartridge Fault"
+    IDS_DRIVEERRORCODE_035700 "Unable To Recover Table-Of-Contents"
+    IDS_DRIVEERRORCODE_035C02 "Spindles Not Synchronized"
+    IDS_DRIVEERRORCODE_036100 "Video Acquisition Error"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_036101 "Unable To Acquire Video"
+    IDS_DRIVEERRORCODE_036102 "Out Of Focus"
+    IDS_DRIVEERRORCODE_036C00 "Rebuild Failure Occurred"
+    IDS_DRIVEERRORCODE_036D00 "Recalculate Failure Occurred"
+    IDS_DRIVEERRORCODE_0370NN 
+                            "Decompression Exception Short Algorithm Id Of NN"
+    IDS_DRIVEERRORCODE_037100 "Decompression Exception Long Algorithm Id"
+    IDS_DRIVEERRORCODE_037200 "Session Fixation Error"
+    IDS_DRIVEERRORCODE_037201 "Session Fixation Error Writing Lead-in"
+    IDS_DRIVEERRORCODE_037202 "Session Fixation Error Writing Lead-out"
+    IDS_DRIVEERRORCODE_037300 "CD Control Error"
+    IDS_DRIVEERRORCODE_037302 "Power Calibration Area Is Full"
+    IDS_DRIVEERRORCODE_037303 "Power Calibration Area Error"
+    IDS_DRIVEERRORCODE_037304 "Program Memory Area/RMA Update Failure"
+    IDS_DRIVEERRORCODE_037305 "Program Memory Area/RMA Is Full"
+    IDS_DRIVEERRORCODE_040017 "Cleaning Requested"
+    IDS_DRIVEERRORCODE_040100 "No Index/Sector Signal"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_040500 "Logical unit does not respond to selection"
+    IDS_DRIVEERRORCODE_040800 "Logical Unit Communication Failure"
+    IDS_DRIVEERRORCODE_040801 "Logical Unit Communication Time-Out"
+    IDS_DRIVEERRORCODE_040802 "Logical Unit Communication Parity Error"
+    IDS_DRIVEERRORCODE_040803 
+                            "Logical Unit Communication CRC Error (Ultra-Dma/32)"
+    IDS_DRIVEERRORCODE_040900 "Track Following Error"
+    IDS_DRIVEERRORCODE_040901 "Tracking Servo Failure"
+    IDS_DRIVEERRORCODE_040902 "Focus Servo Failure"
+    IDS_DRIVEERRORCODE_040903 "Spindle Servo Failure"
+    IDS_DRIVEERRORCODE_040904 "Head Select Fault"
+    IDS_DRIVEERRORCODE_041B00 "Synchronous Data Transfer Error"
+    IDS_DRIVEERRORCODE_041C00 "Defect List Not Found"
+    IDS_DRIVEERRORCODE_041C01 "Primary Defect List Not Found"
+    IDS_DRIVEERRORCODE_041C02 "Grown Defect List Not Found"
+    IDS_DRIVEERRORCODE_043400 "Enclosure Failure"
+    IDS_DRIVEERRORCODE_043500 "Enclosure Services Failure"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_043503 "Enclosure Services Transfer Failure"
+    IDS_DRIVEERRORCODE_043B04 "Slew Failure"
+    IDS_DRIVEERRORCODE_043B05 "Paper Jam"
+    IDS_DRIVEERRORCODE_043B16 "Mechanical Positioning Or Changer Error Load"
+    IDS_DRIVEERRORCODE_043E01 "Logical Unit Failure"
+    IDS_DRIVEERRORCODE_043E02 "Timeout On Logical Unit"
+    IDS_DRIVEERRORCODE_044000 "Ram Failure (Should Use 40 Nn)"
+    IDS_DRIVEERRORCODE_0440NN "Diagnostic Failure On Component Nn (80h-Ffh)"
+    IDS_DRIVEERRORCODE_044100 "Data Path Failure (Should Use 40 Nn)"
+    IDS_DRIVEERRORCODE_044200 
+                            "Power-On Or Self-Test Failure (Should Use 40 Nn)"
+    IDS_DRIVEERRORCODE_044400 "Internal Target Failure"
+    IDS_DRIVEERRORCODE_044600 "Unsuccessful Soft Reset"
+    IDS_DRIVEERRORCODE_044700 "SCSI Parity Error"
+    IDS_DRIVEERRORCODE_044A00 "Command Phase Error"
+    IDS_DRIVEERRORCODE_044B00 "Data Phase Error"
+    IDS_DRIVEERRORCODE_044C00 "Logical Unit Failed Self-Configuration"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_045300 "Media Load Or Eject Failed Load"
+    IDS_DRIVEERRORCODE_045400 "SCSI To Host System Interface Failure"
+    IDS_DRIVEERRORCODE_046000 "Lamp Failure"
+    IDS_DRIVEERRORCODE_046200 "Scan Head Positioning Error"
+    IDS_DRIVEERRORCODE_046500 "Voltage Fault"
+    IDS_DRIVEERRORCODE_046600 "Automatic Document Feeder Cover Up"
+    IDS_DRIVEERRORCODE_046601 "Automatic Document Feeder Lift Up"
+    IDS_DRIVEERRORCODE_046602 "Document Jam In Automatic Document Feeder"
+    IDS_DRIVEERRORCODE_046603 
+                            "Document Miss Feed Automatic In Document Feeder"
+    IDS_DRIVEERRORCODE_046700 "Configuration Failure"
+    IDS_DRIVEERRORCODE_046701 
+                            "Configuration Of Incapable Logical Units Failed"
+    IDS_DRIVEERRORCODE_046702 "Add Logical Unit Failed"
+    IDS_DRIVEERRORCODE_046703 "Modification Of Logical Unit Failed"
+    IDS_DRIVEERRORCODE_046704 "Exchange Of Logical Unit Failed"
+    IDS_DRIVEERRORCODE_046705 "Remove Of Logical Unit Failed"
+    IDS_DRIVEERRORCODE_046706 "Attachment Of Logical Unit Failed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_046707 "Creation Of Logical Unit Failed"
+    IDS_DRIVEERRORCODE_046901 "Multiple Logical Unit Failures"
+    IDS_DRIVEERRORCODE_046902 "A Parity/ Data Mismatch N/ A"
+    IDS_DRIVEERRORCODE_046E00 "Command To Logical Unit Failed"
+    IDS_DRIVEERRORCODE_04B600 "Media load mechanism failed (Plextor)"
+    IDS_DRIVEERRORCODE_050011 "Audio Play Operation in progress"
+    IDS_DRIVEERRORCODE_050700 "Multiple Peripheral Devices Selected"
+    IDS_DRIVEERRORCODE_051A00 "Parameter List Length Error"
+    IDS_DRIVEERRORCODE_052000 "Invalid Command Operation Code"
+    IDS_DRIVEERRORCODE_052100 "Logical Block Address Out Of Range"
+    IDS_DRIVEERRORCODE_052101 "Invalid Element Address"
+    IDS_DRIVEERRORCODE_052102 "Invalid Address For Write Incremental"
+    IDS_DRIVEERRORCODE_052200 "Illegal Function (Use 20 00, 24 00, Or 26 00)"
+    IDS_DRIVEERRORCODE_052400 "Invalid Field In CDB"
+    IDS_DRIVEERRORCODE_052500 "Logical Unit Not Supported"
+    IDS_DRIVEERRORCODE_052600 "Invalid Field In Parameter List"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_052601 "Parameter Not Supported"
+    IDS_DRIVEERRORCODE_052602 "Parameter Value Invalid"
+    IDS_DRIVEERRORCODE_052603 "Threshold Parameters Not Supported"
+    IDS_DRIVEERRORCODE_052604 
+                            "Invalid Release Of Active Persistent Reservation"
+    IDS_DRIVEERRORCODE_052700 "Write protected"
+    IDS_DRIVEERRORCODE_052701 "Hardware Write Protected"
+    IDS_DRIVEERRORCODE_052702 "Logical Unit Software Write Protected"
+    IDS_DRIVEERRORCODE_052703 "Associated Write Protect"
+    IDS_DRIVEERRORCODE_052704 "Persistent Write Protect"
+    IDS_DRIVEERRORCODE_052705 "Permanent Write Protect"
+    IDS_DRIVEERRORCODE_052B00 
+                            "Copy Cannot Execute Since Host Cannot Disconnect"
+    IDS_DRIVEERRORCODE_052C00 "Command Sequence Error"
+    IDS_DRIVEERRORCODE_052C01 "Too Many Windows Specified"
+    IDS_DRIVEERRORCODE_052C02 "Invalid Combination Of Windows Specified"
+    IDS_DRIVEERRORCODE_052C03 "Current Program Area Is Not Empty"
+    IDS_DRIVEERRORCODE_052C04 "Current Program Area Is Empty"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_053000 "Incompatible medium installed"
+    IDS_DRIVEERRORCODE_053002 "Cannot Read Medium - Incompatible Format"
+    IDS_DRIVEERRORCODE_053004 "Cannot Write Medium - Unknown Format"
+    IDS_DRIVEERRORCODE_053005 "Cannot Write Medium - Incompatible Format"
+    IDS_DRIVEERRORCODE_053006 "Cannot Format Medium - Incompatible Medium"
+    IDS_DRIVEERRORCODE_053008 "Cannot Write - Application Code Mismatch"
+    IDS_DRIVEERRORCODE_053009 "Current Session Not Fixated For Append"
+    IDS_DRIVEERRORCODE_053501 "Unsupported Enclosure Function"
+    IDS_DRIVEERRORCODE_053504 "Enclosure Services Transfer Refused"
+    IDS_DRIVEERRORCODE_053800 "Reserved"
+    IDS_DRIVEERRORCODE_053900 "Saving Parameters Not Supported"
+    IDS_DRIVEERRORCODE_053D00 "Invalid Bits In Identify Message"
+    IDS_DRIVEERRORCODE_054300 "Message Error"
+    IDS_DRIVEERRORCODE_055302 "Medium Removal Prevented"
+    IDS_DRIVEERRORCODE_055500 "System Resource Failure"
+    IDS_DRIVEERRORCODE_056300 "End Of User Area Encountered On This Track"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_056301 "Packet Does Not Fit In Available Space"
+    IDS_DRIVEERRORCODE_056400 "Illegal Mode For This Track"
+    IDS_DRIVEERRORCODE_056401 "Invalid Packet Size"
+    IDS_DRIVEERRORCODE_056F00 
+                            "Copy Protection Key Exchange Failure - Authentication Failure CPP"
+    IDS_DRIVEERRORCODE_056F01 
+                            "Copy Protection Key Exchange Failure - Key Not Present CPP"
+    IDS_DRIVEERRORCODE_056F02 
+                            "Copy Protection Key Exchange Failure - Key Not Established CPP"
+    IDS_DRIVEERRORCODE_056F03 
+                            "Read Of Scrambled Sector Without Authentication CPP"
+    IDS_DRIVEERRORCODE_056F04 
+                            "Media Region Code Is Mismatched To Logical Unit Region CPP"
+    IDS_DRIVEERRORCODE_056F05 
+                            "Drive Region Must Be Permanent/Region Reset Count Error CPP"
+    IDS_DRIVEERRORCODE_057203 
+                            "Session Fixation Error - Incomplete Track In Session"
+    IDS_DRIVEERRORCODE_057204 "Empty Or Partially Written Reserved"
+    IDS_DRIVEERRORCODE_057205 "No More R zone Reservations Are"
+    IDS_DRIVEERRORCODE_058100 "Logical unit is reserved (Plextor)"
+    IDS_DRIVEERRORCODE_058500 "Audio address not valid (Plextor)"
+    IDS_DRIVEERRORCODE_060A00 "Error Log Overflow"
+    IDS_DRIVEERRORCODE_062800 
+                            "Not Ready To Ready Change, Medium May Have Changed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_062801 "Import Or Export Element Accessed"
+    IDS_DRIVEERRORCODE_062900 "Power On, Reset, Or Bus Device Reset Occurred"
+    IDS_DRIVEERRORCODE_062901 "Power On Occurred"
+    IDS_DRIVEERRORCODE_062902 "SCSI Bus Reset Occurred"
+    IDS_DRIVEERRORCODE_062903 "Bus Device Reset Function Occurred"
+    IDS_DRIVEERRORCODE_062904 "Device Internal Reset"
+    IDS_DRIVEERRORCODE_062A00 "Parameters Changed"
+    IDS_DRIVEERRORCODE_062A01 "Mode Parameters Changed"
+    IDS_DRIVEERRORCODE_062A02 "Log Parameters Changed"
+    IDS_DRIVEERRORCODE_062A03 "Reservations Preempted"
+    IDS_DRIVEERRORCODE_062E00 "Insufficient Time For Operation Timeout"
+    IDS_DRIVEERRORCODE_062F00 "Commands Cleared By Another Initiator"
+    IDS_DRIVEERRORCODE_063B0D "Medium Destination Element Full"
+    IDS_DRIVEERRORCODE_063B0E "Medium Source Element Empty"
+    IDS_DRIVEERRORCODE_063B0F "End Of Medium Reached"
+    IDS_DRIVEERRORCODE_063B11 "Medium Magazine Not Accessible Load"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_063B12 "Medium Magazine Removed Load"
+    IDS_DRIVEERRORCODE_063B13 "Medium Magazine Inserted Load"
+    IDS_DRIVEERRORCODE_063B14 "Medium Magazine Locked Load"
+    IDS_DRIVEERRORCODE_063B15 "Medium Magazine Unlocked Load"
+    IDS_DRIVEERRORCODE_063F00 "Target Operating Conditions Have Changed"
+    IDS_DRIVEERRORCODE_063F01 "Microcode Has Been Changed"
+    IDS_DRIVEERRORCODE_063F02 "Changed Operating Definition"
+    IDS_DRIVEERRORCODE_063F03 "Inquiry Data Has Changed"
+    IDS_DRIVEERRORCODE_065501 "System Buffer Full"
+    IDS_DRIVEERRORCODE_065A00 "Operator Request Or State Change Input"
+    IDS_DRIVEERRORCODE_065A01 "Operator Medium Removal Request"
+    IDS_DRIVEERRORCODE_065A02 "Operator Selected Write Protect"
+    IDS_DRIVEERRORCODE_065A03 "Operator Selected Write Permit"
+    IDS_DRIVEERRORCODE_065B00 "Log Exception"
+    IDS_DRIVEERRORCODE_065B01 "Threshold Condition Met"
+    IDS_DRIVEERRORCODE_065B02 "Log Counter At Maximum"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_065B03 "Log List Codes Exhausted"
+    IDS_DRIVEERRORCODE_065C00 "Rpl Status Change"
+    IDS_DRIVEERRORCODE_065C01 "Spindles Synchronized"
+    IDS_DRIVEERRORCODE_065E00 "Low Power Condition On"
+    IDS_DRIVEERRORCODE_065E01 "Idle Condition Activated By Timer"
+    IDS_DRIVEERRORCODE_065E02 "Standby Condition Activated By Timer"
+    IDS_DRIVEERRORCODE_065E03 "Idle Condition Activated By Command"
+    IDS_DRIVEERRORCODE_065E04 "Standby Condition Activated By Command"
+    IDS_DRIVEERRORCODE_066A00 "Informational, Refer To Log"
+    IDS_DRIVEERRORCODE_066B00 "State Change Has Occurred"
+    IDS_DRIVEERRORCODE_066B01 "Redundancy Level Got Better"
+    IDS_DRIVEERRORCODE_066B02 "Redundancy Level Got Worse"
+    IDS_DRIVEERRORCODE_072700 "Write Protected"
+    IDS_DRIVEERRORCODE_072701 "Hardware Write Protected"
+    IDS_DRIVEERRORCODE_072702 "Logical Unit Software Write Protected"
+    IDS_DRIVEERRORCODE_072703 "Associated Write Protect"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_072704 "Persistent Write Protect"
+    IDS_DRIVEERRORCODE_072705 "Permanent Write Protect"
+    IDS_DRIVEERRORCODE_082102 "INVALID ADDRESS FOR WRITE (Blank Check)"
+    IDS_DRIVEERRORCODE_098000 "Illegal media (Plextor)"
+    IDS_DRIVEERRORCODE_098001 "Illegal write page parameter (Plextor)"
+    IDS_DRIVEERRORCODE_098005 "Illegal pause length (Plextor)"
+    IDS_DRIVEERRORCODE_098006 "Illegal track num over 99 (Plextor)"
+    IDS_DRIVEERRORCODE_098007 "Illegal incomplete track exist (Plextor)"
+    IDS_DRIVEERRORCODE_09800A "Over transfer data (Plextor)"
+    IDS_DRIVEERRORCODE_09800B "There is no pit (Plextor)"
+    IDS_DRIVEERRORCODE_09800C "Search NWA fail (Plextor)"
+    IDS_DRIVEERRORCODE_0B0006 "I/O Process Terminated, Play Operation Aborted"
+    IDS_DRIVEERRORCODE_0B1111 "Read Error - Loss Of Streaming"
+    IDS_DRIVEERRORCODE_0B4300 "Message error (Plextor)"
+    IDS_DRIVEERRORCODE_0B4500 "Select Or Reselect Failure"
+    IDS_DRIVEERRORCODE_0B4800 "Initiator Detected Error Message Received"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_0B4900 "Invalid Message Error"
+    IDS_DRIVEERRORCODE_0B4DNN "Tagged Overlapped Commands (NN = Queue Tag)"
+    IDS_DRIVEERRORCODE_0B4E00 "Overlapped Commands Attempted"
+    IDS_DRIVEERRORCODE_0BB900 "Audio play operation aborted (Plextor)"
+    IDS_DRIVEERRORCODE_0E1D00 "Miscompare During Verify Operation"
+    IDS_DRIVEERRORCODE_0X0D00 "Reserved"
+    IDS_DRIVEERRORCODE_0X0E00 "Reserved"
+    IDS_DRIVEERRORCODE_0X0F00 "Reserved"
+    IDS_DRIVEERRORCODE_0X2300 "Reserved"
+    IDS_DRIVEERRORCODE_0X4F00 "Reserved"
+    IDS_DRIVEERRORCODE_0X5000 "Write Append Error"
+    IDS_DRIVEERRORCODE_0X5001 "Write Append Position Error"
+    IDS_DRIVEERRORCODE_0X5002 "Position Error Related To Timing"
+    IDS_DRIVEERRORCODE_0X5301 "Unload Tape Failure"
+    IDS_DRIVEERRORCODE_0X5400 "SCSI To Host System Interface Failure"
+    IDS_DRIVEERRORCODE_0X5501 "System Buffer Full"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVEERRORCODE_0X5600 "Reserved"
+    IDS_DRIVEERRORCODE_0X5800 "Generation Does Not Exist"
+    IDS_DRIVEERRORCODE_0X5900 "Updated Block"
+    IDS_DRIVEERRORCODE_0X5F00 "Reserved"
+    IDS_DRIVEERRORCODE_0X80XX "VENDOR SPECIFIC Through FF XX"
+    IDS_UNITNOTREADY        "Drive %c: is not ready."
+    IDS_WAITINGFORDRIVE     "Waiting for drive to become ready..."
+    IDS_CONFIRMATION        "Confirmation"
+    IDS_MB_CANCELOPERATION  "Are you sure you want to cancel this operation?"
+    IDS_UPDATINGDATA        "Updating data..."
+    IDS_UNABLEGETDISCINFO   "Unable to get disc information."
+    IDS_READINGDISCINFO     "Reading disc information..."
+    IDS_DISCERASABLE        "Erasable disc."
+    IDS_DISCNONERASABLE     "Non Erasable disc."
+    IDS_DISCINFOFORMAT      "%s,  %s\nFree:\t  %s.\nUsed:\t  %s.\n%s.\n\n%s."
+    IDS_DISCSIZEFORMAT      "%d Min, %d MB (%d sectors)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WRONGMEDIUM         " Drive %c: contains wrong meda type."
+    IDS_SELECTERASEMETHOD   "Plese select erasing method for disc in drive %c:."
+    IDS_QUICKERASE          "Quick Erase (Only Table of Contents)"
+    IDS_COMPLETEERASE       "Complete Erase"
+    IDS_ERASEREQDISC        "Any Rewritable disc (CD-RW, DVD-RW, DVD+RW, ...)."
+    IDS_INITIALIZING        "Initializing..."
+    IDS_FINISHING           "Finishing..."
+    IDS_COMPLETING          "Completing..."
+    IDS_STARTING            "Starting..."
+    IDS_CANCELING           "Canceling..."
+    IDS_ABORTING            "Aborting..."
+    IDS_FINISHED            "Finished."
+    IDS_ABORTED             "Aborted."
+    IDS_ERROR               "Error"
+    IDS_COMPLETED           "Completed."
+    IDS_READY               "Ready."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANCELED            "Canceled."
+    IDS_ERASING             "Erasing..."
+    IDS_UNKNOWNERROR        "Unknown error."
+    IDS_DRIVENOTREADY       "Drive not ready."
+    IDS_MEDIUMERASEFAILED   "Media erase failed."
+    IDS_UNABLEINITERASE     "Unable to initialize erasing."
+    IDS_UNABLEFINERASE      "Unable to  finalize erasing."
+    IDS_ALREADYERASING      "Already erasing."
+    IDS_PRIMOINITFAILED     "Unable to initialize burning library."
+    IDS_BURNINGCDDA         "Burning Audio CD in drive %c:"
+    IDS_ERROROCCURED        "Error occured."
+    IDS_TMPCREATEFAILED     "Unable to create temporary file."
+    IDS_BURNINGABORTEDBYUSER "Burning aborted by user."
+    IDS_SHOWLESS            "Show Less"
+    IDS_SHOWMORE            "Show More"
+    IDS_PREPARING           "Preparing"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BURNING             "Burning"
+    IDS_CHECKINGDISC        "Checking disc..."
+    IDS_BURNREQDISC         "Blank or Open Recordable CD disc (CD-R, CD-RW) with at least %d minutes of free space."
+    IDS_SPEEDBEST           "Adjustable Write Speed"
+    IDS_SPEEDMAX            "Maximum Speed"
+    IDS_SPEEDMIN            "Minimum Speed"
+    IDS_SPEEDMED            "Medium Speed"
+    IDS_SPEED               "speed"
+    IDS_AT                  "at"
+    IDS_BURNINGCANCELED     "Burning of Audio CD in drive %c: canceled."
+    IDS_REASON              "Reason:"
+    IDS_CURRENTOPERATION    "Currently:"
+    IDS_LICENSEFAILED       "Verification failed."
+    IDS_LICENSEFAILEDMSG    "One or more files were not able to be burned due to one of the following reasons:\n- Insufficient License Rights\n- File was not found (or named properly)\nTo burn disc without these files click 'Continue Anyway', otherwise click 'Cancel'"
+    IDS_BURNERROR           "Nullsoft Burner Error"
+    IDS_LICENSESUCCESS      "Verification completed successfully."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LICENSEPROGRESS     "Verifying files..."
+    IDS_LICENSEITEMPROGRESS "Verifying..."
+    IDS_LICENSEITEMSUCCESS  "Ok"
+    IDS_LICENSEITEMFAILED   "No license rights to burn."
+    IDS_SKIPPED             "Skipped"
+    IDS_SCHEDULED           "Scheduled"
+    IDS_PREPARINGDATA       "Preparing data..."
+    IDS_PREPARESUCCESS      "Finished preparing data."
+    IDS_PREPAREFAILED       "Data preparation failed."
+    IDS_PREPAREFAILEDMSG    "Some files were not prepared due to an error during preparation.\nTo burn disc without these files click 'Continue Anyway', otherwise click 'Cancel'."
+    IDS_OF                  "of"
+    IDS_PREPAREITEMSUCCESS  "Prepared"
+    IDS_PREPAREITEMFAILED   "Unable to decode"
+    IDS_BURNITEMADDFAILED   "Unable to add file to CD"
+    IDS_INITIALIZINGBURNER  "Initializing burner..."
+    IDS_MASTERINGDISC       "Mastering disc..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BURNITEMSUCCESS     "Finished"
+    IDS_WRITELEADIN         "Opening disc / Writing Lead-In..."
+    IDS_WRITELEADOUT        "Closing disc / Writing Lead-Out..."
+    IDS_DISCOPEN            "Opening disc..."
+    IDS_DISCCLOSE           "Closing disc..."
+    IDS_BURNPROGRESS        "Burning in progress...( %d%% completed)"
+    IDS_RELEASINGBURNER     "Releasing burner..."
+    IDS_BURNFAILED          "Error during Audio CD burning process."
+    IDS_BURNSUCCESS         "Burning of the Audio CD completed succesfully."
+    IDS_BURNINGCOMPLETED    "Burning of the Audio CD in drive %c: completed."
+    IDS_BURNINGSTOPPED      "Burning of Audio CD in drive %c: stopped."
+    IDS_FILENOTFOUND        "File not found."
+    IDS_DRMNOLICENSE        "License needed - protected track."
+    IDS_DRMNOBURNING        "License disallows burning."
+    IDS_DRMBURNCOUNTEXCEEDED "No more burns allowed."
+    IDS_NODECODER           "Can't find decoder."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOFILES             "No files."
+    IDS_DECODESERVICEFAILED "Unable to initialize decode service."
+    IDS_LICENSEWRONGFILECOUNT 
+                            "Verification failed because of wrong file count returned."
+    IDS_BADFILENAME         "Bad file name."
+    IDS_CACHEWRITEFAILED    "Error writing cache file."
+    IDS_DECODESTARTFAILED   "Unable to initialize preparation process."
+    IDS_BURNSTARTFAILED     "Unable to initialize burn process."
+    IDS_MASTERINGFAILED     "Audio CD mastering failed."
+    IDS_BEGINBURNFAILED     "Burner initialization failed."
+    IDS_ENDBURNFAILED       "Burner releasing failed."
+    IDS_WRITEAUDIOFAILED    "Writing to the Audio CD failed."
+    IDS_LIBERRORPREFIX      "\n\nLibrary error: "
+    IDS_DRVERRORPREFIX      "\nDrive error:    "
+    IDS_CHKDSCWRONGPARAMETER 
+                            "Unable to check disc - at least one parameter is wrong."
+    IDS_CHKDSCMSGPUMPFAILED "Unable to check disc - failed to process messages."
+    IDS_CHKDSCDIALOGFAILED  "Unable to check disc - internal initialization failed."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MB_CANCELBURNING    "Are you sure you want to cancel burning?"
+    IDS_TEMPORARY_FILE      "Temporary File"
+END
+
+STRINGTABLE 
+BEGIN
+    65535                   "{C14FAE1D-B410-459f-B008-1A8BE3633000}"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

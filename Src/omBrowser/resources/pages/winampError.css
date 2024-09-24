@@ -1,0 +1,64 @@
+a {
+	text-decoration: none;
+}
+body {
+	font: message-box;
+}
+h1 {
+	font-size: 150%;
+}
+#errorContainer {
+	position: relative;
+	margin:  1.6em auto;
+	max-width: 42em;
+	min-width: 34em;
+	left: 15px;
+	width:70%;
+	_width: 420px;
+}
+#errorBody {
+	position:relative;
+}
+#errorIcon {
+	position:relative;
+	top: 53px;
+	left: -56px;
+	height:39px;
+	width:40px;
+	background-image:url(./errorIcon.png);
+	_background-image: none;
+}
+#errorTitleText {
+	position:relative;
+	top: 10px;
+}
+#errorTitle {
+	position: relative;
+	text-align: left;
+	display:inline-block;
+	border-bottom: ridge 1px;
+}
+#errorCode {
+	position: relative;
+	text-align:right;
+	margin-bottom: -.5em;
+}
+#errorDesc {
+	position: relative;
+	margin-bottom: -.5em;
+}
+#errorTryAgain {
+	position: relative;
+	text-align: left;
+	top: 1.2em;
+}
+#errorMore {
+	position: relative;
+	text-align:right;
+	border-bottom: ridge 1px;
+	padding-bottom: .2em;
+}
+#errorMoreInfo {
+	position:relative;
+	display: none;
+}

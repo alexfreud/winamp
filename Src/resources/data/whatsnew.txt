@@ -1,0 +1,1960 @@
+Winamp 5.9.2	[Apr 26 2023]
+* New: [ml_fanzone] Connect to the online Winamp Fanzone
+* New: [ml_hotmix] Connect to the Hotmix Radio service
+* Improved: [gen_crasher] Added correct Windows 11 detection method
+* Improved: [ml_wire] Replace internal IE engine with Qt v5.12 engine (w.i.p.)
+* Fixed: Erroneous "URL: Winamp Command Handler" filetype association
+* Fixed: [Big Bento] Drag titlebar issue
+* Fixed: [Big Bento] Config overlap issue
+* Fixed: [ml_local] Drag to rearrange smart view order causes corruption
+* Fixed: [ml_playlists] Memory leaks
+* Misc: Added option for RC builds in Update notifications
+* Misc: All DLLs are now digitally signed
+* Misc: Many more general tweaks, improvements, fixes and optimizations
+* Replaced: jnetlib.w5s functions moved to new wac_network.w5s component
+* Replaced: dlmgr.w5s functions moved to new wac_downloads.w5s component
+* Updated: [jpeg] ijg-libjpeg 9e
+
+Winamp 5.9.1	[Dec 21 2022]
+* Improved: [ml_local / nde] Memory footprint reduction
+* Improved: [ml_local] Load time speedup and other optimizations
+* Improved: [ml_online] Increased maximum bandwidth (from 350 to 3500)
+* Improved: [playlist/ml_playlists/ml_pmp] Playlist loader/writer refactoring
+* Improved: [dlmgr] Increased buffer size for faster podcast downloads
+* Improved: [Bento skin] Increased menu & config widths to help with translations
+* Improved: [Installer] VS2019 runtime checker script (thanks Pawel Porwisz)
+* Fixed: Hang when reopening Winamp if previously placed on disconnected monitor
+* Fixed: [Installer] Silent install switch blocked by external dependencies
+* Fixed: [gen_ff] Windowshade and Docked Toolbar modes not remembered on restart
+* Fixed: [gen_tray] Settings not being saved after Winamp restart
+* Fixed: [in_mp4/libmp4v2] Overflow and seek issues with specific mp4 videos
+* Fixed: [in_wave/libsndfile] Error parsing list subchunks with some riff headers
+* Fixed: [ml_downloads] Cancelling multi-selection only cancelled first item
+* Fixed: [ml_playlists] Crash when editing playlist entry
+* Fixed: [ml_wire/xml] Display of non-Latin characters in Podcasts
+* Fixed: [out_ds] Crossfader broken in Bento/Modern skin EQ
+* Fixed: [out_ds] Potential buffer overflow issues
+* Fixed: [out_wasapi] Crash on opening flv videos (rendering still needs fixing)
+* Fixed: [playlist/ml_playlists] Memory leaks
+* Fixed: [playlist/ml_playlists] Reported issues with special/unicode characters
+* Fixed: [vis_avs] AVS Editor menu not localized when lang pack applied
+* Misc: Many more general tweaks, improvements, fixes and optimizations
+* Misc: Replaced nu::PtrMap with std::map and nu::PtrList with std::vector
+* Misc: [vcpkg] changed from manifest to classic mode
+* Removed: [wbm] Lazy-loading wbm system files (no longer required)
+* Updated: [in_flac/enc_flac] libFLAC 1.4.2
+* Updated: [in_mod] libopenmpt 0.6.6
+* Updated: [OpenSSL] OpenSSL 3.0.5
+* Updated: [vpx] libvpx 1.12.0
+* Updated: [xml] expat 2.4.9
+* Updated: [zlib] zlib 1.2.13
+* New/Improved: [ml_downloads/ml_playlists] Download context menu in ML 
+* New: [ml_nft] Import, play and download music from your NFT Library (optional)
+
+Winamp 5.9.0	[Sep 08 2022]
+* Improved: Windows 11 compatibility
+* Improved: Playback of https:// streams
+* Improved: Updated and tidier generate html playlist code
+* Improved: [in_flac] Hi-res playback support (24bit/192kHz, etc.)
+* Improved: [in_mkv] vp8 support
+* Improved: [in_mod] Playback of .itz, .mdz, .s3z & .xmz compressed modules
+* Improved: [ml_rg] Added message throttle and other optimizations
+* Improved: [ml_wire] New working Podcast Directory
+* Improved: [out_ds] Display device information correctly in Unicode format
+* Fixed: [in_midi/in_mkv/nu/pfc] memory leaks
+* Fixed: [in_mp3] id3 empty genre displayed as Blues or Psychobilly
+* Fixed: [jnetlib/ml_online/ml_wire] JSAPI2 JavaScript API
+* Fixed: [ml_rg] Calculate ReplayGain for Ogg Vorbis files
+* Fixed: [out_wasapi] Volume resets to zero on track change
+* Fixed: [out_wave] Crash when playing module/tracker formats
+* Misc: lame_enc & libsndfile now static links instead of dynamic dll
+* Misc: libmpg123, libflac & zlib now static links instead of dynamic dll
+* Misc: Major compiler refactoring work
+* Misc: Many more general tweaks, improvements, fixes and optimizations
+* Misc: Minimum required OS is now Windows 7 SP1
+* Misc: New online Help section and articles
+* Misc: SDK now compatible with VS2017 and newer
+* Misc: Versioning syntax changed to v5.x.x
+* Misc: Winamp\Microsoft.VC142.CRT runtimes now installed on Win7/8
+* Misc: [dsp_sps] Improved, refactored and rebuilt!
+* Removed: Bento Browser tab - So long, and thanks for all the fish!
+* Removed: [read_file.dll] in_midi now using zlib & minizip for compressed midi
+* Updated: [alac/in_mp4] ALAC 2017-11-03-c38887c5
+* Updated: [enc_lame] LAME 3.100.1
+* Updated: [freetype.wac] freetype 2.12.1
+* Updated: [gif] giflib 5.1.4
+* Updated: [in_cdda] libdiscid 0.6.2
+* Updated: [in_flac/enc_flac] libFLAC 1.3.4
+* Updated: [in_mod] libopenmpt 0.6.4
+* Updated: [in_mp3] libmpg123 1.29.3
+* Updated: [in_vorbis] libogg 1.3.5 & libvorbis 1.3.7
+* Updated: [in_wave] libsndfile 1.1.0
+* Updated: [OpenSSL] OpenSSL 3.0.3
+* Updated: [png] libpng 1.6.37
+* Updated: [vp8] WebM libvpx 1.11.0
+* Updated: [zlib] zlib 1.2.12
+
+Winamp 5.8.0	[Oct 18 2018]
+* New: Windows Audio (WASAPI) Output plug-in (w.i.p.)
+* Improved: Added an option to completely disable Winamp's video support
+* Improved: Added an auto-fullscreen option to video prefs
+* Improved: Added /ENUMPLAYLISTS to the command-line support
+* Improved: Windows 8.1 and 10 compatibility
+* Improved: [in_mod] OpenMPT-based Module Player (replaces old MikMod player)
+* Improved: [ml_playlists] Added browse path & edit title functions in Ctrl+E editor
+* Improved: [Bento] Updated scrollbars and buttons and other tweaks (thanks Martin)
+* Improved: [Bento & Modern skins] Added a Playlist Search feature (thanks Victor)
+* Fixed: New URLs not being remembered after using Reset history in Open URL dialog
+* Fixed: Various memory leaks
+* Fixed: [gen_tray] Not showing correct current icon pack in preferences
+* Fixed: [in_avi] Divide-by-zero crash with badly formed files (thanks ITDefensor)
+* Fixed: [in_mp3] Crashing with some ID3v2 tags
+* Fixed: [ml_wire] Slow loading issue
+* Fixed: [ssdp] Crash on load if jnetlib was not correctly initialized
+* Misc: Minimum required OS is now Win XP sp3 (Windows 7 or higher recommended)
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Misc: Moved shared DLLs to Winamp\Shared folder
+* Removed: All former "Pro" licensed functions (Winamp is now 100% freeware again)
+* Removed: gen_jumpex & UnicodeTaskbarFix (making way for native implementations)
+* Removed: [in_wm] DRM support
+* Replaced: CD playback and ripping now using native Windows API (instead of Sonic)
+* Replaced: MP3 Decoder now mpg123 based (instead of Fraunhofer)
+* Replaced: AAC Decoder now using Media Foundation (Vista and higher)
+* Replaced: H.264 Decoder now using Media Foundation (Vista and higher)
+* Replaced: MPEG-4 Pt.2 Decoder now using Media Foundation (Vista and higher)
+* Updated: [in_vorbis] libogg 1.3.3 & libvorbis 1.3.6
+* Updated: [libFLAC] FLAC 1.3.2
+* Updated: [libyajl] libyajl v2.1.0
+* Updated: [OpenSSL] OpenSSL v1.0.1i
+* Updated: [png] libpng v1.5.24
+
+Winamp 5.6.66	[Dec 12 2013]
+* Improved: Added a Reset button to clear history in the Open/Add URL dialog
+* Improved: Added an option to disable the mouse wheel from altering the volume
+* Improved: Added more commandline switches (run: winamp.exe /? to see full list)
+* Improved: All menus now use the skinned style when option is enabled in ML settings
+* Improved: Disable all online features when no internet connection selected in Prefs
+* Improved: High DPI & text scaling compatibility fixes for dialogs & library views
+* Improved: Increased notification area tooltips up to 128 chars (instead of 64)
+* Improved: Library views now optionally group the 'Play' and 'Enqueue' buttons
+* Improved: Mass metadata editor from library now also available in Playlist Editor
+* Improved: Retry UAC prompt if user previously selected "No" (for relevant settings)
+* Improved: Speed-up of Winamp shutdown process
+* Improved: [gen_ff] Added a setting to control show/hide time for docked toolbars
+* Improved: [gen_ml] Drag & drop handling tweaks
+* Improved: [ml_downloads] Added 'Size' column
+* Improved: [ml_history] New options for resuming playback (for podcasts or all files)
+* Improved: [ml_history] Added a 'Play Offset' column with right-click option to clear
+* Improved: [ml_local] Added Podcast, BPM & Rating fields to Ctrl+E metadata editor
+* Improved: [ml_local/history/pmp] Added F8 to refresh current search
+* Improved: [ml_nowplaying/wire] Added support to use alternative services
+* Improved: [ml_playlists] Option to use source file instead of database-managed copy
+* Improved: [ml_pmp] Added a simple view to match Local library support
+* Improved: [pmp_android/usb] Added <disc> support to File Name Formatting
+* Fixed: Agent not using Winamp window if a clone is already running (eg. KMPlayer)
+* Fixed: Fallback issue with lang packs when loading accelerator tables
+* Fixed: Length not being read when set to read titles on load
+* Fixed: Ratings-related freeze on right-clicking large selections in playlist editor
+* Fixed: Saving to wrong extension for the 'Save As' action in the Alt+3 Artwork tab
+* Fixed: Unicode characters not displayed in taskbar if some old plug-ins are present
+* Fixed: Various issues with aero-peek and docking of freeform skins as an appbar
+* Fixed: [gen_ff] Docking to bottom/right when windowframe scale is anything but 1.0
+* Fixed: [gen_jumpex] Broken 'Add to Library' shell menu item
+* Fixed: [gen_jumpex] 'Jump to File' window not always visible when pressing 'J' or 'F3'
+* Fixed: [gen_tray] Lockup/double-start issues when using the 'Prev' action
+* Fixed: [in_flac] Removal of embedded artwork
+* Fixed: [in_midi] Memory comparison crash with badly formed .kar files
+* Fixed: [libmp4v2] Crash due to invalid pointer check on corrupt files
+* Fixed: [ml_local] Search filters with unicode characters not being remembered
+* Fixed: [ml_playlists] Remove invalid characters from playlist name on export
+* Fixed: [pmp_android/usb] Crash on bad path
+* Fixed: [pmp_android/usb] Use filename if no metadata available to generate filepath
+* Misc: [installer] Added a "Winamp (Safe Mode)" option to start menu icons
+* Misc: More general tweaks, improvements, fixes and optimizations (lots of them!)
+* Updated: [enc_fhgaac] Fraunhofer AAC Encoder v3.02.16
+* Updated: [enc/in_vorbis] libogg 1.3.1
+* Updated: [gen_jumpex] JTFE v1.32
+* Updated: [in_wave] libsndfile 1.0.25
+
+Winamp 5.6.5	[Jul 24 2013]
+* Improved: Memory allocation optimizations & fixes
+* Improved: [ml_playlists] Show currently playing song
+* Fixed: Some radio streams no longer playing as a result of the Icecast fix in 5.64
+* Fixed: Crash when pasting artwork into File Info dialog in 5.64
+* Fixed: [in_mp3] PIC frame rendering in ID3v2.2 tags
+* Fixed: [gen_ml] Enter key not working correctly for ml views
+* Fixed: [ml_local] Sporadic crashes when importing library in 5.64
+* Fixed: [ml_plg] Broken 'View tracks similar to' menu item in main window songticker
+* Fixed: [npwachk] Winamp Detector plug-in not working with latest Firefox
+* Fixed: [wasabi] Quirks with color theme list handling
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Updated: [enc_fhgaac] Fraunhofer AAC Encoder v3.02.15
+* Updated: [png] libpng v1.5.17
+* Updated: [gen_jumpex] JTFE v1.2.7
+
+Winamp 5.6.4	[Jun 19 2013]
+* New: Option to run Winamp in Safe Mode (also via /SAFE=1 commandline switch)
+* New: XSPF playlist support (read only support, write support to follow)
+* Improved: Added tooltips for truncated text in Media Library listviews
+* Improved: Added 'Explore item folder' to context menu in playlists
+* Improved: Bookmark menu handling now follows Winamp's Play/Enqueue setting
+* Improved: D3D vsync mode (should fix reported video tearing issues)
+* Improved: Display album art source info in Artwork tab of File Info dialog
+* Improved: Remember last position of dialogs
+* Improved: Show rating from tags if file is not in Local Media Library
+* Improved: Use new style dialog for folder browser
+* Improved: Windows 8 filetype association compatibility
+* Improved: [gen_ff] Multi-monitor support for Bento/Modern skin notifier
+* Improved: [gen_ff] Windows 8 multi-monitor/taskbar mode compatibility
+* Improved: [in_flac] FLAC streaming support 
+* Improved: [in_mp3] Shoutcast v2 in-stream artwork support (and other misc fixes)
+* Improved: [in_mp3] Use MIME to determine decoder before assuming ext. is correct
+* Improved: [in_mp4] Native ALAC playback support
+* Improved: [in_mp4] Optimize MP4 Raw Reader by using chunks instead of samples
+* Improved: [in_mp4] Write ratings to tags (using the "rate" atom)
+* Improved: [ml_local/history] Friendlier error message if nde/database fails to load
+* Improved: [ml_local] New 'Date Added' column (smart views adjusted accordingly)
+* Improved: [ml_playlists] Now with Generate HTML Playlist support
+* Improved: [ml_playlists] Save playlists to custom m3udir, if specified in paths.ini
+* Improved: [ml_wire] Save (and backup) database files on updates instead of on exit
+* Improved: [pmp_ipod] Added BPM, TotalTracks, Disc# & TotalDiscs metadata support
+* Improved: [pmp_wifi] SSDP support and other optimizations
+* Fixed: Failing to load on some Windows 8 (and earlier) installs (thanks Nanner)
+* Fixed: Not playing the first song next when clearing then adding items to playlist
+* Fixed: Bento/Modern skin notifier sometimes no longer appearing (thanks pjn123)
+* Fixed: Deletion of 0-byte wdl*.tmp & wht*.tmp files
+* Fixed: Issues with re-embedding of vis plug-ins in Bento skin when exiting fullscreen
+* Fixed: Issues with some Icecast servers providing invalid stream links (v2.x bug!)
+* Fixed: Potential crashes when rapidly switching between DSP plug-ins
+* Fixed: [Bento Browser] Potential security vulnerabilities (thanks Julien Ahrens, Inshell)
+* Fixed: [gen_jumpex] Potential security vulnerabilities (thanks J. Ahrens, Inshell.net)
+* Fixed: [in_mp3] Mapping of POPM ratings scale
+* Fixed: [in_mp4] Bug where too-small passed-in buffer size resulted in loss of data
+* Fixed: [in_mp4] Seeking files/podcasts which use a single video frame as artwork
+* Fixed: [in_vorbis] Not reading Disc# (plus other general Vorbis Comments fixes)
+* Fixed: [in_wave] mldb info for .wav files being wiped after viewing Alt+3 dialog
+* Fixed: [ml_disc] Blocking of context menu items in ml tree for History & Bookmarks
+* Fixed: [ml_disc] Creation of 0-byte trk*.tmp files & associated crash on some systems
+* Fixed: [ml_impex] UI lockups on import/export of large databases
+* Fixed: [ml_wire] Subscriptions to podcast channels with the same name
+* Fixed: [ombrowser] Alt Gr keys broken in Online Services text input fields
+* Fixed: [pmp_android] Albumart-related crash when transferring ogg files
+* Fixed: [pmp_android/usb] Transfers fail if <Albumartist> contains illegal characters
+* Fixed: [pmp_p4s] Crash/hang on exit after transferring files to MTP/P4S devices
+* Misc: All default plug-ins now include file description & version info properties
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Removed: [gen_orgler] The end of Winamp Charts & Music Usage Database
+* Updated: [libFLAC] FLAC 1.3.0
+* Updated: [png] libpng v1.5.16
+* Updated: [gen_jumpex] JTFE v1.2.6
+* Updated: [zlib.dll] zlib 1.2.8
+
+Winamp 5.6.3	[Jun 28 2012]
+* New: Hungarian and Indonesian installer translations and language packs
+* New: [enc_vorbis] Ogg Vorbis Encoder (based on aoTuV)
+* Improved: Shift+F10 app key support in the Media Library
+* Improved: [enc_fhgaac] Added VBR mode 6, plus other minor quality improvements
+* Improved: [in_flac] Producer metadata support
+* Improved: [in_mod] Refactored, simplified and threadsafe memory allocation
+* Improved: [ml_history] Save playcounts when updated instead of only on exit
+* Improved: [ml_local] Increased search query buffers from 512 or 1024 to 2048 bytes
+* Improved: [gen_hotkeys] Added manual advance and visualization specific actions
+* Fixed: Embedded album art not working in some scenarios
+* Fixed: Video window reopening after being closed when editing mp4 tags
+* Fixed: [aacdec] Memory leak when re-syncing to AAC stream
+* Fixed: [bmp] Bounds checking in TSCC decoder
+* Fixed: [bmp] Heap overflow issues (thanks: Secunia)
+* Fixed: [in_avi] Divide-by-zero and NULL pointer issues (thanks: FuzzMyApp)
+* Fixed: [in_mod] .IT memory & heap corruption issues (thanks: Jeremy Brown, MSVR)
+* Fixed: [ml_local] Crash in MLDBAPI::SetField cache
+* Fixed: [pmp_android/usb] Genre and Year metadata edits writing to Disc# field
+* Fixed: [vis_milk2] Presets not reacting to music in localized installs (Milkdrop v2.25)
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Updated: [aacdec] Fraunhofer AAC Decoder v1.762.208
+* Updated: [in_vorbis] libogg 1.3.0 & libvorbis 1.3.3
+* Updated: [lame_enc] LAME 3.99.5
+* Updated: [png] libpng v1.5.10
+* Updated: [vp8] libvpx v1.1.0
+* Updated: [xml] expat v2.1.0
+* Updated: [zlib.dll] zlib 1.2.7
+
+Winamp 5.6.23	[Dec  9 2011]
+* Fixed: mp3 decoding errors at end of file (should fix reported CD burning errors)
+* Fixed: [aacdec] Detection of parametric stereo for AAC files made with older encoders
+* Fixed: [enc_fhgaac] MP4 encoder not always closing on errors or aborted transfers
+* Fixed: [in_avi] Crashing with certain malformed AVI files
+* Fixed: [in_flac & in_mp4] Memory leaks
+* Fixed: [in_mod] Bounds check for comments parsing
+* Fixed: [pmp] Multithreaded race condition (now supports thread-safe transfers)
+* Fixed: [pmp_android] Embedded album art being deleted on transfers
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Updated: [enc_fhgaac] Fraunhofer AAC Encoder v3.2.4
+* Updated: [gen_jumpex] JTFE v1.2.5
+
+Winamp 5.6.22	[Oct 26 2011]
+* Improved: [in_mp3] Support TXXX/Band as an alternative id3v2 frame for Album Artist
+* Fixed: [bmp/in_avi] Integer overflow issues in TSCC, RGB & YUV decoders
+* Fixed: [enc_fhgaac] High bitrate upsampling bug
+* Fixed: [in_midi] Underrun in CMF files when music offset is greater than the filesize
+* Fixed: [in_mod] Made sure AMF is limited to maximum of 32 channels
+* Fixed: [in_mp3] Crash on hitting Alt+3 for currently playing file with an APEv2 tag
+* Fixed: [in_mp3] Reading of id3v2.4-only TDRC (Year) frame
+* Fixed: [in_mp3] Don't delete TCMP & PRIV id3v2 frames when updating tags
+* Fixed: [in_mp4] Gapless playback
+* Fixed: [in_nsv] Potential integer overflow issue
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Misc: [ml_local] Added an explanatory error page if database gets corrupted
+* Updated: [enc_fhgaac] Fraunhofer AAC Encoder v3.2.3
+* Updated: [gen_jumpex] JTFE v1.2.4
+* Updated: [lame_enc] LAME 3.99
+
+Winamp 5.6.21	[Jul 11 2011]
+* Improved: [in_nsv] New API to allow video decoder to signal codec width & height
+* Fixed: [enc_fhgaac] Default ADTS bitrate; Writing of gapless data
+* Fixed: [enc_fhgaac] HE-AAC compatibility with iTunes
+* Fixed: [in_midi] Various integer overflow issues (thanks: Luigi Auriemma)
+* Fixed: [libsndfile] PAF integer heap-overflow bug (thanks: Hossein Lotfi/Secunia)
+* Fixed: [ml_local] Illegal instruction crash on non-SSE machines
+* Fixed: [ml_rg] Some files incorrectly returning 0 gain values
+* Fixed: [nsvdec_vp3, nsvdec_vp5, vp6] Rescaling buffer overflow vulnerabilities
+* Misc: More general tweaks, improvements, fixes and optimizations
+
+Winamp 5.6.2	[Jun 30 2011]
+* New: Fraunhofer AAC Codec with VBR encoding support
+* New: [theora.w5s] Theora decoder for MKV
+* Improved: [ml_local] New extra large albumart and option to hide album title
+* Improved: [in_mp3/jnetlib/ml_wire] http status code 303 & 307 redirection support
+* Fixed: [in_midi] Add buffer overflow check for malformed Controller Change messages
+* Fixed: [in_midi] SysEx message processing integer underflow vulnerability
+* Fixed: [in_mod] Crash on .IT files with 0 channels (thanks: Luigi Auriemma)
+* Fixed: [in_mp4] Crash on truncated files
+* Fixed: [in_mp4] Distortion on MP4 files with malformed stts data
+* Fixed: [jnetlib] Memory leak when connecting to https streams
+* Fixed: [ml_impex] Importing playcount data
+* Fixed: [ml_local] Advanced Query Builder
+* Fixed: [nsvdec_vp5] Integer underrun (thanks: Luigi Auriemma)
+* Fixed: [pmp_wifi] Playlist syncing
+* Fixed: [vis_milk2] Some presets not reacting to music (Milkdrop v2.24)
+* Fixed: [vp6] Crash on rescaling with irregular video sizes (thanks: Luigi Auriemma)
+* Fixed: [vp6] Integer underrun in Deblocking filter when picture size is 0,0
+* Misc: Default "Restore file associations at Winamp start" setting to "off" on Vista+
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Misc: Redesigned SHOUTcast Radio online service view (new school & classic options)
+* Misc: Replaced CT aacPlusDecoder.w5s with new FhG aacdec.w5s
+* Misc: Replaced CT enc_aacplus.dll with new FhG enc_fhgaac.dll
+* Misc: Toolbar now compatible with Firefox 5
+
+Winamp 5.6.1	[Mar 22 2011]
+* Improved: [ml_local] Search & View load speed optimizations (~20% faster!)
+* Improved: [ml_impex] Date parsing on import
+* Improved: [ml_plg] Direct mouse wheel support for generated playlist view
+* Improved: [ml_plg/gracenote] Database query, backup & recovery enhancements
+* Improved: [ml_rg] Raised maximum sample rate from 96000 to 192000
+* Improved: [nsutil] Added 64bit float IIR support
+* Improved: [Installer] Launch Winamp as regular user from elevated installer
+* Improved: Support for freely-rotating wheel mouse
+* Fixed: Added parameters sanity check to prevent JSAPI2 from crashing
+* Fixed: Known IE9 compatibility issues
+* Fixed: [Bento browser] Freeze when search string is all spaces
+* Fixed: [Bento/Modern skins] Crash when clicking Notifier if ml_nowplaying missing
+* Fixed: [gen_ml] Album art view and scrollbar listview UI issues
+* Fixed: [in_flac] Crash when trying to write metadata to non-existent files
+* Fixed: [in_mp3] APEv2 memory leak
+* Fixed: [in_mp3] Wrong bitmask for calculating AAC framelength
+* Fixed: [in_mp3] Incorrectly reported approximate frames
+* Fixed: [jnetlib] Potential integer overflow in http header parsing code
+* Fixed: [ml_local] Category not being written to file when editing metadata
+* Fixed: [ml_plg] Force rebuild logic for non-English locales
+* Fixed: [nde] Saving the mldb up to 3 times on Winamp exit (v2.95/5.0x bug)
+* Fixed: [pmp_android/usb] Use <Artist> for folder name if <Albumartist> missing
+* Fixed: [pmp_ipod] Database corruption on Eject with some iPod models
+* Fixed: [pmp_ipod] Nano & Shuffle 4G sync issues
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Misc: Online Help Docs moved to AOL Help site
+* Misc: SHOUTcast2 support tweaks for in_mp3 & Bento file info
+* Misc: [in_flac/in_vorbis] Changed internal rating scale from 0-5 to 0-100
+* Misc: [ml_local] Right-click menu tweaks (Display tracks in this view)
+* Reverted: Milkdrop from v2.23 to v2.2 and AVS from v2.83 to v2.81d (for now)
+* Updated: Sonic PrimoSDK Burning Engine v4.28.06.0
+* Updated: [installer] OpenCandy SDK (fixes some AVs reporting it as malware)
+* Updated: [png.w5s] libpng v1.5.1
+
+Winamp 5.6.01	[Dec  9 2010]
+* Improved: [in_wave/libsndfile] Added AIF to default extension list
+* Improved: [ml_plg] Localization of playlist names & various other tweaks
+* Fixed: Win2k compatibility (caused by 5.6-specific DLL load vuln fix)
+* Fixed: [in_midi] Security vulnerability (thanks: Morten @ kryptoslogic)
+* Fixed: [in_mp3] Querying endoffset metadata for iTunes gapless playback
+* Fixed: [pmp_ipod] Sync and Eject issues
+* Fixed: [pmp_ipod] Compilation flag when Album Artist is "Various Artists"
+* Fixed: [pmp_wifi] Crash when devices.w5s missing
+* Misc: Made installer disable incompatible 3rd-party gen_lyrics plug-in
+* Misc: More general tweaks, improvements, fixes and optimizations
+
+Winamp 5.6	[Nov 27 2010]
+* New: [pmp_wifi] Android Wi-Fi support
+* New: Direct mouse wheel support
+* New: Option to write ratings to tags (for mp3, wma/wmv, ogg & flac)
+* Improved: Redesigned Devices/Portables view in Media Library
+* Improved: New on-the-fly "Vertically flip (Shift+F)" option in Video context menu
+* Improved: [dlmgr/jnetlib] Handling of http status codes 100 & 201-206
+* Improved: [ml_plg] Playlist Generator: context menu dialog & other features
+* Improved: [ml_pmp] More user-friendly Transcoding options for portable devices
+* Improved: [ml_transcode] Added support for <disc> & <discs> in naming scheme
+* Improved: [nsutil] Optimized video flip modes
+* Improved: [pmp_android/ipod] Added encoder blacklist
+* Improved: [ReplayGainAnalysis] Support for more sample rates
+* Fixed: DLL load security vulnerability
+* Fixed: [enc_lame] Memory leak
+* Fixed: [gen_ff] Bookmark corruption via Send To menu in main window songticker
+* Fixed: [gen_ml] Empty/Grey ML when restarting Winamp from a minimized state
+* Fixed: [gen_ml] Scrolling lag in nav panel with large amount of items
+* Fixed: [in_midi] Buffer/Integer overflow issues (thanks: Joakim @ nsense)
+* Fixed: [in_mod] Buffer overflow in comment box (MTM security vulnerability)
+* Fixed: [in_mkv] Crash when reading a string that was exactly SIZE_MAX bytes
+* Fixed: [in_mp3] ID3v1 UI glitch, APEv2 + Lyrics3 tag combo bug, APEv2 tag removal
+* Fixed: [in_mp4] Potential crash on getting metadata/albumart from invalid MP4 files
+* Fixed: [in_nsv] Integer overflow in allocating memory for metadata
+* Fixed: [in_nsv] Integer overflow when parsing TOC (thanks to: C. Eiram, Secunia)
+* Fixed: [in_nsv] Video flip mode detection quirks
+* Fixed: [ml_local] Arrow direction and sort inconsistencies in 3-pane views
+* Fixed: [ml_plg] Playlist Generator crashes and database corruption issues
+* Fixed: [ml_pmp] Autofill crash on empty libraries
+* Fixed: [ml_playlists] Crash on drag+drop items from one playlist to another
+* Fixed: [ml_transcode] Freeze transcoding .cda when using <filename> in scheme
+* Fixed: [playlist] Relative pathnames when filename is already relative
+* Fixed: [pmp_android/usb] Playlist sync & loading issues
+* Fixed: [pmp_android/ipod/usb] Issue with forward slashes in playlist paths
+* Fixed: [pmp_usb] Bug when multiple usb devices are connected
+* Fixed: [vis_milk2] Unicode issues with fonts & presets editor (5.58-specific)
+* Fixed: [vis_milk2] sprites.ini file lookup
+* Fixed: [vp6.w5s] Buffer overflow issue
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Misc: Portables/Devices support now also adds ml_devices.dll & devices.w5s
+* Misc: Prompt user whether to move skins/langpacks when changing location
+* Misc: Removed Winamp Remote from installer
+* Misc: [ml_pmp] Moved 'Podcast Sync' to new tab in portable device options
+* Misc: [out_ds] Config now displays 7.1 speakers as '7.1' instead of 'Unknown'
+* Updated: Gracenote CDDB/MusicID v2.6.206
+* Updated: [gen_jumpex] JTFE v1.2.3
+* Updated: [in_vorbis] libogg v1.2.1 & libvorbis v1.3.2
+* Updated: [vp8] libvpx v0.9.5
+
+Winamp 5.5.81	[Jul 12 2010]
+* Improved: [pmp_android/usb] Disk-performance of metadata cache
+* Fixed: [gen_ml] Minor resource leak fix, plus other optimizations
+* Fixed: [gen_ff] Tooltip issue causing dialog windows to vanish underneath Winamp
+* Fixed: [ml_disc] CD drives not appearing in ML tree when ML starts not-visible
+* Fixed: [ml_wire] Sort by date before auto-downloading podcasts
+* Fixed: [pmp_android] Settings not being saved
+* Fixed: [pmp_android/usb] Manage with Winamp prompt always reappearing
+* Fixed: [pmp_android/usb] Transcoding on USB and Android devices
+* Misc: Lang Pack updates (de, ro, tr, fr, ru, se, ja)
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Updated: [gen_jumpex] JTFE v1.1.1
+
+Winamp 5.5.8	[Jun 29 2010]
+* New: 7digital mp3 store in Online Services
+* New: WebM Video support for in_mkv & vp8 decoder for in_nsv
+* New: [ml_downloads] Improved download manager for Podcasts and Online Services
+* New: [pmp_android] Android device support
+* Improved: New 256x256 icons for Win7/Vista (with filetypes support via gen_jumpex)
+* Improved: New Previous/Play/Pause/Stop/Next toolbar buttons for Win7 taskbar
+* Improved: New 'Vertically flip videos' option for compatibility with old drivers
+* Improved: Video OSD positioning & design improvements
+* Improved: [D3D video renderer] Overlay support for Win7
+* Improved: [in_flv] StreamTitle metadata support
+* Improved: [in_avi/in_mp3] Support for MPEG Layer 2 (mp2) audio in AVI
+* Improved: [in_mp4] MP4 http streaming improvements
+* Improved: [ml_bookmarks] Unicode bookmarks support (winamp.bm8)
+* Improved: [ml_history] Added option for resume playback position of podcasts
+* Improved: [ml_impex] Import/Export 'Publisher', 'Producer' & 'Director' fields
+* Improved: [ml_local/in_mp3] Write ratings to POPM frame in id3v2 tags (w.i.p.)
+* Improved: [ml_wire] Various tweaks to Subscriptions view
+* Improved: [pmp_ipod] Support for newer gen Classic models
+* Fixed: External language folder always looking in a 'en-US' folder
+* Fixed: Handling of global keyboard accelerator table (fixes: Ctrl+Alt+N, Ctrl+T, etc)
+* Fixed: Scrolling issues with high resolution mice
+* Fixed: Stackoverflow issue when loading a malformed whatsnew.txt
+* Fixed: [enc_flac] Compression Factor config setting (always outputting at level 5)
+* Fixed: [gen_ff] Default fallback font always same as TTF replacement font in Prefs
+* Fixed: [gen_jumpex] Elevation on Win7/Vista for Shell Options
+* Fixed: [gen_ml] Tree not focused when opening ML in modern skins
+* Fixed: [in_cdda] CD info edits not being remembered
+* Fixed: [in_mp4] Integer type coercion bug which caused certain MP4 files to crash
+* Fixed: [in_mp4] Playback of video-only files
+* Fixed: [in_mp4] Some vis plug-ins/presets not working with mp4
+* Fixed: [libmp4v2] Lockup when attempting to play malformed iTMS M4V videos
+* Fixed: [ml_local] Rating lost when updating mp3 file info (5.57-specific)
+* Fixed: [ml_pmp] pmp_*.dll plug-ins not being removed via: Prefs -> Uninstall
+* Fixed: [pmp_usb] No disk in drive error with card readers
+* Fixed: [pmp_usb] xml cache losing metadata (now using NDE instead)
+* Fixed: [vis_milk2] Some presets not loading under locales other than English
+* Fixed: [vp6] stack overflow with malformed codec data (thanks Nicolas Joly, VUPEN)
+* Misc: Added more genres to File Info dialog
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Misc: More translation fixes, localization updates & unicode support improvements
+* Misc: Moved ml_rg config settings to Prefs -> Playback -> Replay Gain
+* Misc: Improved uninstaller with options to remove bundled apps and user settings
+* Misc: Redesigned "Winamp Pro" prefs page
+* Updated: Gracenote CDDB/MusicID v2.6.205
+* Updated: [gen_jumpex] JTFE v1.1
+* Updated: [in_vorbis] libogg 1.2.0 & libvorbis 1.3.1
+* Updated: [lame_enc] LAME 3.98.4
+
+Winamp 5.5.72	[Jan 13 2010]
+* Improved: [h264.w5s] H.264 decoder optimizations
+* Improved: [in_avi/bmp.w5s] Support for RGB bitmap AVI
+* Improved: [ml_disc] Support for Disc# in CD Ripping naming convention
+* Fixed: Crash when using Alt+3 editor during mldb background scan
+* Fixed: EasyMove for classic video window
+* Fixed: Spectrum analyzer and beat vis for 32bit PCM files
+* Fixed: [bmp.w5s] Memory leaks with BMP AVI codecs (tscc, rle, yuv, rgb)
+* Fixed: [D3D] Crash when changing height but not width on back-to-back videos
+* Fixed: [gen_tray] Compact mode in Win7 popout tray
+* Fixed: [in_avi] Crash on files with missing RIFF header (including 0-byte files)
+* Fixed: [in_avi] Crash when ix## seektables aren't where they are supposed to be...
+* Fixed: [in_mod] Out of memory error with some older .mod files
+* Fixed: [in_mp3] ADTS header unicode/ansi issues (for .aac files)
+* Fixed: [ml_impex] UTF-8 writing
+* Fixed: [ml_local] Info editor erasing mldb fields not supported by input plug-in
+* Misc: Further attempts to fix reported elevation/registration issues on Vista & Win7
+* Misc: Installer: Only install Gracenote alongside dependent components
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Misc: Various translation updates (note: French lang pack now updated to 5.57x)
+* Updated: [gen_jumpex] JTFE v1.0.7.3
+* Updated: libpng 1.4.0
+* Updated: libsndfile 1.0.21
+
+Winamp 5.5.71	[Dec 21 2009]
+* New: MPEG-4 video support for in_mp4 & in_flv (Winamp Pro only)
+* New: [in_avi] Native AVI video support (MPEG-4 = Winamp Pro only)
+* New: [in_mkv] Matroska MKV video support (MPEG-4 = Winamp Pro only)
+* New: [ml_addons] Browser for discovering new skins & plug-ins
+* New: Winamp detection browser plug-ins for IE & Firefox
+* Improved: Direct3D video rendering
+* Improved: Filetype association handling on Vista & Windows 7
+* Improved: New fullscreen video OSD
+* Improved: Added ReplayGain Preamp control to Prefs (previously .ini only)
+* Improved: VU meter (beat vis) optimizations
+* Improved: [gen_ff] Multithreaded <AlbumArt/> object
+* Improved: [in_flac/in_vorbis] Tag support for Organization field as Publisher
+* Improved: [in_flv] AAC, aacPlus & ADPCM audio support in FLV files
+* Improved: [in_mp4] Support for aacPlus parametric stereo in mp4 container
+* Improved: [in_nsv] Native h.264 decoding (Winamp Pro only)
+* Improved: [in_wave] Unicode filename handling
+* Improved: [ml_history] Play Offset feature for resuming playback of podcasts
+* Improved: [ml_local] Director & Producer fields & columns for videos
+* Improved: [ml_local] Row cache for NDE to vastly speed up queries
+* Improved: [ml_online] Right-click option to open service in new window
+* Improved: [ml_wire] feed:// pcast:// and winamp:// protocol support
+* Improved: [ml_wire] Option to automatically download 'x' most recent episodes
+* Improved: [ml_wire] Redesigned Podcast Directory view
+* Improved: [pmp_usb] Option to set paths in saved playlists
+* Improved: [vis_milk2] Milkdrop2 updated to use ns-eel2 (thanks Justin)
+* Fixed: Custom mldb info reverts to filename on Alt+3 for in_dshow, flv & swf
+* Fixed: Elevator installation and Aero compatibility issues in 5.57 on Windows Vista
+* Fixed: HeapSetInformation not located in kernel32 error under Win2k
+* Fixed: Shuffle feature broken under limited user profiles
+* Fixed: Various other reported issues/bugs/crashes with 5.57
+* Fixed: [gen_ml] Bold text in Local Media views on some systems
+* Fixed: [gen_tray] Compact mode not working on 64-bit OS
+* Fixed: [in_flac] Playback freezing before end of some corrupted files
+* Fixed: [in_flv] Sync issue where video lags behind audio on some flv files
+* Fixed: [in_flv] Various h.263-related crash issues
+* Fixed: [in_mod] Heap overflow security vulnerability (thanks Dyon Balding, Secunia)
+* Fixed: [in_mod] Some s3m files crashing on load
+* Fixed: [in_mp4] Various transcoding issues
+* Fixed: [in_wm] Main window & taskbar menu blocked after closing DRM browser
+* Fixed: [jpeg.w5s/png.w5s] Security vulnerability fixes (thanks Nicolas Joly, VUPEN)
+* Fixed: [ml_local] Remove missing files broken in full rescan
+* Fixed: [ml_wire] feeds.xml sometimes being destroyed
+* Fixed: [pmp_p4s] Crashing with certain devices
+* Fixed: [vis_avs] Compile issues causing some presets to not load properly or crash
+* Misc: Improved Windows 7 compatibility, incl. aero thumbnail & taskbar integration
+* Misc: More general tweaks, improvements, fixes and optimizations
+* Misc: New info page for lang pack developers in About Winamp dialog
+* Misc: New MPEG-4 video support adds h264.w5s & mp4v.w5s
+* Misc: Renamed nsvdec_vp6.dll to vp6.w5s
+* Misc: Removed gen_dropbox from the installer, for now...
+* Misc: Right-click to close Notifier in Bento skin
+* Misc: Some keyboard accelerator fixes (new Ctrl+Alt+B for Add current to bookmarks)
+* Misc: Various installer improvements (including new DirectX version checker)
+* Updated: aacPlus decoder 8.2.2, encoder 8.2.0
+* Updated: Gracenote CDDB/MusicID v2.6.101
+* Updated: libpng 1.2.40
+* Updated: [gen_jumpex] JTFE v1.0.7.1
+* Updated: [in_vorbis] libvorbis 1.2.3 & libogg 1.1.4
+
+Winamp 5.5.6	[Jul  2 2009]
+* New: Winamp Orgler plug-in - Let's you track, chart & share your listening history
+* Improved: [jnetlib] New SSL support for playback of https:// streams
+* Improved: [ml_autotag] Fuzzy matches now unchecked by default & marked 'Unsure'
+* Improved: [ml_local] New background scanner
+* Improved: [ml_online] Various tweaks, fixes & enhancements
+* Improved: [ml_pmp] Added support for drag+drop from Explorer to device playlists
+* Fixed: iexplore process not ending when browser closed after opened via Winamp
+* Fixed: Save EQ preset name duplication bug
+* Fixed: [Bento skin] SHOUTcast homepage url's redirecting to Winamp search
+* Fixed: [gen_jumpex] Up/down buttons reversed, 'stop after current' & other issues
+* Fixed: [in_mod] Crash on some .s3m modules (w.i.p.)
+* Fixed: [in_mod] Playback glitch during background transcoding
+* Fixed: [in_wm] Decimal point issues in Alt+3 format info
+* Fixed: [in_wm] Embedded IE browser for DRM license acquisition
+* Fixed: [in_wm] Loading of URLs in WPL playlist files
+* Fixed: [in_mp4/libmp4v2] Integer overflow bug with MP4 sample size
+* Fixed: [libsndfile] VOC buffer overflow vulnerability
+* Fixed: [ml_impex] Read "has video" field from iTunes XML (and write on export)
+* Fixed: [tagz.w5s] Hang with $right function in ATF when specified field is empty
+* Fixed: [vis_avs] msvcp71.dll dependency
+* Misc: Added front.jpg/gif/etc to album art criteria
+* Misc: More miscellaneous general tweaks, improvements, fixes and optimizations
+* Misc: New omBrowser.w5s shared component for ml_nowplaying, wire & online
+* Misc: Removed dashboard (ml_dash) from distribution
+* Misc: ml_orb now only installed as part of separate Winamp Remote package
+* Updated: [gen_jumpex] JTFE v1.0.5
+* Updated: libsndfile 1.0.20
+
+Winamp 5.5.52	[Apr 10 2009]
+* Fixed: [gen_ff] memcpy integer overflow vulnerability in maki script loading
+
+Winamp 5.5.51	[Mar  9 2009]
+* Fixed: [libsndfile] CAF Processing Integer Overflow Vulnerability
+* Updated: libsndfile 1.0.19
+
+Winamp 5.5.5	[Feb 27 2009]
+* New: Turkish, Portuguese-BR & Romanian installer translations and language packs
+* New: WBM system for lazy-loading of *.w5s files
+* New: [Bento skin] Playlist tab (optional)
+* New: [ml_impex] iTunes-compatible Media Library database import/export plug-in
+* Improved: [gen_ff] Faster & no flicker when loading/switching skins
+* Improved: [gen_jumpex] New 'Add to Library' shell menu item & other tweaks
+* Improved: [gen_jumpex] True unicode search support
+* Improved: [gen_ml] Optional alternating row colors for list views
+* Improved: [gen_ml] Optional skinned menus
+* Improved: [in_mod] Experimental ExtendedRead support (transcoding, burning, etc)
+* Improved: [in_mod] Now uses global Playback config for thread priority
+* Improved: [in_mp3] APEv2 tag editing/creating tweaks
+* Improved: [in_mp3] Show instantaneous bitrates for AAC VBR
+* Improved: [ml_local] Media Library searches now ignore diacritics
+* Improved: [ml_local] New 'Category' and 'Lossless' database fields
+* Improved: [ml_local] New playcount Tracking Control options
+* Improved: [ml_local] New 'Play/Enqueue random' item for top level filters
+* Improved: [ml_online] New toolbar and various other tweaks & optimizations
+* Improved: [ml_online] Support for 3rd-party Services
+* Improved: [vis_milk2] Pixel Shader 2.0 & 3.0 support tweaks
+* Improved: [vis_nsfs] Unicode title display for currently playing track
+* Improved: [Winamp Agent] Localization support
+* Improved: [Winamp Modern skin] New spectrum vis options
+* Fixed: Accessibility fixup for Format Info string in Alt+3 dialog
+* Fixed: Genre not being saved with Autotag feature in Alt+3 dialog
+* Fixed: Memory leaks in in_mp3, in_wm, gen_dropbox, ml_local, ml_pmp & tagz.w5s
+* Fixed: New version check can't be disabled when anon statistics is enabled
+* Fixed: Rare crash when closing vis window
+* Fixed: Various issues when starting/stopping/switching vis plug-ins
+* Fixed: [Agent] Systray icon not showing if 'Play in Winamp' removed in Shell Options
+* Fixed: [enc_flac] 24-bit FLAC encoding
+* Fixed: [gen_jumpex] Shell Options, B Hotkey, Send To menus & other misc bugs
+* Fixed: [gen_ml] Library button resize glitch
+* Fixed: [in_cdda] Potential cddb Disc null pointer crash
+* Fixed: [in_flac] Albumartist & Ensemble fields not cleared when deleting Album Artist
+* Fixed: [in_flac] Track restarts when updating metadata
+* Fixed: [in_mp3] Potential ID3v2.0/2.1 crash issue
+* Fixed: [in_mp4] Empty genre metadata field (eg. when transcoding from flac to m4a)
+* Fixed: [in_mp4] Long hangs on slow network drives
+* Fixed: [libsndfile] AIFF buffer overflow vulnerability (thanks milw0rm/secunia)
+* Fixed: [ml_disc] Potential crash on exit
+* Fixed: [ml_disc] 'Use uppercase file extensions' ripping option not being respected
+* Fixed: [ml_history] Tracking still updates if playback stopped before specified time
+* Fixed: [ml_local] Broken 'Create Playlist' button functionality in local media
+* Fixed: [ml_local] Remove missing files broken with some older/corrupt databases
+* Fixed: [ml_wire] Columns sometimes hidden in Downloads view
+* Fixed: [ml_plg] Multiple 'Failed to initialize' error messages
+* Fixed: [ml_pmp] Crash when deleting playlists/files from a P4S portable device
+* Fixed: [ml_pmp] Metadata hooking, transcoder, autofill and other bug fixes
+* Fixed: [nde] Albums with % in title not displaying tracklist in local media views
+* Fixed: [out_ds] Logarithmic volume control dB display glitch
+* Fixed: [pmp_ipod] Deletion of non-existent files from database
+* Fixed: [pmp_ipod] Reading of Play Count statistics
+* Fixed: [pmp_ipod] Various database, albumart, playback & disconnection issues
+* Misc: More miscellaneous general tweaks, improvements, fixes and optimizations
+* Misc: New "Send Feedback" item in the Help menu
+* Misc: Note that changes made to the ml database are not backwards compatible!
+* Misc: Removed some older Milkdrop presets and added some newer ones
+* Misc: Separated vlb.w5s and nsvdec_vp3.dll decoders from in_mp3 and in_nsv
+* Misc: Separated timer from gen_ff into timer.w5s
+* Updated: Gracenote CDDB/MusicID v2.6.0.6
+* Updated: libpng 1.2.35
+* Updated: Sonic Burning Engine v4.10.32.502
+* Updated: [gen_jumpex] JTFE v1.0.4
+* Updated: [in_mp3] Fraunhofer Decoder v4.3
+* Updated: [lame_enc] LAME 3.98.2
+* Updated: [vis_avs] AVS v2.82
+
+Winamp 5.5.41	[Aug  4 2008]
+* Improved: [pmp_ipod] Better auto-detection of newer iPod models
+* Fixed: Filetype icons in Windows Explorer not updating when changed in Prefs
+* Fixed: ML & Vis appear under other overlapping modern skin windows
+* Fixed: No error message when trying to edit metadata for Read-Only files
+* Fixed: Potential security vulnerability in NowPlaying
+* Fixed: [gen_ff] Keyboard shortcuts in modern skin playlist windowshade mode
+* Fixed: [gen_ml] Scrolling to bottom of AlbumArt pane & other misc scrollbar issues
+* Fixed: [in_mp3] Broken '307 - Temporary Redirect' url's
+* Fixed: [ml_local] AlbumArt icon selection glitch
+* Fixed: [ml_playlists] Play and Enqueue actions reversed if Enqueue is set as default
+* Fixed: [ml_rg] ReplayGain analysis of 20bit files
+* Misc: Double-click Modern pledit songticker now toggles windowshade mode again
+* Misc: More miscellaneous general tweaks, improvements, fixes and optimizations
+
+Winamp 5.5.4	[Jul  8 2008]
+* New: Chinese, Japanese & Korean installer translations and language packs
+* New: [in_swf] Adobe Shockwave Flash (SWF, RTMP) playback support
+* New: [gen_dropbox] Winamp DropBox alpha (use: Ctrl-Shift-D)
+* New: [Online Services] AOL Radio featuring CBS Radio (requires in_flv)
+* Improved: Background reading option for playlist metadata
+* Improved: Classic songticker scrolling for Winamp Modern skin pledit winshade
+* Improved: Vista elevation (fixes: installing skins, filetype reg, Pro reg)
+* Improved: Zero padding option for playlist item numbers
+* Improved: [in_flv] Better streaming support and other improvements
+* Improved: [in_mp3] Added APEv2 tag options to configuration
+* Improved: [in_mp3] Optional retention of existing APEv2 headers
+* Improved: [ml_disc] Artwork support for Data CD Reader
+* Improved: [ml_disc] Better detection of any copy operations in progress
+* Improved: [ml_disc] Improved start times if ml_disc view is active
+* Improved: [ml_local] Redesigned 'Show Info' panel
+* Improved: [ml_nowplaying] Redesigned 'Now Playing' artist experience
+* Improved: [ml_playlists] Right-click option to sort list of playlists alphabetically
+* Improved: [pmp_usb] Connect/Disconnect/Blacklist config options
+* Fixed: Alt+F4 closing Winamp instead of individual dialogs
+* Fixed: Bento browser redirecting network drive url's to Winamp Search
+* Fixed: Blank playlist when in docked toolbar mode and Winamp is minimized
+* Fixed: Modern skin component windows appearing individually in Alt+Tab
+* Fixed: Multi-flashing on startup when previously closed whilst minimized to systray
+* Fixed: Pure Virtual Function Call runtime crash errors
+* Fixed: Redraw issue when built-in classic vis is disabled
+* Fixed: Various multi-monitor docking issues
+* Fixed: Various other 5.53-specific keyboard accelerator issues
+* Fixed: [Bento] Drag+Drop into Playlist from Open Files dialog
+* Fixed: [burnlib] 'CD Drive locked by another Winamp process' on 2nd burn attempt
+* Fixed: [burnlib] 'Burner releasing failed' error
+* Fixed: [dsp_sps] Crash on close when config Help dialog is still open
+* Fixed: [enc_flac] MD5 checksum generation
+* Fixed: [gen_ff] Attached vis plug-in crash on winshade to normal mode in Modern skin
+* Fixed: [gen_hotkeys] Assigning Winkey with already used Ctrl combinations
+* Fixed: [gen_ml] Enter/Shift+Enter broken for ML treeview items (5.53-specific)
+* Fixed: [in_cdda] Composer/Conductor logic bug when saving CDDB data to database
+* Fixed: [in_flac] Minor metadata writing bugs
+* Fixed: [in_midi] Seeking with 'DM/MS Synth' device in Streamed playback mode
+* Fixed: [in_mp3] Crash on files with invalid/corrupt gapless data
+* Fixed: [in_mp3] Create new ID3v1/v2 tags configuration setting
+* Fixed: [in_vorbis] Huge lag on files with large embedded cover art
+* Fixed: [in_vorbis] Metadata & Format Info display for streams in View File Info
+* Fixed: [in_vorbis] Potential unicode-related crash on open/close issue
+* Fixed: [jpeg.w5s] Saving corrupt album art
+* Fixed: [ml_autotag] Results dialog hidden under Winamp when AOT is enabled
+* Fixed: [ml_disc] Small resource leak
+* Fixed: [ml_playlists] Autoscroll broken when dragging items in large playlists
+* Fixed: [ml_playlists] Enter/Shift+Enter broken for selected ML Playlist items
+* Fixed: [ml_playlists] Not respecting overlapping external windows on item drag+drop
+* Fixed: [ml_playlists / ml_transcode] Sending playlists from ML tree to Transcoder
+* Fixed: [ml_wire] 404/timeout with valid rss feeds on Vista
+* Misc: Miscellaneous localization tweaks, fixes & updates
+* Misc: More miscellaneous general tweaks, improvements, fixes and optimizations
+* Misc: Setup fixes (Agent not always starting, WLZ filetype not registering, etc)
+* Misc: Various other 'Winamp Modern' & 'Bento' skin updates
+* Misc: [enc_flac] Now encodes using libFLAC instead of Flake
+* Updated: Bento skin v1.2
+* Updated: freetype 2.3.7
+* Updated: libpng 1.2.28
+* Updated: [enc_lame] LAME 3.98
+
+Winamp 5.5.31	[Apr  1 2008]
+* Fixed: Bento browser redirecting some url's to Winamp Search
+* Fixed: Bento collapse/expand button bug
+* Fixed: Recent URL's not saving (5.53-specific)
+* Fixed: Total time display of selected tracks in Classic playlist (5.53-specific)
+* Fixed: [jnetlib] AOL Radio skipping/buffer issue
+* Fixed: [ml_local] Right-click Play/Enqueue all items issue in 3-pane views
+* Fixed: [ml_playlists] Broken right-click context menu items (5.53-specific)
+
+Winamp 5.5.3	[Mar 28 2008]
+* Improved: Different shell descriptions for different associated filetypes
+* Improved: New 'Refine Search' feature in Cover Art Downloader dialog
+* Improved: Unicode support for Language Packs incompatible with system locale
+* Improved: [in_cdda] Now reads & writes CD data to an NDE database
+* Improved: [in_cdda/ml_disc] Reimplementation of simple offline CD Info Editor
+* Improved: [in_flac] Faster FLAC metadata gathering
+* Improved: [in_mp3] More accurate .AAC length calculation
+* Improved: [in_wav/in_mp4] Support for http streaming of files larger than 2GB
+* Improved: [ml_disc] Added support for Data CD reading (w.i.p.)
+* Improved: [ml_local/nde] Background scanning & database optimizations
+* Improved: [ml_local] Unicode compliant filename-based metadata guessing
+* Improved: [ml_transcode] Remove trailing periods from destination filepath
+* Improved: [pmp_usb] Added AlbumArtist support to Naming Convention
+* Fixed: Classic EQ appearing with Modern skins after switch->minimize->restore
+* Fixed: Various miscellaneous Album Art related issues
+* Fixed: [enc_lame] Now rejects multi-channel and above 48KHz source files
+* Fixed: [gen_ff] Translated skin image loading
+* Fixed: [gen_ml] Header sort arrow and Rating column display under Windows 2000
+* Fixed: [gen_ml] Various drawing glitches when changing views
+* Fixed: [in_cdda] CDDB crash under limited connectivity conditions
+* Fixed: [in_cdda] Spectrum vis in analog MCI playback mode
+* Fixed: [in_flac] Small memory leak when writing FLAC metadata
+* Fixed: [in_flv] Last two seconds of flv videos being cut off
+* Fixed: [in_mp3] Crash on encountering a bad ID3v2 version (e.g. ID3v2.F)
+* Fixed: [in_mp4] Crash on file-not-found during background decode
+* Fixed: [in_wave] Infinite loop on attempted repeat playback of dead files
+* Fixed: [in_wm] ASX v2 loading
+* Fixed: [in_wm] Crash on files & streams with a huge discontinuity jump
+* Fixed: [in_wm / out_ds] Copy 'Status' to clipboard Unicode bug
+* Fixed: [ml_autotag] Crash with certain tracks
+* Fixed: [ml_history] Crash on drag+drop all history items to playlist
+* Fixed: [ml_local] Rating of items with Unicode filenames
+* Fixed: [ml_online/orb] Nodes dropping to bottom of ML tree on Lang Pack change
+* Fixed: [ml_playlists] Play playlist from Media Library main menu item
+* Fixed: [pmp_ipod] Filename length incompatibility with iPod Music Quiz v2
+* Fixed: [pmp_ipod] Missing 'Advanced' button in Edit Query dialog
+* Fixed: [pmp_ipod] Physical deletion of playing file
+* Misc: Added Russian installer translation and language pack
+* Misc: In2TV removed from Online Services
+* Misc: Installer now built with NSIS Unicode version [thanks Jim Park]
+* Misc: More miscellaneous general tweaks, improvements and optimizations
+* Misc: Moved shared zlib.dll compression library out of winamp.exe
+* Updated: Bento skin v1.1 #120
+
+Winamp 5.5.2	[Jan 15 2008]
+* Improved: Better Unicode filename support for enc_*.dll audio encoders
+* Improved: [ml_transcode] Unicode filename support
+* Improved: [in_mp3] APEv2 tag support
+* Improved: [in_flac] Support for reading/writing BPM metadata
+* Improved: [nde] Optimized for faster mldb query results
+* Improved: [vis_milk2] Pixel shaders now work on onboard Intel graphics chips
+* Fixed: Comment field character limitation in Basic Info tab of File Editor
+* Fixed: Playback Thread Priority middle setting resets to Lowest
+* Fixed: [in_mp3] Ultravox streaming metadata stack overflow (Thanks: Secunia)
+* Fixed: [in_mp4] Crash when attempting to play non-existent files
+* Fixed: [in_vorbis] Crash when clearing existing metadata fields in File Info
+* Fixed: [in_wave] Transcoding of floating point WAV files
+* Fixed: [ml_transcode] Memory leaks
+* Misc: More miscellaneous general tweaks and improvements
+* Updated: Bento skin #118
+
+Winamp 5.5.1	[Dec 19 2007]
+* New: Autoplay Handlers for Audio, MP3 and Video CD's on WinXP & Vista
+* New: Default Programs registration for installations on Windows Vista
+* New: Optional Constant-Q Equalizer and optional ISO Standard frequency bands
+* New: [in_flv] Flash Video decoder (vp6 only, not h.263)
+* Improved: Browser download manager now uses CD Ripping destination folder
+* Improved: Deletion of embedded album art via Artwork tab in File Info
+* Improved: More accurately translated Language Packs
+* Improved: More miscellaneous UI/dialog tweaks & improvements
+* Improved: Option to set the number of pixels to scroll for modern songticker
+* Improved: [Gracenote/MusicID] Better error checking & memory cache optimizations
+* Improved: [gen_ff] More miscellaneous freeform skinning engine optimizations
+* Improved: [gen_hotkeys] Added optional WM_APPCOMMAND support for media keys
+* Improved: [gen_hotkeys] Added increase + decrease rating on current track
+* Improved: [in_dshow] Reading of length and bitrate for non-default video formats
+* Improved: [in_flac] Optimized disk caching for increased performance
+* Improved: [in_mp3] Better optimization for older Pentium Pro/2/3 cpu's
+* Improved: [in_mp3] Support for reading ALBUM ARTIST field if TPE2 not present
+* Improved: [in_mp4] Better Unicode support and metadata read optimizations
+* Improved: [in_mp4] Optimized disk caching/reading
+* Improved: [in_vorbis] Support for reading YEAR field if DATE not present
+* Improved: [ml_disc/in_cdda] Disc reading tweaks and other general optimizations
+* Improved: [ml_history] New tracking control options
+* Improved: [ml_local] Added column for BPM
+* Improved: [ml_local] Album column sorting order logic
+* Improved: [ml_local] Better playlist handling
+* Improved: [ml_local] Bumped track# metadata guessing limit from 130 to 999
+* Improved: [ml_local] Database query and memory optimizations
+* Improved: [ml_pmp] Support for drag&drop from Explorer into portable device view
+* Improved: [ml_transcode] Prompt to delete aborted transcodes
+* Fixed: Artwork not found if .nfo filename contains a period
+* Fixed: ASX Parser converting all stream links in .asx playlists to upper case
+* Fixed: Classic songticker wraparound glitchiness
+* Fixed: Dragging/scrolling of songticker text after resize
+* Fixed: Global Hotkeys list destroyed when changing language packs
+* Fixed: Gracenote CDDB Editor genre selection glitches
+* Fixed: Gracenote/MusicID not using Winamp's proxy setting
+* Fixed: Parsing of ansi ASX playlists containing non-standard characters
+* Fixed: Restore from System Tray if previously closed in a minimized state
+* Fixed: Setup resetting desktop icons :-o
+* Fixed: Spectrum vis incompatibility crash with some 3rd-party input plug-ins
+* Fixed: Truetype replacement font alignment in Winamp Modern winshade songticker
+* Fixed: Various miscellaneous keyboard shortcut issues
+* Fixed: Winamp Agent registry entry typo (wianmpa.exe)
+* Fixed: [Bento] Collapse/Expand Playlist not respecting 'Show Album Art' setting
+* Fixed: [gen_ff] Potential high CPU usage of songticker object
+* Fixed: [gen_ff] TrueType replacement font change not updating in real-time
+* Fixed: [gen_hotkeys] Restore from minimized state whilst About dialog is open
+* Fixed: [gen_ml] Blank ML when restarting Winamp from a minimized state
+* Fixed: [gen_ml] Cancelling Online Media password prompt clears password & filters
+* Fixed: [in_dshow] Miscalculation of some mpeg video lengths
+* Fixed: [in_flac] Divide-by-zero crash on corrupt files
+* Fixed: [in_mp3] Deleting Lyrics3 tag in Alt+3 Editor also deletes ID3v1 tag
+* Fixed: [in_mp3] Handling of ID3v2 with bad version/revision #'s
+* Fixed: [in_mp3] ID3v2 parsing crash with some mp3's
+* Fixed: [in_mp3] ID3v2 tag not showing when ID3v1 tag reading is disabled in config
+* Fixed: [in_mp3] MPEG Info not showing in Alt+3 for files with large ID3v2 tags
+* Fixed: [in_mp3] Now only reads first ID3v2 tag if more than one is present
+* Fixed: [in_mp3] Winamp UI freezes when loading certain corrupt mp3's
+* Fixed: [in_mp4] Playback of mp3 in mp4 container
+* Fixed: [in_mp4] Seeking when paused
+* Fixed: [in_mp4/jpeg.w5s] Crash when Art field is in metadata with no embedded art
+* Fixed: [in_vorbis] UTF8->UTF16 optimized (fixes File Info delay bug)
+* Fixed: [libmp4v2] Corrupt m4a's not playing, better handling of ones beyond repair
+* Fixed: [ml_autotag] Crash when track isn't part of a disc, eg. internet-only releases
+* Fixed: [ml_autotag] Stops processing when switching to another ml view
+* Fixed: [ml_disc] CD view/titles not refreshing when ejecting old/inserting new CD
+* Fixed: [ml_disc] Crash when using invalid strings in playlist filename generation
+* Fixed: [ml_disc] No Burn button under some system configurations
+* Fixed: [ml_disc/ml_pmp/ml_transcode] Processing of # in Destination Folder path
+* Fixed: [ml_local] Artist column in descending order when sorting by Year
+* Fixed: [ml_local] Down key in Search field not focusing the Simple View list
+* Fixed: [ml_local] Last Updated, Album Gain & Podcast column sorting orders
+* Fixed: [ml_local] Two filters always checkmarked in Edit View for Simple views
+* Fixed: [ml_playlists] Shift+Enter hotkey to Enqueue playlist
+* Fixed: [ml_plg] Crash when stopping Playlist Generator scan or resetting database
+* Fixed: [ml_pmp] Column sorting orders
+* Fixed: [ml_rg] Restore from minimized state whilst rg results dialog is open
+* Fixed: [ml_transcode] Restore from minimized state whilst config dialog is open
+* Fixed: [ml_wire] Podcasts not being downloaded if <title> includes carriage returns
+* Fixed: [ml_wire] Lockup when encountering scripts in <description> field
+* Fixed: [out_disk] Output folder always resetting to My Documents\My Music
+* Fixed: [pmp_ipod] 'Add album art' option always checkmarked
+* Fixed: [tataki] Potential crash when encountering an invalid/superficial error
+* Fixed: [vis_milk2] Crash when exiting fullscreen back to attached Modern skin window
+* Misc: Alt+3 Auto-Tag now saves Gracenote FileId and ExtData fields
+* Misc: Double-click Stereo indicator to open Playback prefs (Bento & Modern skins)
+* Misc: Installation is now prevented on Win9x
+* Misc: Made Milkdrop2 the default vis plug-in
+* Misc: Split the Playback prefs into 3 tabs: Playback, Equalizer & Replay Gain
+* Misc: Various installer setup & localization translation tweaks
+* Misc: Various Bento skin fixes, tweaks and improvements
+* Misc: Various Winamp Modern skin 5.5-related updates
+* Misc: [ml_local] Removed deprecated 'Show album gain values' option in Prefs
+* Updated: Bento skin #117
+* Updated: Gracenote MusicID/CDDB v2.5.1
+* Updated: libpng 1.2.22
+* Updated: [vis_milk2] MilkDrop 2.0c
+
+Winamp 5.5	[Oct  9 2007]
+* New: Bento SingleUI Skin
+* New: Auto-Tagger in File Info dialog (powered by Gracenote)
+* New: Album Art support, including new window for Winamp Modern skin
+* New: Fully translatable Localization support
+* New: WLZ (Winamp Language Zip) filetype support
+* New: Global 'playback thread priority' setting for decoders
+* New: Media Monitor and MP3 Blog site scraper (in Bento browser)
+* New: Option to set the number of lines to scroll in the Playlist 
+* New: Option to not show playlist item number in classic songticker
+* New: Option to not show the playlist number in the Windows taskbar
+* New: Redesigned Installer
+* New: Run Setup switch, winamp.exe /REG=S
+* New: Unified File Editor, with Artwork tab (for mp3, m4a, wma, ogg, flac)
+* New: Version History drop-down selector and Search (in About dialog)
+* New: Winamp Toolbar for Internet Explorer (optional)
+* New: %family% ATF string for identifying filetypes
+* New: $split() ATF function for splitting x/y disc & track strings
+* New: [in_mp3] Multi-channel mp3surround support
+* New: [gen_ml] Tree Options tab in Media Library Preferences
+* New: [ml_autotag] Mass Auto-Tagger in Send-To menu (powered by Gracenote)
+* New: [ml_local] 3 pane view options in 'Add/Edit View' dialog
+* New: [ml_local] Smart View Presets
+* New: [ml_local] Album Art support/pane and retrieval service
+* New: [ml_local] Toolbar buttons to control view options
+* New: [ml_plg] Winamp Playlist Generator (powered by Gracenote MusicID)
+* New: [ml_pmp] New fields, configurable filter panes & columns, 3 pane view
+* New: [ml_pmp] Album Art view & support for iPod and P4S Devices
+* New: [ml_pmp] Separate view for video files
+* New: [vis_milk2] Milkdrop2 Visualizer
+* Improved: General misc UI/Dialog tweaks & improvements
+* Improved: Re-tuned and optimized classic Spectrum Analyzer
+* Improved: Surround indicator in Winamp Modern skin for multi-channel files
+* Improved: Classic Songticker option for Winamp Modern skin (via Config drawer)
+* Improved: [in_cdda] Conductor metadata support
+* Improved: [in_cdda] Handling of multiple discs
+* Improved: [in_flac/in_vorbis] ALBUM ARTIST & ENSEMBLE read support
+* Improved: [in_flac] Advanced Editor mode
+* Improved: [in_mod] Added support for more than 256 samples
+* Improved: [in_mp3] Faster metadata gathering (also speeds up ReplayGain scan)
+* Improved: [in_mp4] Smoother data sent to vis & other minor tweaks
+* Improved: [in_wm] Faster WMA/WMV metadata gathering
+* Improved: [gen_ff] General freeform skinning engine optimizations
+* Improved: [gen_ml] Collapsed/expanded state of treeview items now remembered
+* Improved: [gen_ml] Skinned scrollbars in Media Library for newer Modern skins
+* Improved: [gen_ml] Reordering of treeview items (via drag+drop)
+* Improved: [ml_disc] Better Unicode support & other misc tweaks
+* Improved: [ml_history] Unicode support
+* Improved: [ml_local] Customize Columns menu for top filter panes
+* Improved: [ml_local] Option to show horizontal scrollbar for top panes
+* Improved: [ml_local] New 'Podcasts' view (appears after downloading a podcast)
+* Improved: [ml_local] Added ISPODCAST and PODCASTCHANNEL field names
+* Improved: [ml_local] Added BEGINSLIKE comparison operator
+* Improved: [ml_local] Dragging of headers to sort column order
+* Improved: [ml_local] Redesigned Smart View Editor
+* Improved: [ml_local] Star Rating display and selection
+* Improved: [ml_pmp] 'Copy to Local Media' config separated from CD Ripping settings
+* Improved: [ml_pmp] Portables "Sync" can now keep podcasts updated
+* Improved: [ml_rg] ReplayGain calculation support for 64, 88.2 & 96 KHz samplerates
+* Improved: [ml_wire] Optional automatic downloading of new podcast episodes
+* Improved: [ml_wire] Multi-select, 'Send To' menu and other general enhancements
+* Improved: [ml_wire] Podcast downloads now saved in channel subfolders
+* Improved: [ml_wire] Updated podcast directory
+* Improved: [pmp_ipod] Now uses the iPod's podcast menu for podcasts
+* Fixed: 'All supported files' showing all filetypes in Open Files dialog
+* Fixed: Esc key not working in Credits & Winamp tabs of About Box
+* Fixed: Long filepaths corrupted when opening Winamp via Explorer context menu
+* Fixed: Oversized preference pages with large DPI setting
+* Fixed: Recurrence of multiple instances bug (previously fixed in 5.3)
+* Fixed: Selecting 'No' for 'Physically Remove' prompt removes playlist/mldb item
+* Fixed: TV button in video window not working
+* Fixed: Windows showing if switching from modern to classic skin in minimized state
+* Fixed: [ASX Loader] Recursive playlist loading & case-insensitive element matching
+* Fixed: [ASX Loader] Handling of entries embedded within a REPEAT tag
+* Fixed: [dsp_sps] DEP incompatibility
+* Fixed: [gen_ff] "Can't unload script while in script" error when switching skins
+* Fixed: [gen_ff] Remember ML size when switching between Modern & Classic skins
+* Fixed: [gen_ff] Transparent docked toolbars for skins using alpha-blending
+* Fixed: [gen_ff] 10% opacity not applying on skins that add items to rt-click menu
+* Fixed: [gen_jumpex] Crash when loading multiple files via Explorer context menu
+* Fixed: [gen_jumpex] Remove Duplicate Entries action broken in pledit
+* Fixed: [gen_ml] %playcount% returning Comment on drag+drop from ML to pledit
+* Fixed: [gen_ml] Shift+Insert (New Playlist) and F1 (Help) keyboard shortcuts
+* Fixed: [in_cdda] CDDB crash when attempting to rip a CD in a 2nd instance of Winamp
+* Fixed: [in_flac] General FLAC Editor quirks (Comments field, Enter key, etc)
+* Fixed: [in_flac] 24bit files don't play when 'Allow 24bit' setting is disabled
+* Fixed: [in_mod] Fadeout value goes below 0.0 sec in in_mod config
+* Fixed: [in_mod] Interpolator 'division by zero' crash bug
+* Fixed: [in_mp3] Crash on some mp3's with corrupt ID3v2 extended headers (rare)
+* Fixed: [in_mp3] Crash on loading corrupt id3v2.3 tags of a later revision
+* Fixed: [in_mp3] Negative bitrate in File Info for long mp3's
+* Fixed: [in_mp4] Glitch when modifying metadata on playing track
+* Fixed: [in_mp4/libmp4v2] Memory leaks
+* Fixed: [in_wave/libsndfile] Crash on invalid .au files 
+* Fixed: [in_wm] Garbage characters when editing filetypes in config
+* Fixed: [in_wm] Potential DRM lockup issue
+* Fixed: [ml_disc] 0 byte temp files not deleted after ripping
+* Fixed: [ml_disc] Double-click drive icon in Rip & Burn not selecting tree item
+* Fixed: [ml_disc] Crash when using <trackartist> in playlist filename generation
+* Fixed: [ml_disc] Drag+drop from Audio CD view to Playlist Editor
+* Fixed: [ml_local] (no album) items adding to Album count in Artist pane
+* Fixed: [ml_local] isempty and =0 queries now return same results
+* Fixed: [ml_local] Add dir to 'Watch Folders' path truncated to 64 characters
+* Fixed: [ml_pmp] Inserting extra period in filename when transcoding to mp4/aac
+* Fixed: [ml_pmp] Sending ansi-converted titles instead of Unicode
+* Fixed: [ml_pmp] Transfer caption building when Artist metadata is empty
+* Fixed: [ml_wire] Subscription Updates setting always resets to 'Never'
+* Fixed: [pmp_ipod] Potential incompatability issues with latest version of iTunes 
+* Fixed: [pmp_p4s] 'Error In Insert' when transferring to some P4S devices
+* Fixed: [pmp_usb] Slow Winamp startup when external usb drive connected 
+* Fixed: [vis_milk] Milkdrop DEP incompatibility
+* Misc: Winamp Remote is now an installer option (ml_orb.dll)
+* Misc: Moved drawing engine out of gen_ff to tataki.dll
+* Misc: Moved freetype font renderer out of gen_ff to freetype.wac
+* Misc: Removed deprecated .LNG Language file support
+* Misc: Removed db.w5s (replaced by new Gracenote database system)
+* Misc: Removed Station Info window and Prefs page
+* Misc: Removed unicows.lib/dll as we have officially dropped support for Win9x
+* Updated: Gracenote MusicID/CDDB v2.5
+* Updated: libpng 1.2.20
+* Updated: [enc_aacplus] Coding Technologies aacPlus Encoder v8.1.0
+* Updated: [gen_jumpex] JTFE v0.99.2
+* Updated: [in_flac] FLAC 1.2.1
+* Updated: [in_mp3] FhG Decoder v4.10
+* Updated: [in_vorbis] libvorbis 1.2.0
+
+Winamp 5.3.5	[May 10 2007]
+* Improved: Current translation support of core strings and dialogs
+* Improved: Correct theming of tabbed dialogs on WinXP+
+* Improved: Various misc tweaks/improvements
+* Fixed: More tabbing fixes in UI and Preferences
+* Fixed: [in_cdda] CDDB crash with non-English characters in user path
+* Fixed: [in_cdda] Gapless playback of mix CDs with Sonic Engine
+* Fixed: [in_flac] Genre field truncated in Flac Editor
+* Fixed: [in_mp3] Incompatibility with musicbrainz tags
+* Fixed: [in_mp3] Long stream urls truncated in Alt+3 dialog
+* Fixed: [in_mp3] Tracklength not showing for mp3's with large embedded coverart
+* Fixed: [in_mp4] MP4 file parsing buffer overflow vulnerability
+* Fixed: [in_vorbis] Cancel button in Vorbis Editor
+* Fixed: [in_vorbis] Tabbing in Vorbis Editor
+* Fixed: [in_wm] Artist and Title fields reversed in WMA Editor
+* Fixed: [in_wm] Crash when attempting to play malformed ASX playlists
+* Fixed: [ml_local] NOTHAS and != with empty fields
+* Fixed: [ml_wire] (4294967295%) in sc wire downloads
+* Fixed: [ml_wire] Podcast downloading bug (uninitialized variable error)
+* Fixed: [pmp_p4s] Crash on sync/transfers
+* Updated: [gen_jumpex] Jump To File Extra v0.99.1b
+
+Winamp 5.3.4	[Apr 20 2007]
+* New: IPv6 support
+* Improved: Made installer delete in_mp3pro :/
+* Improved: Embedded IE pages now run in a separate thread
+* Improved: General speed and performance optimizations
+* Improved: Various Media Library resize flicker fixes
+* Improved: GDI+ video rendering for Windows Vista
+* Improved: IPC_CONVERTFILE now uses api_decodefile (for ripping & transcoding)
+* Improved: [in_wave] Added ATF support for %bitrate%
+* Improved: [gen_ff] Better handling of invalid XML during skin load
+* Improved: [gen_jumpex] JTFE Unicode support
+* Improved: [ml_local] Composer / Album view (in Edit View, Filters tab)
+* Improved: [ml_local] Unicode drag&drop and send-to support
+* Improved: [ml_local] Added option for using Artist as Album Artist
+* Improved: [ml_local] Updated 'Field names' in Smart View query documentation
+* Improved: [ml_pmp] PMP Unicode support
+* Fixed: ???? in the taskbar & system tray with Unicode titles (note that many third party plug-ins will cause this to revert back to ????)
+* Fixed: CD Burning on Windows Vista
+* Fixed: Classic skin scrollbar overlap display glitch with 'smooth resize' enabled
+* Fixed: Crash on exit with docked playlist toolbar (ml_local/ml_playlists bug)
+* Fixed: DirectDraw video rendering (non-overlay mode) constant redraw/flicker
+* Fixed: Folder locking bug after using Open Files/Folder dialog
+* Fixed: Installation of Sonic Engine on systems with other Sonic/Roxio products
+* Fixed: Installer resets cwd= to the install dir
+* Fixed: Redraw bug when moving external windows over Pledit
+* Fixed: Tab orders in Preferences
+* Fixed: Various media library accessibility/focus issues
+* Fixed: Video crash when using WinKey+L
+* Fixed: [enc_lame] Better output samplerate selection for transcoding
+* Fixed: [enc_wav] WAVs missing first 11 samples
+* Fixed: [gen_ff] Tooltips appear on primary monitor only
+* Fixed: [gen_jumpex] Stability issues and key reported plug-in bugs
+* Fixed: [gen_ml] Keyboard focus issue
+* Fixed: [gen_ml] Node alignment bug
+* Fixed: [in_cdda] Long artist/albumartist CD Info bug
+* Fixed: [in_cdda] Crash on Winamp exit after playing Audio CD
+* Fixed: [in_cdda] CDDB crash-on-close bug
+* Fixed: [in_cdda] CD-Text adds to end of cddb fields instead of clearing first
+* Fixed: [in_dshow] Potential crash on corrupt/malformed media files
+* Fixed: [in_dshow] Crash scanning ml folders containing videos on a network drive
+* Fixed: [in_mod] .s3m and .it memory corruption bug
+* Fixed: [in_mp3] Memory leak when retrieving info for .aac files
+* Fixed: [in_mp3] .aac / out_wave playback glitches
+* Fixed: [in_vorbis] Album tag removed when using ml 'edit selected items'
+* Fixed: [in_wm] Crash when trying to burn WMA files
+* Fixed: [libsndfile] matlab (.mat) memory corruption bug
+* Fixed: [ml_local] Composer tag not saving with 'Edit Info'
+* Fixed: [ml_local] Total size not showing up in local media views
+* Fixed: [ml_local] Possible duplicate entries on upgrades after rescanning folders 
+* Fixed: [ml_local] (No Album Artist) & (No Publisher) sometimes displays no results
+* Fixed: [ml_local] Sorting Album pane by Year
+* Fixed: [ml_local] isempty/isnotempty for querying empty/populated fields
+* Fixed: [ml_local] Search broken in simple views (Win2k-specific)
+* Fixed: [ml_playlists] Drag+Drop playlists to pmp devices broken 
+* Fixed: [ml_pmp] Possible crash when deleting a group of songs containing non-sequential duplicates
+* Fixed: [ml_pmp] "haven't" typo in prefs :-D
+* Fixed: [ml_rg] ReplayGain analysis failing on mono mp3's
+* Fixed: [ml_rg] Now skips over DRM WMA files instead of applying -24601 dB gain
+* Fixed: [ml_transcode] Now prevents same source and destination filename
+* Fixed: [ml_wire] Crash when encountering certain non-xml feeds
+* Fixed: [pmp_ipod] Incompatibility with iTunes 7.1
+* Fixed: [pmp_p4s] Launching Winamp on device insertion not working
+* Fixed: [pmp_p4s] No longer creates .alb files on devices that don't support it
+* Updated: in_vorbis to libvorbis 1.1.2 and libogg 1.1.3
+* Updated: in_flac 2.0 (based on FLAC 1.1.4)
+* Updated: MusicIP Mix (formerly Predixis MusicMagic) v1.1
+* Updated: Sonic Ripping/Burning Engine v3.6.36.500
+* Updated: [gen_jumpex] Jump To File Extra v0.99.1a
+
+Winamp 5.3.3	[Feb 13 2007]
+* Improved: [gen_ml] unicode tree item title support
+* Improved: [NDE] speed optimizations
+* Improved: [ml_history] localized dates
+* Improved: [ml_local] Unicode media library support
+* Improved: [ml_playlists] now uses m3u8 to retain unicode file info
+* Improved: [ml_playlists] playlists in send-to submenu
+* Improved: [ml_pmp] playback-from-device of unicode filenames
+* Improved: [ml_wire] moved discover page to main page
+* Improved: [pmp_p4s] auto-detection of supported file formats
+* Fixed: Winamp agent multi-user issue
+* Fixed: playlist directory loading fix (again)
+* Fixed: recursive playlist loading
+* Fixed: video lockup when switching video display settings
+* Fixed: HTML playlist generation
+* Fixed: temp file cleanup after burning
+* Fixed: Alt+L from video window
+* Fixed: fullscreen video display drawing glitch
+* Fixed: recursive shortcut loading
+* Fixed: ASX Loader not reading local relative paths correctly
+* Fixed: [gen_ml] & needs expanding to && for any menu entries showing filenames
+* Fixed: [in_cdda] crash on exit when ejecting CD
+* Fixed: [in_flac] not saving genres.txt in multiuser directory
+* Fixed: [in_mp3] create id3v2 tag when writing album artist
+* Fixed: [in_mp3] workaround for id3v2.4 tags with badly formatted frame sizes
+* Fixed: [in_vorbis] writing blank metadata instead of erasing
+* Fixed: [in_wave] sometimes not remembering custom extensions
+* Fixed: [in_wm] stack overflow on hi-def multichannel audio with replaygain enabled
+* Fixed: [in_wm] File Info editor album artist not saving
+* Fixed: [ml_local] Modern skin pledit winshade 'Manage Playlist' button bug
+* Fixed: [ml_local] ignoring files with ellipsis (...)
+* Fixed: [ml_local] editing disc via 'edit selected items'
+* Fixed: [ml_local] sorting fix
+* Fixed: [ml_local] ratings menu
+* Fixed: [ml_local] crash when sorting by replaygain
+* Fixed: [ml_local] deadlock when retrieving title to guess metadata
+* Fixed: [ml_local] no longer causes unicode files in playlist to display ?????
+* Fixed: [ml_playlists] time column and 'status' in statusbar
+* Fixed: [ml_playlists] send-to another playlist lists playlist file instead of contents
+* Fixed: [ml_pmp] <trackartist>
+* Fixed: [ml_pmp] Metadata showing as -1
+* Fixed: [ml_rg] multi-channel files being calculated incorrectly
+* Fixed: [ml_transcode] bad/missing metadata on transcoded files
+* Fixed: [ml_transcode] error on overly long filenames ("can't open destination file")
+* Fixed: [ml_wire] podcasts that change titles not updating properly
+* Fixed: [pmp_p4s] mass storage devices showing as Plays For Sure devices in Vista
+* Fixed: [vis_milk] multi-user issues
+* Updated: [enc_aacplus] Coding Technologies aacPlus encoder 8.0.3
+* Updated: [enc_flac] Flake r117
+* Updated: [gen_jumpex] Jump To File Extra v0.97.11 (build 109)
+
+Winamp 5.3.2	[Nov 21 2006]
+* New: [ml_local] new filters for three pane view (album artist, genre, publisher)
+* New: [ml_local] option to rescan metadata for selected files
+* New: [ml_transcode] Transcoding tool.  Convert your files from one format to another.
+* New: [pmp_activesync] Support for Windows Mobile devices
+* Improved: send-to in songticker right-click menu
+* Improved: [ml_local] album artist, disc, replaygain, composer, full path columns
+* Improved: [ml_local] localized dates
+* Improved: [ml_local] folder browsing dialog
+* Improved: [ml_rg] lower thread priority to prevent system slowdowns
+* Fixed: classic skin playlist time drawing glitch
+* Fixed: slow load-time with playlist of network share files
+* Fixed: CD burning with Windows 98/ME
+* Fixed: flickering with non-overlay video display
+* Fixed: [gen_ml] treeview icons on Windows 98/ME
+* Fixed: [gen_ml] modern skin docked toolbar mode not remembered 
+* Fixed: [gen_ml] listview flicker reduction
+* Fixed: [in_flac] crash when viewing info (alt+3) on non-existent files
+* Fixed: [in_mp3] incorrect length reported with Easy CDDA Extractor encodes
+* Fixed: [in_mp4] unable to play truncated M4A files
+* Fixed: [in_vorbis] crash with very short files
+* Fixed: [jnetlib] HTTP timeouts on streams with character 255 in HTTP headers
+* Fixed: [ml_disc] CD View sometimes causing flickering of all open windows
+* Fixed: [ml_history] crash when disabling & re-enabling view
+* Fixed: [ml_playlists] corrupt display when scrolling
+* Fixed: [ml_wire] crash when parsing podcasts with badly formed dates
+
+Winamp 5.3.1	[Oct 24 2006]
+* New: [in_cdda] CD Text reading support (with sonic engine enabled)
+* New: [in_flac] Nullsoft FLAC Decoder
+* New: [enc_flac] Nullsoft FLAC Encoder
+* Improved: [ml_disc] Smarter tagging when ripping tracks
+* Improved: [in_cdda] Better CD metadata
+* Improved: [in_mp3] support for reading ID3v2.4 per-frame unsynchronization
+* Improved: [in_mp4] HTTP streaming support
+* Improved: [in_wave] HTTP streaming support
+* Improved: [in_wm] follows 24bit/mono/surround playback setting 
+* Fixed: loading folders via playlists
+* Fixed: Shortcut icons for multi-user installations
+* Fixed: Thinger icons for old wa3 skins (filereader.w5s missing)
+* Fixed: truncated text in version history
+* Fixed: handling of shortcuts in folders
+* Fixed: [dsp_sps] simple pitch and tempo preset (thanks ujay)
+* Fixed: [gen_ff] System.playFile not working on URLs
+* Fixed: [in_mp3] seek from end of file
+* Fixed: [in_mp3] quality issue
+* Fixed: [in_mp3] random crash when writing ID3v2 tag
+* Fixed: [in_mp3] incorrect track length on concatenated MP3 files
+* Fixed: [in_mp3] gapless glitch
+* Fixed: [in_mp3] maximum number of redirects raised to 3 to allow playback on some podcasts with crazy php scripts
+* Fixed: [in_mp3] lyrics3 security vulnerability (thanks iDefense)
+* Fixed: [in_mp3] ultravox security vulnerability (thanks iDefense)
+* Fixed: [in_mp3] seek problems on files with multiple id3v2 tags
+* Fixed: [ml_disc] ripping discs with international titles
+* Fixed: [ml_local] breaks 'always on top' for other programs
+* Fixed: [ml_local] 'Use Library title information for Playlist Item Formatting' not being followed
+* Fixed: [ml_local] track number showing as 4294967295 in title
+* Fixed: [ml_playlists] memory leak
+* Fixed: [ml_pmp/pmp_ipod/pmp_usb] 'no disc in drive' error message
+* Fixed: [out_ds] logarithmic/hybrid volume control
+* Fixed: [pmp_p4s] crash on 0-length tracks
+* Fixed: [pmp_usb] bad xml writing
+
+Winamp 5.3	[Sep 26 2006]
+* New: Unicode filename and title support
+* New: M3U8 (Unicode) playlist support
+* New: optional 24bit playback for many codecs (turn it on in Preferences->Playback)
+* New: Replaygain support for MP3, AAC, Vorbis, M4A and WMA
+* New: added ml views & playlists to Play-> submenu of right click popup menu
+* New: added interface/x-winamp3-skin mimetype for WAL skins
+* New: [ml_dash] Personalized content portal
+* New: [ml_disc] optional replaygain scanning after rip (turn it on in cd ripping prefs)
+* New: [ml_pmp] Transcoding. Converts incompatible files on-the-fly for your portable device.
+* New: [ml_pmp] Playback now works for playsForSure and Creative NJB devices
+* New: [ml_pmp] "Copy to Library" - transfer songs from any device to your local library (uses CD rip settings)
+* New: [ml_pmp] Video sync support for portables
+* New: [ml_rg] replaygain scanner (access via Send To menu)
+* New: [pmp_ipod] gapless playback support on newer models
+* New: [pmp_usb] USB drive support. Now all those thumbdrive MP3 players can work with Winamp
+* Improved: fullscreen video seekbar
+* Improved: ATF updates
+* Improved: DC filter on spectral visualization, to remove bass bias
+* Improved: preference cleanups
+* Improved: faster PLS writing
+* Improved: 24bit EQ support
+* Improved: "Close Winamp" option after installation (after clicking 'Send')
+* Improved: [enc_aacplus] Improved AAC and aacPlus encoding!
+* Improved: [enc_aacplus] saves itunes/ipod-compatible gapless information
+* Improved: [enc_lame] added preset medium and fast medium
+* Improved: [enc_wma] VBR and lossless modes
+* Improved: [gen_ff] better sample rate display
+* Improved: [in_cdda] faster ripping speeds through improved buffering and multithreading
+* Improved: [in_dshow] AVI metadata reading
+* Improved: [in_dshow] better WAV support
+* Improved: [in_mp3] 24bit MP3 playback, 64bit internal precision
+* Improved: [in_mp3] streaming id3v2 support
+* Improved: [in_mp3] replaygain support for MP3 playback
+* Improved: [in_mp3/in_mp4] 24bit AAC playback
+* Improved: [in_mp3/in_mp4] itunes-compatible gapless playback
+* Improved: [in_mp3/in_mp4] mp3-in-mp4 container support
+* Improved: [in_mp4] FAAC-compatible (mostly) gapless playback
+* Improved: [in_wave] better outputs bits-per-sample choosing
+* Improved: [ml_playlists] added missing entries from pledit context menus
+* Improved: [ml_playlists] option to not show playlists in send-to menu
+* Improved: [ml_pmp] Only relevant columns shown in song views
+* Improved: [ml_pmp] "Getting Metadata" now much faster
+* Improved: [ml_pmp] devices can now be renamed
+* Improved: [ml_pmp] added progress to portables tree item (no more switching views)
+* Improved: [ml_pmp] metadata guessing based on filename
+* Improved: [ml_pmp] improved GUI performance
+* Improved: [pmp_ipod] support for iTunesLock
+* Fixed: Burning files that require resampling
+* Fixed: multiple copies of Winamp when opening too many files/folders from explorer
+* Fixed: freeze when exiting Winamp while minimized
+* Fixed: Delay/hang when loading dead stream url's
+* Fixed: crash when directdraw fails to create primary surface
+* Fixed: 4x burn speed limit with Pro
+* Fixed: registry handling when disassociating filetypes
+* Fixed: better detection of video input plug-ins
+* Fixed: [dsp_sps] 24 bit fix
+* Fixed: [enc_aacplus] more compatible HE AAC MP4 file creation
+* Fixed: [enc_lame] broken vbr presets
+* Fixed: [enc_lame] 24bit input support
+* Fixed: [enc_lame] bitrate lower bound on alt-presets
+* Fixed: [in_cdda] CDDB lookups clearing the ENTIRE playlist cache
+* Fixed: [gen_ff] layerfx not being redrawn on colortheme change
+* Fixed: [gen_ff] gradient drawing glitch and crash
+* Fixed: [gen_ff] custom color themes bug
+* Fixed: [gen_jumpex] hang when suspending or hibernating
+* Fixed: [gen_ml] tree icon fixup (divide by zero crash in ICM32.dll)
+* Fixed: [in_cdda] cutoff of last few sectors
+* Fixed: [in_dshow] crash when using DSP/EQ on anything bigger than 16bit stereo
+* Fixed: [in_dshow] seek to key frame
+* Fixed: [in_midi] truncated playback of some MIDI files
+* Fixed: [in_mod] title display bug for module streams with no title
+* Fixed: [in_mp3] crash when editing ID3 tags
+* Fixed: [in_mp3] ID3v2 and ID3v1 Comment & Genre tags shared
+* Fixed: [in_mp3] Inaccurate Time Remaining display for AAC files
+* Fixed: [in_mp3] do Viz after DSP
+* Fixed: [in_mp3] Icecast stream title UTF-8 support
+* Fixed: [in_mp4] detection of HE AAC in file info box (Alt+3)
+* Fixed: [in_wm] DRM Video playback on certain hardware
+* Fixed: [in_wm] freezeup when seeking a paused wma
+* Fixed: [in_wm] Hang with dead WMV link in pledit in Repeat mode
+* Fixed: [in_wm] freeze when stopping streams that have rebuffered
+* Fixed: [in_wm] small memory leak on each track play
+* Fixed: [in_wm] Windows Media Screen Codec not playing properly
+* Fixed: [ml_disc] CD ripping / playlist generation bug
+* Fixed: [ml_disc] CD Ripping view showing up when clicking on other ml views
+* Fixed: [ml_history] Ctrl+H shortcut
+* Fixed: [ml_local] fixed crash when trying to create a new view before mldb has loaded
+* Fixed: [ml_local] background scan crash when media library DB isn't loaded
+* Fixed: [ml_local] scheduled background scan always starting at startup
+* Fixed: [ml_online] Online Media bugfix (don't try to play NULL streams)
+* Fixed: [ml_playlists] losing stream titles
+* Fixed: [ml_playlists] sort by title
+* Fixed: [ml_playlists] Send To from local media to ml playlist replaces instead of enqueues
+* Fixed: [ml_playlists] Enqueue as default broken in left pane
+* Fixed: [ml_playlists] Playlist title > rt-click > New Playlist = broken
+* Fixed: [ml_playlists] tracklength bug
+* Fixed: [ml_playlists] playlist paths issue
+* Fixed: [ml_pmp] Transfers stalling after encountering a dupe
+* Fixed: [out_ds] volume not hitting 0dB when using log or hybrid volume control
+* Fixed: [pmp_ipod] Artist list on iPod not sorting "The" correctly
+* Updated: Coding Technologies aacPlus Encoder 8.0.0
+* Updated: [gen_ff] Freetype 2.2.1
+* Updated: [gen_ff] libpng 1.2.12
+* Updated: [gen_jumpex] Jump-to-File 0.97.7
+* Updated: [in_wave] libsndfile 1.0.16
+* Updated: [libmp4v2] MPEG4IP mp4v2 1.5
+* Updated: [enc_lame] LAME 3.97b3
+* Updated: Sonic Engine 3.2.40.500
+
+Winamp 5.2.4	[Jun 21 2006]
+* Fixed: [in_midi] crash bug & potential security vulnerability
+
+Winamp 5.2.3	[Jun  8 2006]
+* Improved: [gen_jumpex] jump-to-file speed improvements
+* Fixed: playlist saving with network share files
+* Fixed: Media Library preferences not loading in correct order
+* Fixed: main window not hilited when restoring from minimized state in classic skin.
+* Fixed: slow loading of playlists with URLs
+* Fixed: CD burning using third party input plug-ins
+* Fixed: classic skin winshade playlist time display
+* Fixed: [gen_ff] Wasabi XML font-related fixes from Martin Poehlmann
+* Fixed: [gen_ff] Map.getHeight() maki script function returning width instead
+* Fixed: [gen_ff] winshade global hotkeys broken w/ modern skins
+* Fixed: [gen_jumpex] 'Add to Queue' issues
+* Fixed: [gen_jumpex] NT4 incompatability
+* Fixed: [gen_jumpex] misc bug fixes
+* Fixed: [gen_ml] icon changes on drag+drop items
+* Fixed: [in_mp3] playback of AAC streams
+* Fixed: [in_mp4] seek bug when using right arrow key
+* Fixed: [in_wm] Playback restarts from beginning when editing tags of a currently playing .wma file
+* Fixed: [in_wm] protocol/extension reversed in config > filetype > edit
+* Fixed: [in_wm] 'Audio only' always checked for ASF/WMV in config
+* Fixed: [in_wm] seek bug when using right arrow key
+* Fixed: [ml_bookmarks] 'Edit Bookmarks' menu item not working when Media Library is hidden
+* Fixed: [ml_local] crash while rearranging media library views
+* Fixed: [ml_local] crash on close
+* Fixed: [ml_local] sort arrow reversed in some columns
+* Fixed: [ml_playlists] Import Playlists uses containing dir for title instead of filename
+* Fixed: [ml_playlists] No "Recurse" checkbox in Import Playlists From Folder
+* Fixed: [ml_playlists] Add Dir adds all filetypes (not just all-supported)
+* Fixed: [ml_playlists] rt-click enqueue not working & other issues
+* Fixed: [ml_playlists] Not saving playlists in some situations
+* Fixed: [ml_playlists] crash when loading badly formed WPL playlists
+* Fixed: [ml_playlists] drag&drop into playlist not adding to correct position
+* Fixed: [ml_playlists] root playlist screen not updating when adding new playlist
+* Fixed: [ml_playlists] reverting changes on send-to: playlist
+* Fixed: [ml_playlists] drag+drop m3u files broken
+* Fixed: [ml_pmp] Syncing duplicates finally fixed (thanks gordol)
+* Fixed: [ml_pmp] Removing items from a playlist not saving issue (thanks Nick)
+* Fixed: [ml_wire] some podcasts only display one item
+* Fixed: [pmp_ipod] Playlist sort now works again
+* Fixed: [out_ds] stop with fade (shift+v) issue
+* Updated: [in_cdda] CDDB 2.0.1.25
+
+Winamp 5.2.2	[May 25 2006]
+* New: loading of additional playlist formats: ASX/WAX/WMX/WVX, WPL, B4S
+* New: [gen_ff] modern skin unicode support
+* New: [in_wm] burning of DRM protected files (if allowed by content provider)
+* New: [ml_pmp] transfer of playlists to portable devices
+* Improved: More informative CD burning status window
+* Improved: [gen_ff] modern skinning engine speed optimizations
+* Improved: [gen_jumpex] jump-to-file search response
+* Improved: [gen_tray] enhanced icon pack support plus more... (thanks DrO)
+* Improved: [in_wm] seeking improvements
+* Improved: [in_wm] gapless WMA support
+* Improved: [ml_nowplaying] Redesigned 'Now Playing' media library view (it actually works now)
+* Improved: [pmp_ipod] Loading times for iPods reduced
+* Fixed: Winamp won't restore after being minimized with a dialog box open
+* Fixed: $abbr() title formatting lockup
+* Fixed: Add Folder adds tracks BEFORE the last track
+* Fixed: Clicking 'Next' in Fullscreen video OSD acts like clicking it twice
+* Fixed: Rating in pledit right-click context menu always shows "No Rating"
+* Fixed: Stop with fadeout (Shift+V) just stops playback, no fadeout
+* Fixed: CD burning bugs and crashes
+* Fixed: Delete key not working in Online Services or SC Wire search
+* Fixed: [gen_jumpex] handling of playlist with more than 65,536 files
+* Fixed: [gen_jumpex] 'on end of queue' fixed
+* Fixed: [gen_jumpex] modern skin pledit docked toolbar mode not remembered
+* Fixed: [gen_jumpex] ML size/position not remembered when switching from Classic to Modern and back to Classic skin
+* Fixed: [gen_jumpex] misc bug fixes
+* Fixed: [gen_ml] playlists root view slowness bug
+* Fixed: [gen_ml] Modern skin: Media Library > View (menu) > Devices 
+* Fixed: [in_midi] corrupt header crash
+* Fixed: [in_mp4] metadata writing crash
+* Fixed: [in_mp4] seek bug when using right arrow key
+* Fixed: [in_mp3] MPEG-2 and MPEG-2.5 Layer 3 playback crash
+* Fixed: [in_mp3] Winamp crashes when trying to play any wrongly named .aac file
+* Fixed: [in_wave] WAV burning fix
+* Fixed: [in_wave] Locking files (wav's can't be renamed/deleted)
+* Fixed: [in_wm] lockup on wma with expired/unrenewable drm license
+* Fixed: [in_wm] out of sync audio/video on some WMV streams
+* Fixed: [in_vorbis] fullpath shown in playlist for tagless files with atf disabled
+* Fixed: [ml_pmp] Duplicates being synchronized
+* Fixed: [ml_pmp] Several crashes during transfers 
+* Fixed: [out_ds] Can't select different Output Device with two active instances of out_ds
+* Fixed: [out_ds] incorrect enumeration of stereo outputs for two of same pro soundcard
+
+Winamp 5.2.1	[Mar 10 2006]
+* New: [jnetlib] HTTP compression support
+* Improved: [installer] multi-user profile migration
+* Fixed: [ml_wire] memory leak
+* Fixed: [pmp_p4s] DRMclien.dll error
+* Fixed: [gen_ff] skin info display in preferences
+* Fixed: [in_mp3] Wordwrap disabled in Info Editor Comments field
+* Fixed: [in_wm] Minor bug fixes
+* Fixed: Keyboard shortcuts don't work from video window
+* Fixed: [in_vorbis] No Artist metadata in stream titles
+* Fixed: [in_dshow] floating point audio 
+* Updated: Coding Technology AAC+ Decoder 7.2.5
+
+Winamp 5.2	[Feb 23 2006]
+* New: [ml_pmp] Synchronize your Media Library with your portable media player 
+                Compatible with iPod, Creative, and Microsoft Plays For Sure devices
+* New: [enc_aacplus] Coding Technologies aacPlus High Bitrate encoder available in Winamp Pro
+* New: [enc_aacplus] Coding Technologies aacPlus (HE-AAC) in MP4 container
+* New: [enc_aacplus] Coding Technologies LC-AAC encoder
+* New: [gen_ml] icons in treeview
+* New: [ml_online] Dynamic AJAX Internet Media Hub
+* New: [in_nsv] Using Coding Technologies AAC playback within NSV container
+* New: [in_mp3] gapless MP3 playback
+* New: [installer] multi-user profile options
+* New: [installer] remembers your previous installer settings
+* New: [in_wave] in_wave 3.0
+* New: right-to-left playlist display
+* Improved: new ATF functions and tags, including:
+            $repeat(x, count) - creates a string with x repeated count times
+            $lpad() - same as $pad, but adds padding to the left
+            $decode(...) - switch/case function.  example: $decode($fileext(%filename%),MP3,MPEG-1 Layer 3,MP4,MPEG-4 Container,Other)
+            $IfStrEqual(string1,string2,result) - if string1 and string2 are equal, displays result.  case insensitive
+            $IfStrEqual2(string1,string2,result,else) - if string1 and string2 are equal, displays result, otherwise displays else.  case insensitive
+            %folder% - top level folder name of the file
+* Improved: Stereo beat visualization for modern skins
+* Improved: [gen_ff] new vis modes available to skinners
+* Improved: [gen_ml] CD drive info view (Rip & Burn)
+* Improved: [gen_tray] gen_tray v1.0 (thanks DrO)
+* Improved: [in_midi] provides metadata to media library
+* Improved: [in_mod] provides metadata to media library
+* Improved: [in_mp3] unicode id3 tags
+* Improved: [in_mp3] preliminary id3v2.4 support
+* Fixed: broken playlist sorting
+* Fixed: playlist problems with multi-line tags (e.g. %comment%)
+* Fixed: shuffle with only one song in playlist
+* Fixed: ghost seek slider appears if Winamp loses focus during seeking
+* Fixed: video options from video window right-click context menu
+* Fixed: playlist winshade international character support
+* Fixed: fullscreen video display international character support
+* Fixed: m3u playlist handling security vulnerability (thanks to NSFOCUS and Information Risk Management Plc)
+* Fixed: [enc_lame] bit reservoir
+* Fixed: [enc_lame] cutoff of last frame
+* Fixed: [gen_ff] regions on components don't work
+* Fixed: [gen_ff] playlist & video focus bug
+* Fixed: [gen_ff] playlist winshade memory leak 
+* Fixed: [gen_ff] GDI Object leak with Current Skin prefs page
+* Fixed: [in_midi] not following Winamp's title formatting options
+* Fixed: [in_midi] reset button blocks further access to config
+* Fixed: [in_mod] not following Winamp's title formatting options
+* Fixed: [in_mp3] incorrect version identification (showed 5.18 in 5.12)
+* Fixed: [in_mp3] incorrect information shown for AAC+ files
+* Fixed: [in_mp3] reading incorrect id3 comment tag
+* Fixed: [in_mp3] sometimes failing to read last id3 frame
+* Fixed: [in_mp3] id3v2 album art loss when editing tags
+* Fixed: [in_mp4] loss of album art when modifying metadata
+* Fixed: [in_vorbis] not following Winamp's title formatting options
+* Fixed: [in_vorbis] registry usage (now multi-user profile safe)
+* Fixed: [in_wave] 32bit floating point WAV playback distortion
+* Fixed: [in_wm] changes made with Attribute Editor not updating in ML/Playlist
+* Fixed: [vis_milk] missing files from distro (you can stop bugging us now, Rovastar :)
+* Fixed: [vis_milk] 100% cpu usage when paused
+* Updated: [gen_jumpex] DrO's Jump To File Extension 0.97 
+* Updated: [enc_lame] LAME 3.97b2
+* Updated: [gen_ff] libpng 1.2.8
+* Updated: [gen_ff] FreeType 2.1.10
+* Updated: [enc_aacplus] Coding Technologies aacPlus encoder v7.2.0a
+
+Winamp 5.1.3	[Jan 30 2006]
+* Fixed: [in_mp3] extremely critical security vulnerability
+
+Winamp 5.1.2	[Dec 12 2005]
+* New: [in_wm] Windows Media Video support (with DRM)
+* New: [in_mp4] Support for HE-AAC MP4/M4A files
+* Improved: lots of minor plug-in improvements
+* Improved: Visualization data calculations
+* Improved: Significantly less playlist memory usage
+* Improved: more multi-user improvements (almost there!)
+* Improved: [installer] setup options, saved settings, codec downloading
+* Improved: [gen_ff] optimized skinning engine
+* Improved: [out_disk] new features
+* Improved: [in_cdda] playback/ripping with sonic engine
+* Fixed: freezing when cancelling cd burn
+* Fixed: video scaling bug (with modern skin scaling < 100%)
+* Fixed: minor installer bugs
+* Fixed: freeze when loading classic skin with main window hidden
+* Fixed: Visualizations for 24bit and 32bit songs
+* Fixed: Advanced Title Formatting with Japanese, Chinese and Korean metadata (thanks mrym)
+* Fixed: [in_mp3] raw AAC VBR file seeking and bitrate reporting
+* Fixed: [in_mp4] unicode metadata writing 
+* Fixed: [in_wm/in_dshow] mms:// streaming video playback
+* Fixed: [in_cdda] audio cd bitrate display
+* Fixed: [in_cdda] Sonic engine on 64bit windows (thanks STanger)
+* Fixed: lots of small bugs ...
+* Updated: Sonic CD Engine 2.2.50
+* Updated: libmp4v2 1.4.1
+* Updated: Coding Technology AAC+ Decoder 7.2.0
+
+Winamp 5.1.11	[Oct 26 2005]
+* Fixed: works with internet explorer 3.0 again (old win95/nt3.51)
+* Fixed: Auto-Preset EQ crash (non-mp3 files)
+* Fixed: $upper, $caps, $caps2 crash with foreign characters
+* Fixed: Station Info crash (with http filtering program)
+* Fixed: empty playlist bugs
+* Fixed: [in_mp3] proxy ignored when 'only port 80' was checked
+* Fixed: [in_midi] lyrics not working
+
+Winamp 5.1.1	[Oct 20 2005]
+* Updated: LAME 3.96.1
+* Fixed: playlist focus issue after adding files to playlist
+* Fixed: crash on multichannel songs with EQ enabled
+* Fixed: internet connection detection not working when set to "dial-up"
+* Fixed: manual playlist advance with Winamp videos
+* Fixed: EQ text display glitch
+* Fixed: video not filling up video window
+* Fixed: black bars in fullscreen video
+* Fixed: [gen_ml] crash with no write access
+* Fixed: [gen_ml] CDDB Dialog Media Library drawing glitch
+* Fixed: [in_dshow] seeking on files with no video or no audio
+* Fixed: [in_cdda] aspi ripping crash
+* Fixed: [ml_wire] "my music" folder creation
+* Fixed: [ml_wire] Podcasts with dates before 1970 handled properly
+* Fixed: [ml_wire] Downloading of podcasts with parameters in URL
+* Fixed: [out_ds] fade-on-seek settings
+* Fixed: [in_wm] pause glitch
+* Fixed: [in_mp4] view-file-info filename not scrolling
+* Coming Soon: Multi-user profile support (preliminary support enabled)
+
+Winamp 5.1 Surround Edition	[Sep  1 2005]
+* New: CodingTechnologies AACPlus encoder! 
+	The MP3 Killer! 
+	Awesome at low bitrates too!
+* New: Grand Prize Winner of the Internet Surround Music Project!
+	KAJE - Hey Buddy (featuring Afrika Bambaataa)
+* New: SHOUTcast Wire - A Media RSS Browser and Subscription Service
+* New: Predixis Smart Playlist Generator 
+	(Mix your tracks based on what they sound like!)
+* New: AOL Radio featuring (((XM))) Free Sampler!
+* New: CD Ripping now available at 8x in free version!
+* New: Microsoft WMA encoder
+* New: Over 200 new Milkdrop presets!
+* Update: in_vorbis now returns bitrate in getextendedfileinfo
+* Fixed: WMA stuttery playback
+* Fixed: out_ds copy button on status tab now works all the time
+* Fixed: Much improved ripping and playback with Sonic engine
+* Fixed: Video window now resizable regardless of Sidecar
+* Fixed: Length of long mp3's now reported properly 
+* Fixed: Silent install switch now works properly
+* Fixed: Simultaneous CD Playback and Ripping 
+
+Winamp 5.0.94	[Jul 18 2005]
+* New: in_wm now handles bitrate and length extended info
+* New: New random number generation for playlist shuffle
+* Fixed: Security vulnernability in id3v2 tags (thanks to LSS Security)
+* Fixed: Winamp now shuffles playlists larger than 32,768 songs
+* Fixed: Fade on start now behaves properly
+* Fixed: separate directsound settings with multiple instances
+* Fixed: Winamp now supports adding URLs longer than 260 characters.
+* Fixed: Editing files created in iTunes no longer causes corruption.
+* Fixed: Length of long mp3's now reported properly
+* Fixed: gen_jumpex no longer crashes when DEP is enabled
+* Fixed: Sort selections in media library are now remembered.
+* Fixed: Album names with non-alphanumeric characters behave better
+* Fixed: Fixed intermittent crash on seeking for some users
+* Updated: libmp4v2.dll
+
+Winamp 5.0.93	[Jun 13 2005]
+* Fixed: OSD stays onscreen in DirectDraw Mode
+* Fixed: Fullscreen video OSD doesn't reappear after using Pause
+* Fixed: ML Playlist > Select all (no delete key)
+* Fixed: Vis data for in_mod (and possibly other input plug-ins)
+* Fixed: msvcp60.dll now linked static
+* Fixed: Small  intermittent bugs in gen_ml and gen_ff
+* Fixed: Greater than 2 channel vis data now works
+* Fixed: Media Library problems with parentheses/brackets in artist or album names
+* Fixed: Ripping CDs with trailing ellipses (...) in artist or album name
+* Fixed: Better video flipping for YUV colorspace videos
+* Fixed: Saved mute settings with modern skin.
+* Fixed: Drag and Drop from external applications
+* Fixed: Open File Dialog always-on-top
+* Fixed: Crossfade on start
+* Fixed: Freeze when switching audio tracks in a multi-audio stream.
+* Fixed: Fullscreen switching with scaled video window.
+* Update: Dynamic Online Media can now alert users to live events(can disable).
+
+Winamp 5.0.92	[May 25 2005]
+* New: DRM WMA Playback supports out_wave
+* New: Non-DRM WMA Playback allows any output plug-in
+* New: Community Picks AVS Preset Pack
+* New: Deletes in the Media Library now move files to the Recycle Bin
+* New: NSV Subtitles can be disabled on the fly
+* Fixed: Long delay and high cpu on exit with many items in playlist
+* Fixed: gen_ml shutdown bug
+* Fixed: Easy Move of video window back to normal
+* Fixed: Pause in WMA playback memory leak
+* Fixed: Multi-monitor full screen video
+* Fixed: Drag and Drop in playlist editor
+* Fixed: Drag and Drop on Winamp
+* Fixed: Now Playing update on song change
+* Fixed: Media Library/Windows Media scanning errors
+* Fixed: Stay in fullscreen/Config mismatch
+* Fixed: Ctrl-B Crash
+* Fixed: Authentication for OGG/Vorbis streams
+* Fixed: Drag and Drop strange behavior in open file dialogs
+* Fixed: Stuttering WMA On Start and Seek
+* Fixed: NSV Video stall during buffering
+* Fixed: Autosize of video to be accurate to the Video size not snap size
+* Fixed: Short NSV Clips audio cutout
+* Update: Online Media tree is now dynamic (Checking can now be disabled)
+* Update: Sonic Install/Config flag mismatch
+* Update: CD Ripping/Burning Library (possible cause of msvcrt.dll errors)
+
+Winamp 5.0.8	[Dec 22 2004]
+* Updated Windows Media DRM License
+* Fixed playFile function in gen_ff.dll (Allows Modern skins to launch playback)
+* Created new eMusic bundles
+* Critical Security bug fixed in in_mp4.dll and enc_mp4.dll and libmp4v2.dll
+* HTTP Seeking corrected for webservers that refuse to return Accept-Range
+* Critical Security buffer overflow fixed in in_cdda.dll
+
+Winamp 5.0.7	[Dec  2 2004]
+* Critical Security bug fixed in in_cdda.dll and .m3u handler
+* in_mp3 & in_nsv should work on Win95 again
+* Proxy settings work again
+* Installer fixed so that read_file.dll is installed always with mod support
+* Version number should be properly reported by IPC_GETVERSION for this build
+
+Winamp 5.0.6	[Nov 18 2004]
+* Fixed crashbug when clearing the playlist and then right clicking on the songticker
+* Security bug fixes
+* Lots of small bugfixes
+* JTFE v0.96ff
+
+Winamp 5.0.5	[Aug 27 2004]
+* Security bug fix
+* Fix for upside down videos through DirectShow
+* JTFE v0.96c
+* Added prompt when loading a skin for the first time
+
+Winamp 5.0.4	[Jul 28 2004]
+* JTFE v0.96
+* Added Coding Technologies' AACPlus decoder
+* Fixed deletion of temporary generated WAV files after a burning process on some 
+  computers
+* Fixed typo in some context menu shortcuts
+* Fixed slowness IPC bug caused by gen_hotkeys
+* Added "clear" button in internet radio/tv views
+* Added screenshots of classic/modern mode in installer
+* Fixed MP3 bitrate calculation (in_mp3 was reporting incorrect lengths on some MP3s)
+* Fixed incorrect length reporting on long WMA files
+* Better fix for pledit/video windows showing up at startup when minimized
+* Fixed db text bug when moving EQ sliders
+* Upgraded MP3 encoding to LAME v3.96
+* Fixed crash in WMA playback when using WMA v8 codecs
+* Updated default streaming values in in_nsv
+* Added Winamp.com Audio&Video views in the Media Library
+* Fixed tiny memory leak in in_cdda
+* Added right click context menu on "Now Playing" item in Media Library
+* Added script/ActiveX disabling for Media Library's minibrowser (on by default)
+* Fixed memory leak on MP3 files with messed up ID3v2 tags
+* Fixed visualization when playing CD tracks
+* Fixed proxy user:pass@server:port string getting cut when playing Shoutcast streams
+* Made in_dshow not to handle mms:// streams ending with .wma
+* Fixed %tracknumber% tag for CD tracks
+* Fixed some crash bugs in in_mp4
+* Fixed playlist generation when ripping full CDs
+* Added "import playlist from folder" in Media Library
+* Updated Media Library preferences screens
+* Added new SPS presets from Cockos, Inc. (pitch shifters, etc...)
+* Added basic streaming (download) support for M4A/MP4 HTTP streams
+* Added monitoring of fullscreen apps, disables always on top temporarilly
+* Added IPC_IS_WNDSHADE
+* Added gen_ml rating ipcs
+* Added ratings from playlist context menu (acts on selected entries)
+* Added ratings from song ticker context menu (acts on current track)
+* Added rating hotkeys in gen_hotkey
+* Fixed saving read-only playlists
+* Fixed double separator lines in gen_ml id3less item context menu
+* Fixed refresh of view losing query after removing dead files & background scan
+* Added escaping of ", ', [ and ] in ml queries : uses %HH where HH is the hex char 
+  code (uses %% for '%')
+* Added sdk support for multiple audio/video tracks in video input plug-ins (see wa_ipc.h
+  for ITrackSelector class)
+* Added multiple audio avi support (right click video window, select "Audio Tracks")
+* Fixed multimonitor problem when toggling a windowshade on one monitor while playing
+  a fullscreen video on the other
+* Added ML_IPC_EDITQUERY and ML_IPC_EDITVIEW
+* Fixed pledit drawing bug under winxp/cleartype
+* Fixed crash in id3 reading of zero byte files
+* Fixed crash in sps when exiting Winamp before closing the open/save dialog
+* Added IPC_PUSH_DISABLE_EXIT, IPC_POP_DISABLE_EXIT and IPC_IS_EXIT_ENABLED
+* Fixed gen_ml crash when inserting item with length -1
+* Made gen_ml much more resistant to databases that have been corrupted
+* Fixed ml nuke
+* Added disabling of "keep on screen" option when going into a different resolution 
+  because of a fullscreen application (ie: a game)
+* Made ui:preferences global hotkey open the prefs to the previously opened page
+* Fixed a few preferences cosmetic 'bugs'
+* Modern skin updates :
+  - Fixed windowshade repeat-track button state
+  - Fixed scaling docked toolbars
+  - Fixed 5.03 assert on deletion of newGroupAsLayout()
+  - Fixed floating video windows coordinates dropping to 0,0
+  - Fixed auto opaque when layouts are loaded already docked as toolbars
+  - Fixed fadein/fadeout not used on notification window when linking all normal windows' 
+    alpha
+  - Fixed docked toolbars moving when some other window docked to them switches to an 
+    alternative layout
+  - Fixed silent crash on shutdown when pledit is docked as toolbar and gen_ml unloads 
+    before gen_ff (would not remember settings from session to session)
+  - Fixed snap points
+  - Fixed click on +12db / 0db / -12db
+  - Optimized text scrolling (a lot)
+  - Fixed content of pledit not painting in some instances
+  - gen_hotkeys are now routed thru System.onKeyDown(name), where name is the name of 
+    the hotkey prefixed by "HOTKEY: " (ie: "HOTKEY: Playback: Play"). You may issue a
+    complete; statement to prevent gen_hotkey from handling the hotkey
+  - Fixed horizontal resize of main window with video/vis drawer closed
+  - Added auto-height for next drawer opening when resizing main window with video/vis 
+    drawer closed, this avoids having an unreasonably tall drawer open if you just 
+    watched a video in a big window and then only resized the player back to its 
+    horizontal minimum after the video had closed. auto-height resets to 4:3 
+    proportions
+  - Fixed docking bug when using snapadjustleft
+  - Fixed buggy calculation of time display default width conflicting with right text alignment
+  - Fixed windows moving after changing screen resolution
+  - Fixed rare always on top desync with classic skins
+
+Winamp 5.0.3	[Mar 24 2004]
+* Added eMusic trial offer to installer.  uninstaller included in Program Files\Winamp\eMusic
+* Made MP4 AAC the new default ripping encoder
+* Fixed a crash bug when playing some AVI files in in_dshow
+* Added multimedia keyboard keys in global hotkeys default configuration
+* Added "Manual playlist advance" in Repeat button popup menu in Classic mode
+* Improvements in MP3 encoder configuration (added --alt-preset standard, etc...)
+* Made the tabs in the preferences XP correctly themed under Windows XP
+* Revamped the Media Library preferences a bit
+* New experimental WMA9 input plug-in
+* gen_jumpex updates from DrO
+* Added "Nuke library" action in Media Library
+* More upside down videos fixes
+* Fixed crash if a plug-in generated a pledit wm_windowposchanged on shutdown
+* Fixed crash exploit in in_mod (thanks Peter Winter-Smith)
+* Fixed various crashes in in_midi when playing invalid files
+* Made in_midi store its settings in winamp.ini instead of the registry
+* Fixed error during installation on computers with chinese/oriental regional settings
+* Removed AOD from installer
+* Added Shift-R to toggle manual playlist advance
+* Updated VP6 video decoder to latest VP6.2 code
+* Fixed crash when launching Winamp with very long filenames from explorer
+* Made registration dialog to appear in Explorer's taskbar when installing pro version
+* Fixed pledit/video windows showing up at startup when minimized
+* Modern skins updates :
+  - Winamp modern skin now uses a 3 state repeat button: no repeat/repeat all/repeat track
+  - Added appplication desktop toolbars capabilities for layouts, add 
+      appbar="left|top|right|bottom" to use them
+  - Upped maki binary version, improved stack protection
+  - Current skin version number is 1.2 (this should not change for a long while now, and 
+    of course we continue to support 0.8 to 1.1)
+  - (Very) limited maki debugger (for now you can bring it up with invokeDebugger(); in a 
+    script then use 'x' to continue and 'i' to trace into)
+  - Fixed obscure capture problem with dragging windows
+  - Fixed rectrgn being forced to 1 in xml xuiobject buttons that are originally imageless
+  - Fixed hilited state not on after clicking on buttons while the mouse stays in area
+  - Fixed scripted onEnterArea/onLeaveArea not being always correctly called while mouse 
+    button stays down
+  - Fixed getToken being passed NULL throwing guru
+  - Fixed clipping of painting within the background's region of a group rather than 
+    within the composed region (the one you can change with sysregion)
+  - Fixed image cache problem when using the same bitmap as a map and a button image 
+    parameter
+
+Winamp 5.0.2	[Feb  4 2004]
+* Added a couple of gen_ml APIs
+* Fixed gen_ml radio/tv cache clearing after viewing prefs bug
+* Made gen_ml radio/tv keep old data when updating fails, made it not update when no
+  internet is available
+* Made gen_ml support some new quicksearch syntaxes: "* beck radiohead"
+  will list all things matching beck OR radiohead, and:
+    radiohead "<lastplay > [3 days ago]>" will show all things matching radiohead
+    played in the last 3 days...
+* gen_ml option for any/all guess modes
+* Made SPS support 24 bit samples
+* Added priority setting for CD ripping
+* Made CD ripping only support one rip at at time
+* Added send to -> add to library for playlist (and other) send to menus.
+* Better media library audio view support for no artist/no album
+* Fixed enter after info box and popup menus in library
+* Moved litestep options to be in classic skin prefs
+* Fixed playlist editor classic redraw bug, made playlist handle mousewheel scrolling while
+  moving items better.
+* Made "EXE" filetype extension non registerable :)
+* Cleaned up "disable screensaver when video is playing" option
+* Latest SDKs available (AVS, Media library, new Winamp IPC calls, etc...)
+* Upgraded to Gracenote CDDB v2 DLLs
+* Improvements in gen_hotkeys
+* Upgraded MP3 encoding to LAME v3.95.1
+* out_ds now uses winamp.ini instead of registry for settings
+* New fix for upside down videos in in_dshow
+* Added OGM as supported extension in in_dshow
+* Modern skins updates :
+  - Optimized region a bit
+  - Fixed handling of global alpha for unparented layouts
+  - Fixed tiny bug in keypress flow
+  - Fixed potential layer capture cancellation issue
+  - Fixed crash when quickly alternating alt+g and alt+w
+  - Fixed player not coming up to front when playing a video via external URL click
+  - Fixed assertion when arial.ttf (or whatever fallback font has been set) is not present in the font directory
+  - Fixed faulty skin font unmapping sometimes conflicting with fallback to os default gui font
+  - Added date and version functions to maki
+  - Added added timerhours="1" to text object to show 1:00:00 instead of 60:00
+  - Added timeroffstyle 3 and 4 to text object to display "0:00:00" and " :  :  "
+  - Upped skin version to 1.1 - you MUST use 1.1 if you recompile your scripts
+  - Updated maki compiler (http://bluemars.org/maki) :
+    - Added stack protection to maki binaries - upped the binaries version header
+    - Added self version check in maki binaries
+    - Non-existing (future) maki functions will not crash the maki runtime anymore, YAY
+    - Fixed unknown maki functions return values
+  - Fixed Winamp appearing on secondary taskbar with ultramon regardless of true position
+  - Fixed extraneous invalidations
+* New extended jump file dialog (thanks to Darren Owen)
+* Added basic MP4 AAC encoding/decoding (thanks to Menno Bakker for the help)
+* Fixed unicode metadata in in_vorbis
+* Fixed crash in installer code
+* Removed generation of "badframes.stt" files in VP6 decoder
+* <3 farewell Justin <3
+
+Winamp 5.0.1	[Dec 19 2003]
+* Fixed gen_ml selection bug
+* Added gen_ml option for no guessing at all
+* Made AVS and SPS support loop() in user code
+* Made AVS support megabuf() in user code
+* Made pro installer not prompt for regkey if already valid
+* Improved font directory retrieval in gen_ff
+* Added content rating system in Internet TV's listing
+* Added bandwidth usage statistic in Internet Radio/TV listings
+* Made media library guess from filename only when NO metadata found
+* Added seperate recent items tracking options for files/streams
+* Made installer better handle installing wa5 directly over wa3.
+* Added milkdrop docs to installer
+* Made uninstaller not remove Winamp directory if not empty (user is now required to do so manually to avoid people going "oops")
+* Made installer check sonic px.dll versions and prompt for reboot accordingly
+* Fixed nsv metadata querying bugs
+* Fixed gen_ml guessing bugs for files with metadata that are not in DB
+
+Winamp 5.0	[Dec 14 2003]
+* Support for classic Winamp 1.x/2.x/2.9x skins and Winamp 3 ("Modern") skins
+* Fancy new modern skin:
+   - Integrated video, AVS, and Milkdrop support
+   - Many built-in colorthemes
+* Same ol' classic skin for people who want the Winamp 2 feel
+* Vastly more powerful media library:
+   - Automatic background directory scanning options
+   - Customizable views and columns, graphical view editor
+   - Internet Radio (SHOUTcast) and TV listings 
+   - Context-sensitive item info viewer
+* CD ripping support (AAC@2x in free version, MP3 at unlimited speeds in pro)
+* CD burning support (limited to 2x in free version)
+* Advanced title formatting logic for file types that support it
+* Huge AVS updates:
+   - New effects, bundled some popular 3rd party APEs
+   - A much better selection of default presets
+   - Experimental SMP support
+   - Full AVS preset subdirectory support
+   - Extensions and optimizations to the AVS evaluation library
+* Support for playback of AAC and VP6 in NSV files/streams
+* Global hotkey support
+* new Signal Processing Studio DSP plug-in
+* Options to disable plug-in exception handling for developers
+* A ton of new plug-in API calls (SDK forthcoming)
+* Fixed changing-systray options while minimized bug
+* New Winamp icon
+* Added XP Manifest.xml to winamp.exe
+* Made agent icon use configured Winamp system tray icon
+* Optimized Winamp's load titles on demand logic, made faster
+* Made Winamp's internal submenu management more reliable
+* Added skin font override preferences
+* Added spacebar shows current playlist item in playlist editor
+* Fixed manual playlist advance w/ repeat
+* Made Winamp's open directory recurse checkbox nicer looking
+* Big prefs overhaul to make steve happy
+* Huge thanks to Amir Szekely and the rest of the NSIS developers for their help

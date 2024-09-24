@@ -1,0 +1,114 @@
+<!-- player-normal.xml creates the layout of the Winamp Player Window. -->
+
+<include file="player-normal-group.xml" />
+
+  <layout
+  id="normal"
+  minimum_w="354"
+  minimum_h="280"
+  h="280"
+  w="354"
+  droptarget="pldr"
+  snapadjustbottom="116"
+  linkwidth="shade" 
+  >
+
+  <Wasabi:MainFrame:NoStatus
+    x="0" y="0" w="0" h="0" relatw="1" relath="1"
+    content="player.content.group"
+    padtitleleft="10"
+    padtitleright="25"
+    shade="shade"
+  />
+  <sendparams target="window.titlebar.title" default="WINAMP"/>
+  <sendparams target="mousetrap" dblClickAction="SWITCH;shade"/>
+  <sendparams target="window.top.left;window.top;window.top.right;window.left;window.right;window.bottom.left.top;window.bottom.left;window.bottom.left.bottom;window.bottom.top;window.bottom;window.bottom.bottom;window.bottom.right.top;window.bottom.right;window.bottom.right.bottom;" resize="0"/>
+  <hideobject target="close;close.inactive"/>
+
+
+<layer
+  x="-42" y="4"
+  relatx="1"
+  image="wasabi.button.bg.title"
+/>
+<button
+  id="Minimize"
+  action="MINIMIZE"
+  x="-41" y="4"
+  relatx="1"
+  image="wasabi.button.minimize.inactive"
+  tooltip="Minimize Winamp"
+  activeAlpha="0"
+/>
+<button
+  id="Minimize"
+  action="MINIMIZE"
+  x="-41" y="4"
+  relatx="1"
+  image="wasabi.button.minimize"
+  downImage="wasabi.button.minimize.pressed"
+  hoverImage="wasabi.button.minimize.hover"
+  tooltip="Minimize Winamp"
+  inactiveAlpha="0"
+/>
+
+<layer
+  x="-30" y="4"
+  relatx="1"
+  image="wasabi.button.bg.title"
+/>
+<button
+  id="winshade"
+  action="SWITCH" param="shade"
+  x="-29" y="4"
+  relatx="1"
+  image="wasabi.button.winshade.inactive"
+  tooltip="Windowshade Mode"
+  activeAlpha="0"
+/>
+<button
+  id="winshade"
+  action="SWITCH" param="shade"
+  x="-29" y="4"
+  relatx="1"
+  image="wasabi.button.winshade"
+  downImage="wasabi.button.winshade.pressed"
+  hoverImage="wasabi.button.winshade.hover"
+  tooltip="Windowshade Mode"
+  inactiveAlpha="0"
+/>
+
+<layer
+  x="-18" y="4"
+  relatx="1"
+  image="wasabi.button.bg.title"
+/>
+<button
+  id="Close"
+  action="CLOSE"
+  x="-17" y="4"
+  relatx="1"
+  image="wasabi.button.exit.inactive"
+  tooltip="Exit Winamp"
+  activeAlpha="0"
+/>
+<button
+  id="Close"
+  action="CLOSE"
+  x="-17" y="4"
+  relatx="1"
+  image="wasabi.button.exit"
+  downImage="wasabi.button.exit.pressed"
+  hoverImage="wasabi.button.exit.hover"
+  tooltip="Exit Winamp"
+  inactiveAlpha="0"
+/>
+
+	<groupdef id="playlistpro">
+  <PlaylistPro id="centro.windowholder.playlist1" x="0" y="0" h="0" w="0" relath="1" relatw="1" autofocus="1" wantfocus="1" autoclose="1" autoopen="1" autoavailable="1"/>
+  </groupdef>
+
+</layout>
+
+
+

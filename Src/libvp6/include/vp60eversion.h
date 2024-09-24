@@ -1,0 +1,1 @@
+#define VP60EVERSION "6.0.12.0"

@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Shoutcast Source DSP Plug-in v2.4.1</title>
+	<style type="text/css">body,table,textarea,pre{font-family:Arial,Helvetica,sans-serif;font-size:10pt;}
+	.header{background-color:rgb(66,164,189);color:white;padding:1px;}
+	a:link,a:visited{color:#2762AE;text-decoration:none;}
+	a:hover{text-decoration:underline;}
+	ul{list-style-type:none;text-align:left;}
+	pre{background-color:#F0F0F0;border:1px solid #CCCCCC;font-weight:bold;padding:5px 10px 5px 10px;display:inline-block;margin-top:0;margin-bottom:0;margin-left:25px;}
+	pre.src{border:0;font-family:monospace;background-color:white;}
+	span.c{font-style:italic;font-weight:normal;color:#808080;}
+	span.v{font-weight:normal;}
+	span.r{font-weight:normal;color:#000066;}
+	span.s{font-weight:normal;color:#FF0000;}
+	#toc{border:1px solid #CCCCCC;padding:0 5px 0 5px;text-align: center;}
+	p.ver{font-size:85%;margin-top:-1.5em;text-align:center;}
+	.thumb,.thumb_about,.thumb_config{float:right;margin-left:10px;margin-top:5px;margin-bottom:10px;}
+	.thumb{width:132px;}
+	.thumb_about{width:242px;}
+	.thumb_config{width:402px;}
+	img{border:0;height:203px;width:130px;}
+	img.about{height:185px;width:240px;}
+	img.config{height:312px;width:400px;}
+	hr{border:0;background-color:#CCCCCC;height:1px;)</style>
+	<script type="text/javascript">if(window.showTocToggle){var tocShowText="show";var tocHideText="hide";showTocToggle()}function showTocToggle(){if(document.createTextNode){var linkHolder=document.getElementById('toctitle');if(!linkHolder){return}var outerSpan=document.createElement('span');outerSpan.className='toctoggle';var toggleLink=document.createElement('a');toggleLink.id='togglelink';toggleLink.className='internal';toggleLink.href='javascript:toggleToc()';toggleLink.appendChild(document.createTextNode(tocHideText));outerSpan.appendChild(document.createTextNode('['));outerSpan.appendChild(toggleLink);outerSpan.appendChild(document.createTextNode(']'));linkHolder.appendChild(document.createTextNode(' '));linkHolder.appendChild(outerSpan);var cookiePos=document.cookie.indexOf("dsp_hidetoc=");if(cookiePos>-1&&document.cookie.charAt(cookiePos+12)==1){toggleToc()}}}function changeText(el,newText){if(el.innerText){el.innerText=newText}else if(el.firstChild&&el.firstChild.nodeValue){el.firstChild.nodeValue=newText}}function toggleToc(){var toc=document.getElementById('toc').getElementsByTagName('ul')[0];var toggleLink=document.getElementById('togglelink');if(toc&&toggleLink&&toc.style.display=='none'){changeText(toggleLink,tocHideText);document.getElementById('toc').style.cssFloat='left';toc.style.display='block';document.cookie="dsp_hidetoc=0"}else{changeText(toggleLink,tocShowText);document.getElementById('toc').style.cssFloat='';toc.style.display='none';document.cookie="dsp_hidetoc=1"}}window.onload=function(){var cookiePos=document.cookie.indexOf("dsp_hidetoc=");if(cookiePos>-1&&document.cookie.charAt(cookiePos+12)==1){toggleToc()}}</script>
+</head>
+<div class="header">
+<h1 align="center">Shoutcast Source DSP Plug-in 2.4.1</h1>
+<p class="ver">(Last Updated 24 August 2022)</p>
+</div>
+<table id="toc" style="float:left;margin-right:40px;margin-bottom:5px;"><tbody><tr><td>
+<div id="toctitle"><b>Contents</b> <span class="toctoggle">[<a id="togglelink" class="internal" href="javascript:toggleToc()">hide</a>]</span></div>
+<ul style="padding-left:0px;">
+<li><a href="#Introduction_to_the_Source_DSP">1 Introduction to the Source DSP</a></li>
+<li><a href="#Getting_Started">2 Getting Started</a>
+<ul>
+<li><a href="#Installing_the_Plug-in">2.1 Installing the Plug-in</a></li>
+</ul>
+</li>
+<li><a href="#Configuration_Window">3 Configuration Window</a>
+<ul>
+<li><a href="#Summary_Tab">3.1 Summary Tab</a></li>
+<li><a href="#Output_Tab">3.2 Output Tab</a>
+<ul>
+<li><a href="#Login_Tab">3.2.1 Login Tab</a></li>
+<li><a href="#Directory_Tab">3.2.2 Directory Tab</a></li>
+<li><a href="#Encoder_Tab">3.2.3 Encoder Tab</a></li>
+<ul>
+<li><a href="#Save_Encoded_Output">3.2.3.1 Save Encoded Output</a></li>
+</ul>
+<li><a href="#Titles_Tab">3.2.4 Titles Tab</a></li>
+<li><a href="#Artwork_Tab">3.2.5 Artwork Tab</a></li>
+<li><a href="#Logs_Tab">3.2.6 Logs Tab</a></li>
+</ul>
+</li>
+<li><a href="#Input_Tab">3.3 Input Tab</a>
+<ul>
+<li><a href="#Input_Configuration">3.3.1 Input Configuration</a></li>
+<li><a href="#Soundcard_Mixer_Control">3.3.2 Soundcard Mixer Control</a></li>
+</ul>
+</li>
+<li><a href="#About_Tab">3.4 About | Support | Updates Tab</a>
+<ul>
+<li><a href="#Documentation_and_Support">3.4.1 Documentation and Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Known_Issues">4 <span class="toctext">Known Issues</a>
+<ul>
+<li><a href="#Soundcard_Mixer_Control_2">4.1 <span class="toctext">Soundcard Mixer Control</a></li>
+</ul>
+</li>
+<li><a href="#Shoutcast_2_Cipher_Key">5 Shoutcast 2 Cipher Key</a></li>
+<li><a href="#Example_Configurations">6 Example Configurations</a></li>
+</ul>
+</td></tr></tbody></table>
+
+<a name="Introduction_to_the_Source_DSP"></a><h2>1.&nbsp;Introduction to the Source DSP</h2>
+<hr>
+<p>The aim of this document is to show you the different features offered by the Source DSP plug-in. Version 2 of the plug-in is designed to work only on <b>Winamp 5.9</b> and higher due to better api usage and integration with the Winamp player. If you want to use the Source DSP in an alternative player, then it would need to support all of the required Winamp api and services which the plug-in makes use off.</p>
+<p>The key feature of the plug-in is the ability to use Winamp as a source to a DNAS server or a Transcoder / AutoDJ instance or any compatible tool which accepts Shoutcast streams.</p>
+<p>Additionally the plug-in will allow you to capture an audio input from the soundcard and its line-in or microphone inputs (<a href="#Soundcard_Mixer_Control" title="">see section 3.3.2</a>) subject to OS and the audio system.</p>
+<p><br></p>
+
+<a name="Getting_Started"></a><h2>2.&nbsp;Getting Started <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<p>To start using the Source DSP you need a configured and running DNAS server (sc_serv) or an alternative server to connect to and to have all of the login details required to connect as a source. The plug-in can be used as either a full full source or it can be used as a DJ connection in the case of being used with a compatible Transcoder / AutoDJ instance.</p>
+<p><br></p>
+
+<a name="Installing_the_Plug-in"></a><h2>2.1.&nbsp;Installing the Plug-in <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<div class="thumb_about"><a href="res/Select_Source_DSP_in_Winamp.png" title="Select Source DSP in Winamp's Preferences"><img class="about" alt="Select Source DSP in Winamp's Preferences" src="res/Select_Source_DSP_in_Winamp.png"></a></div>
+<p>The installer will detect the Winamp install on your machine and will then install it to the correct location. If the detected Winamp version is prior to v5.6 or if there is no winamp.exe present in the folder chosen then the installer will abort the installation.</p>
+<p>Once installed, if you have not chosen to make the Source DSP the default DSP plug-in, you will need to open Winamp and go to the following location:</p>
+<pre>Preferences -&gt; Plug-ins -&gt; DSP/Effect</pre>
+<p>follwed by selecting the 'Nullsoft Shoutcast Source DSP' entry shown in the plug-in list.</p>
+<p><br></p>
+
+<a name="Configuration_Window"></a><h2>3.&nbsp;Configuration Window <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<p>The configuration window is the main interface of the plug-in and is where login details for the connection to the server can be changed or the current status viewed.</p>
+<pre>When the configuration window is closed then any active connections will be closed.
+If you want to hide the window then you can click use the minimise button on the
+window and click on the notification area icon added when the minimise happened.</pre>
+<p><br></p>
+
+<a name="Summary_Tab"></a><h2>3.1.&nbsp;Summary Tab <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<div class="thumb"><a href="res/Summary_tab.png" title="Shoutcast Source Summary Tab"><img alt="Shoutcast Source Summary Tab" src="res/Summary_tab.png"></a></div>
+<p><b>Status / Info</b>&nbsp;: This will show information about the status of the 5 possible outputs the plug-in is able to provide going from not connected to current duration of the connection.</p>
+<pre>If you double-click one of the output items you will be taken to the 'Output Tab'
+(<a href="#Output_Tab" title="">see section 3.2</a>) where it will show the current settings for the output selected.</pre>
+<p><b>Active Input Device</b>&nbsp;: This allows you to toggle between using Winamp and the configured soundcard input as well seeing the current audio capture mode. For more configuration options go to the 'Input Tab' (<a href="#Input_Tab" title="">see section 3.3</a>).</p>
+<p><b>Input Levels</b>&nbsp;: These show the current and peak audio level of the left and right channels as is being passed through the plug-ins core. This can aid in seeing if the input source is possibly not working or to check the audio is clipped.</p>
+<p><br></p>
+
+<a name="Output_Tab"></a><h2>3.2.&nbsp;Output Tab <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<p>This tab allows you to configure the 5 separate outputs the plug-in is able to generate where the settings for the output are selected by clicking the required item in the list.</p>
+<div class="thumb"><a href="res/Output_tag_configuration_error.png" title="Shoutcast Source Output Tab showing password configuration error"><img alt="Shoutcast Source Output Tab showing password configuration error" src="res/Output_tag_configuration_error.png"></a></div>
+<p><b>Status</b>&nbsp;: This will show the current information about the output source ranging from not being connected to error messages due to invalid passwords to running correctly.</p>
+<p><b>Auto Connect</b>&nbsp;: This will make the plug-in attempt to run this output as soon as it is started or when the option is checked if not already running when checked.</p>
+<p><b>Connect / Abort / Disconnect / Kill Button</b>&nbsp;: This allows you to start a connection, abort a connection try or kill / disconnect an active connection. If 'Auto Connect' is checked and you click this for a disconnect action then the plug-in automatically re-starts the connection.</p>
+<pre>If there is an issue the 'Connect / Abort / Disconnect / Kill Button' will show
+the configuration setting which is invalid e.g. 'Set Password' if the encoder
+has not been specified. The tab and the title above where the value is not
+set will have it's text changed to red to make it easier to identify.</pre>
+<p><br></p>
+
+<a name="Login_Tab"></a><h2>3.2.1.&nbsp;Login Tab <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<div class="thumb"><a href="res/Output_tab_login_tab_v1_enabled.png" title="Shoutcast Source Output Connection Tab in v1 (Legacy) mode"><img alt="Shoutcast Source Output Connection Tab in v1 (Legacy) mode" src="res/Output_tab_login_tab_v1_enabled.png"></a></div>
+<p>This tab allows you to specify the details needed for connecting to a DNAS server.<br><br></p>
+<p><b>Server Address</b>&nbsp;: This is the address of the server to connect to and will depend upon the setup which is being used. If the server being connected to is on the same machine then 'localhost' can be entered, otherwise the exact IP or DNS name of the server e.g. myserver.com needs to be entered here.</p>
+<p><b>Port</b>&nbsp;: This is the port related to the 'address' of the server to connect to. This needs to match 'portbase' (<a target="_blank" href="http://wiki.shoutcast.com/wiki/Shoutcast_DNAS_Server_2#Networking" title="Shoutcast DNAS Server 2">DNAS Server - section 4.8</a>) or the port value given to use.</p>
+<p><b>Stream ID</b>&nbsp;: This is the identifier used to identify the source to the server when using a Shoutcast 2 supporting setup. This needs to match 'streamid' (<a target="_blank" href="http://wiki.shoutcast.com/wiki/Shoutcast_DNAS_Server_2#Networking" title="Shoutcast DNAS Server 2">DNAS Server - section 4.8</a>) or the port value given to use.</p>
+<pre>This is disabled if running in v1.x mode.</pre>
+<p><b>DJ / User ID</b>&nbsp;: This is the user id as specified on the server for the type of connection the plug-in is being asked to make. Most likely you will be provided with a user id only if it is applicable to your setup.</p>
+<pre>If using a compatible v2 DNAS server then this can be entered and will
+be used as an identifier of the current DJ but it is not used for the login.</pre>
+<p><b>Password</b>&nbsp;: This is the password required for accessing the server (if set on the server). This needs to match 'password' (<a target="_blank" href="http://wiki.shoutcast.com/wiki/Shoutcast_DNAS_Server_2#Networking" title="Shoutcast DNAS Server 2">DNAS Server - section 4.8</a>) or the password value given to use.</p>
+<p><b>Automatic reconnection on connection failure</b>&nbsp;: This will make the plug-in attempt to connect back to the server if there is a break in the connection.
+<p><b>Reconnection timeout</b>&nbsp;: This is the number of seconds for the plug-in to wait in-between any connection attempts which fail before it will try again.</p>
+<div class="thumb"><a href="res/Output_tab_login_tab_v2_enabled.png" title="Shoutcast Source Output Connection Tab in v2 mode"><img alt="Shoutcast Source Output Connection Tab in v2 mode" src="res/Output_tab_login_tab_v2_enabled.png"></a></div>
+<p><b>Connect using</b>&nbsp;: This controls the mode the plug-in will run as. It provides <b>'automatic'</b>, <b>'v2.x'</b> and <b>'v1.x'</b> modes with <b>'automatic'</b> being the preferred mode (and the default on new installs).</p>
+<p>Not setting the correct mode for the server you want to connect to will cause the connection attempt to fail or enter into what appears to be a hung state where you are likely to see a 'Unable To Connect To The Server' error if connecting in v2 mode to v1 server. If the plug-in determines this is likely to have happened then it will show the following in status area:
+<pre>Unable To Connect To The Server.
+Enable 'Automatic' or 'v1.x' mode.</pre></p>
+<p><br>When 'automatic' mode is enabled the information panel displayed below this option shows the following message:</p>
+<pre>"Automatic mode" attempts to pick the most
+appropriate protocol mode to connect to the
+server. If this does not work correctly, you
+can select a specific protocol mode to use.</pre>
+<p><br>When 'v2.x' mode is enabled the information panel displayed below this option shows the following message:</p>
+<pre>Connecting to a v1.x server in v2.x mode will
+show the "Unable To Connect To The Server"
+error. To fix this error you will need to select
+either "Automatic mode" or "v1.x mode".</pre>
+<p><br>When 'v1.x' mode is enabled the information panel displayed below this option shows the following message:</p>
+<pre>When the DJ password is formatted as
+&lt;djlogin>:&lt;djpassword&gt; e.g. dj_1:noise
+    
+Enter &lt;djlogin&gt; in 'DJ / User ID' e.g. dj_1
+Enter &lt;djpassword&gt; in 'Password' e.g. noise</pre>
+<p><br></p>
+
+<a name="Directory_Tab"></a><h2>3.2.2.&nbsp;Directory Tab <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<div class="thumb"><a href="res/Output_tab_directory_tab.png" title="Shoutcast Source Output Directory Tab"><img alt="Shoutcast Source Output Directory Tab" src="res/Output_tab_directory_tab.png"></a></div>
+<p>This tab allows you to specify values specific to the stream for being listed or for what
+is provided to listeners when they connect to the DNAS server based on the version set.<br><br></p>
+<p><b>Make this server public (Recommended)</b>&nbsp;: With this enabled, the stream is indicated as being allowed to appear in the Shoutcast Directory. This will enable options as applicable based also on the mode the plug-in is set to run as.</p>
+<p><b>Name</b>&nbsp;: This is the name you want to use for the source (often what will be used in Shoutcast Directory listing).</p>
+<p><b>URL</b>&nbsp;: This is the url for the stream allowing listeners to view or get more information.</p>
+<p><b>Genre</b>&nbsp;: This is the genre for the source and is used to categorise the stream if listed on the Shoutcast Directory listing. Select the genre from the arrow button menu. It is not possible to manually enter the genre and the input field is read-only.</p>
+<p><b>Arrow Button</b>&nbsp;: This will show a menu with known genres and sub-genres allowed for any Shoutcast Directory listings. This will only be enabled if using v1.x mode or if using v2 mode and 'Make this server public' is unchecked.</p>
+<p><b>AIM / ICQ / IRC</b>&nbsp;: These allow you to specify some contact information for clients though support of these fields is only available when using v1.x mode.</p>
+<p><br></p>
+
+<a name="Encoder_Tab"></a><h2>3.2.3.&nbsp;Encoder Tab <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<div class="thumb"><a href="res/Output_tab_encoder_tab.png" title="Shoutcast Source Output Encoder Tab"><img alt="Shoutcast Source Output Encoder Tab" src="res/Output_tab_encoder_tab.png"></a></div>
+<p>This tab allows you to specify the encoder to be used to create the output stream from the input stream the plug-in gets. The following encoders are available with the plug-in:</p>
+<pre>MP3    (audio/mpeg)
+AAC    (audio/aacp)</pre>
+<p><br></p>
+<p>The AAC (actually ADTS-AAC) encoding is provided by enc_aacplus.dll (Winamp 5.1 to 5.61) or enc_fhgaac.dll (Winamp 5.62 and up). If this is not detected in the Winamp plug-ins folder then only MP3 encoding is available.</p>
+<p>Based on the encoder selected, the 'encoder settings' section will provide different options for controlling the encoder settings as either a button to open a configuration window or a dropdown list with options to choose from.</p>
+<p><br></p>
+
+<a name="Save_Encoded_Output"></a><h2>3.2.3.1.&nbsp;Save Encoded Output <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<p>This allows you to make a backup of the stream audio data sent to the DNAS server.<br><br></p>
+<p><b>Save a copy of the encoded stream audio</b>&nbsp;: Enables or disables saving a copy of the audio.</p>
+<pre>The extension of the output file is automatically changed based on the selected
+encoder option to ensure that the file can be easily played in most media players.</pre>
+<p><br></p>
+
+<a name="Titles_Tab"></a><h2>3.2.4.&nbsp;Titles Tab <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<div class="thumb"><a href="res/Output_tab_titles_tab.png" title="Shoutcast Source Output Titles Tab"><img alt="Shoutcast Source Output Titles Tab" src="res/Output_tab_titles_tab.png"></a></div>
+<p>This tab allows you to specify how the stream metadata is gathered from Winamp or if it is manually entered with the options provided.<br><br></>
+<p><b>Disable title updates</b>&nbsp;: This will prevent the Source DSP from sending any title updates.</p>
+<p><b>Follow Winamp's title updates</b>&nbsp;: This makes the Source DSP use Winamp's title updates for stream title updates, sent in the format based on the 'Connect using' setting.</p>
+<p><b>Send next track title to</b>&nbsp;: This sends the next track title to the server when using the v2 mode and if the plug-in can determine the next track.</p>
+<pre>The current version of Winamp is always recommended to use
+due to the improved support for this feature since Winamp v5.61.</pre>
+<p><b>Manual title updates</b>&nbsp;: This will only send titles updates when 'Send Update' is pressed which uses the custom title information entered into the 'now' and 'next' fields (which are enabled as applicable to the mode in use).</p>
+<pre>The 'Send Update' button is enabled when a title is entered or it is
+different from the existing title. When using Shoutcast v2 mode the
+'next' title field will become available as long as title field is not empty.</pre>
+<p><br></p>
+
+<a name="Artwork_Tab"></a><h2>3.2.5.&nbsp;Artwork Tab <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<div class="thumb"><a href="res/Output_tab_artwork_tab_v2_enabled.png" title="Shoutcast Source Output Artwork in v2 mode"><img alt="Shoutcast Source Output Artwork in v2 mode" src="res/Output_tab_artwork_tab_v2_enabled.png"></a></div>
+<p>This tab allows you to specify whether in-stream artwork will be sent to the Shoutcast server and if so the type of artwork which will be sent which can be for the station in general as well as per file artwork (much like album art display in most media players).<br><br></p>
+<p><b>Send in-stream artwork</b>&nbsp;: Enables or disables sending of in-stream artwork.</p>
+<pre>If this is enabled and then disabled, it is possible that the
+plug-in will send some clear artwork messages after disabling
+this option to ensure there is no artwork cached by the server.</pre>
+<p><b>Send artwork from the playing file (if available)</b>&nbsp;: This sends artwork from the currently playing song to the server and acts in the same way as the album art view in most media players.</p>
+<pre>If unchecked or there is no artwork for the playing song then the
+DNAS server may be sent a clear artwork message as applicable.
+
+This is sent as a PNG image to the Shoutcast server.</pre>
+<p><b>Send artwork for stream branding</b>&nbsp;: This will send the image as selected in the box below to the server to act as the station or stream image.</p>
+<pre>If left empty then the DNAS server may be sent a clear artwork message as applicable.</pre>
+<p><br></p>
+<div class="thumb"><a href="res/Output_tab_artwork_tab_v1_enabled.png" title="Shoutcast Source Output Artwork in v1 (Legacy) mode"><img alt="Shoutcast Source Output Artwork in v1 (Legacy) mode" src="res/Output_tab_artwork_tab_v1_enabled.png"></a></div>
+<p>Using the plug-in with a connection to a legacy server will cause the following notice to be shown:</p>
+<pre>Stream is setup for a Shoutcast v1.x server
+which does not support in-stream artwork.
+
+To send in-stream artwork, select either
+"Automatic mode" or "v2.x mode" and
+ensure you are connecting to a v2.x server.</pre>
+<p><br>The plug-in is only able to send in-stream artwork upto 511 KiB (523680 bytes) in size due to the Shoutcast 2 protocol specification for metadata packets. If this limit is reached then the artwork will not be sent and instead the server will get a clear artwork message. This tab page will show if the artwork cannot be used.</p>
+<p>Viewing the in-stream artwork depends on native playback support of Shoutcast v2 streams in the player used by the client so without a compatible player the client will not be able to view it is as it is not available with Shoutcast v1 streams.</p>
+<p><br></p>
+
+<a name="Logs_Tab"></a><h2>3.2.6.&nbsp;Logs Tab <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<div class="thumb"><a href="res/Output_tab_logs_tab.png" title="Shoutcast Source Output Logs Tab"><img alt="Shoutcast Source Output Logs Tab" src="res/Output_tab_logs_tab.png"></a></div>
+<p>This tab allows you to specify the logging options of the status messages as shown at the top of this page. Additionally it also provides the means to log the filepath of the next tracks (if known) which are going to be played by Winamp with support for logging of the track titles if using the xml output mode.<br></p>
+<pre>The main logging options are not enabled by default though this can be used
+for tracking problems with the plug-in e.g. if you are having connection issues.</pre>
+<p><br><b>Enable logging of connection status messages</b>&nbsp;: Enables or disables connection logging.</p>
+<p><b>Clear log file on logging startup</b>&nbsp;: This will reset the log everytime the plug-in starts.</p>
+<p><b>Open log file...</b>&nbsp;: This will open the log file in the associated program for .log files.</p>
+<p><b>Clear log file</b>&nbsp;: This will clear the log file if it exists. It will not remove the file.</p>
+<p><b>Enable next track logging</b>&nbsp;: This will enable creating a log file (based on the following options) of the known next tracks to be played by Winamp.</p>
+<p><b>Save report as xml instead of plain text</b>&nbsp;: Changing this will create the log as an xml file containing filepath and title with each item identified by the 'seq' attribute.</p>
+<pre>The next track logging is only updated when the plug-in detects a track change.
+If the plain text / xml mode is changed or the plug-in starts then the file contents
+will be cleared until the next track title change happens.</pre>
+<p><br></p>
+
+<a name="Input_Tab"></a><h2>3.3.&nbsp;Input Tab <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+
+<a name="Input_Configuration"></a><h2>3.3.1.&nbsp;Input Configuration <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<div class="thumb"><a href="res/Input_tab_winamp_input.png" title="Shoutcast Source Input Tab in Winamp mode"><img alt="Shoutcast Source Input Tab in Winamp mode" src="res/Input_tab_winamp_input.png"></a></div>
+<p><b>Input Device</b>&nbsp;: This allows you to choose between using Winamp or your soundcard (usually the line-in) as the input source for the output stream the plug-in makes. Depending upon the selection made additional options will be shown below.</p>
+<p><b>Input Levels</b>&nbsp;: These show the current and peak audio level of the left and right channels as is being passed through the plug-ins core. This can aid in seeing if the input source is possibly not working or to check the audio is clipped.</p>
+<p><b>Input Settings</b>&nbsp;: When the soundcard input is selected then this allows for control over the sample rate used on the input source.  When the Winamp input is selected then this will show information about what's currently playing.</p>
+<p><br></p>
+
+<a name="Soundcard_Mixer_Control"></a><h2>3.3.2.&nbsp;Soundcard Mixer Control <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<p><b>Choose Microphone</b>&nbsp;: This will allow you to choose any of the input devices reported by the OS for use with the microphone overlay mode the plug-in provides.</p>
+<p><b>Refresh Button</b>&nbsp;: This allows you to refresh the capture device list on Vista / Windows 7 (is disabled otherwise) since the plug-in was started. This is useful if you have connected a device to the machine and now want to use it.</p>
+<div class="thumb"><a href="res/Input_tab_soundcard_input.png" title="Shoutcast Source Input Tab in soundcard mode"><img alt="Shoutcast Source Input Tab in soundcard mode" src="res/Input_tab_soundcard_input.png"></a></div>
+<p><b>Open Mixer</b>&nbsp;: This will open the operating systems recording and playback options (when using Windows 2000 / XP) which will allow you to change any required input and output settings for the system (though the amount you can change does depend upon the operating system being used - (<a href="#Known_Issues" title="">see section 4.0</a>)).</p>
+<p><b>Music Level</b>&nbsp;: This controls the Winamp output level (from no audio to full audio level).</p>
+<p><b>BG Level</b>&nbsp;: This controls the Winamp output level when the 'Push to Talk' option is active (from no audio to full audio level).</p>
+<p><b>Mic Level</b>&nbsp;: This controls the chosen microphone device's output level when the 'Push to Talk' option is active (from no audio to full audio level).</p>
+<p><b>Fade Time</b>&nbsp;: This controls the amount of time it takes for the audio to fade from the non 'Push to Talk' mode to 'Push to Talk' being the active mode in usage (from no fade i.e. instantly changes to 2.5 second fade duration).</p>
+<p><b>Capture Device Fade Time</b>&nbsp;: This controls the amount of time it takes for the selected capture device to fade from the non 'Push to Talk' mode to 'Push to Talk' being the active mode in usage (from no fade i.e. instantly changes to 2.5 second fade duration).</p>
+<p><b>Push to Talk</b>&nbsp;: When this is pressed then the chosen microphone device becomes the active input source as used by any active output streams (<a href="#Output_Tab" title="">see section 3.2</a>). When enabled this button will appear in an activated state.</p>
+<p><b>Lock</b>&nbsp;: When this is pressed it will toggle the 'Push to Talk' mode on or off depending on the current state of this option when it pressed. When enabled this will appear in an activated state along with the 'Push to Talk' button.</p>
+<p><b>Arrow Button</b>&nbsp;: This will show a menu with the option "Enable 'Push to Talk' on startup" allowing for the mode to be re-enabled when the plug-in is started. This may be of use as the plug-in turns off the mode and sets the system levels back to the non-pushed mode when the plug-in's window is closed.</p>
+<p><br></p>
+
+<a name="About_Tab"></a><h2>3.4.&nbsp;About Tab <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<div class="thumb"><a href="res/About_tab.png" title="Shoutcast Source About Tab"><img alt="Shoutcast Source About Tab" src="res/About_tab.png"></a></div>
+<p>This tab provides information about the version of the plug-in you are using - useful for determining if you are using an older version of the plug-in or when reporting issues.</p>
+<p><br></p>
+
+<a name="Documentation_and_Support"></a><h2>3.4.1.&nbsp;Documentation and Support <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<p>This part of the tab provides links to access the available documentation and also for going to the Shoutcast support forum if issues are being experienced with the plug-in.</p>
+<p>The documentation is either the current version as shipped with the plug-in if selected during install (stored in <b>&lt;winampdir&gt;\Plugins\Shoutcast Source DSP</b>) or if not found it directs you to an online copy available at <a target="_blank" href="http://wiki.shoutcast.com/wiki/Source_DSP_Plug-in">http://wiki.shoutcast.com/wiki/Source_DSP_Plug-in</a></p>
+<p>The support forum is accessed via <a href="http://forums.shoutcast.com/forumdisplay.php?f=140" title="http://forums.shoutcast.com/forumdisplay.php?f=140">http://forums.shoutcast.com/forumdisplay.php?f=140</a></p>
+<p><br></p>
+
+<a name="Known_Issues"></a><h2>4.&nbsp;Known Issues <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<p>The following are currently known issue(s) to affect the currently released build of the Source DSP plug-in:</p>
+<p><br></p>
+
+<a name="Soundcard_Mixer_Control_2"></a><h2>4.1.&nbsp;Soundcard Mixer Control <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<p><b>Issue</b>: The soundcard mixer control does not work correctly or as expected on Vista / Windows 7 especially with the handling of the selected 'microphone' device due to changes in the audio system which prevent the capture handling from Windows 2000 / XP working in the same way. Windows 2000 / XP should still work as expected.</p>
+<p><b>Workaround</b>: The only obvious work around is to use the features the OS provides to enable the 'Listen to this device' option via the system's recording devices feature and then mix the levels with the controls the OS provides.</p>
+<p><b>Expected Resolution</b>: This issue is still being investigated and hopefully a solution will be provided to allow for control of the input device in unison with the selected 'microphone' device with-in the plug-ins interface when using this mode.</p>
+<p><br></p>
+
+<a name="Shoutcast_2_Cipher_Key"></a><h2>5.&nbsp;Shoutcast 2 Cipher Key <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<p>If you find that you do need to change the uvoxcipherkey (<a target="_blank" href="http://wiki.shoutcast.com/wiki/Shoutcast_DNAS_Server_2#YP_Server_Behaviour" title="Shoutcast DNAS Server 2">DNAS Server - section 4.14</a>) in you sc_serv setup, then you can change the cipher key the DSP uses. You will only need to do this if you get the following status message when making a connection:</p>
+<pre>Authentication Error:
+Cipher Does Not Match</pre>
+<p>This is done currently via editing 'Cipherkey' entry in dsp_sc.ini in your Winamp config folder where you just need to change the string after the equal sign to the value from 'uvoxcipherkey' or 'djcipher' depending upon what you are trying to connect to.</p>
+<p>The dsp_sc.ini file can usually be found by entering <b>%appdata%\Winamp\plugins</b> into the address bar in Windows Explorer. If it is not there then you should search for <b>dsp_sc.ini</b> and make sure to have the search program you are using to look for hidden files (this is just incase the OS is hiding the settings folder).</p>
+<p><br></p>
+
+<a name="Example_Configurations"></a><h2>6.&nbsp;Example Configurations <a style="font-size:55%;" href="#">[top]</a></h2>
+<hr>
+<p>If you are unsure of what to enter to get the Source DSP connected to the official tools, you should look at the <a href="Source_DSP_Plug-in_Config_Examples.html" title="Source DSP Plug-in Example Configurations">Source DSP Plug-in Example Configurations</a>. This shows you where to take configuration values from the official tool configuration file(s) and where in the plug-in configuration you need to enter them for the different operating modes available.</p>
+<p>For 3rd party servers or broadcast tools, you may need to consult their documentation to determine where you need to get the required configuration values from.</p>
+</body></html>

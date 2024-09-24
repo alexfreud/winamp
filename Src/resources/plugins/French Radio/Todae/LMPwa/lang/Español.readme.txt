@@ -1,0 +1,54 @@
+LIVE MEDIA PLUGIN : PREGUNTAS (P) & RESPUESTAS (R)
+
+P : DIRECT 8 NO FUNCIONA!
+===================================
+R : Si, estan un poco aparte… para que funcione tiene que clicar una sol avez (ver el mensaje de error) y clicar una segunda vez.
+
+P : HAY UN MENSAJE DE ERROR AL ABRIR LA PAGINA WEB
+===================================
+R : Es un problema conocido pero insoluble : A la vez, el buscador Web de Windows Media Player no es tan perfecto que el de Internet explorer (es caprichoso en cuanto el codigo de los sitios internet) y los sitios sobre los cuales el problema existe no óptimzan el codigo. Hagad click sobre el « No » cuando el cuadro de diálogo os propone de seguir ejecutando los codigos escriptos de la página.
+
+P : EL SONIDO ES MALO !
+===================================
+R : La calidad del sonido solo depende de la calidad de difusion de las radios. Algunas radios (Oui FM, Fréquence 3) proponen un sonido de calidad CD, mientras otras (Radio France) ofrecen un sonido de calidad media. La razon es sencilla : el número de auditores simultanéos está limitado, debido a la capacidad del ancho de banda dividida por la calidad del flujo. En otras palabras, disminuyendo su calidad de emisión, una radio puede aumentar su número máximo de auditores sin que por ello se pague más.
+
+P : MI RADIO SIEMPRE SE DESCONECTA !
+
+===========================================
+R : Ese problema es probablemente debido a la calidad de vuestra conexion internet. Además, si abusa de vuestro propio ancho de banda (descargando por ejemplo) es normal que vuestra radio se desconecte a veces.
+
+
+P : COMO AÑADIR O ELIMINAR UNA RADIO ?
+===============================================
+R : Id en las opciones y simplemente hagad click sobre « añadir » o « eliminar ». Notad que también puede editar cada flujo de vuestra lista corriente. También puede importar o fusionar listas utilizando los botones apropriados.  
+
+En enlace está disponible aquí para encontrar la dirreción del flujo:
+http://www.01men.com/editorial/323251/dossiers-pratiques/
+y también 
+http://forum.telecharger.01net.com/microhebdo/logiciels/audio/tuto_winamp_comment_trouver_une_adresse_ip_dune_radio-333189/messages-1.html
+
+P : PUEDE AÑADIR LA RADIO/TV XYZ ?
+========================================
+R : No, las radios presentes son el objeto de cooperativas. Las demás rechazaron la proposición  o no contestaron. Sin embargo, nada os impide añadir vuestras propias radios, sólo tiene que encontrar las direcciones de los flujos. ;)
+Pero proponednos vuestras peticiones por e-mail ! 
+Aún no se podia en el mes de Noviembre añadir televisiones clásicas  de France Television, Canal +, M6, etc…
+
+P : LAS INFORMACIONES SON ERRONEAS
+======================================
+R : Títulos o esloganes de radios incorrectos ? Dirreciones que ya no funcionan ? Informaciones olvidadas ? Contactadnos aquí: benoit.todae@gmail.com
+
+P : COMO CAMBIAR LOS ICONOS ?
+==================================
+R : Sólo tiene que clicar  sobre el botón « cambiar » y dar el camino de acceso de una imagen al formato BMP. Para una calidad óptima, esta imagen tiene que medir 48X48 pixels. Para que el fondo sea transparente, copiar el codigo HTML del color del fondo en la zona prevista a tal efecto. (debajo del boton « cambiar »)
+
+P : POR QUE HABER PUESTO UNA PUBLICIDAD ABAJO ?
+=======================================
+R : Primero porque el desarollo  del plugin tiene un coste. Depués porque nuevas funciones están previstas (para VUESTRA comodidad). Por fín, porque las radios no nos pagan para este tipo de cooperación. Se trata de una publicidad discreta, no intrusiva y que viene de un ámbito profesional, entonces NO hay virus ni spyware.
+
+P : Y A CONTINUACIÓN ?
+===============
+R : Aún más TV :)
+
+AVISO : Para cualquier preguntas tecnicas, id en el forum oficial del plugin. No contestaremos de forma personal a esas preguntas. Gracias por vuestra comprehensión.
+
+Live Media Plugin es el nuevo nombre de LIVE MEDIA PLUGIN. El nombre ha cambiado porque el la segunda version del plugin que se vuelve hacia las televisiones. Fue desarollado del mes de octubre hasta el mes de Noviembre 2007 por ALEXANDRE GENOUD para TODAE.FR

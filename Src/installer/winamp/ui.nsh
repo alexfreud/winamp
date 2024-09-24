@@ -1,0 +1,89 @@
+﻿!ifndef NULLSOFT_WINAMP_INSTALLER_UI_HEADER
+!define NULLSOFT_WINAMP_INSTALLER_UI_HEADER
+
+!include ".\mui2.nsh"
+!include ".\waui.nsh"
+!include ".\express_mode.nsh"
+
+ReserveFile "${HEADER_IMAGE_PATH}"
+ReserveFile "${WELCOMEFINISH_IMAGE_PATH}"
+ReserveFile "${UNINSTALLER_WELCOMEFINISH_IMAGE_PATH}"
+
+!define MUI_ICON 								".\res\install.ico"
+!define MUI_UNICON								".\res\uninstall.ico"
+
+!ifndef _DEBUG
+!define MUI_ABORTWARNING
+!endif ;defined(_DEBUG)
+
+!define MUI_HEADERIMAGE
+!define MUI_HEADERIMAGE_BITMAP					"${HEADER_IMAGE_PATH}"
+
+!define WELCOMEFINISHPAGE_BITMAP_NOSTRETCH
+!define MUI_WELCOMEFINISHPAGE_BITMAP			"${WELCOMEFINISH_IMAGE_PATH}"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP			"${UNINSTALLER_WELCOMEFINISH_IMAGE_PATH}"
+
+!define MUI_CUSTOMFUNCTION_GUIINIT				UI_OnInit
+
+; Welcome Page
+!define MUI_WELCOMEPAGE_TITLE					"$(IDS_PAGE_WELCOME_TITLE)"
+!define MUI_WELCOMEPAGE_TEXT					"$(IDS_PAGE_WELCOME_TEXT)"
+!define MUI_PAGE_CUSTOMFUNCTION_SHOW			UI_OnWelcomePageShow
+!insertmacro MUI_PAGE_WELCOME
+
+; License Page
+!define MUI_LICENSEPAGE_TEXT_TOP				"$(licenseTop)"
+!define MUI_PAGE_CUSTOMFUNCTION_PRE				UI_OnLicensePagePre
+!define MUI_PAGE_CUSTOMFUNCTION_SHOW			UI_OnLicensePageShow
+!insertmacro MUI_PAGE_LICENSE "${LICENSE_PATH}"
+
+; Express Mode Page
+${ExpressMode_InsertPage}
+
+; Directory Page
+!define MUI_DIRECTORYPAGE_TEXT_TOP				"$(directoryTop)"
+!define MUI_PAGE_CUSTOMFUNCTION_PRE				UI_OnDirectoryPagePre
+!define MUI_PAGE_CUSTOMFUNCTION_SHOW			UI_OnDirectoryPageShow
+!define MUI_PAGE_CUSTOMFUNCTION_LEAVE			UI_OnDirectoryPageLeave
+!insertmacro MUI_PAGE_DIRECTORY
+
+; Components Page
+!define MUI_COMPONENTSPAGE_TEXT_TOP				"$(installWinampTop)${INSTALLER_TYPE_DESCRIPTION}"
+!define MUI_COMPONENTSPAGE_TEXT_COMPLIST		"$(IDS_PAGE_COMPONENTS_COMPLIST)"
+!define MUI_COMPONENTSPAGE_SMALLDESC
+!define MUI_PAGE_CUSTOMFUNCTION_PRE				UI_OnComponentsPagePre
+!define MUI_PAGE_CUSTOMFUNCTION_SHOW			UI_OnComponentsPageShow
+!define MUI_CUSTOMFUNCTION_ONMOUSEOVERSECTION	UI_OnMouseOverSection
+!insertmacro MUI_PAGE_COMPONENTS
+
+; Components Page Descriptions
+!insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
+!insertmacro MUI_FUNCTION_DESCRIPTION_END
+
+; StartMenu Page
+!define STARTMENUPAGE_CHECK_NEXT_BUTTON
+!insertmacro WAUI_PAGE_STARTMENU
+
+; InstallProgress Page
+!insertmacro MUI_PAGE_INSTFILES
+
+; Finish Page
+!ifdef _DEBUG
+!define MUI_FINISHPAGE_NOAUTOCLOSE
+!endif
+!define MUI_FINISHPAGE_TEXT_LARGE
+!define MUI_FINISHPAGE_TITLE					"$(IDS_PAGE_FINISH_TITLE)"
+!define MUI_FINISHPAGE_TITLE_3LINES				; For compatibility with installer translations
+!define MUI_FINISHPAGE_TEXT						"$(IDS_PAGE_FINISH_TEXT)"
+!define MUI_FINISHPAGE_SHOWREADME
+!define MUI_FINISHPAGE_SHOWREADME_TEXT			"$(IDS_PAGE_FINISH_RUN)"
+!define MUI_FINISHPAGE_SHOWREADME_FUNCTION		UI_OnFinishPageReadMe
+!ifdef _DEBUG
+!define MUI_FINISHPAGE_SHOWREADME_NOTCHECKED
+!endif
+!define MUI_FINISHPAGE_LINK						"$(IDS_PAGE_FINISH_LINK)"
+!define MUI_FINISHPAGE_LINK_LOCATION			"http://www.winamp.com/"
+!define MUI_PAGE_CUSTOMFUNCTION_PRE				UI_OnFinsihPagePre
+!insertmacro MUI_PAGE_FINISH
+
+!endif ;NULLSOFT_WINAMP_INSTALLER_UI_HEADER

@@ -1,0 +1,5 @@
+Movement help goes here (send me some :) )
+
+To use the custom table, modify r,d,x or y.
+Rect coords: x,y are in (-1..1) . Otherwise: d is (0..1) and r is (0..2PI).
+You can also access 'sw' and 'sh' for screen dimensions in pixels (might be useful)
