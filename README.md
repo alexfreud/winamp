@@ -2,17 +2,22 @@
 
 ## About
 
-Winamp is a multimedia player launched in 1997, iconic for its flexibility and wide compatibility with audio formats. Originally developed by Nullsoft, it gained massive popularity with still millions of users. Its development slowed down, but now, its source code was opened to the community, allowing developers to improve and modernize the playerto meet current user needs.
+Winamp is a multimedia player launched in 1997, iconic for its flexibility and wide compatibility with audio formats. Originally developed by Nullsoft, it gained massive popularity with still millions of users. Its development slowed down, but now, its source code was opened to the community, allowing developers to improve and modernize the player to meet current user needs.
+
+It really whips the llama's ass.
 
 ## Usage
 
-Building of the Winamp desktop client is current based around Visual Studio 2019 (VS2019) and Intel IPP libs (You need to use exactly v6.1.1.035).
-There are differnt options of how to build Winamp:
+Building of the Winamp desktop client is currently based around Visual Studio 2019 (VS2019) and Intel IPP libs (You need to use exactly v6.1.1.035).
+There are different options of how to build Winamp:
 
 1. Use a build_winampAll_2019.cmd script file that makes 4 versions x86/x64 (Debug and Release). In this case Visual Studio IDE not running.
 2. Use a winampAll_2019.sln file to build and debug in Visual Studio IDE.
 
 ### Dependencies
+
+1. Use a build_winampAll_2019.cmd script file that makes 4 versions x86/x64 (Debug and Release). In this case Visual Studio IDE not running.
+2. Use a winampAll_2019.sln file to build and debug in Visual Studio IDE.
 
 #### libvpx
 We take libvpx from https://github.com/ShiftMediaProject/libvpx, modify it and pack to archive.
@@ -41,4 +46,5 @@ goto line 427 and change from 'return ::DeleteFile((LPTSTR)lpFileName);' to 'ret
 
 #### Intel IPP 6.1.1.035
 We take Intel IPP 6.1.1.035, modify it and pack to archive.
+
 Run unpack_intel_ipp_6.1.1.035.cmd to unpack it.
