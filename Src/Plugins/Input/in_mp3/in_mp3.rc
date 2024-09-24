@@ -1,0 +1,503 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PREFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 220
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_OUTPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 220
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_HTTP, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 220
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_TAGOPTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 220
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_HTTPAUTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_ADVANCED_TAGGING, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 220
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 116
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PREFS DIALOGEX 0, 0, 226, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "File Association",IDC_STATIC,6,6,214,61
+    LTEXT           "Extension list (semicolon delimited):",IDC_STATIC,12,18,140,8
+    EDITTEXT        IDC_EDIT1,12,31,201,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set to default",IDC_BUTTON1,12,49,50,13
+    LTEXT           "Default: MP3;MP2;MP1;AAC;VLB",IDC_STATIC,68,51,144,8
+    GROUPBOX        "Full File Buffering",IDC_STATIC,6,71,214,32
+    LTEXT           "Buffer the entire file from disk if the file is smaller than:",IDC_STATIC,13,81,115,16
+    EDITTEXT        IDC_BUFMAX,141,83,24,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "kilobytes",IDC_STATIC,169,85,28,8
+END
+
+IDD_OUTPUT DIALOGEX 0, 0, 226, 163
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Decoder"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Quality",IDC_STATIC,6,2,213,50
+    CONTROL         "&Full",IDC_FULLRATE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,12,30,10
+    CONTROL         "&Half",IDC_HALFRATE,"Button",BS_AUTORADIOBUTTON,12,24,30,10
+    CONTROL         "&Quarter",IDC_QRATE,"Button",BS_AUTORADIOBUTTON,12,36,40,10
+    LTEXT           "Selecting 'Half' or 'Quarter' quality will downsample the output, resulting in less processor usage.",IDC_STATIC,80,12,125,34
+    GROUPBOX        "Misc Options",IDC_STATIC,6,55,213,40
+    CONTROL         "CRC checking",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,67,105,10
+    CONTROL         "Show average bitrate on VBR files",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,12,80,180,10
+    GROUPBOX        "Equalizer",IDC_STATIC,6,98,213,61
+    CONTROL         "Logarithmic EQ (default)",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,110,128,10
+    CONTROL         "Linear EQ",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,12,120,72,10
+    CONTROL         "Fast Layer 3 EQ",IDC_FASTL3EQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,132,98,10
+    CONTROL         "Fast Layer 1/2 EQ",IDC_FASTL12EQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,144,106,10
+END
+
+IDD_HTTP DIALOGEX 0, 0, 226, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Streaming"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Streaming Data Buffer",IDC_STATIC,6,6,86,64
+    EDITTEXT        IDC_BUFFERS_NUMBUFS,12,18,27,12
+    LTEXT           "KB",IDC_STATIC,42,20,10,8
+    LTEXT           "Increase this value to give better skip protection on slower connections.",IDC_STATIC,12,33,73,33
+    GROUPBOX        "Streaming Prebuffer",IDC_STATIC,96,6,124,100
+    CONTROL         "Slider1",IDC_PREBUFSLIDER,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,102,18,111,10
+    CTEXT           "0%                    50%               100%",IDC_STATIC,103,31,110,8
+    CTEXT           "(how much to prebuffer at the start of a stream)",IDC_STATIC,105,42,105,16
+    CONTROL         "Slider1",IDC_PREBUFSLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,102,61,111,10
+    CTEXT           "0%                    50%               100%",IDC_STATIC,103,74,110,8
+    CTEXT           "(how much to prebuffer after a buffer underrun)",IDC_STATIC,105,85,105,16
+    GROUPBOX        "Streaming Extensions",IDC_STATIC,6,72,86,76
+    CONTROL         "Enable SHOUTcast title support",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,12,83,74,18
+    CONTROL         "Include stream name in title",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,12,105,74,18
+    CONTROL         "Enable SHOUTcast v2 artwork support",IDC_SC_ARTWORK,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,12,126,74,18
+    GROUPBOX        "Saving",IDC_STATIC,96,110,124,38
+    CONTROL         "Save files to:",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,102,120,57,10
+    PUSHBUTTON      "",IDC_BUTTON2,102,132,112,11
+END
+
+IDD_TAGOPTS DIALOGEX 0, 0, 226, 168
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "ID3 Tags"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "ID3 Tag Reading",IDC_STATIC,6,6,214,122
+    CONTROL         "Read ID3v1 tags",IDC_READ_ID3V1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,19,70,10
+    CONTROL         "Read ID3v2 tags",IDC_READ_ID3V2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,31,70,10
+    LTEXT           "Read ASCII tags as:",IDC_STATIC,98,16,65,8
+    COMBOBOX        IDC_COMBO1,109,28,80,40,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "ID3 Tag Writing",IDC_STATIC,6,47,214,81
+    CONTROL         "Modify ID3v1 tags",IDC_WRITE_ID3V1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,60,73,10
+    CONTROL         "Modify ID3v2 tags",IDC_WRITE_ID3V2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,72,73,10
+    LTEXT           "Write tags as:",IDC_STATIC,98,56,45,8
+    COMBOBOX        IDC_COMBO2,109,67,80,40,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "ID3 Tag Creation",IDC_STATIC,6,86,214,42
+    CONTROL         "Create new ID3v1 tags when adding metadata",IDC_CREATE_ID3V1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,100,163,10
+    LTEXT           "",IDC_STATIC,17,107,8,8
+    CONTROL         "Create new ID3v2 tags when adding metadata",IDC_CREATE_ID3V2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,112,163,10
+    GROUPBOX        "ID3v2 Tag Rating Field Email Address",IDC_STATIC,6,132,214,31
+    EDITTEXT        IDC_RATING_EMAIL,13,144,162,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Reset",IDC_RATING_EMAIL_RESET,179,143,36,14
+END
+
+IDD_HTTPAUTH DIALOGEX 0, 0, 160, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HTTP Login Required"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Realm: ",IDC_STATIC,7,7,25,8
+    LTEXT           "",IDC_REALM,40,7,113,8
+    LTEXT           "Enter your login and password in the form of:\n\tlogin:password",IDC_STATIC,7,18,146,17
+    EDITTEXT        IDC_EDIT1,7,39,146,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,58,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,61,58,50,13
+END
+
+IDD_INFO_ID3V1 DIALOGEX 0, 0, 341, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "ID3v1",IDC_STATIC,0,0,175,133
+    CONTROL         "&Include ID3v1 tag in file",IDC_ID3V1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,9,100,10
+    RTEXT           "Track #",IDC_STATIC,7,24,36,8
+    EDITTEXT        IDC_ID3V11_TRACK,46,22,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Title",IDC_STATIC,7,39,36,8
+    EDITTEXT        IDC_ID3_TITLE,46,37,124,12,ES_AUTOHSCROLL
+    RTEXT           "Artist",IDC_STATIC,7,54,36,8
+    EDITTEXT        IDC_ID3_ARTIST,46,52,124,12,ES_AUTOHSCROLL
+    RTEXT           "Album",IDC_STATIC,7,69,36,8
+    EDITTEXT        IDC_ID3_ALBUM,46,67,124,12,ES_AUTOHSCROLL
+    RTEXT           "Year",IDC_STATIC,7,83,36,8
+    EDITTEXT        IDC_ID3_YEAR,46,81,31,12,ES_NUMBER
+    RTEXT           "Genre",IDC_STATIC,81,83,22,8
+    COMBOBOX        IDC_ID3_GENRE,106,81,64,159,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Comment",IDC_STATIC,7,99,36,8
+    EDITTEXT        IDC_ID3_COMMENT,46,97,123,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Copy &to ID3v2",IDC_ID3V1_TO_V2,107,113,62,14
+END
+
+IDD_INFO_ID3V2 DIALOGEX 0, 0, 341, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "ID3v2",IDC_STATIC,0,0,341,164
+    CONTROL         "&Include ID3v2 tag in file",IDC_ID3V2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,9,108,10
+    RTEXT           "Track #",IDC_STATIC,7,24,36,8
+    EDITTEXT        IDC_ID3V2_TRACK,46,22,36,12,ES_AUTOHSCROLL
+    RTEXT           "Disc #",IDC_STATIC,90,24,36,8
+    EDITTEXT        IDC_ID3V2_DISC,128,22,42,12,ES_AUTOHSCROLL
+    RTEXT           "Title",IDC_STATIC,7,39,36,8
+    EDITTEXT        IDC_ID3V2_TITLE,46,37,124,12,ES_AUTOHSCROLL
+    RTEXT           "Artist",IDC_STATIC,7,54,36,8
+    EDITTEXT        IDC_ID3V2_ARTIST,46,52,124,12,ES_AUTOHSCROLL
+    RTEXT           "Album",IDC_STATIC,7,69,36,8
+    EDITTEXT        IDC_ID3V2_ALBUM,46,67,124,12,ES_AUTOHSCROLL
+    RTEXT           "Year",IDC_STATIC,7,83,36,8
+    EDITTEXT        IDC_ID3V2_YEAR,46,81,31,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Genre",IDC_STATIC,81,83,22,8
+    COMBOBOX        IDC_ID3V2_GENRE,106,81,64,159,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Comment",IDC_STATIC,7,99,36,8
+    EDITTEXT        IDC_ID3V2_COMMENT,46,97,124,29,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    RTEXT           "Album Artist",IDC_STATIC,3,131,40,8
+    EDITTEXT        IDC_ID3V2_ALBUM_ARTIST,46,129,124,12,ES_AUTOHSCROLL
+    RTEXT           "Composer",IDC_STATIC,7,146,36,8
+    EDITTEXT        IDC_ID3V2_COMPOSER,46,144,124,12,ES_AUTOHSCROLL
+    RTEXT           "Publisher",IDC_STATIC,172,24,37,8
+    EDITTEXT        IDC_ID3V2_PUBLISHER,212,22,124,12,ES_AUTOHSCROLL
+    RTEXT           "Orig. Artist",IDC_STATIC,173,39,36,8
+    EDITTEXT        IDC_ID3V2_MARTIST,212,37,124,12,ES_AUTOHSCROLL
+    RTEXT           "Copyright",IDC_STATIC,173,54,36,8
+    EDITTEXT        IDC_ID3V2_RECORD,212,52,124,12,ES_AUTOHSCROLL
+    RTEXT           "URL",IDC_STATIC,173,69,36,8
+    EDITTEXT        IDC_ID3V2_URL,212,67,124,12,ES_AUTOHSCROLL
+    RTEXT           "Encoded by",IDC_STATIC,173,84,36,8
+    EDITTEXT        IDC_ID3V2_ENCODER,212,82,124,12,ES_AUTOHSCROLL
+    RTEXT           "BPM",IDC_STATIC,173,99,36,8
+    EDITTEXT        IDC_ID3V2_BPM,212,97,41,12,ES_AUTOHSCROLL
+    RTEXT           "Track Gain",IDC_STATIC,173,114,36,8
+    EDITTEXT        IDC_TRACK_GAIN,212,112,41,12,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Album Gain",IDC_STATIC,255,114,36,8
+    EDITTEXT        IDC_ALBUM_GAIN,294,112,41,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Copy &to ID3v1",IDC_ID3V2_TO_V1,272,144,62,14
+END
+
+IDD_INFO_LYRICS3 DIALOGEX 0, 0, 341, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Lyrics3",-1,0,0,196,70
+    CONTROL         "&Include Lyrics3 tag in file",IDC_LYRICS3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,9,108,10
+    RTEXT           "Title",-1,7,24,36,8
+    EDITTEXT        IDC_LYRICS3_TITLE,46,22,144,12,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Artist",-1,7,39,36,8
+    EDITTEXT        IDC_LYRICS3_ARTIST,46,37,144,12,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Album",-1,7,54,36,8
+    EDITTEXT        IDC_LYRICS3_ALBUM,46,52,144,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_INFO_APEV2 DIALOGEX 0, 0, 341, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "APEv2",IDC_STATIC,0,0,341,164
+    CONTROL         "&Include APEv2 tag in file",IDC_APEV2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,9,108,10
+    CONTROL         "",IDC_APE_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,6,20,163,136
+    LTEXT           "Name:",IDC_STATIC,176,20,22,8
+    EDITTEXT        IDC_APE_KEY,176,31,158,14,ES_AUTOHSCROLL
+    LTEXT           "Value:",IDC_STATIC,176,47,21,8
+    EDITTEXT        IDC_APE_VALUE,176,57,158,81,ES_MULTILINE | ES_AUTOHSCROLL | ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Add New",IDC_APE_ADD,176,142,50,14
+    PUSHBUTTON      "Delete",IDC_APE_DELETE,230,142,50,14
+    PUSHBUTTON      "Delete All",IDC_DELETE_ALL,284,142,50,14
+END
+
+IDD_ADVANCED_TAGGING DIALOGEX 0, 0, 226, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "APEv2 and Lyrics3"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "APEv2 Tags",-1,6,6,214,111
+    CONTROL         "Read APEv2 tags",IDC_READ_APEV2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,17,73,10
+    CONTROL         "Modify existing APEv2 tags when updating metadata",IDC_WRITE_APEV2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,29,181,10
+    CONTROL         "Create new APEv2 tags when adding metadata",IDC_CREATE_APEV2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,40,165,10
+    LTEXT           "When writing APEv2 headers:",IDC_STATIC_APEV2_HEADER,13,54,96,8
+    COMBOBOX        IDC_APEV2_HEADER_OPTIONS,25,66,166,40,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Lyrics3 Tags",-1,6,90,214,27
+    CONTROL         "Read Lyrics3 tags",IDC_READ_LYRICS3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,102,73,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_MPEG_AUDIO_DECODER_OLD "Nullsoft MPEG Audio Decoder"
+    IDS_CANNOT_WRITE_STREAMS_TO_DISK "Sorry cannot write streams to disk"
+    IDS_BUFFER_X            "Buffer: %d%%"
+    IDS_ERROR_SYNCING_TO_STREAM "Error syncing to stream"
+    IDS_CONNECTING          "Connecting"
+    IDS_NO_VALID_MULTICONNECT_URL "No valid Multiconnect URL"
+    IDS_REDIRECT_LIMIT_EXCEEDED "Redirect limit exceeded"
+    IDS_READING_ID3         "Reading ID3"
+    IDS_STREAM_TERMINATED   "Stream terminated"
+    IDS_STREAM_TEMPORARILY_INTERRUPTED "Stream temporarily interrupted"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_MPEG_AUDIO_DECODER "Nullsoft MPEG Audio Decoder v%s"
+    65535                   "{CD3EEF98-011C-4213-BC16-3F91C937B9B8}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NETWORK_RECEIVED_X_BYTES "Network received: %llu bytes\n"
+    IDS_SERVER              "Server: %s\n"
+    IDS_CONTENT_TYPE        "Content-Type: %s\n"
+    IDS_ULTRAVOX_SYNC       "Ultravox sync: %d messages, %d desyncs\n"
+    IDS_ULTRAVOX_DATA_MESSAGE "Ultravox Data Message: 0x%X\n"
+    IDS_ULTRAVOX_SID_AVGBR_MAXBR "Ultravox SID/AvgBR/MaxBR: %d/%d/%d\n"
+    IDS_METADATA_RECEIVED   "Metadata received: %d bytes\n"
+    IDS_METADATA_INTERVAL   "Metadata interval: %d bytes\n"
+    IDS_ID3v2_TAG           "ID3v2 tag: %d bytes\n"
+    IDS_VBR_LEADING_FRAME   "VBR leading frame: %d bytes\n"
+    IDS_STREAM_NAME         "Stream name: %s\n"
+    IDS_CURRENT_TITLE       "Current title: %s\n"
+    IDS_CONTENT_LENGTH      "Content length: %d bytes\n"
+    IDS_SAVING_TO           "Saving to: %s\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CUSTOM              "Custom"
+    IDS_MONO                "Mono"
+    IDS_STEREO              "Stereo"
+    IDS_3_CHANNEL           "3 channel"
+    IDS_4_CHANNEL           "4 channel"
+    IDS_SURROUND            "Surround"
+    IDS_5_1                 "5.1"
+    IDS_7_1                 "7.1"
+    IDS_ERROR               "error"
+    IDS_NONE                "None"
+    IDS_50_15_MICROSEC      "50/15 microsec"
+    IDS_INVALID             "invalid"
+    IDS_JOINT_STEREO        "Joint Stereo"
+    IDS_2_CHANNEL           "2 Channel"
+    IDS_PAYLOAD_SIZE        "Payload Size: %u bytes"
+    IDS_FORMAT_AAC          "\nFormat: AAC"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MPEG2_HE_AAC_IS     "\nMPEG-2 HE-AAC (Implicitly Signalled)"
+    IDS_MPEG4_HE_AAC_IS     "\nMPEG-4 HE-AAC (Implicitly Signalled)"
+    IDS_SAMPLE_RATE_OUTPUT  "\nSample Rate: %u (Output: %u)"
+    IDS_SAMPLE_RATE         "\nSample Rate: %u "
+    IDS_SBR_PRESENT         "\nSBR: Present"
+    IDS_SBR_NOT_PRESENT     "\nSBR: Not Present"
+    IDS_CHANNELS_OUTPUT     "\nChannels: %u (Output: %u)"
+    IDS_CHANNELS            "\nChannels: %u"
+    IDS_MODE_MONO           "     Mode: Mono"
+    IDS_MODE_STEREO         "     Mode: Stereo"
+    IDS_MODE_PARAMETRIC_STEREO "     Mode: Parametric Stereo"
+    IDS_MODE_DUAL_CHANNEL   "     Mode: Dual Channel"
+    IDS_MODE_4_CHANNEL_2_CPE "     Mode: 4 Channel 2 CPE"
+    IDS_MODE_4_CHANNEL_MPEG "     Mode: 4 Channel MPEG"
+    IDS_MODE_5_CHANNEL      "     Mode: 5 Channel"
+    IDS_MODE_5_1            "     Mode: 5.1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MODE_6_1            "     Mode: 6.1"
+    IDS_MODE_7_1            "     Mode: 7.1"
+    IDS_BITRATE             "\nBitrate: %u"
+    IDS_AVERAGE_BITRATE     "\nBitrate: VBR (%u)"
+    IDS_HEADER_FOUND_AT_X_BYTES "\nHeader found at: %d bytes"
+    IDS_LENGTH_X_SECONDS    "\nLength: %u seconds"
+    IDS_PROFILE             "\nProfile: %s"
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+    IDS_ENC_DELAY_ZERO_PADDING "\nEnc Delay: %u, Zero Padding: %u"
+    IDS_S_LAYER_X           "\n%s layer %d"
+    IDS_X_KBIT              "\n%d kbps, %d frames"
+    IDS_X_KBIT_APPROX       "\n%d kbps, approx. %d frames"
+    IDS_X_KBIT_VBR          "\n%d kbps (VBR%s), %d frames"
+    IDS_X_HZ_S              "\n%d Hz %s"
+    IDS_COPYRIGHTED         ", Copyrighted: %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ORIGINAL            "\nOriginal: %s"
+    IDS_EMPHASIS            ", Emphasis: %s"
+    IDS_EXT_MP3_SURROUND    "\nExtension: MP3 Surround"
+    IDS_MP3_HAS_BEEN_MODIFIED_NOT_ALL_MAY_BE_CORRECT 
+                            "\nMP3 has been modified from its original encoding.  Some information may be incorrect."
+    IDS_MPEG_AUDIO_FILES    "MPEG Audio Files ("
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MPEG_AUDIO_DECODER_SETTINGS "MPEG Audio Decoder Settings"
+    IDS_LATIN_1             "Latin-1"
+    IDS_SYSTEM_LANGUAGE     "System Language"
+    IDS_UNICODE_UTF_16      "Unicode (UTF-16)"
+    IDS_SELECT_DIRECTORY_TO_SAVE_TO "Select directory to save streamed mp3s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_X_KBIT_ABR          "\n%d kbps (ABR), %d frames"
+    IDS_NAME                "Name"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VALUE               "Value"
+    IDS_APEV2_RETAIN_HEADER "Retain existing header"
+    IDS_APEV2_ADD_HEADER    "Add header"
+    IDS_APEV2_REMOVE_HEADER "Remove header"
+    IDS_ERROR_SAVING_METADATA "Error saving metadata"
+    IDS_METADATA_ERROR_READONLY "Cannot save metadata: File is read-only!"
+    IDS_METADATA_ERROR_OPENING_FILE 
+                            "Cannot save metadata: Error opening file."
+    IDS_METADATA_ERROR_APEV2 "Cannot save metadata: APEv2 tag writing failed."
+    IDS_METADATA_ERROR_LYRICS3 
+                            "Cannot save metadata: Lyrics3 tag writing failed."
+    IDS_METADATA_ERROR_ID3V1 "Cannot save metadata: ID3v1 tag writing failed."
+    IDS_METADATA_ERROR_ID3V2 "Cannot save metadata: ID3v2 tag writing failed."
+    IDS_METADATA_ERROR_UNSPECIFIED "Cannot save metadata: Unspecified error."
+    IDS_TIMED_OUT           "timed out"
+    IDS_FAMILY_STRING_MP3   "MPEG Layer 3 Audio File"
+    IDS_FAMILY_STRING_MP2   "MPEG Layer 2 Audio File"
+    IDS_FAMILY_STRING_MP1   "MPEG Layer 1 Audio File"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FAMILY_STRING_MPEG2_AAC "MPEG-2 Advanced Audio Coding File"
+    IDS_FAMILY_STRING_DOLBY "Dolby Very Low Bitrate AAC File"
+    IDS_ABOUT_TEXT          "%s\n© 1998-2023 Winamp SA\n\nBuild date: %hs\n\nMPEG Audio Decoding provided by libmpg123"//MPEG Layer-3 audio compression technology\nlicensed by Fraunhofer IIS & THOMSON multimedia.\n\nMPEG-4 AAC decoding licensed by Fraunhofer IIS"
+    IDS_LENGTH_X_PART_SECONDS "\nLength: %.2f seconds"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

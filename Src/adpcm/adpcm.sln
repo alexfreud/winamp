@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "adpcm", "adpcm.vcxproj", "{7748B57A-BF73-4784-8CDF-1866FF545762}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7748B57A-BF73-4784-8CDF-1866FF545762}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7748B57A-BF73-4784-8CDF-1866FF545762}.Debug|Win32.Build.0 = Debug|Win32
+		{7748B57A-BF73-4784-8CDF-1866FF545762}.Release|Win32.ActiveCfg = Release|Win32
+		{7748B57A-BF73-4784-8CDF-1866FF545762}.Release|Win32.Build.0 = Release|Win32
+		{7748B57A-BF73-4784-8CDF-1866FF545762}.Debug|x64.ActiveCfg = Debug|x64
+		{7748B57A-BF73-4784-8CDF-1866FF545762}.Debug|x64.Build.0 = Debug|x64
+		{7748B57A-BF73-4784-8CDF-1866FF545762}.Release|x64.ActiveCfg = Release|x64
+		{7748B57A-BF73-4784-8CDF-1866FF545762}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {516129C3-ADEE-4078-B855-A65A93418B6E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+[SPS PRESET]
+slider1=356
+slider2=0
+slider3=0
+slider4=0
+labels_0_0=resolution
+labels_0_1=8 bit
+labels_0_2=4bit
+labels_1_0=
+labels_1_1=
+labels_1_2=
+labels_2_0=
+labels_2_1=
+labels_2_2=
+labels_3_0=
+labels_3_1=
+labels_3_2=
+code0_size=0
+code0_data=00
+code1_size=54
+code1_data=73706C303D28307C2873706C302A7363616C6529292A6973633B0D0A73706C313D28307C2873706C312A7363616C6529292A6973633BD7
+code2_size=33
+code2_data=7363616C653D382B736C69646572312A35363B0D0A6973633D312F7363616C653B62

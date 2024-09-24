@@ -1,0 +1,118 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUT               "WavPack Decoder"
+    IDS_ENCODER_VERSION     "WavPack encoder version:  %d\n"
+    IDS_SOURCE              "Source:  %d-bit %s at %d Hz \n"
+    IDS_MULTICHANNEL        "Channels: %d (multichannel)\n"
+    IDS_MONO                "Channels: 1 (mono)\n"
+    IDS_STEREO              "Channels: 2 (stereo)\n"
+    IDS_HYBRID              "hybrid"
+    IDS_LOSSLESS            "lossless"
+    IDS_LOSSY               "lossy"
+    IDS_INTS                "ints"
+    IDS_FLOATS              "floats"
+    IDS_MODES               "Modes"
+    IDS_FAST                ", fast"
+    IDS_HIGH                ", high"
+    IDS_VHIGH               ", v.high"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXTRA               ", extra"
+    IDS_BITRATE             "Average bitrate"
+    IDS_RATIO               "Overall ratio"
+    IDS_KBPS                "kbps"
+    IDS_MD5                 "Original md5"
+    IDS_DESCRIPTION         "WavPack Decoder v%s"
+    IDS_FILETYPE            "WavPack Files (*.WV)"
+    IDS_ABOUT_MESSAGE       "WavPack Decoder v%hs\nCopyright (c) %hs Conifer Software\n\nBuild date: %hs\n\nSee http://www.wavpack.com for information."
+    IDS_FAMILY_STRING       "WavPack File"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GUID                "{6DE2E465-690E-4df1-B6E2-2A9B33ED3DBB}"
+END
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,294 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 185, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nullsoft NSV Decoder Configuration"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Buffering",IDC_STATIC,4,4,177,86
+    LTEXT           "Stream",IDC_STATIC,83,15,23,8
+    LTEXT           "Local File",IDC_STATIC,132,15,31,8
+    RTEXT           "Buffer size:",IDC_STATIC,14,28,66,8
+    EDITTEXT        IDC_BUF1,83,26,27,12,ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,113,28,10,8
+    EDITTEXT        IDC_BUF4,132,26,27,12,ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,162,28,10,8
+    RTEXT           "Prebuffer at start:",IDC_STATIC,14,44,66,8
+    EDITTEXT        IDC_BUF2,83,42,27,12,ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,113,44,10,8
+    EDITTEXT        IDC_BUF5,132,42,27,12,ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,162,44,10,8
+    LTEXT           "Rebuffer on underrun:",IDC_STATIC,8,60,77,8
+    EDITTEXT        IDC_BUF3,83,58,27,12,ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,113,60,10,8
+    EDITTEXT        IDC_BUF6,132,58,27,12,ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,162,60,10,8
+    LTEXT           "Precise seeking:",IDC_STATIC,29,75,55,8
+    CONTROL         "enabled",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,74,41,10
+    CONTROL         "enabled",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,132,74,41,10
+    RTEXT           "Offset video from audio by:",IDC_STATIC,4,97,91,8
+    EDITTEXT        IDC_OFFS,101,95,27,12
+    LTEXT           "ms",IDC_STATIC,133,97,10,8
+    LTEXT           "Pad NSV tags with: ",IDC_STATIC,34,113,63,8
+    EDITTEXT        IDC_TAGPAD,101,111,27,12,ES_NUMBER
+    LTEXT           "bytes",IDC_STATIC,133,113,18,8
+    LTEXT           "Display Subtitles:",IDC_STATIC,40,128,60,8
+    CONTROL         "enabled",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,127,41,10
+    DEFPUSHBUTTON   "OK",IDOK,131,141,50,13
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 276, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NSV Tag Metadata Editor"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Metadata should be in the format of NAME=value. Examples:",IDC_STATIC,7,6,197,8
+    LTEXT           "TITLE=My Movie          (sets the title of the video)",IDC_STATIC,21,17,160,8
+    LTEXT           "ASPECT=1.0                (sets the aspect ratio of the video)",IDC_STATIC,22,27,186,8
+    LTEXT           "FRAMERATE=18.79    (overrides the default NSV framerate)",IDC_STATIC,22,37,194,8
+    EDITTEXT        IDC_EDIT1,7,50,262,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,67,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,61,67,50,13
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 355, 204
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NSV File Info / Tag Editor"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_FN,5,5,345,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "NSV Bitstream Information",IDC_STATIC,5,22,345,30
+    EDITTEXT        IDC_BSINFO,11,34,333,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Length/TOC Information",IDC_STATIC,5,56,151,106
+    LTEXT           "Stream size:",IDC_STATIC,12,70,50,8
+    EDITTEXT        IDC_LENBYTES,67,68,78,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP
+    LTEXT           "Stream length:",IDC_STATIC,12,82,50,8
+    EDITTEXT        IDC_LENMS,67,81,78,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP
+    LTEXT           "Avg bitrate:",IDC_STATIC,12,96,50,8
+    EDITTEXT        IDC_AVGBITRATE,67,94,78,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP
+    CONTROL         "Table of contents (for seeking)",IDC_TOC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,111,112,10
+    RTEXT           "TOC size:",IDC_STATIC,20,127,40,8
+    EDITTEXT        IDC_TOCSIZE,67,123,78,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP
+    LTEXT           "Max TOC size:",IDC_STATIC,15,142,48,8
+    EDITTEXT        IDC_SETTOCSIZE,67,139,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Analyze",IDC_ANALYZE,105,139,40,12
+    CONTROL         "Fast tag update (don't shrink tag)",IDC_FASTUPD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,166,119,10
+    LTEXT           "ttl",IDC_TAG_LEN,5,175,127,8
+    GROUPBOX        "Metadata",IDC_STATIC,161,56,189,143
+    LISTBOX         IDC_METADATA,167,67,177,109,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add item",IDC_ADD,167,180,41,13
+    PUSHBUTTON      "Delete item",IDC_REM,211,180,49,13
+    PUSHBUTTON      "Edit item",IDC_EDIT,263,180,40,13
+    LTEXT           "tml",IDC_METADATA_LEN,307,183,37,8
+    DEFPUSHBUTTON   "Update tag",IDOK,5,186,46,13
+    PUSHBUTTON      "Remove tag",IDC_REMTAG,55,186,45,13
+    PUSHBUTTON      "Cancel",IDCANCEL,102,186,45,13
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 266, 132
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NSV Stream Info"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_FN,4,5,258,13,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Stream Info",IDC_INFOBORDER,4,22,258,89
+    EDITTEXT        IDC_INFO,9,32,246,75,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    DEFPUSHBUTTON   "Close",IDCANCEL,4,115,45,13
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 184, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nullsoft NSV Decoder"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         102,IDC_STATIC,"Static",SS_BITMAP,7,7,67,39
+    CTEXT           "",IDC_VERSION,74,7,103,8
+    CTEXT           "© 2003-2023 Winamp SA",IDC_STATIC,74,16,103,8
+    DEFPUSHBUTTON   "OK",IDOK,105,34,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 181
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 350
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 262
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "nsv_logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_NSV_DECODER "Nullsoft NSV Decoder v%s"
+    65535                   "{11B847DB-29A7-47ac-B386-43B40385B817}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOTAL_TAG_SIZE      "Total tag size: 0 bytes"
+    IDS_NO_METADATA         "No metadata"
+    IDS_TOTAL_TAG_SIZE_X_BYTES "Total tag size: %d bytes"
+    IDS_NO_TAG              "No tag"
+    IDS_ERROR_WRITING_STRING_TO_TAG 
+                            "Error writing string to tag (string too complex!) - string may be corrupted with a !\n"
+    IDS_NSV_TAG_EDITOR_ERROR "NSV Tag Editor Error"
+    IDS_LARGE_DATA          "[LARGE DATA] - "
+    IDS_NO_VALID_NSV_BITSTREAM_FOUND "No valid NSV bitstream found\n"
+    IDS_VIDEO_X_AUDIO_X     "Video: %s %dx%d@%d.%02dfps, Audio: %s"
+    IDS_METADATA_STRING_MUST_CONTAIN_ONE_EQUAL_SIGN 
+                            "Metadata string must contain at least one equal sign (=)."
+    IDS_NSV_TAG_EDITOR      "NSV Tag Editor"
+    IDS_CANNOT_CREATE_TEMPFILE_CANNOT_UPDATE_TAG 
+                            "Cannot create tempfile - cannot update tag!"
+    IDS_ERROR_COPYING_SOURCE "Error copying source - cannot update tag!"
+    IDS_COPYING_X_BYTES     "Copying %d bytes..."
+    IDS_ERROR_SIZE_MISMATCH "Error size mismatch - cannot update tag!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_RENAMING_SOURCE "Error renaming source - cannot update tag!"
+    IDS_ERROR_RENAMING_NEW_FILE "Error renaming new file - cannot update tag!"
+    IDS_READING_X_FRAMES    "Reading %d frames..."
+    IDS_NSV_ANALYSIS_FAILED "NSV analysis failed"
+    IDS_METADATA_ITEM_CONTAINS_LARGE_AMOUNT_DATA 
+                            "This metadata item appear to contain a large amount of data.\nA binary metadata editor is coming soon, until then, you can\ndelete it if you wish to create something new."
+    IDS_CONNECTING          "Connecting"
+    IDS_OPENING             "Opening"
+    IDS_BUFFER_X            "Buffer: %d%%"
+    IDS_SERVER              "Server"
+    IDS_CONTENT_TYPE        "Content Type"
+    IDS_CONTENT_LENGTH      "Content Length"
+    IDS_STREAM_NAME         "Stream name"
+    IDS_NSA_NSV_FILE        "Nullsoft Audio/Video File (*.NSV;*.NSA)"
+    IDS_KBPS                "kbps"
+    IDS_FPS                 "fps"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FAMILY_STRING_NSV   "Nullsoft Streaming Video File"
+    IDS_FAMILY_STRING_NSA   "Nullsoft Streaming Audio File"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

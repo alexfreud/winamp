@@ -1,0 +1,194 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 179, 231
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Voiceprint",IDC_STATIC,7,7,164,69
+    CONTROL         "",IDC_VP1,"Button",BS_OWNERDRAW | WS_TABSTOP,13,19,14,13
+    CONTROL         "",IDC_VP2,"Button",BS_OWNERDRAW | WS_TABSTOP,29,19,14,13
+    CONTROL         "",IDC_VP3,"Button",BS_OWNERDRAW | WS_TABSTOP,45,19,14,13
+    CONTROL         "",IDC_VP4,"Button",BS_OWNERDRAW | WS_TABSTOP,61,19,14,13
+    CONTROL         "",IDC_VP5,"Button",BS_OWNERDRAW | WS_TABSTOP,77,19,14,13
+    PUSHBUTTON      "Defaults",IDC_DEFVP,126,19,39,13
+    LTEXT           "Bands",IDC_STATIC,14,39,21,8
+    CONTROL         "Slider1",IDC_BANDS,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,11,48,75,11
+    LTEXT           "Vertical use",IDC_STATIC,92,39,38,8
+    CONTROL         "Slider1",IDC_VUSE,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,89,47,75,11
+    LTEXT           "40",IDC_STATIC,13,61,9,8
+    LTEXT           "512",IDC_STATIC,72,61,13,8
+    LTEXT           "1%",IDC_STATIC,93,61,12,8
+    LTEXT           "100%",IDC_STATIC,146,61,20,8
+    GROUPBOX        "Analyzer",IDC_STATIC,7,80,164,72
+    CONTROL         "",IDC_AP1,"Button",BS_OWNERDRAW | WS_TABSTOP,13,94,14,13
+    CONTROL         "",IDC_AP2,"Button",BS_OWNERDRAW | WS_TABSTOP,29,94,14,13
+    CONTROL         "",IDC_AP3,"Button",BS_OWNERDRAW | WS_TABSTOP,45,94,14,13
+    CONTROL         "",IDC_AP4,"Button",BS_OWNERDRAW | WS_TABSTOP,61,94,14,13
+    CONTROL         "",IDC_AP5,"Button",BS_OWNERDRAW | WS_TABSTOP,77,94,14,13
+    CONTROL         "",IDC_AP6,"Button",BS_OWNERDRAW | WS_TABSTOP,101,94,14,13
+    PUSHBUTTON      "Defaults",IDC_DEFAP,126,94,39,13
+    LTEXT           "Falloff",IDC_STATIC,14,114,20,8
+    CONTROL         "Slider1",IDC_FALLOFF,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,13,124,75,11
+    LTEXT           "Slow",IDC_STATIC,15,137,16,8
+    LTEXT           "Fast",IDC_STATIC,71,137,14,8
+    CONTROL         "Peak Hold",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,90,114,49,10
+    CONTROL         "Slider1",IDC_FALLOFF2,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,94,124,75,11
+    LTEXT           "Slow",IDC_STATIC,95,137,16,8
+    LTEXT           "Fast",IDC_STATIC,152,137,14,8
+    GROUPBOX        "Scope Color",IDC_STATIC,7,156,57,35
+    CONTROL         "",IDC_VP6,"Button",BS_OWNERDRAW | WS_TABSTOP,14,170,44,13
+    GROUPBOX        "Scope Scaling",IDC_STATIC,70,156,102,35
+    CONTROL         "Slider1",IDC_SCSCALE,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,76,167,88,11
+    LTEXT           "1%",IDC_STATIC,76,179,12,8
+    LTEXT           "100%",IDC_STATIC,144,179,20,8
+    CONTROL         "Scope on scrolling voiceprint",IDC_SCOPE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,196,107,10
+    DEFPUSHBUTTON   "OK",IDOK,7,211,50,13
+    COMBOBOX        IDC_MODELIST,89,211,83,139,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 155, 119
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Random Intelligent Visualization"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Video mode:",IDC_STATIC,5,8,40,8
+    COMBOBOX        IDC_MODELIST,58,6,90,139,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Interpolation grid size:",IDC_STATIC,5,26,72,8
+    EDITTEXT        IDC_EDIT1,86,24,25,12,ES_AUTOHSCROLL
+    LTEXT           "x",IDC_STATIC,115,26,8,8
+    EDITTEXT        IDC_EDIT2,123,24,25,12,ES_AUTOHSCROLL
+    LTEXT           "16x12-32x24 recommended\n16x12 is default",IDC_STATIC,5,41,143,16,WS_DISABLED
+    GROUPBOX        "Fade Out",IDC_STATIC,5,60,143,37
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,12,70,129,10
+    LTEXT           "slow",IDC_STATIC,12,83,15,8
+    LTEXT           "fast",IDC_STATIC,129,83,12,8
+    DEFPUSHBUTTON   "Close",IDOK,5,102,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 148
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 115
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    65535                   "{858FBF71-9878-4d86-BFDD-8FEA8361238C}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_TINY_FULLSCREEN "Nullsoft Tiny Fullscreen"
+    IDS_DIRECTDRAWCREATE_FAILED "DirectDrawCreate() failed"
+    IDS_COULD_NOT_SET_EXCLUSIVE_FULLSCREEN 
+                            "Could not set exclusive fullscreen"
+    IDS_COULD_NOT_SET_DISPLAY_MODE "Could not set display mode"
+    IDS_COULD_NOT_CREATE_PRIMARY_SURFACE "Could not create primary surface"
+    IDS_COULD_NOT_CREATE_RENDER_SURFACE "Could not create render surfaces"
+    IDS_COULD_NOT_CREATE_PALETTE "Could not create palette"
+    IDS_COULD_NOT_SET_PALETTE "Could not set palette"
+    IDS_MMX_NOT_FOUND       "MMX technology not found"
+    IDS_ERROR               "Error"
+    IDS_DIRECTDRAW_ERROR    "DirectDraw Error"
+    IDS_SEXY_SCROLLING_VOICEPRINT "Sexy Scrolling Voiceprint"
+    IDS_SPECTRUM_ANALYZER_VOICEPRINT "Spectrum Analyzer + Voiceprint"
+    IDS_SPECTRUM_ANALYZER_OSCILLOSCOPE "Spectrum Analyzer + Oscilliscope"
+    IDS_RANDOM_INTELLIGENT_VISUALIZATION "Random Intelligent Visualization"
+    IDS_CANNOT_GO_FULLSCREEN_WHEN_VIDEO_PLAYING 
+                            "Cannot go fullscreen when video is playing"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,6 @@
+
+There was an error reading the local database. This could be due to the database becoming corrupted or having been removed.
+
+If the database files (main.dat and main.idx) have become corrupted then unless you have a back up, you will need to reset the database and then re-add any media files required back into the database.
+
+By resetting the database, any custom ratings and play counts not already stored in the media file(s) will be lost which also will have happened if the database was corrupted.

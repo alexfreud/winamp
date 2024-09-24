@@ -1,0 +1,210 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 343, 223
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Load",IDC_LOAD,3,4,41,14
+    PUSHBUTTON      "New",IDC_NEW,50,4,41,14
+    PUSHBUTTON      "",IDC_EDIT,133,4,46,14
+    PUSHBUTTON      "Save",IDC_SAVE,185,4,50,14
+    PUSHBUTTON      "Help",IDC_SHOWHELP,289,4,50,14
+    LTEXT           "Current preset:",IDC_STATIC,3,21,47,8
+    LTEXT           "",IDC_PRESET,3,32,175,10,SS_SUNKEN
+    CONTROL         "Enable processing",IDC_BYPASS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,47,74,10
+    GROUPBOX        "Signal Processing Controls",IDC_STATIC,3,61,176,159
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | WS_TABSTOP,11,70,11,116
+    EDITTEXT        IDC_SLIDER1_LABEL2,24,74,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER1_LABEL3,24,170,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER1_LABEL1,12,189,38,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Trigger 1",IDC_TRIGGER1,12,204,38,11
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | WS_TABSTOP,51,70,11,116
+    EDITTEXT        IDC_SLIDER2_LABEL2,64,74,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER2_LABEL3,64,170,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER2_LABEL1,52,189,38,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Trigger 2",IDC_TRIGGER2,52,204,38,11
+    CONTROL         "Slider1",IDC_SLIDER3,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | WS_TABSTOP,91,70,11,116
+    EDITTEXT        IDC_SLIDER3_LABEL2,104,74,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER3_LABEL3,104,170,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER3_LABEL1,92,189,38,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Trigger 3",IDC_TRIGGER3,92,204,38,11
+    CONTROL         "Slider1",IDC_SLIDER4,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | WS_TABSTOP,130,70,11,116
+    EDITTEXT        IDC_SLIDER4_LABEL2,144,74,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER4_LABEL3,144,170,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER4_LABEL1,132,189,38,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Trigger 4",IDC_TRIGGER4,132,204,38,11
+    LTEXT           "Initialization/format change:",IDC_STATIC,183,22,88,8
+    EDITTEXT        IDC_INIT,183,32,155,43,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Slider change/initialization:",IDC_STATIC,183,77,85,8
+    EDITTEXT        IDC_ONSLIDERCHANGE,183,87,155,41,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL
+    LTEXT           "Per sample (or sample-pair):",IDC_STATIC,183,131,87,8
+    EDITTEXT        IDC_PERSAMPLE,183,141,155,80,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL
+END
+
+IDD_EVAL_HELP DIALOG DISCARDABLE  0, 0, 308, 226
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SPS Expression Help"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,4,209,50,13
+    EDITTEXT        IDC_EDIT1,12,22,286,177,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,4,4,300,200
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 341
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_EVAL_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 304
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 222
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+IDR_GENERAL             TEXT    DISCARDABLE     "general.bin"
+IDR_OPERATORS           TEXT    DISCARDABLE     "operator.bin"
+IDR_FUNCTIONS           TEXT    DISCARDABLE     "function.bin"
+IDR_CONSTANTS           TEXT    DISCARDABLE     "constant.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    65535                   "{4B567AEB-89CE-4881-9D7D-B31D7B65979A}"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SPS_SHOW_CONFIG     "SPS: Show Config"
+    IDS_SHOW_EDITOR         "Show Editor"
+    IDS_HIDE_EDITOR         "Hide Editor"
+    IDS_SAVE_PRESET         "Save Preset"
+    IDS_SPS_PRESETS         "SPS Presets"
+    IDS_ALL_FILES           "All files"
+    IDS_GENERAL             "General"
+    IDS_OPERATORS           "Operators"
+    IDS_FUNCTIONS           "Functions"
+    IDS_CONSTANTS           "Constants"
+    IDS_LOAD_PRESET         "Load Preset"
+    IDS_CLEAR_CURRENT_SETTINGS "Clear current SPS settings?"
+    IDS_CONFIRMATION        "Confirmation"
+    IDS_SPS_TITLE           "Nullsoft Signal Processing Studio DSP"
+    IDS_SPS_MODULE_TITLE    "Signal Processing Studio"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

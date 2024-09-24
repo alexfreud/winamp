@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "in_mod (mikamp)", "mikamp.vcproj", "{3580EE92-4F7B-4322-A04C-B2B7B5578879}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "in_mod (mikmod)", "..\lib\mikmod\mikmod.vcproj", "{47FCA4AF-1F6B-4A1A-8AF2-1BD9E11672DD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "in_mod (mmio)", "..\lib\mmio\mmio.vcproj", "{BE408A85-4302-4EB8-8DE3-E3F9A5B25715}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3580EE92-4F7B-4322-A04C-B2B7B5578879}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3580EE92-4F7B-4322-A04C-B2B7B5578879}.Debug|Win32.Build.0 = Debug|Win32
+		{3580EE92-4F7B-4322-A04C-B2B7B5578879}.Release|Win32.ActiveCfg = Release|Win32
+		{3580EE92-4F7B-4322-A04C-B2B7B5578879}.Release|Win32.Build.0 = Release|Win32
+		{47FCA4AF-1F6B-4A1A-8AF2-1BD9E11672DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{47FCA4AF-1F6B-4A1A-8AF2-1BD9E11672DD}.Debug|Win32.Build.0 = Debug|Win32
+		{47FCA4AF-1F6B-4A1A-8AF2-1BD9E11672DD}.Release|Win32.ActiveCfg = Release|Win32
+		{47FCA4AF-1F6B-4A1A-8AF2-1BD9E11672DD}.Release|Win32.Build.0 = Release|Win32
+		{BE408A85-4302-4EB8-8DE3-E3F9A5B25715}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BE408A85-4302-4EB8-8DE3-E3F9A5B25715}.Debug|Win32.Build.0 = Debug|Win32
+		{BE408A85-4302-4EB8-8DE3-E3F9A5B25715}.Release|Win32.ActiveCfg = Release|Win32
+		{BE408A85-4302-4EB8-8DE3-E3F9A5B25715}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

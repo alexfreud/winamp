@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pmp_activesync", "pmp_activesync.vcproj", "{60D71BB7-D741-444E-99ED-7249A716B99F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60D71BB7-D741-444E-99ED-7249A716B99F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{60D71BB7-D741-444E-99ED-7249A716B99F}.Release|Win32.ActiveCfg = Release|Win32
+		{60D71BB7-D741-444E-99ED-7249A716B99F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

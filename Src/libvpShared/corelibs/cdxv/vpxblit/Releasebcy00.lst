@@ -1,0 +1,495 @@
+Microsoft (R) Macro Assembler Version 9.00.30729.01	    06/23/11 13:09:02
+c:\Winamp\libvp6\corelibs\cdxv\vpxblit\wx86\bcy00.asm	     Page 1 - 1
+
+
+				;//==========================================================================
+				;//
+				;//  THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
+				;//  KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+				;//  IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
+				;//  PURPOSE.
+				;//
+				;//  Copyright (c) 1999 - 2001  On2 Technologies Inc. All Rights Reserved.
+				;//
+				;//--------------------------------------------------------------------------
+
+
+				;/***********************************************\
+				;??? bcy00.asm   
+				; yv12 to yuy2 same blitter
+				;\***********************************************/ 
+				 
+				        .586
+				        .387
+				        .MODEL  flat, SYSCALL, os_dos
+						.MMX
+				 
+ 00000000			        .CODE
+
+				NAME x86bcy00
+
+				PUBLIC bcy00_MMX_
+				PUBLIC _bcy00_MMX
+				 
+
+				INCLUDE wilk.ash
+			      C ;//==========================================================================
+			      C ;//
+			      C ;//  THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
+			      C ;//  KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+			      C ;//  IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
+			      C ;//  PURPOSE.
+			      C ;//
+			      C ;//  Copyright (c) 1999 - 2001  On2 Technologies Inc. All Rights Reserved.
+			      C ;//
+			      C ;//--------------------------------------------------------------------------
+			      C 
+			      C 
+			      C ;/***********************************************\
+			      C ; 
+			      C ;\***********************************************/ 
+			      C 
+			      C ;;
+			      C ;; YUV buffer configuration structure
+			      C ;;
+			      C ;------------------------------------------------
+ 00000030		      C YUV_BUFFER_CONFIG  STRUC
+ 00000000  00000000	      C     YWidth              dd ?
+ 00000004  00000000	      C     YHeight             dd ?
+ 00000008  00000000	      C     YStride             dd ?
+			      C 
+ 0000000C  00000000	      C     UVWidth             dd ?
+ 00000010  00000000	      C     UVHeight            dd ?
+ 00000014  00000000	      C     UVStride            dd ?
+			      C 
+ 00000018  00000000	      C     YBuffer             dd ?
+ 0000001C  00000000	      C     UBuffer             dd ?
+ 00000020  00000000	      C     VBuffer             dd ?
+			      C 
+ 00000024  00000000	      C     uvStart             dd ?
+ 00000028  00000000	      C     uvDstArea           dd ?
+ 0000002C  00000000	      C     uvUsedArea          dd ?
+			      C YUV_BUFFER_CONFIG  ENDS
+			      C ;------------------------------------------------
+			      C 
+				INCLUDE wblit.ash
+			      C ;//==========================================================================
+			      C ;//
+			      C ;//  THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
+			      C ;//  KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+			      C ;//  IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
+			      C ;//  PURPOSE.
+			      C ;//
+			      C ;//  Copyright (c) 1999 - 2001  On2 Technologies Inc. All Rights Reserved.
+			      C ;//
+			      C ;//--------------------------------------------------------------------------
+			      C 
+			      C 
+			      C ;/***********************************************\
+			      C ;??? wblit.ash
+			      C ; 
+			      C ;\***********************************************/ 
+			      C 
+			      C ;------------------------------------------------
+ 00000028		      C x86_Params  STRUC
+ 00000000  00000006 [	      C                     dd  6 dup (?)   ;6 pushed regs
+	    00000000
+	   ]
+ 0DD0000C  00000000	      C                     dd  ?           ;return address
+ 0DD00010  00000000	      C     dst             dd  ?
+ 0DD00014  00000000	      C     scrnPitch       dd  ?
+ 0DD00018  00000000	      C     buffConfig      dd  ?
+			      C x86_Params  ENDS
+			      C ;------------------------------------------------
+			      C 
+			      C EXTERNDEF _WK_YforY:DWORD
+			      C EXTERNDEF _WK_UforBG:DWORD
+			      C EXTERNDEF _WK_VforRG:DWORD
+			      C 
+			      C EXTERNDEF _WK_YforY_MMX:DWORD
+			      C EXTERNDEF _WK_UforBG_MMX:DWORD
+			      C EXTERNDEF _WK_VforRG_MMX:DWORD
+			      C 
+			      C EXTERNDEF _WK_ClampTableR:DWORD
+			      C EXTERNDEF _WK_ClampTableG:DWORD
+			      C EXTERNDEF _WK_ClampTableB:DWORD
+			      C 
+			      C EXTERNDEF _WK_ClampTableR555:DWORD
+			      C EXTERNDEF _WK_ClampTableG555:DWORD
+			      C EXTERNDEF _WK_ClampTableB555:DWORD
+			      C 
+			      C EXTERNDEF _WK_ClampTableR565:DWORD
+			      C EXTERNDEF _WK_ClampTableG565:DWORD
+			      C EXTERNDEF _WK_ClampTableB565:DWORD
+			      C 
+ = 00000600		      C CLAMPCENTER EQU 256*4+128*4
+			      C 
+			      C 
+			      C EXTERNDEF WK_johnsTable_MMX:DWORD
+			      C EXTERNDEF WK_johnsTable:DWORD
+			      C 
+			      C EXTERNDEF WK_RGB_MULFACTOR_555:QWORD
+			      C EXTERNDEF WK_RB_MASK_555:QWORD
+			      C EXTERNDEF WK_G_MASK_555:QWORD
+			      C 
+			      C EXTERNDEF WK_RGB_MULFACTOR_565:QWORD
+			      C EXTERNDEF WK_RB_MASK_565:QWORD
+			      C EXTERNDEF WK_G_MASK_565:QWORD
+			      C 
+			      C EXTERNDEF WK_MASK_YY_MMX:DWORD
+			      C EXTERNDEF WK_MASK_BYTE0:DWORD
+			      C 
+			      C 
+
+				;------------------------------------------------
+				; local vars
+ 00000000			L_3s            QWORD   0003000300030003h      ; 4 3's 
+	   0003000300030003
+ 00000008			L_2s            QWORD   0002000200020002h      ; 4 3's 
+	   0002000200020002
+
+ = 00000000			L_blkWidth      EQU 0
+ = 00000004			L_YStride       EQU L_blkWidth+4
+ = 00000008			L_Height		EQU L_YStride+4
+ = 0000000C			L_extraWidth	EQU L_Height+4
+ = 00000010			L_tempspaceL    EQU L_extraWidth+4
+ = 00000018			L_tempspaceH    EQU L_tempspaceL+8
+ = 00000020			LOCAL_SPACE     EQU L_tempspaceL+16
+				 
+				;------------------------------------------------
+				;void bcy00_MMX(unsigned long *dst, int scrnPitch, YUV_BUFFER_CONFIG *buffConfig); 
+				;
+ 00000010			bcy00_MMX_:
+ 00000010			_bcy00_MMX:
+ 00000010  56			    push    esi
+ 00000011  57			    push    edi
+
+ 00000012  55			    push    ebp
+ 00000013  53			    push    ebx 
+
+ 00000014  51			    push    ecx
+ 00000015  52			    push    edx
+
+ 00000016  8B 7C 24 1C		    mov         edi,[esp].dst				; edi = dst
+ 0000001A  8B 6C 24 24		    mov         ebp,[esp].buffConfig		; ebp = buffConfig
+
+ 0000001E  90			nop
+ 0000001F  83 EC 20		    sub         esp,LOCAL_SPACE				
+
+ 00000022  8B 45 08		    mov         eax,[ebp].YStride			; eax = YStride
+ 00000025  89 44 24 04		    mov         L_YStride[esp],eax			; save to local
+
+ 00000029  8B 45 04		    mov         eax,[ebp].YHeight			; eax = Height
+ 0000002C  48			    dec         eax                         ; 1 less than full height
+
+ 0000002D  89 44 24 08		    mov			L_Height[esp], eax			; save to local
+ 00000031  8B 4D 00		    mov         ecx,[ebp].YWidth			; ecx = YWidth
+
+				;	mov			eax, [esp+LOCAL_SPACE].scrnPitch
+
+ 00000034  8B C1			mov			eax, ecx					; eax = YWidth
+ 00000036  C1 E9 03		    shr         ecx,3                       ;blocks of 8 pixels
+
+ 00000039  8B 75 18		    mov         esi,[ebp].YBuffer			; esi = YBuffer
+ 0000003C  33 DB		    xor         ebx,ebx						; ebx = 0
+
+ 0000003E  89 0C 24		    mov         L_blkWidth[esp],ecx			; Save YWidth/8 to local
+ 00000041  83 E0 07		    and			eax, 7						; extraWidth
+					
+ 00000044  89 44 24 0C			mov			L_extraWidth[esp], eax		; save extraWidth;
+ 00000048  8B C3			mov         eax,ebx						; eax = 0;
+
+ 0000004A  8B 55 20		    mov         edx,[ebp].VBuffer			; edx = YBuffer
+ 0000004D  8B 6D 1C		    mov         ebp,[ebp].UBuffer			; ebp = UBuffer
+
+ 00000050  0F EF E4		    pxor        mm4,mm4			    
+				;
+				;   eax = 0
+				;	ebx = 0;
+				;   ecx = YWidth/8
+				;   edx = VBuffer
+				;   ebp = UBuffer
+				;	esi = YBuffer
+				;   edi = dst
+				;
+
+ 00000053			hloop:
+ 00000053			wloop:
+ 00000053  0F 6F 3C 13		    movq        mm7,[edx+ebx]               ; get 8 v's
+ 00000057  0F 60 FC		    punpcklbw   mm7,mm4                     ; unpack v's with 0's
+
+ 0000005A  0F D5 3D		    pmullw      mm7,L_3s					; v's * 3
+	   00000000 R
+ 00000061  0F 6F 2C 10		    movq        mm5,[edx+eax]               ; get 8 v's pointed to by eax
+
+ 00000065  0F 7F EE		    movq        mm6,mm5						; copy to mm7
+ 00000068  0F 60 F4		    punpcklbw   mm6,mm4                     ; unpack v's with 0's
+
+ 0000006B  0F FD FE		    paddw	    mm7,mm6						; mm7 = 3 * [ebx] + 1 * [eax]
+ 0000006E  0F FD 3D		    paddw       mm7,L_2s					; mm7 = 3 * [ebx] + 1 * [eax] + 2
+	   00000008 R
+
+ 00000075  0F 71 D7 02		    psrlw       mm7,2						; mm7 = ( 3 * [ebx] + 1 * [eax] + 2 ) / 4
+
+ 00000079  0F 6F 1C 2B		    movq        mm3,[ebp+ebx]               ; get 8 u's into mm1
+ 0000007D  0F 60 DC		    punpcklbw   mm3,mm4                     ; unpack u's with 0's
+
+ 00000080  0F D5 1D		    pmullw      mm3,L_3s					; u's * 3
+	   00000000 R
+ 00000087  0F 6F 2C 28		    movq        mm5,[ebp+eax]               ; get 8 u's pointed to by eax
+
+ 0000008B  0F 7F EE		    movq        mm6,mm5						; copy to mm3
+ 0000008E  0F 60 F4		    punpcklbw   mm6,mm4                     ; unpack u's with 0's
+
+ 00000091  0F FD DE		    paddw	    mm3,mm6						; mm3 = 3 * [ebx] + 1 * [eax]
+ 00000094  0F FD 1D		    paddw       mm3,L_2s					; mm3 = 3 * [ebx] + 1 * [eax] + 2
+	   00000008 R
+					
+ 0000009B  0F 71 D3 02		    psrlw       mm3,2						; mm3 = ( 3 * [ebx] + 1 * [eax] + 2 ) / 4
+
+ 0000009F  0F 71 F7 08		    psllw       mm7,8						; v3 0 v2 0 v1 0 v0 0 
+ 000000A3  0F EB DF		    por			mm3,mm7						; v3 u3 v2 u2 v1 u1 v0 u0 
+
+ 000000A6  0F 6F 04 5E		    movq        mm0,[esi+ebx*2]             ; get the y's
+ 000000AA  0F 7F C1		    movq        mm1,mm0                     ; save upper y's
+
+ 000000AD  0F 60 C3		    punpcklbw   mm0,mm3                     ; v1 y3 u1 y2 v0 y1 u0 y0
+ 000000B0  0F 68 CB		    punpckhbw   mm1,mm3                     ; v3 y7 u3 y6 v2 y5 u2 y4
+
+ 000000B3  49			    dec         ecx
+ 000000B4  0F 7F 04 9F		    movq        [edi+ebx*4],mm0             ;write first 4 pixels
+				;-
+
+ 000000B8  0F 7F 4C 9F 08	    movq        8[edi+ebx*4],mm1			;write next 4 pixels
+				;-
+
+ 000000BD  8D 40 04		    lea         eax,[eax+4]			  ;increment *1 pointer to next pixel
+ 000000C0  8D 5B 04		    lea         ebx,[ebx+4]			  ;increment *3 pointer to next pixel
+				    
+ 000000C3  7F 8E			jg          wloop
+				;------------------------------------------------------------
+				; need to handle the line end condition when YWidth%8 !=0
+				;------------------------------------------------------------
+ 000000C5  8B 4C 24 0C			mov			ecx, L_extraWidth[esp]		; extraWidth
+
+ 000000C9			ewloop:
+ 000000C9  49				dec			ecx
+ 000000CA  78 79			js			phloop
+
+ 000000CC  0F 6F 3C 13		    movq        mm7,[edx+ebx]               ; get 8 v's
+ 000000D0  0F 60 FC		    punpcklbw   mm7,mm4                     ; unpack v's with 0's
+
+ 000000D3  0F D5 3D		    pmullw      mm7,L_3s					; v's * 3
+	   00000000 R
+ 000000DA  0F 6F 2C 10		    movq        mm5,[edx+eax]               ; get 8 v's pointed to by eax
+
+ 000000DE  0F 7F EE		    movq        mm6,mm5						; copy to mm7
+ 000000E1  0F 60 F4		    punpcklbw   mm6,mm4                     ; unpack v's with 0's
+
+ 000000E4  0F FD FE		    paddw	    mm7,mm6						; mm7 = 3 * [ebx] + 1 * [eax]
+ 000000E7  0F FD 3D		    paddw       mm7,L_2s					; mm7 = 3 * [ebx] + 1 * [eax] + 2
+	   00000008 R
+
+ 000000EE  0F 71 D7 02		    psrlw       mm7,2						; mm7 = ( 3 * [ebx] + 1 * [eax] + 2 ) / 4
+
+ 000000F2  0F 6F 1C 2B		    movq        mm3,[ebp+ebx]               ; get 8 u's into mm1
+ 000000F6  0F 60 DC		    punpcklbw   mm3,mm4                     ; unpack u's with 0's
+
+ 000000F9  0F D5 1D		    pmullw      mm3,L_3s					; u's * 3
+	   00000000 R
+ 00000100  0F 6F 2C 28		    movq        mm5,[ebp+eax]               ; get 8 u's pointed to by eax
+
+ 00000104  0F 7F EE		    movq        mm6,mm5						; copy to mm3
+ 00000107  0F 60 F4		    punpcklbw   mm6,mm4                     ; unpack u's with 0's
+
+ 0000010A  0F FD DE		    paddw	    mm3,mm6						; mm3 = 3 * [ebx] + 1 * [eax]
+ 0000010D  0F FD 1D		    paddw       mm3,L_2s					; mm3 = 3 * [ebx] + 1 * [eax] + 2
+	   00000008 R
+					
+ 00000114  0F 71 D3 02		    psrlw       mm3,2						; mm3 = ( 3 * [ebx] + 1 * [eax] + 2 ) / 4
+
+ 00000118  0F 71 F7 08		    psllw       mm7,8						; v3 0 v2 0 v1 0 v0 0 
+ 0000011C  0F EB DF		    por			mm3,mm7						; v3 u3 v2 u2 v1 u1 v0 u0 
+
+ 0000011F  0F 6F 04 5E		    movq        mm0,[esi+ebx*2]             ; get the y's
+ 00000123  0F 7F C1		    movq        mm1,mm0                     ; save upper y's
+
+ 00000126  0F 60 C3		    punpcklbw   mm0,mm3                     ; v1 y3 u1 y2 v0 y1 u0 y0
+ 00000129  0F 68 CB		    punpckhbw   mm1,mm3                     ; v3 y7 u3 y6 v2 y5 u2 y4
+
+ 0000012C  0F 7F 44 24 10	    movq        L_tempspaceL[esp],mm0       ;write first 4 pixels
+				;-
+
+ 00000131  0F 7F 4C 24 18	    movq        L_tempspaceH[esp],mm1		;write next 4 pixels
+				;-
+				;------------------------------------------------------------
+				; uncomment the next two line of code will make the image
+				; output have a white last vertical line
+				;------------------------------------------------------------
+				;	mov			eax, 0ff80ff80h
+				;	mov			L_tempspaceH[esp], eax;		; read two bytes			
+				;------------------------------------------------------------
+
+ 00000136  8D 1C 9F			lea			ebx, [edi + ebx*4];get the destination pointer	
+ 00000139			cploop:
+ 00000139  66| 8B 44 4C			mov			ax,  L_tempspaceL[esp + ecx * 2];		; read two bytes			
+	   10
+ 0000013E  66| 89 04 4B			mov			[ebx+ecx*2], ax
+
+ 00000142  49				dec			ecx	
+ 00000143  7D F4			jge			cploop
+
+ 00000145			phloop:
+				;------------------------------------------------------------
+				; prepare for the next line
+				;------------------------------------------------------------
+ 00000145  8B 4C 24 08		    mov         ecx,DWORD PTR L_Height[esp] ;get current line number
+ 00000149  8B 5C 24 40		    mov         ebx,[esp+LOCAL_SPACE].scrnPitch
+
+ 0000014D  C1 E1 1F		    shl         ecx,31                      ; save low bit
+ 00000150  03 FB		    add         edi,ebx
+
+ 00000152  C1 F9 1F		    sar         ecx,31                      ; even lines ecx = 00000000 odd lines it equals FFFFFFFF
+
+ 00000155  8B 5C 24 04		    mov         ebx,L_YStride[esp]		  
+ 00000159  D1 FB		    sar         ebx,1						; ebx is uv stride
+				 
+ 0000015B  8B C3		    mov         eax,ebx                     ; eax is uv stride 
+ 0000015D  23 C1		    and         eax,ecx                     ; odd lines eax equals uvpitch even lines eax = 0 
+
+ 0000015F  F7 D1		    not         ecx                         ; even lines ecx = ffffffff odd lines it equals 00000000
+ 00000161  23 D9		    and         ebx,ecx						; ebx = uv pitch on even lines and 0 on odd lines
+
+ 00000163  2B EB		    sub	    ebp,ebx							; increment u pointer if we're on an odd line
+ 00000165  2B D3		    sub         edx,ebx						; increment v pointer if we're on an odd line
+
+ 00000167  F7 D8		    neg	    eax								; eax = -uvpitch on odd lines and 0 on even lines
+ 00000169  03 C3		    add         eax,ebx						; eax = -uvpitch on odd lines and +uv pitch on even lines
+
+ 0000016B  33 DB		    xor         ebx,ebx						; ebx is used as column pointer so set it to 0  
+ 0000016D  8B 0C 24		    mov         ecx,L_blkWidth[esp]
+
+ 00000170  2B 74 24 04		    sub         esi,DWORD PTR L_YStride[esp]
+
+ 00000174  FF 4C 24 08		    dec         DWORD PTR L_Height[esp]
+ 00000178  0F 8F FFFFFED5	    jg          hloop
+
+ 0000017E  8B C3		    mov	    eax,ebx				  ; last line ebx and eax should point to the same line
+ 00000180  0F 84 FFFFFECD	    jz          hloop 
+				;------------------------------------------------
+
+ 00000186			theExit:
+ 00000186  83 C4 20		    add         esp,LOCAL_SPACE
+ 00000189  90			nop
+
+ 0000018A  0F 77		    emms
+
+ 0000018C  5A			    pop     edx
+ 0000018D  59			    pop     ecx
+ 0000018E  5B			    pop     ebx
+ 0000018F  5D			    pop     ebp
+ 00000190  5F			    pop     edi
+ 00000191  5E			    pop     esi
+
+ 00000192  C3			    ret
+
+				;************************************************
+				        END
+Microsoft (R) Macro Assembler Version 9.00.30729.01	    06/23/11 13:09:02
+c:\Winamp\libvp6\corelibs\cdxv\vpxblit\wx86\bcy00.asm	     Symbols 2 - 1
+
+
+
+
+Structures and Unions:
+
+                N a m e                  Size
+                                         Offset      Type
+
+YUV_BUFFER_CONFIG  . . . . . . .	 00000030
+  YWidth . . . . . . . . . . . .	 00000000	 DWord
+  YHeight  . . . . . . . . . . .	 00000004	 DWord
+  YStride  . . . . . . . . . . .	 00000008	 DWord
+  UVWidth  . . . . . . . . . . .	 0000000C	 DWord
+  UVHeight . . . . . . . . . . .	 00000010	 DWord
+  UVStride . . . . . . . . . . .	 00000014	 DWord
+  YBuffer  . . . . . . . . . . .	 00000018	 DWord
+  UBuffer  . . . . . . . . . . .	 0000001C	 DWord
+  VBuffer  . . . . . . . . . . .	 00000020	 DWord
+  uvStart  . . . . . . . . . . .	 00000024	 DWord
+  uvDstArea  . . . . . . . . . .	 00000028	 DWord
+  uvUsedArea . . . . . . . . . .	 0000002C	 DWord
+x86_Params . . . . . . . . . . .	 00000028
+  dst  . . . . . . . . . . . . .	 0000001C	 DWord
+  scrnPitch  . . . . . . . . . .	 00000020	 DWord
+  buffConfig . . . . . . . . . .	 00000024	 DWord
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+FLAT . . . . . . . . . . . . . .	GROUP
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000000 Para	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 00000193 Para	  Public  'CODE'	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000002h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+CLAMPCENTER  . . . . . . . . . .	Number	 00000600h   
+LOCAL_SPACE  . . . . . . . . . .	Number	 00000020h   
+L_2s . . . . . . . . . . . . . .	QWord	 00000008 _TEXT	
+L_3s . . . . . . . . . . . . . .	QWord	 00000000 _TEXT	
+L_Height . . . . . . . . . . . .	Number	 00000008h   
+L_YStride  . . . . . . . . . . .	Number	 00000004h   
+L_blkWidth . . . . . . . . . . .	Number	 00000000h   
+L_extraWidth . . . . . . . . . .	Number	 0000000Ch   
+L_tempspaceH . . . . . . . . . .	Number	 00000018h   
+L_tempspaceL . . . . . . . . . .	Number	 00000010h   
+WK_G_MASK_555  . . . . . . . . .	QWord	 00000000 FLAT	External SYSCALL
+WK_G_MASK_565  . . . . . . . . .	QWord	 00000000 FLAT	External SYSCALL
+WK_MASK_BYTE0  . . . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+WK_MASK_YY_MMX . . . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+WK_RB_MASK_555 . . . . . . . . .	QWord	 00000000 FLAT	External SYSCALL
+WK_RB_MASK_565 . . . . . . . . .	QWord	 00000000 FLAT	External SYSCALL
+WK_RGB_MULFACTOR_555 . . . . . .	QWord	 00000000 FLAT	External SYSCALL
+WK_RGB_MULFACTOR_565 . . . . . .	QWord	 00000000 FLAT	External SYSCALL
+WK_johnsTable_MMX  . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+WK_johnsTable  . . . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_ClampTableB555 . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_ClampTableB565 . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_ClampTableB  . . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_ClampTableG555 . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_ClampTableG565 . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_ClampTableG  . . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_ClampTableR555 . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_ClampTableR565 . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_ClampTableR  . . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_UforBG_MMX . . . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_UforBG . . . . . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_VforRG_MMX . . . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_VforRG . . . . . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_YforY_MMX  . . . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_WK_YforY  . . . . . . . . . . .	DWord	 00000000 FLAT	External SYSCALL
+_bcy00_MMX . . . . . . . . . . .	L Near	 00000010 _TEXT	Public SYSCALL
+bcy00_MMX_ . . . . . . . . . . .	L Near	 00000010 _TEXT	Public SYSCALL
+cploop . . . . . . . . . . . . .	L Near	 00000139 _TEXT	
+ewloop . . . . . . . . . . . . .	L Near	 000000C9 _TEXT	
+hloop  . . . . . . . . . . . . .	L Near	 00000053 _TEXT	
+phloop . . . . . . . . . . . . .	L Near	 00000145 _TEXT	
+theExit  . . . . . . . . . . . .	L Near	 00000186 _TEXT	
+wloop  . . . . . . . . . . . . .	L Near	 00000053 _TEXT	
+
+	   0 Warnings
+	   0 Errors

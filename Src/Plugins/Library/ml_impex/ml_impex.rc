@@ -1,0 +1,144 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INFODIALOG DIALOGEX 0, 0, 188, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS_PERCENT,"msctls_progress32",PBS_SMOOTH | NOT WS_VISIBLE | WS_BORDER,7,7,174,12
+    CTEXT           "",IDC_TRACKS,7,27,174,8,NOT WS_VISIBLE
+    CTEXT           "",IDC_PROCESSING_STATE,35,19,117,8
+END
+
+IDD_EXPORTTYPE DIALOGEX 0, 0, 229, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Unsupported File Formats"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Some files in your database are not supported by iTunes.",IDC_STATIC,9,11,184,8
+    CONTROL         "Export all files anyway.",IDC_RADIO_ALLFILES,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,24,91,10
+    CONTROL         "Export only files supported by iTunes (mp3/aac/wav/aiff).",IDC_RADIO_ONLYSUPPORTED,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,15,35,201,10
+    DEFPUSHBUTTON   "OK",IDOK,172,50,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_INFODIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_EXPORTTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ML_IMPEX_DESC       "Nullsoft Database Import / Export v%s"
+    65535                   "{22661553-8D22-4012-8D3B-0FF8FE57A9ED}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IMPORT_DATABASE     "Import Media Database..."
+    IDS_EXPORT_DATABASE     "Export Media Database..."
+    IDS_TRACKS_IMPORTED_X   "Tracks imported : %d"
+    IDS_TRACKS_EXPORTED_X   "Tracks exported : %d"
+    IDS_ITUNES_XML_LIBRARY  "iTunes XML Library"
+    IDS_LOADING_XML         "Loading XML..."
+    IDS_WRITINGING_XML      "Writing XML..."
+    IDS_IMPORTING_DATABASE  "Importing Database"
+    IDS_EXPORTING_DATABASE  "Exporting Database"
+    IDS_IMPORT_ITUNES_DB    "Import iTunes Library"
+    IDS_IMPORT_ITUNES_PL    "Import iTunes Playlists"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

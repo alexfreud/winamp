@@ -1,0 +1,18 @@
+Superscope tutorial goes here
+But for now, here is the old text:
+
+You can specify expressions that run on Init, Frame, and on Beat.
+  'n' specifies the number of points to render (set this in Init, Beat, or Frame).
+
+For the 'Per Point' expression (which happens 'n' times per frame), use:
+  'x' and 'y' are the coordinates to draw to (-1..1)
+  'i' is the position of the scope (0..1)
+  'v' is the value at that point (-1..1).
+  'b' is 1 if beat, 0 if not.
+  'red', 'green' and 'blue' are all (0..1) and can be modified
+  'linesize' can be set from 1.0 to 255.0
+  'skip' can be set to >0 to skip drawing the current item
+  'drawmode' can be set to > 0 for lines, <= 0 for points
+  'w' and 'h' are the width and height of the screen, in pixels.
+
+Anybody want to send me better text to put here? Please :)

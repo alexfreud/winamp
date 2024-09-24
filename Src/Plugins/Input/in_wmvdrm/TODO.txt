@@ -1,0 +1,8 @@
+advanced preferences:
+defaults button
+
+why do some videos not end properly?
+
+potential race condition over WMDRM::fn
+
+make the messagebox for 'do you want to acquire this shit' have its own message loop so we can killswitch it

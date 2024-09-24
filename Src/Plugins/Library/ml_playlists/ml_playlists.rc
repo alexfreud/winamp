@@ -1,0 +1,498 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+"resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+"#include ""afxres.h""\r\n"
+"\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+"#include ""version.rc2""\r\n"
+"\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BROWSE_PLFLD DIALOGEX 0, 0, 254, 29
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+CONTROL         "Use original playlist instead of a Winamp managed copy", IDC_EXTERNAL,
+"Button", BS_AUTOCHECKBOX | WS_TABSTOP, 5, 4, 193, 10
+CONTROL         "Recursive scan", IDC_CHECK1, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 5, 17, 64, 10
+CONTROL         "Available in the Cloud", IDC_CLOUD, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 83, 17, 85, 10
+END
+
+IDD_VIEW_PLAYLISTS DIALOGEX 0, 0, 184, 266
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+CONTROL         "", IDC_PLAYLIST_LIST, "SysListView32", LVS_REPORT | LVS_SHOWSELALWAYS | LVS_OWNERDATA | LVS_NOSORTHEADER | WS_TABSTOP, 0, 0, 182, 253
+CONTROL         "View Playlist", IDC_VIEWLIST, "Button", BS_OWNERDRAW | WS_TABSTOP, 0, 255, 37, 11
+CONTROL         "Play", IDC_PLAY, "Button", BS_OWNERDRAW | WS_TABSTOP, 39, 255, 22, 11
+CONTROL         "Enqueue", IDC_ENQUEUE, "Button", BS_OWNERDRAW | WS_TABSTOP, 63, 255, 36, 11
+CONTROL         "New...", IDC_CREATENEWPL, "Button", BS_OWNERDRAW | WS_TABSTOP, 101, 255, 22, 11
+CONTROL         "Import", IDC_IMPORT, "Button", BS_OWNERDRAW | WS_TABSTOP, 125, 255, 29, 11
+CONTROL         "Save...", IDC_SAVE, "Button", BS_OWNERDRAW | WS_TABSTOP, 156, 255, 28, 11
+END
+
+IDD_RENAME_PLAYLIST DIALOGEX 0, 0, 186, 42
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rename Playlist"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+LTEXT           "Name:", IDC_STATIC, 5, 9, 22, 8
+EDITTEXT        IDC_NAME, 35, 7, 145, 12, ES_AUTOHSCROLL
+DEFPUSHBUTTON   "OK", IDOK, 76, 25, 50, 13
+PUSHBUTTON      "Cancel", IDCANCEL, 130, 25, 50, 13
+END
+
+IDD_ADD_PLAYLIST DIALOGEX 0, 0, 186, 42
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Playlist"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+LTEXT           "Name:", IDC_STATIC, 5, 9, 22, 8
+EDITTEXT        IDC_NAME, 35, 7, 145, 12, ES_AUTOHSCROLL
+DEFPUSHBUTTON   "OK", IDOK, 76, 25, 50, 13
+PUSHBUTTON      "Cancel", IDCANCEL, 130, 25, 50, 13
+END
+
+IDD_VIEW_PLAYLIST DIALOGEX 0, 0, 339, 59
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+CONTROL         "", IDC_PLAYLIST_EDITOR, "SysListView32", LVS_REPORT | LVS_SHOWSELALWAYS | LVS_OWNERDATA | LVS_NOSORTHEADER | WS_TABSTOP, 0, 0, 339, 34
+LTEXT           "", IDC_PLSTATUS, 0, 36, 339, 10, SS_CENTERIMAGE | SS_ENDELLIPSIS
+CONTROL         "Play", IDC_PLAY, "Button", BS_OWNERDRAW | WS_TABSTOP, 0, 48, 27, 11
+CONTROL         "Send-To", IDC_BURN, "Button", BS_OWNERDRAW | WS_TABSTOP, 34, 48, 44, 11
+CONTROL         "Add", IDC_ADD, "Button", BS_OWNERDRAW | WS_TABSTOP, 85, 48, 30, 11
+CONTROL         "Rem", IDC_REM, "Button", BS_OWNERDRAW | WS_TABSTOP, 122, 48, 30, 11
+CONTROL         "Sel", IDC_SEL, "Button", BS_OWNERDRAW | WS_TABSTOP, 159, 48, 30, 11
+CONTROL         "Misc", IDC_MISC, "Button", BS_OWNERDRAW | WS_TABSTOP, 196, 48, 30, 11
+CONTROL         "Manage Playlist", IDC_LIST, "Button", BS_OWNERDRAW | WS_TABSTOP, 233, 48, 69, 11
+CONTROL         "Save", IDC_SAVE_PL, "Button", BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP, 309, 48, 30, 11
+END
+
+IDD_EDIT_FN DIALOGEX 0, 0, 262, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Playlist Entry"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+RTEXT           "Old Entry:", IDC_STATIC, 4, 7, 40, 12, SS_CENTERIMAGE
+EDITTEXT        IDC_OLD, 49, 7, 206, 12, ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+RTEXT           "Old Title:", IDC_STATIC, 4, 24, 40, 12, SS_CENTERIMAGE
+EDITTEXT        IDC_OLD_TITLE, 49, 24, 206, 12, ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+RTEXT           "New Entry:", IDC_STATIC, 4, 41, 40, 12, SS_CENTERIMAGE
+EDITTEXT        IDC_NEW, 49, 41, 188, 12, ES_AUTOHSCROLL
+PUSHBUTTON      "&...", IDC_PLAYLIST_EDIT_ENTRY_BROWSE, 238, 40, 17, 14
+RTEXT           "New Title:", IDC_STATIC, 4, 58, 40, 12, SS_CENTERIMAGE
+EDITTEXT        IDC_NEW_TITLE, 49, 58, 206, 12, ES_AUTOHSCROLL
+DEFPUSHBUTTON   "OK", IDOK, 5, 76, 50, 14
+PUSHBUTTON      "Cancel", IDCANCEL, 61, 76, 50, 14
+END
+
+IDD_SELECT_PLAYLIST DIALOGEX 0, 0, 209, 42
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Playlist"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+COMBOBOX        IDC_PLAYLISTS, 4, 7, 200, 158, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+PUSHBUTTON      "Cancel", IDCANCEL, 154, 25, 50, 13
+DEFPUSHBUTTON   "OK", IDOK, 100, 25, 50, 13
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDD_ADD_CLOUD_PLAYLIST$( DISABLED ) DIALOGEX 0, 0, 186, 42
+#else
+IDD_ADD_CLOUD_PLAYLIST DIALOGEX 0, 0, 186, 42
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Playlist"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+LTEXT           "Name:", IDC_STATIC, 5, 9, 22, 8
+EDITTEXT        IDC_NAME, 35, 7, 145, 12, ES_AUTOHSCROLL
+CONTROL         "&Available in the Cloud", IDC_CLOUD, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 6, 26, 88, 11
+DEFPUSHBUTTON   "&OK", IDOK, 98, 25, 36, 13
+PUSHBUTTON      "&Cancel", IDCANCEL, 138, 25, 42, 13
+END
+#endif
+
+IDD_IMPORT_PLFLD DIALOGEX 0, 0, 400, 20
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+CONTROL         "Available in the Cloud", IDC_CLOUD, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 67, 3, 85, 10
+CONTROL         "Use original playlist instead of a Winamp managed copy", IDC_EXTERNAL,
+"Button", BS_AUTOCHECKBOX | WS_TABSTOP, 167, 3, 193, 10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+IDD_BROWSE_PLFLD, DIALOG
+BEGIN
+RIGHTMARGIN, 109
+BOTTOMMARGIN, 18
+END
+
+IDD_RENAME_PLAYLIST, DIALOG
+BEGIN
+LEFTMARGIN, 5
+RIGHTMARGIN, 180
+TOPMARGIN, 7
+BOTTOMMARGIN, 38
+END
+
+IDD_ADD_PLAYLIST, DIALOG
+BEGIN
+LEFTMARGIN, 5
+RIGHTMARGIN, 180
+TOPMARGIN, 7
+BOTTOMMARGIN, 38
+END
+
+IDD_VIEW_PLAYLIST, DIALOG
+BEGIN
+RIGHTMARGIN, 295
+END
+
+IDD_EDIT_FN, DIALOG
+BEGIN
+LEFTMARGIN, 5
+RIGHTMARGIN, 254
+RIGHTMARGIN, 255
+TOPMARGIN, 7
+BOTTOMMARGIN, 90
+END
+
+IDD_SELECT_PLAYLIST, DIALOG
+BEGIN
+LEFTMARGIN, 4
+RIGHTMARGIN, 204
+TOPMARGIN, 7
+BOTTOMMARGIN, 38
+END
+
+"IDD_ADD_CLOUD_PLAYLIST$(DISABLED)", DIALOG
+BEGIN
+LEFTMARGIN, 5
+RIGHTMARGIN, 180
+TOPMARGIN, 7
+BOTTOMMARGIN, 38
+END
+
+IDD_IMPORT_PLFLD, DIALOG
+BEGIN
+RIGHTMARGIN, 227
+BOTTOMMARGIN, 15
+END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+POPUP "Playlist"
+BEGIN
+MENUITEM "Play\tEnter", IDC_PLAY
+MENUITEM "Enqueue\tShift+Enter", IDC_ENQUEUE
+POPUP "Send to:"
+BEGIN
+MENUITEM "", 40003
+END
+MENUITEM SEPARATOR
+MENUITEM "View Playlist\tCtrl+V", IDC_VIEWLIST
+MENUITEM SEPARATOR
+MENUITEM "Rename Playlist...\tF2", IDC_RENAME
+MENUITEM "New Playlist...\tShift+Insert", IDC_NEWPLAYLIST
+MENUITEM SEPARATOR
+MENUITEM "Delete Playlist\tDel", IDC_DELETE
+END
+POPUP "Playlistsmenu"
+BEGIN
+MENUITEM "New Playlist...", IDC_NEWPLAYLIST
+MENUITEM SEPARATOR
+MENUITEM "Import playlist from file...", IDC_IMPORT_PLAYLIST_FROM_FILE
+MENUITEM "Import active (current) playlist", IDC_IMPORT_WINAMP_PLAYLIST
+MENUITEM "Import playlist from folder...", 40010
+MENUITEM SEPARATOR
+POPUP "Sort playlists by:"
+BEGIN
+MENUITEM "Title alphabetically (A->Z)", ID_SORTPLAYLIST_TITLE_A_Z
+MENUITEM "Title alphabetically (Z->A)", ID_SORTPLAYLIST_TITLE_Z_A
+MENUITEM "Number of items ascending", ID_SORTPLAYLIST_NUMBEROFITEMSASCENDING
+MENUITEM "Number of items descending", ID_SORTPLAYLIST_NUMBEROFITEMSDESCENDING
+END
+MENUITEM SEPARATOR
+MENUITEM "Help", ID_PLAYLISTS_HELP
+END
+POPUP "PlaylistsImport"
+BEGIN
+MENUITEM "Import playlists from folder...", ID_PLAYLISTSIMPORT_IMPORTPLAYLISTSFROMFOLDER
+MENUITEM "Import (active) current playlist", IDC_IMPORT_WINAMP_PLAYLIST
+MENUITEM "Import playlist from file...", IDC_IMPORT_PLAYLIST_FROM_FILE
+END
+POPUP "PEditorMenus"
+BEGIN
+POPUP "RightClick"
+BEGIN
+MENUITEM "Play selection\tEnter", IDC_PLAY
+MENUITEM "Enqueue selection\tShift+Enter", IDC_ENQUEUE
+POPUP "Send to:"
+BEGIN
+MENUITEM "", 40003
+END
+MENUITEM SEPARATOR
+MENUITEM "Remove item(s)\tDelete", IDC_DELETE
+MENUITEM "Crop item(s)\tCtrl+Delete", IDC_CROP
+MENUITEM SEPARATOR
+MENUITEM "Download\t", IDC_PLAYLIST_DOWNLOAD_ENTRY
+MENUITEM SEPARATOR
+MENUITEM "View f&ile info...\tAlt+3", IDC_PLAYLIST_VIEW_FILE_INFO
+MENUITEM "Playlist entry\tCtrl+E", IDC_PLAYLIST_EDIT_ENTRY
+MENUITEM SEPARATOR
+MENUITEM "Explore item folder\tCtrl+F", IDC_PLAYLIST_EXPLOREITEMFOLDER
+END
+POPUP "Selection"
+BEGIN
+MENUITEM "Select &all\tCtrl+A", IDC_PLAYLIST_SELECT_ALL
+MENUITEM "Select &none", IDC_PLAYLIST_SELECT_NONE
+MENUITEM "Invert selection\tCtrl+I", IDC_PLAYLIST_INVERT_SELECTION
+END
+POPUP "Remove"
+BEGIN
+MENUITEM "Remove all &dead files", IDC_PLAYLIST_REMOVE_DEAD
+MENUITEM SEPARATOR
+MENUITEM "Remove all items", IDC_PLAYLIST_REMOVE_ALL
+MENUITEM "Crop selected items\tCtrl+Delete", IDC_CROP
+MENUITEM "Remove selected items\tDelete", IDC_DELETE
+MENUITEM "Physically remove selected item(s)", IDC_PLAYLIST_RECYCLE_SELECTED
+END
+POPUP "Add"
+BEGIN
+MENUITEM "Add file(s)\tL", IDC_ADD_FILES
+MENUITEM "Add folder\tShift+L", IDC_ADD_DIRECTORY
+MENUITEM "Add URL\tCtrl+L", IDC_ADD_LOCATION
+END
+POPUP "Misc"
+BEGIN
+MENUITEM "&Randomize list\tCtrl+Shift+R", IDC_PLAYLIST_RANDOMIZE
+MENUITEM "R&everse list\tCtrl+R", IDC_PLAYLIST_REVERSE
+MENUITEM SEPARATOR
+MENUITEM "Sort list by &path and filename", IDC_PLAYLIST_SORT_PATH
+MENUITEM "Sort list by &filename", IDC_PLAYLIST_SORT_FILENAME
+MENUITEM "Sort list by &title", IDC_PLAYLIST_SORT_TITLE
+MENUITEM SEPARATOR
+MENUITEM "Generate HTML playlist\tCtrl+Alt+G", ID_PLAYLIST_GENERATE_HTML
+MENUITEM SEPARATOR
+MENUITEM "Rebuild titles on selection\tCtrl+Shift+E", IDC_PLAYLIST_RESET_CACHE
+END
+POPUP "List"
+BEGIN
+MENUITEM "Export playlist...", IDC_EXPORT_PLAYLIST
+POPUP "Send playlist to"
+BEGIN
+MENUITEM "", 40003
+END
+MENUITEM SEPARATOR
+MENUITEM "Import playlist from file...", IDC_IMPORT_PLAYLIST_FROM_FILE
+MENUITEM "Import active playlist", IDC_IMPORT_WINAMP_PLAYLIST
+END
+END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TREEITEM_PLAYLIST   BITMAP                  "resources\\ti_playlist_16x16x16.bmp"
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDB_TREEITEM_CLOUD_PLAYLIST$( DISABLED ) BITMAP                  "resources\\ti_cloud_playlist_16x16x16.bmp"
+#else
+IDB_TREEITEM_CLOUD_PLAYLIST BITMAP                  "resources\\ti_cloud_playlist_16x16x16.bmp"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_VIEW_PLS_ACCELERATORS ACCELERATORS
+BEGIN
+VK_DELETE, IDC_DELETE, VIRTKEY, NOINVERT
+VK_RETURN, IDC_ENQUEUE, VIRTKEY, SHIFT, NOINVERT
+VK_INSERT, IDC_NEWPLAYLIST, VIRTKEY, SHIFT, NOINVERT
+VK_RETURN, IDC_PLAY, VIRTKEY, NOINVERT
+VK_F2, IDC_RENAME, VIRTKEY, NOINVERT
+"V", IDC_VIEWLIST, VIRTKEY, CONTROL, NOINVERT
+VK_RETURN, IDC_CUSTOM, VIRTKEY, SHIFT, CONTROL, NOINVERT
+END
+
+IDR_VIEW_PL_ACCELERATORS ACCELERATORS
+BEGIN
+"3", IDC_PLAYLIST_VIEW_FILE_INFO, VIRTKEY, ALT, NOINVERT
+"A", IDC_PLAYLIST_SELECT_ALL, VIRTKEY, CONTROL, NOINVERT
+"E", IDC_PLAYLIST_EDIT_ENTRY, VIRTKEY, CONTROL, NOINVERT
+"E", IDC_PLAYLIST_RESET_CACHE, VIRTKEY, CONTROL, ALT, NOINVERT
+"F", IDC_PLAYLIST_EXPLOREITEMFOLDER, VIRTKEY, CONTROL, NOINVERT
+"G", ID_PLAYLIST_GENERATE_HTML, VIRTKEY, CONTROL, ALT, NOINVERT
+"I", IDC_PLAYLIST_INVERT_SELECTION, VIRTKEY, CONTROL, NOINVERT
+"L", IDC_ADD_FILES, VIRTKEY, NOINVERT
+"L", IDC_ADD_LOCATION, VIRTKEY, CONTROL, NOINVERT
+"L", IDC_ADD_DIRECTORY, VIRTKEY, SHIFT, NOINVERT
+"R", IDC_PLAYLIST_REVERSE, VIRTKEY, CONTROL, NOINVERT
+"R", IDC_PLAYLIST_RANDOMIZE, VIRTKEY, SHIFT, CONTROL, NOINVERT
+VK_DELETE, IDC_DELETE, VIRTKEY, NOINVERT
+VK_DELETE, IDC_CROP, VIRTKEY, CONTROL, NOINVERT
+VK_F2, IDC_RENAME, VIRTKEY, NOINVERT
+VK_INSERT, IDC_NEWPLAYLIST, VIRTKEY, SHIFT, NOINVERT
+VK_RETURN, IDC_PLAY, VIRTKEY, NOINVERT
+VK_RETURN, IDC_ENQUEUE, VIRTKEY, SHIFT, NOINVERT
+VK_RETURN, IDC_CUSTOM, VIRTKEY, SHIFT, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+IDS_NULLSOFT_PLAYLISTS  "Nullsoft Playlists v%s"
+65535                   "{5E766B4F-818E-4f14-9C42-0902B2C571DC}"
+END
+
+STRINGTABLE
+BEGIN
+IDS_IMPORT_PLAYLIST     "Import playlist"
+IDS_APPEND_IMPORTED_PLAYLIST
+"Would you like to append the imported playlist to this playlist?\n\nSelect NO to overwrite this playlist with the imported playlist\nSelect YES to append the imported playlist to this playlist\nSelect CANCEL to not do anything"
+IDS_LIBRARY_QUESTION    "Library Question"
+IDS_APPEND_ACTIVE_PLAYLIST
+"Would you like to append the active playlist to this playlist?\n\nSelect NO to overwrite this playlist with the active playlist\nSelect YES to append the active playlist to this playlist\nSelect CANCEL to not do anything"
+IDS_EXPORT_PLAYLIST     "Export playlist"
+IDS_IMPORTED_PLAYLIST   "Imported Playlist"
+IDS_ITEM                "item"
+IDS_ADD_DIR_TO_PLAYLIST "Add directory to playlist"
+IDS_ADD_FILES_TO_PLAYLIST "Add file(s) to playlist"
+IDS_PLAYLISTS           "Playlists"
+IDS_MANAGE_PLAYLISTS    "&Manage Playlists..."
+IDS_NEW_PLAYLIST        "New Play&list...\tShift+Insert"
+IDS_ENTER_A_NAME        "You must enter a name!"
+IDS_ERROR               "Error"
+END
+
+STRINGTABLE
+BEGIN
+IDS_SENDTO_NEW_PLAYLIST "New Playlist"
+IDS_SENDTO_ML_PLAYLISTS "Library Playlists"
+IDS_SENDTO_PLAYLIST     "Library Playlist"
+IDS_IMPORT_PLAYLIST_FROM_FOLDER "Import playlist from folder"
+IDS_CONFIRM_DELETION    "Are you sure you want to delete the selected playlist(s)"
+IDS_CONFIRMATION        "Confirmation"
+IDS_PLAYLIST_TITLE      "Playlist Title"
+IDS_ITEMS               "Items"
+IDS_TIME                "Time"
+IDS_ERROR_DELETING_FILES "Error deleting files"
+IDS_X_OF_X_SELECTED     "%d/%d %s selected (%s/%s)"
+IDS_X_SELECTED          "%d %s (%s)"
+IDS_ITEMS_LOWER         "items"
+IDS_TITLE               "Title"
+IDS_NO_PLAYLIST_IN_LIBRARY "No Playlist in Library"
+IDS_OPEN_PLAYLIST_FROM_ML "Open playlist from &Library"
+END
+
+STRINGTABLE
+BEGIN
+IDS_PLAYLIST_FROM_ML    "Playlist from &Library"
+IDS_PLAYLIST_ERROR      "Cannot save playlist: Error writing to file or file is read-only"
+IDS_PLAYLIST_ERROR_TITLE "Error saving playlist"
+IDS_DAY                 "day"
+IDS_DAYS                "days"
+IDS_PL_FILE_MNGT        "Winamp Playlist Management"
+IDS_EXTERNAL_CHECKED    "Checking this will make Winamp use the original playlist file(s) instead of creating a Winamp managed copy which is not synchronized with the original playlist file(s).\n\nIf checked, you need to ensure the playlist file(s) exist and will be accessible always otherwise they will not be useable within Winamp. All actions will be done on the original playlist file e.g. delete will remove the original file instead of just removing the Winamp managed copy."
+IDS_EXTERNAL_ALREADY_ADDED
+"The playlist you have selected has already been imported into Winamp and will not be re-added."
+IDS_SOURCE_PL_MISSING   "\n\nThe source playlist file for this playlist view cannot be located.\nThis can happen if the playlist has been physically removed.\n\nThe missing source playlist file is:\n%s"
+END
+
+STRINGTABLE
+BEGIN
+IDS_BROWSE_FOR_PLEDIT_ENTRY "Browse for playlist entry..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

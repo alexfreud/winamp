@@ -1,0 +1,22 @@
+How to use the custom light position evaluator:
+ * Init code will be executed each time the window size is changed
+   or when the effect loads
+ * Frame code is executed before rendering a new frame
+ * Beat code is executed when a beat is detected
+
+Predefined variables:
+ x : Light x position, ranges from 0 (left) to 1 (right) (0.5 = center)
+ y : Light y position, ranges from 0 (top) to 1 (bottom) (0.5 = center)
+ isBeat : 1 if no beat, -1 if beat (weird, but old)
+ isLBeat: same as isBeat but persists according to 'shorter/longer' settings
+          (usable only with OnBeat checked)
+ bi:	Bump intensity, ranges	from 0 (flat) to 1 (max specified bump, default)
+ You may also use temporary variables accross code segments
+
+Some examples:
+   Circular move
+      Init : t=0
+      Frame: x=0.5+cos(t)*0.3; y=0.5+sin(t)*0.3; t=t+0.1;
+   Nice motion:
+      Init : t=0;u=0
+      Frame: x=0.5+cos(t)*0.3; y=0.5+cos(u)*0.3; t=t+0.1; u=u+0.012;

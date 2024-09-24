@@ -1,0 +1,121 @@
+
+
+
+<groupdef id="ml.frame.layout" relatw="1" relath="1" w="0" h="-35" background="wasabi.frame.basetexture">
+  <layer
+    x="0" y="0"
+    image="player.ml.topleft"
+    resize="topleft"
+  />
+  <layer
+    x="6" y="0"
+    w="-12"
+    relatw="1"
+    image="player.ml.topcenter"
+    resize="top"
+  />
+  <layer
+    x="-6" y="0"
+    relatx="1"
+    image="player.ml.topright"
+    resize="topright"
+  />
+  <layer
+    x="0" y="5"
+    relath="1"
+    h="-50"
+    image="player.ml.left"
+    resize="left"
+  />
+  <layer
+    x="-6" y="5"
+    relatx="1"
+    relath="1"
+    h="-50"
+    image="player.ml.right"
+    resize="right"
+  />
+  <layer
+    x="0" y="-52"
+    relaty="1"
+    image="player.ml.bottomleft"
+    resize="bottomleft"
+  />
+  <layer
+    x="20" y="-10"
+    w="-40"
+    relatw="1"
+    relaty="1"
+    image="player.ml.bottomcenter"
+    resize="bottom"
+  />
+  <layer
+    x="-20" y="-52"
+    relatx="1"
+    relaty="1"
+    image="player.ml.bottomright"
+    resize="bottomright"
+  />
+  <layer
+    x="0" y="-6"
+    relaty="1"
+    image="player.main.left.region"
+    resize="left"
+    sysregion="-2"
+  />
+  <layer
+    x="-6" y="-6"
+    relaty="1"
+    relatx="1"
+    image="player.main.right.region"
+    sysregion="-2"
+  />
+</groupdef>
+
+<groupdef id="player.content.ml.dummy.group" name="MediaLibraryDummyGroup" relatw="1" relath="1" w="0" h="0">
+  <component
+    x="6"
+    y="5"
+    w="-12"
+    relatw="1"
+    h="-50"
+    relath="1"
+    noshowcmdbar="1"
+    autoopen="1"
+    autoclose="0"
+    param="guid:{6B0EDF80-C9A5-11D3-9F26-00C04F39FFC6}"
+  />
+  <group id="ml.frame.layout" x="0" y="0"/>
+</groupdef>
+
+<groupdef id="mledit.content.group" name="MediaLibraryContent">
+  <group id="player.content.ml.dummy.group" x="0" y="17" sysregion="1"/>
+  <script id="mlmenu.script" file="scripts/mlmenu.maki" />
+</groupdef>
+
+
+<layout id="normal" minimum_w="354" minimum_h="164" h="349" w="790">
+  <Wasabi:MediaLibraryFrame:NoStatus
+    x="0" y="0" w="0" h="0" relatw="1" relath="1"
+    content="mledit.content.group"
+    padtitleleft="10"
+    padtitleright="0"
+    shade="shade"
+  />
+  <sendparams target="mousetrap" dblClickAction="SWITCH;shade"/>
+  <sendparams target="window.top.left;window.top;window.top.right;window.left;window.right;window.bottom.left.top;window.bottom.left;window.bottom.left.bottom;window.bottom.top;window.bottom;window.bottom.bottom;window.bottom.right.top;window.bottom.right;window.bottom.right.bottom;" resize="0"/>
+
+    <layer
+        x="0" y="0" w="0" h="3"
+        relatw="1"
+        resize="top"
+  />
+
+</layout>
+
+
+
+
+
+
+

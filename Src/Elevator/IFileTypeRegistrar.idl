@@ -1,0 +1,190 @@
+import "oaidl.idl";
+import "ocidl.idl";
+import "wtypes.idl";
+
+[
+	object,
+//	dual,
+//	nonextensible,
+	uuid(2E74C695-8E9C-4179-B0A0-BC2EBDEB5C2B),
+	helpstring("IFileTypeRegistrar Interface"),
+	pointer_default(unique)
+]
+interface IFileTypeRegistrar : IUnknown
+{
+	HRESULT  RegisterMIMEType(
+		 [in, string]  LPCWSTR mimeType, 
+		 [in, string]  LPCWSTR programName, 
+		 [in, string]  LPCWSTR extension, 
+		 [in] BOOL netscapeOnly
+		);
+
+	HRESULT  RegisterCDPlayer(
+		 [in, string]  LPCWSTR programName
+		);
+
+	HRESULT  UnregisterCDPlayer(
+		 [in, string]  LPCWSTR programName
+		);
+
+	HRESULT  RegisterType(
+		 [in, string]  LPCWSTR extension,
+		 [in, string]  LPCWSTR which_str, 
+		 [in, string]  LPCWSTR prog_name
+		);
+
+	HRESULT  UnregisterType(
+		 [in, string]  LPCWSTR extension, 
+		 [in, string]  LPCWSTR which_str, 
+		 [in, string]  LPCWSTR prog_name,
+		 [in] int is_playlist
+		);
+
+	HRESULT  AddDirectoryContext(
+		 [in, string]  LPCWSTR commandLine, 
+		 [in, string]  LPCWSTR which_str, 
+		 [in, string]  LPCWSTR description
+		);
+
+	HRESULT  RemoveDirectoryContext(
+		 [in, string]  LPCWSTR which_str
+		);
+
+	HRESULT  AddAgent(
+		 [in, string]  LPCWSTR agentFilename
+		);
+
+	HRESULT  RemoveAgent();
+
+	HRESULT  RegisterMediaPlayer(
+		 [in] DWORD accessEnabled, 
+		 [in, string]  LPCWSTR programName, 
+		 [in, string]  LPCWSTR prog_name, 
+		 [in] int iconNumber
+		 );
+
+	HRESULT RegisterMediaPlayerProtocol(
+		[in, string] LPCWSTR protocol, 
+		[in, string] LPCWSTR prog_name
+		);
+
+	HRESULT UnregisterMediaPlayerProtocol(
+		[in, string] LPCWSTR protocol, 
+		[in, string] LPCWSTR prog_name
+		);
+
+	HRESULT  SetupFileType(
+		 [in, string]  LPCWSTR programName, 
+		 [in, string]  LPCWSTR winamp_file, 
+		 [in, string]  LPCWSTR name, 
+		 [in] int iconNumber, 
+		 [in, string]  LPCWSTR defaultShellCommand,
+		 [in, string]  LPCWSTR iconPath
+		);
+
+	HRESULT  SetupShell(
+		 [in, string] LPCWSTR commandLine, 
+		 [in, string] LPCWSTR winamp_file, 
+		 [in, string] LPCWSTR description, 
+		 [in, string] LPCWSTR commandName,
+		 [in, string] LPCWSTR dragAndDropGUID
+		);
+
+	HRESULT  RemoveShell(
+		 [in, string] LPCWSTR winamp_file,
+		 [in, string] LPCWSTR commandName
+		);
+
+	HRESULT SetupDefaultFileType(
+		 [in, string] LPCWSTR winamp_file,
+		 [in, string] LPCWSTR defaultShellCommand
+		);
+
+	HRESULT  RegisterTypeShell(
+		 [in, string]  LPCWSTR programName, 
+		 [in, string]  LPCWSTR which_file, 
+		 [in, string]  LPCWSTR description, 
+		 [in] int iconNumber,
+		 [in, string] LPCWSTR commandName
+		);
+
+	HRESULT  RegisterGUID(
+		 [in, string] LPCWSTR programName, 
+		 [in, string] LPCWSTR guidString
+		);
+
+	HRESULT RegisterDVDPlayer(
+		[in, string] LPCWSTR programName,
+		[in] int iconNumber,
+		[in, string] LPCWSTR which_file,
+		[in, string] LPCWSTR commandName,
+		[in, string] LPCWSTR provider, 
+		[in, string] LPCWSTR description
+		);
+
+	HRESULT InstallItem(
+		[in, string] LPCWSTR sourceFile,
+		[in, string] LPCWSTR destinationFolder,
+		[in, string] LPCWSTR destinationFilename
+		);
+
+	HRESULT DeleteItem(
+		[in, string] LPCWSTR file
+		);
+
+	HRESULT RenameItem(
+		[in, string] LPCWSTR oldFile,
+		[in, string] LPCWSTR newFile,
+		[in] BOOL force
+		);
+
+	HRESULT CleanupDirectory(
+		[in, string] LPCWSTR directory
+		);
+
+	HRESULT MoveDirectoryContents(
+		[in, string] LPCWSTR oldDirectory,
+		[in, string] LPCWSTR newDirectory
+		);
+
+	HRESULT WriteProKey(
+		[in, string] LPCWSTR name, 
+		[in, string] LPCWSTR key
+		);
+
+	HRESULT WriteClientUIDKey(
+		[in, string] LPCWSTR path, 
+		[in, string] LPCWSTR uid_str
+		);
+
+	HRESULT RegisterProtocol(
+		[in, string] LPCWSTR protocol, 
+		[in, string] LPCWSTR command,
+		[in, string] LPCWSTR icon
+		);
+
+	HRESULT RegisterCapability(
+		[in, string] LPCWSTR programName, 
+		[in, string] LPCWSTR winamp_file,
+		[in, string] LPCWSTR extension
+		);
+};
+
+[
+	uuid(B3600382-8669-402B-81B2-3D18B0E2318B),
+	version(1.1),
+	helpstring("Elevator 1.1 Type Library")
+]
+library ElevatorLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(3B29AB5C-52CB-4a36-9314-E3FEE0BA7468),
+		appobject,
+	]
+	coclass WFileTypeRegistrar
+	{
+		[default] interface IFileTypeRegistrar;
+	};
+};
+

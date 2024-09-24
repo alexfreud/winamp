@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\AsioDeviceAdapter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\BlockingStream.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\CallbackInterface.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\CallbackStream.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\CFunCallbackStream.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\CppFunCallbackStream.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\Device.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\DirectionSpecificStreamParameters.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\Exception.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\HostApi.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\InterfaceCallbackStream.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\MemFunCallbackStream.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\Stream.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\StreamParameters.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\System.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\SystemDeviceIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\portaudio\bindings\cpp\source\portaudiocpp\SystemHostApiIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\SystemHostApiIterator.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\SystemDeviceIterator.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\System.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\StreamParameters.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\Stream.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\SampleDataFormat.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\PortAudioCpp.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\MemFunCallbackStream.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\InterfaceCallbackStream.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\HostApi.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\Exception.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\DirectionSpecificStreamParameters.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\Device.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\CppFunCallbackStream.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\CFunCallbackStream.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\CallbackStream.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\CallbackInterface.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\BlockingStream.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\AutoSystem.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\portaudio\bindings\cpp\include\portaudiocpp\AsioDeviceAdapter.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{767ac17b-4d61-49b6-8415-c5eed48faef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressource Files">
+      <UniqueIdentifier>{56300801-03b9-4c63-87af-0f913f9e36be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8dcc2c5d-0310-4a7c-b476-ffd819f95421}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

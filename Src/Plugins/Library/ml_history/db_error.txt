@@ -1,0 +1,6 @@
+
+There was an error reading the history database. This could be due to the database becoming corrupted or having been removed.
+
+If the database files (recent.dat and recent.idx) have become corrupted then unless you have a back up, you will need to reset the database.
+
+By resetting the database, any playing history will be lost which also will have happened if the database was corrupted.

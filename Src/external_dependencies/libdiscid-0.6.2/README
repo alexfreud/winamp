@@ -1,0 +1,30 @@
+A Library for creating MusicBrainz DiscIDs
+------------------------------------------
+
+libdiscid is a C library for creating MusicBrainz DiscIDs from audio CDs.
+It reads a CD's table of contents (TOC) and generates an identifier which
+can be used to lookup the CD at MusicBrainz (http://musicbrainz.org).
+Additionally, it provides a submission URL for adding the DiscID to the
+database.
+
+The library also provides FreeDB disc IDs, and MCN + ISRCs, if available.
+
+The interface of this library is new, but the DiscID algorithm and the
+operating system dependent CD-ROM/DVD-ROM access code have been ported
+from libmusicbrainz version 2. 
+
+
+Please report all bugs you find via the MusicBrainz bug tracker.
+Don't forget to state which OS and what version you are using:
+
+    http://tickets.musicbrainz.org/browse/LIB
+
+Questions about this package may be posted to the MusicBrainz
+development mailing list (mb-devel):
+
+    http://musicbrainz.org/doc/Communication/Mailing_Lists
+
+More information can be found at the package's official homepage:
+
+    http://musicbrainz.org/doc/libdiscid
+

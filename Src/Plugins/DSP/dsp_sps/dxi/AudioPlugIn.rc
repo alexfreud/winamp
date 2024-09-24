@@ -1,0 +1,202 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include <windows.h>
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include <windows.h>\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\AudioPlugIn.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "AudioPlugIn DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "AudioPlugIn\0"
+            VALUE "LegalCopyright", "Copyright © 1997\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AudioPlugIn.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "AudioPlugIn Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 343, 222
+STYLE DS_CONTROL | DS_CENTER | WS_CHILD
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | WS_TABSTOP,11,70,11,116
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | WS_TABSTOP,51,70,11,116
+    CONTROL         "Slider1",IDC_SLIDER3,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | WS_TABSTOP,91,70,11,116
+    EDITTEXT        IDC_SLIDER1_LABEL2,24,74,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER1_LABEL3,24,170,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER1_LABEL1,12,189,38,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER2_LABEL2,64,74,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER2_LABEL3,64,170,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER2_LABEL1,52,189,38,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER3_LABEL2,104,74,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER3_LABEL3,104,170,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER3_LABEL1,92,189,38,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Save",IDC_SAVE,185,4,50,14
+    PUSHBUTTON      "Help",IDC_SHOWHELP,289,4,50,14
+    EDITTEXT        IDC_INIT,183,32,155,43,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_ONSLIDERCHANGE,183,87,155,41,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_PERSAMPLE,183,141,155,80,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL
+    GROUPBOX        "Signal Processing Controls",IDC_STATIC,3,61,176,159
+    LTEXT           "Initialization/format change:",IDC_STATIC,183,22,88,8
+    LTEXT           "Per sample (or sample-pair):",IDC_STATIC,183,131,87,8
+    LTEXT           "Slider change/initialization:",IDC_STATIC,183,77,85,8
+    LTEXT           "",IDC_PRESET,3,32,175,10,SS_SUNKEN
+    LTEXT           "Current preset:",IDC_STATIC,3,21,47,8
+    PUSHBUTTON      "Load",IDC_LOAD,3,4,41,14
+    PUSHBUTTON      "New",IDC_NEW,50,4,41,14
+    PUSHBUTTON      "",IDC_EDIT,133,4,46,14
+    CONTROL         "Enable processing",IDC_BYPASS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,47,74,10
+    CONTROL         "Slider1",IDC_SLIDER4,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | WS_TABSTOP,130,70,11,116
+    EDITTEXT        IDC_SLIDER4_LABEL2,144,74,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER4_LABEL3,144,170,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLIDER4_LABEL1,132,189,38,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Trigger 1",IDC_TRIGGER1,12,204,38,11
+    PUSHBUTTON      "Trigger 2",IDC_TRIGGER2,52,204,38,11
+    PUSHBUTTON      "Trigger 3",IDC_TRIGGER3,92,204,38,11
+    PUSHBUTTON      "Trigger 4",IDC_TRIGGER4,132,204,38,11
+END
+
+IDD_EVAL_HELP DIALOG DISCARDABLE  0, 0, 311, 231
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SPS Expression Help"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,7,210,50,14
+    EDITTEXT        IDC_EDIT1,12,25,286,177,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,7,297,200
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NAME_PLUGIN         "Nullsoft SPS DX plugin"
+    IDS_DESC_PLUGIN         "SPS"
+    IDS_SETTINGS            "Settings"
+    IDS_HELPFILE_PLUGIN     "AudioPlugIn.hlp"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\AudioPlugIn.rc2"  // non-Microsoft Visual C++ edited resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

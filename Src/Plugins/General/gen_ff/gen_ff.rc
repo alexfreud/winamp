@@ -1,0 +1,543 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""gen_ff.rc2""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PREFS_GENERAL DIALOGEX 0, 0, 261, 228
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Desktop Alpha Blending",IDC_STATIC_DA1,4,3,256,48
+    LTEXT           "Desktop Alpha Blending allows some skins to display subtle shadows, smoothed edges, and other visual enhancements.",IDC_STATIC,9,15,244,16
+    CONTROL         "Enable Desktop Alpha Blending (when requested by the skin)",IDC_CHECK_DESKTOPALPHA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,35,210,10
+    GROUPBOX        "Timers Resolution : 33ms",IDC_STATIC_TIMERRES,4,54,256,37
+    CONTROL         "Slider1",IDC_SLIDER_TIMERRESOLUTION,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,9,66,190,10
+    PUSHBUTTON      "Optimize...",IDC_BUTTON_AUTOTIMERRES,201,63,52,13
+    LTEXT           "Smoother",IDC_STATIC,12,76,32,8
+    RTEXT           "Choppier",IDC_STATIC,165,76,30,8
+    GROUPBOX        "Text Scroll Speed : Average",IDC_STATIC_TICKER,4,94,256,34
+    CONTROL         "Slider1",IDC_SLIDER_TICKERSPEED,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,9,105,111,10
+    LTEXT           "Faster",IDC_STATIC,11,114,22,8
+    LTEXT           "Slower",IDC_STATIC,100,114,23,8,0,WS_EX_RIGHT
+    LTEXT           "Move text by",IDC_STATIC,145,106,44,8
+    EDITTEXT        IDC_EDIT_INCREMENT,190,104,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_INCREMENT,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,209,103,10,14
+    LTEXT           "pixels",IDC_STATIC,225,106,19,8
+    GROUPBOX        "Miscellaneous",IDC_STATIC,4,131,256,86
+    CONTROL         "Enable tooltips",IDC_CHECK_TOOLTIPS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,144,65,10
+    CONTROL         "Dock windows at ",IDC_CHECK_DOCKING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,156,67,11
+    EDITTEXT        IDC_EDIT_DOCKDISTANCE,79,155,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_DOCKDISTANCE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,97,154,10,14
+    LTEXT           "pixels",IDC_STATIC,111,157,18,8
+    CONTROL         "Dock toolbars at ",IDC_CHECK_DOCKING2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,170,67,11
+    EDITTEXT        IDC_EDIT_DOCKDISTANCE2,79,169,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_DOCKDISTANCE2,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,97,168,11,14
+    LTEXT           "pixels",IDC_STATIC,111,171,18,8
+    LTEXT           "Wait",IDC_STATIC,11,186,16,8
+    EDITTEXT        IDC_EDIT_SHOWTIME,30,184,35,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_SHOWTIME,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,50,183,10,14
+    LTEXT           "ms before showing docked toolbars",IDC_STATIC,70,186,114,8
+    LTEXT           "Wait",IDC_STATIC,11,201,16,8
+    EDITTEXT        IDC_EDIT_HIDETIME,30,199,35,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_HIDETIME,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,49,198,10,14
+    LTEXT           "ms before hiding docked toolbars",IDC_STATIC,70,201,106,8
+END
+
+IDD_PREFS DIALOGEX 0, 0, 271, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",WS_TABSTOP,0,0,271,246
+END
+
+IDD_PREFS_THEMES DIALOGEX 0, 0, 261, 228
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LIST1,4,6,256,203,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Set Theme",IDC_BUTTON_SETTHEME,210,212,50,13
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 278, 175
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,220,157,50,13
+    CONTROL         "",IDC_STATIC_GROUP,"Static",SS_BLACKFRAME | SS_SUNKEN,7,7,263,146
+END
+
+IDD_AUTOTIMERRES DIALOGEX 0, 0, 195, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Auto Detection of Optimum Timers Resolution"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Go",IDOK,85,70,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,138,70,50,13
+    CTEXT           "Auto detection works best if other applications are not saturating the CPU.\n\nBefore you continue, please start playing a song.\n\nPress Go when ready.\n(animations will temporarily slow down)",IDC_TXT,7,7,181,57
+END
+
+IDD_CUSTOMSCALE DIALOGEX 0, 0, 165, 70
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Custom Scale"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Scale : 100%",IDC_STATIC_SCALE,7,7,151,37
+    CONTROL         "Slider1",IDC_SLIDER_CUSTOMSCALE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,13,17,139,11
+    LTEXT           "10%",IDC_STATIC,17,30,18,8
+    LTEXT           "300%",IDC_STATIC,130,30,21,8
+    DEFPUSHBUTTON   "OK",IDOK,54,50,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,108,50,50,13
+END
+
+IDD_PREFS_FONTS DIALOGEX 0, 0, 261, 228
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Use FreeType TrueType font rendering for older skins",IDC_CHECK_FREETYPETTF,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,4,191,10
+    LTEXT           "Charmap Encoding :",IDC_STATIC_CHARMAP,15,18,65,8
+    COMBOBOX        IDC_COMBO_CHARMAP,85,16,170,235,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Alternate Fonts",IDC_STATIC_ALTFONTS,4,33,256,40
+    CONTROL         "Use the alternate fonts if the skin defines them",IDC_CHECK_ALTFONTS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,45,169,10
+    CONTROL         "Keep primary font in strings that contain only 7-bit characters",IDC_CHECK_NO_ALT_7BIT_OVERRIDE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,58,215,10
+    GROUPBOX        "Font Mapper",IDC_STATIC,4,76,256,105
+    CONTROL         "Use skin font mapper",IDC_CHECK_USEFONTMAPPER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,88,85,10
+    PUSHBUTTON      "Configure skin font mapping...",IDC_BUTTON_FONTMAPPER,133,86,120,13
+    CONTROL         "Allow use of bitmap fonts that have not been mapped",IDC_CHECK_ALLOWBITMAPFONTS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,101,188,10
+    LTEXT           "Replace with :",IDC_STATIC,17,128,46,8
+    GROUPBOX        "TrueType Replacement for Winamp Charset bitmap fonts",IDC_STATIC_TTFOVERRIDE,10,114,244,62
+    COMBOBOX        IDC_COMBO_TTFOVERRIDE,67,126,179,151,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Slider1",IDC_SLIDER_SCALETTFOVERRIDE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,142,231,10
+    LTEXT           "Decrease size",IDC_STATIC_DECREASESIZE,20,151,46,8
+    CTEXT           "100%",IDC_STATIC_TTFSCALE,118,151,31,8
+    LTEXT           "Increase size",IDC_STATIC_INCREASESIZE,201,151,42,8
+    CONTROL         "Keep bitmap font in strings that contain only 7-bit characters",IDC_NO_7BIT_OVERRIDE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,162,210,10
+    GROUPBOX        "Default / Fallback Font",IDC_STATIC,4,185,256,43
+    LTEXT           "If a font was not specified or cannot be found, use this font at this scale :",IDC_STATIC,10,196,243,8
+    COMBOBOX        IDC_COMBO_DEFAULTFONT,9,209,100,151,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Slider1",IDC_SLIDER_SCALEDEFAULTFONT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,116,206,139,10
+    LTEXT           "Decrease size",IDC_STATIC_DECREASESIZE2,119,214,46,8
+    CTEXT           "100%",IDC_STATIC_SCALEDEFAULTFONT,172,214,31,8
+    LTEXT           "Increase size",IDC_STATIC_INCREASESIZE2,210,214,42,8
+    CTEXT           "100%",IDC_STATIC_SCALEDEFAULTFONT2,174,214,31,8
+END
+
+IDD_PREFS_WINDOWS DIALOGEX 0, 0, 260, 228
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Scaling",IDC_STATIC,4,3,256,76
+    CONTROL         "Link all windows in all skins:",IDC_CHECK_LINKALLRATIO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,15,103,10
+    CTEXT           "100%",IDC_STATIC_SCALE,159,10,51,8
+    LTEXT           "10%",IDC_STATIC_SCALE11,124,17,16,8
+    CONTROL         "",IDC_SLIDER_CUSTOMSCALE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,142,18,84,10
+    LTEXT           "300%",IDC_STATIC_SCALE301,227,17,20,8
+    CONTROL         "WindowShade scale follows Normal Window Scale",IDC_CHECK_LINKRATIO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,28,173,10
+    GROUPBOX        "On Window Close/Reopen",IDC_STATIC,10,41,244,32
+    COMBOBOX        IDC_COMBO_SCALE,16,54,232,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Opacity",IDC_STATIC_OPACITY,4,81,256,138
+    CONTROL         "Link all windows in all skins:",IDC_CHECK_LINKALLALPHA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,92,102,10
+    COMBOBOX        IDC_COMBO_OPACITY,11,106,98,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Slider1",IDC_SLIDER_CUSTOMALPHA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,114,106,140,10
+    LTEXT           "Transparent",IDC_STATIC_TRANSP,117,116,40,8
+    CTEXT           "100%",IDC_STATIC_ALPHA,176,116,28,8
+    LTEXT           "Opaque",IDC_STATIC_OPAQUE,223,116,26,8
+    CONTROL         "WindowShade opacity follows Normal Window opacity",IDC_CHECK_LINKALPHA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,128,186,10
+    GROUPBOX        "Auto Opaque",IDC_STATIC_AUTOON,10,142,244,71
+    LTEXT           "To use Auto Opaque on a window without linking all of them, use the context menu on that window and select Window Settings, Opacity.",IDC_STATIC_AUTOONTXT,15,153,224,18
+    LTEXT           "Fade in :",IDC_STATIC_FADEIN2,15,174,28,8
+    CONTROL         "Slider1",IDC_SLIDER_FADEIN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,51,175,102,10
+    LTEXT           "250ms",IDC_STATIC_FADEIN,154,174,31,8
+    LTEXT           "Hold :",IDC_STATIC_HOLD2,15,186,22,8
+    CONTROL         "Slider1",IDC_SLIDER_HOLD,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,51,186,102,10
+    LTEXT           "2000ms",IDC_STATIC_HOLD,154,186,32,8
+    LTEXT           "Fade out :",IDC_STATIC_FADEOUT2,15,198,34,8
+    CONTROL         "Slider1",IDC_SLIDER_FADEOUT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,51,198,102,10
+    LTEXT           "2000ms",IDC_STATIC_FADEOUT,154,198,32,8
+    GROUPBOX        "Extend Hover",IDC_STATIC_EXTENDBOX,183,177,64,30
+    EDITTEXT        IDC_EDIT_EXTEND,189,189,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_EXTEND,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,211,188,10,14
+    LTEXT           "pixels",IDC_STATIC_EXTEND,224,191,19,8
+END
+
+IDD_CUSTOMALPHA DIALOGEX 0, 0, 165, 70
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Custom Opacity"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Opacity : 100%",IDC_STATIC_ALPHA,7,7,151,37
+    CONTROL         "Slider1",IDC_SLIDER_CUSTOMALPHA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,13,17,139,11
+    LTEXT           "10%",IDC_STATIC,17,30,18,8
+    LTEXT           "100%",IDC_STATIC,130,30,21,8
+    DEFPUSHBUTTON   "OK",IDOK,54,50,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,108,50,50,13
+END
+
+IDD_FONTMAPPER DIALOGEX 0, 0, 277, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Font Mapper"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "List2",IDC_LIST_MAPPINGS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | WS_BORDER | WS_TABSTOP,7,7,263,80
+    LTEXT           "Map when using:",IDC_STATIC,9,91,35,18
+    CONTROL         "This skin",IDC_RADIO_THISSKIN,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,47,92,44,8
+    CONTROL         "All skins",IDC_RADIO_ALLSKINS,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,47,101,41,8
+    LTEXT           "Map font :",IDC_STATIC,9,114,33,8
+    COMBOBOX        IDC_COMBO_SKINFONTS,46,112,132,122,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Into :",IDC_STATIC,9,128,33,8
+    COMBOBOX        IDC_COMBO_FONTS,46,126,132,122,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Scale :",IDC_STATIC,9,144,23,8
+    CONTROL         "Slider1",IDC_SLIDER_SCALE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,42,144,140,10
+    LTEXT           "Decrease size",IDC_STATIC,43,154,46,8
+    LTEXT           "100%",IDC_STATIC_SCALE,104,155,20,8
+    LTEXT           "Increase size",IDC_STATIC,138,154,42,8
+    PUSHBUTTON      "Delete",IDC_BUTTON_DEL,212,90,58,13
+    PUSHBUTTON      "Set",IDC_BUTTON_SET,212,111,58,13
+    PUSHBUTTON      "New",IDC_BUTTON_NEW,212,127,58,13
+    DEFPUSHBUTTON   "Close",IDOK,220,149,50,13
+END
+
+IDD_PREFS_SKIN DIALOGEX 0, 0, 261, 228
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_GROUP,4,6,256,200,0,WS_EX_CLIENTEDGE
+    CTEXT           "-",IDC_STATIC_EMPTY,34,23,192,162
+    PUSHBUTTON      "Skin Options Menu",IDC_BUTTON_SKINSPECIFIC,74,212,114,13
+END
+
+IDD_MEDIA_DOWNLOADER DIALOGEX 0, 0, 307, 59
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Download"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_URL,7,7,293,10
+    LTEXT           "",IDC_PROGRESS,7,28,293,8
+    LTEXT           "",IDC_DOWNLOADTO,7,44,293,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PREFS_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 260
+    END
+
+    IDD_PREFS_THEMES, DIALOG
+    BEGIN
+        RIGHTMARGIN, 260
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_AUTOTIMERRES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_CUSTOMSCALE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_PREFS_FONTS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 260
+    END
+
+    IDD_CUSTOMALPHA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_FONTMAPPER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_MEDIA_DOWNLOADER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTROLMENU MENU 
+BEGIN
+    POPUP "ControlMenu"
+    BEGIN
+        POPUP "&Opacity"
+        BEGIN
+            MENUITEM "1&00%",                       ID_CONTROLMENU_OPACITY_100
+            MENUITEM "&90%",                        ID_CONTROLMENU_OPACITY_90
+            MENUITEM "&80%",                        ID_CONTROLMENU_OPACITY_80
+            MENUITEM "&70%",                        ID_CONTROLMENU_OPACITY_70
+            MENUITEM "&60%",                        ID_CONTROLMENU_OPACITY_60
+            MENUITEM "&50%",                        ID_CONTROLMENU_OPACITY_50
+            MENUITEM "&40%",                        ID_CONTROLMENU_OPACITY_40
+            MENUITEM "&30%",                        ID_CONTROLMENU_OPACITY_30
+            MENUITEM "&20%",                        ID_CONTROLMENU_OPACITY_20
+            MENUITEM "&10%",                        ID_CONTROLMENU_OPACITY_10
+            MENUITEM "&Custom",                     ID_CONTROLMENU_OPACITY_CUSTOM
+            MENUITEM SEPARATOR
+            MENUITEM "Opaque on &Focus",            ID_CONTROLMENU_OPACITY_AUTO100_FOCUS
+            MENUITEM "Opaque on &Hover",            ID_CONTROLMENU_OPACITY_AUTO100_HOVER
+        END
+        POPUP "&Scaling"
+        BEGIN
+            MENUITEM "&50%",                        ID_CONTROLMENU_SCALING_50
+            MENUITEM "&75%",                        ID_CONTROLMENU_SCALING_75
+            MENUITEM "&100%",                       ID_CONTROLMENU_SCALING_100
+            MENUITEM "125%",                        ID_CONTROLMENU_SCALING_125
+            MENUITEM "150%",                        ID_CONTROLMENU_SCALING_150
+            MENUITEM "&200%",                       ID_CONTROLMENU_SCALING_200
+            MENUITEM "250%",                        ID_CONTROLMENU_SCALING_250
+            MENUITEM "&300%",                       ID_CONTROLMENU_SCALING_300
+            MENUITEM "&Custom",                     ID_CONTROLMENU_SCALING_CUSTOM
+            MENUITEM SEPARATOR
+            MENUITEM "&Locked",                     ID_CONTROLMENU_SCALING_LOCKED
+            MENUITEM "&Temporary",                  ID_CONTROLMENU_SCALING_FOLLOWDOUBLESIZE
+        END
+        POPUP "Docked Toolbar"
+        BEGIN
+            MENUITEM "Auto-&Hide",                  ID_CONTROLMENU_TOOLBAR_AUTOHIDE
+            MENUITEM "&Always On Top",              ID_CONTROLMENU_TOOLBAR_ALWAYSONTOP
+            MENUITEM SEPARATOR
+            MENUITEM "Top",                         ID_CONTROLMENU_TOOLBAR_TOP
+            MENUITEM "Left",                        ID_CONTROLMENU_TOOLBAR_LEFT
+            MENUITEM "Right",                       ID_CONTROLMENU_TOOLBAR_RIGHT
+            MENUITEM "Bottom",                      ID_CONTROLMENU_TOOLBAR_BOTTOM
+            MENUITEM "Not docked",                  ID_CONTROLMENU_TOOLBAR_DISABLED
+            MENUITEM SEPARATOR
+            MENUITEM "Dock/Undock Windows by Dragging", ID_CONTROLMENU_TOOLBAR_AUTODOCKONDRAG
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_MODERN_SKINS "Nullsoft Modern Skins Support v%s"
+    65535                   "{ACD05A75-030B-4943-A100-540DAD98FB00}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEND_TO             "Send to:"
+    IDS_NO_THEME_AVAILABLE  "No theme available"
+    IDS_COLOR_THEMES        "Color Themes"
+    IDS_CURRENT_SKIN        "Current Skin"
+    IDS_NO_SKIN_LOADED      "No modern skin loaded"
+    IDS_MODERN_SKIN_SUPPORT_CLASSIC 
+                            "Modern Skin support (switch to a modern skin for a much more interesting about box =)"
+    IDS_MODERN_SKIN_SUPPORT "Modern Skin support"
+    IDS_CUSTOM_X_PERCENT    "&Custom (%d%%)..."
+    IDS_CUSTOM              "&Custom..."
+    IDS_WINDOW_SETTINGS     "Window Settings"
+    IDS_SCALE_X_PERCENT     "Scale : %d%%"
+    IDS_OPACITY_X_PERCENT   "Opacity : %d%%"
+    IDS_GHK_SHOW_NOTIFICATION "Playback: Show notification"
+    IDS_MODERN_SKINS        "Modern Skins"
+    IDS_GENERAL             "General"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ALPHA_BLENDING      "Alpha Blending"
+    IDS_FONT_RENDERING      "Font Rendering"
+    IDS_ERROR_WHILE_LOADING_SKIN_WINDOW "Error while loading skin window"
+    IDS_NO_OPTIONS_AVAILABLE_FOR_THIS_SKIN 
+                            "No Options Available For This Skin"
+    IDS_AUTO_UNICODE_LATIN1_ASCII "Auto (Unicode -> Latin-1 -> ASCII)"
+    IDS_FONT                "Font"
+    IDS_MAPPING             "Mapping"
+    IDS_SCALE               "Scale"
+    IDS_TYPE                "Type"
+    IDS_THIS_SKIN           "This skin"
+    IDS_ALL_SKINS           "All skins"
+    IDS_FASTER              "Faster"
+    IDS_FAST                "Fast"
+    IDS_AVERAGE             "Average"
+    IDS_SLOW                "Slow"
+    IDS_SLOWER              "Slower"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FAILED_TO_DETECT_OPTIMAL_RESOLUTION 
+                            "\n\nFailed to detect optimal resolution.\n\nThis machine may be very slow, or the CPU may be otherwise too busy for auto-detection to work."
+    IDS_AUTO_DETECTING      "\n\nAuto detecting...\n\nNow trying %dms."
+    IDS_PREPARING_AUTO_DETECTION "\n\n\nPreparing auto detection..."
+    IDS_AUTO_DETECTION_SUCCESSFUL 
+                            "\n\nAuto detection successful.\n\nOptimum Resolution : %dms"
+    IDS_ACCEPT              "Accept"
+    IDS_N_A                 "n/a"
+    IDS_TIMERS_RESOLUTION   "Timers Resolution : %dms"
+    IDS_TEXT_SCROLL_SPEED   "Text Scroll Speed : %s"
+    IDS_CROSSFADER_ONLY_UNDER_OUT_DS 
+                            "Crossfader is only supported by DirectSound Output.\nWould you like to change your Output plug-in now?"
+    IDS_NOT_SUPPORTED       "Not Supported"
+    IDS_PLAYLIST_EDITOR     "Playlist Editor"
+    IDS_VIDEO               "Video"
+    IDS_MONO                " mono"
+    IDS_STEREO              " stereo"
+    IDS_X_CHANNELS          " %d Channels"
+    IDS_BY_SPACE            "by "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COULD_NOT_FIND_WINAMP "Could not find Winamp!"
+    IDS_ERROR               "Error"
+    IDS_WINAMP_NOT_FOUND    "Winamp not found"
+    IDS_VISUALIZATIONS      "Visualizations"
+    IDS_MEDIA_LIBRARY       "Media Library"
+    IDS_NO_SET              "no set"
+    IDS_SLOT_X_X            "Slot %d (%s)"
+    IDS_COLOR_EDITOR        "Color Editor"
+    IDS_SKIN_SETTINGS       "Skin Settings\tAlt+C"
+    IDS_WEB_BROWSER         "Web Browser\tAlt+X"
+    IDS_ALBUM_ART           "Album Art\tAlt+A"
+    IDS_NO_VISUALISATION    "No visualization"
+    IDS_SPECTRUM_ANALYZER   "Spectrum analyzer"
+    IDS_OSCILLOSCOPE        "Oscilloscope"
+    IDS_SKIN_LOAD_FORMAT_OLD 
+                            "The skin you are trying to load is using an old format.\nAre you sure you want to load this skin? (It might crash!)"
+    IDS_SKIN_LOAD_FORMAT_TOO_RECENT 
+                            "The skin you are trying to load is using a format that is too recent.\nAre you sure you want to load this skin? (It might crash!)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SKIN_LOAD_WARNING   "Warning!"
+    IDS_SKIN_LOAD_NOT_SUPPORTED 
+                            "The skin you are trying to load doesn't seem to be supported."
+    IDS_NO_SKIN_LOADED_     "No skin loaded"
+    IDS_XUITHEME_LOAD       "Load"
+    IDS_XUITHEME_SAVE       "Save"
+    IDS_MS                  "ms"
+    IDS_KHZ                 "kHz"
+    IDS_KBPS                "kbps"
+    IDS_USELOCK             "Reset window scale to global 'double size' except if it is locked"
+    IDS_ALLLOCKED           "All windows remember their scale, disregard global 'double size'"
+    IDS_OPAQUE_FOCUS        "Auto opaque on focus"
+    IDS_OPAQUE_HOVER        "Auto opaque on hover"
+    IDS_NO_OPACITY          "No auto opacity"
+    IDS_LOADING             "Loading..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "gen_ff.rc2"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

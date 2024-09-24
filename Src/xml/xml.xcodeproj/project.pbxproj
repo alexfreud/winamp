@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C224BF60BEF0DAE00CD61A6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C224BF50BEF0DAE00CD61A6 /* CoreFoundation.framework */; };
+		0C22BBBF0BBB5A4A00FCAE78 /* api_xmlreadercallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BBBE0BBB5A4A00FCAE78 /* api_xmlreadercallback.cpp */; };
+		0C22BBCF0BBB5A7100FCAE78 /* api_xmlreadercallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C22BBCE0BBB5A7100FCAE78 /* api_xmlreadercallback.h */; };
+		0C22BBD40BBB5A7C00FCAE78 /* api_xmlreadercallbacki.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C22BBD00BBB5A7C00FCAE78 /* api_xmlreadercallbacki.h */; };
+		0C22BBD50BBB5A7C00FCAE78 /* api_xmlreadercallbacki.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BBD10BBB5A7C00FCAE78 /* api_xmlreadercallbacki.cpp */; };
+		0C22BBD60BBB5A7C00FCAE78 /* api_xmlreaderparams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BBD20BBB5A7C00FCAE78 /* api_xmlreaderparams.cpp */; };
+		0C22BBD70BBB5A7C00FCAE78 /* api_xmlreaderparams.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C22BBD30BBB5A7C00FCAE78 /* api_xmlreaderparams.h */; };
+		0C22BBDB0BBB5A9200FCAE78 /* factory_xml.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C22BBD90BBB5A9200FCAE78 /* factory_xml.h */; };
+		0C22BBDC0BBB5A9200FCAE78 /* factory_xml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BBDA0BBB5A9200FCAE78 /* factory_xml.cpp */; };
+		0C22BBE20BBB5AAA00FCAE78 /* wa5_xml.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C22BBE10BBB5AAA00FCAE78 /* wa5_xml.h */; };
+		0C22BBE40BBB5AAF00FCAE78 /* XMLParameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BBE30BBB5AAF00FCAE78 /* XMLParameters.cpp */; };
+		0C22BC1A0BBB5DB400FCAE78 /* XMLReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BC190BBB5DB400FCAE78 /* XMLReader.cpp */; };
+		0C22BC8D0BBB60C200FCAE78 /* xmlrole.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BC8A0BBB60C200FCAE78 /* xmlrole.c */; };
+		0C22BC8E0BBB60C200FCAE78 /* xmltok.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BC8B0BBB60C200FCAE78 /* xmltok.c */; };
+		0C22BC8F0BBB60C200FCAE78 /* xmlparse.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BC8C0BBB60C200FCAE78 /* xmlparse.c */; };
+		0C22BCAB0BBB615800FCAE78 /* PtrList.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C22BCA90BBB615800FCAE78 /* PtrList.h */; };
+		0C22BCAC0BBB615800FCAE78 /* PtrList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BCAA0BBB615800FCAE78 /* PtrList.cpp */; };
+		0C22BCBF0BBB619400FCAE78 /* regexp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C22BCBD0BBB619400FCAE78 /* regexp.h */; };
+		0C22BCC00BBB619400FCAE78 /* regexp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BCBE0BBB619400FCAE78 /* regexp.cpp */; };
+		0C22BCE70BBB634A00FCAE78 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BCE60BBB634A00FCAE78 /* main.cpp */; };
+		0C22BD010BBB63C100FCAE78 /* encodings_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C22BD000BBB63C100FCAE78 /* encodings_c.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C224BF50BEF0DAE00CD61A6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		0C22BBBE0BBB5A4A00FCAE78 /* api_xmlreadercallback.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = api_xmlreadercallback.cpp; sourceTree = "<group>"; };
+		0C22BBCE0BBB5A7100FCAE78 /* api_xmlreadercallback.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = api_xmlreadercallback.h; sourceTree = "<group>"; };
+		0C22BBD00BBB5A7C00FCAE78 /* api_xmlreadercallbacki.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = api_xmlreadercallbacki.h; sourceTree = "<group>"; };
+		0C22BBD10BBB5A7C00FCAE78 /* api_xmlreadercallbacki.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = api_xmlreadercallbacki.cpp; sourceTree = "<group>"; };
+		0C22BBD20BBB5A7C00FCAE78 /* api_xmlreaderparams.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = api_xmlreaderparams.cpp; sourceTree = "<group>"; };
+		0C22BBD30BBB5A7C00FCAE78 /* api_xmlreaderparams.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = api_xmlreaderparams.h; sourceTree = "<group>"; };
+		0C22BBD90BBB5A9200FCAE78 /* factory_xml.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = factory_xml.h; sourceTree = "<group>"; };
+		0C22BBDA0BBB5A9200FCAE78 /* factory_xml.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = factory_xml.cpp; sourceTree = "<group>"; };
+		0C22BBE10BBB5AAA00FCAE78 /* wa5_xml.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = wa5_xml.h; sourceTree = "<group>"; };
+		0C22BBE30BBB5AAF00FCAE78 /* XMLParameters.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = XMLParameters.cpp; sourceTree = "<group>"; };
+		0C22BC190BBB5DB400FCAE78 /* XMLReader.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = XMLReader.cpp; sourceTree = "<group>"; };
+		0C22BC8A0BBB60C200FCAE78 /* xmlrole.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = xmlrole.c; path = expat/xmlrole.c; sourceTree = "<group>"; };
+		0C22BC8B0BBB60C200FCAE78 /* xmltok.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = xmltok.c; path = expat/xmltok.c; sourceTree = "<group>"; };
+		0C22BC8C0BBB60C200FCAE78 /* xmlparse.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = xmlparse.c; path = expat/xmlparse.c; sourceTree = "<group>"; };
+		0C22BCA90BBB615800FCAE78 /* PtrList.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PtrList.h; path = ../nu/PtrList.h; sourceTree = SOURCE_ROOT; };
+		0C22BCAA0BBB615800FCAE78 /* PtrList.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = PtrList.cpp; path = ../nu/PtrList.cpp; sourceTree = SOURCE_ROOT; };
+		0C22BCBD0BBB619400FCAE78 /* regexp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = regexp.h; path = ../nu/regexp.h; sourceTree = SOURCE_ROOT; };
+		0C22BCBE0BBB619400FCAE78 /* regexp.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = regexp.cpp; path = ../nu/regexp.cpp; sourceTree = SOURCE_ROOT; };
+		0C22BCE60BBB634A00FCAE78 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0C22BD000BBB63C100FCAE78 /* encodings_c.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = encodings_c.cpp; sourceTree = "<group>"; };
+		D2AAC0630554660B00DB518D /* xml.w5s */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = xml.w5s; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C224BF60BEF0DAE00CD61A6 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = xml;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0C224BF50BEF0DAE00CD61A6 /* CoreFoundation.framework */,
+				0C22BCA80BBB614800FCAE78 /* NU */,
+				0C22BC890BBB60B200FCAE78 /* expat */,
+				0C22BBBE0BBB5A4A00FCAE78 /* api_xmlreadercallback.cpp */,
+				0C22BBCE0BBB5A7100FCAE78 /* api_xmlreadercallback.h */,
+				0C22BBD00BBB5A7C00FCAE78 /* api_xmlreadercallbacki.h */,
+				0C22BBD10BBB5A7C00FCAE78 /* api_xmlreadercallbacki.cpp */,
+				0C22BBD20BBB5A7C00FCAE78 /* api_xmlreaderparams.cpp */,
+				0C22BBD30BBB5A7C00FCAE78 /* api_xmlreaderparams.h */,
+				0C22BBD90BBB5A9200FCAE78 /* factory_xml.h */,
+				0C22BBDA0BBB5A9200FCAE78 /* factory_xml.cpp */,
+				0C22BBE10BBB5AAA00FCAE78 /* wa5_xml.h */,
+				0C22BBE30BBB5AAF00FCAE78 /* XMLParameters.cpp */,
+				0C22BC190BBB5DB400FCAE78 /* XMLReader.cpp */,
+				0C22BCE60BBB634A00FCAE78 /* main.cpp */,
+				0C22BD000BBB63C100FCAE78 /* encodings_c.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		0C22BC890BBB60B200FCAE78 /* expat */ = {
+			isa = PBXGroup;
+			children = (
+				0C22BC8A0BBB60C200FCAE78 /* xmlrole.c */,
+				0C22BC8B0BBB60C200FCAE78 /* xmltok.c */,
+				0C22BC8C0BBB60C200FCAE78 /* xmlparse.c */,
+			);
+			name = expat;
+			sourceTree = "<group>";
+		};
+		0C22BCA80BBB614800FCAE78 /* NU */ = {
+			isa = PBXGroup;
+			children = (
+				0C22BCBD0BBB619400FCAE78 /* regexp.h */,
+				0C22BCBE0BBB619400FCAE78 /* regexp.cpp */,
+				0C22BCA90BBB615800FCAE78 /* PtrList.h */,
+				0C22BCAA0BBB615800FCAE78 /* PtrList.cpp */,
+			);
+			name = NU;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* xml.w5s */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C22BBCF0BBB5A7100FCAE78 /* api_xmlreadercallback.h in Headers */,
+				0C22BBD40BBB5A7C00FCAE78 /* api_xmlreadercallbacki.h in Headers */,
+				0C22BBD70BBB5A7C00FCAE78 /* api_xmlreaderparams.h in Headers */,
+				0C22BBDB0BBB5A9200FCAE78 /* factory_xml.h in Headers */,
+				0C22BBE20BBB5AAA00FCAE78 /* wa5_xml.h in Headers */,
+				0C22BCAB0BBB615800FCAE78 /* PtrList.h in Headers */,
+				0C22BCBF0BBB619400FCAE78 /* regexp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* xml */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "xml" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xml;
+			productName = xml;
+			productReference = D2AAC0630554660B00DB518D /* xml.w5s */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "xml" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* xml */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* xml */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C22BBBF0BBB5A4A00FCAE78 /* api_xmlreadercallback.cpp in Sources */,
+				0C22BBD50BBB5A7C00FCAE78 /* api_xmlreadercallbacki.cpp in Sources */,
+				0C22BBD60BBB5A7C00FCAE78 /* api_xmlreaderparams.cpp in Sources */,
+				0C22BBDC0BBB5A9200FCAE78 /* factory_xml.cpp in Sources */,
+				0C22BBE40BBB5AAF00FCAE78 /* XMLParameters.cpp in Sources */,
+				0C22BC1A0BBB5DB400FCAE78 /* XMLReader.cpp in Sources */,
+				0C22BC8D0BBB60C200FCAE78 /* xmlrole.c in Sources */,
+				0C22BC8E0BBB60C200FCAE78 /* xmltok.c in Sources */,
+				0C22BC8F0BBB60C200FCAE78 /* xmlparse.c in Sources */,
+				0C22BCAC0BBB615800FCAE78 /* PtrList.cpp in Sources */,
+				0C22BCC00BBB619400FCAE78 /* regexp.cpp in Sources */,
+				0C22BCE70BBB634A00FCAE78 /* main.cpp in Sources */,
+				0C22BD010BBB63C100FCAE78 /* encodings_c.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB914B08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_EXTENSION = w5s;
+				EXECUTABLE_PREFIX = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = xml;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB914C08733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+					ppc64,
+					x86_64,
+				);
+				EXECUTABLE_EXTENSION = w5s;
+				EXECUTABLE_PREFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = xml;
+			};
+			name = Release;
+		};
+		1DEB914F08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PREFIX_HEADER = expat/macconfig.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					XML_UNICODE_WCHAR_T,
+					HAVE_MEMMOVE,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../Wasabi;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB915008733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PREFIX_HEADER = expat/macconfig.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					XML_UNICODE_WCHAR_T,
+					HAVE_MEMMOVE,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../Wasabi;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "xml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914B08733D8E0010E9CD /* Debug */,
+				1DEB914C08733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "xml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914F08733D8E0010E9CD /* Debug */,
+				1DEB915008733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

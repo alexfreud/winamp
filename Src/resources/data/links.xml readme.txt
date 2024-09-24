@@ -1,0 +1,18 @@
+links.xml - readme
+
+This file is used to store Bento's browser quicklinks.
+If you want to edit this file keep in mind that you replace every & with &amp; in xml code.
+
+All menus must be stored under this node: <browserQuickLinks>
+
+the <link/> tag supports these params:
+name
+url
+ontop
+
+if you want to put a link in a submenu, surround it with <submenu> ... </submenu>
+params for <submenu/>
+name
+ontop
+
+-Martin

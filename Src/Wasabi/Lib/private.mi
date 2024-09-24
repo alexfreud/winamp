@@ -1,0 +1,26 @@
+//----------------------------------------------------------------------------------------------------------------
+// private.mi
+//
+// these are our own private calls ;)
+//----------------------------------------------------------------------------------------------------------------
+
+#ifndef __PRIVATE_MI
+#define __PRIVATE_MI
+
+extern class @{78BD6ED9-0DBC-4fa5-B5CD-5977E3A912F8}@ Object &Private;
+
+Global Private WaPrivateCall;
+//Member boolean WaPrivateCall.t;
+
+Function initWaPrivateCalls();
+initWaPrivateCalls ()
+{
+	WaPrivateCall = new Private;
+	//WaPrivateCall.t = false;
+	//debugInt(WaPrivateCall.t);
+}
+
+extern Private.updateLinks(String version, String browserversion);
+extern Private.onLinksUpdated();
+
+#endif

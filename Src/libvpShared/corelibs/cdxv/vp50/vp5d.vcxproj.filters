@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Decompress">
+      <UniqueIdentifier>{2c04083d-6bcf-4b0c-94ce-55f89142c8dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32">
+      <UniqueIdentifier>{aad98e01-f672-4f5a-8d90-0d8c9eeab331}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dx\Generic\boolhuff.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="dx\Generic\debug.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="dx\Generic\decodembs.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="dx\Generic\decodemode.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="dx\Generic\decodemv.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="DX\Generic\DFrameR.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="DX\Generic\DSystemDependant.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="dx\Generic\FrameIni.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="dx\Generic\Huffman.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="DX\Generic\pb_globals.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="dx\Generic\quantize.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="dx\Generic\recon.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="dx\Generic\TokenEntropy.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="DX\Generic\vfwpbdll_if.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="dx\Generic\vp50dxv.c">
+      <Filter>Decompress</Filter>
+    </ClCompile>
+    <ClCompile Include="dx\Win32\dsystemdependant.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="dx\Win32\quantindexmmx.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="xprintf\xprintf.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

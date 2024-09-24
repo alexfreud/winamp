@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gen_hotkeys", "gen_hotkeys.vcxproj", "{A0E56406-B1C9-4FC8-9589-A640D71A7364}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0E56406-B1C9-4FC8-9589-A640D71A7364}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A0E56406-B1C9-4FC8-9589-A640D71A7364}.Debug|Win32.Build.0 = Debug|Win32
+		{A0E56406-B1C9-4FC8-9589-A640D71A7364}.Debug|x64.ActiveCfg = Debug|x64
+		{A0E56406-B1C9-4FC8-9589-A640D71A7364}.Release|Win32.ActiveCfg = Release|Win32
+		{A0E56406-B1C9-4FC8-9589-A640D71A7364}.Release|Win32.Build.0 = Release|Win32
+		{A0E56406-B1C9-4FC8-9589-A640D71A7364}.Release|x64.ActiveCfg = Release|x64
+		{A0E56406-B1C9-4FC8-9589-A640D71A7364}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF3A8D23-4DD8-4A09-BD21-7A59EDA47D7C}
+	EndGlobalSection
+EndGlobal

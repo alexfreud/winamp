@@ -1,0 +1,79 @@
+Command			Description
+--------------------------------------------------------------------------------------------------------------------------------------------------
+/NEW			Creates a new instance of Winamp.
+/ADD <file>		Add the specified 'file' to the playlist editor.
+/BOOKMARK <file>		Add the specified 'file' to Winamp's bookmarks.
+
+/CONFIG=<file>		Instructs Winamp to use the specified config file instead of the default.
+/INIDIR=			Instructs Winamp to use a different settings folder from the default in paths.ini.
+/M3UDIR=		Instructs Winamp to use a different folder for storing playlists from the default in paths.ini.
+/CLASS=			Specify a different window class to use for Winamp instead of the default "Winamp v1.x".
+
+/REG=[ACDLNSV]		Associate Winamp with specific files and OS actions.
+/NOREG			Prevent Winamp from using the Windows registry i.e. like a portable mode.
+/UNREG			Removes any Winamp file and OS associations previously created by this Winamp install.
+
+/CLOSE or /QUIT or /EXIT	Close Winamp.
+/KILL			Attempt to kill the Winamp process if it refuses to exit normally.
+
+/SAFE=[1|2]		Run Winamp in a safe mode where only officially known plug-ins are loaded.
+			Using /SAFE=2 will also disable the loading of media library plug-ins.
+/SAFEALWAYS		Run Winamp like /SAFE=1 but without the prompt, which is otherwise shown.
+
+/ALLOW_COMPAT_MODE	This will allow Winamp to be run without the warning shown if Windows compatibility mode
+			is detected, as there are some cases where this is the only way to run Winamp as wanted.
+
+/ADDPLAYLIST <file> <name> [<guid>]	Allows for adding the specified playlist to Winamp's library playlists.
+					The <guid> parameter is optional and auto-generated if not specified.
+/APPENDPLAYLIST <guid> <file>		Append the specified <file> to the end of the specified playlist.
+					You need to use the correct <guid> otherwise this will fail.
+/CREATEPLAYLIST <name> [<guid>]		Will create a new playlist in Winamp's library playlists using the name
+					specified. The <guid> parameter is optional and is auto-generated if
+					not specified.
+/ENUMPLAYLISTS		Enumerates through Winamp's library playlists and sends the output to 'stdout'
+			e.g. winamp.exe /ENUMPLAYLISTS > playlists.txt
+			The output is UTF-8 encoded (no BOM) and the formatting is: <GUID>,<file>,<name>
+/DELM3U			Instructs Winamp to remove the current copy of winamp.m3u(8) from the playlists folder.
+
+/REV			Rewind the currently playing item by the native amount e.g. 5 seconds.
+/FWD			Fast forward the currently playing item by the native amount e.g. 5 seconds.
+/PREV			Move the currently playing item to the previous item in the playlist editor.
+/NEXT			Move the currently playing item to the next item in the playlist editor.
+/PLAY			Start Winamp playing.
+/PAUSE			Pause playback or restart playback if Winamp is already paused.
+/PLAYPAUSE		Pause / resume playback if already playing or starts playback if not already playing.
+/STOP			Stop Winamp playing.
+/STOPFADE		Stop Winamp playing with fadeout.
+/STOPAFTER		Stop Winamp playing after the current item finishes.
+
+/RANDOM or /RANDOM=[0|1]	Toggle Winamp's shuffle mode or set it to the specified value.
+/SHUFFLE or /SHUFFLE=[0|1]		Random and Shuffle are the same as far as Winamp is concerned.
+
+/REPEAT or /REPEAT=[0|1]		Toggle Winamp's repeat mode or set it to the specified value.
+
+/PANLEFT or /PANRIGHT	Move the panning (or balance) to the left or the right by ~5%.
+/PAN=[-127 - 127]		Set the panning (or balance) to the specified value.
+
+/VOLUP or /VOLDOWN	Increase or decrease the current volume by ~5%.
+/VOL=[0 - 100]		Set the volume to the specified value.
+
+/CD[0-3]			Loads (and plays if applicable from other settings) the specified CD (check the main menu).
+/JUMPTO			Open (or toggle) the 'Jump to File' window (subject to its configuration options).
+/CLEAR			Clear the contents of the current playlist editor.
+
+/STARTMIN		Attempts to start Winamp in a minimized (hidden) state - the OS and plug-ins can override.
+/STARTMAX		Attempts to start Winamp in a maximized (visible) state - the OS and plug-ins can override.
+
+
+/COMMAND=<id>		Will send the specified command or message <id> via the appropriate message type so
+			less general options can be used without Winamp specifically coding it into these options.
+
+/WA_IPC <id> <param>	These will not return any values and are just for sending an action e.g. toggling a state.
+			You will need to consult the Winamp SDK or use a resource editor to obtain appropriate <id>
+			and <param> values to be able to use these.
+
+ 
+Optional from JTFE (if installed and the functionality is enabled):
+
+/ADD \\QUEUE <file>	Add the specified file to the Winamp playlist editor and also to the JTFE queue
+/ADD \\ADDML <file>	Add (or update) the specified file in Winamp's Media Library.

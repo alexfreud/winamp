@@ -1,0 +1,684 @@
+
+<groupdef id="shadeX1"> <!-- SHUFFLE/REPEAT -->
+  <layer
+    x="0" y="0"
+    image="shade.bg.X1"
+    ghost="1"
+  />
+
+  <NStatesButton
+    id="shadeRepeat"
+    x="1" y="8"
+    nstates="3"
+    image="shade.button.repeat"
+    downImage="shade.button.repeat.pressed"
+    hoverImage="shade.button.repeat.hover"
+    tooltip="Toggle Playlist/Song Repeating"
+    cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat"
+    cfgvals="0;1;-1"
+    rectrgn="1"
+  />
+  <togglebutton
+    id="shadeShuffle"
+    x="20" y="8"
+    image="shade.button.shuffle"
+    downImage="shade.button.shuffle.pressed"
+    hoverImage="shade.button.shuffle.hover"
+    activeImage="shade.button.shuffle"
+    tooltip="Toggle Playlist Shuffling"
+    cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle"
+    rectrgn="1"
+  />
+
+  <NStatesButton
+    id="shadeRepeatLED"
+    x="12" y="1"
+    nstates="3"
+    autoelements="0"
+    image="shade.led.off"
+    downImage="shade.led.on"
+    activeImage="shade.led.on"
+    tooltip="Toggle Playlist Repeating"
+    cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat"
+    cfgvals="0;1;-1"
+    rectrgn="1"
+  />
+  <togglebutton
+    id="shadeShuffleLED"
+    x="31" y="1"
+    image="shade.led.off"
+    downImage="shade.led.on"
+    activeImage="shade.led.on"
+    tooltip="Toggle Playlist Shuffling"
+    cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle"
+    rectrgn="1"
+  />
+</groupdef>
+
+
+<groupdef id="shadeX2"> <!-- EQ -->
+  <layer
+    x="0" y="0"
+    image="shade.bg.X2"
+    ghost="1"
+  />
+  <button
+    id="shadeeq"
+    x="3" y="4"
+    image="shade.button.eq"
+    downImage="shade.button.eq.pressed"
+    activeImage="shade.button.eq"
+    hoverImage="shade.button.eq.hover"
+    tooltip="Equalizer"
+  />
+</groupdef>
+
+<groupdef id="shadeX3"> <!-- COLOR THEMES -->
+  <layer
+    x="0" y="0"
+    image="shade.bg.X3"
+    ghost="1"
+  />
+  <button
+    id="shadect"
+    action="TOGGLE" param="{53DE6284-7E88-4c62-9F93-22ED68E6A024}"
+    x="15" y="13"
+    image="shade.button.ct"
+    downImage="shade.button.ct.pressed"
+    activeImage="shade.button.ct"
+    hoverImage="shade.button.ct.hover"
+    tooltip="Color Themes"
+  />
+  <ColorThemes:Mgr
+    id="colorthemes_shade"
+    x="50" y="50"
+    w="200" h="100"
+    nohscroll="1"
+    visible="1"
+  />
+  <Button
+    id="Switch.ct.prev"
+    action="colorthemes_previous"
+    action_target="colorthemes_shade"
+    x="6" y="13"
+    image="shade.button.ct.prev"
+    downImage="shade.button.ct.prev.pressed"
+    hoverImage="shade.button.ct.prev.hover"
+    tooltip="Previous ColorTheme"
+  />
+  <Button
+    id="Switch.ct.next"
+    action="colorthemes_next"
+    action_target="colorthemes_shade"
+    x="45" y="13"
+    image="shade.button.ct.next"
+    downImage="shade.button.ct.next.pressed"
+    hoverImage="shade.button.ct.next.hover"
+    tooltip="Next ColorTheme"
+  />
+  <togglebutton
+    id="shadeaot"
+    cfgattrib="{280876CF-48C0-40BC-8E86-73CE6BB462E5};Always on top"
+    x="7" y="2"
+    image="shade.button.aot"
+    downImage="shade.button.aot.pressed"
+    activeImage="shade.button.aot"
+    hoverImage="shade.button.aot.hover"
+    tooltip="Toggle Always on top"
+  />
+  <togglebutton
+    id="shadeaot"
+    cfgattrib="{280876CF-48C0-40BC-8E86-73CE6BB462E5};Always on top"
+    x="42" y="1"
+    image="shade.led.off"
+    activeImage="shade.led.on"
+    tooltip="Toggle Always on top"
+  />
+</groupdef>
+
+<groupdef id="shadeX4"> <!-- Always on top -->
+  <layer
+    x="0" y="0"
+    image="shade.bg.X4"
+    ghost="1"
+  />
+</groupdef>
+
+
+
+<groupdef id="shadedisplay"> <!-- Display-->
+  <layer
+    x="0" y="0"
+    image="shade.display.bg.left"
+    ghost="1"
+  />
+  <layer
+    x="10" y="0"
+    w="-20"
+    relatw="1"
+    image="shade.display.bg.center"
+    ghost="1"
+  />
+  <layer
+    x="-10" y="0"
+    relatx="1"
+    image="shade.display.bg.right"
+    ghost="1"
+  />
+  <layer
+    x="3" y="4"
+    image="shade.display.left"
+    ghost="1"
+  />
+  <layer
+    x="13" y="4"
+    w="-21"
+    relatw="1"
+    image="shade.display.center"
+    ghost="1"
+    tile="1"
+  />
+  <layer
+    x="-8" y="4"
+    relatx="1"
+    image="shade.display.right"
+    ghost="1"
+  />
+
+  <!-- SEEK SLIDER -->
+  <slider
+    id="shadeSeeker2"
+    action="SEEK"
+    x="1" y="15"
+    h="10" w="-1"
+    relatw="1"
+    thumb="shade.button.seek"
+    downThumb="shade.button.seek.pressed"
+    hoverThumb="shade.button.seek.hover"
+    tooltip="Seeker"
+    alpha="100"
+  />
+  <slider
+    id="shadeSeekerGhost2"
+    action="SEEK"
+    x="1" y="15"
+    h="10" w="-1"
+    relatw="1"
+    thumb="shade.button.seek"
+    downThumb="shade.button.seek.pressed"
+    hoverThumb="shade.button.seek.hover"
+    tooltip="Seeker"
+  />
+</groupdef>
+
+
+<groupdef id="shadedisplay2"> <!-- Display-->
+  <layer
+    x="0" y="0"
+    image="shade.display.bg.left"
+    ghost="1"
+  />
+  <layer
+    x="10" y="0"
+    w="-20"
+    relatw="1"
+    image="shade.display.bg.center"
+    ghost="1"
+  />
+  <layer
+    x="-21" y="1"
+    relatx="1"
+    image="shade.display2.bg.right"
+    ghost="1"
+  />
+  <layer
+    x="3" y="4"
+    image="shade.display.left"
+    ghost="1"
+  />
+  <layer
+    x="13" y="4"
+    w="-32"
+    relatw="1"
+    image="shade.display.center"
+    ghost="1"
+    tile="1"
+  />
+  <layer
+    x="-19" y="4"
+    relatx="1"
+    image="shade.display.right"
+    ghost="1"
+  />
+
+  <button
+    id="shade.expand"
+    x="-10" y="8"
+    relatx="1"
+    image="shade.button.expand"
+    downImage="shade.button.expand.pressed"
+    hoverImage="shade.button.expand.hover"
+    tooltip="Expand Display"
+    rectrgn="1"
+   />
+  <button
+    id="shade.reduce"
+    x="-10" y="8"
+    relatx="1"
+    image="shade.button.reduce"
+    downImage="shade.button.reduce.pressed"
+    hoverImage="shade.button.reduce.hover"
+    tooltip="Reduce Display / Show more options"
+    rectrgn="1"
+   />
+
+  <!-- SEEK SLIDER -->
+  <slider
+    id="shadeSeeker"
+    action="SEEK"
+    x="1" y="15"
+    h="10" w="-11"
+    relatw="1"
+    thumb="shade.button.seek"
+    downThumb="shade.button.seek.pressed"
+    hoverThumb="shade.button.seek.hover"
+    tooltip="Seeker"
+    alpha="100"
+  />
+  <slider
+    id="shadeSeekerGhost"
+    action="SEEK"
+    x="1" y="15"
+    h="10" w="-11"
+    relatw="1"
+    thumb="shade.button.seek"
+    downThumb="shade.button.seek.pressed"
+    hoverThumb="shade.button.seek.hover"
+    tooltip="Seeker"
+  />
+</groupdef>
+
+<groupdef id="shadeticker" h="25"> <!-- Songticker -->
+  <Songticker
+    id="SongtickerShade" ticker="1"
+    display="songname" showlen="1"
+    x="40" y="4"
+    w="-44" h="13" relatw="1"
+    leftpadding="5"
+    rightpadding="-5"
+    font="shade.songticker.font"
+    align="left"
+    rightclickaction="trackmenu"
+    dblclickaction="trackinfo"
+    fontsize="13"
+    color="font.display.songtickershade"
+    altfont="Arial"
+   />
+  <Text
+    id="InfotickerShade" 
+    x="40" y="4"
+    w="-44" h="13" relatw="1"
+    leftpadding="5"
+    rightpadding="-5"
+    font="shade.songticker.font"
+    align="left"
+    rightclickaction="trackmenu"
+    dblclickaction="trackinfo"
+    fontsize="13"
+    color="font.display.songtickershade"
+    altfont="Arial"
+    visible="0"
+   />
+  <layer
+    x="40" y="4"
+    image="shade.display.ticker.overlay"
+    ghost="1"
+  />
+</groupdef>
+
+<groupdef id="shadevis" h="25"> <!-- VIS -->
+
+  <layer
+    x="0" y="4"
+    image="shade.display.vis.bg"
+    ghost="1"
+  />
+
+ <vis
+    id="visual"
+    x="4" y="4" w="53" h="13"
+    gammagroup="DisplayVis"
+    ColorBand1="255,255,255"
+    ColorBand2="255,255,255"
+    ColorBand3="255,255,255"
+    ColorBand4="255,255,255"
+    ColorBand5="255,255,255"
+    ColorBand6="255,255,255"
+    ColorBand7="255,255,255"
+    ColorBand8="255,255,255"
+    ColorBand9="255,255,255"
+    ColorBand10="255,255,255"
+    ColorBand11="255,255,255"
+    ColorBand12="255,255,255"
+    ColorBand13="255,255,255"
+    ColorBand14="255,255,255"
+    ColorBand15="255,255,255"
+    ColorBand16="255,255,255"
+
+    colorbandpeak="255,255,255"
+    colorosc1="255,255,255"
+    colorosc2="255,255,255"
+    colorosc3="255,255,255"
+    colorosc4="255,255,255"
+    colorosc5="255,255,255"
+  />
+
+  <layer id="main.vis.trigger" x="4" y="4" w="53" h="13" rectrgn="1"/>
+
+  <script file="scripts/visualizer.maki" />
+
+  <layer
+    x="0" y="4"
+    image="shade.display.vis.overlay"
+    ghost="1"
+  />
+
+</groupdef>
+
+<groupdef id="shadetimer" h="25"> <!-- Timer -->
+
+  <button id="nowplaying"
+	x="7" y="6" rectrgn="1"
+	image="shade.button.nowplaying.normal"
+	hoverImage="shade.button.nowplaying.hover"
+	downImage="shade.button.nowplaying.down"
+	tooltip="More information about this artist"
+  />
+
+  <script file="scripts/shadelinks.maki"/>
+
+  <text
+    id="timer"
+    display="time"
+    x="18" y="4"
+    w="40" h="12"
+    font="shade.songticker.font"
+    align="left"
+    timecolonwidth="2"
+    timeroffstyle="1"
+    fontsize="12"
+    color="font.display"
+    altfont="Arial"
+    altfontsize="13"
+    altbold="1"
+  />
+</groupdef>
+
+
+
+<groupdef id="shademain" name="Shade Main" w="0" h="25" relatw="1">
+
+  <!-- Background -->
+  <layer
+    x="0" y="0"
+    image="shade.bg.left"
+    dblClickAction="SWITCH;normal"
+  />
+  <layer
+    x="303" y="0"
+    w="-352"
+    relatw="1"
+    image="shade.bg.center"
+    dblClickAction="SWITCH;normal"
+  />
+  <layer
+    x="-49" y="0"
+    relatx="1"
+    image="shade.bg.right"
+    dblClickAction="SWITCH;normal"
+  />
+  <layer
+    x="128" y="5"
+    image="shade.bg.overlay"
+    dblClickAction="SWITCH;normal"
+  />
+  <layer
+    x="-54" y="0"
+    relatx="1"
+    image="shade.bg.resize"
+    ghost="1"
+  />
+  <layer
+    id="shade.region.left"
+    x="0" y="0"
+    image="shade.regions.left"
+    sysregion="-2"
+  />
+  <layer
+    id="shade.region.right"
+    x="-5" y="0"
+    relatx="1"
+    image="shade.regions.right"
+    sysregion="-2"
+  />
+  <layer
+    x="0" y="0"
+    w="5" h="25"
+    resize="left"
+  />
+  <layer
+    x="-5" y="0"
+    relatx="1"
+    w="5" h="25"
+    resize="right"
+  />
+
+
+  <!-- Sysmenu -->
+  <button
+    id="shadeSysmenu"
+    action="SYSMENU"
+    x="6" y="4"
+    image="shade.button.sysmenu"
+    downImage="shade.button.sysmenu.pressed"
+    hoverImage="shade.button.sysmenu.hover"
+    tooltip="Main Menu"
+  />
+
+
+  <!-- PREVIOUS -->
+  <button
+    id="shadePrevious"
+    action="PREV"
+    x="29" y="6"
+    image="shade.button.previous"
+    downImage="shade.button.previous.pressed"
+    hoverImage="shade.button.previous.hover"
+    tooltip="Previous"
+    rectrgn="1"
+  />
+  <!-- Playback Button Status -->
+  <status
+    id="shadestatus"
+    x="54" y="8"
+    stopBitmap="shade.button.status.stop"
+    playBitmap="shade.button.status.play"
+    pauseBitmap="shade.button.status.pause"
+    ghost="1"
+  />
+
+  <!-- PLAY -->
+  <button
+    id="shadePlay"
+    action="PLAY"
+    x="49" y="4"
+    image="shade.button.play"
+    downImage="shade.button.play.pressed"
+    hoverImage="shade.button.play.hover"
+    status="shade.button.play.active"
+    tooltip="Play"
+    rectrgn="1"
+  />
+
+  <!-- PAUSE -->
+  <button
+    id="shadePause"
+    action="PAUSE"
+    x="71" y="4"
+    image="shade.button.pause"
+    downImage="shade.button.pause.pressed"
+    hoverImage="shade.button.pause.hover"
+    tooltip="Pause"
+    rectrgn="1"
+  />
+
+  <!-- STOP -->
+  <button
+    id="shadeStop"
+    action="STOP"
+    x="93" y="4"
+    image="shade.button.stop"
+    downImage="shade.button.stop.pressed"
+    hoverImage="shade.button.stop.hover"
+    tooltip="Stop"
+    rectrgn="1"
+  />
+
+  <!-- NEXT -->
+  <button
+    id="shadeNext"
+    action="NEXT"
+    x="116" y="6"
+    image="shade.button.next"
+    downImage="shade.button.next.pressed"
+    hoverImage="shade.button.next.hover"
+    tooltip="Next"
+    rectrgn="1"
+  />
+
+
+  <!-- VOLUME -->
+  <layer
+    id="volumebarShade"
+    x="168" y="17"
+    w="10"
+    image="player.volumebar"
+  />
+  <slider
+    id="shadeVolume"
+    action="VOLUME"
+    x="164" y="12"
+    w="56" h="11"
+    thumb="shade.button.volume"
+    downThumb="shade.button.volume.pressed"
+    hoverThumb="shade.button.volume.hover"
+    tooltip="Volume"
+  />
+
+  <!-- MUTE -->
+  <togglebutton
+    id="shademute"
+    x="148" y="8"
+    image="shade.button.mute.off"
+    downImage="shade.button.mute.on.pressed"
+    hoverImage="shade.button.mute.on.hover"
+    activeImage="shade.button.mute.on"
+    tooltip="Toggle Mute"
+    rectrgn="1"
+  />
+
+  <!-- EJECT/PL/ML -->
+  <button
+    id="shadeEJECT"
+    action="EJECT"
+    x="229" y="10"
+    image="shade.button.eject"
+    downImage="shade.button.eject.pressed"
+    hoverImage="shade.button.eject.hover"
+    tooltip="Open file(s)"
+  />
+  <layer
+    x="249" y="10"
+    image="shade.button.pl"
+  />
+  <layer
+    x="267" y="10"
+    image="shade.button.ml"
+  />
+
+  <button
+    id="shadepl"
+    action="TOGGLE" param="guid:pl"
+    x="249" y="10"
+    image="shade.button.pl"
+    downImage="shade.button.pl.pressed"
+    hoverImage="shade.button.pl.hover"
+    activeImage="shade.button.pl.active"
+    tooltip="Playlist Editor"
+  />
+  <button
+    id="shademl"
+    action="TOGGLE" param="guid:ml"
+    x="267" y="10"
+    image="shade.button.ml"
+    downImage="shade.button.ml.pressed"
+    hoverImage="shade.button.ml.hover"
+    activeImage="shade.button.ml.active"
+    tooltip="Media Library"
+  />
+
+  <!-- Resizer -->
+  <layer
+    x="-54" y="1"
+    w="9" h="23"
+    relatx="1"
+    image="shade.pl.resize"
+    resize="right"
+    rectrgn="1"
+  />
+
+  <!-- CLOSE/SHADE/MINIMIZE -->
+  <button
+    id="shadeMinimize"
+    action="MINIMIZE"
+    x="-41" y="4"
+    relatx="1"
+    image="shade.button.minimize"
+    downImage="shade.button.minimize.pressed"
+    hoverImage="shade.button.minimize.hover"
+    tooltip="Minimize Winamp"
+  />
+  <button
+    id="shadeClose"
+    action="CLOSE"
+    x="-17" y="4"
+    relatx="1"
+    image="shade.button.close"
+    downImage="shade.button.close.pressed"
+    hoverImage="shade.button.close.hover"
+    tooltip="Exit Winamp"
+  />
+  <button
+    id="shadeWinshade"
+    action="SWITCH" param="normal"
+    x="-29" y="4"
+    relatx="1"
+    image="shade.button.winshade"
+    downImage="shade.button.winshade.pressed"
+    hoverImage="shade.button.winshade.hover"
+    tooltip="Return to Normal Mode"
+  />
+
+  <group id="shadedisplay" x="299" y="0" w="150" visible="0"/>
+  <group id="shadedisplay2" x="299" y="0" w="150" visible="0"/>
+  <group id="shadeticker" x="312" y="0" w="40" visible="0"/>
+  <group id="shadevis" x="299" y="0" w="60" relatx="1" visible="0"/>
+  <group id="shadetimer" x="299" y="0" w="53" visible="0"/>
+  <group id="shadeX1" x="-237" y="0" relatx="1" visible="0"/>
+  <group id="shadeX2" x="-195" y="0" relatx="1" visible="0"/>
+  <group id="shadeX3" x="-174" y="1" relatx="1" visible="0"/>
+  <group id="shadeX4" x="-130" y="0" relatx="1" visible="0"/>
+
+  <script id="seekshade.script" file="scripts/seekshade.maki" />
+
+</groupdef>

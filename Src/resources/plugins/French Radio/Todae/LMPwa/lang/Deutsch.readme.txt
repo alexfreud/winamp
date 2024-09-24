@@ -1,0 +1,47 @@
+LIVE MEDIA PLUGIN : FRAGEN(F) & ANTWORTEN(A)
+
+Q : EINE FEHLERMELDUNG WIRD BEIM ÖFFNEN DER WEBSITE ANGEZEIGT!
+ ============================================================
+R : Das Problem ist uns bekannt, kann jedoch nicht gelöst werden : das WEB Engine ist nicht so perfekt wie Internet Explorer Web Engine (u.a. mit Site-Coding etwas ungeduldig);  Dazu kommt noch, dass die Seiten, für die das Problem auftaucht, die Code nicht optimieren... Klicken Sie 'Nein', wenn solch eine Nachricht angezeigt wird und anbietet, die Seiten-Scripts weiterauszuführen.
+
+Q : RADIOKLANG IST SCHLECHTER QUALITÄT !
+=====================================
+R : Die Klangqualität hängt ausschließlich von der Sendequalität ab. Manche Sender bieten CD Qualität an, während andere nur mittlere Klangqualität anbieten. Grund dafür ist folgendes: die Bandbreite, dividiert durch die Streaming-Qualität, begrenzt die Anzahl von gleichzeitigen Zuhörern. Anders erklärt kann ein Sender durch eine verminderte Sendequalität seine maximale Anzahl von Zuhörern erhöhen, ohne mehr zu bezahlen.
+
+Q : MEIN RADIOSTREAM BRICHT STÄNDIG AB!
+=========================================================
+R : Dies liegt wahrscheinlich an der Qualität Ihrer Internetverbindung. Wenn Sie dazu Ihre Bandbreite überbenutzen (zum Downloaden z.B.), dann ist es normal, dass der Stream  ab und zu abbricht.  
+
+Q : SENDER HINZUFÜGEN ODER LÖSCHEN?
+===============================================
+R : Wählen Sie Optionen und klicken Sie einfach auf ’Hinzufügen’ » oder ‘Löschen‘. Sie können auch jedes Streaming Ihrer aktuellen Liste bearbeiten. Sie können auch noch durch die relevanten ‘Knöpfe’ Listen importieren oder verschmelzen.
+Schritt für Schritt Vorgehensweise ist unter den folgenden Linken verfügbar.
+http://www.01men.com/editorial/323251/dossiers-pratiques/
+et
+http://forum.telecharger.01net.com/microhebdo/logiciels/audio/tuto_winamp_comment_trouver_une_adresse_ip_dune_radio-333189/messages-1.html
+
+
+Q : KÖNNTEN SIE DEN XYZ RADIO- bzw. FERNSEHSENDER HINZUFÜGEN?
+==========================================================
+R : Nein, die verfügbaren Radiosender haben Partnerschaftverträge unterschrieben. Die anderen haben entweder Partnerschaftangebote abgelehnt oder haben sich nicht zurückgemeldet. Sie können jedoch Ihre eigenen ausgewählten Sender hinzufügen, die richtigen Stream-Adressen müssen Sie aber selbst aussuchen.
+Ihre Vorschläge können Sie uns per email schicken.
+
+Q : DIE ANGEGEBENEN INFORMATIONEN SIND FALSCH
+=============================================
+R : Sind die Radiotitel oder Slogans falsch? Funktionieren die Adressen wirklich nicht mehr? Fehlen Informationen?  Melden Sie sich per Mail an benoit.todae@gmail.com
+
+Q : WIE KANN MAN ICONS ÄNDERN? 
+==================================
+R : Sie brauchen nur auf ’Ändern‘ klicken und den Weg zu einem BMP Bild angeben. Die optimale Qualität erhalten Sie mit einem 48 x 48 Pixels Bild. Um einen transparenten Hintergrund zu bekommen, können Sie die HTML-Code der Hintergrundfarbe in das dazu gedachte Feld einkopieren (unter den ‘Ändern‘-Knopf).   
+
+Q : WARUM KOMMT WERBUNG IM UNTEREN TEIL DER SEITE?
+==================================================
+R : Zuerst weil die Entwicklung eines Plug-Ins Geld kostet, dann auch weil neue Funktionalitäten zwecks Qualitätsverbesserung schon geplant sind, und letztendlich weil unsere Partnerschaften kein Entgelt vorsehen. Die Werbung bleibt unauffällig und wird von einer professionellen Regie verwaltet. Daher KEINE Viren oder Spywares.
+
+Q : UND DANN?
+===============
+R : Noch mehr Fernsehen :)
+
+WARNUNG: Für technische Fragen wenden Sie sich bitte ans offizielle Plug-In-Forum. Die Fragen werden nicht persönlich beantwortet. Danke für Ihr Verständnis.
+
+Live Media Plugin ist der neue Name des ehemaligen LIVE MEDIA PLUGIN. Grund für die Namenänderung ist, dass diese 2. Version sich immer mehr in Richtung TV entwickeln wird. Diese Version wurde von Oktober bis November 2007 von ALEXANDRE GENOUD für TODAE.FR konzipiert. 

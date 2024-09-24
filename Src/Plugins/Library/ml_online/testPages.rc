@@ -1,0 +1,7 @@
+#include "./resource.h"
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+WEBDEV.JS               HTML                    ".\\resources\\pages\\webdev.js"

@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0879F512A2D8AC001B1FD2 /* NDEString.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0879F412A2D8AC001B1FD2 /* NDEString.h */; };
+		0C087AB412A2DB4C001B1FD2 /* IndexRecord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C087AB212A2DB4C001B1FD2 /* IndexRecord.cpp */; };
+		0C087AB512A2DB4C001B1FD2 /* IndexRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C087AB312A2DB4C001B1FD2 /* IndexRecord.h */; };
+		0C087AC312A2DB85001B1FD2 /* nde_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C087AC012A2DB85001B1FD2 /* nde_c.cpp */; };
+		0C087AC412A2DB85001B1FD2 /* nde_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C087AC112A2DB85001B1FD2 /* nde_c.h */; };
+		0C087AC512A2DB85001B1FD2 /* nde_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C087AC212A2DB85001B1FD2 /* nde_defines.h */; };
+		0C087BCA12A2E962001B1FD2 /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C087BB612A2E962001B1FD2 /* Field.cpp */; };
+		0C087BCB12A2E962001B1FD2 /* Field.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C087BB712A2E962001B1FD2 /* Field.h */; };
+		0C087BD012A2E962001B1FD2 /* Int64Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C087BBC12A2E962001B1FD2 /* Int64Field.cpp */; };
+		0C087BD112A2E962001B1FD2 /* Int64Field.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C087BBD12A2E962001B1FD2 /* Int64Field.h */; };
+		0C087BD212A2E962001B1FD2 /* Int128Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C087BBE12A2E962001B1FD2 /* Int128Field.cpp */; };
+		0C087BD312A2E962001B1FD2 /* Int128Field.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C087BBF12A2E962001B1FD2 /* Int128Field.h */; };
+		0C89CB7912A5EFFA00366857 /* IndexField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C89CB7712A5EFFA00366857 /* IndexField.cpp */; };
+		0C89CB7A12A5EFFA00366857 /* IndexField.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C89CB7812A5EFFA00366857 /* IndexField.h */; };
+		0C99F2380B93CE4C00AB7751 /* Crc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C99F2140B93CE4C00AB7751 /* Crc.cpp */; };
+		0C99F2390B93CE4C00AB7751 /* CRC.H in Headers */ = {isa = PBXBuildFile; fileRef = 0C99F2150B93CE4C00AB7751 /* CRC.H */; };
+		0C99F23A0B93CE4C00AB7751 /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C99F2160B93CE4C00AB7751 /* Database.cpp */; };
+		0C99F23B0B93CE4C00AB7751 /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C99F2170B93CE4C00AB7751 /* Database.h */; };
+		0C99F23C0B93CE4C00AB7751 /* DBUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C99F2180B93CE4C00AB7751 /* DBUtils.cpp */; };
+		0C99F23D0B93CE4C00AB7751 /* DBUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C99F2190B93CE4C00AB7751 /* DBUtils.h */; };
+		0C99F2410B93CE4C00AB7751 /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C99F21D0B93CE4C00AB7751 /* Filter.cpp */; };
+		0C99F2420B93CE4C00AB7751 /* Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C99F21E0B93CE4C00AB7751 /* Filter.h */; };
+		0C99F2430B93CE4C00AB7751 /* Index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C99F21F0B93CE4C00AB7751 /* Index.cpp */; };
+		0C99F2440B93CE4C00AB7751 /* Index.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C99F2200B93CE4C00AB7751 /* Index.h */; };
+		0C99F2490B93CE4C00AB7751 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C99F2250B93CE4C00AB7751 /* LinkedList.cpp */; };
+		0C99F24A0B93CE4C00AB7751 /* LinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C99F2260B93CE4C00AB7751 /* LinkedList.h */; };
+		0C99F24B0B93CE4C00AB7751 /* nde.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C99F2270B93CE4C00AB7751 /* nde.h */; };
+		0C99F24E0B93CE4C00AB7751 /* Record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C99F22A0B93CE4C00AB7751 /* Record.cpp */; };
+		0C99F24F0B93CE4C00AB7751 /* Record.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C99F22B0B93CE4C00AB7751 /* Record.h */; };
+		0C99F2500B93CE4C00AB7751 /* Scanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C99F22C0B93CE4C00AB7751 /* Scanner.cpp */; };
+		0C99F2510B93CE4C00AB7751 /* Scanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C99F22D0B93CE4C00AB7751 /* Scanner.h */; };
+		0CBA4FEF12A5DD6D008056C7 /* Binary32Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA4FE912A5DD6D008056C7 /* Binary32Field.cpp */; };
+		0CBA4FF012A5DD6D008056C7 /* Binary32Field.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBA4FEA12A5DD6D008056C7 /* Binary32Field.h */; };
+		0CBA4FF112A5DD6D008056C7 /* BinaryField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA4FEB12A5DD6D008056C7 /* BinaryField.cpp */; };
+		0CBA4FF212A5DD6D008056C7 /* BinaryField.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBA4FEC12A5DD6D008056C7 /* BinaryField.h */; };
+		0CBA4FF312A5DD6D008056C7 /* ColumnField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA4FED12A5DD6D008056C7 /* ColumnField.cpp */; };
+		0CBA4FF412A5DD6D008056C7 /* ColumnField.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBA4FEE12A5DD6D008056C7 /* ColumnField.h */; };
+		0CBA4FF912A5DD77008056C7 /* FilenameField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA4FF512A5DD77008056C7 /* FilenameField.cpp */; };
+		0CBA4FFA12A5DD77008056C7 /* FilenameField.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBA4FF612A5DD77008056C7 /* FilenameField.h */; };
+		0CBA4FFB12A5DD77008056C7 /* StringField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA4FF712A5DD77008056C7 /* StringField.cpp */; };
+		0CBA4FFC12A5DD77008056C7 /* StringField.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBA4FF812A5DD77008056C7 /* StringField.h */; };
+		0CBA4FFF12A5DD80008056C7 /* Vfs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA4FFD12A5DD80008056C7 /* Vfs.cpp */; };
+		0CBA500012A5DD80008056C7 /* Vfs.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBA4FFE12A5DD80008056C7 /* Vfs.h */; };
+		0CC9A3A712A723F500BCFEA6 /* IntegerField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9A3A512A723F500BCFEA6 /* IntegerField.cpp */; };
+		0CC9A3A812A723F500BCFEA6 /* IntegerField.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CC9A3A612A723F500BCFEA6 /* IntegerField.h */; };
+		0CC9A3AB12A7240400BCFEA6 /* Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9A3A912A7240400BCFEA6 /* Table.cpp */; };
+		0CC9A3AC12A7240400BCFEA6 /* Table.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CC9A3AA12A7240400BCFEA6 /* Table.h */; };
+		0CC9A3AF12A7240900BCFEA6 /* Query.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9A3AD12A7240900BCFEA6 /* Query.cpp */; };
+		0CC9A3B012A7240900BCFEA6 /* Query.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CC9A3AE12A7240900BCFEA6 /* Query.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C0879F412A2D8AC001B1FD2 /* NDEString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDEString.h; sourceTree = "<group>"; };
+		0C087AB212A2DB4C001B1FD2 /* IndexRecord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IndexRecord.cpp; sourceTree = "<group>"; };
+		0C087AB312A2DB4C001B1FD2 /* IndexRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexRecord.h; sourceTree = "<group>"; };
+		0C087AC012A2DB85001B1FD2 /* nde_c.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nde_c.cpp; sourceTree = "<group>"; };
+		0C087AC112A2DB85001B1FD2 /* nde_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nde_c.h; sourceTree = "<group>"; };
+		0C087AC212A2DB85001B1FD2 /* nde_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nde_defines.h; sourceTree = "<group>"; };
+		0C087BB612A2E962001B1FD2 /* Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Field.cpp; sourceTree = "<group>"; };
+		0C087BB712A2E962001B1FD2 /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = "<group>"; };
+		0C087BBC12A2E962001B1FD2 /* Int64Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Int64Field.cpp; sourceTree = "<group>"; };
+		0C087BBD12A2E962001B1FD2 /* Int64Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Int64Field.h; sourceTree = "<group>"; };
+		0C087BBE12A2E962001B1FD2 /* Int128Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Int128Field.cpp; sourceTree = "<group>"; };
+		0C087BBF12A2E962001B1FD2 /* Int128Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Int128Field.h; sourceTree = "<group>"; };
+		0C89CB7712A5EFFA00366857 /* IndexField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IndexField.cpp; path = osx/IndexField.cpp; sourceTree = "<group>"; };
+		0C89CB7812A5EFFA00366857 /* IndexField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndexField.h; path = osx/IndexField.h; sourceTree = "<group>"; };
+		0C99F2140B93CE4C00AB7751 /* Crc.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Crc.cpp; sourceTree = "<group>"; };
+		0C99F2150B93CE4C00AB7751 /* CRC.H */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; path = CRC.H; sourceTree = "<group>"; };
+		0C99F2160B93CE4C00AB7751 /* Database.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Database.cpp; sourceTree = "<group>"; };
+		0C99F2170B93CE4C00AB7751 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		0C99F2180B93CE4C00AB7751 /* DBUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DBUtils.cpp; sourceTree = "<group>"; };
+		0C99F2190B93CE4C00AB7751 /* DBUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DBUtils.h; sourceTree = "<group>"; };
+		0C99F21D0B93CE4C00AB7751 /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Filter.cpp; sourceTree = "<group>"; };
+		0C99F21E0B93CE4C00AB7751 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		0C99F21F0B93CE4C00AB7751 /* Index.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Index.cpp; sourceTree = "<group>"; };
+		0C99F2200B93CE4C00AB7751 /* Index.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Index.h; sourceTree = "<group>"; };
+		0C99F2250B93CE4C00AB7751 /* LinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
+		0C99F2260B93CE4C00AB7751 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		0C99F2270B93CE4C00AB7751 /* nde.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = nde.h; sourceTree = "<group>"; };
+		0C99F22A0B93CE4C00AB7751 /* Record.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Record.cpp; sourceTree = "<group>"; };
+		0C99F22B0B93CE4C00AB7751 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		0C99F22C0B93CE4C00AB7751 /* Scanner.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Scanner.cpp; sourceTree = "<group>"; };
+		0C99F22D0B93CE4C00AB7751 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		0CBA4FE912A5DD6D008056C7 /* Binary32Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Binary32Field.cpp; path = osx/Binary32Field.cpp; sourceTree = "<group>"; };
+		0CBA4FEA12A5DD6D008056C7 /* Binary32Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Binary32Field.h; path = osx/Binary32Field.h; sourceTree = "<group>"; };
+		0CBA4FEB12A5DD6D008056C7 /* BinaryField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryField.cpp; path = osx/BinaryField.cpp; sourceTree = "<group>"; };
+		0CBA4FEC12A5DD6D008056C7 /* BinaryField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BinaryField.h; path = osx/BinaryField.h; sourceTree = "<group>"; };
+		0CBA4FED12A5DD6D008056C7 /* ColumnField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ColumnField.cpp; path = osx/ColumnField.cpp; sourceTree = "<group>"; };
+		0CBA4FEE12A5DD6D008056C7 /* ColumnField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColumnField.h; path = osx/ColumnField.h; sourceTree = "<group>"; };
+		0CBA4FF512A5DD77008056C7 /* FilenameField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FilenameField.cpp; path = osx/FilenameField.cpp; sourceTree = "<group>"; };
+		0CBA4FF612A5DD77008056C7 /* FilenameField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilenameField.h; path = osx/FilenameField.h; sourceTree = "<group>"; };
+		0CBA4FF712A5DD77008056C7 /* StringField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StringField.cpp; path = osx/StringField.cpp; sourceTree = "<group>"; };
+		0CBA4FF812A5DD77008056C7 /* StringField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StringField.h; path = osx/StringField.h; sourceTree = "<group>"; };
+		0CBA4FFD12A5DD80008056C7 /* Vfs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vfs.cpp; path = osx/Vfs.cpp; sourceTree = "<group>"; };
+		0CBA4FFE12A5DD80008056C7 /* Vfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vfs.h; path = osx/Vfs.h; sourceTree = "<group>"; };
+		0CC9A3A512A723F500BCFEA6 /* IntegerField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntegerField.cpp; path = osx/IntegerField.cpp; sourceTree = "<group>"; };
+		0CC9A3A612A723F500BCFEA6 /* IntegerField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntegerField.h; path = osx/IntegerField.h; sourceTree = "<group>"; };
+		0CC9A3A912A7240400BCFEA6 /* Table.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Table.cpp; path = osx/Table.cpp; sourceTree = "<group>"; };
+		0CC9A3AA12A7240400BCFEA6 /* Table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Table.h; path = osx/Table.h; sourceTree = "<group>"; };
+		0CC9A3AD12A7240900BCFEA6 /* Query.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Query.cpp; path = osx/Query.cpp; sourceTree = "<group>"; };
+		0CC9A3AE12A7240900BCFEA6 /* Query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Query.h; path = osx/Query.h; sourceTree = "<group>"; };
+		D2AAC046055464E500DB518D /* libnde.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnde.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289987405E68DCB004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* nde */ = {
+			isa = PBXGroup;
+			children = (
+				0C087BAD12A2E93E001B1FD2 /* Fields */,
+				0C087ABE12A2DB7A001B1FD2 /* API */,
+				0C087AA212A2DB0E001B1FD2 /* Records */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6A0FF2B0290797F04C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = nde;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0C99F2140B93CE4C00AB7751 /* Crc.cpp */,
+				0C99F2150B93CE4C00AB7751 /* CRC.H */,
+				0C99F2160B93CE4C00AB7751 /* Database.cpp */,
+				0C99F2170B93CE4C00AB7751 /* Database.h */,
+				0C99F2180B93CE4C00AB7751 /* DBUtils.cpp */,
+				0C99F2190B93CE4C00AB7751 /* DBUtils.h */,
+				0C99F21D0B93CE4C00AB7751 /* Filter.cpp */,
+				0C99F21E0B93CE4C00AB7751 /* Filter.h */,
+				0C99F21F0B93CE4C00AB7751 /* Index.cpp */,
+				0C99F2200B93CE4C00AB7751 /* Index.h */,
+				0C99F2250B93CE4C00AB7751 /* LinkedList.cpp */,
+				0C99F2260B93CE4C00AB7751 /* LinkedList.h */,
+				0CC9A3AD12A7240900BCFEA6 /* Query.cpp */,
+				0CC9A3AE12A7240900BCFEA6 /* Query.h */,
+				0C99F2270B93CE4C00AB7751 /* nde.h */,
+				0CC9A3A912A7240400BCFEA6 /* Table.cpp */,
+				0CC9A3AA12A7240400BCFEA6 /* Table.h */,
+				0C0879F412A2D8AC001B1FD2 /* NDEString.h */,
+				0C99F22C0B93CE4C00AB7751 /* Scanner.cpp */,
+				0C99F22D0B93CE4C00AB7751 /* Scanner.h */,
+				0CBA4FFD12A5DD80008056C7 /* Vfs.cpp */,
+				0CBA4FFE12A5DD80008056C7 /* Vfs.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		0C087AA212A2DB0E001B1FD2 /* Records */ = {
+			isa = PBXGroup;
+			children = (
+				0C087AB212A2DB4C001B1FD2 /* IndexRecord.cpp */,
+				0C087AB312A2DB4C001B1FD2 /* IndexRecord.h */,
+				0C99F22A0B93CE4C00AB7751 /* Record.cpp */,
+				0C99F22B0B93CE4C00AB7751 /* Record.h */,
+			);
+			name = Records;
+			sourceTree = "<group>";
+		};
+		0C087ABE12A2DB7A001B1FD2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0C087AC012A2DB85001B1FD2 /* nde_c.cpp */,
+				0C087AC112A2DB85001B1FD2 /* nde_c.h */,
+				0C087AC212A2DB85001B1FD2 /* nde_defines.h */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		0C087BAD12A2E93E001B1FD2 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				0CC9A3A512A723F500BCFEA6 /* IntegerField.cpp */,
+				0CC9A3A612A723F500BCFEA6 /* IntegerField.h */,
+				0C89CB7712A5EFFA00366857 /* IndexField.cpp */,
+				0C89CB7812A5EFFA00366857 /* IndexField.h */,
+				0CBA4FE912A5DD6D008056C7 /* Binary32Field.cpp */,
+				0CBA4FEA12A5DD6D008056C7 /* Binary32Field.h */,
+				0CBA4FEB12A5DD6D008056C7 /* BinaryField.cpp */,
+				0CBA4FEC12A5DD6D008056C7 /* BinaryField.h */,
+				0CBA4FED12A5DD6D008056C7 /* ColumnField.cpp */,
+				0CBA4FEE12A5DD6D008056C7 /* ColumnField.h */,
+				0C087BB612A2E962001B1FD2 /* Field.cpp */,
+				0C087BB712A2E962001B1FD2 /* Field.h */,
+				0CBA4FF512A5DD77008056C7 /* FilenameField.cpp */,
+				0CBA4FF612A5DD77008056C7 /* FilenameField.h */,
+				0C087BBE12A2E962001B1FD2 /* Int128Field.cpp */,
+				0C087BBF12A2E962001B1FD2 /* Int128Field.h */,
+				0C087BBC12A2E962001B1FD2 /* Int64Field.cpp */,
+				0C087BBD12A2E962001B1FD2 /* Int64Field.h */,
+				0CBA4FF712A5DD77008056C7 /* StringField.cpp */,
+				0CBA4FF812A5DD77008056C7 /* StringField.h */,
+			);
+			name = Fields;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC046055464E500DB518D /* libnde.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6A0FF2B0290797F04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC043055464E500DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C99F2390B93CE4C00AB7751 /* CRC.H in Headers */,
+				0C99F23B0B93CE4C00AB7751 /* Database.h in Headers */,
+				0C99F23D0B93CE4C00AB7751 /* DBUtils.h in Headers */,
+				0C99F2420B93CE4C00AB7751 /* Filter.h in Headers */,
+				0C99F2440B93CE4C00AB7751 /* Index.h in Headers */,
+				0C99F24A0B93CE4C00AB7751 /* LinkedList.h in Headers */,
+				0C99F24B0B93CE4C00AB7751 /* nde.h in Headers */,
+				0C99F24F0B93CE4C00AB7751 /* Record.h in Headers */,
+				0C99F2510B93CE4C00AB7751 /* Scanner.h in Headers */,
+				0C0879F512A2D8AC001B1FD2 /* NDEString.h in Headers */,
+				0C087AB512A2DB4C001B1FD2 /* IndexRecord.h in Headers */,
+				0C087AC412A2DB85001B1FD2 /* nde_c.h in Headers */,
+				0C087AC512A2DB85001B1FD2 /* nde_defines.h in Headers */,
+				0C087BCB12A2E962001B1FD2 /* Field.h in Headers */,
+				0C087BD112A2E962001B1FD2 /* Int64Field.h in Headers */,
+				0C087BD312A2E962001B1FD2 /* Int128Field.h in Headers */,
+				0CBA4FF012A5DD6D008056C7 /* Binary32Field.h in Headers */,
+				0CBA4FF212A5DD6D008056C7 /* BinaryField.h in Headers */,
+				0CBA4FF412A5DD6D008056C7 /* ColumnField.h in Headers */,
+				0CBA4FFA12A5DD77008056C7 /* FilenameField.h in Headers */,
+				0CBA4FFC12A5DD77008056C7 /* StringField.h in Headers */,
+				0CBA500012A5DD80008056C7 /* Vfs.h in Headers */,
+				0C89CB7A12A5EFFA00366857 /* IndexField.h in Headers */,
+				0CC9A3A812A723F500BCFEA6 /* IntegerField.h in Headers */,
+				0CC9A3AC12A7240400BCFEA6 /* Table.h in Headers */,
+				0CC9A3B012A7240900BCFEA6 /* Query.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC045055464E500DB518D /* nde */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91EB08733DB70010E9CD /* Build configuration list for PBXNativeTarget "nde" */;
+			buildPhases = (
+				D2AAC043055464E500DB518D /* Headers */,
+				D2AAC044055464E500DB518D /* Sources */,
+				D289987405E68DCB004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nde;
+			productName = nde;
+			productReference = D2AAC046055464E500DB518D /* libnde.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Nullsoft, Inc.";
+			};
+			buildConfigurationList = 1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "nde" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* nde */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC045055464E500DB518D /* nde */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC044055464E500DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C99F2380B93CE4C00AB7751 /* Crc.cpp in Sources */,
+				0C99F23A0B93CE4C00AB7751 /* Database.cpp in Sources */,
+				0C99F23C0B93CE4C00AB7751 /* DBUtils.cpp in Sources */,
+				0C99F2410B93CE4C00AB7751 /* Filter.cpp in Sources */,
+				0C99F2430B93CE4C00AB7751 /* Index.cpp in Sources */,
+				0C99F2490B93CE4C00AB7751 /* LinkedList.cpp in Sources */,
+				0C99F24E0B93CE4C00AB7751 /* Record.cpp in Sources */,
+				0C99F2500B93CE4C00AB7751 /* Scanner.cpp in Sources */,
+				0C087AB412A2DB4C001B1FD2 /* IndexRecord.cpp in Sources */,
+				0C087AC312A2DB85001B1FD2 /* nde_c.cpp in Sources */,
+				0C087BCA12A2E962001B1FD2 /* Field.cpp in Sources */,
+				0C087BD012A2E962001B1FD2 /* Int64Field.cpp in Sources */,
+				0C087BD212A2E962001B1FD2 /* Int128Field.cpp in Sources */,
+				0CBA4FEF12A5DD6D008056C7 /* Binary32Field.cpp in Sources */,
+				0CBA4FF112A5DD6D008056C7 /* BinaryField.cpp in Sources */,
+				0CBA4FF312A5DD6D008056C7 /* ColumnField.cpp in Sources */,
+				0CBA4FF912A5DD77008056C7 /* FilenameField.cpp in Sources */,
+				0CBA4FFB12A5DD77008056C7 /* StringField.cpp in Sources */,
+				0CBA4FFF12A5DD80008056C7 /* Vfs.cpp in Sources */,
+				0C89CB7912A5EFFA00366857 /* IndexField.cpp in Sources */,
+				0CC9A3A712A723F500BCFEA6 /* IntegerField.cpp in Sources */,
+				0CC9A3AB12A7240400BCFEA6 /* Table.cpp in Sources */,
+				0CC9A3AF12A7240900BCFEA6 /* Query.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91EC08733DB70010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = nde;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB91ED08733DB70010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = nde;
+			};
+			name = Release;
+		};
+		1DEB91F008733DB70010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../Wasabi;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Debug;
+		};
+		1DEB91F108733DB70010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../Wasabi;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91EB08733DB70010E9CD /* Build configuration list for PBXNativeTarget "nde" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91EC08733DB70010E9CD /* Debug */,
+				1DEB91ED08733DB70010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "nde" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91F008733DB70010E9CD /* Debug */,
+				1DEB91F108733DB70010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

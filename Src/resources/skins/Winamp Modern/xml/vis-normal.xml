@@ -1,0 +1,223 @@
+<groupdef id="vis.buttons.group" relatw="1" w="0" h="21">
+  <layer
+    x="0" y="0"
+    image="player.button.vis.bg.detached.left"
+  />
+
+  <button
+    id="button.vid.fs"
+    action="VIS_FS"
+    x="3" y="3"
+    image="player.button.video.fs"
+    downImage="player.button.video.fs.pressed"
+    hoverImage="player.button.video.fs.hover"
+    tooltip="Fullscreen"
+    rectrgn="1"
+  />
+
+  <button
+    id="button.vis.prev"
+    action="VIS_Prev"
+    x="28" y="3"
+    image="player.button.vis.prev"
+    downImage="player.button.vis.prev.pressed"
+    hoverImage="player.button.vis.prev.hover"
+    tooltip="Previous Visualization"
+    rectrgn="1"
+  />
+
+  <button
+    id="button.vis.next"
+    action="VIS_Next"
+    x="74" y="3"
+    image="player.button.vis.next"
+    downImage="player.button.vis.next.pressed"
+    hoverImage="player.button.vis.next.hover"
+    tooltip="Next Visualization"
+    rectrgn="1"
+  />
+
+  <togglebutton
+    id="button.vis.random"
+    x="122" y="3"
+    cfgattrib="{0000000A-000C-0010-FF7B-01014263450C};Random"
+    image="player.button.vis.random"
+    downImage="player.button.vis.random.pressed"
+    hoverImage="player.button.vis.random.hover"
+    tooltip="Toggle Random Visualization"
+    rectrgn="1"
+  />
+  <togglebutton
+    id="led.vis.random"
+    cfgattrib="{0000000A-000C-0010-FF7B-01014263450C};Random"
+    x="180" y="-1"
+    image="player.led.off"
+    downImage="player.led.on"
+    activeImage="player.led.on"
+    rectrgn="1"
+  />
+
+
+  <layer
+    x="193" y="0"
+    image="player.button.vis.bg.detached.right"
+  />
+  <button
+    id="button.vis.misc"
+    action="Vis_Menu"
+    x="196" y="3"
+    image="player.button.video.misc"
+    downImage="player.button.video.misc.pressed"
+    hoverImage="player.button.video.misc.hover"
+    tooltip="Options"
+    rectrgn="1"
+  />
+
+
+  <layer
+    x="-136" y="0"
+    relatx="1"
+    image="player.button.vis.reattach.bg"
+  />
+  <button
+    id="button.vis.reattach"
+    x="-132" y="4"
+    relatx="1"
+    image="player.button.vis.reattach"
+    downImage="player.button.vis.reattach.pressed"
+    hoverImage="player.button.vis.reattach.hover"
+    tooltip="Reattach Visualizations"
+    rectrgn="1"
+  />
+
+  <layer
+    x="-24" y="4"
+    relatx="1"
+    image="player.pl.resizer"
+    resize="bottomright"
+  />
+
+</groupdef>
+
+
+<groupdef id="vis.frame.layout" relatw="1" relath="1" w="0" h="-18" background="wasabi.frame.basetexture">
+  <layer
+    x="0" y="0"
+    image="player.pl.topleft"
+    resize="topleft"
+  />
+  <layer
+    x="6" y="0"
+    w="-12"
+    relatw="1"
+    image="player.pl.topcenter"
+    resize="top"
+  />
+  <layer
+    x="-6" y="0"
+    relatx="1"
+    image="player.pl.topright"
+    resize="topright"
+  />
+  <layer
+    x="0" y="5"
+    relath="1"
+    h="-50"
+    image="player.pl.left"
+    resize="left"
+  />
+  <layer
+    x="-6" y="5"
+    relatx="1"
+    relath="1"
+    h="-50"
+    image="player.pl.right"
+    resize="right"
+  />
+  <layer
+    x="0" y="-67"
+    relaty="1"
+    image="player.pl.bottomleft"
+    resize="bottomleft"
+  />
+  <layer
+    x="20" y="-25"
+    w="-40"
+    relatw="1"
+    relaty="1"
+    image="player.pl.bottomcenter"
+    resize="bottom"
+  />
+  <layer
+    x="-20" y="-67"
+    relatx="1"
+    relaty="1"
+    image="player.pl.bottomright"
+    resize="bottomright"
+  />
+  <layer
+    x="0" y="-6"
+    relaty="1"
+    image="player.main.left.region"
+    resize="left"
+    sysregion="-2"
+  />
+  <layer
+    x="-6" y="-6"
+    relaty="1"
+    relatx="1"
+    image="player.main.right.region"
+    sysregion="-2"
+  />
+  <group id="vis.buttons.group" x="5" y="-22" relaty="1"/>
+</groupdef>
+
+<groupdef id="player.content.vis.dummy.group" name="AVSDummyGroup" relatw="1" relath="1" w="0" h="0">
+  <group id="vis.frame.layout" x="0" y="0"/>
+  <component
+    x="6"
+    y="5"
+    w="-12"
+    relatw="1"
+    h="-48"
+    relath="1"
+    noshowcmdbar="1"
+    autoopen="1"
+    autoclose="1"
+    param="{0000000A-000C-0010-FF7B-01014263450C}"
+  />
+</groupdef>
+
+<groupdef id="vis.content.group" name="PlaylistContent">
+  <group id="player.content.vis.dummy.group" x="0" y="0" sysregion="1"/>
+  <script id="vis.script" file="scripts/vis.maki" />
+</groupdef>
+
+
+<layout id="normal" minimum_w="354" minimum_h="164" h="280" w="354">
+
+  <Wasabi:VISFrame:NoStatus
+    x="0" y="0" w="0" h="0" relatw="1" relath="1"
+    content="vis.content.group"
+    padtitleleft="10"
+    padtitleright="0"
+  />
+
+  <sendparams target="window.titlebar.title" default="VISUALIZER"/>
+  <sendparams target="mousetrap" dblClickAction="SWITCH;shade"/>
+  <sendparams target="window.top.left;window.top;window.top.right;window.left;window.right;window.bottom.left.top;window.bottom.left;window.bottom.left.bottom;window.bottom.top;window.bottom;window.bottom.bottom;window.bottom.right.top;window.bottom.right;window.bottom.right.bottom;" resize="0"/>
+
+    <layer
+        x="0" y="0" w="0" h="3"
+        relatw="1"
+        resize="top"
+  />
+
+</layout>
+
+
+
+
+
+
+

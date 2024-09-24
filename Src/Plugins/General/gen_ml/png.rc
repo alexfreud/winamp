@@ -1,0 +1,57 @@
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+IDB_SORTARROW  RCDATA
+".\\resources\\sortarrow.png"
+IDB_RATING  RCDATA
+".\\resources\\rating.png"
+IDB_SPLITARROW  RCDATA
+".\\resources\\splitarrow.png"
+IDB_SPLITARROW_PRESSED  RCDATA
+".\\resources\\splitarrow_pressed.png"
+IDB_MENU_CHECKMARK  RCDATA
+".\\resources\\menu_check.png"
+IDB_MENU_RADIOMARK  RCDATA
+".\\resources\\menu_dot.png"
+IDB_MENU_EXPANDARROW  RCDATA
+".\\resources\\menu_arrow.png"
+IDB_MENU_SCROLLARROW  RCDATA
+".\\resources\\menu_scrollarrow.png"
+IDB_MENU_SCROLLARROW_DISABLED  RCDATA
+".\\resources\\menu_scrollarrow_disabled.png"
+IDB_FILETYPE_AUDIO_SMALL  RCDATA
+".\\resources\\filetype_audio_16.png"
+IDB_FILETYPE_AUDIO_LARGE  RCDATA
+".\\resources\\filetype_audio_32.png"
+IDB_FILETYPE_VIDEO_SMALL  RCDATA
+".\\resources\\filetype_video_16.png"
+IDB_FILETYPE_VIDEO_LARGE  RCDATA
+".\\resources\\filetype_video_32.png"
+IDB_FILETYPE_UNKNOWN_SMALL  RCDATA
+".\\resources\\filetype_unknown_16.png"
+IDB_FILETYPE_UNKNOWN_LARGE  RCDATA
+".\\resources\\filetype_unknown_32.png"
+IDB_FILETYPE_PLAYLIST_SMALL  RCDATA
+".\\resources\\filetype_playlist_16.png"
+IDB_FILETYPE_PLAYLIST_LARGE  RCDATA
+".\\resources\\filetype_playlist_32.png"
+IDB_FILEVIEW_LIST  RCDATA
+".\\resources\\view_mode_list.png"
+IDB_FILEVIEW_ICON  RCDATA
+".\\resources\\view_mode_icon.png"
+IDB_FILEVIEW_DETAIL  RCDATA
+".\\resources\\view_mode_detail.png"
+/*
+IDB_CLOUD_IS_IN  RCDATA
+".\\resources\\cloud_16_incloud.png"
+IDB_CLOUD_PARTIAL  RCDATA
+".\\resources\\cloud_16_partial.png"
+IDB_CLOUD_UNAVAIL  RCDATA
+".\\resources\\cloud_16_unavail.png"
+IDB_CLOUD_UPLOAD  RCDATA
+".\\resources\\cloud_16_upload.png"
+IDB_CLOUD_UPLOADING  RCDATA
+".\\resources\\cloud_16_uploading.png"
+*/

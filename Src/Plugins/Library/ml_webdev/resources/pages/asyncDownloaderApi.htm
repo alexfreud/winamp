@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JSAPI2::AsyncDownloader Api</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<style type="text/css">
+	#slider{position:absolute; left:20px; top:180px; width:420px; height:15px; clip:rect(0px 0px 15px 0px); background-color:#666699; text-align:left; color:#ffffff; font-size:12px;}
+	#slider1{position:absolute; left:20px; top:280px; width:420px; height:15px; clip:rect(0px 0px 15px 0px); background-color:#666699;  text-align:left; color:#ffffff; font-size:12px;}
+	</style>
+	<script type="text/javascript" src="api2.js"></script>
+</head>
+<body style="FONT-FAMILY: MS Shell Dlg 2;">
+	<h2>AsyncDownloader API</h2>
+	<h3>Methods:</h3>
+	<input type="button" value="Download Media" onclick="AsyncDownloadMediaClicked();">&nbsp;&nbsp;URL:&nbsp;<input type="text" size="40" id="asyncdownloader_t_URL_in">&nbsp;&nbsp;Destination File:&nbsp;<input type="text" size="20" id="asyncdownloader_t_DestinationFile_in">
+	<div id="progressbardiv"><h5 id="progressbar">Progress: </h5>
+	<br>
+	<div id="slider">0%</div>
+	</div>
+	<input type="button" value="Download Media" onclick="AsyncDownloadMediaClicked1();">&nbsp;&nbsp;URL:&nbsp;<input type="text" size="40" id="asyncdownloader_t_URL_in_1">&nbsp;&nbsp;Destination File:&nbsp;<input type="text" size="20" id="asyncdownloader_t_DestinationFile_in_1">
+	<div id="progressbardiv1"><h5 id="progressbar1">Progress: </h5>
+	<br>
+	<div id="slider1">0%</div>
+	</div>
+	<input type="button" value="Download Multiple Medias" onclick="AsyncDownloadMultipleMediaClicked();"><br>&nbsp;&nbsp;URLs:&nbsp;<textarea cols="60" rows="10" id="multiple_urls"></textarea>
+	<br>
+	<h3>Events:</h3>
+	<input type="button" value="Register For Downloader Events" id="downloaderRegister" onclick="downloaderRegisterClicked();">
+	<input type="button" value="Unregister From Downloader Events" id="downloaderUnregister" onclick="downloaderUnregisterClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Callback function:&nbsp;<input readonly type="text" id="downloader_t_Callback" value="OnDownloaderEvents">
+	<br><br>
+	<b>Events Received</b>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="javascript:downloader_AreaCleared();"><small>clear</small></a>
+	<br>
+	<select size="10" id="downloader_s_Select" style="width: 100px" onchange="downloaderEventSelected();">
+	<option>No Events</option>
+	</select>
+	<textarea rows="10" cols="40" id="downloader_ta_Area"></textarea>
+</body>
+</html>

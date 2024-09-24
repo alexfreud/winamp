@@ -1,0 +1,237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C14248A0BB820A200FDDAB7 /* libdxv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1424890BB820A200FDDAB7 /* libdxv.a */; };
+		0C1424990BB820D700FDDAB7 /* libon2_mem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1424980BB820D700FDDAB7 /* libon2_mem.a */; };
+		0C1537720BB797B30098DEFA /* libvp6d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1537710BB797B30098DEFA /* libvp6d.a */; };
+		0C15378A0BB7981A0098DEFA /* libvputil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1537890BB7981A0098DEFA /* libvputil.a */; };
+		0C15379D0BB798500098DEFA /* libvpxblit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C15379C0BB798500098DEFA /* libvpxblit.a */; };
+		0C1537B10BB7987F0098DEFA /* libvppp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1537B00BB7987F0098DEFA /* libvppp.a */; };
+		0C33627B0BB79481008CC17A /* vp6stub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C33627A0BB79481008CC17A /* vp6stub.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C1424890BB820A200FDDAB7 /* libdxv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdxv.a; path = ../vp6/lib/osx/Release/libdxv.a; sourceTree = SOURCE_ROOT; };
+		0C1424980BB820D700FDDAB7 /* libon2_mem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libon2_mem.a; path = ../vp6/lib/osx/Release/libon2_mem.a; sourceTree = SOURCE_ROOT; };
+		0C1537710BB797B30098DEFA /* libvp6d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvp6d.a; path = ../vp6/lib/osx/Release/libvp6d.a; sourceTree = SOURCE_ROOT; };
+		0C1537890BB7981A0098DEFA /* libvputil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvputil.a; path = ../vp6/lib/osx/Release/libvputil.a; sourceTree = SOURCE_ROOT; };
+		0C15379C0BB798500098DEFA /* libvpxblit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvpxblit.a; path = ../vp6/lib/osx/Release/libvpxblit.a; sourceTree = SOURCE_ROOT; };
+		0C1537B00BB7987F0098DEFA /* libvppp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvppp.a; path = ../vp6/lib/osx/Release/libvppp.a; sourceTree = SOURCE_ROOT; };
+		0C33627A0BB79481008CC17A /* vp6stub.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = vp6stub.cpp; sourceTree = "<group>"; };
+		D2AAC0630554660B00DB518D /* libnsvdec_vp6.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libnsvdec_vp6.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1537720BB797B30098DEFA /* libvp6d.a in Frameworks */,
+				0C15378A0BB7981A0098DEFA /* libvputil.a in Frameworks */,
+				0C15379D0BB798500098DEFA /* libvpxblit.a in Frameworks */,
+				0C1537B10BB7987F0098DEFA /* libvppp.a in Frameworks */,
+				0C14248A0BB820A200FDDAB7 /* libdxv.a in Frameworks */,
+				0C1424990BB820D700FDDAB7 /* libon2_mem.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* nsvdec_vp6 */ = {
+			isa = PBXGroup;
+			children = (
+				0C3362BB0BB796BA008CC17A /* VP6 */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = nsvdec_vp6;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0C33627A0BB79481008CC17A /* vp6stub.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		0C3362BB0BB796BA008CC17A /* VP6 */ = {
+			isa = PBXGroup;
+			children = (
+				0C1537710BB797B30098DEFA /* libvp6d.a */,
+				0C15379C0BB798500098DEFA /* libvpxblit.a */,
+				0C1537B00BB7987F0098DEFA /* libvppp.a */,
+				0C1537890BB7981A0098DEFA /* libvputil.a */,
+				0C1424890BB820A200FDDAB7 /* libdxv.a */,
+				0C1424980BB820D700FDDAB7 /* libon2_mem.a */,
+			);
+			name = VP6;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* libnsvdec_vp6.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* nsvdec_vp6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "nsvdec_vp6" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nsvdec_vp6;
+			productName = nsvdec_vp6;
+			productReference = D2AAC0630554660B00DB518D /* libnsvdec_vp6.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "nsvdec_vp6" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* nsvdec_vp6 */;
+			projectDirPath = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* nsvdec_vp6 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C33627B0BB79481008CC17A /* vp6stub.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB914B08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_3)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../vp6/lib/Release\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../vp6/lib/osx/Release\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../vp6/lib/osx/Release\"";
+				PRODUCT_NAME = nsvdec_vp6;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB914C08733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				EXECUTABLE_PREFIX = lib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_3)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../vp6/lib/Release\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../vp6/lib/osx/Release\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../vp6/lib/osx/Release\"";
+				PRODUCT_NAME = nsvdec_vp6;
+			};
+			name = Release;
+		};
+		1DEB914F08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../Wasabi;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB915008733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../Wasabi;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "nsvdec_vp6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914B08733D8E0010E9CD /* Debug */,
+				1DEB914C08733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "nsvdec_vp6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914F08733D8E0010E9CD /* Debug */,
+				1DEB915008733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

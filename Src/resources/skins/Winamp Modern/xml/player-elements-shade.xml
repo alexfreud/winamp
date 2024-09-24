@@ -1,0 +1,186 @@
+<elements>
+
+<!-- Backgrounds/Overlays -->
+    <bitmap id="shade.bg.overlay" file="shade/bg_overlay.png" x="0" y="0" w="177" h="20" gammagroup="Backgrounds2"/>
+
+    <bitmap id="shade.bg.left" file="shade/shade_bg.png" x="0" y="0" w="303" h="25" gammagroup="Backgrounds"/>
+    <bitmap id="shade.bg.center" file="shade/shade_bg.png" x="305" y="0" w="5" h="25" gammagroup="Backgrounds"/>
+    <bitmap id="shade.bg.right" file="shade/shade_bg.png" x="305" y="0" w="49" h="25" gammagroup="Backgrounds"/>
+    <bitmap id="shade.bg.resize" file="shade/shade_bg.png" x="358" y="0" w="9" h="21" gammagroup="Backgrounds"/>
+
+    <bitmap id="shade.regions.left" file="shade/corners.png" x="0" y="0" w="5" h="25"/>
+    <bitmap id="shade.regions.right" file="shade/corners.png" x="10" y="0" w="5" h="25"/>
+
+    <bitmap id="shade.bg.X1" file="shade/buttons_bg.png" x="0" y="0" w="42" h="25" gammagroup="Backgrounds"/>
+    <bitmap id="shade.bg.X2" file="shade/buttons_bg.png" x="42" y="0" w="23" h="25" gammagroup="Backgrounds"/>
+    <bitmap id="shade.bg.X3" file="shade/buttons2.png" x="26" y="0" w="59" h="23" gammagroup="Backgrounds"/>
+    <bitmap id="shade.bg.X4" file="shade/buttons_bg.png" x="110" y="0" w="74" h="25" gammagroup="Backgrounds"/>
+
+<!-- Display -->
+    <bitmap id="shade.display.left" file="shade/pl_shade.png" x="23" y="34" w="10" h="14" gammagroup="Display"/>
+    <bitmap id="shade.display.center" file="shade/pl_shade.png" x="33" y="34" w="50" h="14" gammagroup="Display"/>
+    <bitmap id="shade.display.right" file="shade/pl_shade.png" x="214" y="34" w="6" h="14" gammagroup="Display"/>
+
+    <bitmap id="shade.display.bg.left" file="shade/pl_shade.png" x="20" y="0" w="10" h="22" gammagroup="Backgrounds"/>
+    <bitmap id="shade.display.bg.center" file="shade/pl_shade.png" x="30" y="0" w="10" h="22" gammagroup="Backgrounds"/>
+    <bitmap id="shade.display.bg.right" file="shade/pl_shade.png" x="208" y="0" w="10" h="22" gammagroup="Backgrounds"/>
+
+    <bitmap id="shade.display2.bg.right" file="shade/buttons2.png" x="5" y="0" w="21" h="23" gammagroup="Backgrounds"/>
+
+    <bitmap id="shade.display.vis.bg" file="shade/display_overlay.png" x="0" y="20" w="60" h="13" gammagroup="Display"/>
+    <bitmap id="shade.display.vis.overlay" file="shade/display_overlay.png" x="0" y="0" w="60" h="13" gammagroup="Display"/>
+    <bitmap id="shade.display.ticker.overlay" file="shade/display_overlay.png" x="0" y="40" w="5" h="13" gammagroup="Display"/>
+
+
+
+<!-- Playback buttons -->
+    <bitmap id="shade.button.previous" file="shade/buttons.png" x="212" y="3" h="13" w="14" gammagroup="Buttons"/>
+    <bitmap id="shade.button.previous.pressed" file="shade/buttons.png" x="212" y="23" h="13" w="14" gammagroup="Buttons"/>
+    <bitmap id="shade.button.previous.hover" file="shade/buttons.png" x="212" y="3" h="13" w="14" gammagroup="ButtonsHover"/>
+
+    <bitmap id="shade.button.play" file="shade/buttons.png" x="232" y="1" h="17" w="17" gammagroup="Buttons"/>
+    <bitmap id="shade.button.play.pressed" file="shade/buttons.png" x="232" y="21" h="17" w="17" gammagroup="Buttons"/>
+    <bitmap id="shade.button.play.hover" file="shade/buttons.png" x="232" y="1" h="17" w="17" gammagroup="ButtonsHover"/>
+
+    <bitmap id="shade.button.pause" file="shade/buttons.png" x="254" y="1" h="17" w="17" gammagroup="Buttons"/>
+    <bitmap id="shade.button.pause.pressed" file="shade/buttons.png" x="254" y="21" h="17" w="17" gammagroup="Buttons"/>
+    <bitmap id="shade.button.pause.hover" file="shade/buttons.png" x="254" y="1" h="17" w="17" gammagroup="ButtonsHover"/>
+
+    <bitmap id="shade.button.stop" file="shade/buttons.png" x="276" y="1" h="17" w="17" gammagroup="Buttons"/>
+    <bitmap id="shade.button.stop.pressed" file="shade/buttons.png" x="276" y="21" h="17" w="17" gammagroup="Buttons"/>
+    <bitmap id="shade.button.stop.hover" file="shade/buttons.png" x="276" y="1" h="17" w="17" gammagroup="ButtonsHover"/>
+
+    <bitmap id="shade.button.next" file="shade/buttons.png" x="299" y="3" h="13" w="14" gammagroup="Buttons"/>
+    <bitmap id="shade.button.next.pressed" file="shade/buttons.png" x="299" y="23" h="13" w="14" gammagroup="Buttons"/>
+    <bitmap id="shade.button.next.hover" file="shade/buttons.png" x="299" y="3" h="13" w="14" gammagroup="ButtonsHover"/>
+
+    <bitmap id="shade.button.status.play" file="shade/playbackstatus.png" x="0" y="0" h="9" w="51" gammagroup="ButtonStatus"/>
+    <bitmap id="shade.button.status.pause" file="shade/playbackstatus.png" x="0" y="20" h="9" w="51" gammagroup="ButtonStatus"/>
+    <bitmap id="shade.button.status.stop" file="shade/playbackstatus.png" x="0" y="40" h="9" w="51" gammagroup="ButtonStatus"/>
+
+<!-- Volume -->
+    <bitmap id="shade.button.volume" file="shade/volume.png" x="0" y="0" h="11" w="16" gammagroup="Buttons2"/>
+    <bitmap id="shade.button.volume.hover" file="shade/volume.png" x="0" y="0" h="11" w="16" gammagroup="ButtonsHover2"/>
+    <bitmap id="shade.button.volume.pressed" file="shade/volume.png" x="20" y="0" h="11" w="16" gammagroup="Buttons2"/>
+
+<!-- Seek -->
+    <bitmap id="shade.button.seek" file="shade/seek.png" x="0" y="0" h="10" w="24" gammagroup="Buttons"/>
+    <bitmap id="shade.button.seek.pressed" file="shade/seek.png" x="30" y="0" h="10" w="24" gammagroup="Buttons"/>
+    <bitmap id="shade.button.seek.hover" file="shade/seek.png" x="0" y="0" h="10" w="24" gammagroup="ButtonsHover"/>
+
+<!-- EJECT/PL/ML -->
+    <bitmap id="shade.button.eject" file="shade/buttons.png" x="349" y="7" h="9" w="14" gammagroup="Buttons2"/>
+    <bitmap id="shade.button.eject.pressed" file="shade/buttons.png" x="349" y="27" h="9" w="14" gammagroup="Buttons2"/>
+    <bitmap id="shade.button.eject.hover" file="shade/buttons.png" x="349" y="7" h="9" w="14" gammagroup="ButtonsHover2"/>
+
+    <bitmap id="shade.button.pl" file="shade/buttons.png" x="369" y="7" h="9" w="14" gammagroup="Buttons2"/>
+    <bitmap id="shade.button.pl.pressed" file="shade/buttons.png" x="369" y="27" h="9" w="14" gammagroup="Buttons2"/>
+    <bitmap id="shade.button.pl.hover" file="shade/buttons.png" x="369" y="7" h="9" w="14" gammagroup="ButtonsHover2"/>
+    <bitmap id="shade.button.pl.active" file="shade/buttons.png" x="369" y="47" h="9" w="14" gammagroup="ButtonsActive"/>
+
+    <bitmap id="shade.button.ml" file="shade/buttons.png" x="387" y="7" h="9" w="15" gammagroup="Buttons2"/>
+    <bitmap id="shade.button.ml.pressed" file="shade/buttons.png" x="387" y="27" h="9" w="15" gammagroup="Buttons2"/>
+    <bitmap id="shade.button.ml.hover" file="shade/buttons.png" x="387" y="7" h="9" w="15" gammagroup="ButtonsHover2"/>
+    <bitmap id="shade.button.ml.active" file="shade/buttons.png" x="387" y="47" h="9" w="15" gammagroup="ButtonsActive"/>
+
+<!-- MUTE -->
+    <bitmap id="shade.button.mute.off" file="shade/buttons.png" x="328" y="5" h="13" w="13" gammagroup="Buttons2"/>
+    <bitmap id="shade.button.mute.on" file="shade/buttons.png" x="328" y="45" h="13" w="13" gammagroup="Buttons2"/>
+    <bitmap id="shade.button.mute.on.hover" file="shade/buttons.png" x="328" y="45" h="13" w="13" gammagroup="ButtonsHover2"/>
+    <bitmap id="shade.button.mute.on.pressed" file="shade/buttons.png" x="328" y="25" h="13" w="13" gammagroup="Buttons2"/>
+
+<!-- SHUFFLE/REPEAT -->
+    <bitmap id="shade.button.repeat0" file="shade/buttons.png" x="0" y="5" h="15" w="15" gammagroup="Buttons"/>
+    <bitmap id="shade.button.repeat.pressed0" file="shade/buttons.png" x="0" y="25" h="15" w="15" gammagroup="Buttons"/>
+    <bitmap id="shade.button.repeat.hover0" file="shade/buttons.png" x="0" y="5" h="15" w="15" gammagroup="ButtonsHover"/>
+
+    <bitmap id="shade.button.repeat1" file="shade/buttons.png" x="0" y="5" h="15" w="15" gammagroup="Buttons"/>
+    <bitmap id="shade.button.repeat.pressed1" file="shade/buttons.png" x="0" y="45" h="15" w="15" gammagroup="Buttons"/>
+    <bitmap id="shade.button.repeat.hover1" file="shade/buttons.png" x="0" y="5" h="15" w="15" gammagroup="ButtonsHover"/>
+
+    <bitmap id="shade.button.repeat2" file="shade/buttons.png" x="19" y="45" h="15" w="15" gammagroup="Buttons"/>
+    <bitmap id="shade.button.repeat.pressed2" file="shade/buttons.png" x="0" y="25" h="15" w="15" gammagroup="Buttons"/>
+    <bitmap id="shade.button.repeat.hover2" file="shade/buttons.png" x="19" y="45" h="15" w="15" gammagroup="ButtonsHover"/>
+
+    <bitmap id="shade.button.shuffle" file="shade/buttons.png" x="19" y="5" h="15" w="15" gammagroup="Buttons"/>
+    <bitmap id="shade.button.shuffle.pressed" file="shade/buttons.png" x="19" y="25" h="15" w="15" gammagroup="Buttons"/>
+    <bitmap id="shade.button.shuffle.hover" file="shade/buttons.png" x="19" y="5" h="15" w="15" gammagroup="ButtonsHover"/>
+
+    <bitmap id="shade.led.on" file="shade/led.png" x="0" y="0" h="9" w="9" gammagroup="Led"/>
+    <bitmap id="shade.led.off" file="shade/led.png" x="20" y="0" h="9" w="9" gammagroup="Led"/>
+
+<!-- EQ -->
+    <bitmap id="shade.button.eq" file="shade/buttons.png" x="109" y="1" h="17" w="17" gammagroup="Buttons"/>
+    <bitmap id="shade.button.eq.pressed" file="shade/buttons.png" x="109" y="21" h="17" w="17" gammagroup="Buttons"/>
+    <bitmap id="shade.button.eq.hover" file="shade/buttons.png" x="109" y="1" h="17" w="17" gammagroup="ButtonsHover"/>
+
+<!-- ColorThemes -->
+    <bitmap id="shade.button.ct" file="shade/buttons2.png" x="41" y="43" h="7" w="29" gammagroup="Buttons"/>
+    <bitmap id="shade.button.ct.pressed" file="shade/buttons2.png" x="41" y="73" h="7" w="29" gammagroup="Buttons"/>
+    <bitmap id="shade.button.ct.hover" file="shade/buttons2.png" x="41" y="43" h="7" w="29" gammagroup="ButtonsHover"/>
+    <bitmap id="shade.button.ct.prev" file="shade/buttons2.png" x="32" y="43" h="7" w="8" gammagroup="Buttons"/>
+    <bitmap id="shade.button.ct.prev.pressed" file="shade/buttons2.png" x="32" y="73" h="7" w="8" gammagroup="Buttons"/>
+    <bitmap id="shade.button.ct.prev.hover" file="shade/buttons2.png" x="32" y="43" h="7" w="8" gammagroup="ButtonsHover"/>
+    <bitmap id="shade.button.ct.next" file="shade/buttons2.png" x="71" y="43" h="7" w="8" gammagroup="Buttons"/>
+    <bitmap id="shade.button.ct.next.pressed" file="shade/buttons2.png" x="71" y="73" h="7" w="8" gammagroup="Buttons"/>
+    <bitmap id="shade.button.ct.next.hover" file="shade/buttons2.png" x="71" y="43" h="7" w="8" gammagroup="ButtonsHover"/>
+
+<!-- Always on top -->
+    <bitmap id="shade.button.aot" file="shade/buttons2.png" x="33" y="32" h="7" w="34" gammagroup="Buttons"/>
+    <bitmap id="shade.button.aot.pressed" file="shade/buttons2.png" x="33" y="62" h="7" w="34" gammagroup="Buttons"/>
+    <bitmap id="shade.button.aot.hover" file="shade/buttons2.png" x="33" y="32" h="7" w="34" gammagroup="ButtonsHover"/>
+
+<!-- Expand/Reduce -->
+    <bitmap id="shade.button.expand" file="shade/buttons2.png" x="16" y="37" h="7" w="7" gammagroup="Buttons"/>
+    <bitmap id="shade.button.expand.pressed" file="shade/buttons2.png" x="16" y="67" h="7" w="7" gammagroup="Buttons"/>
+    <bitmap id="shade.button.expand.hover" file="shade/buttons2.png" x="16" y="37" h="7" w="7" gammagroup="ButtonsHover"/>
+    <bitmap id="shade.button.reduce" file="shade/buttons2.png" x="96" y="37" h="7" w="7" gammagroup="Buttons"/>
+    <bitmap id="shade.button.reduce.pressed" file="shade/buttons2.png" x="96" y="67" h="7" w="7" gammagroup="Buttons"/>
+    <bitmap id="shade.button.reduce.hover" file="shade/buttons2.png" x="96" y="37" h="7" w="7" gammagroup="ButtonsHover"/>
+
+<!-- SONGTICKERFONT -->
+    <bitmap id="bitmapfont.shade.songticker" file="shade/songtickerfont.png" x="0" y="0" h="40" w="300" gammagroup="DisplaySongtickerShade"/>
+    <bitmapfont id="shade.songticker.font" file="bitmapfont.shade.songticker" charwidth="7" charheight="12" hspacing="-1" vspacing="0"/>
+
+<!-- CLOSE/MINIMIZE... -->
+    <bitmap id="shade.button.winshade" file="window/titlebar.png" x="0" y="140" h="10" w="11" gammagroup="TitlebarElements"/>
+    <bitmap id="shade.button.winshade.pressed" file="window/titlebar.png" x="40" y="140" h="10" w="11" gammagroup="TitlebarElements"/>
+    <bitmap id="shade.button.winshade.hover" file="window/titlebar.png" x="0" y="140" h="10" w="11" gammagroup="TitlebarHover"/>
+
+    <bitmap id="shade.button.minimize" file="window/titlebar.png" x="0" y="40" h="10" w="11" gammagroup="TitlebarElements"/>
+    <bitmap id="shade.button.minimize.pressed" file="window/titlebar.png" x="40" y="40" h="10" w="11" gammagroup="TitlebarElements"/>
+    <bitmap id="shade.button.minimize.hover" file="window/titlebar.png" x="0" y="40" h="10" w="11" gammagroup="TitlebarHover"/>
+
+    <bitmap id="shade.button.close" file="window/titlebar.png" x="0" y="80" h="10" w="11" gammagroup="TitlebarElements"/>
+    <bitmap id="shade.button.close.pressed" file="window/titlebar.png" x="40" y="80" h="10" w="11" gammagroup="TitlebarElements"/>
+    <bitmap id="shade.button.close.hover" file="window/titlebar.png" x="0" y="80" h="10" w="11" gammagroup="TitlebarHover"/>
+
+    <bitmap id="shade.button.sysmenu" file="window/titlebar.png" x="0" y="20" h="10" w="11" gammagroup="TitlebarElements"/>
+    <bitmap id="shade.button.sysmenu.pressed" file="window/titlebar.png" x="40" y="20" h="10" w="11" gammagroup="TitlebarElements"/>
+    <bitmap id="shade.button.sysmenu.hover" file="window/titlebar.png" x="0" y="20" h="10" w="11" gammagroup="TitlebarHover"/>
+
+<!-- PLAYLIST SHADE -->
+    <bitmap id="shade.pl.bg.left" file="shade/pl_shade.png" x="0" y="0" w="30" h="25" gammagroup="Backgrounds"/>
+    <bitmap id="shade.pl.bg.center" file="shade/pl_shade.png" x="36" y="0" w="10" h="25" gammagroup="Backgrounds"/>
+    <bitmap id="shade.pl.bg.right" file="shade/pl_shade.png" x="208" y="0" w="74" h="25" gammagroup="Backgrounds"/>
+
+    <bitmap id="shade.pl.display.left" file="shade/pl_shade.png" x="23" y="34" w="10" h="14" gammagroup="Display"/>
+    <bitmap id="shade.pl.display.center" file="shade/pl_shade.png" x="33" y="34" w="50" h="14" gammagroup="Display"/>
+    <bitmap id="shade.pl.display.right" file="shade/pl_shade.png" x="214" y="34" w="6" h="14" gammagroup="Display"/>
+
+    <bitmap id="shade.pl.seek" file="shade/pl_shade.png" x="29" y="65" h="9" w="24" gammagroup="Buttons"/>
+    <bitmap id="shade.pl.seek.pressed" file="shade/pl_shade.png" x="59" y="65" h="9" w="24" gammagroup="Buttons"/>
+    <bitmap id="shade.pl.seek.hover" file="shade/pl_shade.png" x="29" y="65" h="9" w="24" gammagroup="ButtonsHover"/>
+
+    <bitmap id="shade.pl.button.list" file="shade/pl_shade.png" x="228" y="35" h="15" w="15" gammagroup="Buttons"/>
+    <bitmap id="shade.pl.button.list.pressed" file="shade/pl_shade.png" x="228" y="65" h="15" w="15" gammagroup="Buttons"/>
+    <bitmap id="shade.pl.button.list.hover" file="shade/pl_shade.png" x="228" y="35" h="15" w="15" gammagroup="ButtonsHover"/>
+
+    <bitmap id="shade.pl.resize" file="shade/pl_shade.png" x="137" y="57" h="23" w="9" gammagroup="Buttons"/>
+
+    <bitmap id="shade.button.nowplaying.normal" file="shade/nowplaying.png" x="0" y="0" h="10" w="10" gammagroup="DisplayVis"/>
+    <bitmap id="shade.button.nowplaying.hover" file="shade/nowplaying.png" x="10" y="0" h="10" w="10" gammagroup="DisplayVis"/>
+    <bitmap id="shade.button.nowplaying.down" file="shade/nowplaying.png" x="20" y="0" h="10" w="10" gammagroup="DisplayVis"/>
+
+</elements>
+

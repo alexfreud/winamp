@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{92037EB1-5BEB-42A4-AAC8-E2CAE0DEED1E}</ProjectGuid>
+    <RootNamespace>auth</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(PlatformShortName)_$(Configuration)\</IntDir>
+    <TargetExt>.w5s</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <VcpkgInstalledDir>..\external_dependencies\vcpkg</VcpkgInstalledDir>
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <VcpkgInstalledDir>..\external_dependencies\vcpkg</VcpkgInstalledDir>
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgInstalledDir>..\external_dependencies\vcpkg</VcpkgInstalledDir>
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgInstalledDir>..\external_dependencies\vcpkg</VcpkgInstalledDir>
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;AUTH_EXPORTS;USE_LOGINBOX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4838;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;rpcrt4.lib;urlmon.lib;wininet.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).w5s</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(ProjectDir)x86_Debug\$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(ProjectDir)x86_Debug\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)*.w5s ..\..\..\Winamp_$(PlatformShortName)_$(Configuration)\System\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)*.w5s ..\..\..\Winamp_$(PlatformShortName)_$(Configuration)\System\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;_USRDLL;AUTH_EXPORTS;USE_LOGINBOX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4838;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;rpcrt4.lib;urlmon.lib;wininet.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).w5s</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(ProjectDir)x64_Debug\$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(ProjectDir)x64_Debug\$(ProjectName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)*.w5s ..\..\..\Winamp_$(PlatformShortName)_$(Configuration)\System\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)*.w5s ..\..\..\Winamp_$(PlatformShortName)_$(Configuration)\System\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;AUTH_EXPORTS;USE_LOGINBOX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4838;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;rpcrt4.lib;urlmon.lib;wininet.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).w5s</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(ProjectDir)x86_Release\$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(ProjectDir)x86_Release\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)*.w5s ..\..\..\Winamp_$(PlatformShortName)_$(Configuration)\System\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)*.w5s ..\..\..\Winamp_$(PlatformShortName)_$(Configuration)\System\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../Wasabi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_USRDLL;AUTH_EXPORTS;USE_LOGINBOX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4838;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;rpcrt4.lib;urlmon.lib;wininet.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).w5s</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(ProjectDir)x64_Release\$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>$(ProjectDir)x64_Release\$(ProjectName).lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(OutDir)*.w5s ..\..\..\Winamp_$(PlatformShortName)_$(Configuration)\System\ </Command>
+      <Message>Post build event: 'xcopy /Y /D $(OutDir)*.w5s ..\..\..\Winamp_$(PlatformShortName)_$(Configuration)\System\'</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\nu\PtrList.cpp" />
+    <ClCompile Include="..\nu\windowsTheme.cpp" />
+    <ClCompile Include="..\Winamp\JSAPI_CallbackParameters.cpp" />
+    <ClCompile Include="auth.cpp" />
+    <ClCompile Include="b64.c" />
+    <ClCompile Include="decode.cpp" />
+    <ClCompile Include="hmac_sha256.c" />
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="Loginbox\addressEditbox.cpp" />
+    <ClCompile Include="Loginbox\addressEncoder.cpp" />
+    <ClCompile Include="Loginbox\animation.cpp" />
+    <ClCompile Include="Loginbox\browserWindow.cpp" />
+    <ClCompile Include="Loginbox\commandNodeParser.cpp" />
+    <ClCompile Include="Loginbox\commandParser.cpp" />
+    <ClCompile Include="Loginbox\commandWebAuth.cpp" />
+    <ClCompile Include="Loginbox\commandWinampAuth.cpp" />
+    <ClCompile Include="Loginbox\common.cpp" />
+    <ClCompile Include="Loginbox\dataAddress.cpp" />
+    <ClCompile Include="Loginbox\dataCredentials.cpp" />
+    <ClCompile Include="Loginbox\download.cpp" />
+    <ClCompile Include="Loginbox\downloadResult.cpp" />
+    <ClCompile Include="Loginbox\editboxExtender.cpp" />
+    <ClCompile Include="Loginbox\externalMngr.cpp" />
+    <ClCompile Include="Loginbox\graphics.cpp" />
+    <ClCompile Include="Loginbox\imageCache.cpp" />
+    <ClCompile Include="Loginbox\imageLoader.cpp" />
+    <ClCompile Include="Loginbox\loginBox.cpp" />
+    <ClCompile Include="Loginbox\loginConfig.cpp" />
+    <ClCompile Include="Loginbox\loginCredentials.cpp" />
+    <ClCompile Include="Loginbox\loginCurtain.cpp" />
+    <ClCompile Include="Loginbox\loginData.cpp" />
+    <ClCompile Include="Loginbox\loginGui.cpp" />
+    <ClCompile Include="Loginbox\loginNotifier.cpp" />
+    <ClCompile Include="Loginbox\loginPage.cpp" />
+    <ClCompile Include="Loginbox\loginPopup.cpp" />
+    <ClCompile Include="Loginbox\loginProvider.cpp" />
+    <ClCompile Include="Loginbox\loginStatus.cpp" />
+    <ClCompile Include="Loginbox\loginTab.cpp" />
+    <ClCompile Include="Loginbox\pageAddress.cpp" />
+    <ClCompile Include="Loginbox\pageCredentials.cpp" />
+    <ClCompile Include="Loginbox\pageEmpty.cpp" />
+    <ClCompile Include="Loginbox\pageError.cpp" />
+    <ClCompile Include="Loginbox\pageInfo.cpp" />
+    <ClCompile Include="Loginbox\popupAgreement.cpp" />
+    <ClCompile Include="Loginbox\popupMessage.cpp" />
+    <ClCompile Include="Loginbox\popupPasscode.cpp" />
+    <ClCompile Include="Loginbox\providerEnumerator.cpp" />
+    <ClCompile Include="Loginbox\providerLoader.cpp" />
+    <ClCompile Include="Loginbox\providerOperation.cpp" />
+    <ClCompile Include="Loginbox\providerParser.cpp" />
+    <ClCompile Include="Loginbox\resultWebAuth.cpp" />
+    <ClCompile Include="Loginbox\resultWinampAuth.cpp" />
+    <ClCompile Include="Loginbox\stringBuilder.cpp" />
+    <ClCompile Include="Loginbox\templateAddress.cpp" />
+    <ClCompile Include="Loginbox\templateCredentials.cpp" />
+    <ClCompile Include="Loginbox\templateInfo.cpp" />
+    <ClCompile Include="Loginbox\templateNodeParser.cpp" />
+    <ClCompile Include="Loginbox\templateParser.cpp" />
+    <ClCompile Include="Loginbox\update.cpp" />
+    <ClCompile Include="Loginbox\xmlInt32Parser.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OAuthKey.cpp" />
+    <ClCompile Include="post.cpp" />
+    <ClCompile Include="sha2.c" />
+    <ClCompile Include="XMLString.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\nu\windowsTheme.h" />
+    <ClInclude Include="..\Wasabi\api\syscb\callbacks\authcb.h" />
+    <ClInclude Include="..\Wasabi\api\syscb\callbacks\authcbi.h" />
+    <ClInclude Include="api.h" />
+    <ClInclude Include="api_auth.h" />
+    <ClInclude Include="auth.h" />
+    <ClInclude Include="b64.h" />
+    <ClInclude Include="hmac_sha256.h" />
+    <ClInclude Include="ifc_authcallback.h" />
+    <ClInclude Include="Loginbox\addressEditbox.h" />
+    <ClInclude Include="Loginbox\addressEncoder.h" />
+    <ClInclude Include="Loginbox\animation.h" />
+    <ClInclude Include="Loginbox\browserEvent.h" />
+    <ClInclude Include="Loginbox\browserWindow.h" />
+    <ClInclude Include="Loginbox\commandNodeParser.h" />
+    <ClInclude Include="Loginbox\commandParser.h" />
+    <ClInclude Include="Loginbox\commandWebAuth.h" />
+    <ClInclude Include="Loginbox\commandWinampAuth.h" />
+    <ClInclude Include="Loginbox\common.h" />
+    <ClInclude Include="Loginbox\dataAddress.h" />
+    <ClInclude Include="Loginbox\dataCredentials.h" />
+    <ClInclude Include="Loginbox\download.h" />
+    <ClInclude Include="Loginbox\downloadResult.h" />
+    <ClInclude Include="Loginbox\editboxExtender.h" />
+    <ClInclude Include="Loginbox\externalMngr.h" />
+    <ClInclude Include="Loginbox\graphics.h" />
+    <ClInclude Include="Loginbox\imageCache.h" />
+    <ClInclude Include="Loginbox\imageLoader.h" />
+    <ClInclude Include="Loginbox\loginBox.h" />
+    <ClInclude Include="Loginbox\loginCommand.h" />
+    <ClInclude Include="Loginbox\loginConfig.h" />
+    <ClInclude Include="Loginbox\loginCredentials.h" />
+    <ClInclude Include="Loginbox\loginCurtain.h" />
+    <ClInclude Include="Loginbox\loginData.h" />
+    <ClInclude Include="Loginbox\loginGui.h" />
+    <ClInclude Include="Loginbox\loginNotifier.h" />
+    <ClInclude Include="Loginbox\loginPage.h" />
+    <ClInclude Include="Loginbox\loginPopup.h" />
+    <ClInclude Include="Loginbox\loginProvider.h" />
+    <ClInclude Include="Loginbox\loginResult.h" />
+    <ClInclude Include="Loginbox\loginStatus.h" />
+    <ClInclude Include="Loginbox\loginTab.h" />
+    <ClInclude Include="Loginbox\loginTemplate.h" />
+    <ClInclude Include="Loginbox\pageAddress.h" />
+    <ClInclude Include="Loginbox\pageCredentials.h" />
+    <ClInclude Include="Loginbox\pageEmpty.h" />
+    <ClInclude Include="Loginbox\pageError.h" />
+    <ClInclude Include="Loginbox\pageInfo.h" />
+    <ClInclude Include="Loginbox\popupAgreement.h" />
+    <ClInclude Include="Loginbox\popupMessage.h" />
+    <ClInclude Include="Loginbox\popupPasscode.h" />
+    <ClInclude Include="Loginbox\providerEnumerator.h" />
+    <ClInclude Include="Loginbox\providerLoader.h" />
+    <ClInclude Include="Loginbox\providerOperation.h" />
+    <ClInclude Include="Loginbox\providerParser.h" />
+    <ClInclude Include="Loginbox\resultWebAuth.h" />
+    <ClInclude Include="Loginbox\resultWinampAuth.h" />
+    <ClInclude Include="Loginbox\stringBuilder.h" />
+    <ClInclude Include="Loginbox\templateAddress.h" />
+    <ClInclude Include="Loginbox\templateCredentials.h" />
+    <ClInclude Include="Loginbox\templateInfo.h" />
+    <ClInclude Include="Loginbox\templateNodeParser.h" />
+    <ClInclude Include="Loginbox\templateParser.h" />
+    <ClInclude Include="Loginbox\update.h" />
+    <ClInclude Include="Loginbox\xmlInt32Parser.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="OAuthKey.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="sha2.h" />
+    <ClInclude Include="XMLString.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Loginbox\resources\arrow.png" />
+    <Image Include="Loginbox\resources\notifierIcons.png" />
+    <Image Include="Loginbox\resources\popupBorder.png" />
+    <Image Include="Loginbox\resources\selection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="auth.rc" />
+    <ResourceCompile Include="Loginbox\png.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wasabi\Wasabi.vcxproj">
+      <Project>{3e0bfa8a-b86a-42e9-a33f-ec294f823f7f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

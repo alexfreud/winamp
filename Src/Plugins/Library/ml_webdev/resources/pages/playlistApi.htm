@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JSAPI2::Playlists Api</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<script type="text/javascript" src="api2.js"></script>
+</head>
+<body onload="plsDisablePlaylistMethods(true);plsDisableListMethods(true);" style="FONT-FAMILY: MS Shell Dlg 2;">
+	<h2>Playlists API</h2>
+	<p><small>Since it is hard to obtain a playlist ID to use in the OpenPlaylist and SavePlaylist methods, click "Get Playlists" to get all the playlists and then "Set Index" to choose one of the playlists. This will pre-populate the playlist IDs for the OpenPlaylist and SavePlaylist buttons.</small>
+	<h3>Methods:</h3>
+	<input type="button" value="Get Playlists" onclick="plsGetPlaylists();">
+	<br>
+	&nbsp;&nbsp;Count (of playlists):<input type="text" readonly size="20" id="pls_t_Count">
+	<br>
+	&nbsp;&nbsp;<input type="button" value="Set Playlist Index" onclick="plsViewIndexClicked();">
+	<input type="text" size="10" value="0" id="pls_t_Index_in">
+	<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Playlist Summary Info:
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Playlist ID: <input type="text" readonly size="60" id="pls_t_PlaylistId">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Playlist Num Items: <input type="text" readonly size="20" id="pls_t_NumItems">
+	&nbsp;&nbsp;<small>(cached, may not be current)</small>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Playlist Filename: <input type="text" size="80" id="pls_t_Filename">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Playlist Title: <input type="text" size="80" id="pls_t_Title">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Playlist (total) Length: <input type="text" readonly size="20" id="pls_t_Length">
+	&nbsp;&nbsp;<small>(cached, may not be current)</small>
+	<br>
+	<br>
+	<input type="button" value="OpenPlaylist" onclick="plsOpenPlaylistClicked();">
+	<small>(will also display the playlist)</small>
+	<br>
+	Count (of items in playlist):<input type="text" readonly size="20" id="playlist_t_NumItems">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Playlist ID: <input type="text" size="60" id="pls_t_OpenPlaylistId_in">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Set Item Index" onclick="plsPlaylistViewIndexClicked()">
+	<input type="text" size="10" value="0" id="playlist_t_ItemIndex_in">
+	<br>
+	<br>
+	<div id="playlistmethods">
+	&nbsp;&nbsp;&nbsp;&nbsp;Get Item Filename: <input type="text" size="80" id="playlist_t_Filename">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Get Item Title: <input type="text" size="80" id="playlist_t_Title">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Get Item Length: <input type="text" readonly size="20" id="playlist_t_Length">
+	<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Set Item Filename" onclick="plsPlaylistSetItemFilenameClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item Filename: <input type="text" size="80" id="playlist_t_SetItemFilename_in">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Set Item Title" onclick="plsPlaylistSetItemTitleClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item Title: <input type="text" size="80" id="playlist_t_SetItemTitle_in">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Set Item Length" onclick="plsPlaylistSetItemLengthClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item Length: <input type="text" id="playlist_t_SetItemLength_in">
+	<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Remove" onclick="plsPlaylistRemoveClicked();">
+	<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Insert URL" onclick="plsPlaylistInsertUrlClicked();">
+	<small>(before the currently selected index)</small>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL: <input type="text" size="80" id="playlist_t_InsertURL_in">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title: <input type="text" size="80" id="playlist_t_InsertTitle_in">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;length: <input type="text" size="20" id="playlist_t_InsertLength_in">
+	<br>
+	</div>
+	<div id="listmethods">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Append URL" onclick="plsPlaylistAppendUrlClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL: <input type="text" size="80" id="playlist_t_AppendURL_in">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title: <input type="text" size="80" id="playlist_t_AppendTitle_in">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;length: <input type="text" size="20" id="playlist_t_AppendLength_in">
+	<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Reverse" onclick="plsPlaylistReverseClicked();">
+	<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Swap Items" onclick="plsPlaylistSwapItemsClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Index #1: <input type="text" value="0" id="playlist_t_Swap1_in">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Index #2: <input type="text" value="1" id="playlist_t_Swap2_in">
+	<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Randomize" onclick="plsPlaylistRandomizeClicked();">
+	<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Sort By Title" onclick="plsPlaylistSortByTitleClicked();">
+	<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Sort By Filename" onclick="plsPlaylistSortByFilenameClicked();">
+	<br>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Clear" onclick="plsPlaylistClearClicked();">
+	</div>
+	<br>
+	<br>
+	<input type="button" value="SavePlaylist" onclick="plsSavePlaylistClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Playlist ID: <input type="text" size="80" id="pls_t_SavePlaylistId_in">
+</body>
+</html>

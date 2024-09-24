@@ -1,0 +1,366 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(ORIGINAL)
+#if defined(APSTUDIO_INVOKED)
+IDD_DIALOG1$(ORIGINAL) DIALOGEX 0, 0, 173, 146
+#else
+IDD_DIALOG1 DIALOGEX 0, 0, 173, 146
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CD playback settings"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Digital Audio Extraction",IDC_STATIC,4,4,164,50
+    CONTROL         "Enable digital audio extraction if possible",IDC_DIGITAL,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,17,153,14
+    CONTROL         "Use Sonic engine when possible",IDC_VERITAS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,33,142,14
+    GROUPBOX        "Sampling (when not in DAE mode)",IDC_STATIC,4,57,164,67
+    CONTROL         "&Sample input from soundcard (for vis)\n(requires 44khz 16bit stereo capability)",IDC_SAMPLE,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,67,153,24
+    LTEXT           "(Note: be sure to set up your soundcard sampling input to the correct input source in order to have visualizations working)",IDC_STATIC,17,92,138,28
+    GROUPBOX        "MusicID",IDC_STATIC,233,12,82,84,NOT WS_VISIBLE
+    CONTROL         "Use MusicID",IDC_CDDB,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,241,23,57,10
+    LTEXT           "The MusicID components are not installed. Please get Winamp Full or Pro to enable MusicID support.",IDC_CDDBNOTE,241,36,65,50,NOT WS_VISIBLE
+    CONTROL         "",IDC_CDDBICON,"Static",SS_OWNERDRAW | SS_NOTIFY | SS_REALSIZEIMAGE | NOT WS_VISIBLE,247,39,15,13
+    DEFPUSHBUTTON   "OK",IDOK,64,129,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,118,129,50,13
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(IGNORE_API_GRACENOTE)
+#if defined(APSTUDIO_INVOKED)
+IDD_DIALOG2$(IGNORE_API_GRACENOTE) DIALOGEX 0, 0, 247, 68
+#else
+IDD_DIALOG2 DIALOGEX 0, 0, 247, 68
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Retrieving CD information..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_CDDBICON,"Static",SS_OWNERDRAW | SS_NOTIFY,7,7,16,14
+    LTEXT           "MusicID brought to you by Gracenote",IDC_STATIC,67,8,167,9
+    LTEXT           "",IDC_STATUS,67,20,173,18,SS_SUNKEN
+    PUSHBUTTON      "Abort",ID_ABORTBABY,67,41,50,14
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(DISABLED)
+#if defined(APSTUDIO_INVOKED)
+IDD_PREFS_CDRIP$(DISABLED) DIALOGEX 0, 0, 260, 226
+#else
+IDD_PREFS_CDRIP DIALOGEX 0, 0, 260, 226
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Ripping Speed",IDC_STATIC,4,3,256,70
+    LTEXT           "As Winamp rips your CDs to files, it must read the audio data from the CD. The unit of speed used is 1x, which means that the audio is extracted at the ",IDC_STATIC,11,14,244,16
+    LTEXT           "same rate as if you were listening to it. Choose what speed you would like to rip your CDs at (higher speeds require less time to rip):",IDC_STATIC,12,30,243,17
+    LTEXT           "Maximum speed at which Winamp should rip CDs:",IDC_STATIC,12,55,158,8
+    COMBOBOX        IDC_COMBO1,171,53,59,84,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Advanced Ripping Settings",IDC_STATIC,4,77,256,52
+    CONTROL         "Read audio data from CDs using bundled Sonic extraction engine",IDC_VERITAS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,90,221,10
+    LTEXT           "Disabling this option will instruct Winamp to attempt to rip via a third party ASPI driver or, if not available, using the native NT SCSI API.",IDC_STATIC,24,104,229,19
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(IGNORE_API_GRACENOTE)
+#if defined(APSTUDIO_INVOKED)
+IDD_CDDB_PROGRESS$(IGNORE_API_GRACENOTE) DIALOGEX 0, 0, 250, 66
+#else
+IDD_CDDB_PROGRESS DIALOGEX 0, 0, 250, 66
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_NOIDLEMSG | DS_FIXEDSYS | DS_NOFAILCREATE | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_CONTROLPARENT
+CAPTION "Retrieving CD information..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LBL_CAPTION,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_WORDELLIPSIS | WS_GROUP,70,8,172,10
+    PUSHBUTTON      "&Abort",IDCANCEL,182,43,60,15
+    CONTROL         "",IDC_LBL_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,70,17,172,8
+    CONTROL         "",IDC_PRG_STATUS,"msctls_progress32",PBS_SMOOTH | NOT WS_VISIBLE,70,25,111,6
+    LTEXT           "",IDC_LBL_REASON,70,25,111,8,NOT WS_VISIBLE
+    PUSHBUTTON      "Button1",IDC_BUTTON1,113,43,60,15,NOT WS_VISIBLE
+    CONTROL         "",IDC_LV_EXT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,8,58,234,7
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(IGNORE_API_GRACENOTE)
+#if defined(APSTUDIO_INVOKED)
+IDD_MUSICID$(IGNORE_API_GRACENOTE) DIALOGEX 0, 0, 341, 164
+#else
+IDD_MUSICID DIALOGEX 0, 0, 341, 164
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Lookup",IDC_LOOKUP,231,146,50,14
+    PUSHBUTTON      "Submit",IDC_SUBMIT,175,146,50,14
+    PUSHBUTTON      "Edit",IDC_EDIT_GRACENOTE,119,146,50,14
+    PUSHBUTTON      "Use",IDC_USE,287,146,50,14
+    LTEXT           "Title",IDC_STATIC,7,9,40,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Album Artist",IDC_STATIC,7,27,40,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Disc",IDC_STATIC,7,44,40,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Year",IDC_STATIC,7,61,40,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Label",IDC_STATIC,7,78,40,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "of",IDC_STATIC,83,44,8,14,SS_CENTERIMAGE
+    LTEXT           "Primary Genre",IDC_STATIC,172,27,48,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    GROUPBOX        "Notes",IDC_STATIC,6,94,177,50
+    GROUPBOX        "Track List",IDC_STATIC,186,42,152,102
+    LISTBOX         IDC_TRACKLIST,191,52,142,87,LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TITLE,55,9,281,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ARTIST,55,27,110,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DISC,55,44,24,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DISCS,96,44,24,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_YEAR,55,61,65,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_LABEL,55,78,105,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GENRE,227,27,109,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NOTES,13,103,164,36,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    GROUPBOX        "MusicID",IDC_STATIC,0,0,341,164
+END
+#endif
+
+IDD_CDTEXT DIALOGEX 0, 0, 341, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "CD Text",IDC_STATIC,0,0,341,164
+    LTEXT           "Artist:",IDC_STATIC,3,9,21,8
+    EDITTEXT        IDC_ARTIST,3,19,109,14,ES_AUTOHSCROLL
+    LTEXT           "Album:",IDC_STATIC,116,9,23,8
+    EDITTEXT        IDC_ALBUM,116,19,109,14,ES_AUTOHSCROLL
+    LTEXT           "Composer:",IDC_STATIC,228,9,36,8
+    EDITTEXT        IDC_COMPOSER,228,19,109,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_TRACKS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,36,333,106
+    PUSHBUTTON      "Lookup",IDC_LOOKUP,233,146,50,14
+    PUSHBUTTON      "Use",IDC_USE,287,146,50,14
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(IGNORE_API_GRACENOTE)
+#if defined(APSTUDIO_INVOKED)
+IDD_DIALOG1$(IGNORE_API_GRACENOTE) DIALOGEX 0, 0, 173, 216
+#else
+IDD_DIALOG1 DIALOGEX 0, 0, 173, 216
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CD playback settings"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Digital Audio Extraction",IDC_STATIC,4,4,164,50
+    CONTROL         "Enable digital audio extraction if possible",IDC_DIGITAL,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,17,153,14
+    CONTROL         "Use Sonic engine when possible",IDC_VERITAS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,33,142,14
+    GROUPBOX        "Sampling (when not in DAE mode)",IDC_STATIC,4,57,164,67
+    CONTROL         "&Sample input from soundcard (for vis)\n(requires 44khz 16bit stereo capability)",IDC_SAMPLE,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,67,153,24
+    LTEXT           "(Note: be sure to set up your soundcard sampling input to the correct input source in order to have visualizations working)",IDC_STATIC,17,92,138,28
+    GROUPBOX        "MusicID",IDC_STATIC,4,127,82,84
+    CONTROL         "Use MusicID",IDC_CDDB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,138,57,10
+    LTEXT           "The MusicID components are not installed. Please get Winamp Full or Pro to enable MusicID support.",IDC_CDDBNOTE,12,151,65,50,NOT WS_VISIBLE
+    CONTROL         "",IDC_CDDBICON,"Static",SS_OWNERDRAW | SS_NOTIFY | SS_REALSIZEIMAGE,17,153,15,13
+    DEFPUSHBUTTON   "OK",IDOK,117,178,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,117,197,50,13
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "IDD_DIALOG1$(ORIGINAL)", DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 159
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 124
+    END
+
+    "IDD_DIALOG2$(IGNORE_API_GRACENOTE)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    "IDD_CDDB_PROGRESS$(IGNORE_API_GRACENOTE)", DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 242
+        VERTGUIDE, 70
+        VERTGUIDE, 181
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 58
+    END
+
+    "IDD_DIALOG1$(IGNORE_API_GRACENOTE)", DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 159
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 194
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_CD_PLUGIN  "Nullsoft CD Plug-in v%s"
+    65535                   "{87DCEEC2-1EC3-4c59-BED4-E8F42232C7D8}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_CD_PLUGIN_OLD "Nullsoft CD Plug-in"
+    IDS_QUERYING            "Accessing Gracenote CDDB®..."
+    IDS_NOT_FOUND           "No matches found"
+    IDS_PROCESSING          "Processing..."
+    IDS_CDDB_NOT_INSTALLED  "MusicID not installed"
+    IDS_SUCCESS             "Success"
+    IDS_CLOSE               "&Close"
+    IDS_INITIALIZING        "initializing..."
+    IDS_ABORTING            "Aborting..."
+    IDS_UNLIMITED           "Unlimited"
+    IDS_PURCHASE_WINAMP_PRO_PROMPT 
+                            "In order to use more than 8x extraction, you must purchase Winamp Pro.\nWould you like information on purchasing Winamp Pro?"
+    IDS_WINAMP_PRO_FEATURE  "Winamp Pro Feature"
+    IDS_ARTIST              "Artist"
+    IDS_TITLE               "Title"
+    IDS_ALBUM_ARTIST        "Album Artist"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_CD_PLUGIN2 "Nullsoft CD Plug-in"
+    IDS_CD_CURRENTLY_IN_USE "CD Drive currently in use"
+    IDS_DRIVE_IN_USE        "Drive in use"
+    IDS_DRIVE_NOT_FOUND     "Drive not found"
+    IDS_CD_NOT_PRESENT      "CD not present"
+    IDS_CANNOT_PLAY_TRACK   "Cannot play track"
+    IDS_CDDA_AUDIO_TRACKS   "CDDA Audio Tracks (*.CDA)"
+    IDS_RIPPING             "Ripping"
+    IDS_TRACK_X             "Track %i"
+    IDS_UNKNOWN             "unknown"
+    IDS_UNKNOWN_ARTIST      "Unknown Artist"
+    IDS_FAMILY_STRING       "CD Audio Track shortcut"
+    IDS_ABOUT_TEXT          "%s\nCopyright © 1997-2023 Winamp SA\n\nBuild date: %s\n\nHow to use:\n   For CD audio, open cda://<cd drive letter>\n   (or use the command in winamp)\n\n   You can also play individual CD tracks using\n   cda://<letter>,<number>\n\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ABORT               "&Abort"
+    IDS_CDDB_PROGRESS_CONNECTING "connecting..."
+    IDS_CDDB_PROGRESS_SENDING "sending..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CDDB_PROGRESS_RECEIVING "receiving..."
+    IDS_CDDB_PROGRESS_WAITING "waiting..."
+    IDS_CDDB_PROGRESS_CANCELLED "cancelled"
+    IDS_CDDB_PROGRESS_COMPLETED "completed"
+    IDS_CDDB_E_BUSY         "Service busy"
+    IDS_CDDB_E_FAIL         "Unknown error"
+    IDS_CDDB_E_BADTOC       "Bad disc data"
+    IDS_REASON              "Reason: "
+    IDS_FOUND_MULTIPLE      "Multiple matches were found online for this CD."
+    IDS_RESOLVING           "resolving"
+    IDS_SUBMITTINGDISC      "Submitting disc info..."
+    IDS_FOUND_EXACT         "Exact match found"
+    IDS_SUBMITNEW           "Submit &New"
+    IDS_SUBMITDISC_TITLE    "Submitting Disc Information"
+    IDS_SUBMITTING          "Submitting Disc Information to Gracenote CDDB®..."
+    IDS_OPENING             "opening dialog..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FUZZYDISC_TITLE     "Multiple Match Results"
+    IDS_ACCEPT              "&Accept"
+    IDS_LOOKUPRESULT_TITLE  "CD Lookup Results"
+    IDS_SUBMIT_OFFER        "Do you want to submit new?"
+    IDS_CDDB_E_ABORT        "Aborted by user"
+    IDS_CDTEXT              "CD Text"
+    IDS_TRACK               "Track"
+    IDS_COMPOSER            "Composer"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

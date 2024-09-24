@@ -1,0 +1,4 @@
+
+There was an error loading 'nde.dll' which is required for all of the local database functions.
+
+This could be due to a failed Winamp update or 'nde.dll' having been removed by mistake.

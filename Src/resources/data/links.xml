@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<WasabiXML>
+	<browserQuickLinks version="1.03">
+		<subMenu name="Help and Support" ontop="1">
+			<link name="Winamp Help" url="https://help.shoutcast.com/hc/sections/360003346493-Winamp-for-Windows"/>
+			<link name="Winamp Forums" url="http://forums.winamp.com/"/>
+			<link name="Winamp Wiki" url="http://wiki.winamp.com/"/>
+		</subMenu>
+		<subMenu name="MP3 Music Blogs">
+			<link name="Aurgasm" url="http://aurgasm.us"/>
+			<link name="Aural-Innovations" url="http://www.aural-innovations.com/main/main.html"/>
+			<link name="Aquarium Drunkard" url="http://www.aquariumdrunkard.com/"/>
+			<link name="Blogotheque" url="http://www.blogotheque.net/"/>
+			<link name="Brooklyn Vegan" url="http://brooklynvegan.com/"/>
+			<link name="Buffalo Tones" url="http://buffalotones.blogspot.co.uk/"/>
+			<link name="Daytrotter" url="http://www.daytrotter.com/"/>
+			<link name="Discobelle" url="http://www.discobelle.net/"/>
+			<link name="Each Note Secure" url="http://www.eachnotesecure.com/"/>
+			<link name="Fingertips" url="http://www.fingertipsmusic.com/"/>
+			<link name="Fluxblog" url="http://www.fluxblog.org/"/>
+			<link name="Gorilla vs Bear" url="http://www.gorillavsbear.net/"/>
+			<link name="Idolator" url="http://www.idolator.com/"/>
+			<link name="Largehearted Boy" url="http://blog.largeheartedboy.com/"/>
+			<link name="mfiles" url="http://www.mfiles.co.uk/mp3-files.htm"/>
+			<link name="Music For Robots" url="http://music.for-robots.com/"/>
+			<link name="Pretty Much Amazing" url="http://prettymuchamazing.com/"/>
+			<link name="Prog Archives" url="http://www.progarchives.com/"/>
+			<link name="Said the Gramphone" url="http://www.saidthegramophone.com/"/>
+			<link name="So Much Silence" url="http://somuchsilence.com/"/>
+			<link name="Scissorkick" url="http://scissorkick.com/"/>
+			<link name="Soul Sides" url="http://soul-sides.com/"/>
+			<link name="Sophie&apos;s Floorboards" url="http://sophiesfloorboard.blogspot.co.uk/"/>
+			<link name="Stereogum" url="http://www.stereogum.com/"/>
+			<link name="The Hype Machine" url="http://www.hypem.com"/>
+			<link name="Trippy Jam" url="http://tripjam.blogspot.co.uk/"/>
+			<link name="3hive" url="http://www.3hive.com/"/>
+		</subMenu>
+		<subMenu name="Free Music Sites">
+			<link name="Bandcamp" url="http://www.bandcamp.com"/>
+			<link name="BetterPropaganda" url="http://betterpropaganda.com/"/>
+			<link name="Free Music Archive" url="http://freemusicarchive.org/"/>
+			<link name="Ektoplazm" url="http://www.ektoplazm.com/"/>
+			<link name="Epitonic" url="http://www.epitonic.com"/>
+			<link name="HeartThis" url="https://hearthis.at/categories/"/>
+			<link name="Hotmixradio" url="http://www.hotmixradio.fr"/>
+			<link name="Internet Archive" url="https://archive.org/details/audio"/>
+			<link name="Jamendo" url="http://www.jamendo.com"/>
+			<link name="Kahvi Collective" url="http://www.kahvi.org/"/>
+			<link name="Laridae" url="http://www.laridae.at"/>
+			<link name="Last.fm" url="http://www.last.fm/music/+free-music-downloads"/>
+			<link name="Live Music Archive" url="https://archive.org/details/etree"/>
+			<link name="Mixcloud" url="https://www.mixcloud.com/discover/"/>
+			<link name="ModArchive" url="http://modarchive.org/"/>
+			<link name="Mp3unsigned" url="http://www.mp3unsigned.com/"/>
+			<link name="Musopen Classical" url="https://musopen.org/"/>
+			<link name="NoiseTrade" url="http://noisetrade.com/"/>
+			<link name="PureVolume" url="http://www.purevolume.com/"/>
+			<link name="Reverbnation" url="https://www.reverbnation.com/"/>
+			<link name="Soundclick" url="http://www.soundclick.com"/>
+			<link name="Soundcloud" url="http://soundcloud.com"/>
+			<link name="Trax In Space" url="http://www.traxinspace.com"/>
+			<link name="UnsignedBandWeb" url="http://www.unsignedbandweb.com/"/>
+		</subMenu>
+		<subMenu name="Skins">
+			<link name="AllWinampSkins" url="http://www.allwinampskins.com/"/>
+			<link name="1001skins" url="http://www.1001skins.com/"/>
+			<link name="DeviantArt" url="http://www.deviantart.com/browse/all/?q=winamp+skins"/>
+			<link name="SkinConsortium" url="http://skinconsortium.com/index.php?page=Downloads&amp;typeID=1"/>
+			<link name="UploadGeneration" url="http://uploadgeneration.info/Winamp/www.winamp.com/skins.html"/>
+			<link name="WinampHeritage" url="http://winampheritage.com/skins"/>
+			<link name="WinampSkins.info" url="http://www.winampskins.info/"/>
+			<link name="Customize.org" url="http://customize.org/winamp3"/>
+		</subMenu>
+		<link name="Winamp" url="http://www.winamp.com"/>
+		<link name="Shoutcast" url="http://www.shoutcast.com"/>
+	</browserQuickLinks>
+	<browserDefaultHomes>
+		<home lngId="default" url="http://www.winamp.com"/>
+	</browserDefaultHomes>
+</WasabiXML>

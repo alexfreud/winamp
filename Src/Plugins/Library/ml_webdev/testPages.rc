@@ -1,0 +1,22 @@
+#include "./resource.h"
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_TEST           HTML                    ".\\resources\\pages\\webdev.htm"
+APPLICATIONAPI.HTM      HTML                    ".\\resources\\pages\\applicationApi.htm"
+BOOKMARKAPI.HTM         HTML                    ".\\resources\\pages\\bookmarkApi.htm"
+CONFIGAPI.HTM           HTML                    ".\\resources\\pages\\configApi.htm"
+HISTORYAPI.HTM          HTML                    ".\\resources\\pages\\historyApi.htm"
+MEDIACOREAPI.HTM        HTML                    ".\\resources\\pages\\mediaCoreApi.htm"
+PLAYLISTAPI.HTM         HTML                    ".\\resources\\pages\\playlistApi.htm"
+PLAYQUEUEAPI.HTM        HTML                    ".\\resources\\pages\\playQueueApi.htm"
+PODCASTAPI.HTM          HTML                    ".\\resources\\pages\\podcastApi.htm"
+SECURITYAPI.HTM         HTML                    ".\\resources\\pages\\securityApi.htm"
+SKINAPI.HTM             HTML                    ".\\resources\\pages\\skinApi.htm"
+TRANSPORTAPI.HTM        HTML                    ".\\resources\\pages\\transportApi.htm"
+TRANSPORTEVENTSAPI.HTM  HTML                    ".\\resources\\pages\\transportEventsApi.htm"
+API2.JS                 HTML                    ".\\resources\\pages\\api2.js"
+WEBDEV.JS               HTML                    ".\\resources\\pages\\webdev.js"
+ASYNCDOWNLOADERAPI.HTM  HTML                    ".\\resources\\pages\\asyncDownloaderApi.htm"

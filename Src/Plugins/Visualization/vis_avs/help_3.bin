@@ -1,0 +1,133 @@
+Functions available from code:
+abs(value)
+  = returns the absolute value of 'value'
+
+sin(value)
+  = returns the sine of the radian angle 'value'
+
+cos(value)
+  = returns the cosine of the radian angle 'value'
+
+tan(value)
+  = returns the tangent of the radian angle 'value'
+
+asin(value)
+  = returns the arcsine (in radians) of 'value'
+
+acos(value)
+  = returns the arccosine (in radians) of 'value'
+
+atan(value)
+  = returns the arctangent (in radians) of 'value'
+
+atan2(value,value2)
+  = returns the arctangent (in radians) of 'value'/'value2'
+
+sqr(value)
+  = returns the square of 'value'
+
+sqrt(value)
+  = returns the square root of 'value'
+
+invsqrt(value)
+  = returns the reciprocal of the  square root of 'value' (1/sqrt(value))
+    (uses a fast approximation, may not always = 1/sqrt(value) :)
+
+pow(value,value2)
+  = returns 'value' to the power of 'value2'
+
+exp(value)
+  = returns e to the power of 'value'
+
+log(value)
+  = returns the log in base e of 'value'
+
+log10(value)
+  = returns the log in base 10 of 'value'
+
+floor(value)
+  = returns the largest integer less than or equal to 'value'
+
+ceil(value)
+  = returns the smallest integer greater than or equal to 'value'
+
+			"sign(value)
+  = returns the sign of 'value' (-1.0 or 1.0, or 0.0 or -0.0 for 0.0 or -0.0)
+
+			"min(value,value2)
+  = returns the smallest of 'value' and 'value2'
+
+			"max(var,var2)
+  = returns the greatest of 'value' and 'value2'
+
+			"sigmoid(value,value2)
+  = returns sigmoid function value of x='value' ('value2'=constraint)
+
+			"rand(value)
+  = returns a random integer between 0 and 'value'
+
+			"band(value,value2)
+  = returns a boolean AND of 'value' and 'value2'
+
+			"bor(value,value2)
+  = returns a boolean OR of 'value' and 'value2'
+
+			"bnot(value)
+  = returns a boolean NOT of 'value'
+
+			"if(condition,valtrue,valfalse)
+  = returns 'valtrue' if 'condition' is nonzero, returns 'valfalse' otherwise.
+    new in AVS 2.8+: only one of valtrue/valfalse is evaluated, depending on condition
+
+			"assign(dest, source)
+  = if 'dest' is a variable, assigns the value of 'source' to it. returns the value of 'source'.
+    a little trick: assign(if(v,a,b),1.0); is like if V is true, a=1.0, otherwise b=1.0. :)
+
+			"exec2(parm1, parm2)
+  = evaluates parm1, then parm2, and returns the value of parm2.
+
+			"equal(value,value2)
+  = returns 1.0 if 'value' is equal to 'value2', otherwise returns 0.0
+
+			"above(value,value2)
+  = returns 1.0 if 'value' is greater than 'value2', otherwise returns 0.0
+
+			"below(value,value2)
+  = returns 1.0 if 'value' is less than 'value2', otherwise returns 0.0
+
+			"getosc(band,width,channel)
+  = returns waveform data centered at 'band', (0..1), sampled 'width' (0..1) wide.
+    'channel' can be: 0=center, 1=left, 2=right. return value is (-1..1)    
+
+			"getspec(band,width,channel)
+  = returns spectrum data centered at 'band', (0..1), sampled 'width' (0..1) wide.
+    'channel' can be: 0=center, 1=left, 2=right. return value is (0..1)    
+
+gettime(start_time)
+  = returns time in seconds since start_time (start_time can be 0 for time since boot)
+    (start_time can be -1.0 for current play time in seconds
+    (start_time can be -2.0 for current play length in seconds
+
+getkbmouse(which_parm)
+  = returns information about the location and state of the keyboard or mouse
+    which_parm = 1: mouse X position (-1..1 is onscreen)
+    which_parm = 2: mouse Y position (-1..1 is onscreen)
+    which_parm = 3: mouse left button state (0 up, 1 down)
+    which_parm = 4: mouse right button state (0 up, 1 down)
+    which_parm = 5: mouse middle button state (0 up, 1 down)
+    which_parm > 5: (GetAsyncKeyState(which_parm)&0x8000)?1:0
+
+megabuf(index)
+  = can be used to get or set an item from the 1 million item temp buffer
+    to get, use:   val=megabuf(index);
+    to set, use:   assign(megabuf(index),val);
+
+gmegabuf(index)
+  = can be used to get or set an item from the global 1 million item buffer
+    to get, use:   val=gmegabuf(index);
+    to set, use:   assign(gmegabuf(index),val);
+
+loop(count, statement)
+  = executes <statement> <count> times. count is evaluated once and clamped
+    to 0..4096. best used with exec2() and exec3() and assign(). Note that
+    the return value of loop() is undefined and should not be used.

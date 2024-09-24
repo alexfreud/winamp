@@ -1,0 +1,49 @@
+#ifndef __PLAYLIST_MI
+#define __PLAYLIST_MI
+
+extern class @{632883FC-159F-4330-B193-CFD62CA47EC1}@ Object &Playlist;
+extern class @{5829EE15-3648-4c6e-B2FE-8736CBBF39DB}@ Object _predecl Playlists;
+extern class @{C18F8E50-2C81-4001-9F46-FD942B07ECCD}@ Object &PlaylistsEnumerator;
+extern class @{C6207729-2600-4bb8-B562-2E0BC04E4416}@ Object _predecl PlaylistManager;
+
+/* ===== Playlist ===== */
+extern Playlist.Clear();
+extern int Playlist.GetNumItems();
+/*
+Retrieve the filename for some item in the playlist
+*/
+extern String Playlist.GetItem(int itemNumber); 
+extern String Playlist.GetItemTitle(int itemNumber);
+extern int Playlist.GetItemLength(int itemNumber);
+extern String Playlist.GetItemExtendedInfo(int itemNumber, String metadata);
+extern Playlist.Reverse();
+extern Playlist.Swap(int item1, int item2);
+extern Playlist.Randomize();
+extern Playlist.Remove(int itemNumber);
+extern Playlist.SortByTitle();
+extern Playlist.SortByFilename();
+
+/* ===== Playlists ===== */
+
+extern PlaylistsEnumerator Playlists.GetEnumerator();
+extern Playlist Playlists.OpenPlaylist(String playlistGUID);
+extern Playlists.SavePlaylist(String playlistGUID, Playlist playlist_to_save);
+
+/* ===== PlaylistsEnumerator ===== */
+
+/* returns the number of playlists in the enumerator object */
+extern int PlaylistsEnumerator.GetCount();
+extern String PlaylistsEnumerator.GetFilename(int playlistNumber);
+extern String PlaylistsEnumerator.GetTitle(int playlistNumber);
+extern int PlaylistsEnumerator.GetLength(int playlistNumber);
+/*
+returns number of items in one of the playlists
+*/
+extern int PlaylistsEnumerator.GetNumItems(int playlistNumber);
+extern String PlaylistsEnumerator.GetGUID(int playlistNumber);
+
+/* ===== Playlist Manager ===== */
+extern Playlist PlaylistManager.OpenPlaylist(String filename);
+extern PlaylistManager.SavePlaylist(String filename, Playlist playlist_to_save);
+
+#endif

@@ -1,0 +1,3 @@
+<container id="MLibrary" name="Media Library" dynamic="1" component="guid:{6B0EDF80-C9A5-11D3-9F26-00C04F39FFC6}" default_x="0" default_y="164" default_visible="@HAVE_LIBRARY@">
+  <include file="ml-normal.xml"/>
+</container>

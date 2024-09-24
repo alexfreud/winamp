@@ -1,0 +1,12 @@
+The dynamic distance modifier allows you to dynamically (once per frame)
+change the source pixels for each ring of pixels out from the center.
+In the 'pixel' code section, 'd' represents the distance in pixels
+the current ring is from the center, and code can modify it to
+change the distance from the center where the source pixels for
+that ring would be read. This is a terrible explanation, and if
+you want to make a better one send it to me.
+
+Examples:
+Zoom in: 'd=d*0.9'
+Zoom out: 'd=d*1.1'
+Back and forth: pixel='d=d*(1.0+0.1*cos(t));', frame='t=t+0.1'

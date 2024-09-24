@@ -1,0 +1,50 @@
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+IDR_WELCOME_WIDGET_IMAGE  RCDATA
+".\\resources\\devices.png" 
+IDR_SPACEBAR_IMAGE RCDATA
+".\\resources\\spacebar.png" 
+IDR_CATEGORY_ARROWS_IMAGE RCDATA
+".\\resources\\arrows.png" 
+IDR_ITEM_HOVER_IMAGE RCDATA
+".\\resources\\item-hover.png" 
+IDR_ITEM_SELECT_IMAGE RCDATA
+".\\resources\\item-select.png" 
+IDR_COMMAND_BACKGROUND_IMAGE RCDATA
+".\\resources\\command-bg.png" 
+IDR_COMMAND_SECONDARY_BACKGROUND_IMAGE RCDATA
+".\\resources\\command-secondary-bg.png" 
+IDR_PROGRESS_LARGE_IMAGE RCDATA
+".\\resources\\progress-large.png" 
+IDR_PROGRESS_SMALL_IMAGE RCDATA
+".\\resources\\progress-small.png" 
+IDR_ACTION_BACKGROUND_IMAGE RCDATA
+".\\resources\\action-bg.png" 
+IDR_GENERIC_DEVICE_160x160_IMAGE RCDATA
+".\\resources\\generic-device-160x160.png" 
+IDR_GENERIC_DEVICE_16x16_IMAGE RCDATA
+".\\resources\\generic-device-16x16.png" 
+IDR_UNKNOWN_COMMAND_LARGE_IMAGE RCDATA
+".\\resources\\unknown-command-large.png"
+IDR_SYNC_COMMAND_LARGE_IMAGE RCDATA
+".\\resources\\sync-command-large.png"
+IDR_SYNC_COMMAND_SMALL_IMAGE RCDATA
+".\\resources\\sync-command-small.png"
+IDR_CANCEL_SYNC_COMMAND_SMALL_IMAGE RCDATA
+".\\resources\\cancel-sync-command-small.png"
+IDR_ATTACH_COMMAND_LARGE_IMAGE RCDATA
+".\\resources\\attach-command-large.png"
+IDR_ATTACH_COMMAND_SMALL_IMAGE RCDATA
+".\\resources\\attach-command-small.png"
+IDR_DETACH_COMMAND_LARGE_IMAGE RCDATA
+".\\resources\\detach-command-large.png"
+IDR_DETACH_COMMAND_SMALL_IMAGE RCDATA
+".\\resources\\detach-command-small.png"
+IDR_EJECT_COMMAND_SMALL_IMAGE RCDATA
+".\\resources\\eject-command-small.png"
+IDR_WELCOME_WIDGET_TITLE_IMAGE RCDATA
+".\\resources\\devices-title-en.png"
+

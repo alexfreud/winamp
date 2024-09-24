@@ -1,0 +1,2329 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(WA3_COMPONENT)
+#if defined(APSTUDIO_INVOKED)
+IDB_TAB_NORMAL$(WA3_COMPONENT) RCDATA  DISCARDABLE     "avs-normal.png"
+#else
+IDB_TAB_NORMAL          RCDATA  DISCARDABLE     "avs-normal.png"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(WA3_COMPONENT)
+#if defined(APSTUDIO_INVOKED)
+IDB_TAB_HILITED$(WA3_COMPONENT) RCDATA  DISCARDABLE     "avs-hilited.png"
+#else
+IDB_TAB_HILITED         RCDATA  DISCARDABLE     "avs-hilited.png"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(WA3_COMPONENT)
+#if defined(APSTUDIO_INVOKED)
+IDB_TAB_SELECTED$(WA3_COMPONENT) RCDATA  DISCARDABLE     "avs-selected.png"
+#else
+IDB_TAB_SELECTED        RCDATA  DISCARDABLE     "avs-selected.png"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 400, 241
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Winamp AVS Editor"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "-",IDC_REMSEL,121,2,14,12
+    PUSHBUTTON      "+",IDC_ADD,4,2,14,12
+    PUSHBUTTON      "x2",IDC_CLONESEL,22,2,14,12,BS_CENTER
+    CONTROL         "",IDC_EFFECTRECT,"Static",SS_BLACKRECT | NOT WS_VISIBLE,
+                    145,9,245,214
+    GROUPBOX        "No effect/setting selected",IDC_EFNAME,139,0,257,229
+    LTEXT           "",IDC_FPS,2,230,374,8
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | WS_BORDER | 
+                    WS_TABSTOP,4,18,131,137
+    CONTROL         "",IDC_RRECT,"Static",SS_BLACKRECT | SS_NOTIFY,4,159,131,69
+END
+
+IDD_CFG_SIMPLE DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Spectrum",IDC_SA,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,6,13,60,8
+    CONTROL         "Oscilliscope",IDC_OSC,"Button",BS_AUTORADIOBUTTON,70,13,65,8
+    CONTROL         "Lines",IDC_LINES,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,6,26,41,8
+    CONTROL         "Solid",IDC_SOLID,"Button",BS_AUTORADIOBUTTON,51,26,40,8
+    CONTROL         "Dots",IDC_DOT,"Button",BS_AUTORADIOBUTTON,95,26,40,8
+    CONTROL         "Left Channel",IDC_LEFTCH,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,57,75,8
+    CONTROL         "Right Channel",IDC_RIGHTCH,"Button",BS_AUTORADIOBUTTON,
+                    6,69,75,8
+    CONTROL         "Center Channel",IDC_MIDCH,"Button",BS_AUTORADIOBUTTON,6,80,75,8
+    CONTROL         "Top",IDC_TOP,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,110,57,45,10
+    CONTROL         "Bottom",IDC_BOTTOM,"Button",BS_AUTORADIOBUTTON,110,69,45,10
+    CONTROL         "Center",IDC_CENTER,"Button",BS_AUTORADIOBUTTON,110,80,45,10
+    GROUPBOX        "Effect options",IDC_STATIC,0,45,245,51
+    EDITTEXT        IDC_NUMCOL,53,110,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW,6,122,127,11
+    GROUPBOX        "Render Effect",IDC_STATIC,0,2,245,39
+    GROUPBOX        "Colors",IDC_STATIC,0,101,137,36
+    LTEXT           "Cycle through ",IDC_STATIC,7,112,46,8
+    LTEXT           "colors (max 16)",IDC_STATIC,77,112,48,8
+END
+
+IDD_CFG_FADE DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,3,9,129,13
+    CONTROL         "fade to color",IDC_LC,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,0,51,78,20
+    GROUPBOX        "Fade velocity",IDC_STATIC,0,0,137,47
+    LTEXT           "None .. slow",IDC_STATIC,7,25,40,8
+    LTEXT           "..fast",IDC_STATIC,110,25,16,8
+END
+
+IDD_CFG_BLT DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP,4,10,128,13
+    CONTROL         "Enable on-beat changes",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX,5,51,93,10
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP,4,63,128,13
+    GROUPBOX        "Blitter direction (onbeat)",IDC_STATIC,0,41,137,50
+    CONTROL         "Blend blitter",IDC_BLEND,"Button",BS_AUTOCHECKBOX,0,95,
+                    53,10
+    GROUPBOX        "Blitter direction",IDC_STATIC,0,0,137,38
+    LTEXT           "Zooming in",IDC_STATIC,8,26,36,8
+    LTEXT           "Zooming out",IDC_STATIC,88,26,40,8
+    LTEXT           "Zooming in",IDC_STATIC,8,78,36,8
+    LTEXT           "Zooming out",IDC_STATIC,88,78,40,8
+    CONTROL         "Bilinear filtering",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,104,63,10
+END
+
+IDD_CFG_DOTPLANE DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,6,17,95,15
+    PUSHBUTTON      "zero",IDC_BUTTON1,103,15,28,10
+    CONTROL         "Slider1",IDC_ANGLE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,6,45,126,15
+    CONTROL         "Top",IDC_C1,"Button",BS_OWNERDRAW | WS_TABSTOP,7,79,41,
+                    10
+    CONTROL         "High",IDC_C2,"Button",BS_OWNERDRAW | WS_TABSTOP,7,90,41,
+                    10
+    CONTROL         "Mid",IDC_C3,"Button",BS_OWNERDRAW | WS_TABSTOP,7,101,41,
+                    10
+    CONTROL         "Low",IDC_C4,"Button",BS_OWNERDRAW | WS_TABSTOP,7,112,41,
+                    10
+    CONTROL         "Bottom",IDC_C5,"Button",BS_OWNERDRAW | WS_TABSTOP,7,123,
+                    41,10
+    GROUPBOX        "Rotation",IDC_STATIC,0,0,137,36
+    LTEXT           "Left",IDC_STATIC,12,9,13,8
+    LTEXT           "Right",IDC_STATIC,80,9,18,8
+    GROUPBOX        "Dot colors",IDC_STATIC,0,69,53,68
+    GROUPBOX        "Angle",IDC_STATIC,0,36,137,29
+END
+
+IDD_CFG_OSCSTAR DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,4,10,128,13
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,3,43,128,13
+    CONTROL         "Left Channel",IDC_LEFTCH,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,8,68,56,10
+    CONTROL         "Right Channel",IDC_RIGHTCH,"Button",BS_AUTORADIOBUTTON,
+                    8,78,61,10
+    CONTROL         "Center Channel",IDC_MIDCH,"Button",BS_AUTORADIOBUTTON,8,
+                    88,65,10
+    CONTROL         "Left",IDC_TOP,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,86,68,28,10
+    CONTROL         "Right",IDC_BOTTOM,"Button",BS_AUTORADIOBUTTON,86,78,33,
+                    10
+    CONTROL         "Center",IDC_CENTER,"Button",BS_AUTORADIOBUTTON,86,88,37,
+                    10
+    EDITTEXT        IDC_NUMCOL,53,107,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,6,122,
+                    127,11
+    GROUPBOX        "Star size",IDC_STATIC,0,0,137,39
+    GROUPBOX        "Rotation",IDC_STATIC,0,34,137,30
+    GROUPBOX        "Star source and position",IDC_STATIC,0,59,137,42
+    GROUPBOX        "Colors",IDC_STATIC,0,101,137,36
+    LTEXT           "Cycle through ",IDC_STATIC,7,109,46,8
+    LTEXT           "colors (max 16)",IDC_STATIC,77,109,48,8
+    LTEXT           "Small",IDC_STATIC,8,24,18,8
+    LTEXT           "Large",IDC_STATIC,106,25,19,8
+END
+
+IDD_CFG_NFC DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,4,9,128,13
+    CONTROL         "Color...",IDC_BUTTON1,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,0,40,46,10
+    CONTROL         "Blend to color",IDC_BLEND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,49,40,59,10
+    GROUPBOX        "Clear every N beats",IDC_STATIC,0,0,137,36
+    LTEXT           "0",IDC_STATIC,7,24,8,8
+    LTEXT           "100",IDC_STATIC,115,24,13,8
+END
+
+IDD_CFG_BLUR DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "No blur",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,2,1,39,10
+    CONTROL         "Light blur",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,2,12,
+                    45,10
+    CONTROL         "Medium blur",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,2,
+                    23,54,10
+    CONTROL         "Heavy blur",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,2,34,
+                    50,10
+    CONTROL         "Round down",IDC_ROUNDDOWN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,3,58,57,10
+    CONTROL         "Round up",IDC_ROUNDUP,"Button",BS_AUTORADIOBUTTON,3,69,
+                    47,10
+END
+
+IDD_CFG_BSPIN DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Left enabled",IDC_LEFT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,0,55,10
+    CONTROL         "Right enabled",IDC_RIGHT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,11,60,10
+    CONTROL         "left color",IDC_LC,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    61,0,40,10
+    CONTROL         "right color",IDC_RC,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    61,11,40,10
+    CONTROL         "Filled Triangles",IDC_TRI,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,23,63,10
+    CONTROL         "Lines",IDC_LINES,"Button",BS_AUTORADIOBUTTON,0,32,33,10
+END
+
+IDD_GCFG_DISP DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Wait for retrace",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,10,65,10
+    CONTROL         "Pixel doubling (half resolution)",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,20,115,10
+    LTEXT           "Windowed performance:",IDC_STATIC,5,33,78,8
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,4,40,127,14
+    LTEXT           "Higher framerate",IDC_STATIC,8,56,54,9
+    CONTROL         "Suppress status text in windowed",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,67,121,10
+    CONTROL         "Suppress title text in windowed",IDC_CHECK5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,77,113,10
+    CONTROL         "Reuse image on window resize",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,88,113,10
+    CONTROL         "Enable (Win2k/XP only)",IDC_TRANS_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,122,99,10
+    CONTROL         "Slider1",IDC_TRANS_SLIDER,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,6,140,119,10
+    CONTROL         "color",IDC_OVERLAYCOLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,146,23,40,10
+    PUSHBUTTON      "default",IDC_DEFOVERLAYCOLOR,190,23,40,10
+    CONTROL         "Set desktop to color",IDC_SETDESKTOPCOLOR,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,146,76,82,11
+    COMBOBOX        IDC_THREAD_PRIORITY,144,138,86,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Projection zones...",IDC_L_PROJZONES,5,169,78,14,NOT 
+                    WS_VISIBLE
+    GROUPBOX        "Windowed settings",IDC_STATIC,0,0,137,104
+    LTEXT           "Lower framerate",IDC_STATIC,77,56,53,8
+    GROUPBOX        "Alpha blending",IDC_STATIC_ALPHA,0,107,137,49
+    LTEXT           "Total",IDC_STATIC_TRANS_TOTAL,5,133,17,8
+    LTEXT           "None",IDC_STATIC_TRANS_NONE,108,133,18,8
+    GROUPBOX        "Laser",IDC_L_FRAME,0,158,232,56,NOT WS_VISIBLE
+    GROUPBOX        "Overlay mode",IDC_STATIC,140,0,93,91
+    CONTROL         "Overlay mode",IDC_BKGND_RENDER,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,145,9,82,11
+    LTEXT           "Note that the overlay color must be carefully selected at non-32bpp color depths.",
+                    IDC_STATIC,148,41,75,33
+    GROUPBOX        "Priority",IDC_STATIC,140,107,93,49
+    LTEXT           "Render thread priority:",IDC_STATIC,145,122,70,8
+    CONTROL         "Suppress laser-related messages",IDC_L_SUPPRESS_DIALOGS,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,
+                    99,188,119,10
+    CONTROL         "Suppress laser output when Winamp or AVS/Laser is not active",
+                    IDC_L_ACTIVEOUTPUT,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,5,198,216,10
+    CONTROL         "Suppress laser output",IDC_L_SUPPRESS_OUTPUT,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,5,187,84,
+                    10
+    CONTROL         "Sync with laser (no call to DBStatus)",IDC_L_SYNC,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,
+                    90,171,130,10
+    GROUPBOX        "SMP support",IDC_THREADSBORDER,1,160,232,29
+    CONTROL         "Experimental multiprocessor support:",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,171,130,10
+    EDITTEXT        IDC_EDIT1,139,170,28,12,ES_AUTOHSCROLL
+    LTEXT           "threads",IDC_THREADS,170,172,24,8
+END
+
+IDD_CFG_PARTS DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "enabled",IDC_LEFT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    0,0,41,10
+    CONTROL         "color",IDC_LC,"Button",BS_OWNERDRAW | WS_TABSTOP,43,0,
+                    40,10
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,5,21,130,16
+    CONTROL         "Slider1",IDC_SLIDER3,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,5,47,130,16
+    CONTROL         "Onbeat sizechange enabled.",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,75,107,10
+    CONTROL         "Slider1",IDC_SLIDER4,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,5,84,130,16
+    CONTROL         "Replace",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,5,114,43,10
+    CONTROL         "Additive",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,51,114,
+                    41,10
+    CONTROL         "50/50",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,93,114,35,
+                    10
+    CONTROL         "Default render blend mode",IDC_RADIO4,"Button",
+                    BS_AUTORADIOBUTTON,5,124,99,9
+    GROUPBOX        "Distance from center",IDC_STATIC,0,13,137,32
+    GROUPBOX        "Particle size",IDC_STATIC,0,40,137,30
+    GROUPBOX        "Particle size (onbeat)",IDC_STATIC,0,65,137,45
+    GROUPBOX        "Blending",IDC_STATIC,0,105,137,32
+END
+
+IDD_CFG_ROTBLT DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,4,10,128,15
+    CONTROL         "Enable on-beat change",IDC_CHECK6,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,28,90,10
+    CONTROL         "Slider1",IDC_SLIDER6,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,4,37,128,13
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,4,78,128,15
+    CONTROL         "Enable on-beat reversal",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,107,91,10
+    CONTROL         "Slider1",IDC_SLIDER5,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,4,115,128,15
+    CONTROL         "Blend blitter",IDC_BLEND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,147,53,10
+    GROUPBOX        "Zoom",IDC_STATIC,0,0,137,146
+    LTEXT           "Zooming in",IDC_STATIC,8,52,36,8
+    LTEXT           "Zooming out",IDC_STATIC,88,52,40,8
+    GROUPBOX        "Rotation",IDC_STATIC,0,69,137,77
+    LTEXT           "Rotating Left",IDC_STATIC,7,96,42,8
+    LTEXT           "Rotating Right",IDC_STATIC,83,96,46,8
+    LTEXT           "Fast reversal",IDC_STATIC,8,132,41,8
+    LTEXT           "Slow reversal",IDC_STATIC,83,132,43,8
+    CONTROL         "Bilinear filtering",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,55,147,63,10
+END
+
+IDC_CFG_SVP DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "SVP/UVS library",IDC_STATIC,0,0,233,34
+    COMBOBOX        IDC_COMBO1,4,12,225,222,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CFG_COLORFADE DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable colorfade",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,0,69,10
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,0,11,100,14
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,0,28,100,14
+    CONTROL         "Slider1",IDC_SLIDER3,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,0,46,100,14
+    CONTROL         "Onbeat Randomize",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,79,73,10
+    CONTROL         "OnBeat Change",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,67,67,10
+    CONTROL         "Slider1",IDC_SLIDER4,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,7,90,100,14
+    CONTROL         "Slider1",IDC_SLIDER5,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,7,107,100,14
+    CONTROL         "Slider1",IDC_SLIDER6,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,7,125,100,14
+END
+
+IDD_CFG_CONTRASTENHANCE DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Off",IDC_OFF,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,0,0,25,10
+    CONTROL         "Below",IDC_BELOW,"Button",BS_AUTORADIOBUTTON,0,10,35,10
+    CONTROL         "Above",IDC_ABOVE,"Button",BS_AUTORADIOBUTTON,0,20,37,10
+    CONTROL         "Near",IDC_NEAR,"Button",BS_AUTORADIOBUTTON,0,30,31,10
+    CONTROL         "Slider1",IDC_DISTANCE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_BORDER | WS_TABSTOP,36,29,101,13
+    CONTROL         "color",IDC_LC,"Button",BS_OWNERDRAW | WS_TABSTOP,0,46,
+                    26,10
+    PUSHBUTTON      "->",IDC_BUTTON1,28,46,17,10
+    CONTROL         "outcolor",IDC_LC2,"Button",BS_OWNERDRAW | WS_TABSTOP,47,
+                    46,37,10
+END
+
+IDD_CFG_ROTSTAR DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NUMCOL,53,6,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW,6,21,127,11
+    GROUPBOX        "Colors",-1,0,0,137,36
+    LTEXT           "Cycle through ",-1,7,8,46,8
+    LTEXT           "colors (max 16)",-1,77,8,48,8
+END
+
+IDD_CFG_OSCRING DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,4,10,128,15
+    CONTROL         "Oscilliscope",IDC_OSC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,8,56,53,10
+    CONTROL         "Spectrum",IDC_SPEC,"Button",BS_AUTORADIOBUTTON,65,56,46,
+                    10
+    CONTROL         "Left Channel",IDC_LEFTCH,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,8,68,56,10
+    CONTROL         "Right Channel",IDC_RIGHTCH,"Button",BS_AUTORADIOBUTTON,
+                    8,78,61,10
+    CONTROL         "Center Channel",IDC_MIDCH,"Button",BS_AUTORADIOBUTTON,8,
+                    88,65,10
+    CONTROL         "Left",IDC_TOP,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,86,68,28,10
+    CONTROL         "Right",IDC_BOTTOM,"Button",BS_AUTORADIOBUTTON,86,78,33,
+                    10
+    CONTROL         "Center",IDC_CENTER,"Button",BS_AUTORADIOBUTTON,86,88,37,
+                    10
+    EDITTEXT        IDC_NUMCOL,53,107,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,6,122,
+                    127,11
+    GROUPBOX        "Ring size",-1,0,0,137,42
+    GROUPBOX        "Ring source and position",-1,0,44,137,57
+    GROUPBOX        "Colors",-1,0,101,137,36
+    LTEXT           "Cycle through ",-1,7,109,46,8
+    LTEXT           "colors (max 16)",-1,77,109,48,8
+    LTEXT           "Small",-1,8,29,18,8
+    LTEXT           "Large",-1,106,30,19,8
+END
+
+IDD_GCFG_PRESET DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO1,5,11,64,203,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "save to hotkey",IDC_BUTTON1,5,26,56,14
+    PUSHBUTTON      "load from hotkey",IDC_BUTTON2,66,26,56,14
+    CONTROL         "Randomly switch presets",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,180,93,10
+    EDITTEXT        IDC_EDIT1,38,191,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "All",IDC_BUTTON3,0,161,233,15,BS_LEFT
+    GROUPBOX        "Hotkeys",IDC_STATIC,0,0,135,112
+    LTEXT           "Note: you can load hotkey settings in the render window by hitting the hotkey. \n\nYou can save hotkey settings in the render window by holding control and hitting the hotkey.",
+                    IDC_STATIC,5,49,114,57
+    LTEXT           "seconds",IDC_STATIC,61,193,28,8
+    LTEXT           "Every",IDC_STATIC,15,193,19,8
+    LTEXT           "Preset (sub) directory to use for random/cycle:",
+                    IDC_STATIC,0,150,146,8
+    CONTROL         "Prompt to save unsaved presets when loading other presets",
+                    IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,0,124,
+                    204,10
+END
+
+IDD_CFG_SCAT DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable scatter effect",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,81,10
+END
+
+IDD_CFG_DOTGRID DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NUMCOL,53,6,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,6,21,
+                    127,11
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,16,47,85,13
+    PUSHBUTTON      "zero",IDC_BUTTON1,103,50,28,10
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,16,65,85,13
+    PUSHBUTTON      "zero",IDC_BUTTON3,103,68,28,10
+    CONTROL         "Replace",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,5,99,43,10
+    CONTROL         "Additive",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,51,99,
+                    41,10
+    CONTROL         "50/50",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,93,99,35,
+                    10
+    CONTROL         "Default render blend mode",IDC_RADIO4,"Button",
+                    BS_AUTORADIOBUTTON,5,109,99,10
+    EDITTEXT        IDC_EDIT1,44,125,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Colors",IDC_STATIC,0,0,137,36
+    LTEXT           "Cycle through ",IDC_STATIC,7,8,46,8
+    LTEXT           "colors (max 16)",IDC_STATIC,77,8,48,8
+    LTEXT           "Dot spacing: ",IDC_STATIC,0,127,43,8
+    LTEXT           "pixels",IDC_STATIC,67,127,18,8
+    GROUPBOX        "Grid movement",IDC_STATIC,0,37,137,52
+    LTEXT           "X",IDC_STATIC,8,50,8,8
+    LTEXT           "Y",IDC_STATIC,8,69,8,8
+    GROUPBOX        "Blending",IDC_STATIC,0,90,137,34
+END
+
+IDD_CFG_STACK DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Save framebuffer",IDC_SAVEFB,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,7,70,10
+    CONTROL         "Restore framebuffer",IDC_RESTFB,"Button",
+                    BS_AUTORADIOBUTTON,5,17,78,10
+    CONTROL         "Alternate Save/Restore",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON,5,28,91,10
+    CONTROL         "Alternate Restore/Save",IDC_RADIO7,"Button",
+                    BS_AUTORADIOBUTTON,5,38,91,10
+    PUSHBUTTON      "Nudge parity",IDC_BUTTON2,100,31,50,14
+    COMBOBOX        IDC_COMBO1,32,53,74,90,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Replace",IDC_RSTACK_BLEND1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,12,79,43,10
+    CONTROL         "50/50",IDC_RSTACK_BLEND2,"Button",BS_AUTORADIOBUTTON,12,
+                    89,35,10
+    CONTROL         "Additive",IDC_RSTACK_BLEND3,"Button",BS_AUTORADIOBUTTON,
+                    12,99,41,10
+    CONTROL         "Every other pixel",IDC_RSTACK_BLEND4,"Button",
+                    BS_AUTORADIOBUTTON,12,109,68,10
+    CONTROL         "Every other line",IDC_RSTACK_BLEND6,"Button",
+                    BS_AUTORADIOBUTTON,12,118,65,10
+    CONTROL         "Subtractive 1",IDC_RSTACK_BLEND5,"Button",
+                    BS_AUTORADIOBUTTON,12,128,58,10
+    CONTROL         "Subtractive 2",IDC_RSTACK_BLEND10,"Button",
+                    BS_AUTORADIOBUTTON,12,138,58,10
+    CONTROL         "Xor",IDC_RSTACK_BLEND7,"Button",BS_AUTORADIOBUTTON,12,
+                    148,27,10
+    CONTROL         "Maximum",IDC_RSTACK_BLEND8,"Button",BS_AUTORADIOBUTTON,
+                    12,158,45,10
+    CONTROL         "Minimum",IDC_RSTACK_BLEND9,"Button",BS_AUTORADIOBUTTON,
+                    12,168,43,10
+    CONTROL         "Multiply",IDC_RSTACK_BLEND11,"Button",
+                    BS_AUTORADIOBUTTON,12,178,39,10
+    CONTROL         "Adjustable:",IDC_RSTACK_BLEND12,"Button",
+                    BS_AUTORADIOBUTTON,12,188,51,10
+    CONTROL         "Slider2",IDC_BLENDSLIDE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,62,188,111,11
+    PUSHBUTTON      "Clear buffer",IDC_BUTTON1,99,11,50,14
+    GROUPBOX        "Blending",IDC_STATIC,8,68,172,138
+    LTEXT           "Buffer:",IDC_STATIC,8,55,22,8
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 205, 150
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About AVS"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,77,129,50,14
+    LTEXT           "version string",IDC_VERSTR,7,7,191,8
+    LTEXT           "Copyright (C) 1998-2023 Winamp SA",IDC_STATIC,7,16,191,8
+    CTEXT           "Justin Frankel, Francis Gastellu, Christophe Thibault\r\nBrennan Underwood && mig",
+                    IDC_STATIC,22,85,168,19
+    LTEXT           "Portions Copyright (C) 2010 Cockos Incorporated\r\r\nThis software is BSD-licensed open source.",
+                    IDC_STATIC,7,26,191,26
+    CTEXT           "You are welcome to use AVS at parties, clubs, concerts, and whatnot. Just give credit where credit is due.",
+                    IDC_STATIC,7,54,191,17
+    LTEXT           "Love,",IDC_STATIC,7,74,19,8
+    CTEXT           "Special thanks to Steven Wittens and Tom Holden for their contributions.",
+                    IDC_STATIC,7,107,191,19
+END
+
+IDD_CFG_WATER DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Water effect",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,79,10
+END
+
+IDD_CFG_COMMENT DIALOGEX 0, 0, 233, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,0,0,233,214,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_CFG_BRIGHTNESS DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Brightness filter",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,87,10
+    CONTROL         "Slider1",IDC_RED,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_BORDER | WS_TABSTOP,25,13,97,13
+    PUSHBUTTON      "><",IDC_BRED,125,12,12,14
+    CONTROL         "Slider1",IDC_GREEN,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_BORDER | WS_TABSTOP,25,28,97,13
+    PUSHBUTTON      "><",IDC_BGREEN,125,28,12,14
+    CONTROL         "Slider1",IDC_BLUE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_BORDER | WS_TABSTOP,25,44,97,13
+    PUSHBUTTON      "><",IDC_BBLUE,125,44,12,14
+    CONTROL         "Dissociate RGB values",IDC_DISSOC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,60,89,10
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,71,43,10
+    CONTROL         "Additive blend",IDC_ADDITIVE,"Button",
+                    BS_AUTORADIOBUTTON,0,81,61,10
+    CONTROL         "Blend 50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,0,92,
+                    55,10
+    CONTROL         "Exclude color range",IDC_EXCLUDE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,103,79,10
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,0,114,
+                    29,13
+    CONTROL         "Slider1",IDC_DISTANCE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_BORDER | WS_TABSTOP,31,114,106,13
+    LTEXT           "Red",IDC_STATIC,0,15,14,8
+    LTEXT           "Blue",IDC_STATIC,0,47,15,8
+    LTEXT           "Green",IDC_STATIC,0,31,20,8
+END
+
+IDD_CFG_INTERLEAVE DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Interleave effect",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,91,10
+    CONTROL         "Slider1",IDC_X,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_BORDER | WS_TABSTOP,0,12,137,13
+    CONTROL         "Slider1",IDC_Y,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_BORDER | WS_TABSTOP,0,27,137,13
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,0,43,
+                    137,13
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,58,43,10
+    CONTROL         "50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,42,58,35,10
+    CONTROL         "Add",IDC_ADDITIVE,"Button",BS_AUTORADIOBUTTON,77,58,29,
+                    10
+    CONTROL         "OnBeat",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,70,40,10
+    CONTROL         "Slider1",IDC_X2,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_BORDER | WS_TABSTOP,0,83,137,13
+    CONTROL         "Slider1",IDC_Y2,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_BORDER | WS_TABSTOP,0,98,137,13
+    CONTROL         "Slider1",IDC_X3,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_BORDER | WS_TABSTOP,41,112,95,13
+    LTEXT           "Duration",IDC_STATIC,3,115,32,8
+END
+
+IDD_CFG_GRAIN DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Grain filter",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,71,10
+    CONTROL         "Slider1",IDC_MAX,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_BORDER | WS_TABSTOP,0,12,137,13
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,28,43,10
+    CONTROL         "Additive blend",IDC_ADDITIVE,"Button",
+                    BS_AUTORADIOBUTTON,0,38,61,10
+    CONTROL         "Blend 50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,0,49,
+                    55,10
+    CONTROL         "Static grain",IDC_STATGRAIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,60,51,10
+END
+
+IDD_CFG_CLEAR DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Clear screen",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,79,10
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,0,15,
+                    137,13
+    CONTROL         "First frame only",IDC_CLEARFIRSTFRAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,30,63,10
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,41,43,10
+    CONTROL         "Additive blend",IDC_ADDITIVE,"Button",
+                    BS_AUTORADIOBUTTON,0,51,61,10
+    CONTROL         "Blend 50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,0,61,
+                    55,10
+    CONTROL         "Default render blend mode",IDC_DEFRENDBLEND,"Button",
+                    BS_AUTORADIOBUTTON,0,71,99,10
+END
+
+IDD_CFG_MIRROR DIALOGEX 0, 0, 245, 213
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Mirror effect",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,77,10
+    CONTROL         "Static",IDC_STAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,0,20,34,10
+    CONTROL         "OnBeat random",IDC_ONBEAT,"Button",BS_AUTORADIOBUTTON,0,
+                    29,65,10
+    CONTROL         "Copy Top to Bottom",IDC_HORIZONTAL1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,44,79,10
+    CONTROL         "Copy Bottom to Top",IDC_HORIZONTAL2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,54,88,9
+    CONTROL         "Copy Left to Right",IDC_VERTICAL1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,63,88,10
+    CONTROL         "Copy Right to Left",IDC_VERTICAL2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,73,98,10
+    CONTROL         "Smooth transitions",IDC_SMOOTH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,90,73,10
+    CONTROL         "Slider1",IDC_SLOWER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_BORDER | WS_TABSTOP,0,103,137,11
+    GROUPBOX        "",IDC_STATIC,0,36,137,51
+    LTEXT           "Faster",IDC_STATIC,0,114,20,8
+    LTEXT           "Slower",IDC_STATIC,115,114,22,8
+END
+
+IDD_CFG_STARFIELD DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Starfield",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,0,65,10
+    CONTROL         "Slider1",IDC_SPEED,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,0,13,137,11
+    CONTROL         "Slider2",IDC_NUMSTARS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,0,32,137,11
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,52,43,10
+    CONTROL         "Additive blend",IDC_ADDITIVE,"Button",
+                    BS_AUTORADIOBUTTON,0,62,61,10
+    CONTROL         "Blend 50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,0,72,
+                    55,10
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,100,57,
+                    37,15
+    CONTROL         "OnBeat Speed changes",IDC_ONBEAT2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,82,92,10
+    CONTROL         "Slider1",IDC_SPDCHG,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,0,93,137,11
+    CONTROL         "Slider2",IDC_SPDDUR,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,0,112,137,11
+    LTEXT           "Fast",IDC_STATIC,123,23,14,8
+    LTEXT           "Slow",IDC_STATIC,0,23,16,8
+    LTEXT           "More stars",IDC_STATIC,103,42,34,8
+    LTEXT           "Fewer stars",IDC_STATIC,0,42,37,8
+    LTEXT           "Faster",IDC_STATIC,117,103,20,8
+    LTEXT           "Slower",IDC_STATIC,0,103,22,8
+    LTEXT           "Longer",IDC_STATIC,114,122,23,8
+    LTEXT           "Shorter",IDC_STATIC,0,122,24,8
+END
+
+IDD_CFG_TEXT DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Text",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,1,51,10
+    CONTROL         "OnBeat",IDC_ONBEAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,11,40,10
+    CONTROL         "Slider1",IDC_SPEED,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,57,1,102,11
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,21,43,10
+    CONTROL         "Additive blend",IDC_ADDITIVE,"Button",
+                    BS_AUTORADIOBUTTON,42,21,61,10
+    CONTROL         "Blend 50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,103,
+                    21,55,10
+    CONTROL         "Color",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,5,
+                    45,32,11
+    CONTROL         "Outline/Shadow color",IDC_DEFOUTCOL,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,5,76,109,11
+    PUSHBUTTON      "Choose font",IDC_CHOOSEFONT,43,45,57,11
+    CONTROL         "Random",IDC_RANDOMPOS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,113,43,10
+    CONTROL         "Left",IDC_HLEFT,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,14,133,28,10
+    CONTROL         "Center",IDC_HCENTER,"Button",BS_AUTORADIOBUTTON,14,143,
+                    33,10
+    CONTROL         "Right",IDC_HRIGHT,"Button",BS_AUTORADIOBUTTON,14,154,29,
+                    10
+    CONTROL         "Slider1",IDC_HSHIFT,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,8,165,37,10
+    PUSHBUTTON      "><",IDC_HRESET,48,166,9,9
+    CONTROL         "Top",IDC_VTOP,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,71,135,29,10
+    CONTROL         "Center",IDC_VCENTER,"Button",BS_AUTORADIOBUTTON,71,146,
+                    33,10
+    CONTROL         "Bottom",IDC_VBOTTOM,"Button",BS_AUTORADIOBUTTON,71,157,
+                    34,10
+    CONTROL         "Slider1",IDC_VSHIFT,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,112,130,9,35
+    PUSHBUTTON      "><",IDC_VRESET,112,166,9,9
+    CONTROL         "insert blanks",IDC_BLANKS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,165,191,55,10
+    CONTROL         "Slider1",IDC_OUTLINESIZE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,85,89,42,9
+    CONTROL         "Plain",IDC_PLAIN,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,5,62,29,10
+    CONTROL         "Outlined",IDC_OUTLINE,"Button",BS_AUTORADIOBUTTON,37,62,
+                    39,10
+    CONTROL         "Shadowed",IDC_SHADOW,"Button",BS_AUTORADIOBUTTON,81,62,
+                    46,10
+    CONTROL         "random ordering",IDC_RANDWORD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,98,191,67,10
+    EDITTEXT        IDC_EDIT,0,202,233,12,ES_AUTOHSCROLL
+    GROUPBOX        "Horizontal",IDC_STATIC,6,124,56,55,WS_GROUP
+    LTEXT           "Fast",IDC_STATIC,61,11,14,8
+    LTEXT           "Slow",IDC_STATIC,140,11,16,8
+    GROUPBOX        "Vertical",IDC_STATIC,65,124,61,55,WS_GROUP
+    LTEXT           "Text to display (';' separated) :",IDC_STATIC,0,191,94,
+                    8
+    GROUPBOX        "Text positioning",IDC_STATIC,0,103,138,83
+    GROUPBOX        "Text style",IDC_STATIC,0,34,138,68
+    LTEXT           "Outline/Shadow amount:",IDC_STATIC,5,89,80,8
+    LTEXT           "In the text, one can use $(title) to get the current track title, $(title:n) to get the title with playlist entry number, $(title:32) to get the first 32 characters of the title, $(title:n32) to get the first 32 characters of the title+track number. ",
+                    IDC_STATIC,142,38,86,72
+    LTEXT           "Also of use, $(reg00) or $(reg00:1.3) (formats like 2.000), and $(playpos) and $(playlen) and $(playpos.1) and $(playpos.3). Ok so this needs better explanation, but that'll come later.",
+                    IDC_STATIC,142,115,86,64
+END
+
+IDD_CFG_BUMP DIALOG  0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Enable Bump",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,0,56,10
+    CONTROL         "Invert depth",IDC_INVERTDEPTH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,10,54,10
+    CONTROL         "Slider1",IDC_DEPTH,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,58,11,79,11
+    CONTROL         "Show Dot",IDC_DOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    0,20,47,10
+    LTEXT           "Flat",IDC_STATIC,61,22,12,8
+    LTEXT           "Bumpy",IDC_STATIC,115,22,22,8
+    LTEXT           "Light position:",IDC_STATIC,0,38,44,8
+    LTEXT           "init",IDC_STATIC,0,63,10,8
+    EDITTEXT        IDC_CODE3,24,52,209,33,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "expression help",IDC_HELPBTN,52,36,71,12
+    EDITTEXT        IDC_CODE1,24,87,209,48,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_CODE2,24,136,209,40,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    COMBOBOX        IDC_COMBO1,52,179,85,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,148,0,43,10
+    CONTROL         "OnBeat",IDC_ONBEAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,198,40,10
+    CONTROL         "Additive blend",IDC_ADDITIVE,"Button",
+                    BS_AUTORADIOBUTTON,148,9,61,10
+    CONTROL         "Blend 50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,148,
+                    19,55,10
+    CONTROL         "Slider2",IDC_BEATDUR,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,44,196,67,11
+    CONTROL         "Slider1",IDC_DEPTH2,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,114,196,67,11
+    LTEXT           "Bumpy",IDC_STATIC,159,207,22,8
+    LTEXT           "Flat",IDC_STATIC,117,207,12,8
+    LTEXT           "Longer",IDC_STATIC,84,207,23,8
+    LTEXT           "Shorter",IDC_STATIC,44,207,24,8
+    LTEXT           "frame",IDC_STATIC,0,108,18,8
+    LTEXT           "beat",IDC_STATIC,1,151,15,8
+    LTEXT           "Depth buffer :",IDC_STATIC,0,181,44,8
+END
+
+IDD_CFG_MOSAIC DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Mosaic",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,0,65,10
+    CONTROL         "Slider1",IDC_QUALITY,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,0,13,137,11
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,33,43,10
+    CONTROL         "Additive blend",IDC_ADDITIVE,"Button",
+                    BS_AUTORADIOBUTTON,0,43,61,10
+    CONTROL         "Blend 50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,0,53,
+                    55,10
+    CONTROL         "OnBeat",IDC_ONBEAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,63,40,10
+    CONTROL         "Slider1",IDC_QUALITY2,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,0,74,137,11
+    CONTROL         "Slider2",IDC_BEATDUR,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,0,93,137,11
+    LTEXT           "Smaller squares",IDC_STATIC,87,23,50,8
+    LTEXT           "Bigger squares",IDC_STATIC,0,23,48,8
+    LTEXT           "Smaller",IDC_STATIC,113,84,24,8
+    LTEXT           "Bigger",IDC_STATIC,0,84,21,8
+    LTEXT           "Longer",IDC_STATIC,114,103,23,8
+    LTEXT           "Shorter",IDC_STATIC,0,103,24,8
+END
+
+IDD_CFG_WATERBUMP DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Water bump effect",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,99,10
+    CONTROL         "Slider1",IDC_DAMP,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,5,21,130,12
+    CONTROL         "Random drop position",IDC_RANDOM_DROP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,2,51,85,10
+    CONTROL         "Left",IDC_DROP_LEFT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,72,28,10
+    CONTROL         "Center",IDC_DROP_CENTER,"Button",BS_AUTORADIOBUTTON,46,
+                    72,37,10
+    CONTROL         "Right",IDC_DROP_RIGHT,"Button",BS_AUTORADIOBUTTON,95,72,
+                    33,10
+    CONTROL         "Top",IDC_DROP_TOP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,84,29,10
+    GROUPBOX        "Drop position",-1,0,61,137,36
+    CONTROL         "Middle",IDC_DROP_MIDDLE,"Button",BS_AUTORADIOBUTTON,46,
+                    84,37,10
+    CONTROL         "Bottom",IDC_DROP_BOTTOM,"Button",BS_AUTORADIOBUTTON,95,
+                    84,38,10
+    CONTROL         "Slider1",IDC_DEPTH,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,5,108,56,12
+    CONTROL         "Slider1",IDC_RADIUS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,74,108,58,12
+    LTEXT           "Thicker",-1,3,34,25,8
+    LTEXT           "Fluid",-1,118,34,16,8
+    GROUPBOX        "Water density",-1,0,11,137,36
+    LTEXT           "Less",-1,3,120,16,8
+    LTEXT           "More",-1,44,120,17,8
+    GROUPBOX        "Drop depth",-1,0,98,67,36
+    LTEXT           "Small",-1,75,120,18,8
+    LTEXT           "Big",-1,120,120,11,8
+    GROUPBOX        "Drop radius",-1,70,98,67,36
+END
+
+IDD_CFG_AVI DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        OBJ_COMBO,0,12,233,92,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_UPPERCASE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,29,43,10
+    CONTROL         "Additive blend",IDC_ADDITIVE,"Button",
+                    BS_AUTORADIOBUTTON,0,39,61,10
+    CONTROL         "Blend 50/50 + OnBeat Additive",IDC_ADAPT,"Button",
+                    BS_AUTORADIOBUTTON,0,59,115,10
+    CONTROL         "Blend 50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,0,49,
+                    55,10
+    CONTROL         "Slider1",IDC_PERSIST,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,6,79,222,19
+    CONTROL         "Slider1",IDC_SPEED,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,6,121,222,19
+    CONTROL         "Enable AVI stream",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,0,74,10
+    GROUPBOX        "Beat persistance",IDC_PERSIST_TITLE,0,70,233,31
+    GROUPBOX        "Speed",IDC_STATIC,0,102,233,43
+    LTEXT           "Faster",IDC_STATIC,6,112,20,8
+    LTEXT           "Slower",IDC_STATIC,206,112,22,8
+END
+
+IDD_CFG_UNKN DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,0,0,233,31,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+END
+
+IDD_CFG_BPM DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable BPM Customizer",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,137,10
+    CONTROL         "Arbitrary",IDC_ARBITRARY,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,14,41,10
+    CONTROL         "Slider1",IDC_ARBVAL,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,38,14,65,11
+    CONTROL         "Skip",IDC_SKIP,"Button",BS_AUTORADIOBUTTON,0,24,30,10
+    CONTROL         "Slider1",IDC_SKIPVAL,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,38,24,65,11
+    CONTROL         "Reverse",IDC_INVERT,"Button",BS_AUTORADIOBUTTON,0,34,43,
+                    10
+    LTEXT           "First skip",IDC_STATIC,0,45,28,8
+    CONTROL         "Slider1",IDC_SKIPFIRST,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,38,45,65,11
+    CONTROL         "Slider1",IDC_IN,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,13,56,124,11
+    CONTROL         "Slider1",IDC_OUT,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,13,66,124,11
+    LTEXT           "1s",IDC_ARBTXT,103,15,34,8
+    LTEXT           "1 beat",IDC_SKIPTXT,103,24,34,8
+    LTEXT           "In",IDC_STATIC,0,57,8,8
+    LTEXT           "Out",IDC_STATIC,0,67,12,8
+    LTEXT           "1 beat",IDC_SKIPFIRSTTXT,103,45,34,8
+END
+
+IDD_GCFG_BPM DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Standard",IDC_BPMSTD,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,4,11,45,10
+    CONTROL         "Advanced",IDC_BPMADV,"Button",BS_AUTORADIOBUTTON,4,21,
+                    49,10
+    CONTROL         "Slider1",IDC_IN,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,55,11,79,11
+    CONTROL         "Slider1",IDC_OUT,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,55,21,79,11
+    LTEXT           "Current BPM :",IDC_CURBPM,8,43,45,8
+    CONTROL         "Auto-keep",IDC_STICKY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,61,49,10
+    PUSHBUTTON      "Reset",IDC_RESET,7,80,23,10
+    PUSHBUTTON      "Keep",IDC_STICK,34,80,29,10
+    PUSHBUTTON      "Readapt",IDC_UNSTICK,66,80,29,10
+    GROUPBOX        "New Song",IDC_STATIC,8,90,121,32
+    CONTROL         "Adapt from known BPM",IDC_NEWADAPT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,13,99,91,10
+    CONTROL         "Restart learning from scratch",IDC_NEWRESET,"Button",
+                    BS_AUTORADIOBUTTON,13,109,106,10
+    GROUPBOX        "Advanced status",IDC_STATIC,4,33,128,92
+    LTEXT           "",IDC_BPM,55,43,70,8
+    LTEXT           "Confidence :",IDC_CURCONF,8,52,41,8
+    LTEXT           "",IDC_CONFIDENCE,55,52,71,8
+    GROUPBOX        "Beat detection settings",IDC_STATIC,0,0,137,130
+    CONTROL         "Predict only if bpm has been found",IDC_ONLYSTICKY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,70,121,10
+END
+
+IDD_CFG_PICTURE DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Picture rendering",IDC_ENABLED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,93,10
+    COMBOBOX        OBJ_COMBO,1,14,232,223,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,30,43,10
+    CONTROL         "Additive blend",IDC_ADDITIVE,"Button",
+                    BS_AUTORADIOBUTTON,0,41,61,10
+    CONTROL         "Blend 50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,0,52,
+                    55,10
+    CONTROL         "Blend 50/50 + OnBeat Additive",IDC_ADAPT,"Button",
+                    BS_AUTORADIOBUTTON,0,63,115,10
+    CONTROL         "Slider1",IDC_PERSIST,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,6,92,125,19
+    CONTROL         "Keep aspect ratio",IDC_RATIO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,2,121,71,10
+    CONTROL         "On X-Axis",IDC_X_RATIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,20,136,47,10
+    CONTROL         "On Y-Axis",IDC_Y_RATIO,"Button",BS_AUTORADIOBUTTON,20,
+                    147,47,10
+    GROUPBOX        "Beat persistance",IDC_PERSIST_TITLE,0,73,137,42
+    LTEXT           "Fast",IDC_PERSIST_TEXT1,4,83,14,8
+    LTEXT           "Long",IDC_PERSIST_TEXT2,115,83,17,8
+END
+
+IDD_CFG_TRANS DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,101,0,132,142,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,0,144,233,70,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    CONTROL         "Rectangular coordinates for user defined code",
+                    IDC_CHECK3,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,0,114,100,15
+    CONTROL         "Blend",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    0,18,34,10
+    CONTROL         "Source map",IDC_CHECK2,"Button",BS_AUTO3STATE | 
+                    WS_TABSTOP,0,0,54,10
+    CONTROL         "Bilinear filtering",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,27,61,10
+    CONTROL         "Wrap",IDC_WRAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,0,
+                    9,33,10
+    PUSHBUTTON      "expression help",IDC_BUTTON2,0,97,55,15,BS_MULTILINE
+    LTEXT           "User defined code:",IDC_LABEL1,0,134,61,8
+END
+
+IDD_CFG_DDM DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT4,25,0,208,39,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT2,25,38,208,53,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,25,91,208,53,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT1,25,144,208,53,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Blend",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    0,204,34,10
+    CONTROL         "Bilinear filtering",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,38,204,63,10
+    PUSHBUTTON      "expression help",IDC_BUTTON1,171,200,62,14,BS_MULTILINE
+    LTEXT           "pixel",IDC_STATIC,0,166,15,8
+    LTEXT           "frame",IDC_STATIC,0,60,18,8
+    LTEXT           "beat",IDC_STATIC,0,113,15,8
+    LTEXT           "init",IDC_STATIC,0,14,10,8
+END
+
+IDD_CFG_SSCOPE DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT4,25,0,208,26,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT2,25,26,208,46,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,25,72,208,38,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT1,25,110,208,56,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Waveform",IDC_WAVE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,5,178,49,10
+    CONTROL         "Spectrum",IDC_SPEC,"Button",BS_AUTORADIOBUTTON,55,178,
+                    46,10
+    CONTROL         "Left",IDC_LEFTCH,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,5,189,28,10
+    CONTROL         "Center",IDC_MIDCH,"Button",BS_AUTORADIOBUTTON,36,189,37,
+                    10
+    CONTROL         "Right",IDC_RIGHTCH,"Button",BS_AUTORADIOBUTTON,76,189,
+                    33,10
+    EDITTEXT        IDC_NUMCOL,47,202,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,125,202,
+                    108,11
+    PUSHBUTTON      "Load example...",IDC_BUTTON1,176,170,57,14
+    LTEXT           "Cycle through ",IDC_STATIC,0,204,46,8
+    LTEXT           "point",IDC_STATIC,0,131,16,8
+    LTEXT           "frame",IDC_STATIC,1,41,18,8
+    LTEXT           "colors (max 16)",IDC_STATIC,71,204,48,8
+    LTEXT           "Source data: ",IDC_STATIC,0,168,44,8
+    LTEXT           "init",IDC_STATIC,0,9,10,8
+    CONTROL         "Dots",IDC_DOT,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,166,188,31,10
+    CONTROL         "Lines",IDC_LINES,"Button",BS_AUTORADIOBUTTON,200,188,33,
+                    10
+    LTEXT           "Draw as:",IDC_STATIC,132,188,29,8
+    PUSHBUTTON      "expression help",IDC_BUTTON2,107,170,67,14,BS_MULTILINE
+    LTEXT           "beat",IDC_STATIC,0,87,15,8
+END
+
+IDD_CFG_INVERT DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Invert colors",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,79,10
+END
+
+IDD_CFG_ONETONE DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Unique tone",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,0,79,10
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,0,15,
+                    137,13
+    CONTROL         "Invert",IDC_INVERT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,30,34,10
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,41,43,10
+    CONTROL         "Additive blend",IDC_ADDITIVE,"Button",
+                    BS_AUTORADIOBUTTON,0,51,61,10
+    CONTROL         "Blend 50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,0,61,
+                    55,10
+END
+
+IDD_CFG_TIMESCOPE DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Timescope",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,0,75,10
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,0,15,
+                    137,13
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,30,43,10
+    CONTROL         "Additive blend",IDC_ADDITIVE,"Button",
+                    BS_AUTORADIOBUTTON,0,40,61,10
+    CONTROL         "Blend 50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,0,50,
+                    55,10
+    CONTROL         "Default render blend",IDC_DEFAULTBLEND,"Button",
+                    BS_AUTORADIOBUTTON,0,59,80,10
+    CONTROL         "Slider1",IDC_BANDS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,0,95,137,11
+    LTEXT           "Draw 16 bands",IDC_BANDTXT,0,84,137,8
+    CONTROL         "Left channel",IDC_LEFT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,108,55,10
+    CONTROL         "Right channel",IDC_RIGHT,"Button",BS_AUTORADIOBUTTON,0,
+                    118,60,10
+    CONTROL         "Center channel",IDC_CENTER,"Button",BS_AUTORADIOBUTTON,
+                    0,128,64,10
+END
+
+IDD_CFG_INTERF DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable Interferences",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,81,10
+    CONTROL         "Slider1",IDC_NPOINTS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,0,13,67,11
+    CONTROL         "Slider1",IDC_ALPHA,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,70,12,67,11
+    CONTROL         "Slider1",IDC_ROTATE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,0,33,67,11
+    CONTROL         "Slider1",IDC_DISTANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,70,33,67,11
+    CONTROL         "Separate RGB",IDC_RGB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,2,51,62,10
+    LTEXT           "Init Rotation",IDC_STATIC,85,62,40,8
+    CONTROL         "Slider1",IDC_SPEED,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,4,78,63,11
+    CONTROL         "Slider1",IDC_ALPHA2,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,70,78,63,11
+    CONTROL         "Slider1",IDC_ROTATE2,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,4,99,63,11
+    CONTROL         "Slider1",IDC_DISTANCE2,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,70,99,63,11
+    CONTROL         "Replace",IDC_REPLACE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,2,123,43,10
+    CONTROL         "Additive",IDC_ADDITIVE,"Button",BS_AUTORADIOBUTTON,51,
+                    123,41,10
+    CONTROL         "50/50",IDC_5050,"Button",BS_AUTORADIOBUTTON,100,123,35,
+                    10
+    LTEXT           "0",IDC_STATIC,4,23,8,8
+    LTEXT           "8",IDC_STATIC,55,23,8,8
+    CONTROL         "OnBeat",IDC_ONBEAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,2,60,40,10
+    LTEXT           "N",IDC_STATIC,29,23,8,8
+    LTEXT           "Alpha",IDC_STATIC,96,22,18,8
+    LTEXT           "-",IDC_STATIC,76,23,8,8
+    LTEXT           "+",IDC_STATIC,129,23,8,8
+    LTEXT           "Rotation",IDC_STATIC,19,43,27,8
+    LTEXT           "-",IDC_STATIC,5,43,8,8
+    LTEXT           "+",IDC_STATIC,58,43,8,8
+    LTEXT           "Distance",IDC_STATIC,91,43,28,8
+    LTEXT           "-",IDC_STATIC,76,43,8,8
+    LTEXT           "+",IDC_STATIC,129,43,8,8
+    LTEXT           "-",IDC_STATIC,8,88,8,8
+    LTEXT           "+",IDC_STATIC,59,88,8,8
+    LTEXT           "Speed",IDC_STATIC,24,88,21,8
+    LTEXT           "Alpha",IDC_STATIC,94,88,18,8
+    LTEXT           "-",IDC_STATIC,76,88,8,8
+    LTEXT           "+",IDC_STATIC,125,88,8,8
+    LTEXT           "Rotation",IDC_STATIC,21,109,27,8
+    LTEXT           "-",IDC_STATIC,5,109,8,8
+    LTEXT           "+",IDC_STATIC,58,109,8,8
+    LTEXT           "Distance",IDC_STATIC,89,109,28,8
+    LTEXT           "-",IDC_STATIC,76,109,8,8
+    LTEXT           "+",IDC_STATIC,125,109,8,8
+    GROUPBOX        "OnBeat",IDC_STATIC,0,70,137,51
+    CONTROL         "Slider1",IDC_INITROT,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,70,52,67,11
+    LTEXT           "-",IDC_STATIC,76,62,8,8
+    LTEXT           "+",IDC_STATIC,129,62,8,8
+END
+
+IDD_CFG_LIST DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enabled",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,2,56,10
+    CONTROL         "Clear every frame",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,13,71,10
+    COMBOBOX        IDC_COMBO2,5,37,101,184,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Slider2",IDC_INSLIDE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | NOT WS_VISIBLE | WS_TABSTOP,1,51,106,11
+    COMBOBOX        IDC_COMBO1,121,37,101,168,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Slider2",IDC_OUTSLIDE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,117,51,106,11
+    GROUPBOX        "Output blending",IDC_FR2,115,27,111,39
+    GROUPBOX        "Input blending",IDC_FR1,0,27,111,39
+    COMBOBOX        IDC_CBBUF2,121,50,62,64,CBS_DROPDOWNLIST | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Invert",IDC_INVERT2,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,187,52,34,10
+    COMBOBOX        IDC_CBBUF1,5,50,62,67,CBS_DROPDOWNLIST | CBS_SORT | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Invert",IDC_INVERT1,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,72,51,34,10
+    CONTROL         "Enabled OnBeat for",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,89,3,78,9
+    EDITTEXT        IDC_EDIT1,167,1,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "frames",IDC_STATIC,190,3,22,8
+    CONTROL         "Use evaluation override (can change enabled, clear, etc):",
+                    IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,0,78,
+                    197,10
+    EDITTEXT        IDC_EDIT4,25,93,208,26,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT5,25,119,208,71,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "frame",IDC_STATIC,0,148,18,8
+    LTEXT           "init",IDC_STATIC,0,102,10,8
+    PUSHBUTTON      "expression help",IDC_BUTTON2,25,193,67,14,BS_MULTILINE
+END
+
+IDD_CFG_LISTROOT DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Clear every frame",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,0,71,10
+END
+
+IDD_CFG_LINEMODE DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable mode change",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,2,83,10
+    COMBOBOX        IDC_COMBO1,5,25,128,184,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Slider2",IDC_ALPHASLIDE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,1,39,132,11
+    EDITTEXT        IDC_EDIT1,58,53,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Set blend mode to",IDC_STATIC,0,15,136,37
+    LTEXT           "Line width (pixels)",IDC_STATIC,0,55,56,8
+END
+
+IDD_GCFG_TRANSITIONS DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable pre-init on random",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,0,96,10
+    CONTROL         "Enable pre-init on next/prev",IDC_CHECK11,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,10,103,10
+    CONTROL         "Enable pre-init on load preset",IDC_CHECK10,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,20,107,10
+    CONTROL         "Low priority pre-init",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,31,74,10
+    CONTROL         "Enable transition on random",IDC_CHECK8,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,79,137,10
+    CONTROL         "Enable transition on next/prev",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,89,137,10
+    CONTROL         "Enable transition on load preset",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,99,126,10
+    CONTROL         "Keep rendering old effect",IDC_CHECK9,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,111,126,10
+    COMBOBOX        IDC_TRANSITION,0,133,137,392,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Slider1",IDC_SPEED,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,0,149,137,11
+    LTEXT           "Transition :",IDC_STATIC,0,123,36,8
+    LTEXT           "Speed",IDC_STATIC,57,160,22,8
+    LTEXT           "250ms",IDC_STATIC,4,160,30,8
+    LTEXT           "8s",IDC_STATIC,125,160,9,8
+    CONTROL         "Only pre-init when in fullscreen",IDC_CHECK5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,41,111,10
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(LASER)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_LASER_CONE$(LASER) DIALOGEX 0, 0, 137, 155
+#else
+IDD_CFG_LASER_CONE DIALOGEX 0, 0, 137, 155
+#endif
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,11,8,125,11
+    CONTROL         "Slider1",IDC_SLIDER7,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,11,19,125,11
+    CONTROL         "Slider1",IDC_SLIDER3,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,5,44,130,16
+    CONTROL         "Slider1",IDC_SLIDER4,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,5,73,130,16
+    EDITTEXT        IDC_EDIT1,78,98,24,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Dots",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,9,110,31,10
+    CONTROL         "Lines",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,41,110,33,
+                    10
+    EDITTEXT        IDC_NUMCOL,53,125,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,6,140,
+                    127,11
+    GROUPBOX        "Distance from center",IDC_STATIC,0,0,137,36
+    GROUPBOX        "Cone size",IDC_STATIC,0,37,137,30
+    GROUPBOX        "Cone size on beat",IDC_STATIC,0,62,137,35
+    LTEXT           "Number of segments:",IDC_STATIC,7,100,68,8
+    GROUPBOX        "Colors",IDC_STATIC,0,119,137,36
+    LTEXT           "Cycle through ",IDC_STATIC,7,127,46,8
+    LTEXT           "colors (max 16)",IDC_STATIC,77,127,48,8
+    RTEXT           "x",IDC_STATIC,3,12,8,8
+    RTEXT           "y",IDC_STATIC,3,22,8,8
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(LASER)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_LASER_BEATHOLD$(LASER) DIALOGEX 0, 0, 245, 214
+#else
+IDD_CFG_LASER_BEATHOLD DIALOGEX 0, 0, 245, 214
+#endif
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Hold for (ms)",-1,0,0,137,32
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,5,8,130,16
+    GROUPBOX        "Hold on the nth beat",-1,0,39,137,30
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,5,46,130,16
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(LASER)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_LASER_LINE$(LASER) DIALOGEX 0, 0, 137, 137
+#else
+IDD_CFG_LASER_LINE DIALOGEX 0, 0, 137, 137
+#endif
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,5,8,130,16
+    CONTROL         "Slider1",IDC_SLIDER3,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,5,34,130,16
+    CONTROL         "Slider1",IDC_SLIDER4,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,5,63,130,16
+    EDITTEXT        IDC_EDIT1,103,87,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUMCOL,53,107,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEFCOL,"Button",BS_OWNERDRAW | WS_TABSTOP,6,122,
+                    127,11
+    GROUPBOX        "Colors",IDC_STATIC,0,101,137,36
+    LTEXT           "Cycle through ",IDC_STATIC,7,109,46,8
+    LTEXT           "colors (max 16)",IDC_STATIC,77,109,48,8
+    GROUPBOX        "Distance from center",IDC_STATIC,0,0,137,32
+    GROUPBOX        "Line size",IDC_STATIC,0,27,137,30
+    GROUPBOX        "Line size on beat",IDC_STATIC,0,52,137,35
+    LTEXT           "Beat count for rotation switch: ",IDC_STATIC,3,89,97,8
+END
+#endif
+
+IDD_GCFG_FS DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Use fullscreen overlay mode (current bpp is used)",
+                    IDC_USE_OVERLAY,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,0,0,214,10
+    COMBOBOX        IDC_COMBO1,2,42,199,180,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "go",IDC_BUTTON1,2,57,23,13
+    EDITTEXT        IDC_EDIT1,134,72,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Keep fullscreen when deactivated (overlay mode only)",
+                    IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,0,155,
+                    186,10
+    CONTROL         "Pixel doubling",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,84,59,10
+    CONTROL         "Wait for retrace",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,94,65,10
+    CONTROL         "Page flipping (slower, smoother)",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,104,115,10
+    CONTROL         "Fast software bpp conversion",IDC_BPP_CONV,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,114,105,10
+    CONTROL         "Display framerate counter",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,125,96,10
+    CONTROL         "Suppress status text in fullscreen",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,135,119,10
+    CONTROL         "Suppress title text in fullscreen",IDC_CHECK5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,145,111,10
+    LTEXT           "Rendering performance:",IDC_STATIC,0,168,77,8
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,0,177,137,14
+    CONTROL         "Doubleclick in main window goes fullscreen (instead of config )",
+                    IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,0,204,
+                    213,10
+    LTEXT           "Vertical screen height to render (percent): ",
+                    IDC_STATIC,0,73,133,8
+    LTEXT           "Higher framerate",IDC_STATIC,0,193,54,9
+    LTEXT           "Lower framerate",IDC_STATIC,84,194,53,8
+    LTEXT           "Fullscreen video mode:",IDC_STATIC,0,33,74,8
+    LTEXT           "Note: fullscreen overlay mode is experimental, and most fullscreen options don't work with it. Expect more soon.",
+                    IDC_STATIC,0,10,234,18
+END
+
+IDD_CFG_SHIFT DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,29,0,204,52,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT2,29,52,204,70,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,29,123,204,63,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "frame",IDC_STATIC,0,83,18,8
+    LTEXT           "beat",IDC_STATIC,0,150,15,8
+    LTEXT           "init",IDC_STATIC,0,20,10,8
+    CONTROL         "Blend",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    0,194,34,10
+    CONTROL         "Bilinear filtering",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,35,194,63,10
+    PUSHBUTTON      "expression help",IDC_HELPBTN,162,196,71,12
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(LASER)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_LASER_TRANSFORM$(LASER) DIALOGEX 0, 0, 245, 214
+#else
+IDD_CFG_LASER_TRANSFORM DIALOGEX 0, 0, 245, 214
+#endif
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,0,161,233,41,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    CONTROL         "Rectangular coordinates",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,204,93,10
+    LTEXT           "Point:",IDC_STATIC,0,151,19,8
+    EDITTEXT        IDC_EDIT2,0,10,233,41,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    LTEXT           "Init:",IDC_STATIC,0,0,12,8
+    EDITTEXT        IDC_EDIT3,0,65,233,41,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    LTEXT           "Frame:",IDC_STATIC,0,52,22,8
+    EDITTEXT        IDC_EDIT4,0,119,233,28,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    LTEXT           "Beat:",IDC_STATIC,0,108,18,8
+END
+#endif
+
+IDD_CFG_DMOVE DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT4,25,0,208,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,25,14,208,53,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,25,67,208,53,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT1,25,120,208,53,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT5,108,190,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT6,136,190,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Rectangular coordinates",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,204,90,10
+    CONTROL         "Bilinear filtering",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,94,204,63,10
+    PUSHBUTTON      "expression help",IDC_BUTTON1,158,200,73,13,BS_MULTILINE
+    LTEXT           "pixel",IDC_STATIC,0,142,15,8
+    LTEXT           "frame",IDC_STATIC,0,36,18,8
+    LTEXT           "beat",IDC_STATIC,0,89,15,8
+    LTEXT           "init",IDC_STATIC,0,3,10,8
+    LTEXT           "Grid size:",IDC_STATIC,78,192,30,8
+    LTEXT           "x",IDC_STATIC,128,191,8,8
+    CONTROL         "Blend",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    0,190,34,10
+    CONTROL         "Wrap",IDC_WRAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,
+                    190,33,10
+    COMBOBOX        IDC_COMBO1,25,175,85,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "source",IDC_STATIC,0,177,22,8
+    CONTROL         "No movement (just blend)",IDC_NOMOVEMENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,113,176,100,10
+    PUSHBUTTON      "Load example...",IDC_BUTTON4,158,186,73,13,BS_MULTILINE
+END
+
+IDD_CFG_FASTBRIGHT DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Brighten by 2x",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,2,1,61,10
+    CONTROL         "Darken by 0.5x",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    2,12,64,10
+    CONTROL         "Do nothing",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,2,23,
+                    51,10
+END
+
+IDD_CFG_COLORMOD DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT4,25,0,208,29,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT2,25,29,208,44,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,25,73,208,53,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT1,25,126,208,69,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "expression help",IDC_BUTTON1,164,200,69,14,BS_MULTILINE
+    LTEXT           "level",IDC_STATIC,0,156,16,8
+    LTEXT           "frame",IDC_STATIC,0,45,18,8
+    LTEXT           "beat",IDC_STATIC,0,93,15,8
+    LTEXT           "init",IDC_STATIC,0,9,10,8
+    PUSHBUTTON      "Load example...",IDC_BUTTON4,97,200,63,14
+    CONTROL         "Recompute every frame",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,2,199,91,10
+END
+
+IDD_EVAL_HELP DIALOGEX 0, 0, 311, 228
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AVS Expression Help"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,7,210,50,14
+    EDITTEXT        IDC_EDIT1,12,25,286,177,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,7,297,200
+END
+
+IDD_DEBUG DIALOGEX 0, 0, 360, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AVS Debug Information"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,7,162,50,14
+    GROUPBOX        "Global register (reg00-99) watch",IDC_STATIC,7,7,111,
+                    130
+    LTEXT           "Register",IDC_STATIC,13,19,27,8
+    LTEXT           "Value",IDC_STATIC,47,19,19,8
+    EDITTEXT        IDC_DEBUGREG_1,13,29,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEBUGREG_2,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | 
+                    WS_GROUP,45,29,68,12
+    EDITTEXT        IDC_DEBUGREG_3,13,42,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEBUGREG_4,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | 
+                    WS_GROUP,45,42,68,12
+    EDITTEXT        IDC_DEBUGREG_5,13,55,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEBUGREG_6,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | 
+                    WS_GROUP,45,55,68,12
+    EDITTEXT        IDC_DEBUGREG_7,13,68,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEBUGREG_8,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | 
+                    WS_GROUP,45,68,68,12
+    EDITTEXT        IDC_DEBUGREG_9,13,81,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEBUGREG_10,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,45,81,68,12
+    EDITTEXT        IDC_DEBUGREG_11,13,94,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEBUGREG_12,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,45,94,68,12
+    EDITTEXT        IDC_DEBUGREG_13,13,108,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEBUGREG_14,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,45,108,68,12
+    EDITTEXT        IDC_DEBUGREG_15,13,121,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DEBUGREG_16,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,45,121,68,12
+    GROUPBOX        "Recent eval code errors:",IDC_STATIC,123,7,230,129
+    EDITTEXT        IDC_EDIT1,133,19,211,98,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "clear",IDC_BUTTON1,133,119,31,14
+    CONTROL         "Log compile errors (use only when developing)",
+                    IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,169,120,
+                    161,10
+    CONTROL         "Clear all local variables on all code recompiles (disabling can be useful for development)",
+                    IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,151,
+                    291,9
+    CONTROL         "Disable SEH for effects (for APE developers who want to debug their APEs)",
+                    IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,166,
+                    253,10
+    EDITTEXT        IDC_EDIT2,7,137,346,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_CFG_CHANSHIFT DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Order",-1,5,5,85,135
+    CONTROL         "GBR",IDC_GBR,"Button",BS_AUTORADIOBUTTON,15,81,35,10
+    CONTROL         "BRG",IDC_BRG,"Button",BS_AUTORADIOBUTTON,15,50,35,10
+    CONTROL         "RBG",IDC_RBG,"Button",BS_AUTORADIOBUTTON,15,36,35,10
+    CONTROL         "BGR",IDC_BGR,"Button",BS_AUTORADIOBUTTON,15,65,35,10
+    CONTROL         "GRB",IDC_GRB,"Button",BS_AUTORADIOBUTTON,15,95,35,10
+    CONTROL         "RGB",1023,"Button",BS_AUTORADIOBUTTON,15,20,31,10
+    CONTROL         "OnBeat Random",IDC_ONBEAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,120,65,10
+END
+
+IDD_CFG_COLORREDUCTION DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Color levels",-1,5,5,220,35
+    CONTROL         "Slider1",IDC_LEVELS,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,10,15,185,20
+    LTEXT           "Static",IDC_LEVELTEXT,200,17,20,10
+END
+
+IDD_CFG_MULT DIALOGEX 0, 0, 231, 216
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Multiplier",-1,5,5,70,117
+    CONTROL         "Color x 8",IDC_X8,"Button",BS_AUTORADIOBUTTON,10,29,60,
+                    10
+    CONTROL         "Color x 4",IDC_X4,"Button",BS_AUTORADIOBUTTON,10,42,60,
+                    10
+    CONTROL         "Color x 2",IDC_X2,"Button",BS_AUTORADIOBUTTON,10,55,60,
+                    10
+    CONTROL         "Color x 0.5",IDC_X05,"Button",BS_AUTORADIOBUTTON,10,68,
+                    60,10
+    CONTROL         "Color x 0.25",IDC_X025,"Button",BS_AUTORADIOBUTTON,10,
+                    81,60,10
+    CONTROL         "Color x 0.125",IDC_X0125,"Button",BS_AUTORADIOBUTTON,10,
+                    94,60,10
+    CONTROL         "Infinite root",IDC_XI,"Button",BS_AUTORADIOBUTTON,10,16,
+                    60,10
+    CONTROL         "Infinite square",IDC_XS,"Button",BS_AUTORADIOBUTTON,10,
+                    107,60,10
+END
+
+IDD_CFG_MULTIDELAY DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Beats",1020,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,
+                    102,42,12
+    CONTROL         "Frames",1030,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,
+                    114,42,12
+    EDITTEXT        1010,12,90,42,12,ES_AUTOHSCROLL
+    GROUPBOX        "Buffer A",IDC_STATIC,6,78,54,54
+    CONTROL         "Beats",1021,"Button",BS_AUTORADIOBUTTON | WS_GROUP,72,
+                    102,42,12
+    CONTROL         "Frames",1031,"Button",BS_AUTORADIOBUTTON | WS_GROUP,72,
+                    114,42,12
+    EDITTEXT        1011,72,90,42,12,ES_AUTOHSCROLL
+    GROUPBOX        "Buffer B",IDC_STATIC,66,78,54,54
+    CONTROL         "Beats",1022,"Button",BS_AUTORADIOBUTTON | WS_GROUP,132,
+                    102,42,12
+    CONTROL         "Frames",1032,"Button",BS_AUTORADIOBUTTON | WS_GROUP,132,
+                    114,42,12
+    EDITTEXT        1012,132,90,42,12,ES_AUTOHSCROLL
+    GROUPBOX        "Buffer C",IDC_STATIC,126,78,54,54
+    CONTROL         "Beats",1023,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,
+                    156,42,12
+    CONTROL         "Frames",1033,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,
+                    168,42,12
+    EDITTEXT        1013,12,144,42,12,ES_AUTOHSCROLL
+    GROUPBOX        "Buffer D",IDC_STATIC,6,132,54,54
+    CONTROL         "Beats",1024,"Button",BS_AUTORADIOBUTTON | WS_GROUP,72,
+                    156,42,12
+    CONTROL         "Frames",1034,"Button",BS_AUTORADIOBUTTON | WS_GROUP,72,
+                    168,42,12
+    EDITTEXT        1014,72,144,42,12,ES_AUTOHSCROLL
+    GROUPBOX        "Buffer E",IDC_STATIC,66,132,54,54
+    CONTROL         "Beats",1025,"Button",BS_AUTORADIOBUTTON | WS_GROUP,132,
+                    156,42,12
+    CONTROL         "Frames",1035,"Button",BS_AUTORADIOBUTTON | WS_GROUP,132,
+                    168,42,12
+    EDITTEXT        1015,132,144,42,12,ES_AUTOHSCROLL
+    GROUPBOX        "Buffer F",IDC_STATIC,126,132,54,54
+    CONTROL         "Input",1101,"Button",BS_AUTORADIOBUTTON | WS_GROUP,72,
+                    18,30,12
+    CONTROL         "Output",1102,"Button",BS_AUTORADIOBUTTON | WS_GROUP,132,
+                    18,36,12
+    CONTROL         "Buffer A",1000,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    12,48,48,12
+    CONTROL         "Buffer B",1001,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    72,48,48,12
+    CONTROL         "Buffer C",1002,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    132,48,42,12
+    CONTROL         "Buffer D",1003,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    12,60,48,12
+    CONTROL         "Buffer E",1004,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    72,60,48,12
+    CONTROL         "Buffer F",1005,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    132,60,42,12
+    GROUPBOX        "Active Buffer",IDC_STATIC,6,36,174,42
+    GROUPBOX        "Mode",IDC_STATIC,6,6,174,30
+    CONTROL         "Disabled",1100,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    12,18,48,12
+    CTEXT           "(c) Tom Holden, 2002",IDC_STATIC,6,192,174,12
+END
+
+IDD_CFG_VIDEODELAY DIALOGEX 0, 0, 245, 214
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Beats",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,54,18,36,
+                    12
+    CONTROL         "Frames",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,90,18,36,
+                    12
+    CONTROL         "Enabled",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,7,42,8
+    EDITTEXT        IDC_EDIT1,6,18,43,12,ES_AUTOHSCROLL
+    CTEXT           "(c) Tom Holden, 2002",IDC_STATIC,6,36,120,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 376
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_CFG_BLUR, DIALOG
+    BEGIN
+        TOPMARGIN, 1
+    END
+
+    IDD_CFG_COLORFADE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_GCFG_PRESET, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_CFG_AVI, DIALOG
+    BEGIN
+        RIGHTMARGIN, 137
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_GCFG_BPM, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_GCFG_TRANSITIONS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 137
+        BOTTOMMARGIN, 176
+    END
+
+    "IDD_CFG_LASER_CONE$(LASER)", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_GCFG_FS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_EVAL_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_DEBUG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 353
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_CFG_CHANSHIFT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_CFG_COLORREDUCTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_CFG_MULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_CFG_MULTIDELAY, DIALOG
+    BEGIN
+        RIGHTMARGIN, 180
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_CFG_VIDEODELAY, DIALOG
+    BEGIN
+        RIGHTMARGIN, 216
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENUEX 
+BEGIN
+    POPUP "&Preset",                        65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "Load...",                     1028,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save...",                    1035,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&New",                        1041,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Edit",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Undo",                       40009,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Redo",                       40010,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Settings",                      65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Display",                    40001,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Fullscreen",                 40007,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Presets/Hotkeys",            40002,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Beat Detection",             40005,MFT_STRING,MFS_ENABLED
+        MENUITEM "Transitio&ns",                40006,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Debug Window...",             40008,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Help",                          65535,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "&About...",                   40004,MFT_STRING,MFS_ENABLED
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+ 
+IDR_BUMP_LIGHT_POSITION TEXT                    "bump_lig.bin"
+IDR_COLOR_MODIFIER      TEXT                    "color_mo.bin"
+IDR_DYNAMIC_DISTANCE_MODIFIER TEXT                    "dyn_dist.bin"
+IDR_DYNAMIC_MOVEMENT    TEXT                    "dyn_move.bin"
+IDR_DYNAMIC_SHIFT       TEXT                    "dyn_shift.bin"
+IDR_SUPERSCOPE          TEXT                    "supersco.bin"
+IDR_MOVEMENT            TEXT                    "movement.bin"
+IDR_EFFECT_LIST         TEXT                    "effect_l.bin"
+IDR_HELP_1              TEXT                    "help_1.bin"
+IDR_HELP_2              TEXT                    "help_2.bin"
+IDR_HELP_3              TEXT                    "help_3.bin"
+IDR_HELP_4              TEXT                    "help_4.bin"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+
+    IDS_AVS                 "Advanced Visualization Studio"
+    IDS_AVS_EDITOR          "AVS Editor"
+    IDS_DOCK_IN_AVS_EDITOR  "Dock in AVS Editor"
+    IDS_LEARNING            "Learning..."
+    IDS_GOT_IT              " Got it!"
+    IDS_NO_EFFECT_SETTING_SELECTED "No Effect/Setting Selected"
+    IDS_SHIFT_X             "Shift+%d"
+    IDS_ALL                 "All"
+    IDS_SAME_AS_WINAMP      "Same as Winamp"
+    IDS_IDLE                "Idle"
+    IDS_LOWEST              "Lowest"
+    IDS_NORMAL              "Normal"
+    IDS_HIGHEST             "Highest"
+    IDS_NO_SUITABLE_MODES_FOUND "No suitable modes found"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CHOOSE_A_VIDEO_MODE "Choose a video mode"
+    IDS_FULLSCREEN          "Fullscreen"
+    IDS_AVS_FILTER_STRING   "AVS presets|*.avs|All files|*.*|"
+    IDS_SAVE_PRESET         "Save Preset"
+    IDS_ERROR_SAVING_PRESET "Error saving preset"
+    IDS_PRESET_TOO_LARGE    "Preset too large"
+    IDS_OUT_OF_MEMORY       "Out of memory"
+    IDS_EVAL_CODE_STATS_ETC "Eval code stats: %d segments, %d bytes source, %d+%d bytes code, %d bytes data"
+    IDS_MOVE_HERE           "<move here>"
+    IDS_ERROR_TREE_INCONSISTANCY 
+                            "Error: Inconsistency in tree. this should never happen. ACK!"
+    IDS_CRITICAL_ERROR_OCCURRED "Critical Error Occurred"
+    IDS_DISPLAY             "Display"
+    IDS_FULLSCREEN_SETTINGS "Fullscreen Settings"
+    IDS_PRESET_HOTKEYS      "Presets / Hotkeys"
+    IDS_BEAT_DETECTION      "Beat Detection"
+    IDS_TRANSITIONS         "Transitions"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EFFECT_LIST         "Effect List"
+    IDS_PRESETS             "Presets"
+    IDS_LOAD_PRESET         "Load Preset"
+    IDS_STILL_INITIALIZING_PREVIOUS_PRESET 
+                            "Still initializing previous preset"
+    IDS_MAIN                "Main"
+    IDS_ERROR_CREATING_DDRAW_OBJECT "Error creating ddraw object"
+    IDS_ABOUT_STRING        "\t%s\n\tCopyright (C) 1998-2023 Winamp SA\nPortions Copyright (C) 2010 Cockos Incorporated\r\r\nThis software is BSD-licensed open source.\n\nYou are welcome to use\nAVS at parties, clubs, concerts and whatnot.\nJust give credit where credit is due.\n\nLove,\n    Justin Frankel, Francis Gastellu, Christophe Thibault,\n    Brennan Underwood & mig\n\nSpecial thanks to Steven Wittens and Tom Holden."
+    IDS_ABOUT_AVS           "About AVS"
+    IDS_REQUIRES_2_9_PLUS   "This version of AVS requires Winamp 2.9+"
+    IDS_AVS_ERROR           "AVS Error"
+    IDS_NO_MMX_SUPPORT      "No MMX support found - cannot run AVS!\nGet the non-MMX version."
+    IDS_SHIFT_              "shift-"
+    IDS_AVS_CRITICAL_ERROR  "AVS Critical Error"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CURRENT_PRESET_EDITED_SAVE_BEFORE_LOAD 
+                            "Current preset may have been edited. Save preset before loading?"
+    IDS_CURRENT_PRESET_EDITED_SAVE_BEFORE_NEW 
+                            "Current preset may have been edited. Save preset before creating new?"
+    IDS_AVS_PRESET_MODIFIED "AVS Preset Modified"
+    IDS_ERROR_CREATING_WINDOW "Error creating window"
+    IDS_CANNOT_GO_FULLSCREEN_WHEN_VIDEO_PLAYING 
+                            "Cannot go fullscreen when video is playing"
+    IDS_AVS_FULLSCREEN      "AVS Fullscreen"
+    IDS_FULLSCREEN_FPS_ON   "fullscreen fps on"
+    IDS_FULLSCREEN_FPS_OFF  "fullscreen fps off"
+    IDS_RANDOM_PRESETS_ON   "random presets on"
+    IDS_RANDOM_PRESETS_OFF  "random presets off"
+    IDS_SAVED_TO            "saved to"
+    IDS_LOADED_FROM         "loaded from"
+    IDS_ERROR_LOADING_FROM  "error loading from"
+    IDS_BEAT                "beat"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CURRENT             "Current"
+    IDS_BUFFER_X            "Buffer %d"
+    IDS_BUMP_LIGHT_POSITION "Bump Light Position"
+    IDS_4X_RED_BRIGHTNESS_2X_GREEN_1X_BLUE 
+                            "4x Red Brightness, 2x Green, 1x Blue"
+    IDS_SOLARIZATION        "Solarization"
+    IDS_DOUBLE_SOLARIZATION "Double Solarization"
+    IDS_INVERSE_SOLARIZATION_SOFT "Inverse Solarization (Soft)"
+    IDS_BIG_BRIGHTNESS_ON_BEAT "Big Brightness on Beat"
+    IDS_BIG_BRIGHTNESS_ON_BEAT_INTERPOLATIVE 
+                            "Big Brightness on Beat (Interpolative)"
+    IDS_PULSING_BRIGHTNESS_BEAT_INTERPOLATIVE 
+                            "Pulsing Brightness (Beat Interpolative)"
+    IDS_ROLLING_SOLARIZATION_BEAT_INTERPOLATIVE 
+                            "Rolling Solarization (Beat Interpolative)"
+    IDS_ROLLING_TONE_BEAT_INTERPOLATIVE "Rolling Tone (Beat Interpolative)"
+    IDS_RANDOM_INVERSE_TONE_SWITCH_ON_BEAT 
+                            "Random Inverse Tone (Switch on Beat)"
+    IDS_COLOR_MODIFIER      "Color Modifier"
+    IDS_DYNAMIC_DISTANCE_MODIFIER "Dynamic Distance Modifier"
+    IDS_RANDOM_ROTATE       "Random Rotate"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RANDOM_DIRECTION    "Random Direction"
+    IDS_IN_AND_OUT          "In and Out"
+    IDS_UNSPUN_KALEIDA      "Unspun Kaleida"
+    IDS_ROLLING_GRIDLEY     "Roiling Gridley"
+    IDS_6_WAY_OUTSWIRL      "6-Way Outswirl"
+    IDS_WAVY                "Wavy"
+    IDS_SMOOTH_ROTOBLITTER  "Smooth Rotoblitter"
+    IDS_DYNAMIC_MOVEMENT    "Dynamic Movement"
+    IDS_REPLACE             "Replace"
+    IDS_ADDITIVE            "Additive"
+    IDS_MAXIMUM_BLEND       "Maximum Blend"
+    IDS_50_50_BLEND         "50/50 Blend"
+    IDS_SUBTRACTIVE_BLEND_1 "Subtractive Blend 1"
+    IDS_SUBTRACTIVE_BLEND_2 "Subtractive Blend 2"
+    IDS_MULTIPLY_BLEND      "Multiply Blend"
+    IDS_ADJUSTABLE_BLEND    "Adjustable Blend"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_XOR                 "XOR"
+    IDS_MINIMUM_BLEND       "Minimum Blend"
+    IDS_DYNAMIC_SHIFT       "Dynamic Shift"
+    IDS_SPIRAL              "Spiral"
+    IDS_3D_SCOPE_DISH       "3D Scope Dish"
+    IDS_ROTATING_BOW_THING  "Rotating Bow Thing"
+    IDS_VERTICAL_BOUNCING_SCOPE "Vertical Bouncing Scope"
+    IDS_SPIRAL_GRAPH_FUN    "Spiral Graph Fun"
+    IDS_ALTERNATING_DIAGONAL_SCOPE "Alternating Diagonal Scope"
+    IDS_VIBRATING_WORM      "Vibrating Worm"
+    IDS_WANDERING_SIMPLE    "Wandering Simple"
+    IDS_FLITTERBUG          "Flitterbug"
+    IDS_SPIROSTAR           "Spirostar"
+    IDS_EXPLODING_DAISY     "Exploding Daisy"
+    IDS_SWIRLIE_DOTS        "Swirlie Dots"
+    IDS_SWEEP               "Sweep"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WHIPLASH_SPIRAL     "Whiplash Spiral"
+    IDS_SUPERSCOPE          "Superscope"
+    IDS_DRAW_X_BANDS        "Draw %d bands"
+    IDS_NONE                "none"
+    IDS_SLIGHT_FUZZIFY      "slight fuzzify"
+    IDS_SHIFT_ROTATE_LEFT   "shift rotate left"
+    IDS_BIG_SWIRL_OUT       "big swirl out"
+    IDS_MEDIUM_SWIRL        "medium swirl"
+    IDS_SUNBURSTER          "sunburster"
+    IDS_SWIRL_TO_CENTER     "swirl to center"
+    IDS_BLOCKY_PARTIAL_OUT  "blocky partial out"
+    IDS_SWIRLING_AROUND_BOTH_WAYS "swirling around both ways at once"
+    IDS_BUBBLING_OUTWARD    "bubbling outward"
+    IDS_BUBBLING_OUTWARD_WITH_SWIRL "bubbling outward with swirl"
+    IDS_5_POINTED_DISTRO    "5 pointed distro"
+    IDS_TUNNELING           "tunneling"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BLEEDIN             "bleedin'"
+    IDS_SHIFTED_BIG_SWIRL_OUT "shifted big swirl out"
+    IDS_PSYCHOTIC_BEAMING_OUTWARD "psychotic beaming outward"
+    IDS_COSINE_RADIAL_3_WAY "cosine radial 3-way"
+    IDS_SPINNY_TUBE         "spinny tube"
+    IDS_RADIAL_SWIRLIES     "radial swirlies"
+    IDS_SWILL               "swill"
+    IDS_GRIDLEY             "gridley"
+    IDS_GRAPEVINE           "grapevine"
+    IDS_QUADRANT            "quadrant"
+    IDS_6_WAY_KALAEIDA      "6-way kaleida (use wrap!)"
+    IDS_USER_DEFINED        "(user defined)"
+    IDS_MOVEMENT            "Movement"
+    IDS_IGNORE              "Ignore"
+    IDS_MAXIMUM             "Maximum"
+    IDS_50_50               "50/50"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EVERY_OTHER_LINE    "Every other line"
+    IDS_EVERY_OTHER_PIXEL   "Every other pixel"
+    IDS_ADJUSTABLE          "Adjustable"
+    IDS_MULTIPLY            "Multiply"
+    IDS_BUFFER              "Buffer"
+    IDS_MINIMUM             "Minimum"
+    IDS_CROSS_DISSOLVE      "Cross dissolve"
+    IDS_RANDOM              "Random"
+    IDS_L_R_PUSH            "L/R Push"
+    IDS_R_L_PUSH            "R/L Push"
+    IDS_T_B_PUSH            "T/B Push"
+    IDS_B_T_PUSH            "B/T Push"
+    IDS_9_RANDOM_BLOCKS     "9 Random Blocks"
+    IDS_SPLIT_L_R_PUSH      "Split L/R Push"
+    IDS_L_R_CENTER_PUSH     "L/R to Center Push"
+    IDS_L_R_CENTER_SQUEEZE  "L/R to Center Squeeze"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_L_R_WIPE            "L/R Wipe"
+    IDS_R_L_WIPE            "R/L Wipe"
+    IDS_T_B_WIPE            "T/B Wipe"
+    IDS_B_T_WIPE            "B/T Wipe"
+    IDS_DOT_DISSOLVE        "Dot Dissolve"
+    IDS_LOADING_WAIT        "loading [wait]..."
+    IDS_LOADING             "loading..."
+    IDS_ERROR_LOADING_X     "error loading: %s"
+    IDS_BUILTIN_ID          "Built-in ID: %d\r\n"
+    IDS_CONFIG_SIZE         "Config size: %d\r\n"
+    IDS_GENERAL             "General"
+    IDS_OPERATORS           "Operators"
+    IDS_FUNCTIONS           "Functions"
+    IDS_CONSTANTS           "Constants"
+    IDS_BEATS               "beats"
+    IDS_SUBTRACTIVE_1       "Subtractive 1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SUBTRACTIVE_2       "Subtractive 2"
+    IDS_RENDER_AVI          "Render / AVI"
+    IDS_TRANS_BLITTER_FEEDBACK "Trans / Blitter Feedback"
+    IDS_TRANS_BLUR          "Trans / Blur"
+    IDS_MISC_CUSTOM_BPM     "Misc / Custom BPM"
+    IDS_TRANS_BRIGHTNESS    "Trans / Brightness"
+    IDS_RENDER_BASS_SPIN    "Render / Bass Spin"
+    IDS_TRANS_BUMP          "Trans / Bump"
+    IDS_TRANS_CHANNEL_SHIFT "Trans / Channel Shift"
+    IDS_RENDER_CLEAR_SCREEN "Render / Clear Screen"
+    IDS_TRANS_COLORFADE     "Trans / Colorfade"
+    IDS_TRANS_COLOR_REDUCTION "Trans / Color Reduction"
+    IDS_TRANS_COLOR_CLIP    "Trans / Color Clip"
+    IDS_MISC_COMMENT        "Misc / Comment"
+    IDS_TRANS_COLOR_MODIFIER "Trans / Color Modifier"
+    IDS_TRANS_DYNAMIC_DISTANCE_MODIFIER "Trans / Dynamic Distance Modifier"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRANS_DYNAMIC_MOVEMENT "Trans / Dynamic Movement"
+    IDS_RENDER_DOT_FOUNTAIN "Render / Dot Fountain"
+    IDS_RENDER_DOT_GRID     "Render / Dot Grid"
+    IDS_RENDER_DOT_PLANE    "Render / Dot Plane"
+    IDS_TRANS_FADEOUT       "Trans / Fadeout"
+    IDS_TRANS_FAST_BRIGHTNESS "Trans / Fast Brightness"
+    IDS_TRANS_GRAIN         "Trans / Grain"
+    IDS_TRANS_INTERFERENCES "Trans / Interferences"
+    IDS_TRANS_INTERLEAVE    "Trans / Interleave"
+    IDS_TRANS_INVERT        "Trans / Invert"
+    IDS_MISC_SET_RENDER_MODE "Misc / Set render mode"
+    IDS_TRANS_MIRROR        "Trans / Mirror"
+    IDS_TRANS_MOSAIC        "Trans / Mosaic"
+    IDS_TRANS_MULTI_DELAY   "Trans / Multi Delay"
+    IDS_TRANS_MULTIPLIER    "Trans / Multiplier"
+    IDS_RENDER_ONBEAT_CLEAR "Render / OnBeat Clear"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRANS_UNIQUE_TONE   "Trans / Unique Tone"
+    IDS_RENDER_RING         "Render / Ring"
+    IDS_RENDER_OSCILLOSCOPE_STAR "Render / Oscilliscope Star"
+    IDS_RENDER_MOVING_PARTICLE "Render / Moving Particle"
+    IDS_RENDER_PICTURE      "Render / Picture"
+    IDS_TRANS_ROTO_BLITTER  "Trans / Roto Blitter"
+    IDS_RENDER_ROTATING_STARS "Render / Rotating Stars"
+    IDS_TRANS_SCATTER       "Trans / Scatter"
+    IDS_TRANS_DYNAMIC_SHIFT "Trans / Dynamic Shift"
+    IDS_RENDER_SIMPLE       "Render / Simple"
+    IDS_RENDER_SUPERSCOPE   "Render / SuperScope"
+    IDS_MISC_BUFFER_SAVE    "Misc / Buffer Save"
+    IDS_RENDER_STARFIELD    "Render / Starfield"
+    IDS_RENDER_SVP_LOADER   "Render / SVP Loader"
+    IDS_RENDER_TEXT         "Render / Text"
+    IDS_RENDER_TIMESCOPE    "Render / Timescope"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRANS_MOVEMENT      "Trans / Movement"
+    IDS_UNKNOWN_RENDER_OBJECT "Unknown Render Object"
+    IDS_TRANS_VIDEO_DELAY   "Trans / Video Delay"
+    IDS_TRANS_WATER         "Trans / Water"
+    IDS_TRANS_WATER_BUMP    "Trans / Water Bump"
+    IDS_OVERLAY_MODE        "Overlay Mode"
+END
+
+STRINGTABLE 
+BEGIN
+    65535                   "{BE608673-B723-4a59-9EBA-52DC77109E10}"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

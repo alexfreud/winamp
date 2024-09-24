@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ml_plg", "ml_plg.vcxproj", "{4E2B4D6C-E2D4-450E-ACE8-2E6546790BFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E2B4D6C-E2D4-450E-ACE8-2E6546790BFF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4E2B4D6C-E2D4-450E-ACE8-2E6546790BFF}.Debug|Win32.Build.0 = Debug|Win32
+		{4E2B4D6C-E2D4-450E-ACE8-2E6546790BFF}.Debug|x64.ActiveCfg = Debug|x64
+		{4E2B4D6C-E2D4-450E-ACE8-2E6546790BFF}.Debug|x64.Build.0 = Debug|x64
+		{4E2B4D6C-E2D4-450E-ACE8-2E6546790BFF}.Release|Win32.ActiveCfg = Release|Win32
+		{4E2B4D6C-E2D4-450E-ACE8-2E6546790BFF}.Release|Win32.Build.0 = Release|Win32
+		{4E2B4D6C-E2D4-450E-ACE8-2E6546790BFF}.Release|x64.ActiveCfg = Release|x64
+		{4E2B4D6C-E2D4-450E-ACE8-2E6546790BFF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C70730C8-94A1-4059-8966-8FD679D682D9}
+	EndGlobalSection
+EndGlobal

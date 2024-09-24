@@ -1,0 +1,129 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 215, 50
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MP4 Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Extension List (semicolon delimited):",IDC_STATIC,4,4,208,10
+    EDITTEXT        IDC_EXTENSIONLIST,4,16,207,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set to Defaults",IDC_DEFAULT,4,33,60,13
+    DEFPUSHBUTTON   "OK",IDOK,107,33,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,161,33,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 211
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 46
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_MPEG4_AUDIO_DECODER "Nullsoft MP4 Demuxer v%s"
+    65535                   "{F30C75C1-D284-4cd5-9CED-2BD9E7869438}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NULLSOFT_MPEG4_AUDIO_DECODER_OLD "Nullsoft MP4 Demuxer"
+    IDS_CANNOT_UPDATE_THE_FILE "Cannot update the file!"
+    IDS_ERROR               "Error"
+    IDS_MP4_FILE            "MP4 File"
+    IDS_FAMILY_STRING_M4A   "MPEG-4 Audio File Format"
+    IDS_FAMILY_STRING_MPEG4 "MPEG-4 File Format"
+    IDS_FAMILY_STRING_M4V   "MPEG-4 Video File Format"
+    IDS_FAMILY_STRING_QUICKTIME "Quicktime Movie"
+    IDS_FAMILY_STRING_3GPP  "3GPP File Format"
+    IDS_FAMILY_STRING_FLV   "Flash MPEG-4 Video"
+    IDS_ABOUT_TEXT          "%s\n© 2005-2023 Winamp SA\n\nBuild date: %s\n\nUses the libmp4v2 library\nfrom the MPEG4IP package\n(http://mpeg4ip.sourceforge.net)"
+    IDS_AUDIO_INFO          "Audio:\n\t%S\n\t%u kbps\n"
+    IDS_VIDEO_INFO          "Video:\n\t%S\n\t%u kbps\n"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

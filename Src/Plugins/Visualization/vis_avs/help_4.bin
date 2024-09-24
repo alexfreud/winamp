@@ -1,0 +1,6 @@
+Constants
+   '$PI' can be used in place of '3.14159'
+   '$E' can be used in place of '2.71828'
+   '$PHI' can be used in place of '1.618033'
+   Numbers can be specified as integers or as floating point
+     (i.e. '5' or '5.0' or '5.00001')

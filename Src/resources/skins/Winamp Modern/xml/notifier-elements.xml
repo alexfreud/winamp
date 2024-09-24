@@ -1,0 +1,11 @@
+<elements>
+	<bitmap id="notifier.bg.left" file="notifier/notif-bg.png" x="0" y="0" w="13" h="80" gammagroup="Backgrounds"/>
+	<bitmap id="notifier.bg.center" file="notifier/notif-bg.png" x="13" y="0" w="133" h="80" gammagroup="Backgrounds"/>
+	<bitmap id="notifier.bg.right" file="notifier/notif-bg.png" x="146" y="0" w="13" h="80" gammagroup="Backgrounds"/>
+	<bitmap id="notifier.bg.left.da" file="notifier/notif-bg-alpha.png" x="0" y="0" w="13" h="80" gammagroup="Backgrounds"/>
+	<bitmap id="notifier.bg.center.da" file="notifier/notif-bg-alpha.png" x="13" y="0" w="133" h="80" gammagroup="Backgrounds"/>
+	<bitmap id="notifier.bg.right.da" file="notifier/notif-bg-alpha.png" x="146" y="0" w="13" h="80" gammagroup="Backgrounds"/>
+	<bitmap id="winamp.cover.shoutcast" file="notifier/sc_alb_art.jpg" x="0" y="0" h="111" w="111"/>
+	<color id="notifier.dark" value="white" gammagroup="Text"/>
+	<color id="notifier.bright" value="black" gammagroup="Text Inverse"/>
+</elements>

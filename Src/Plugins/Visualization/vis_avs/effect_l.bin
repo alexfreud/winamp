@@ -1,0 +1,6 @@
+Read/write 'enabled' to get/set whether the effect list is enabled for this frame
+Read/write 'beat' to get/set whether there is currently a beat
+Read/write 'clear' to get/set whether to clear the framebuffer
+If the input blend is set to adjustable, 'alphain' can be set from 0.0-1.0
+If the output blend is set to adjustable, 'alphaout' can be set from 0.0-1.0
+'w' and 'h' are set with the current width and height of the frame

@@ -1,0 +1,633 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.30729.01 (dfa22718).
+//
+// f:\sandbox\20131028_225933\winamp\release\cddbmusicidwinamp.tlh
+//
+// C++ source equivalent of Win32 type library ../gracenote/CddbMusicIDWinamp.dll
+// compiler-generated file created 10/28/13 at 23:18:29 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("05d652c1-7997-40f9-982d-347b8e29f8fb"))
+/* LIBID */ __CDDBMUSICIDLibNSWinamp;
+enum CddbMusicIDOptions;
+enum CddbMusicIDMatchCode;
+enum FileInfoListMatchCode;
+enum CddbMusicIDStatus;
+enum CDDBMusicID_LookupMode;
+enum MusicIDThreadPriority;
+enum CDDBMusicID_Results;
+enum MusicIDMatchType;
+struct __declspec(uuid("46ac5819-1fa8-44a1-9954-270ea2cf0dca"))
+/* dispinterface */ _ICDDBMusicIDManagerEvents;
+struct __declspec(uuid("0aa9fdfb-80d5-41bf-b383-7aab869e6b0e"))
+/* dual interface */ ICddbFileInfo;
+struct __declspec(uuid("cca2a70a-bcbc-49e9-8ef4-04dabcd68b81"))
+/* dual interface */ ICddbMusicIDFingerprint;
+struct __declspec(uuid("db104e47-62bb-4933-8f37-8984228e6938"))
+/* dual interface */ IFingerprintImpl;
+struct __declspec(uuid("099a10ed-517b-4387-a12e-af3fe90b5856"))
+/* dual interface */ ICddbFileInfoList;
+struct __declspec(uuid("5000f09e-8483-4deb-8345-4e778a9fe804"))
+/* dual interface */ ICddbFileInfoLists;
+struct __declspec(uuid("6131c03d-97d0-49ca-8eb1-5fa0d10ec072"))
+/* dual interface */ ICDDBMusicIDManager;
+struct __declspec(uuid("ec0e5dd3-8bab-4671-85a1-68bf93cb35e4"))
+/* dual interface */ ICddbMusicIDFingerprinter;
+struct __declspec(uuid("26b263b3-57cd-42fd-aa48-e505b4780055"))
+/* dual interface */ ICddbMusicIDFingerprinter2;
+struct __declspec(uuid("dc6da11f-ca85-4658-9216-2ad353cfc33b"))
+/* dual interface */ ICddbFileInfo2;
+struct __declspec(uuid("3b4a2b07-aafe-4931-a7f9-4c37729633ca"))
+/* dual interface */ ICddbFileInfo2_6;
+struct __declspec(uuid("18d6bc7c-4cbc-4b6a-9550-2b176438b87c"))
+/* dual interface */ ICddbFileInfoList2_6;
+struct __declspec(uuid("281bfe03-1503-4c60-9678-173c8b4138cc"))
+/* dual interface */ ICDDBMusicIDManager2;
+struct __declspec(uuid("5797bf13-a4e7-4170-ae22-5f06b2823e04"))
+/* dual interface */ ICDDBMusicIDManager3;
+struct __declspec(uuid("43b1b346-2394-46e7-b1ac-ea8d93124f68"))
+/* dual interface */ ICddbMusicIDSettings;
+struct /* coclass */ CDDBNSWinampMusicIDManager;
+struct /* coclass */ CddbMusicIDFingerprinter;
+struct /* coclass */ CddbMusicIDFingerprint;
+struct /* coclass */ CddbFileInfo;
+struct /* coclass */ CddbFileInfoList;
+struct /* coclass */ CddbFileInfoLists;
+struct /* coclass */ CddbMusicIDSettings;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_ICDDBMusicIDManagerEvents, __uuidof(_ICDDBMusicIDManagerEvents));
+_COM_SMARTPTR_TYPEDEF(IFingerprintImpl, __uuidof(IFingerprintImpl));
+_COM_SMARTPTR_TYPEDEF(ICddbMusicIDFingerprint, __uuidof(ICddbMusicIDFingerprint));
+_COM_SMARTPTR_TYPEDEF(ICddbFileInfo, __uuidof(ICddbFileInfo));
+_COM_SMARTPTR_TYPEDEF(ICddbFileInfoList, __uuidof(ICddbFileInfoList));
+_COM_SMARTPTR_TYPEDEF(ICddbFileInfoLists, __uuidof(ICddbFileInfoLists));
+_COM_SMARTPTR_TYPEDEF(ICddbMusicIDFingerprinter, __uuidof(ICddbMusicIDFingerprinter));
+_COM_SMARTPTR_TYPEDEF(ICDDBMusicIDManager, __uuidof(ICDDBMusicIDManager));
+_COM_SMARTPTR_TYPEDEF(ICddbMusicIDFingerprinter2, __uuidof(ICddbMusicIDFingerprinter2));
+_COM_SMARTPTR_TYPEDEF(ICddbFileInfo2, __uuidof(ICddbFileInfo2));
+_COM_SMARTPTR_TYPEDEF(ICddbFileInfo2_6, __uuidof(ICddbFileInfo2_6));
+_COM_SMARTPTR_TYPEDEF(ICddbFileInfoList2_6, __uuidof(ICddbFileInfoList2_6));
+_COM_SMARTPTR_TYPEDEF(ICDDBMusicIDManager2, __uuidof(ICDDBMusicIDManager2));
+_COM_SMARTPTR_TYPEDEF(ICddbMusicIDSettings, __uuidof(ICddbMusicIDSettings));
+_COM_SMARTPTR_TYPEDEF(ICDDBMusicIDManager3, __uuidof(ICDDBMusicIDManager3));
+
+//
+// Type library items
+//
+
+enum CddbMusicIDOptions
+{
+    MUSICID_DEFAULT = 0,
+    MUSICID_LOOKUP_ASYNC = 1,
+    MUSICID_RETURN_SINGLE = 16,
+    MUSICID_RETURN_EXACT_ONLY = 16,
+    MUSICID_RETURN_ALL = 32,
+    MUSICID_GET_FP_FROM_APP = 256,
+    MUSICID_GET_FP_INTERNAL = 512,
+    MUSICID_GET_TAG_FROM_APP = 4096,
+    MUSICID_GET_TAG_INTERNAL = 8192,
+    MUSICID_PREFER_WF_MATCHES = 16384,
+    MUSICID_DISABLE_TEXT_LOOKUPS = 32768,
+    MUSICID_DISABLE_WF_QUERIES = 65536,
+    MUSICID_DISABLE_TEXT_QUERIES = 131072,
+    MUSICID_PREFER_WF_QUERIES = 262144,
+    MUSICID_EXTRA_TEXT_QUERIES = 524288,
+    MUSICID_DISABLE_FILENAME_PARSING = 1048576,
+    MUSICID_HIGH_CONFIDENCE_RESULTS = 2097152
+};
+
+enum CddbMusicIDMatchCode
+{
+    MUSICID_MATCH_NONE = 0,
+    MUSICID_MATCH_EXACT = 1,
+    MUSICID_MATCH_FUZZY = 2,
+    MUSICID_MATCH_ALL = 3,
+    MUSICID_MATCH_USER = 4,
+    MUSICID_MATCH_ERROR = 5,
+    MUSICID_MATCH_ALBUM_ASSOCIATED = 6
+};
+
+enum FileInfoListMatchCode
+{
+    LIST_MATCH_ERROR = 1,
+    LIST_MATCH_NONE = 2,
+    LIST_MATCH_ALBUM_SINGLE = 3,
+    LIST_MATCH_ALBUM_EXACT = 3,
+    LIST_MATCH_ALBUM_MULTIPLE = 4,
+    LIST_MATCH_TRACK_SINGLE = 5,
+    LIST_MATCH_TRACK_EXACT = 5,
+    LIST_MATCH_TRACK_MULTIPLE = 6,
+    LIST_MATCH_LIBRARY_SINGLE = 7,
+    LIST_MATCH_ALBUM_SINGLE_ASSOCIATED = 8
+};
+
+enum CddbMusicIDStatus
+{
+    STATUS_MUSICID_Error = 1,
+    STATUS_MUSICID_ProcessingFile = 2,
+    STATUS_MUSICID_LookingUpWaveForm = 3,
+    STATUS_MUSICID_LookingUpText = 4,
+    STATUS_MUSICID_CheckForAbort = 5,
+    STATUS_ALBUMID_Querying = 6,
+    STATUS_ALBUMID_Queried = 7,
+    STATUS_ALBUMID_Processing = 8,
+    STATUS_ALBUMID_Processed = 9,
+    STATUS_MUSICID_AnalyzingWaveForm = 10,
+    STATUS_ALBUMID_QueryingWF = 11
+};
+
+enum CDDBMusicID_LookupMode
+{
+    WAVEFORM_LOOKUP = 1,
+    TEXT_LOOKUP = 2,
+    TEXT_LOCAL = 4,
+    TEXT_HINT_MULTI_EXACT = 16,
+    TEXT_HINT_MULTI_FUZZY = 32,
+    TEXT_HINT_FUZZY = 64,
+    TEXT_HINT_ALL = 240
+};
+
+enum MusicIDThreadPriority
+{
+    MUSICID_THREAD_PRIORITY_HIGHEST = 1,
+    MUSICID_THREAD_PRIORITY_ABOVE_NORMAL = 2,
+    MUSICID_THREAD_PRIORITY_NORMAL = 3,
+    MUSICID_THREAD_PRIORITY_BELOW_NORMAL = 4,
+    MUSICID_THREAD_PRIORITY_LOWEST = 5,
+    MUSICID_THREAD_PRIORITY_IDLE = 6
+};
+
+enum CDDBMusicID_Results
+{
+    ERR_DomainMusicID = 766,
+    CDDBMusicID_FPAcquired = 1,
+    CDDBMusicID_FPNotAcquired = 2,
+    CDDBMusicID_UnsupportedFileFormat = -1023541247,
+    CDDBMusicID_UnsupportedAudioFormat = -1023541246,
+    CDDBMusicID_UnknownAlgorithm = -1023541245,
+    CDDBMusicID_UnknownSetting = -1023541244,
+    CDDBMusicID_CDDBControlVersion = -1023541243,
+    CDDBMusicID_TextHintsFailed = -1023541242,
+    CDDBMusicID_NoTextAvailable = -1023541241
+};
+
+enum MusicIDMatchType
+{
+    MATCH_TYPE_TAGID = 1,
+    MATCH_TYPE_ITUNESID = 2,
+    MATCH_TYPE_ALBUM_ASSOCIATED = 3,
+    MATCH_TYPE_WF_HINT = 4,
+    MATCH_TYPE_WF = 5,
+    MATCH_TYPE_TXT_ON_WF = 6,
+    MATCH_TYPE_TXT_HINT = 7,
+    MATCH_TYPE_TXT = 8,
+    MATCH_TYPE_WF_TXT_HINT = 9,
+    MATCH_TYPE_WF_TXT = 10,
+    MATCH_TYPE_ALBUM_AND_TITLE = 11,
+    MATCH_TYPE_TXT_ALBUM_LEVEL = 12,
+    MATCH_TYPE_UNKNOWN = 13,
+    MATCH_TYPE_NONE = 14
+};
+
+struct __declspec(uuid("46ac5819-1fa8-44a1-9954-270ea2cf0dca"))
+_ICDDBMusicIDManagerEvents : IDispatch
+{};
+
+struct __declspec(uuid("db104e47-62bb-4933-8f37-8984228e6938"))
+IFingerprintImpl : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall SetFPData (
+        /*[in]*/ char * data,
+        /*[in]*/ long length ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Signature (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Channels (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_SampleRate (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_SampleSize (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Offset (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Duration (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Units (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("cca2a70a-bcbc-49e9-8ef4-04dabcd68b81"))
+ICddbMusicIDFingerprint : IFingerprintImpl
+{};
+
+struct __declspec(uuid("0aa9fdfb-80d5-41bf-b383-7aab869e6b0e"))
+ICddbFileInfo : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Filename (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Filename (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Fingerprint (
+        /*[out,retval]*/ struct ICddbMusicIDFingerprint * * pVal ) = 0;
+      virtual HRESULT __stdcall put_Fingerprint (
+        /*[in]*/ struct ICddbMusicIDFingerprint * pVal ) = 0;
+      virtual HRESULT __stdcall get_TrackNum (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_TrackNum (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_TrackCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_TrackCount (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Tag (
+        /*[out,retval]*/ struct ICddbFileTag * * pVal ) = 0;
+      virtual HRESULT __stdcall put_Tag (
+        /*[in]*/ struct ICddbFileTag * pVal ) = 0;
+      virtual HRESULT __stdcall get_Disc (
+        /*[out,retval]*/ struct ICddbDisc2 * * pVal ) = 0;
+      virtual HRESULT __stdcall put_Disc (
+        /*[in]*/ struct ICddbDisc2 * pVal ) = 0;
+      virtual HRESULT __stdcall get_MusicIDMatchCode (
+        /*[out,retval]*/ enum CddbMusicIDMatchCode * pVal ) = 0;
+      virtual HRESULT __stdcall put_MusicIDMatchCode (
+        /*[in]*/ enum CddbMusicIDMatchCode pVal ) = 0;
+};
+
+struct __declspec(uuid("099a10ed-517b-4387-a12e-af3fe90b5856"))
+ICddbFileInfoList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetFileInfo (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ICddbFileInfo * * pVal ) = 0;
+      virtual HRESULT __stdcall AddFileInfo (
+        /*[in]*/ struct ICddbFileInfo * pFileInfo ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall AddFileInfoFields (
+        /*[in]*/ BSTR Filename,
+        /*[in]*/ struct ICddbMusicIDFingerprint * pFingerprint,
+        /*[in]*/ long TrackCount,
+        /*[in]*/ long TrackNum,
+        /*[in]*/ struct ICddbFileTag * pTag,
+        /*[in]*/ struct ICddbDisc2 * pDisc,
+        /*[in]*/ long matchCode ) = 0;
+      virtual HRESULT __stdcall GetFileInfoFields (
+        /*[in]*/ long Index,
+        /*[out]*/ BSTR * Filename,
+        /*[out]*/ struct ICddbMusicIDFingerprint * * ppFingerprint,
+        /*[out]*/ long * pTrackCount,
+        /*[out]*/ long * pTrackNum,
+        /*[out]*/ struct ICddbFileTag * * ppTag,
+        /*[out]*/ struct ICddbDisc2 * * ppDisc,
+        /*[out]*/ long * pMatchCode ) = 0;
+      virtual HRESULT __stdcall GetListMatchCode (
+        /*[out]*/ long * listMatchCode ) = 0;
+      virtual HRESULT __stdcall SetListMatchCode (
+        /*[in]*/ long match_code ) = 0;
+      virtual HRESULT __stdcall RemoveFileInfo (
+        /*[in]*/ struct ICddbFileInfo * pInfo ) = 0;
+      virtual HRESULT __stdcall RemoveFile (
+        /*[in]*/ BSTR Filename ) = 0;
+};
+
+struct __declspec(uuid("5000f09e-8483-4deb-8345-4e778a9fe804"))
+ICddbFileInfoLists : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetFileInfoList (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ICddbFileInfoList * * ppFileInfoListOut ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall RemoveMatchAndFiles (
+        /*[in]*/ long Index ) = 0;
+      virtual HRESULT __stdcall RemoveFileInfoList (
+        /*[in]*/ struct ICddbFileInfoList * pList ) = 0;
+      virtual HRESULT __stdcall AddFileInfoList (
+        /*[in]*/ struct ICddbFileInfoList * pFileInfoList ) = 0;
+};
+
+struct __declspec(uuid("ec0e5dd3-8bab-4671-85a1-68bf93cb35e4"))
+ICddbMusicIDFingerprinter : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetSetting (
+        /*[in]*/ BSTR name,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall SetSetting (
+        /*[in]*/ BSTR name,
+        /*[in]*/ BSTR value ) = 0;
+      virtual HRESULT __stdcall GetFileFingerprint (
+        /*[in]*/ BSTR Filename,
+        /*[out,retval]*/ struct ICddbMusicIDFingerprint * * pVal ) = 0;
+      virtual HRESULT __stdcall BeginAudioStream (
+        /*[in]*/ long sample_rate,
+        /*[in]*/ long sample_bits,
+        /*[in]*/ long channel_count ) = 0;
+      virtual HRESULT __stdcall WriteAudioData (
+        /*[in]*/ void * buffer,
+        /*[in]*/ long length ) = 0;
+      virtual HRESULT __stdcall EndAudioStream (
+        /*[out,retval]*/ struct ICddbMusicIDFingerprint * * pVal ) = 0;
+};
+
+struct __declspec(uuid("6131c03d-97d0-49ca-8eb1-5fa0d10ec072"))
+ICDDBMusicIDManager : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall Initialize (
+        /*[in]*/ struct ICDDBControl2 * control ) = 0;
+      virtual HRESULT __stdcall Shutdown ( ) = 0;
+      virtual HRESULT __stdcall CreateFingerprinter (
+        /*[in]*/ BSTR alg_name,
+        /*[out,retval]*/ struct ICddbMusicIDFingerprinter * * pVal ) = 0;
+      virtual HRESULT __stdcall LookupFile (
+        /*[in]*/ struct ICddbMusicIDFingerprint * fp,
+        /*[in]*/ BSTR Filename,
+        /*[in]*/ struct ICddbFileTag * Tag,
+        /*[in]*/ long lookup_mode,
+        /*[in]*/ long event_on_completion,
+        /*[out,retval]*/ long * match_code ) = 0;
+      virtual HRESULT __stdcall ResolveLookup (
+        /*[in]*/ struct ICddbDiscs * discs,
+        /*[in]*/ long track_count,
+        /*[in]*/ long missing_files,
+        /*[in]*/ long extra_files,
+        /*[in]*/ long lookup_mode,
+        /*[in]*/ BSTR Filename,
+        /*[in]*/ struct ICddbFileTag * Tag,
+        /*[in]*/ long match_code,
+        /*[out,retval]*/ struct ICddbDisc * * pVal ) = 0;
+      virtual HRESULT __stdcall CompareTrackToFile (
+        /*[in]*/ BSTR Filename,
+        /*[in]*/ struct ICddbFileTag * Tag,
+        /*[in]*/ struct ICddbDisc * Disc,
+        /*[in]*/ long TrackNum,
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("26b263b3-57cd-42fd-aa48-e505b4780055"))
+ICddbMusicIDFingerprinter2 : ICddbMusicIDFingerprinter
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall WriteAudioData2 (
+        /*[in]*/ void * buffer,
+        /*[in]*/ long length,
+        /*[out]*/ long * b_complete ) = 0;
+      virtual HRESULT __stdcall FingerprintSerialize (
+        /*[in]*/ struct ICddbMusicIDFingerprint * pFingerprint,
+        /*[out,retval]*/ BSTR * pSerialized ) = 0;
+      virtual HRESULT __stdcall FingerprintDeserialize (
+        /*[in]*/ BSTR serialized,
+        /*[out,retval]*/ struct ICddbMusicIDFingerprint * * ppFingerprint ) = 0;
+};
+
+struct __declspec(uuid("dc6da11f-ca85-4658-9216-2ad353cfc33b"))
+ICddbFileInfo2 : ICddbFileInfo
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetExtData (
+        /*[out,retval]*/ struct ICddbExtData * * pVal ) = 0;
+      virtual HRESULT __stdcall PutExtData (
+        /*[in]*/ struct ICddbExtData * newVal ) = 0;
+      virtual HRESULT __stdcall GetDataListElement (
+        /*[in]*/ long ListId,
+        /*[in]*/ long Level,
+        /*[out,retval]*/ struct ICddbDataListElement * * pVal ) = 0;
+      virtual HRESULT __stdcall GetExtDataSerialized (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall PutExtDataSerialized (
+        /*[in]*/ BSTR newVal ) = 0;
+};
+
+struct __declspec(uuid("3b4a2b07-aafe-4931-a7f9-4c37729633ca"))
+ICddbFileInfo2_6 : ICddbFileInfo2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_MatchType (
+        /*[out,retval]*/ enum MusicIDMatchType * pVal ) = 0;
+      virtual HRESULT __stdcall RetrieveData (
+        /*[in]*/ long cddbDataOptions ) = 0;
+};
+
+struct __declspec(uuid("18d6bc7c-4cbc-4b6a-9550-2b176438b87c"))
+ICddbFileInfoList2_6 : ICddbFileInfoList
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall RetrieveData (
+        /*[in]*/ long cddbDataOptions ) = 0;
+};
+
+struct __declspec(uuid("281bfe03-1503-4c60-9678-173c8b4138cc"))
+ICDDBMusicIDManager2 : ICDDBMusicIDManager
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall TrackID (
+        /*[in]*/ struct ICddbFileInfo * pInfoIn,
+        /*[in]*/ long options,
+        long * match_code,
+        /*[out]*/ struct ICddbFileInfoList * * pListOut ) = 0;
+      virtual HRESULT __stdcall AlbumID (
+        /*[in]*/ struct ICddbFileInfoList * pListIn,
+        /*[in]*/ long options,
+        long * match_code,
+        /*[out]*/ struct ICddbFileInfoLists * * pListsOut ) = 0;
+      virtual HRESULT __stdcall GetTagInternal (
+        /*[in]*/ BSTR Filename,
+        /*[out]*/ struct ICddbFileTag * * Tag ) = 0;
+      virtual HRESULT __stdcall GetFingerprintInternal (
+        /*[in]*/ BSTR Filename,
+        /*[out]*/ struct ICddbMusicIDFingerprint * * Fingerprint ) = 0;
+};
+
+struct __declspec(uuid("43b1b346-2394-46e7-b1ac-ea8d93124f68"))
+ICddbMusicIDSettings : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ThreadPriority (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ThreadPriority (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LibraryIDBatchSize (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LibraryIDBatchSize (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("5797bf13-a4e7-4170-ae22-5f06b2823e04"))
+ICDDBMusicIDManager3 : ICDDBMusicIDManager2
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall LibraryID (
+        /*[in]*/ struct ICddbFileInfoList * pListIn,
+        /*[in]*/ long options ) = 0;
+      virtual HRESULT __stdcall LibraryIDAdd (
+        /*[in]*/ BSTR bstrFilename ) = 0;
+      virtual HRESULT __stdcall LibraryIDAddFileInfo (
+        /*[in]*/ struct ICddbFileInfo * pInfo ) = 0;
+      virtual HRESULT __stdcall LibraryIDRemove (
+        /*[in]*/ BSTR bstrFilename ) = 0;
+      virtual HRESULT __stdcall LibraryIDStart (
+        /*[in]*/ long options ) = 0;
+      virtual HRESULT __stdcall LibraryIDStop (
+        /*[in]*/ long bWait ) = 0;
+      virtual HRESULT __stdcall LibraryIDClear ( ) = 0;
+      virtual HRESULT __stdcall LibraryIDStatus (
+        /*[out]*/ long * bIsRunning,
+        /*[out]*/ long * lFilesInQueue ) = 0;
+      virtual HRESULT __stdcall GetFullDisc (
+        /*[in]*/ struct ICddbDisc2 * pDisc,
+        /*[out]*/ struct ICddbDisc2 * * ppFullDisc ) = 0;
+      virtual HRESULT __stdcall GetSettings (
+        /*[out]*/ struct ICddbMusicIDSettings * * ppSettings ) = 0;
+      virtual HRESULT __stdcall PutSettings (
+        /*[in]*/ struct ICddbMusicIDSettings * pSettings ) = 0;
+};
+
+struct __declspec(uuid("28041299-f00d-4156-88c7-4c663cd47b00"))
+CDDBNSWinampMusicIDManager;
+    // [ default ] interface ICDDBMusicIDManager
+    // interface ICDDBMusicIDManager2
+    // interface ICDDBMusicIDManager3
+    // [ default, source ] dispinterface _ICDDBMusicIDManagerEvents
+
+struct __declspec(uuid("b6d10e75-e02c-4f26-98c3-72450019942b"))
+CddbMusicIDFingerprinter;
+    // [ default ] interface ICddbMusicIDFingerprinter
+
+struct __declspec(uuid("e0ff4f0f-b53b-41d5-b1c9-3890ac403fe5"))
+CddbMusicIDFingerprint;
+    // interface IFingerprintImpl
+    // [ default ] interface ICddbMusicIDFingerprint
+
+struct __declspec(uuid("80a8f856-eda2-44db-a9ae-fafaaa2f5798"))
+CddbFileInfo;
+    // [ default ] interface ICddbFileInfo
+
+struct __declspec(uuid("93c676b4-2ded-461c-abd6-33736f951840"))
+CddbFileInfoList;
+    // [ default ] interface ICddbFileInfoList
+
+struct __declspec(uuid("d00f2f00-f910-43af-99d6-591ac5f1b560"))
+CddbFileInfoLists;
+    // [ default ] interface ICddbFileInfoLists
+
+struct __declspec(uuid("c7538f11-8d14-439b-ad2d-30c2cd8d0e68"))
+CddbMusicIDSettings;
+    // [ default ] interface ICddbMusicIDSettings
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CDDBMUSICIDLibNSWinamp =
+    {0x05d652c1,0x7997,0x40f9,{0x98,0x2d,0x34,0x7b,0x8e,0x29,0xf8,0xfb}};
+extern "C" const GUID __declspec(selectany) DIID__ICDDBMusicIDManagerEvents =
+    {0x46ac5819,0x1fa8,0x44a1,{0x99,0x54,0x27,0x0e,0xa2,0xcf,0x0d,0xca}};
+extern "C" const GUID __declspec(selectany) IID_IFingerprintImpl =
+    {0xdb104e47,0x62bb,0x4933,{0x8f,0x37,0x89,0x84,0x22,0x8e,0x69,0x38}};
+extern "C" const GUID __declspec(selectany) IID_ICddbMusicIDFingerprint =
+    {0xcca2a70a,0xbcbc,0x49e9,{0x8e,0xf4,0x04,0xda,0xbc,0xd6,0x8b,0x81}};
+extern "C" const GUID __declspec(selectany) IID_ICddbFileInfo =
+    {0x0aa9fdfb,0x80d5,0x41bf,{0xb3,0x83,0x7a,0xab,0x86,0x9e,0x6b,0x0e}};
+extern "C" const GUID __declspec(selectany) IID_ICddbFileInfoList =
+    {0x099a10ed,0x517b,0x4387,{0xa1,0x2e,0xaf,0x3f,0xe9,0x0b,0x58,0x56}};
+extern "C" const GUID __declspec(selectany) IID_ICddbFileInfoLists =
+    {0x5000f09e,0x8483,0x4deb,{0x83,0x45,0x4e,0x77,0x8a,0x9f,0xe8,0x04}};
+extern "C" const GUID __declspec(selectany) IID_ICddbMusicIDFingerprinter =
+    {0xec0e5dd3,0x8bab,0x4671,{0x85,0xa1,0x68,0xbf,0x93,0xcb,0x35,0xe4}};
+extern "C" const GUID __declspec(selectany) IID_ICDDBMusicIDManager =
+    {0x6131c03d,0x97d0,0x49ca,{0x8e,0xb1,0x5f,0xa0,0xd1,0x0e,0xc0,0x72}};
+extern "C" const GUID __declspec(selectany) IID_ICddbMusicIDFingerprinter2 =
+    {0x26b263b3,0x57cd,0x42fd,{0xaa,0x48,0xe5,0x05,0xb4,0x78,0x00,0x55}};
+extern "C" const GUID __declspec(selectany) IID_ICddbFileInfo2 =
+    {0xdc6da11f,0xca85,0x4658,{0x92,0x16,0x2a,0xd3,0x53,0xcf,0xc3,0x3b}};
+extern "C" const GUID __declspec(selectany) IID_ICddbFileInfo2_6 =
+    {0x3b4a2b07,0xaafe,0x4931,{0xa7,0xf9,0x4c,0x37,0x72,0x96,0x33,0xca}};
+extern "C" const GUID __declspec(selectany) IID_ICddbFileInfoList2_6 =
+    {0x18d6bc7c,0x4cbc,0x4b6a,{0x95,0x50,0x2b,0x17,0x64,0x38,0xb8,0x7c}};
+extern "C" const GUID __declspec(selectany) IID_ICDDBMusicIDManager2 =
+    {0x281bfe03,0x1503,0x4c60,{0x96,0x78,0x17,0x3c,0x8b,0x41,0x38,0xcc}};
+extern "C" const GUID __declspec(selectany) IID_ICddbMusicIDSettings =
+    {0x43b1b346,0x2394,0x46e7,{0xb1,0xac,0xea,0x8d,0x93,0x12,0x4f,0x68}};
+extern "C" const GUID __declspec(selectany) IID_ICDDBMusicIDManager3 =
+    {0x5797bf13,0xa4e7,0x4170,{0xae,0x22,0x5f,0x06,0xb2,0x82,0x3e,0x04}};
+extern "C" const GUID __declspec(selectany) CLSID_CDDBNSWinampMusicIDManager =
+    {0x28041299,0xf00d,0x4156,{0x88,0xc7,0x4c,0x66,0x3c,0xd4,0x7b,0x00}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbMusicIDFingerprinter =
+    {0xb6d10e75,0xe02c,0x4f26,{0x98,0xc3,0x72,0x45,0x00,0x19,0x94,0x2b}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbMusicIDFingerprint =
+    {0xe0ff4f0f,0xb53b,0x41d5,{0xb1,0xc9,0x38,0x90,0xac,0x40,0x3f,0xe5}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbFileInfo =
+    {0x80a8f856,0xeda2,0x44db,{0xa9,0xae,0xfa,0xfa,0xaa,0x2f,0x57,0x98}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbFileInfoList =
+    {0x93c676b4,0x2ded,0x461c,{0xab,0xd6,0x33,0x73,0x6f,0x95,0x18,0x40}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbFileInfoLists =
+    {0xd00f2f00,0xf910,0x43af,{0x99,0xd6,0x59,0x1a,0xc5,0xf1,0xb5,0x60}};
+extern "C" const GUID __declspec(selectany) CLSID_CddbMusicIDSettings =
+    {0xc7538f11,0x8d14,0x439b,{0xad,0x2d,0x30,0xc2,0xcd,0x8d,0x0e,0x68}};
+
+#pragma pack(pop)

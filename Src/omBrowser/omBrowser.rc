@@ -1,0 +1,315 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_BROWSERACCEL ACCELERATORS 
+BEGIN
+    VK_HOME,        ID_NAVIGATION_HOME,     VIRTKEY, ALT, NOINVERT
+    "R",            ID_NAVIGATION_REFRESH,  VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_NAVIGATION_REFRESH,  VIRTKEY, NOINVERT
+    "R",            ID_NAVIGATION_REFRESH_COMPLETELY, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F5,          ID_NAVIGATION_REFRESH_COMPLETELY, VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_ADDRESSBAR_ACTIVATE, VIRTKEY, ALT, NOINVERT
+END
+
+IDR_BROWSERPOPUPACCEL ACCELERATORS 
+BEGIN
+    VK_F4,          ID_WINDOW_CLOSE,        VIRTKEY, CONTROL, NOINVERT
+    VK_F11,         ID_WINDOW_FULLSCREEN,   VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTEXTMENU MENU 
+BEGIN
+    POPUP "&Rate"
+    BEGIN
+        MENUITEM "*****",                       ID_RATING_VALUE_5
+        MENUITEM "****",                        ID_RATING_VALUE_4
+        MENUITEM "***",                         ID_RATING_VALUE_3
+        MENUITEM "**",                          ID_RATING_VALUE_2
+        MENUITEM "*",                           ID_RATING_VALUE_1
+    END
+    POPUP "Toolbar"
+    BEGIN
+        MENUITEM "&Top Dock",                   ID_TOOLBAR_DOCKTOP
+        MENUITEM "&Bottom Dock",                ID_TOOLBAR_DOCKBOTTOM
+        MENUITEM SEPARATOR
+        MENUITEM "Auto-&Hide",                  ID_TOOLBAR_AUTOHIDE
+        MENUITEM "Enable &Tab Stop",            ID_TOOLBAR_TABSTOP
+    END
+    POPUP "Addressbar"
+    BEGIN
+        MENUITEM "&Copy",                       ID_ADDRESSBAR_COPY
+        MENUITEM "Copy &address",               ID_ADDRESSBAR_COPYADDRESS
+        MENUITEM "&Edit address",               ID_ADDRESSBAR_EDITADDRESS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BROWSER_OPTIONS DIALOGEX 0, 0, 237, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "omBrowser Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TABFRAME,"SysTabControl32",WS_TABSTOP,5,4,227,144
+    DEFPUSHBUTTON   "&Close",IDCANCEL,182,153,50,13
+END
+
+IDD_OPTIONS_UI DIALOGEX 0, 0, 220, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Toolbar",IDC_STATIC,4,4,212,86,0,WS_EX_TRANSPARENT
+    LTEXT           "&Location:",IDC_STATIC,11,19,30,9,SS_CENTERIMAGE
+    COMBOBOX        IDC_TOOLBAR_LOCATION,47,17,109,40,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Automatically &hide toolbar when inactive",IDC_TOOLBAR_AUTOHIDE,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,11,35,145,10
+    CONTROL         "Include toolbar in tab stop &navigation",IDC_TOOLBAR_TABSTOP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,48,135,10
+    CONTROL         "Always show &addressbar",IDC_TOOLBAR_FORCEADDRESS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,61,95,10
+    CONTROL         "Show page &title in addressbar",IDC_TOOLBAR_FANCYADDRESS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,74,111,10
+    GROUPBOX        "Statusbar",IDC_STATIC,4,94,212,30,0,WS_EX_TRANSPARENT
+    CONTROL         "Display &statusbar on page activity",IDC_STATUSBAR_ENABLED,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,11,107,125,10
+END
+
+IDD_OPTIONS_DEBUG DIALOGEX 0, 0, 220, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,4,4,212,78,0,WS_EX_TRANSPARENT
+    CONTROL         "Disable context menu &filtering",IDC_FILTERMENU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,15,111,10
+    CONTROL         "Display a notification about every script &error",IDC_SHOWERROR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,29,161,10
+    CONTROL         "Enable script &debugging",IDC_SHOWDEBUGGER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,42,92,10
+    LTEXT           "Note:",IDC_STATIC,11,57,19,8
+    LTEXT           "Some changes made on this page will take affect only after Winamp restart.",IDC_STATIC,34,57,161,18
+END
+
+IDD_OPTIONS_INFO DIALOGEX 0, 0, 220, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,4,4,212,107,0,WS_EX_TRANSPARENT
+    CTEXT           "Nullsoft Winamp omBrowser Service",IDC_TITLE,17,14,189,13,SS_CENTERIMAGE
+    RTEXT           "version:",IDC_STATIC,13,32,31,8
+    EDITTEXT        IDC_VERSION,48,32,158,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    RTEXT           "class:",IDC_STATIC,13,44,31,8
+    EDITTEXT        IDC_CLASS,48,44,158,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    RTEXT           "client:",IDC_STATIC,13,56,31,8
+    EDITTEXT        IDC_CLIENTID,48,56,158,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    RTEXT           "session:",IDC_STATIC,13,68,31,8
+    EDITTEXT        IDC_SESSIONID,48,68,158,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    RTEXT           "config:",IDC_STATIC,13,80,31,8
+    EDITTEXT        IDC_CONFIGPATH,48,80,158,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    RTEXT           "MSIE:",IDC_STATIC,13,92,31,8
+    EDITTEXT        IDC_MSIEVERSION,48,92,158,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_BROWSER_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 232
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_OPTIONS_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 216
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_OPTIONS_DEBUG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 216
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_OPTIONS_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 216
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 124
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    65535                   "{DCCF5A41-D16B-452b-8B7A-CFCA3360D8E8}"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ENCRYPTION_MIXED    "Mixed security"
+    IDS_ENCRYPTION_40BIT    "40-bit security"
+    IDS_ENCRYPTION_56BIT    "56-bit security"
+    IDS_ENCRYPTION_FORTEZZA "Fortezza security"
+    IDS_ENCRYPTION_128BIT   "128-bit security"
+    IDS_CONNECTION_UNSECURE "Connection Not Encrypted"
+    IDS_CONNECTION_ENCRYPTED "Connection Encrypted"
+    IDS_CURRENT_PAGE        "Current Page"
+    IDS_OMBROWSER_TITLE     "Winamp Browser"
+    IDS_RATING_0            "not rated"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RATING_1            "1 star"
+    IDS_RATING_2            "2 stars"
+    IDS_RATING_3            "3 stars"
+    IDS_RATING_4            "4 stars"
+    IDS_RATING_5            "5 stars"
+    IDS_RATING_CHANGETO     "Set to:"
+    IDS_RATING_CURRENT      "Rated:"
+    IDS_MORE                "More..."
+    IDS_HOME                "Home"
+    IDS_HOME_DESCRIPTION    "Navigate to the main service page"
+    IDS_BACK                "Back"
+    IDS_BACK_DESCRIPTION    "Go back one page"
+    IDS_FORWARD             "Forward"
+    IDS_FORWARD_DESCRIPTION "Go forward one page"
+    IDS_REFRESH             "Refresh"
+    IDS_REFRESH_DESCRIPTION "Reload current page"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STOP                "Stop"
+    IDS_STOP_DESCRIPTION    "Stop loading this page"
+    IDS_SEPARATOR           "Separator"
+    IDS_SPACE               "Space"
+    IDS_FLEXSPACE           "Flexible Space"
+    IDS_MORE_DESCRIPTION    "Show more items"
+    IDS_RATED               "Rating:"
+    IDS_PLEASE_WAIT         "Please wait..."
+    IDS_SERVICE_VERSIONCHECK "Checking service version"
+    IDS_SERVICE_GETINFO     "Get Info..."
+    IDS_SERVICE_GETINFO_DESCRIPTION "Get service info"
+    IDS_SERVICE_REPORT      "Report..."
+    IDS_SERVICE_REPORT_DESCRIPTION "Report service"
+    IDS_SERVICE_UNSUBSCRIBE "Remove"
+    IDS_SERVICE_UNSUBSCRIBE_DESCRIPTION "Remove service"
+    IDS_SECURE_CONNECTION   "Show Page Identification"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SCRIPT_ERROR        "Show Script Errors"
+    IDS_SCRIPT_ERROR_DESCRIPTION "Page executed with some errors"
+    IDS_HISTORY             "Recent pages"
+    IDS_HISTORY_DESCRIPTION "Recent pages"
+    IDS_NAVIGATING          "Navigating..."
+    IDS_OPTIONS_UI          "Look && Feel"
+    IDS_OPTIONS_DEBUG       "Debug"
+    IDS_OPTIONS_INFO        "Info"
+    IDS_TOOLBAR_TOPDOCK     "Top Dock"
+    IDS_TOOLBAR_BOTTOMDOCK  "Bottom Dock"
+    IDS_UNKNOWN             "unknown"
+    IDS_STORAGE_INI         "Online Service INI File"
+    IDS_STORAGE_XML         "Online Service XML List"
+    IDS_STORAGE_URL         "Server Published Service XML List"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

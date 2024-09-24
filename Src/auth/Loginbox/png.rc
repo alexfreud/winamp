@@ -1,0 +1,16 @@
+#include "../resource.h"
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+IDR_POPUPBORDER_IMAGE  RCDATA
+".\\resources\\popupBorder.png"
+
+IDR_NOTIFIERICONS_IMAGE  RCDATA
+".\\resources\\notifierIcons.png"
+
+IDR_SELECTIONFRAME_IMAGE  RCDATA
+".\\resources\\selection.png"
+
+IDR_ARROW_IMAGE  RCDATA
+".\\resources\\arrow.png"

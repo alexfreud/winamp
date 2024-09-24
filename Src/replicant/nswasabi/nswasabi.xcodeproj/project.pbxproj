@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		00479F18151C35C300F99D12 /* nswasabi-prepare */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 00479F19151C35C300F99D12 /* Build configuration list for PBXAggregateTarget "nswasabi-prepare" */;
+			buildPhases = (
+				00479F20151C3CAE00F99D12 /* Generate Version Info */,
+			);
+			dependencies = (
+				0039B375152A1F7100D96D3E /* PBXTargetDependency */,
+			);
+			name = "nswasabi-prepare";
+			productName = "nswasabi-version";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00479F10151C33FE00F99D12 /* XMLString.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B73470151C308A00A8251C /* XMLString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00479F22151C3D1D00F99D12 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 00479F21151C3D1D00F99D12 /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00B73471151C308A00A8251C /* AutoCharNX.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B7346A151C308A00A8251C /* AutoCharNX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00B73472151C308A00A8251C /* ObjectFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B7346B151C308A00A8251C /* ObjectFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00B73473151C308A00A8251C /* ReferenceCounted.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B7346C151C308A00A8251C /* ReferenceCounted.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00B73474151C308A00A8251C /* ServiceName.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B7346D151C308A00A8251C /* ServiceName.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00B73475151C308A00A8251C /* singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B7346E151C308A00A8251C /* singleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00C27E9A15372DEA008D95CD /* precomp.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C27E9915372DEA008D95CD /* precomp.h */; };
+		0CC9987C14C5DC6900484291 /* PlaybackBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CC9987A14C5DC6900484291 /* PlaybackBase.cpp */; };
+		0CC9987D14C5DC6900484291 /* PlaybackBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CC9987B14C5DC6900484291 /* PlaybackBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B104AEA614C7CC5100211271 /* ApplicationBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B104AEA414C7CC5100211271 /* ApplicationBase.cpp */; };
+		B104AEA714C7CC5100211271 /* ApplicationBase.h in Headers */ = {isa = PBXBuildFile; fileRef = B104AEA514C7CC5100211271 /* ApplicationBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B15A069D14F499F9004F70E7 /* ID3v1Metadata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15A069914F499F9004F70E7 /* ID3v1Metadata.cpp */; };
+		B15A069E14F499F9004F70E7 /* ID3v1Metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = B15A069A14F499F9004F70E7 /* ID3v1Metadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B15A069F14F499F9004F70E7 /* ID3v2Metadata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15A069B14F499F9004F70E7 /* ID3v2Metadata.cpp */; };
+		B15A06A014F499F9004F70E7 /* ID3v2Metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = B15A069C14F499F9004F70E7 /* ID3v2Metadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B193DFDA14F49B6F005D99FB /* APEv2Metadata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B193DFD814F49B6F005D99FB /* APEv2Metadata.cpp */; };
+		B193DFDB14F49B6F005D99FB /* APEv2Metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = B193DFD914F49B6F005D99FB /* APEv2Metadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0039B374152A1F7100D96D3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC9986414C5DC3C00484291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00479F14151C35B700F99D12;
+			remoteInfo = "nswasabi-cleanup";
+		};
+		00479F1C151C3C4000F99D12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC9986414C5DC3C00484291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00479F14151C35B700F99D12;
+			remoteInfo = "nswasabi-cleanup";
+		};
+		00479F1E151C3C4300F99D12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC9986414C5DC3C00484291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00479F18151C35C300F99D12;
+			remoteInfo = "nswasabi-version";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00479F21151C3D1D00F99D12 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = $PROJECT_DERIVED_FILE_DIR/version.h; sourceTree = "<absolute>"; };
+		00B7346A151C308A00A8251C /* AutoCharNX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCharNX.h; sourceTree = "<group>"; };
+		00B7346B151C308A00A8251C /* ObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectFactory.h; sourceTree = "<group>"; };
+		00B7346C151C308A00A8251C /* ReferenceCounted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenceCounted.h; sourceTree = "<group>"; };
+		00B7346D151C308A00A8251C /* ServiceName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceName.h; sourceTree = "<group>"; };
+		00B7346E151C308A00A8251C /* singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singleton.h; sourceTree = "<group>"; };
+		00B7346F151C308A00A8251C /* XMLString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMLString.cpp; sourceTree = "<group>"; };
+		00B73470151C308A00A8251C /* XMLString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLString.h; sourceTree = "<group>"; };
+		00B7347A151C309D00A8251C /* VERSION */ = {isa = PBXFileReference; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		00C27E9915372DEA008D95CD /* precomp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = precomp.h; sourceTree = "<group>"; };
+		0CC9986D14C5DC3C00484291 /* libnswasabi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnswasabi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC9987A14C5DC6900484291 /* PlaybackBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlaybackBase.cpp; sourceTree = "<group>"; };
+		0CC9987B14C5DC6900484291 /* PlaybackBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackBase.h; sourceTree = "<group>"; };
+		B104AEA414C7CC5100211271 /* ApplicationBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApplicationBase.cpp; sourceTree = "<group>"; };
+		B104AEA514C7CC5100211271 /* ApplicationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationBase.h; sourceTree = "<group>"; };
+		B15A069914F499F9004F70E7 /* ID3v1Metadata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ID3v1Metadata.cpp; sourceTree = "<group>"; };
+		B15A069A14F499F9004F70E7 /* ID3v1Metadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ID3v1Metadata.h; sourceTree = "<group>"; };
+		B15A069B14F499F9004F70E7 /* ID3v2Metadata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ID3v2Metadata.cpp; sourceTree = "<group>"; };
+		B15A069C14F499F9004F70E7 /* ID3v2Metadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ID3v2Metadata.h; sourceTree = "<group>"; };
+		B193DFD814F49B6F005D99FB /* APEv2Metadata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = APEv2Metadata.cpp; sourceTree = "<group>"; };
+		B193DFD914F49B6F005D99FB /* APEv2Metadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APEv2Metadata.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CC9986A14C5DC3C00484291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00B73479151C308E00A8251C /* Version */ = {
+			isa = PBXGroup;
+			children = (
+				00B7347A151C309D00A8251C /* VERSION */,
+				00479F21151C3D1D00F99D12 /* version.h */,
+			);
+			name = Version;
+			sourceTree = "<group>";
+		};
+		0CC9986214C5DC3C00484291 = {
+			isa = PBXGroup;
+			children = (
+				00C27E9915372DEA008D95CD /* precomp.h */,
+				B193DFD814F49B6F005D99FB /* APEv2Metadata.cpp */,
+				B193DFD914F49B6F005D99FB /* APEv2Metadata.h */,
+				B104AEA414C7CC5100211271 /* ApplicationBase.cpp */,
+				B104AEA514C7CC5100211271 /* ApplicationBase.h */,
+				00B7346A151C308A00A8251C /* AutoCharNX.h */,
+				B15A069914F499F9004F70E7 /* ID3v1Metadata.cpp */,
+				B15A069A14F499F9004F70E7 /* ID3v1Metadata.h */,
+				B15A069B14F499F9004F70E7 /* ID3v2Metadata.cpp */,
+				B15A069C14F499F9004F70E7 /* ID3v2Metadata.h */,
+				00B7346B151C308A00A8251C /* ObjectFactory.h */,
+				0CC9987A14C5DC6900484291 /* PlaybackBase.cpp */,
+				0CC9987B14C5DC6900484291 /* PlaybackBase.h */,
+				00B7346C151C308A00A8251C /* ReferenceCounted.h */,
+				00B7346D151C308A00A8251C /* ServiceName.h */,
+				00B7346E151C308A00A8251C /* singleton.h */,
+				00B7346F151C308A00A8251C /* XMLString.cpp */,
+				00B73470151C308A00A8251C /* XMLString.h */,
+				00B73479151C308E00A8251C /* Version */,
+				0CC9986E14C5DC3C00484291 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CC9986E14C5DC3C00484291 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CC9986D14C5DC3C00484291 /* libnswasabi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0CC9986B14C5DC3C00484291 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC9987D14C5DC6900484291 /* PlaybackBase.h in Headers */,
+				B104AEA714C7CC5100211271 /* ApplicationBase.h in Headers */,
+				B15A069E14F499F9004F70E7 /* ID3v1Metadata.h in Headers */,
+				B15A06A014F499F9004F70E7 /* ID3v2Metadata.h in Headers */,
+				B193DFDB14F49B6F005D99FB /* APEv2Metadata.h in Headers */,
+				00B73471151C308A00A8251C /* AutoCharNX.h in Headers */,
+				00B73472151C308A00A8251C /* ObjectFactory.h in Headers */,
+				00B73473151C308A00A8251C /* ReferenceCounted.h in Headers */,
+				00B73474151C308A00A8251C /* ServiceName.h in Headers */,
+				00B73475151C308A00A8251C /* singleton.h in Headers */,
+				00479F10151C33FE00F99D12 /* XMLString.h in Headers */,
+				00479F22151C3D1D00F99D12 /* version.h in Headers */,
+				00C27E9A15372DEA008D95CD /* precomp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		00479F14151C35B700F99D12 /* nswasabi-cleanup */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(NSBUILD_TOOLS_BIN_DIR)/cleanbuild --xcode-mode --libraries \"$(LIBRARY_PATH)\" \"$(PUBLIC_HEADERS_DIR)\" \"$(DWARF_DSYM_PATH)\" \"$(PROJECT_DERIVED_FILE_DIR)/version.*\"";
+			buildConfigurationList = 00479F15151C35B700F99D12 /* Build configuration list for PBXLegacyTarget "nswasabi-cleanup" */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/sh;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = "nswasabi-cleanup";
+			passBuildSettingsInEnvironment = 1;
+			productName = "nswasabi-cleanup";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		0CC9986C14C5DC3C00484291 /* nswasabi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CC9987114C5DC3C00484291 /* Build configuration list for PBXNativeTarget "nswasabi" */;
+			buildPhases = (
+				0CC9986914C5DC3C00484291 /* Sources */,
+				0CC9986A14C5DC3C00484291 /* Frameworks */,
+				0CC9986B14C5DC3C00484291 /* Headers */,
+				00479F13151C354F00F99D12 /* Install Public Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00479F1D151C3C4000F99D12 /* PBXTargetDependency */,
+				00479F1F151C3C4300F99D12 /* PBXTargetDependency */,
+			);
+			name = nswasabi;
+			productName = nswasabi;
+			productReference = 0CC9986D14C5DC3C00484291 /* libnswasabi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CC9986414C5DC3C00484291 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Nullsoft, Inc.";
+			};
+			buildConfigurationList = 0CC9986714C5DC3C00484291 /* Build configuration list for PBXProject "nswasabi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0CC9986214C5DC3C00484291;
+			productRefGroup = 0CC9986E14C5DC3C00484291 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CC9986C14C5DC3C00484291 /* nswasabi */,
+				00479F14151C35B700F99D12 /* nswasabi-cleanup */,
+				00479F18151C35C300F99D12 /* nswasabi-prepare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00479F13151C354F00F99D12 /* Install Public Headers */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)$(PUBLIC_HEADERS_FOLDER_PATH)",
+			);
+			name = "Install Public Headers";
+			outputPaths = (
+				"$(DSTROOT)$(PUBLIC_HEADERS_FOLDER_PATH)",
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "INSTALLTOOL=\"$NSBUILD_TOOLS_BIN_DIR/installtool\"\n$INSTALLTOOL --headers-only \\\n             \"$SCRIPT_INPUT_FILE_0/\" \\\n             \"$SCRIPT_OUTPUT_FILE_0\"\n";
+			showEnvVarsInLog = 0;
+		};
+		00479F20151C3CAE00F99D12 /* Generate Version Info */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/VERSION",
+				"$(NSBUILD_TOOLS_SHARE_DIR)/nvgtool/lib-version.template.h",
+			);
+			name = "Generate Version Info";
+			outputPaths = (
+				"$(PROJECT_DERIVED_FILE_DIR)/version.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PRODUCT_VERSION=$(cat \"$SCRIPT_INPUT_FILE_0\")\n\nif [ ! -d \"$PROJECT_DERIVED_FILE_DIR\" ]; then\n    mkdir -p \"$PROJECT_DERIVED_FILE_DIR\"\nfi\n\nNVGTOOL=\"$NSBUILD_TOOLS_BIN_DIR/nvgtool\"\n$NVGTOOL --product-name \"$PRODUCT_NAME\" \\\n         --product-version \"$PRODUCT_VERSION\" \\\n         --input-file \"$SCRIPT_INPUT_FILE_1\" \\\n         --output-file \"$SCRIPT_OUTPUT_FILE_0\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CC9986914C5DC3C00484291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC9987C14C5DC6900484291 /* PlaybackBase.cpp in Sources */,
+				B104AEA614C7CC5100211271 /* ApplicationBase.cpp in Sources */,
+				B15A069D14F499F9004F70E7 /* ID3v1Metadata.cpp in Sources */,
+				B15A069F14F499F9004F70E7 /* ID3v2Metadata.cpp in Sources */,
+				B193DFDA14F49B6F005D99FB /* APEv2Metadata.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0039B375152A1F7100D96D3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00479F14151C35B700F99D12 /* nswasabi-cleanup */;
+			targetProxy = 0039B374152A1F7100D96D3E /* PBXContainerItemProxy */;
+		};
+		00479F1D151C3C4000F99D12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00479F14151C35B700F99D12 /* nswasabi-cleanup */;
+			targetProxy = 00479F1C151C3C4000F99D12 /* PBXContainerItemProxy */;
+		};
+		00479F1F151C3C4300F99D12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00479F18151C35C300F99D12 /* nswasabi-prepare */;
+			targetProxy = 00479F1E151C3C4300F99D12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00479F16151C35B700F99D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DWARF_DSYM_PATH = "$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_NAME).dSYM";
+				LIBRARY_PATH = "$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_NAME)";
+				PUBLIC_HEADERS_DIR = "$(BUILT_PRODUCTS_DIR)$(PUBLIC_HEADERS_FOLDER_PATH)";
+			};
+			name = Debug;
+		};
+		00479F17151C35B700F99D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DWARF_DSYM_PATH = "$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_NAME).dSYM";
+				LIBRARY_PATH = "$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_NAME)";
+				PUBLIC_HEADERS_DIR = "$(BUILT_PRODUCTS_DIR)$(PUBLIC_HEADERS_FOLDER_PATH)";
+			};
+			name = Release;
+		};
+		00479F1A151C35C300F99D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Debug;
+		};
+		00479F1B151C35C300F99D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Release;
+		};
+		0CC9986F14C5DC3C00484291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				EXECUTABLE_EXTENSION = a;
+				EXECUTABLE_NAME = "$(EXECUTABLE_PREFIX)$(PRODUCT_NAME).$(EXECUTABLE_EXTENSION)";
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = precomp.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(INSTALL_PATH_PREFIX)/lib";
+				INSTALL_PATH_PREFIX = /usr/local;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				NSBUILD_TOOLS_BIN_DIR = "$(NSBUILD_TOOLS_DIR)/bin";
+				NSBUILD_TOOLS_DIR = "$(SRCROOT)/../../build-tools";
+				NSBUILD_TOOLS_SHARE_DIR = "$(NSBUILD_TOOLS_DIR)/share";
+				ONLY_ACTIVE_ARCH = YES;
+				PRIVATE_HEADERS_FOLDER_PATH = "$(INSTALL_PATH_PREFIX)/include/$(PRODUCT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(INSTALL_PATH_PREFIX)/include/$(PRODUCT_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = ".. $(BUILT_PRODUCTS_DIR)$(INSTALL_PATH_PREFIX)/include";
+			};
+			name = Debug;
+		};
+		0CC9987014C5DC3C00484291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				EXECUTABLE_EXTENSION = a;
+				EXECUTABLE_NAME = "$(EXECUTABLE_PREFIX)$(PRODUCT_NAME).$(EXECUTABLE_EXTENSION)";
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = precomp.h;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(INSTALL_PATH_PREFIX)/lib";
+				INSTALL_PATH_PREFIX = /usr/local;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				NSBUILD_TOOLS_BIN_DIR = "$(NSBUILD_TOOLS_DIR)/bin";
+				NSBUILD_TOOLS_DIR = "$(SRCROOT)/../../build-tools";
+				NSBUILD_TOOLS_SHARE_DIR = "$(NSBUILD_TOOLS_DIR)/share";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(INSTALL_PATH_PREFIX)/include/$(PRODUCT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(INSTALL_PATH_PREFIX)/include/$(PRODUCT_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = ".. $(BUILT_PRODUCTS_DIR)$(INSTALL_PATH_PREFIX)/include";
+			};
+			name = Release;
+		};
+		0CC9987214C5DC3C00484291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Debug;
+		};
+		0CC9987314C5DC3C00484291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00479F15151C35B700F99D12 /* Build configuration list for PBXLegacyTarget "nswasabi-cleanup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00479F16151C35B700F99D12 /* Debug */,
+				00479F17151C35B700F99D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00479F19151C35C300F99D12 /* Build configuration list for PBXAggregateTarget "nswasabi-prepare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00479F1A151C35C300F99D12 /* Debug */,
+				00479F1B151C35C300F99D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC9986714C5DC3C00484291 /* Build configuration list for PBXProject "nswasabi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC9986F14C5DC3C00484291 /* Debug */,
+				0CC9987014C5DC3C00484291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC9987114C5DC3C00484291 /* Build configuration list for PBXNativeTarget "nswasabi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC9987214C5DC3C00484291 /* Debug */,
+				0CC9987314C5DC3C00484291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CC9986414C5DC3C00484291 /* Project object */;
+}

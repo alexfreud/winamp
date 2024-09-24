@@ -1,0 +1,29 @@
+SetOutPath $INSTDIR\nu
+File ${PROJECTS}\nu\HTMLContainer.cpp
+File ${PROJECTS}\nu\HTMLContainer.h
+File ${PROJECTS}\nu\AutoWide.h
+File ${PROJECTS}\nu\AutoWideFn.h
+File ${PROJECTS}\nu\AutoChar.h
+File ${PROJECTS}\nu\AutoCharFn.h
+File ${PROJECTS}\nu\DialogSkinner.h
+File ${PROJECTS}\nu\DialogSkinner.cpp
+File ${PROJECTS}\nu\Vectors.h
+File ${PROJECTS}\nu\listview.h
+File ${PROJECTS}\nu\listview.cpp
+File ${PROJECTS}\nu\menushortcuts.h
+File ${PROJECTS}\nu\menushortcuts.cpp
+File ${PROJECTS}\nu\MediaLibraryInterface.h
+File ${PROJECTS}\nu\MediaLibraryInterface.cpp
+File ${PROJECTS}\nu\SendTo.h
+File ${PROJECTS}\nu\Singleton.h
+File ${PROJECTS}\nu\Strings.h
+File ${PROJECTS}\nu\wa_str.h
+File ${PROJECTS}\nu\winstr.c
+
+SetOutPath $INSTDIR\Replicant\nu
+File ${PROJECTS}\Replicant\nu\AutoWide.h
+File ${PROJECTS}\Replicant\nu\AutoChar.h
+File ${PROJECTS}\Replicant\nu\vectors.h
+
+SetOutPath $INSTDIR\Replicant\foundation
+File ${PROJECTS}\Replicant\foundation\types.h

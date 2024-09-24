@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JSAPI2::PlayQueue Api</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<script type="text/javascript" src="api2.js"></script>
+</head>
+<body style="FONT-FAMILY: MS Shell Dlg 2;">
+	<h2>PlayQueue API</h2>
+	<h3>Methods:</h3>
+	<input type="button" value="Play" onclick="pqPlayClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;URL:&nbsp;<input type="text" id="pq_t_PlayURL_in" value="c:\Documents and Settings\smontgo444\My Documents\My Music\Winamp\01 - Hello City.mp3">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;<input type="text" id="pq_t_PlayTitle_in">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;length:&nbsp;<input type="text" id="pq_t_PlayLength_in">
+	<br>
+	<br>
+	<input type="button" value="Enqueue" onclick="pqEnqueueClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;URL:&nbsp;<input type="text" id="pq_t_EnqueueURL_in" value="c:\Documents and Settings\smontgo444\My Documents\My Music\Winamp\01 - Hello City.mp3">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;<input type="text" id="pq_t_EnqueueTitle_in">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;length:&nbsp;<input type="text" id="pq_t_EnqueueLength_in">
+	<br>
+	<br>
+	<input type="button" value="Insert" onclick="pqInsertClicked();">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;<input type="text" id="pq_t_InsertPosition_in" value="0">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;URL:&nbsp;<input type="text" id="pq_t_InsertURL_in" value="c:\Documents and Settings\smontgo444\My Documents\My Music\Winamp\08 - The King Of Bedside Manor.mp3">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;<input type="text" id="pq_t_InsertTitle_in">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;length:&nbsp;<input type="text" id="pq_t_InsertLength_in">
+	<br>
+	<br>
+	<input type="button" value="Clear Queue" onclick="pqClearQClicked();">
+	<br>
+	<br>
+	<input type="button" value="Get Metadata" onclick="pqGetMetadataClicked();">
+	<input type="text" readonly size="40" id="pq_t_MTag_Response">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;<input type="text" value="0" id="pq_t_MetadataPosition_in">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;Metadata Tag:&nbsp;<input type="text" value="artist" id="pq_t_MTag_in">
+	<br>
+	<br>
+	<input type="button" value="Get Title" onclick="pqGetTitleClicked();">
+	<input type="text" readonly size="20" id="pq_t_Title">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;<input type="text" value="0" id="pq_t_TitlePosition_in">
+	<br>
+	<br>
+	<input type="button" value="Get URL" onclick="pqGetURLClicked();">
+	<input type="text" readonly size="20" id="pq_t_URL">
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;<input type="text" value="0" id="pq_t_URLPosition_in">
+	<br>
+	<br>
+	<h2>Properties</h2>
+	<input type="button" value="Get length" onclick="pqGetLengthClicked();">
+	<input type="text" readonly size="20" id="pq_t_Length">
+	<br>
+	<br>
+	<input type="button" value="Get cursor" onclick="pqGetCursorClicked();">
+	<input type="text" readonly size="20" id="pq_t_Cursor">
+	<br>
+	<input type="button" value="Set cursor" onclick="pqSetCursorClicked();">
+	<input type="text" size="20" id="pq_t_Cursor_in">
+</body>
+</html>

@@ -1,0 +1,82 @@
+<Package-Doc>
+  <Module>
+    <Project>
+      <Source>
+        <Type>EXE</Type>
+        <Description>Installers</Description>
+        <Filespec>installer\winamp\w*.exe</Filespec>
+        <Destination>installer\</Destination>
+        <Zip>0</Zip> 
+      </Source>
+      <Source>
+        <Type>EXE</Type>
+        <Description>Web Dev SDK</Description>
+        <Filespec>installer\webdev\*.exe</Filespec>
+        <Destination>installer\</Destination>
+        <Zip>0</Zip> 
+      </Source>
+<!--  <Source>
+        <Type>EXE</Type>
+        <Description>Orgler plugin</Description>
+        <Filespec>installer\scrobbler\*.exe</Filespec>
+        <Destination>installer\</Destination>
+        <Zip>0</Zip> 
+      </Source> -->
+<!--- <Source>
+        <Type>EXE</Type>
+        <Description>Orb Installer</Description>
+        <Filespec>installer\orb\*.exe</Filespec>
+        <Destination>installer\</Destination>
+        <Zip>0</Zip> 
+      </Source> -->
+      <Source>
+        <Type>EXE</Type>
+        <Description>Winamp Detect</Description>
+        <Filespec>installer\browserplugin\installWaDetect*.exe</Filespec>
+        <Destination>installer\</Destination>
+        <Zip>0</Zip> 
+      </Source>
+      <Source>
+        <Type>PDB files Release</Type>
+        <Description>All PDB files</Description>
+        <Filespec>*.pdb</Filespec>
+        <Destination>pdb\</Destination>
+        <KeepDirectoryStructure>0</KeepDirectoryStructure>
+        <Recursive>1</Recursive>
+        <Delete>vc??.pdb
+          <Recursive>1</Recursive>
+        </Delete>
+        <Zip>pdb.zip</Zip> 
+        <Compression>9</Compression>
+      </Source>
+      <Source>
+        <Type>LIB files Release</Type>
+        <Description>All LIB files</Description>
+        <Filespec>*.lib</Filespec>
+        <Destination>lib\</Destination>
+        <!--<KeepDirectoryStructure>0</KeepDirectoryStructure>-->
+        <Recursive>1</Recursive>
+        <!--<Delete>vc??.pdb
+          <Recursive>1</Recursive>
+        </Delete>-->
+        <Zip>lib.zip</Zip> 
+        <Compression>9</Compression>
+      </Source>
+      <Source>
+        <Type>Binaries</Type>
+        <Description>Winamp binaries</Description>
+        <Filespec>Output\winamp\*.*</Filespec>
+        <Destination>output\</Destination>
+        <Recursive>1</Recursive>
+        <Zip>binaries.zip</Zip> 
+        <Compression>9</Compression>
+      </Source>
+      <Source>
+        <Type>WhatsNew</Type>
+        <Description>Versions History</Description>
+        <Filespec>resources\data\whatsnew.txt</Filespec>
+        <Zip>0</Zip> 
+      </Source>
+    </Project>
+  </Module>
+</Package-Doc>

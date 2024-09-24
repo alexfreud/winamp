@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9e1216e0-9418-47c8-8b65-d829ad4b69a5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\memory_manager">
+      <UniqueIdentifier>{4c33a825-25eb-47cb-b841-87f800085fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{70389f5d-efd2-456e-a0e2-09499eb80192}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\memory_manager_hdrs">
+      <UniqueIdentifier>{7deb3717-4ad2-4cdc-8773-cc326f108428}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\on2_mem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\on2_mem_tracker.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\memory_manager\hmm_alloc.c">
+      <Filter>Source Files\memory_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\memory_manager\hmm_base.c">
+      <Filter>Source Files\memory_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\memory_manager\hmm_dflt_abort.c">
+      <Filter>Source Files\memory_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\memory_manager\hmm_grow.c">
+      <Filter>Source Files\memory_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\memory_manager\hmm_largest.c">
+      <Filter>Source Files\memory_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\memory_manager\hmm_resize.c">
+      <Filter>Source Files\memory_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\memory_manager\hmm_shrink.c">
+      <Filter>Source Files\memory_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\memory_manager\hmm_true.c">
+      <Filter>Source Files\memory_manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\on2_mem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\on2_mem_tracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\memory_manager\include\cavl_if.h">
+      <Filter>Header Files\memory_manager_hdrs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\memory_manager\include\cavl_impl.h">
+      <Filter>Header Files\memory_manager_hdrs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\memory_manager\include\heapmm.h">
+      <Filter>Header Files\memory_manager_hdrs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\memory_manager\include\hmm_cnfg.h">
+      <Filter>Header Files\memory_manager_hdrs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\memory_manager\include\hmm_intrnl.h">
+      <Filter>Header Files\memory_manager_hdrs</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

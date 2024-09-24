@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by Winamp.rc
+//
+#define HIDC_CLUTTERBAR                 0x81020471    // IDD_CLASSIC_UI

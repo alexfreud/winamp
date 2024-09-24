@@ -1,0 +1,333 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LOGINBOX DIALOGEX 0, 0, 245, 199
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_FIXEDSYS | DS_NOFAILCREATE | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Winamp Sign In"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Sign In",IDOK,131,179,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,191,179,50,14
+    CONTROL         "",IDC_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | WS_GROUP,4,185,104,8
+END
+
+IDD_POPUP_AGREEMENT DIALOGEX 0, 0, 200, 88
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Agree",IDOK,86,67,50,15
+    PUSHBUTTON      "&Decline",IDCANCEL,142,67,50,15
+    LTEXT           "In order to continue you need to read and agree with the following terms of services and privacy policies:",IDC_TEXT,8,20,184,21,SS_NOPREFIX
+END
+
+IDD_PAGE_CREDENTIALS DIALOGEX 0, 0, 213, 118
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Create Account",IDC_CREATE_ACCOUNT,"NullsoftCommandLink",NOT WS_VISIBLE | WS_TABSTOP | 0x18,119,19,94,9
+    CONTROL         "Forgot Password",IDC_RECOVER_ACCOUNT,
+                    "NullsoftCommandLink",NOT WS_VISIBLE | WS_TABSTOP | 0x18,119,30,94,9
+    EDITTEXT        IDC_USERNAME,0,59,106,14,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_PASSWORD,2,86,106,14,ES_PASSWORD | ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    LTEXT           "Username:",IDC_USERNAME_LABEL,0,49,106,8
+    LTEXT           "Password:",IDC_PASSWORD_LABEL,1,76,106,9
+END
+
+IDD_PAGE_ADDRESS DIALOGEX 0, 0, 212, 124
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Enter address:",IDC_ADDRESS_LABEL,2,21,208,8
+    EDITTEXT        IDC_ADDRESS_EDIT,2,30,208,14,ES_AUTOHSCROLL | ES_NOHIDESEL
+    LTEXT           "Type in your info and when you done click on the Login button. You will be taken to the provider page. Your provider will verify who you are, and send you back here to finish login process.",IDC_MESSAGE,2,52,208,64
+END
+
+IDD_PAGE_INFO DIALOGEX 0, 0, 189, 125
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_MESSAGE,6,46,177,73
+END
+
+IDD_POPUP_PASSCODE DIALOGEX 0, 0, 185, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PASSCODE_EDIT,8,32,169,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Continue",IDOK,121,69,56,15
+    LTEXT           "Enter passcode:",IDC_PASSCODE_TITLE,8,20,144,8
+    CONTROL         "",IDC_PASSCODE_HINT,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX,8,46,169,8
+END
+
+IDD_POPUP_MESSAGE DIALOGEX 0, 0, 200, 63
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_MESSAGE,7,20,186,18,SS_NOPREFIX
+END
+
+IDD_PAGE_EMPTY DIALOGEX 0, 0, 214, 115
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "There are no login providers installed",IDC_MESSAGE,
+                    "Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,46,48,120,8
+    PUSHBUTTON      "Check Online",IDC_CHECKNOW,66,70,70,15,NOT WS_VISIBLE
+    CONTROL         "checking online...",IDC_CHECK_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,78,57,57,9
+END
+
+IDD_PAGE_ERROR DIALOGEX 0, 0, 214, 115
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Unable to initialize provider data",IDC_MESSAGE,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | WS_GROUP,60,53,106,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LOGINBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 241
+        VERTGUIDE, 4
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_POPUP_AGREEMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 192
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 82
+        HORZGUIDE, 20
+    END
+
+    IDD_PAGE_ADDRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 210
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_PAGE_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        TOPMARGIN, 6
+    END
+
+    IDD_POPUP_PASSCODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 177
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_POPUP_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_PAGE_EMPTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_PAGE_ERROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_TABCONTEXT MENU 
+BEGIN
+    POPUP "TabContext"
+    BEGIN
+        MENUITEM "&Update providers",           ID_LOGINBOX_UPDATEPROVIDERS
+        MENUITEM SEPARATOR
+        MENUITEM "&Reset providers order",      ID_LOGINTAB_RESETORDER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_SUCCESS         "Success"
+    IDS_ERR_404             "Unable to connect"
+    IDS_ERR_TIMEOUT         "Connection timeout"
+    IDS_ERR_NOHTTP          "Unable to establish connection"
+    IDS_ERR_NOPARSER        "Unable to initialize parser"
+    IDS_ERR_CONNECTIONRESET "Connection reset"
+    IDS_ERR_PARSING_XML     "Unable to parse data"
+    IDS_ERR_NOT_AUTHORIZED  "Account not authorized"
+    IDS_ERR_SECURID         "Passcode required"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_ABORT           "Operation aborted"
+    IDS_ERR_INVALIDCRED     "Unknown user name or bad password"
+    IDS_ERR_UNCONFIRMED     "Account unconfirmed"
+    IDS_ERR_UNEXPECTED      "Unexpected error"
+    IDS_ERR_USERNAME_EMPTY  "Username cannot be blank"
+    IDS_ERR_USERNAME_TOOSHORT "Username too short"
+    IDS_ERR_USERNAME_TOOLONG "Username too long"
+    IDS_ERR_USERNAME_BADFORMAT "Invalid username format"
+    IDS_ERR_PASSWORD_EMPTY  "Password cannot be blank"
+    IDS_ERR_PASSWORD_TOOSHORT "Password too short"
+    IDS_ERR_PASSWORD_TOOLONG "Password too long"
+    IDS_ERR_PASSWORD_BADFORMAT "Password contains invalid characters"
+    IDS_ERR_PASSCODE_EMPTY  "Passcode cannot be blank"
+    IDS_ERR_PASSCODE_TOOSHORT "Passcode too short"
+    IDS_ERR_PASSCODE_TOOLONG "Passcode too long"
+    IDS_ERR_PASSCODE_BADFORMAT "Passcode contains invalid characters"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_UNKNOWN         "Unknown error"
+    IDS_LOGIN_FAILURE       "Logon failure"
+    IDS_ERR_PASSCODE_INVALID "Invalid passcode"
+    IDS_WEBAUTH_CAPTION_TEMPLATE "%s Authentication"
+    IDS_ERR_PASSCODE_BADLENGTH_TEMPLATE "Passcode must be %d digits long"
+    IDS_ERR_PASSCODE_ONLYDIGITS "Passcode can contain only digits"
+    IDS_PASSCODE_EDIT_HINT  "passcode must be %d-digit number"
+    IDS_STATUS_INITIALIZING "Initializing..."
+    IDS_STATUS_CONNECTING   "Connecting..."
+    IDS_STATUS_PASSCODE_REQUIRED "Passcode required"
+    IDS_STATUS_RECEIVING    "Receiving..."
+    IDS_STATUS_SENDING      "Sending..."
+    IDS_STATUS_ABORTING     "Aborting..."
+    IDS_STATUS_USERACTION_REQUIRED "User action required"
+    IDS_STATUS_SUCCEEDED    "Success"
+    IDS_STATUS_FAILED       "Failed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATUS_ABORTED      "Aborted"
+    IDS_STATUS_UPDATEBEGIN  "Updating providers..."
+    IDS_POPUP_AGREEMENT_TITLE "Agreement Required"
+    IDS_POPUP_PASSCODE_TITLE "Passcode Required"
+    IDS_TOSLINK_TEMPLATE    "%s Terms of Service"
+    IDS_PRIVACYLINK_TEMPLATE "Privacy Policy"
+    IDS_AND                 "and"
+    IDS_STATUS_AGREEMENT_REQUIRED "User agreement required"
+    IDS_BUTTON_CONTINUE     "&Continue"
+    IDS_BUTTON_YES          "&Yes"
+    IDS_BUTTON_NO           "&No"
+    IDS_PROVIDERUPDATE_TITLE "Provider Updated"
+    IDS_PROVIDER_CHANGED    "Provider information has changed and needs to be updated"
+    IDS_PROVIDER_REMOVED    "This provider is not available anymore and will be removed"
+    IDS_LOGINTAB_MOREPROVIDERS "show more providers..."
+    IDS_ERR_OPENID_INVALIDURL "Invalid OpenId Url"
+END
+
+STRINGTABLE 
+BEGIN
+    65535                   "{95C65BA3-3C34-40ec-AE74-8D2C60AAE3C8}"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

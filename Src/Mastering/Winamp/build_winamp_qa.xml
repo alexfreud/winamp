@@ -1,0 +1,448 @@
+<Build-Doc>
+
+
+<!-- Get everything in the thirdparty module -->
+<Source>openssl</Source>
+<Source>auth
+  <Tag>=$ENV{TAG_AUTH}</Tag>
+</Source>
+<Source>gen_mud
+  <Tag>=$ENV{TAG_GEN_MUD}</Tag>
+</Source>
+<Source>vis_avs
+  <Tag>=$ENV{TAG_VIS_AVS}</Tag>
+</Source>
+<Source>ns-eel
+  <Tag>=$ENV{TAG_VIS_AVS}</Tag>
+</Source>
+<Source>ml_webdev
+  <Tag>=$ENV{TAG_ML_WEBDEV}</Tag>
+</Source>
+<Source>timer
+  <Tag>=$ENV{TAG_TIMER}</Tag>
+</Source>
+<Source>wbm
+  <Tag>=$ENV{TAG_WBM}</Tag>
+</Source>
+<Source>nsvdec_vp3
+  <Tag>=$ENV{TAG_NSVDEC_VP3}</Tag>
+</Source>
+<Source>vlb
+<Tag>=$ENV{TAG_VLB}</Tag>
+</Source>
+<Source>gen_talkback
+<Tag>=$ENV{TAG_GEN_TALKBACK}</Tag>
+</Source>
+<Source>enc_flac2
+<Tag>=$ENV{TAG_ENC_FLAC2}</Tag>
+</Source>
+<Source>primo
+<Tag>=$ENV{TAG_PRIMO}</Tag>
+</Source>
+<Source>burner
+<Tag>=$ENV{TAG_BURNER}</Tag>
+</Source>
+<Source>f263
+<Tag>=$ENV{TAG_F263}</Tag>
+</Source>
+<Source>in_swf
+<Tag>=$ENV{TAG_IN_SWF}</Tag>
+</Source>
+<Source>Elevator
+<Tag>=$ENV{TAG_ELEVATOR}</Tag>
+</Source>
+<Source>zlib
+<Tag>=$ENV{TAG_ZLIB}</Tag>
+</Source>
+<Source>apev2
+<Tag>=$ENV{TAG_APEV2}</Tag>
+</Source>
+<Source>in_flv
+<Tag>=$ENV{TAG_IN_FLV}</Tag>
+</Source>
+<Source>dlmgr
+<Tag>=$ENV{TAG_DLMGR}</Tag>
+</Source>
+<Source>ml_autotag
+<Tag>=$ENV{TAG_ML_AUTOTAG}</Tag>
+</Source>
+<Source>ml_orb
+<Tag>=$ENV{TAG_ML_ORB}</Tag>
+</Source>
+<Source>ml_plg
+<Tag>=$ENV{TAG_ML_PLG}</Tag>
+</Source>
+<Source>gracenote
+  <Tag>=$ENV{TAG_GRACENOTE}</Tag>
+</Source>
+<Source>freetype
+  <Tag>=$ENV{TAG_FREETYPE}</Tag>
+</Source>
+<Source>gen_crasher
+  <Tag>=$ENV{TAG_GEN_CRASHER}</Tag>
+</Source>
+<Source>flac
+  <Tag>=$ENV{TAG_LIBFLAC}</Tag>
+</Source>
+<Source>in_flac
+  <Tag>=$ENV{TAG_IN_FLAC}</Tag>
+</Source>
+<Source>enc_flac
+  <Tag>=$ENV{TAG_ENC_FLAC}</Tag>
+</Source>
+<Source>enc_wav
+  <Tag>=$ENV{TAG_ENC_WAV}</Tag>
+</Source>
+<Source>ml_transcode
+  <Tag>=$ENV{TAG_ML_TRANSCODE}</Tag>
+</Source>
+<Source>pmp_activesync
+  <Tag>=$ENV{TAG_PMP_ACTIVESYNC}</Tag>
+</Source>
+<Source>jpeg
+  <Tag>=$ENV{TAG_JPEG}</Tag>
+</Source>
+<Source>bmp
+  <Tag>=$ENV{TAG_BMP}</Tag>
+</Source>
+<Source>gif
+  <Tag>=$ENV{TAG_GIF}</Tag>
+</Source>
+<Source>ml_dash
+  <Tag>=$ENV{TAG_ML_DASH}</Tag>
+</Source>
+<Source>ReplayGainAnalysis
+  <Tag>=$ENV{TAG_ML_RG}</Tag>
+</Source>
+<Source>ml_rg
+  <Tag>=$ENV{TAG_ML_RG}</Tag>
+</Source>
+<Source>ml_local
+  <Tag>=$ENV{TAG_ML_LOCAL}</Tag>
+</Source>
+<Source>ml_nowplaying
+  <Tag>=$ENV{TAG_ML_NOWPLAYING}</Tag>
+</Source>
+<Source>ml_playlists
+  <Tag>=$ENV{TAG_ML_PLAYLISTS}</Tag>
+</Source>
+<Source>ml_history
+  <Tag>=$ENV{TAG_ML_HISTORY}</Tag>
+</Source>
+<Source>ml_disc
+  <Tag>=$ENV{TAG_ML_DISC}</Tag>
+</Source>
+<Source>watcher
+  <Tag>=$ENV{TAG_WATCHER}</Tag>
+</Source>
+<Source>nde
+  <Tag>=$ENV{TAG_NDE}</Tag>
+</Source>
+<Source>playlist
+  <Tag>=$ENV{TAG_PLAYLIST}</Tag>
+</Source>
+<Source>png
+  <Tag>=$ENV{TAG_PNG}</Tag>
+</Source>
+<Source>xml
+  <Tag>=$ENV{TAG_XML}</Tag>
+</Source>
+<!-- <Source>in_dvd
+  <Tag>=$ENV{TAG_IN_DVD}</Tag>
+</Source> -->
+<Source>alac
+  <Tag>=$ENV{TAG_ALAC}</Tag>
+</Source>
+<Source>ml_online
+  <Tag>=$ENV{TAG_ML_ONLINE}</Tag>
+</Source>
+<Source>tagz
+  <Tag>=$ENV{TAG_TAGZ}</Tag>
+</Source>
+<Source>ml_bookmarks
+  <Tag>=$ENV{TAG_MLBOOKMARKS}</Tag>
+</Source>
+<Source>libsndfile
+  <Tag>=$ENV{TAG_LIBSNDFILE}</Tag>
+</Source>
+<Source>ml_pmp
+  <Tag>=$ENV{TAG_ML_PMP}</Tag>
+</Source>
+<Source>pmp_ipod
+  <Tag>=$ENV{TAG_PMP_IPOD}</Tag>
+</Source>
+<Source>pmp_njb
+  <Tag>=$ENV{TAG_PMP_NJB}</Tag>
+</Source>
+<Source>pmp_p4s
+  <Tag>=$ENV{TAG_PMP_P4S}</Tag>
+</Source>
+<Source>pmp_usb
+  <Tag>=$ENV{TAG_PMP_USB}</Tag>
+</Source>
+<Source>in_wave
+  <Tag>=$ENV{TAG_INWAVE}</Tag>
+</Source>
+<Source>nu
+  <Tag>=$ENV{TAG_NU}</Tag>
+</Source>
+<Source>nsv\nsvencode.h
+  <Tag>=$ENV{TAG_NSV}</Tag>
+</Source>
+<Source>nsv\dec_if.h
+  <Tag>=$ENV{TAG_NSV}</Tag>
+</Source>
+<Source>nsv\enc_if.h
+  <Tag>=$ENV{TAG_NSV}</Tag>
+</Source>
+<Source>nsv\nsvbs.h
+  <Tag>=$ENV{TAG_NSV}</Tag>
+</Source>
+<Source>nsv\nsvlib.h
+  <Tag>=$ENV{TAG_NSV}</Tag>
+</Source>
+<Source>nsv\nsvplay
+  <Tag>=$ENV{TAG_NSV}</Tag>
+</Source>
+<Source>nsv\nsvlib.cpp
+  <Tag>=$ENV{TAG_NSV}</Tag>
+</Source>
+<Source>nsv/svc_nsvFactory.h
+  <Tag>=$ENV{TAG_NSV}</Tag>
+</Source>
+<Source>nsv/svc_nsvFactory.cpp
+  <Tag>=$ENV{TAG_NSV}</Tag>
+</Source>
+<Source>SDKs\Rovi PrimoSDK Plus\4_28_06_0
+  <Tag>=$ENV{TAG_VERITAS}</Tag>
+</Source>
+<Source>aacPlus
+  <Tag>=$ENV{TAG_AACLIBPLUS}</Tag>
+</Source>
+<Source>SDKs\WM_Format_SDK_9a\lib\WMVCORE.lib
+  <Tag>=$ENV{TAG_WMCORE}</Tag>
+</Source>
+<Source>SDKs\WM_Format_SDK_9a\include
+  <Tag>=$ENV{TAG_WMCORE}</Tag>
+</Source>
+<Source>jnetlib
+  <Tag>=$ENV{TAG_JNET}</Tag>
+</Source>
+<Source>coloreditor
+  <Tag>=$ENV{TAG_GENFF}</Tag>
+</Source>
+<Source>gen_ml
+  <Tag>=$ENV{TAG_GENML}</Tag>
+</Source>
+<Source>Winamp
+  <Tag>=$ENV{TAG_WINAMP}</Tag>
+</Source>
+<Source>config
+  <Tag>=$ENV{TAG_CONFIG}</Tag>
+</Source>
+<Source>winampa
+  <Tag>=$ENV{TAG_WINAMPA}</Tag>
+</Source>
+<Source>enc_aacplus
+  <Tag>=$ENV{TAG_ENCAACPLUS}</Tag>
+</Source>
+<Source>enc_lame
+  <Tag>=$ENV{TAG_ENCLAME}</Tag>
+</Source>
+<Source>enc_wma
+  <Tag>=$ENV{TAG_ENCWMA}</Tag>
+</Source>
+<Source>Agave
+  <Tag>=$ENV{TAG_AGAVE}</Tag>
+</Source>
+<Source>tataki
+  <Tag>=$ENV{TAG_TATAKI}</Tag>
+</Source>
+<Source>Wasabi
+  <Tag>=$ENV{TAG_WASABI}</Tag>
+</Source>
+<Source>gen_ff
+  <Tag>=$ENV{TAG_GENFF}</Tag>
+</Source>
+<Source>filereader
+  <Tag>=$ENV{TAG_FILEREADER}</Tag>
+</Source>
+<Source>gen_hotkeys
+  <Tag>=$ENV{TAG_GENHOTKEYS}</Tag>
+</Source>
+<Source>gen_tray
+  <Tag>=$ENV{TAG_GENTRAY}</Tag>
+</Source>
+<Source>in_cdda
+  <Tag>=$ENV{TAG_INCDDA}</Tag>
+</Source>
+<Source>in_linein
+  <Tag>=$ENV{TAG_INLINEIN}</Tag>
+</Source>
+<Source>pfc
+  <Tag>=$ENV{TAG_PFC}</Tag>
+</Source>
+<Source>in_midi
+  <Tag>=$ENV{TAG_INMIDI}</Tag>
+</Source>
+<Source>in_mod
+  <Tag>=$ENV{TAG_INMOD}</Tag>
+</Source>
+<Source>in_mp3
+  <Tag>=$ENV{TAG_INMP3}</Tag>
+</Source>
+<Source>in_mp4
+  <Tag>=$ENV{TAG_INMP4}</Tag>
+</Source>
+<Source>in_nsv
+  <Tag>=$ENV{TAG_INNSV}</Tag>
+</Source>
+<Source>in_vorbis
+  <Tag>=$ENV{TAG_INVORBIS}</Tag>
+</Source>
+<Source>in_wmvdrm
+  <Tag>=$ENV{TAG_INWM}</Tag>
+</Source>
+<Source>ml_wire
+  <Tag>=$ENV{TAG_MLWIRE}</Tag>
+</Source>
+<Source>out_ds
+  <Tag>=$ENV{TAG_OUTDS}</Tag>
+</Source>
+<Source>out_wave
+  <Tag>=$ENV{TAG_OUTWAVE}</Tag>
+</Source>
+<Source>vis_nsfs
+  <Tag>=$ENV{TAG_VISNSFS}</Tag>
+</Source>
+<Source>in_dshow
+  <Tag>=$ENV{TAG_INDSHOW}</Tag>
+</Source>
+<Source>vp5\include
+  <Tag>=$ENV{TAG_VP5}</Tag>
+</Source>
+<Source>vp5/lib/win32/release
+  <Tag>=$ENV{TAG_VP5}</Tag>
+</Source>
+<Source>nsvdec_vp5
+  <Tag>=$ENV{TAG_NSVDECVP5}</Tag>
+</Source>
+<Source>vp6/include
+  <Tag>=$ENV{TAG_VP6}</Tag>
+</Source>
+<Source>vp6/lib/win32/release
+  <Tag>=$ENV{TAG_VP6}</Tag>
+</Source>
+<Source>nsvdec_vp6
+  <Tag>=$ENV{TAG_NSVDECVP6}</Tag>
+</Source>
+<Source>dshow
+  <Tag>=$ENV{TAG_DSHOW}</Tag>
+</Source>
+<Source>SDKs\DirectX_9_Oct_2004
+  <Tag>=$ENV{TAG_DIRECTX}</Tag>
+</Source>
+<Source>vis_milk2
+  <Tag>=$ENV{TAG_VISMILK2}</Tag>
+</Source>
+<Source>vp32\include
+  <Tag>=$ENV{TAG_VP32}</Tag>
+</Source>
+<Source>vp32\lib\win32\Release
+  <Tag>=$ENV{TAG_VP32}</Tag>
+</Source>
+<Source>resources
+  <Tag>=$ENV{TAG_RESOURCES}</Tag>
+</Source>
+<Source>installer
+  <Tag>=$ENV{TAG_INSTALLER}</Tag>
+</Source>
+<Source>out_disk
+  <Tag>=$ENV{TAG_OUTDISK}</Tag>
+</Source>
+<Source>burnlib
+  <Tag>=$ENV{TAG_BURNLIB}</Tag>
+</Source>
+<Source>gen_dropbox
+  <Tag>=$ENV{TAG_GENDROPBOX}</Tag>
+</Source>
+<Source>ml_impex
+  <Tag>=$ENV{TAG_MLIMPEX}</Tag>
+</Source>
+<Source>plist
+  <Tag>=$ENV{TAG_PLIST}</Tag>
+</Source>
+<Source>omBrowser
+  <Tag>=$ENV{TAG_OMBROWSER}</Tag>
+</Source>
+<Source>ml_addons
+  <Tag>=$ENV{TAG_ML_ADDONS</Tag>
+</Source>
+<Source>winampAll
+  <Tag>=$ENV{TAG_WINAMPALL}</Tag>
+</Source>
+<Source>codesign</Source>
+
+
+<!-- Build  -->
+<Build>
+   Mastering/VerCtrl/verctrl.exe
+    <Parameters>="BETA $ENV{BRANDING}"</Parameters> 
+  <Filter>dggenericOutputParser</Filter>
+</Build>
+<!-- Add Win32 Projects Here (begin) -->
+
+<Build>winampAll/winampAll.sln
+<Param>/useenv</Param>
+</Build>
+
+<!--  WBM Generation -->
+<Build>
+   cmd.exe
+   <Parameters>/E:ON /V:ON /C ".\Mastering\Winamp\build_wbm.cmd"</Parameters> 
+   <ifNoErrors>1</ifNoErrors>
+   <ProjectName>Building Lazy-Load Wasabi Manifests (WBM)</ProjectName>
+   <ScriptIsOutsideSandbox>1</ScriptIsOutsideSandbox>
+   <Filter>dggenericOutputParser</Filter>
+</Build>
+
+<!--  Installer -->
+<Build>
+   cmd.exe
+   <Parameters>/E:ON /V:ON /C ".\Mastering\Winamp\build_installer.cmd"</Parameters> 
+   <ifNoErrors>1</ifNoErrors>
+   <ProjectName>Generating Installers</ProjectName>
+   <ScriptIsOutsideSandbox>1</ScriptIsOutsideSandbox>
+   <Filter>dggenericOutputParser</Filter>
+</Build>
+
+<Build>
+   cmd.exe
+   <Parameters>/E:ON /V:ON /C ".\Mastering\Winamp\build_webdev.cmd"</Parameters> 
+   <ifNoErrors>1</ifNoErrors>
+   <ProjectName>Generating Web Dev SDK</ProjectName>
+   <ScriptIsOutsideSandbox>1</ScriptIsOutsideSandbox>
+   <Filter>dggenericOutputParser</Filter>
+</Build>
+
+<!--  Package up the results -->
+
+<Link>
+   <Name>Download Winamp Distributive!!!</Name>
+   <Href> = $versionString=~/([0-9]*).([0-9]*)\.([0-9]*) (.*)/;"http://nulldev.stream.aol.com/binaries/".$options{WebSubdir}."/".$options{BuildModule}."_".$1."_".$2.$3."_".$buildNumber."_".$4; </Href>
+   <Configuration>Win32 Profiling</Configuration>
+</Link>
+
+<Link>
+   <Name>Versions History</Name>
+   <Href> = $versionString=~/([0-9]*).([0-9]*)\.([0-9]*) (.*)/;"http://nulldev.stream.aol.com/binaries/".$options{WebSubdir}."/".$options{BuildModule}."_".$1."_".$2.$3."_".$buildNumber."_".$4."/whatsnew.txt"; </Href>
+   <Configuration>Win32 Profiling</Configuration>
+</Link>
+
+<Package>Mastering/Winamp/package_vc.xml
+   <Configuration>Win32 Profiling</Configuration>
+   <Destination>=$versionString=~/([0-9]*).([0-9]*)\.([0-9]*) (.*)/;"d:/bin/".$options{WebSubdir}."/".$options{BuildModule}."_".$1."_".$2.$3."_".$buildNumber."_".$4;</Destination>
+   <Copy>1</Copy>
+   <LinkName>Winamp</LinkName>
+</Package>
+</Build-Doc>

@@ -1,0 +1,19 @@
+[SPS PRESET]
+slider1=889
+slider2=0
+slider3=0
+labels_0_0=volume
+labels_0_1=full
+labels_0_2=silent
+labels_1_0=
+labels_1_1=
+labels_1_2=
+labels_2_0=
+labels_2_1=
+labels_2_2=
+code0_size=0
+code0_data=00
+code1_size=38
+code1_data=73706C303D73706C302A736C69646572313B0D0A73706C313D73706C312A736C69646572313BC1
+code2_size=0
+code2_data=00

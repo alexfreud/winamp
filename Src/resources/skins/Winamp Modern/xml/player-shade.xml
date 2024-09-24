@@ -1,0 +1,27 @@
+<!-- player-shade.xml creates the layout of the Winamp Shade Window. -->
+
+  <include file="player-shade-group.xml"/>
+
+  <layout
+    id="shade"
+    minimum_w="354"
+    minimum_h="25"
+    h="25"
+    w="354"
+    droptarget="pldr"
+    background="wasabi.frame.basetexture"
+    linkwidth="normal" appbar="top|bottom"
+  >
+
+
+  <!--<group id="shadedrawer" x="215" y="0" sysregion="1" move="1"/>-->
+  <group id="shademain" x="0" y="0" sysregion="1"/>
+
+  <script id="shadecontrol.script" file="scripts/shadesizepos.maki" />
+  <script id="shadecontrol.script" file="scripts/shadecontrol.maki" />
+
+
+</layout>
+
+
+
