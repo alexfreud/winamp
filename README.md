@@ -7,7 +7,7 @@ Winamp is a multimedia player launched in 1997, iconic for its flexibility and w
 ## Usage
 
 Building of the Winamp desktop client is current based around Visual Studio 2019 (VS2019) and Intel IPP libs (You need to use exactly v6.1.1.035).
-There are differnt options of how to build Winamp:
+There are different options of how to build Winamp:
 
 1. Use a build_winampAll_2019.cmd script file that makes 4 versions x86/x64 (Debug and Release). In this case Visual Studio IDE not running.
 2. Use a winampAll_2019.sln file to build and debug in Visual Studio IDE.
