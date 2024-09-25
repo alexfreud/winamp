@@ -20,15 +20,15 @@ There are different options of how to build Winamp:
 2. Use the `winampAll_2019.sln` file to build and debug in Visual Studio IDE.
 
 #### libvpx
-We take libvpx from https://github.com/ShiftMediaProject/libvpx, modify it and pack to archive.
+We take libvpx from [https://github.com/ShiftMediaProject/libvpx]([url](https://github.com/ShiftMediaProject/libvpx)), modify it and pack to archive.
 Run `unpack_libvpx_v1.8.2_msvc16.cmd` to unpack.
 
 #### libmpg123
-We take libmpg123 from https://www.mpg123.de/download.shtml, modify it and pack to archive.
+We take libmpg123 from [https://www.mpg123.de/download.shtml]([url](https://www.mpg123.de/download.shtml)), modify it and pack to archive.
 Run `unpack_libmpg123.cmd` to unpack and process dlls.
 
 #### OpenSSL
-You need to use openssl-1.0.1u. For that you need to build a static version of these libs.
+You need to use `openssl-1.0.1u`. For that you need to build a static version of these libs.
 Run `build_vs_2019_openssl_x86.cmd` and `build_vs_2019_openssl_64.cmd`.
 
 To build OpenSSL you need to install
