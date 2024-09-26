@@ -16,6 +16,10 @@ Building of the Winamp desktop client is currently based around Visual Studio 20
 
 ### Dependencies
 
+#### libdiscid
+
+We take libdiscid from https://github.com/metabrainz/libdiscid/tree/v0.6.2, copy it in /Src/external_dependencies/libdiscid-0.6.2/
+
 #### libvpx
 
 We take libvpx from [https://github.com/ShiftMediaProject/libvpx](https://github.com/ShiftMediaProject/libvpx), modify it, and pack it to archive.
