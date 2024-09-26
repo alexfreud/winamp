@@ -1,4 +1,4 @@
-# Winamp Collaborative License (WCL) Version 1.0
+# Winamp Collaborative License (WCL) Version 1.0.1
 
 This License governs the use, modification, and distribution of the Winamp software. 
 By using, Modifying, or distributing this software, you agree to the following terms:
@@ -30,7 +30,6 @@ You are granted the right to Modify the software for private use only. You may m
 
 ### 5. Restrictions
 - No Distribution of Modified Versions: You may not distribute modified versions of the software, whether in source or binary form.
-- No Forking: You may not create, maintain, or distribute a forked version of the software.
 - Official Distribution: Only the maintainers of the official repository are allowed to distribute the software and its modifications.
 
 ### 6. No Sublicensing
