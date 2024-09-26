@@ -9,7 +9,7 @@ The Winamp Collaborative License is a free, copyleft license for software and ot
 ## TERMS AND CONDITIONS
 
 ### 1. Definitions
-- "This License" refers to version 1.0 of the Winamp Collaborative License.
+- "This License" refers to version 1.0.1 of the Winamp Collaborative License.
 - "The Program" refers to any copyrightable work Licensed under this License.
 - "You" refers to each Licensee, whether an individual or organization.
 - "Modify" means to copy from or adapt all or part of the work in a fashion requiring copyright permission, other than the making of an exact copy.
