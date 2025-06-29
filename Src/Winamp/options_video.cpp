@@ -89,6 +89,15 @@ INT_PTR CALLBACK VideoProc(HWND hwndDlg, UINT uMsg, WPARAM wParam,LPARAM lParam)
 		SetDlgItemInt(hwndDlg,IDC_SCREENSHAPE1,config_video_ratio1,FALSE);
 		SetDlgItemInt(hwndDlg,IDC_SCREENSHAPE2,config_video_ratio2,FALSE);
 
+		// Load Renderer Preference
+		// Assuming config_video_renderer: 0 for D3D9, 1 for D3D11. Default to D3D9.
+		int renderer_pref = _r_i("video_renderer", 0);
+		if (renderer_pref == 1) {
+			CheckRadioButton(hwndDlg, IDC_VIDEO_RENDERER_D3D9, IDC_VIDEO_RENDERER_D3D11, IDC_VIDEO_RENDERER_D3D11);
+		} else {
+			CheckRadioButton(hwndDlg, IDC_VIDEO_RENDERER_D3D9, IDC_VIDEO_RENDERER_D3D11, IDC_VIDEO_RENDERER_D3D9);
+		}
+
 #ifdef EXPERIMENTAL_CONTRAST
 		SendDlgItemMessage(hwndDlg,IDC_PREFS_VIDEO_CONTRAST,TBM_SETRANGE,TRUE,MAKELONG(0,255));
 		SendDlgItemMessage(hwndDlg,IDC_PREFS_VIDEO_CONTRAST,TBM_SETPOS,TRUE,config_video_contrast);
@@ -190,6 +199,16 @@ INT_PTR CALLBACK VideoProc(HWND hwndDlg, UINT uMsg, WPARAM wParam,LPARAM lParam)
 	        if (config_video_useratio) videoReinit(); 
 		}
 		break;
+		case IDC_VIDEO_RENDERER_D3D9:
+			_w_i("video_renderer", 0);
+			// Inform user restart might be needed, or trigger video reinit if possible
+			// ShowWindow(GetDlgItem(hwndDlg, IDC_VIDEO_RESTART_RENDERER_NOTE), SW_SHOW); // Assuming a text control IDC_VIDEO_RESTART_RENDERER_NOTE
+			break;
+		case IDC_VIDEO_RENDERER_D3D11:
+			_w_i("video_renderer", 1);
+			// Inform user restart might be needed, or trigger video reinit if possible
+			// ShowWindow(GetDlgItem(hwndDlg, IDC_VIDEO_RESTART_RENDERER_NOTE), SW_SHOW);
+			break;
 	}
 	return FALSE;
 } //video
