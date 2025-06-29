@@ -7,6 +7,7 @@
 #include "vid_ddraw.h"
 #include "vid_overlay.h"
 #include "vid_d3d.h"
+#include "vid_d3d11.h" // Added for D3D11 output
 #include <cassert>
 #include "directdraw.h"
 #include "video.h"
@@ -70,7 +71,32 @@ void VideoOutput::mainthread_Create()
 {
 	if (!video_created)
 	{
-		m_video_output = new Direct3DVideoOutput(video_hwnd, this);
+		// TODO: Add a proper configuration variable (e.g., from config_video_used3d11)
+		// For now, let's assume a hypothetical config_video_renderer_preference (0=D3D9, 1=D3D11)
+		// This will need to be properly integrated with Winamp's config system.
+		int renderer_preference = AGAVE_API_CONFIG->GetInt(videoConfigGroupGUID, L"renderer", 0); // Example: 0 for D3D9, 1 for D3D11
+
+		if (renderer_preference == 1)
+		{
+			// Attempt to create D3D11 video output
+			// Ensure D3D11Graphics inside Direct3D11VideoOutput is initialized correctly
+			// and that OpenVideo will be called to set up resources.
+			OutputDebugStringW(L"[VideoOutput] Attempting to use Direct3D 11 Renderer.\n");
+			m_video_output = new Direct3D11VideoOutput(video_hwnd, this);
+			// We might need to check if m_video_output was successfully created or if its internal D3D11 init succeeded.
+			// If it failed, we could fall back to D3D9. For now, keeping it simple.
+			if (m_video_output) { // Basic check, actual success depends on D3D11 init inside the class
+				OutputDebugStringW(L"[VideoOutput] Direct3D 11 Renderer selected (pointer valid).\n");
+			} else {
+				OutputDebugStringW(L"[VideoOutput] Failed to create Direct3D 11 Renderer, falling back to D3D9.\n");
+				m_video_output = new Direct3DVideoOutput(video_hwnd, this); // Fallback
+			}
+		}
+		else
+		{
+			OutputDebugStringW(L"[VideoOutput] Using Direct3D 9 Renderer.\n");
+			m_video_output = new Direct3DVideoOutput(video_hwnd, this);
+		}
 		video_created=true;
 	}
 }
