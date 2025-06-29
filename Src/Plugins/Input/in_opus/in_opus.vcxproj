@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <!-- TODO: USER - Replace with a newly generated GUID using Tools > Create GUID in Visual Studio -->
+    <ProjectGuid>{00000000-0000-0000-0000-000000000001}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>in_opus</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion> <!-- Ensure this matches the main solution -->
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset> <!-- VS2019 -->
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset> <!-- VS2019 -->
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset> <!-- VS2019 -->
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset> <!-- VS2019 -->
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <!-- Import common Winamp plugin props if they exist -->
+    <!-- <Import Project="$(SolutionDir)BuildTools\winamp_plugin_common.props" /> -->
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <!-- <Import Project="$(SolutionDir)BuildTools\winamp_plugin_common.props" /> -->
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <!-- <Import Project="$(SolutionDir)BuildTools\winamp_plugin_common.props" /> -->
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <!-- <Import Project="$(SolutionDir)BuildTools\winamp_plugin_common.props" /> -->
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <!-- Standard Winamp output: $(SolutionDir)..\Build\Plugins\ -->
+    <!-- Adjusting relative path from Src\Plugins\Input\in_opus to Build\Plugins -->
+    <OutDir>$(SolutionDir)..\..\..\..\Build\Plugins\Win32\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\..\Build\Intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>in_opus</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\..\..\Build\Plugins\Win32\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\..\Build\Intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>in_opus</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\..\..\Build\Plugins\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\..\Build\Intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>in_opus</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\..\..\Build\Plugins\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\..\Build\Intermediate\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>in_opus</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <!-- Common Winamp/Agave/Wasabi/Nu include paths -->
+      <AdditionalIncludeDirectories>$(SolutionDir)Src\;$(SolutionDir)Src\Wasabi\;$(SolutionDir)Src\Agave\;$(SolutionDir)Src\nu\;$(SolutionDir)Src\external_dependencies\openmpt-trunk\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;WASABI_API_SVC=plugin.api_service;WASABI_API_SYSCB=plugin.SYSCBAPI;WASABI_API_APP=plugin.app;WASABI_API_ORIG_HINST=plugin.hDllInstance;AGAVE_API_CONFIG=plugin.agave_api_config;WASABI_API_MEMMGR=plugin.memmgrApi;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary> <!-- Match Winamp's runtime -->
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <!-- TODO: USER - Verify library path points to OpenMPT build output dir for this config -->
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\..\Build\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opusfile.lib;opus.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile /> <!-- Input plugins usually don't need a .def file, they export via __declspec(dllexport) -->
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src\;$(SolutionDir)Src\Wasabi\;$(SolutionDir)Src\Agave\;$(SolutionDir)Src\nu\;$(SolutionDir)Src\external_dependencies\openmpt-trunk\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;WASABI_API_SVC=plugin.api_service;WASABI_API_SYSCB=plugin.SYSCBAPI;WASABI_API_APP=plugin.app;WASABI_API_ORIG_HINST=plugin.hDllInstance;AGAVE_API_CONFIG=plugin.agave_api_config;WASABI_API_MEMMGR=plugin.memmgrApi;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary> <!-- Match Winamp's runtime -->
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\..\Build\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opusfile.lib;opus.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src\;$(SolutionDir)Src\Wasabi\;$(SolutionDir)Src\Agave\;$(SolutionDir)Src\nu\;$(SolutionDir)Src\external_dependencies\openmpt-trunk\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;WASABI_API_SVC=plugin.api_service;WASABI_API_SYSCB=plugin.SYSCBAPI;WASABI_API_APP=plugin.app;WASABI_API_ORIG_HINST=plugin.hDllInstance;AGAVE_API_CONFIG=plugin.agave_api_config;WASABI_API_MEMMGR=plugin.memmgrApi;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\..\Build\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opusfile.lib;opus.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src\;$(SolutionDir)Src\Wasabi\;$(SolutionDir)Src\Agave\;$(SolutionDir)Src\nu\;$(SolutionDir)Src\external_dependencies\openmpt-trunk\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;WASABI_API_SVC=plugin.api_service;WASABI_API_SYSCB=plugin.SYSCBAPI;WASABI_API_APP=plugin.app;WASABI_API_ORIG_HINST=plugin.hDllInstance;AGAVE_API_CONFIG=plugin.agave_api_config;WASABI_API_MEMMGR=plugin.memmgrApi;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\..\Build\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opusfile.lib;opus.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="OpusAudioStream.h" />
+    <ClInclude Include="OpusRawMediaReader.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OpusAudioStream.cpp" />
+    <ClCompile Include="OpusRawMediaReader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="in_opus.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="version.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

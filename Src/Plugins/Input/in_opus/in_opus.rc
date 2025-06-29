@@ -1,0 +1,114 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h" // For common resource defines like DIALOGEX etc.
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "#include ""version.rc2""\r\n" // Will create this file next
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+/* Config dialog template - can be added later if needed
+IDD_CONFIG_OPUS DIALOGEX 0, 0, 180, 70 // Example dimensions
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Opus Decoder Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,123,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,123,24,50,14
+    // Add Opus specific config items here
+END
+*/
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+/*
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CONFIG_OPUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+END
+#endif    // APSTUDIO_INVOKED
+*/
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_NULLSOFT_OPUS_DECODER       "Opus Decoder v%s"
+    IDS_OPUS_FILES                  "Opus Files"
+    IDS_ABOUT_TEXT_OPUS             "Opus Decoder v%s\nBuilt: %hs\nUsing libopusfile\n\nThis plugin adds Opus audio playback to Winamp."
+    IDS_FILE_INFORMATION_OPUS       "Opus File Information"
+    IDS_FAMILY_STRING_OPUS          "Opus Audio File"
+    IDS_NULLSOFT_OPUS_DECODER_OLD   "Opus Decoder" // For About box title
+    IDS_OPUS_LANG_GUID              "{NEW-GUID-FOR-OPUS-PLUGIN-LANGUAGE}" // Placeholder GUID
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
